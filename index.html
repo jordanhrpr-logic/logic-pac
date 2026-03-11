@@ -253,22 +253,29 @@ h1,h2{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.15;lett
 .reveal-delay-2{transition-delay:.2s}
 .reveal-delay-3{transition-delay:.3s}
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;background:rgba(239,239,239,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--ice)}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;background:transparent;backdrop-filter:blur(0);border-bottom:1px solid transparent;transition:background .35s,backdrop-filter .35s,border-color .35s}
+nav.scrolled{background:rgba(239,239,239,0.97);backdrop-filter:blur(16px);border-bottom-color:var(--ice)}
+nav.scrolled .lm span{border-color:var(--navy)}
+nav.scrolled .lt{color:var(--navy)}
+nav.scrolled .lt small{color:var(--slate)}
+nav.scrolled .nav-links a{color:var(--slate)}
+nav.scrolled .nav-links a:hover,nav.scrolled .nav-links a.act{color:var(--navy)}
+nav.scrolled .nav-toggle span{background:var(--navy)}
 .nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;text-decoration:none}
 .lm{position:relative;width:30px;height:20px;flex-shrink:0}
-.lm span{position:absolute;width:18px;height:18px;border-radius:50%;border:2.5px solid var(--navy)}
+.lm span{position:absolute;width:18px;height:18px;border-radius:50%;border:2.5px solid rgba(255,255,255,.6);transition:border-color .35s}
 .lm span:first-child{left:0;top:1px}
 .lm span:last-child{right:0;top:1px}
-.lt{font-size:14px;font-weight:700;color:var(--navy)}
-.lt small{display:block;font-size:9px;font-weight:400;color:var(--slate);letter-spacing:1.5px;text-transform:uppercase}
+.lt{font-size:14px;font-weight:700;color:white;transition:color .35s}
+.lt small{display:block;font-size:9px;font-weight:400;color:rgba(255,255,255,.45);letter-spacing:1.5px;text-transform:uppercase;transition:color .35s}
 .nav-links{display:flex;align-items:center;gap:24px;list-style:none}
-.nav-links a{font-size:13px;font-weight:500;color:var(--slate);text-decoration:none;cursor:pointer;transition:color .2s}
-.nav-links a:hover,.nav-links a.act{color:var(--navy)}
-.ncta{background:var(--navy)!important;color:var(--lime)!important;padding:8px 20px;border-radius:0;font-weight:600!important;transition:opacity .2s}
-.ncta:hover{opacity:.85}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,.6);text-decoration:none;cursor:pointer;transition:color .2s}
+.nav-links a:hover,.nav-links a.act{color:white}
+.ncta{background:var(--lime)!important;color:var(--navy)!important;padding:8px 20px;border-radius:0;font-weight:600!important;transition:background .2s}
+.ncta:hover{background:var(--lime-dk)!important}
 /* ── MOBILE NAV ── */
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;z-index:1001;flex-direction:column}
-.nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:all .3s;border-radius:1px}
+.nav-toggle span{display:block;width:22px;height:2px;background:white;margin:5px 0;transition:all .3s;border-radius:1px}
 .nav-toggle.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .nav-toggle.open span:nth-child(2){opacity:0}
 .nav-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
@@ -293,32 +300,33 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:64px;display:flex;al
 .ey.inv{color:rgba(224,253,44,.7)}
 .ey.inv::before{background:rgba(224,253,44,.25)}
 .hr{height:1px;background:var(--ice)}
-/* ── IDENTITY BLOCK ── */
-.identity{padding:0 80px;background:var(--bg)}
-.identity-inner{padding:28px 0;border-bottom:1px solid var(--ice);max-width:760px}
-.identity-inner p{font-size:13px;color:var(--fog);line-height:1.8}
-.identity-inner p strong{color:var(--slate);font-weight:600}
+/* ── IDENTITY BLOCK (SEO, visually hidden) ── */
+.identity{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 /* ── HERO ── */
-.hero{min-height:calc(100vh - 64px);display:grid;grid-template-columns:50% 50%}
-.hero-l{padding:88px 64px 88px 80px;display:flex;flex-direction:column;justify-content:center;background:var(--bg)}
-.htag{display:inline-flex;align-items:center;gap:8px;background:transparent;border:none;padding:0;font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--slate);margin-bottom:28px}
-.hero-l h1{font-size:clamp(40px,4.2vw,64px);margin-bottom:24px;max-width:560px}
-.hero-l h1 em{font-style:italic;color:var(--slate)}
-.hbody{font-size:15.5px;color:var(--slate);line-height:1.8;max-width:460px;margin-bottom:36px}
-.hacts{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.hstats{margin-top:56px;padding-top:36px;border-top:1px solid var(--ice);display:flex;gap:0;flex-wrap:wrap}
-.hs{padding-right:40px;margin-right:40px;border-right:1px solid var(--ice)}
-.hs:last-child{border-right:none;margin-right:0;padding-right:0}
-.hs-n{font-family:'DM Serif Display',serif;font-size:36px;color:var(--navy);line-height:1;letter-spacing:-1.5px}
-.hs-n sup{font-size:16px;vertical-align:super;color:var(--navy)}
-.hs-l{font-size:10px;color:var(--slate);margin-top:5px;text-transform:uppercase;letter-spacing:1.2px;font-weight:500}
-/* ── HERO IMAGE ── */
-.hero-r{position:relative;overflow:hidden}
-.hero-r img{width:100%;height:100%;object-fit:cover;display:block}
-.hero-r-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(5,13,31,.35),rgba(5,13,31,.1));pointer-events:none}
-.hrbar{position:absolute;bottom:0;left:0;right:0;background:var(--lime);padding:16px 40px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;z-index:2}
+.hero{position:relative;min-height:calc(100vh - 64px);display:flex;flex-direction:column;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,var(--navy) 38%,rgba(5,13,31,.55) 65%,rgba(5,13,31,.25) 100%)}
+.hero-content{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:center;padding:100px 80px 80px}
+.htag{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(224,253,44,.7);margin-bottom:28px}
+.htag::before{content:'';width:24px;height:1px;background:rgba(224,253,44,.4)}
+.hero-content h1{font-size:clamp(44px,5vw,76px);color:white;margin-bottom:24px;max-width:680px;line-height:1.08;letter-spacing:-0.03em}
+.hero-content h1 em{font-style:italic;color:var(--lime)}
+.hbody{font-size:16px;color:rgba(255,255,255,.5);line-height:1.8;max-width:480px;margin-bottom:40px}
+.hacts{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.hacts .bp{padding:14px 32px;font-size:14px}
+.hacts .bg{color:rgba(255,255,255,.5)}
+.hacts .bg:hover{color:white}
+.hero-bottom{position:relative;z-index:2;display:flex;align-items:stretch}
+.hstats{display:flex;gap:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
+.hs{padding:28px 40px;border-right:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;justify-content:center}
+.hs:last-child{border-right:none}
+.hs-n{font-family:'DM Serif Display',serif;font-size:32px;color:white;line-height:1;letter-spacing:-1px}
+.hs-n sup{font-size:14px;vertical-align:super;color:var(--lime)}
+.hs-l{font-size:9px;color:rgba(255,255,255,.35);margin-top:6px;text-transform:uppercase;letter-spacing:1.5px;font-weight:500}
+.hrbar{flex:1;background:var(--lime);padding:18px 40px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .hrbt{font-size:12px;font-weight:600;color:var(--navy)}
-.hrbc{font-size:10px;font-weight:700;color:var(--navy);letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;background:none;border:none}
+.hrbc{font-size:10px;font-weight:700;color:var(--navy);letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;background:none;border:none;transition:opacity .2s}
 .hrbc:hover{opacity:.6}
 /* ── BRAND BAR ── */
 .bbar{background:var(--white);border-bottom:1px solid var(--ice);padding:22px 80px;display:flex;align-items:center;gap:48px;flex-wrap:wrap}
@@ -577,11 +585,13 @@ footer{background:var(--navy);padding:80px 80px 48px}
 nav{padding:0 24px}
 .nav-links{display:none}
 .nav-toggle{display:flex}
-.hero,.poss,.ags,.kph,.kr{grid-template-columns:1fr}
-.hero-l{padding:48px 24px}
-.hero-r{min-height:320px}
-.hero-r img{height:320px}
-.hrbar{position:relative}
+.poss,.ags,.kph,.kr{grid-template-columns:1fr}
+.hero-content{padding:80px 24px 48px}
+.hero-content h1{font-size:clamp(36px,8vw,52px)}
+.hero-bottom{flex-direction:column}
+.hstats{flex-wrap:wrap}
+.hs{padding:20px 28px}
+.hrbar{padding:14px 24px}
 .bbar,.gprevh{padding:18px 24px}
 .gprevh{flex-direction:column;align-items:flex-start;gap:14px}
 .fmts,.caps,.tls,.procs,.ctas,.ags,.poss{padding:64px 24px}
@@ -651,24 +661,25 @@ footer{padding:48px 24px 32px}
      ═══════════════════════════════════════════ -->
 <div id="page-home" class="page act">
   <div class="hero">
-    <div class="hero-l">
+    <div class="hero-bg">
+      <!-- TODO: Replace with a wide hero product shot (recommended: 2400x1200+, packaging on dark surface) -->
+      <img src="images/hero-packaging.jpg" alt="Premium custom packaging by Logic Pac — rigid gift boxes, holiday kits, and influencer mailers" loading="eager">
+    </div>
+    <div class="hero-content">
       <div class="htag">Packaging Development Partner</div>
-      <h1>The Packaging Partner<br>Serious Brands<br><em>Rely On</em></h1>
+      <h1>The Packaging Partner<br>Serious Brands <em>Rely On</em></h1>
       <p class="hbody">We design, engineer, source, and deliver custom packaging for brands that compete at the highest level. From structural brief to final delivery &mdash; one team, full accountability.</p>
       <div class="hacts">
         <button class="bp" onclick="openModal()">Book a Consultation</button>
         <button class="bg" onclick="show('work')">See Our Work &rarr;</button>
       </div>
+    </div>
+    <div class="hero-bottom">
       <div class="hstats">
         <div class="hs"><div class="hs-n">20<sup>+</sup></div><div class="hs-l">Years Supply Chain</div></div>
         <div class="hs"><div class="hs-n">15<sup>+</sup></div><div class="hs-l">Countries Sourced</div></div>
         <div class="hs"><div class="hs-n">100<sup>+</sup></div><div class="hs-l">Brands Served</div></div>
       </div>
-    </div>
-    <div class="hero-r">
-      <!-- TODO: Replace src with actual hero image (recommended: 1200x900+ product/packaging shot) -->
-      <img src="images/hero-packaging.jpg" alt="Premium custom packaging by Logic Pac — rigid gift boxes, holiday kits, and influencer mailers" loading="eager">
-      <div class="hero-r-overlay"></div>
       <div class="hrbar">
         <span class="hrbt" id="seasonalCta">Holiday kit production slots are open. Start now, ship on time.</span>
         <button class="hrbc" onclick="openModal()">Secure Your Slot &rarr;</button>
@@ -935,7 +946,8 @@ footer{padding:48px 24px 32px}
      ═══════════════════════════════════════════ -->
 <script>
 var pageMeta={home:{title:'Logic Pac \u2014 Custom Packaging for Beauty, Cosmetic & Consumer Brands',description:'Logic Pac is a custom packaging development partner for beauty, cosmetic, and consumer brands. Structural design, global sourcing, holiday gift sets, influencer kits, and fulfillment.'},work:{title:'Our Work \u2014 Logic Pac Portfolio & Case Studies',description:'Custom packaging portfolio: holiday gift sets, influencer kits, retail packaging, specialty finishes for beauty and consumer brands.'},capabilities:{title:'Capabilities \u2014 Full-Service Custom Packaging | Logic Pac',description:'Structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, and fulfillment under one roof.'},holiday:{title:'Holiday Gift Set Packaging for Beauty Brands | Logic Pac',description:'Custom holiday gift set packaging for beauty and cosmetic brands. Rigid boxes, advent calendars, premium finishes, kitting, and retail compliance.'},influencer:{title:'Influencer Kit & PR Mailer Production | Logic Pac',description:'Custom influencer kits and PR mailers designed for unboxing. 50 to 5,000+ units with direct-to-recipient fulfillment.'}};
-function show(p){document.querySelectorAll('.page').forEach(function(x){x.classList.remove('act')});document.getElementById('page-'+p).classList.add('act');document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('act')});var el=document.getElementById('nv-'+p);if(el)el.classList.add('act');window.scrollTo({top:0,behavior:'smooth'});document.getElementById('page-'+p).appendChild(document.getElementById('footer'));if(history.pushState){history.pushState(null,'','#'+p)}else{location.hash='#'+p}var m=pageMeta[p];if(m){document.title=m.title;var d=document.querySelector('meta[name="description"]');if(d)d.setAttribute('content',m.description);var ot=document.querySelector('meta[property="og:title"]');if(ot)ot.setAttribute('content',m.title);var od=document.querySelector('meta[property="og:description"]');if(od)od.setAttribute('content',m.description)}}
+var currentPage='home';
+function show(p){currentPage=p;document.querySelectorAll('.page').forEach(function(x){x.classList.remove('act')});document.getElementById('page-'+p).classList.add('act');document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('act')});var el=document.getElementById('nv-'+p);if(el)el.classList.add('act');window.scrollTo({top:0,behavior:'smooth'});document.getElementById('page-'+p).appendChild(document.getElementById('footer'));if(history.pushState){history.pushState(null,'','#'+p)}else{location.hash='#'+p}var m=pageMeta[p];if(m){document.title=m.title;var d=document.querySelector('meta[name="description"]');if(d)d.setAttribute('content',m.description);var ot=document.querySelector('meta[property="og:title"]');if(ot)ot.setAttribute('content',m.title);var od=document.querySelector('meta[property="og:description"]');if(od)od.setAttribute('content',m.description)}updateNav()}
 function handleHash(){var h=location.hash.replace('#','');if(h&&pageMeta[h]){show(h)}else{show('home')}}
 window.addEventListener('hashchange',handleHash);
 window.addEventListener('DOMContentLoaded',handleHash);
@@ -949,7 +961,9 @@ function toggleFaq(el){var o=el.classList.contains('open');document.querySelecto
 function filterWork(cat,btn){document.querySelectorAll('.fbi').forEach(function(b){b.classList.remove('act')});btn.classList.add('act');document.querySelectorAll('#workGrid .wgi').forEach(function(i){i.style.display=(cat==='all'||i.dataset.cat===cat)?'':'none'})}
 function buildTimeline(){var now=new Date(),month=now.getMonth(),mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],steps=[{o:0,d:2,l:'Brief & Sourcing',desc:'Scope project, factory quotes, initial samples'},{o:1,d:2,l:'Design & Sample',desc:'Structural design, 3D renders, physical approval'},{o:3,d:3,l:'Production',desc:'Mass run, inline QC, pre-shipment inspection'},{o:5,d:2,l:'Freight & Customs',desc:'Ocean freight, US customs, inland delivery'},{o:7,d:2,l:'In-Market',desc:'Retail floor, DTC ship, influencer send'}],c=document.getElementById('timelineSteps');if(!c)return;c.innerHTML='';steps.forEach(function(s,i){var sm=(month+s.o)%12,em=(month+s.o+s.d-1)%12,r=mn[sm]+' \u2013 '+mn[em],a=i<2,d=document.createElement('div');d.className='tlstep'+(a?' on':'');d.innerHTML='<div class="tldot">0'+(i+1)+'</div><div class="tlmo">'+r+'</div><div class="tltt">'+s.l+'</div><div class="tlde">'+s.desc+'</div>';c.appendChild(d)})}
 function updateSeasonalCopy(){var m=new Date().getMonth(),y=new Date().getFullYear(),sc=document.getElementById('seasonalCta'),ss=document.getElementById('seasonalStatus'),hl=document.getElementById('holidayWindowLabel');if(m<=4){if(sc)sc.textContent='Holiday kit production slots are open. Start now, ship on time.';if(ss)ss.textContent='Production Slots Open';if(hl)hl.textContent='Prime Production Window'}else if(m<=7){if(sc)sc.textContent='Holiday production is filling fast. Secure your slot before factories close.';if(ss)ss.textContent='Slots Filling Fast';if(hl)hl.textContent='Limited Slots Remaining'}else{var ny=y+1;if(sc)sc.textContent='Now booking '+ny+' holiday programs. Get ahead of the timeline.';if(ss)ss.textContent='Booking '+ny;if(hl)hl.textContent='Now Booking '+ny}}
-document.addEventListener('DOMContentLoaded',function(){buildTimeline();updateSeasonalCopy();var fy=document.getElementById('footerYear');if(fy)fy.textContent=new Date().getFullYear();
+function updateNav(){var nav=document.querySelector('nav');if(currentPage!=='home'){nav.classList.add('scrolled');return}nav.classList.toggle('scrolled',window.scrollY>60)}
+window.addEventListener('scroll',function(){if(currentPage==='home')updateNav()},{passive:true});
+document.addEventListener('DOMContentLoaded',function(){buildTimeline();updateSeasonalCopy();updateNav();var fy=document.getElementById('footerYear');if(fy)fy.textContent=new Date().getFullYear();
 /* Scroll reveal */
 var ro=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}})},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el)})
