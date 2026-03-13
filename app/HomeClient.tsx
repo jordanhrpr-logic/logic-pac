@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -60,7 +61,12 @@ export default function HomeClient() {
       <div className="bbar">
         <span className="bbl">Trusted by global brands since 2004</span>
         <div className="bbn">
-          <span className="bn">Adidas</span><span className="bn">Vans</span><span className="bn">Target</span><span className="bn">Disney</span><span className="bn">Puma</span><span className="bn">Paramount+</span>
+          <span className="bn"><Image src="/images/logos/adidas.svg" alt="Adidas" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/vans.svg" alt="Vans" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/target.svg" alt="Target" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/disney.svg" alt="Disney" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/puma.svg" alt="Puma" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/paramount-plus.svg" alt="Paramount+" width={100} height={40} /></span>
         </div>
       </div>
 
@@ -71,16 +77,16 @@ export default function HomeClient() {
           <Link href="/work" className="vab">View Full Portfolio &rarr;</Link>
         </div>
         <div className="ggrid">
-          <Link href="/work" className="ge ge-a"><div className="img-placeholder hero-img" style={{ background: 'linear-gradient(135deg,#1a1a2e,#0f3460)' }}></div><div className="geov"><div className="gecat">Holiday Kits</div><div className="genm">Premium Beauty Gift Set</div></div></Link>
-          <Link href="/work" className="ge ge-b"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#0f2027,#2c5364)', height: '100%' }}></div><div className="geov"><div className="gecat">Influencer Kits</div><div className="genm">Skincare Launch PR Mailer</div></div></Link>
-          <Link href="/work" className="ge ge-c"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#360033,#0b8793)', height: '100%' }}></div><div className="geov"><div className="gecat">Retail</div><div className="genm">Cosmetics Folding Carton</div></div></Link>
-          <Link href="/work" className="ge ge-d"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#2d1b69,#11998e)', height: '100%' }}></div><div className="geov"><div className="gecat">Holiday Kits</div><div className="genm">24-Door Advent Calendar</div></div></Link>
-          <Link href="/work" className="ge ge-e"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#1e3c72,#2a5298)', height: '100%' }}></div><div className="geov"><div className="gecat">Specialty</div><div className="genm">Foil-Stamped Cylinder</div></div></Link>
+          <Link href="/work" className="ge ge-a" style={{ background: 'linear-gradient(135deg,#1a1a2e,#0f3460)' }}><Image src="/images/portfolio/premium-beauty-gift-set.jpg" alt="Premium Beauty Gift Set — custom holiday packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" /><div className="geov"><div className="gecat">Holiday Kits</div><div className="genm">Premium Beauty Gift Set</div></div></Link>
+          <Link href="/work" className="ge ge-b" style={{ background: 'linear-gradient(135deg,#0f2027,#2c5364)' }}><Image src="/images/portfolio/skincare-launch-pr-mailer.jpg" alt="Skincare Launch PR Mailer — influencer kit by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Influencer Kits</div><div className="genm">Skincare Launch PR Mailer</div></div></Link>
+          <Link href="/work" className="ge ge-c" style={{ background: 'linear-gradient(135deg,#360033,#0b8793)' }}><Image src="/images/portfolio/cosmetics-folding-carton.jpg" alt="Cosmetics Folding Carton — retail packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Retail</div><div className="genm">Cosmetics Folding Carton</div></div></Link>
+          <Link href="/work" className="ge ge-d" style={{ background: 'linear-gradient(135deg,#2d1b69,#11998e)' }}><Image src="/images/portfolio/24-door-advent-calendar.jpg" alt="24-Door Advent Calendar — holiday packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Holiday Kits</div><div className="genm">24-Door Advent Calendar</div></div></Link>
+          <Link href="/work" className="ge ge-e" style={{ background: 'linear-gradient(135deg,#1e3c72,#2a5298)' }}><Image src="/images/portfolio/foil-stamped-cylinder.jpg" alt="Foil-Stamped Cylinder — specialty packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Specialty</div><div className="genm">Foil-Stamped Cylinder</div></div></Link>
         </div>
         <div className="ggrid" style={{ marginTop: 3 }}>
-          <Link href="/work" className="ge ge-f"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#0a0a0a,#434343)', height: '100%' }}></div><div className="geov"><div className="gecat">Influencer Kits</div><div className="genm">Velvet Interior Unboxing Kit</div></div></Link>
-          <Link href="/work" className="ge ge-g"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#16222a,#3a6073)', height: '100%' }}></div><div className="geov"><div className="gecat">Retail</div><div className="genm">Shelf-Ready Display Unit</div></div></Link>
-          <Link href="/work" className="ge ge-h"><div className="img-placeholder" style={{ background: 'linear-gradient(135deg,#141e30,#243b55)', height: '100%' }}></div><div className="geov"><div className="gecat">Specialty Finishes</div><div className="genm">Soft-Touch + Spot UV</div></div></Link>
+          <Link href="/work" className="ge ge-f" style={{ background: 'linear-gradient(135deg,#0a0a0a,#434343)' }}><Image src="/images/portfolio/velvet-interior-unboxing-kit.jpg" alt="Velvet Interior Unboxing Kit — influencer packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Influencer Kits</div><div className="genm">Velvet Interior Unboxing Kit</div></div></Link>
+          <Link href="/work" className="ge ge-g" style={{ background: 'linear-gradient(135deg,#16222a,#3a6073)' }}><Image src="/images/portfolio/shelf-ready-display-unit.jpg" alt="Shelf-Ready Display Unit — retail packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Retail</div><div className="genm">Shelf-Ready Display Unit</div></div></Link>
+          <Link href="/work" className="ge ge-h" style={{ background: 'linear-gradient(135deg,#141e30,#243b55)' }}><Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft-Touch + Spot UV — premium finish packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Specialty Finishes</div><div className="genm">Soft-Touch + Spot UV</div></div></Link>
         </div>
         <div style={{ padding: '36px 80px 0' }}><Link href="/work" className="bo">View Full Portfolio &amp; Case Studies</Link></div>
       </ScrollReveal>
@@ -149,6 +155,7 @@ export default function HomeClient() {
       <div className="kits">
         <div className="kr">
           <div className="kv dk" style={{ background: 'linear-gradient(135deg,#0d1b2a,#1b2838,#2a1f3d)' }}>
+            <Image src="/images/kits/holiday-kits.jpg" alt="Custom holiday gift set packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             <div>
               <div className="kvl">Seasonal Production</div>
               <div className="kvt">Holiday Kits<br />that <em>Sell Through</em></div>
@@ -189,6 +196,7 @@ export default function HomeClient() {
             </div>
           </div>
           <div className="kv lt" style={{ background: 'linear-gradient(135deg,#e8e6e1,#d5d3ce,#c8c5be)' }}>
+            <Image src="/images/kits/influencer-kits.jpg" alt="Custom influencer and PR kit packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             <div>
               <div className="kvl">Campaign Production</div>
               <div className="kvt">PR &amp; Influencer<br /><em>Kits</em></div>
