@@ -88,6 +88,12 @@ export default function HomeClient() {
           <Link href="/work" className="ge ge-g" style={{ background: 'linear-gradient(135deg,#16222a,#3a6073)' }}><Image src="/images/portfolio/shelf-ready-display-unit.jpeg" alt="Shelf-Ready Display Unit — retail packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Retail</div><div className="genm">Shelf-Ready Display Unit</div></div></Link>
           <Link href="/work" className="ge ge-h" style={{ background: 'linear-gradient(135deg,#141e30,#243b55)' }}><Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft-Touch + Spot UV — premium finish packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /><div className="geov"><div className="gecat">Specialty Finishes</div><div className="genm">Soft-Touch + Spot UV</div></div></Link>
         </div>
+        <div className="ggrid" style={{ marginTop: 3 }}>
+          {/* TODO: replace gradient with uploaded image */}
+          <Link href="/work" className="ge ge-i" style={{ background: 'linear-gradient(135deg,#4a1942,#c06c84)' }}><div className="geov"><div className="gecat">Primary Packaging</div><div className="genm">Beauty Jar</div></div></Link>
+          {/* TODO: replace gradient with uploaded image */}
+          <Link href="/work" className="ge ge-j" style={{ background: 'linear-gradient(135deg,#2c3e50,#4ca1af)' }}><div className="geov"><div className="gecat">Primary Packaging</div><div className="genm">Beauty Bottle</div></div></Link>
+        </div>
         <div style={{ padding: '36px 80px 0' }}><Link href="/work" className="bo">View Full Portfolio &amp; Case Studies</Link></div>
       </ScrollReveal>
 
