@@ -100,14 +100,14 @@ nav .nav-toggle span{background:var(--navy)}
 .gprevh h2 em{font-style:italic;color:var(--slate)}
 .vab{font-size:13px;font-weight:600;color:var(--navy);cursor:pointer;display:flex;align-items:center;gap:7px;background:none;border:none;transition:gap .2s;font-family:'Poppins',sans-serif}
 .vab:hover{gap:11px}
-.ggrid{display:grid;grid-template-columns:repeat(12,1fr);gap:3px}
-.ge{position:relative;overflow:hidden;cursor:pointer}
+.ggrid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:220px;gap:3px}
+.ge{position:relative;overflow:hidden;cursor:pointer;min-height:220px}
 .ge:hover .geimg{transform:scale(1.04)}
 .geimg{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
 .geov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,13,31,.7) 0%,transparent 60%);opacity:1;transition:opacity .3s;display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
 .gecat{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(224,253,44,.85);margin-bottom:5px}
 .genm{font-family:'DM Serif Display',serif;font-size:17px;color:white;line-height:1.2}
-.ge-a{grid-column:span 5;grid-row:span 2}
+.ge-a{grid-column:span 5;grid-row:span 2;min-height:446px}
 .ge-b{grid-column:span 4}
 .ge-c{grid-column:span 3}
 .ge-d{grid-column:span 4}
