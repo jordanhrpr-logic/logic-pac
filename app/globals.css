@@ -353,14 +353,16 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .gcard-body h2{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:var(--navy);margin-bottom:10px;line-height:1.3}
 .gcard-body p{font-size:14px;color:var(--slate);line-height:1.7;margin-bottom:16px}
 .gcard-body .gcard-link{font-size:13px;font-weight:600;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.phdr+.guide-wrap{margin-top:0}
+.phdr+.gidx{margin-top:0}
 /* ── GUIDE DETAIL ── */
-.guide-wrap{display:grid;grid-template-columns:220px 1fr;gap:48px;max-width:1060px;margin:0 auto;padding:0 48px 80px}
-.gtoc{position:sticky;top:88px;align-self:start;padding:20px 0}
+.guide-wrap{display:grid;grid-template-columns:220px 1fr;gap:48px;max-width:1060px;margin:0 auto;padding:56px 48px 80px}
+.gtoc{position:sticky;top:88px;align-self:start;padding:0;display:flex;flex-direction:column}
 .gtoc h4{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--slate);margin-bottom:16px}
 .gtoc a{display:block;font-size:13px;color:var(--slate);text-decoration:none;padding:6px 0 6px 14px;border-left:2px solid var(--ice);margin-bottom:2px;transition:color .2s,border-color .2s}
 .gtoc a:hover{color:var(--navy)}
 .gtoc a.act{color:var(--navy);font-weight:600;border-left-color:var(--lime)}
-.guide-main{min-width:0}
+.guide-main{min-width:0;overflow:hidden}
 .guide-main .seo h2{font-size:clamp(22px,2.5vw,28px);margin-top:48px;margin-bottom:16px;scroll-margin-top:80px}
 .guide-main .seo h2:first-child{margin-top:0}
 .guide-main .seo h3{margin-top:32px;margin-bottom:12px;scroll-margin-top:80px}
@@ -378,7 +380,7 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-cta p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
 .guide-faq{padding:80px 48px;background:var(--bg)}
 .guide-faq-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:start}
-.guide-faq-content{padding-top:8px}
+.guide-faq-content{padding-top:8px;margin-bottom:32px}
 .guide-faq-content h2{font-family:'DM Serif Display',serif;font-size:28px;font-weight:400;color:var(--navy);margin-bottom:12px}
 .guide-faq-content p{font-size:14.5px;color:var(--slate);line-height:1.82}
 /* ── RESPONSIVE ── */
@@ -389,15 +391,15 @@ nav{padding:0 24px}
 }
 @media(max-width:960px){
 .poss,.ags,.kph,.kr{grid-template-columns:1fr}
-.guide-wrap{grid-template-columns:1fr;padding:0 24px 64px}
-.gtoc{position:static;display:flex;flex-wrap:wrap;gap:8px;padding:0 0 16px;border-bottom:1px solid var(--ice);margin-bottom:32px}
+.guide-wrap{display:block;padding:40px 24px 64px}
+.gtoc{position:static;display:flex;flex-direction:row;flex-wrap:wrap;gap:8px;padding:0 0 24px;border-bottom:1px solid var(--ice);margin-bottom:32px}
 .gtoc h4{width:100%;margin-bottom:8px}
-.gtoc a{border-left:none;padding:4px 12px;border:1px solid var(--ice);border-radius:4px;font-size:12px;margin-bottom:0}
+.gtoc a{border-left:none;padding:6px 14px;border:1px solid var(--ice);border-radius:4px;font-size:12px;margin-bottom:0}
 .gtoc a.act{border-color:var(--lime);background:rgba(224,253,44,.08)}
 .gcards{grid-template-columns:1fr}
 .gidx{padding:64px 24px 80px}
 .guide-faq{padding:48px 24px}
-.guide-faq-inner{grid-template-columns:1fr}
+.guide-faq-inner{display:block}
 .posr{padding-top:0}
 .hero-content{padding:80px 24px 48px}
 .hero-content h1{font-size:clamp(36px,8vw,52px)}
