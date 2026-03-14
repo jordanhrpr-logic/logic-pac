@@ -26,7 +26,7 @@ export default function GuidesClient() {
   return (
     <>
       <div className="phdr">
-        <div className="ey">Resources</div>
+        <div className="ey inv">Resources</div>
         <h1>Packaging Guides</h1>
         <p>In-depth playbooks and reference guides to help you make better packaging decisions — from concept to production.</p>
       </div>

@@ -364,17 +364,23 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-main .seo h2{font-size:clamp(22px,2.5vw,28px);margin-top:48px;margin-bottom:16px;scroll-margin-top:80px}
 .guide-main .seo h2:first-child{margin-top:0}
 .guide-main .seo h3{margin-top:32px;margin-bottom:12px;scroll-margin-top:80px}
-.guide-img{width:100%;border-radius:8px;box-shadow:var(--shadow-md);margin:24px 0 32px}
-.guide-tbl{width:100%;border-collapse:collapse;margin:24px 0 32px;font-size:14px}
-.guide-tbl th{text-align:left;padding:12px 16px;background:var(--navy);color:var(--white);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.guide-img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-md);margin:24px 0 32px}
+.guide-tbl-wrap{overflow-x:auto;margin:24px 0 32px;border-radius:6px}
+.guide-tbl{width:100%;border-collapse:collapse;font-size:14px;min-width:500px}
+.guide-tbl th{text-align:left;padding:12px 16px;background:var(--navy);color:var(--white);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
 .guide-tbl th:first-child{border-radius:6px 0 0 0}
 .guide-tbl th:last-child{border-radius:0 6px 0 0}
 .guide-tbl td{padding:12px 16px;border-bottom:1px solid var(--ice);color:var(--navy);vertical-align:top}
 .guide-tbl tr:last-child td{border-bottom:none}
 .guide-tbl tr:nth-child(even) td{background:var(--bg2)}
 .guide-cta{background:var(--navy);border-radius:8px;padding:40px 36px;margin:40px 0;text-align:center}
-.guide-cta h3{font-family:'DM Serif Display',serif;font-size:24px;font-weight:400;color:var(--white);margin-bottom:10px}
+.guide-cta h3{font-family:'DM Serif Display',serif;font-size:24px;font-weight:400;color:var(--white);margin-bottom:10px;margin-top:0}
 .guide-cta p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.guide-faq{padding:80px 48px;background:var(--bg)}
+.guide-faq-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:start}
+.guide-faq-content{padding-top:8px}
+.guide-faq-content h2{font-family:'DM Serif Display',serif;font-size:28px;font-weight:400;color:var(--navy);margin-bottom:12px}
+.guide-faq-content p{font-size:14.5px;color:var(--slate);line-height:1.82}
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
 nav{padding:0 24px}
@@ -390,6 +396,8 @@ nav{padding:0 24px}
 .gtoc a.act{border-color:var(--lime);background:rgba(224,253,44,.08)}
 .gcards{grid-template-columns:1fr}
 .gidx{padding:64px 24px 80px}
+.guide-faq{padding:48px 24px}
+.guide-faq-inner{grid-template-columns:1fr}
 .posr{padding-top:0}
 .hero-content{padding:80px 24px 48px}
 .hero-content h1{font-size:clamp(36px,8vw,52px)}
