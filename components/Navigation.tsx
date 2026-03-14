@@ -33,6 +33,7 @@ export default function Navigation() {
     { href: '/capabilities', label: 'Capabilities', id: 'nv-capabilities' },
     { href: '/holiday', label: 'Holiday Kits', id: 'nv-holiday' },
     { href: '/influencer', label: 'Influencer Kits', id: 'nv-influencer' },
+    { href: '/guides', label: 'Guides', id: 'nv-guides' },
   ]
 
   return (
