@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 
 const categories = [
@@ -14,18 +15,18 @@ const categories = [
 ]
 
 const workItems = [
-  { cat: 'holiday', cls: 'tall', gradient: 'linear-gradient(135deg,#1a1a2e,#0f3460)', category: 'Holiday Kits', name: 'Premium Beauty Holiday Gift Set', desc: 'Multi-component beauty set, magnetic closure, soft-touch lam. 2,500 units.' },
-  { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#0f2027,#2c5364)', category: 'Influencer & PR', name: 'Skincare Launch PR Mailer', desc: 'Rigid interior box, ribbon lift, custom tissue. 500 units, direct fulfillment.' },
-  { cat: 'beauty', cls: '', gradient: 'linear-gradient(135deg,#360033,#0b8793)', category: 'Beauty & Cosmetics', name: 'Cosmetics Folding Carton \u2014 Ulta Compliant', desc: 'Foil stamp, emboss, Ulta retail compliance. 50,000 units.' },
-  { cat: 'holiday', cls: 'wide', gradient: 'linear-gradient(135deg,#2d1b69,#11998e)', category: 'Holiday Kits', name: '24-Door Advent Calendar \u2014 Beauty Brand', desc: 'Flip-door advent structure, retail shelf display. 3,000 units.' },
-  { cat: 'specialty', cls: '', gradient: 'linear-gradient(135deg,#1e3c72,#2a5298)', category: 'Specialty Finishes', name: 'Gold Foil-Stamp Cylinder', desc: 'Custom cylinder, gold foil, matte lam, die-cut lid. Fragrance brand.' },
-  { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#0a0a0a,#434343)', category: 'Influencer & PR', name: 'Velvet Interior Unboxing Kit', desc: 'Two-piece rigid box, black velvet interior, gold ribbon. 1,200 units.' },
-  { cat: 'retail', cls: '', gradient: 'linear-gradient(135deg,#16222a,#3a6073)', category: 'Retail', name: 'Shelf-Ready Display \u2014 Mass Market', desc: 'PDQ display, floor-standing unit. Target and Walmart. 10,000 units.' },
-  { cat: 'specialty', cls: '', gradient: 'linear-gradient(135deg,#141e30,#243b55)', category: 'Specialty Finishes', name: 'Soft-Touch + Spot UV Skincare', desc: 'Folding carton with soft-touch lam, tactical spot UV on logo.' },
-  { cat: 'beauty', cls: '', gradient: 'linear-gradient(135deg,#2b0a3d,#0d324d)', category: 'Beauty & Cosmetics', name: 'Wellness Brand Tube & Carton Program', desc: 'Coordinated tube + carton, kraft material, FSC certified.' },
-  { cat: 'holiday', cls: 'wide', gradient: 'linear-gradient(135deg,#1e3c72,#0f2027)', category: 'Holiday Kits', name: 'Holiday Gift Set Collection \u2014 Multi-SKU Program', desc: 'Three-piece holiday collection, lift-lid rigid boxes. Sephora compliant. 5,000 sets.' },
-  { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#141e30,#360033)', category: 'Influencer & PR', name: 'Personalized Name Foil Campaign', desc: 'Foil-stamped names, layered interior reveal. 300 units, PR agency.' },
-  { cat: 'retail', cls: '', gradient: 'linear-gradient(135deg,#1a1a2e,#3d5a80)', category: 'Retail', name: 'Fragrance Retail Carton', desc: 'Rigid carton, die-cut window, soft-touch exterior, embossed logo.' },
+  { cat: 'holiday', cls: 'tall', gradient: 'linear-gradient(135deg,#1a1a2e,#0f3460)', image: '/images/portfolio/premium-beauty-gift-set1.jpg', category: 'Holiday Kits', name: 'Premium Beauty Holiday Gift Set', desc: 'Multi-component beauty set, magnetic closure, soft-touch lam. 2,500 units.' },
+  { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#0f2027,#2c5364)', image: '/images/portfolio/skincare-launch-pr-mailer.jpg', category: 'Influencer & PR', name: 'Skincare Launch PR Mailer', desc: 'Rigid interior box, ribbon lift, custom tissue. 500 units, direct fulfillment.' },
+  { cat: 'beauty', cls: '', gradient: 'linear-gradient(135deg,#360033,#0b8793)', image: '/images/portfolio/cosmetics-folding-carton.jpeg', category: 'Beauty & Cosmetics', name: 'Cosmetics Folding Carton \u2014 Ulta Compliant', desc: 'Foil stamp, emboss, Ulta retail compliance. 50,000 units.' },
+  { cat: 'holiday', cls: 'wide', gradient: 'linear-gradient(135deg,#2d1b69,#11998e)', image: '/images/portfolio/24-door-advent-calendar.jpeg', category: 'Holiday Kits', name: '24-Door Advent Calendar \u2014 Beauty Brand', desc: 'Flip-door advent structure, retail shelf display. 3,000 units.' },
+  { cat: 'specialty', cls: '', gradient: 'linear-gradient(135deg,#1e3c72,#2a5298)', image: '/images/portfolio/foil-stamped-cylinder.jpeg', category: 'Specialty Finishes', name: 'Gold Foil-Stamp Cylinder', desc: 'Custom cylinder, gold foil, matte lam, die-cut lid. Fragrance brand.' },
+  { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#0a0a0a,#434343)', image: '/images/portfolio/velvet-interior-unboxing-kit.jpeg', category: 'Influencer & PR', name: 'Velvet Interior Unboxing Kit', desc: 'Two-piece rigid box, black velvet interior, gold ribbon. 1,200 units.' },
+  { cat: 'retail', cls: '', gradient: 'linear-gradient(135deg,#16222a,#3a6073)', image: '/images/portfolio/shelf-ready-display-unit.jpeg', category: 'Retail', name: 'Shelf-Ready Display \u2014 Mass Market', desc: 'PDQ display, floor-standing unit. Target and Walmart. 10,000 units.' },
+  { cat: 'specialty', cls: '', gradient: 'linear-gradient(135deg,#141e30,#243b55)', image: '/images/portfolio/soft-touch-spot-uv.jpg', category: 'Specialty Finishes', name: 'Soft-Touch + Spot UV Skincare', desc: 'Folding carton with soft-touch lam, tactical spot UV on logo.' },
+  { cat: 'beauty', cls: '', gradient: 'linear-gradient(135deg,#2b0a3d,#0d324d)', image: '', category: 'Beauty & Cosmetics', name: 'Wellness Brand Tube & Carton Program', desc: 'Coordinated tube + carton, kraft material, FSC certified.' },
+  { cat: 'holiday', cls: 'wide', gradient: 'linear-gradient(135deg,#1e3c72,#0f2027)', image: '/images/portfolio/holiday-kits.jpeg', category: 'Holiday Kits', name: 'Holiday Gift Set Collection \u2014 Multi-SKU Program', desc: 'Three-piece holiday collection, lift-lid rigid boxes. Sephora compliant. 5,000 sets.' },
+  { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#141e30,#360033)', image: '', category: 'Influencer & PR', name: 'Personalized Name Foil Campaign', desc: 'Foil-stamped names, layered interior reveal. 300 units, PR agency.' },
+  { cat: 'retail', cls: '', gradient: 'linear-gradient(135deg,#1a1a2e,#3d5a80)', image: '', category: 'Retail', name: 'Fragrance Retail Carton', desc: 'Rigid carton, die-cut window, soft-touch exterior, embossed logo.' },
 ]
 
 export default function WorkClient() {
@@ -59,7 +60,7 @@ export default function WorkClient() {
             data-cat={item.cat}
             style={{ display: activeFilter === 'all' || item.cat === activeFilter ? '' : 'none' }}
           >
-            <div className="img-placeholder" style={{ background: item.gradient, height: '100%' }}></div>
+            {item.image ? <Image src={item.image} alt={`${item.name} — packaging by Logic Pac`} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="img-placeholder" style={{ background: item.gradient, height: '100%' }}></div>}
             <div className="wgov">
               <div className="wgcat">{item.category}</div>
               <div className="wgnm">{item.name}</div>
