@@ -133,3 +133,91 @@ export const homeFaqJsonLd = {
     { "@type": "Question", "name": "Does Logic Pac handle fulfillment and kitting?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our Salt Lake City warehouse handles product kitting, assembly, and ships direct to retail, DTC, or individual recipients." } }
   ]
 }
+
+export const guidesCollectionJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Logic Pac Packaging Guides",
+  "description": "In-depth guides on custom packaging design, influencer kit production, and packaging finishes from Logic Pac.",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://logicpac.com/guides/influencer-kit-playbook",
+      "name": "The Influencer Kit Playbook: How to Design PR Mailers That Get Posted"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://logicpac.com/guides/packaging-finish-guide",
+      "name": "The Definitive Guide to Packaging Finishes: Soft-Touch, Foil Stamp, Spot UV & Emboss"
+    }
+  ]
+}
+
+export const influencerPlaybookJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Influencer Kit Playbook: How to Design PR Mailers That Get Posted",
+  "description": "A comprehensive guide to designing and producing influencer kits and PR mailers that generate organic content. Covers kit structures, finishes, personalization, timelines, and budgets.",
+  "author": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com" },
+  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com", "logo": { "@type": "ImageObject", "url": "https://logicpac.com/images/logo.png" } },
+  "datePublished": "2025-03-01",
+  "dateModified": "2025-03-01",
+  "image": [
+    "https://logicpac.com/images/portfolio/influencer-kits.jpg",
+    "https://logicpac.com/images/portfolio/velvet-interior-unboxing-kit.jpeg",
+    "https://logicpac.com/images/portfolio/skincare-launch-pr-mailer.jpg"
+  ],
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logicpac.com/guides/influencer-kit-playbook" }
+}
+
+export const playbookFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Influencer Kit Playbook FAQs",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the minimum order for custom influencer kits?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom influencer kits start at 50 to 100 units. Pricing improves significantly at 500+ units. Simpler mailer configurations can sometimes start lower." } },
+    { "@type": "Question", "name": "How long does it take to produce a custom influencer kit?", "acceptedAnswer": { "@type": "Answer", "text": "Simpler configurations can ship in 6 weeks. Fully custom builds with rigid structures, specialty finishes, and custom inserts typically require 10 to 12 weeks." } },
+    { "@type": "Question", "name": "What makes an influencer kit shareable?", "acceptedAnswer": { "@type": "Answer", "text": "A distinctive outer structure, layered reveals that extend the filming moment, personalized elements like foil-stamped names, and high-quality materials that signal brand investment all drive organic sharing." } },
+    { "@type": "Question", "name": "Can you personalize kits at scale with creator names?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Options include foil-stamped names, custom stickers, variable-print inserts, and handwritten note cards. The right approach depends on your quantity and budget." } },
+    { "@type": "Question", "name": "Do you work directly with PR agencies?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Most of our influencer kit projects start with a brief from a PR agency or creative studio. We coordinate production and delivery without pulling in the end client." } },
+    { "@type": "Question", "name": "What's the typical budget range for influencer kits?", "acceptedAnswer": { "@type": "Answer", "text": "Costs vary by structure and quantity. Simple mailer boxes start around $8 to $15 per unit at 500+. Fully custom rigid kits with specialty finishes range from $25 to $75+ per unit depending on complexity." } }
+  ]
+}
+
+export const finishGuideJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Definitive Guide to Packaging Finishes: Soft-Touch, Foil Stamp, Spot UV & Emboss",
+  "description": "A comprehensive reference guide covering soft-touch lamination, foil stamping, spot UV coating, embossing, and debossing for custom packaging. Includes comparisons, cost considerations, and file prep guidance.",
+  "author": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com" },
+  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com", "logo": { "@type": "ImageObject", "url": "https://logicpac.com/images/logo.png" } },
+  "datePublished": "2025-03-01",
+  "dateModified": "2025-03-01",
+  "image": [
+    "https://logicpac.com/images/portfolio/soft-touch-spot-uv.jpg",
+    "https://logicpac.com/images/portfolio/foil-stamped-cylinder.jpeg"
+  ],
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logicpac.com/guides/packaging-finish-guide" },
+  "about": [
+    { "@type": "Thing", "name": "Soft-touch lamination" },
+    { "@type": "Thing", "name": "Foil stamping" },
+    { "@type": "Thing", "name": "Spot UV coating" },
+    { "@type": "Thing", "name": "Embossing and debossing" }
+  ]
+}
+
+export const finishGuideFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Packaging Finish Guide FAQs",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the difference between soft-touch and matte lamination?", "acceptedAnswer": { "@type": "Answer", "text": "Matte lamination reduces glare and provides a smooth, non-glossy surface. Soft-touch lamination adds a velvety, tactile texture that feels premium to the touch. Soft-touch costs more but creates a significantly more luxurious unboxing experience." } },
+    { "@type": "Question", "name": "Can you combine spot UV and soft-touch lamination?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it's one of the most popular finish combinations. The contrast between the velvety soft-touch base and the glossy raised spot UV creates a striking visual and tactile effect." } },
+    { "@type": "Question", "name": "What's the minimum order for foil stamping?", "acceptedAnswer": { "@type": "Answer", "text": "Foil stamping typically starts at 500 units due to the die setup costs. The die itself is a one-time cost that can be reused for future orders." } },
+    { "@type": "Question", "name": "What's the difference between embossing and debossing?", "acceptedAnswer": { "@type": "Answer", "text": "Embossing raises elements above the surface of the material, creating a three-dimensional effect you can feel. Debossing presses elements into the surface, creating an indented effect. Both use a custom die." } },
+    { "@type": "Question", "name": "Which finishes work best for beauty and cosmetic packaging?", "acceptedAnswer": { "@type": "Answer", "text": "Soft-touch lamination with spot UV is the industry standard for premium beauty packaging. Foil stamping adds luxury positioning. The right combination depends on brand positioning, budget, and substrate." } },
+    { "@type": "Question", "name": "How do I prepare files for specialty finishes?", "acceptedAnswer": { "@type": "Answer", "text": "Spot UV and foil areas need a separate layer or spot color in your design file. Embossing requires vector artwork with clear depth specifications. Your packaging vendor should provide a finish-specific dieline template." } }
+  ]
+}

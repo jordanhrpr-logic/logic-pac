@@ -32,6 +32,12 @@ export default function Footer() {
           <Link href="/work">Our Work</Link>
         </div>
         <div className="ftrc">
+          <h4>Guides</h4>
+          <Link href="/guides">Packaging Guides</Link>
+          <Link href="/guides/influencer-kit-playbook">Influencer Kit Playbook</Link>
+          <Link href="/guides/packaging-finish-guide">Finish Guide</Link>
+        </div>
+        <div className="ftrc">
           <h4>Company</h4>
           <a href="https://logicagencyinc.com" target="_blank" rel="noopener">Logic Agency Inc.</a>
           <a onClick={() => openModal()} style={{ cursor: 'pointer' }}>Book a Call</a>
