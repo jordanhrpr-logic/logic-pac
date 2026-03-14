@@ -357,7 +357,7 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .phdr+.gidx{margin-top:0}
 /* ── GUIDE DETAIL ── */
 .guide-wrap{display:grid;grid-template-columns:220px 1fr;gap:48px;max-width:1060px;margin:0 auto;padding:56px 48px 80px}
-.gtoc{position:sticky;top:88px;align-self:start;padding:0;display:flex;flex-direction:column}
+.gtoc{position:sticky;top:88px;align-self:start;padding:0;display:flex;flex-direction:column;background:none;backdrop-filter:none;border:none;border-bottom:none;height:auto;z-index:1;align-items:stretch;justify-content:flex-start}
 .gtoc h4{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--slate);margin-bottom:16px}
 .gtoc a{display:block;font-size:13px;color:var(--slate);text-decoration:none;padding:6px 0 6px 14px;border-left:2px solid var(--ice);margin-bottom:2px;transition:color .2s,border-color .2s}
 .gtoc a:hover{color:var(--navy)}

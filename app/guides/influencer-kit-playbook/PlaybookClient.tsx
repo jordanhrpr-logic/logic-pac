@@ -59,12 +59,12 @@ export default function PlaybookClient() {
       </div>
 
       <div className="guide-wrap">
-        <nav className="gtoc">
+        <aside className="gtoc">
           <h4>Contents</h4>
           {tocSections.map(s => (
             <a key={s.id} href={`#${s.id}`} className={activeSection === s.id ? 'act' : ''}>{s.label}</a>
           ))}
-        </nav>
+        </aside>
 
         <div className="guide-main">
           <div className="seo">
