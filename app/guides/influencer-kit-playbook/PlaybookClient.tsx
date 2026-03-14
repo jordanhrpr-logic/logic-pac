@@ -15,7 +15,6 @@ const tocSections = [
   { id: 'timeline', label: 'Timeline & Planning' },
   { id: 'agencies', label: 'Working with Agencies' },
   { id: 'budget', label: 'Budget & MOQs' },
-  { id: 'faq', label: 'FAQs' },
 ]
 
 const playbookFaqs = [
@@ -54,7 +53,7 @@ export default function PlaybookClient() {
   return (
     <>
       <div className="phdr">
-        <div className="ey">Playbook</div>
+        <div className="ey inv">Playbook</div>
         <h1>The Influencer Kit Playbook</h1>
         <p>How to Design PR Mailers That Get Posted</p>
       </div>
@@ -82,7 +81,7 @@ export default function PlaybookClient() {
             <h2 id="anatomy">Anatomy of a High-Performing Influencer Kit</h2>
             <p>Every kit that generates content follows the same structural logic: surprise, reveal, delight. Here&apos;s how each layer contributes to the unboxing moment.</p>
 
-            <Image src="/images/portfolio/influencer-kits.jpg" alt="Custom influencer kit with branded packaging and layered reveals" width={800} height={500} className="guide-img" />
+            <Image src="/images/portfolio/influencer-kits.jpg" alt="Custom influencer kit with branded packaging and layered reveals" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h3>The Outer Mailer</h3>
             <p>The outer box is the first impression. It needs to survive shipping, arrive clean, and set the tone before it&apos;s even opened. Options include corrugated mailer boxes with full-color printing, rigid magnetic closure boxes for luxury positioning, and drawer-style boxes for a dramatic reveal.</p>
@@ -90,7 +89,7 @@ export default function PlaybookClient() {
             <h3>The Reveal Structure</h3>
             <p>The interior architecture is what makes the difference between &ldquo;nice packaging&rdquo; and &ldquo;I have to film this.&rdquo; Layer-by-layer reveals, magnetic lids that open slowly, ribbon lifts, and nested compartments all extend the filming moment and give creators more content to work with.</p>
 
-            <Image src="/images/portfolio/velvet-interior-unboxing-kit.jpeg" alt="Velvet interior unboxing kit with custom inserts" width={800} height={500} className="guide-img" />
+            <Image src="/images/portfolio/velvet-interior-unboxing-kit.jpeg" alt="Velvet interior unboxing kit with custom inserts" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h3>Product Nesting</h3>
             <p>Products should be held securely and presented beautifully. Custom foam inserts, die-cut cardboard, or fabric-lined compartments each serve different brand positions. The key is that every product has a dedicated home that feels intentional.</p>
@@ -101,45 +100,47 @@ export default function PlaybookClient() {
             <h3>Personalized Inserts</h3>
             <p>A card with the creator&apos;s name, a personalized note, or a custom product recommendation shows the relationship is real &mdash; not spray-and-pray. This drives emotional response and makes creators more likely to post.</p>
 
-            <Image src="/images/portfolio/skincare-launch-pr-mailer.jpg" alt="Skincare brand launch PR mailer with custom packaging" width={800} height={500} className="guide-img" />
+            <Image src="/images/portfolio/skincare-launch-pr-mailer.jpg" alt="Skincare brand launch PR mailer with custom packaging" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="structures">Choosing Your Kit Structure</h2>
             <p>The right structure depends on your budget, quantity, timeline, and brand positioning. Here&apos;s how the three most common options compare.</p>
 
-            <table className="guide-tbl">
-              <thead>
-                <tr>
-                  <th>Structure</th>
-                  <th>Best For</th>
-                  <th>MOQ</th>
-                  <th>Cost Range</th>
-                  <th>Lead Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Rigid Magnetic Box</strong></td>
-                  <td>Luxury positioning, high-value sends</td>
-                  <td>200&ndash;500</td>
-                  <td>$25&ndash;75/unit</td>
-                  <td>10&ndash;12 weeks</td>
-                </tr>
-                <tr>
-                  <td><strong>Corrugated Mailer</strong></td>
-                  <td>Large sends, durability, cost efficiency</td>
-                  <td>100&ndash;250</td>
-                  <td>$8&ndash;20/unit</td>
-                  <td>4&ndash;6 weeks</td>
-                </tr>
-                <tr>
-                  <td><strong>Drawer Box</strong></td>
-                  <td>Dramatic reveal, mid-luxury positioning</td>
-                  <td>300&ndash;500</td>
-                  <td>$20&ndash;50/unit</td>
-                  <td>8&ndash;10 weeks</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="guide-tbl-wrap">
+              <table className="guide-tbl">
+                <thead>
+                  <tr>
+                    <th>Structure</th>
+                    <th>Best For</th>
+                    <th>MOQ</th>
+                    <th>Cost Range</th>
+                    <th>Lead Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Rigid Magnetic Box</strong></td>
+                    <td>Luxury positioning, high-value sends</td>
+                    <td>200&ndash;500</td>
+                    <td>$25&ndash;75/unit</td>
+                    <td>10&ndash;12 weeks</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Corrugated Mailer</strong></td>
+                    <td>Large sends, durability, cost efficiency</td>
+                    <td>100&ndash;250</td>
+                    <td>$8&ndash;20/unit</td>
+                    <td>4&ndash;6 weeks</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Drawer Box</strong></td>
+                    <td>Dramatic reveal, mid-luxury positioning</td>
+                    <td>300&ndash;500</td>
+                    <td>$20&ndash;50/unit</td>
+                    <td>8&ndash;10 weeks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <p><strong>Rigid magnetic boxes</strong> are the gold standard for influencer kits. The magnetic closure creates a slow, satisfying open that works perfectly on camera. The structure is substantial enough to feel premium and sturdy enough to be kept and reused &mdash; extending brand exposure beyond the unboxing moment.</p>
             <p><strong>Corrugated mailers</strong> are the workhorse of PR sends. They&apos;re cost-effective at higher quantities, print beautifully with full-color graphics, and survive shipping without issue. They won&apos;t feel as premium as rigid, but they&apos;re the right choice when you need to reach a larger list.</p>
@@ -148,7 +149,7 @@ export default function PlaybookClient() {
             <h2 id="finishes">Finishes That Pop on Camera</h2>
             <p>The right finish elevates a kit from &ldquo;professional&rdquo; to &ldquo;stunning.&rdquo; These are the finishes that photograph and film best.</p>
 
-            <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft-touch lamination with spot UV finishing on custom packaging" width={800} height={500} className="guide-img" />
+            <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft-touch lamination with spot UV finishing on custom packaging" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h3>Soft-Touch Lamination</h3>
             <p>A velvety, matte texture that feels luxurious to the touch. It photographs as a rich, deep matte and creates an immediate tactile impression when the box is first handled. This is the single most impactful finish for influencer kits.</p>
@@ -156,7 +157,7 @@ export default function PlaybookClient() {
             <h3>Foil Stamping</h3>
             <p>Metallic foil (gold, silver, rose gold, holographic) catches light beautifully on camera. Use it for logos, creator names, or accent elements. The sheen creates a premium feel that&apos;s immediately recognizable in video content.</p>
 
-            <Image src="/images/portfolio/foil-stamped-cylinder.jpeg" alt="Foil stamped custom packaging cylinder" width={800} height={500} className="guide-img" />
+            <Image src="/images/portfolio/foil-stamped-cylinder.jpeg" alt="Foil stamped custom packaging cylinder" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h3>Spot UV</h3>
             <p>A glossy, raised coating applied to specific areas over a matte base. The contrast between the soft-touch matte background and the glossy spot UV creates a striking visual and tactile effect. Logos, patterns, and text all work well in spot UV.</p>
@@ -234,42 +235,44 @@ export default function PlaybookClient() {
             <h2 id="budget">Budget Ranges &amp; MOQs</h2>
             <p>Transparent pricing is rare in custom packaging. Here are realistic ranges based on our production experience.</p>
 
-            <table className="guide-tbl">
-              <thead>
-                <tr>
-                  <th>Kit Type</th>
-                  <th>Per-Unit Cost (500 units)</th>
-                  <th>Per-Unit Cost (1,000+)</th>
-                  <th>Typical MOQ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Simple Mailer Box</strong></td>
-                  <td>$8&ndash;15</td>
-                  <td>$5&ndash;10</td>
-                  <td>100&ndash;250</td>
-                </tr>
-                <tr>
-                  <td><strong>Mailer + Custom Inserts</strong></td>
-                  <td>$15&ndash;25</td>
-                  <td>$10&ndash;18</td>
-                  <td>200&ndash;500</td>
-                </tr>
-                <tr>
-                  <td><strong>Rigid Magnetic Box</strong></td>
-                  <td>$25&ndash;50</td>
-                  <td>$18&ndash;35</td>
-                  <td>200&ndash;500</td>
-                </tr>
-                <tr>
-                  <td><strong>Luxury Multi-Layer Kit</strong></td>
-                  <td>$50&ndash;75+</td>
-                  <td>$35&ndash;55</td>
-                  <td>300&ndash;500</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="guide-tbl-wrap">
+              <table className="guide-tbl">
+                <thead>
+                  <tr>
+                    <th>Kit Type</th>
+                    <th>Per-Unit Cost (500 units)</th>
+                    <th>Per-Unit Cost (1,000+)</th>
+                    <th>Typical MOQ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Simple Mailer Box</strong></td>
+                    <td>$8&ndash;15</td>
+                    <td>$5&ndash;10</td>
+                    <td>100&ndash;250</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mailer + Custom Inserts</strong></td>
+                    <td>$15&ndash;25</td>
+                    <td>$10&ndash;18</td>
+                    <td>200&ndash;500</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Rigid Magnetic Box</strong></td>
+                    <td>$25&ndash;50</td>
+                    <td>$18&ndash;35</td>
+                    <td>200&ndash;500</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Luxury Multi-Layer Kit</strong></td>
+                    <td>$50&ndash;75+</td>
+                    <td>$35&ndash;55</td>
+                    <td>300&ndash;500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <p><strong>What drives cost up:</strong></p>
             <ul>
@@ -294,16 +297,22 @@ export default function PlaybookClient() {
               <button className="bi" onClick={() => openModal('Guide - Influencer Kit')}>Book a Consultation</button>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div id="faq" style={{ scrollMarginTop: 80 }}>
-            <FAQSidebar
-              eyebrow="Quick Answers"
-              title="Influencer Kit FAQs"
-              faqs={playbookFaqs}
-              ctaText="Book an Influencer Consultation"
-              ctaProjectType="Guide - Influencer Kit"
-            />
+      <div className="guide-faq">
+        <div className="guide-faq-inner">
+          <div className="guide-faq-content">
+            <h2>Still Have Questions?</h2>
+            <p>Here are the most common questions we get about influencer kit production. If you don&apos;t see your question, book a call and we&apos;ll give you a straight answer.</p>
           </div>
+          <FAQSidebar
+            eyebrow="Quick Answers"
+            title="Influencer Kit FAQs"
+            faqs={playbookFaqs}
+            ctaText="Book an Influencer Consultation"
+            ctaProjectType="Guide - Influencer Kit"
+          />
         </div>
       </div>
 
