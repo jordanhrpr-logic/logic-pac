@@ -93,6 +93,8 @@ export default function HomeClient() {
           <Link href="/work" className="ge ge-i" style={{ background: 'linear-gradient(135deg,#4a1942,#c06c84)' }}><div className="geov"><div className="gecat">Primary Packaging</div><div className="genm">Beauty Jar</div></div></Link>
           {/* TODO: replace gradient with uploaded image */}
           <Link href="/work" className="ge ge-j" style={{ background: 'linear-gradient(135deg,#2c3e50,#4ca1af)' }}><div className="geov"><div className="gecat">Primary Packaging</div><div className="genm">Beauty Bottle</div></div></Link>
+          <Link href="/work" className="ge ge-k" style={{ background: 'linear-gradient(135deg,#1e3c72,#0f2027)' }}><Image src="/images/portfolio/holiday-kits.jpeg" alt="Holiday Gift Set Collection — multi-SKU packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 25vw" /><div className="geov"><div className="gecat">Holiday Kits</div><div className="genm">Holiday Gift Set Collection</div></div></Link>
+          <Link href="/work" className="ge ge-l" style={{ background: 'linear-gradient(135deg,#141e30,#360033)' }}><div className="geov"><div className="gecat">Influencer &amp; PR</div><div className="genm">Personalized Foil Campaign</div></div></Link>
         </div>
         <div style={{ padding: '36px 80px 0' }}><Link href="/work" className="bo">View Full Portfolio &amp; Case Studies</Link></div>
       </ScrollReveal>
