@@ -3,8 +3,8 @@ export const organizationJsonLd = {
   "@type": "Organization",
   "name": "Logic Pac",
   "alternateName": "Logic Pac by Logic Agency Inc.",
-  "url": "https://logicpac.com",
-  "logo": "https://logicpac.com/images/logo.png",
+  "url": "https://logic-pac.com",
+  "logo": "https://logic-pac.com/images/logo.png",
   "description": "Logic Pac is a custom packaging development partner specializing in structural design, global sourcing, and fulfillment for beauty, cosmetic, and consumer brands. Backed by Logic Agency Inc., with 20+ years in supply chain operations across 15+ countries.",
   "parentOrganization": {
     "@type": "Organization",
@@ -34,7 +34,7 @@ export const localBusinessJsonLd = {
   "@type": "LocalBusiness",
   "name": "Logic Pac",
   "description": "Custom packaging development partner for beauty, cosmetic, and consumer brands. Structural design, global manufacturing, holiday kits, influencer kits, and fulfillment.",
-  "url": "https://logicpac.com",
+  "url": "https://logic-pac.com",
   "telephone": "+18012516225",
   "email": "jordan@logicagencyinc.com",
   "address": { "@type": "PostalAddress", "addressLocality": "Orange County", "addressRegion": "CA", "addressCountry": "US" },
@@ -57,7 +57,7 @@ export const websiteJsonLd = {
   "@type": "WebSite",
   "name": "Logic Pac",
   "alternateName": "Logic Pac Custom Packaging",
-  "url": "https://logicpac.com",
+  "url": "https://logic-pac.com",
   "description": "Custom packaging company for beauty, cosmetic, and consumer brands. Holiday gift set manufacturer, influencer kit producer, folding carton supplier, and rigid box manufacturer.",
   "publisher": { "@type": "Organization", "name": "Logic Pac" }
 }
@@ -68,7 +68,7 @@ export const holidayServiceJsonLd = {
   "name": "Holiday Gift Set Packaging",
   "alternateName": "Custom Holiday Kit Manufacturing",
   "description": "Full-service holiday gift set packaging for beauty and cosmetic brands. Rigid boxes, advent calendars, multi-component kits, kitting, assembly, and retail compliance for Ulta, Sephora, and Target.",
-  "provider": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com" },
+  "provider": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com" },
   "serviceType": "Custom Packaging Manufacturing",
   "areaServed": "US",
   "hasOfferCatalog": {
@@ -89,7 +89,7 @@ export const influencerServiceJsonLd = {
   "name": "Influencer Kit & PR Mailer Production",
   "alternateName": "Custom PR Kit Manufacturing",
   "description": "Custom influencer kits and PR mailers designed for unboxing. 50 to 5,000+ units with structural packaging, branded inserts, kitting, and direct-to-recipient fulfillment.",
-  "provider": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com" },
+  "provider": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com" },
   "serviceType": "Custom Packaging Manufacturing",
   "areaServed": "US"
 }
@@ -143,13 +143,13 @@ export const guidesCollectionJsonLd = {
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://logicpac.com/guides/influencer-kit-playbook",
+      "url": "https://logic-pac.com/guides/influencer-kit-playbook",
       "name": "The Influencer Kit Playbook: How to Design PR Mailers That Get Posted"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://logicpac.com/guides/packaging-finish-guide",
+      "url": "https://logic-pac.com/guides/packaging-finish-guide",
       "name": "The Definitive Guide to Packaging Finishes: Soft-Touch, Foil Stamp, Spot UV & Emboss"
     }
   ]
@@ -160,16 +160,16 @@ export const influencerPlaybookJsonLd = {
   "@type": "Article",
   "headline": "The Influencer Kit Playbook: How to Design PR Mailers That Get Posted",
   "description": "A comprehensive guide to designing and producing influencer kits and PR mailers that generate organic content. Covers kit structures, finishes, personalization, timelines, and budgets.",
-  "author": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com" },
-  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com", "logo": { "@type": "ImageObject", "url": "https://logicpac.com/images/logo.png" } },
+  "author": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com" },
+  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com", "logo": { "@type": "ImageObject", "url": "https://logic-pac.com/images/logo.png" } },
   "datePublished": "2025-03-01",
   "dateModified": "2025-03-01",
   "image": [
-    "https://logicpac.com/images/portfolio/influencer-kits.jpg",
-    "https://logicpac.com/images/portfolio/velvet-interior-unboxing-kit.jpeg",
-    "https://logicpac.com/images/portfolio/skincare-launch-pr-mailer.jpg"
+    "https://logic-pac.com/images/portfolio/influencer-kits.jpg",
+    "https://logic-pac.com/images/portfolio/velvet-interior-unboxing-kit.jpeg",
+    "https://logic-pac.com/images/portfolio/skincare-launch-pr-mailer.jpg"
   ],
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logicpac.com/guides/influencer-kit-playbook" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logic-pac.com/guides/influencer-kit-playbook" }
 }
 
 export const playbookFaqJsonLd = {
@@ -191,15 +191,15 @@ export const finishGuideJsonLd = {
   "@type": "Article",
   "headline": "The Definitive Guide to Packaging Finishes: Soft-Touch, Foil Stamp, Spot UV & Emboss",
   "description": "A comprehensive reference guide covering soft-touch lamination, foil stamping, spot UV coating, embossing, and debossing for custom packaging. Includes comparisons, cost considerations, and file prep guidance.",
-  "author": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com" },
-  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logicpac.com", "logo": { "@type": "ImageObject", "url": "https://logicpac.com/images/logo.png" } },
+  "author": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com" },
+  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com", "logo": { "@type": "ImageObject", "url": "https://logic-pac.com/images/logo.png" } },
   "datePublished": "2025-03-01",
   "dateModified": "2025-03-01",
   "image": [
-    "https://logicpac.com/images/portfolio/soft-touch-spot-uv.jpg",
-    "https://logicpac.com/images/portfolio/foil-stamped-cylinder.jpeg"
+    "https://logic-pac.com/images/portfolio/soft-touch-spot-uv.jpg",
+    "https://logic-pac.com/images/portfolio/foil-stamped-cylinder.jpeg"
   ],
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logicpac.com/guides/packaging-finish-guide" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logic-pac.com/guides/packaging-finish-guide" },
   "about": [
     { "@type": "Thing", "name": "Soft-touch lamination" },
     { "@type": "Thing", "name": "Foil stamping" },
