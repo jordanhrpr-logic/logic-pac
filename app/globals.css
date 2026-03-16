@@ -115,6 +115,10 @@ nav .nav-toggle span{background:var(--navy)}
 .ge-f{grid-column:span 5}
 .ge-g{grid-column:span 4}
 .ge-h{grid-column:span 3}
+.ge-i{grid-column:span 3}
+.ge-j{grid-column:span 3}
+.ge-k{grid-column:span 3}
+.ge-l{grid-column:span 3}
 /* ── IMAGE PLACEHOLDERS ── */
 .img-placeholder{min-height:220px;width:100%;display:flex;align-items:center;justify-content:center;position:relative}
 .img-placeholder.hero-img{min-height:260px}
