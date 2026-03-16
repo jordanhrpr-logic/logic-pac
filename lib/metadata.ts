@@ -17,7 +17,7 @@ export const organizationJsonLd = {
     { "@type": "PostalAddress", "addressLocality": "Salt Lake City", "addressRegion": "UT", "addressCountry": "US" }
   ],
   "telephone": "+18012516225",
-  "email": "jordan@logicagencyinc.com",
+  "email": "sean@logicagencyinc.com",
   "areaServed": "US",
   "knowsAbout": [
     "Custom packaging design", "Custom packaging company", "Beauty packaging manufacturer",
@@ -36,7 +36,7 @@ export const localBusinessJsonLd = {
   "description": "Custom packaging development partner for beauty, cosmetic, and consumer brands. Structural design, global manufacturing, holiday kits, influencer kits, and fulfillment.",
   "url": "https://logic-pac.com",
   "telephone": "+18012516225",
-  "email": "jordan@logicagencyinc.com",
+  "email": "sean@logicagencyinc.com",
   "address": { "@type": "PostalAddress", "addressLocality": "Orange County", "addressRegion": "CA", "addressCountry": "US" },
   "priceRange": "$$$$",
   "openingHours": "Mo-Fr 08:00-18:00",
