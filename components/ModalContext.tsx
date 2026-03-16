@@ -19,16 +19,8 @@ export function ModalProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState('')
   const [submitting, setSubmitting] = useState(false)
 
-  const openModal = useCallback((projectType?: string) => {
-    setIsOpen(true)
-    setShowSuccess(false)
-    setError('')
-    setSelectedProject(projectType || '')
-    document.body.style.overflow = 'hidden'
-    setTimeout(() => {
-      const fn = document.getElementById('fn') as HTMLInputElement | null
-      if (fn) fn.focus()
-    }, 100)
+  const openModal = useCallback((_projectType?: string) => {
+    window.open('https://calendly.com/sean-logicagencyinc/30min?month=2026-03', '_blank', 'noopener,noreferrer')
   }, [])
 
   const closeModal = useCallback(() => {
@@ -55,7 +47,7 @@ export function ModalProvider({ children }: { children: ReactNode }) {
         throw new Error(d.errors ? d.errors.map((x: { message: string }) => x.message).join(', ') : 'Failed')
       }
     } catch {
-      setError('Something went wrong. Please email jordan@logicagencyinc.com directly.')
+      setError('Something went wrong. Please email sean@logicagencyinc.com directly.')
     } finally {
       setSubmitting(false)
     }
@@ -129,7 +121,7 @@ export function ModalProvider({ children }: { children: ReactNode }) {
             <div className="succ">
               <div className="ck">&#x2705;</div>
               <h3>You&apos;re on the calendar.</h3>
-              <p>We&apos;ll reach out within one business day.<br />Email: <strong><a href="mailto:jordan@logicagencyinc.com">jordan@logicagencyinc.com</a></strong></p>
+              <p>We&apos;ll reach out within one business day.<br />Email: <strong><a href="mailto:sean@logicagencyinc.com">sean@logicagencyinc.com</a></strong></p>
               <button className="bo" onClick={closeModal} style={{ marginTop: 20 }}>Close</button>
             </div>
           )}

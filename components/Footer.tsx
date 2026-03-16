@@ -41,7 +41,7 @@ export default function Footer() {
           <h4>Company</h4>
           <a href="https://logicagencyinc.com" target="_blank" rel="noopener">Logic Agency Inc.</a>
           <a onClick={() => openModal()} style={{ cursor: 'pointer' }}>Book a Call</a>
-          <a href="mailto:jordan@logicagencyinc.com">jordan@logicagencyinc.com</a>
+          <a href="mailto:sean@logicagencyinc.com">sean@logicagencyinc.com</a>
           <a href="tel:8012516225">(801) 251-6225</a>
         </div>
       </div>
