@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://logicpac.com/sitemap.xml
+Sitemap: https://logic-pac.com/sitemap.xml
