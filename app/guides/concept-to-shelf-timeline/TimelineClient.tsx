@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import Image from 'next/image'
 
 const tocSections = [
   { id: 'why', label: 'Why timelines slip' },
@@ -101,6 +102,8 @@ export default function TimelineClient() {
               </ol>
             </div>
 
+            <Image src="/images/guides/portfolio-finished-production.jpg" alt="Futuremood premium rigid boxes with gold foil and foam inserts — finished production quality" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
+
             <h2 id="discovery"><span className="num">02.</span>Weeks 1&ndash;2 &middot; Discovery &amp; Briefing</h2>
             <p>This is where everything gets defined. Materials, sustainability requirements, budget parameters, brand guidelines, distribution channels, performance specs, and the shelf context the package needs to compete in.</p>
             <p><strong>What it looks like:</strong> stakeholder meetings, brand questionnaires, technical spec documentation, target sample collection. Nothing physical happens. It&rsquo;s all alignment.</p>
@@ -172,6 +175,8 @@ export default function TimelineClient() {
                 </tbody>
               </table>
             </div>
+
+            <Image src="/images/guides/concept-to-shelf-timeline.png" alt="12-week concept-to-shelf packaging timeline — design, prototyping, tooling, production, and freight phases" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="checklist"><span className="num">09.</span>The phase-gate checklist</h2>
             <p>Use this at the end of each phase. If you can&rsquo;t answer yes to every item in a gate, don&rsquo;t move forward &mdash; the cost of fixing it later is higher than the cost of waiting now.</p>

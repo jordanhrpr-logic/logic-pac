@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import Image from 'next/image'
 
 const tocSections = [
   { id: 'why', label: 'Why a brief matters' },
@@ -102,6 +103,8 @@ export default function BriefClient() {
               </ol>
             </div>
 
+            <Image src="/images/guides/portfolio-structural-engineering.jpg" alt="Zee Dog structural packaging with wing-opening rigid box, foam insert, and instructional panel" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
+
             <h2 id="sections"><span className="num">02.</span>The ten sections every brief needs</h2>
 
             <h3>1. Project context &amp; objective</h3>
@@ -140,6 +143,8 @@ export default function BriefClient() {
 
             <h3>10. Stakeholder approval chain</h3>
             <p>Who signs off on what. Brand approves aesthetics. Ops approves cost and supply chain. Regulatory approves claims and compliance. Founder/CEO if applicable. Knowing the approval chain on day one prevents week-six surprises.</p>
+
+            <Image src="/images/guides/packaging-brief-checklist.png" alt="The 10 essential sections of a packaging brief — visual checklist from project context to stakeholder approval" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="omissions"><span className="num">03.</span>The seven most common omissions &mdash; and what they cost</h2>
 

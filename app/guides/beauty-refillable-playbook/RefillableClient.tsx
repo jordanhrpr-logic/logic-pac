@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import Image from 'next/image'
 
 const tocSections = [
   { id: 'why', label: 'Why refillables matter now' },
@@ -107,6 +108,8 @@ export default function RefillableClient() {
               </ol>
             </div>
 
+            <Image src="/images/guides/portfolio-modular-kit-system.jpg" alt="Epicutis modular packaging kit system with drawer boxes and multiple product components" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
+
             <h2 id="models"><span className="num">02.</span>The three refillable models</h2>
 
             <h3>Model 1 &middot; Drop-in refill</h3>
@@ -132,6 +135,8 @@ export default function RefillableClient() {
               <li><strong>Strength:</strong> strongest theoretical sustainability footprint</li>
               <li><strong>Weakness:</strong> hardest infrastructure to scale; consumer adoption is the bottleneck</li>
             </ul>
+
+            <Image src="/images/guides/refillable-system-diagram.png" alt="Three refillable packaging architectures — cartridge pod-swap, pump-swap, and pour-refill systems compared" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="works"><span className="num">03.</span>When refillables work</h2>
             <p>Refillability earns its sustainability claim when the system delivers real reuse at meaningful scale. The conditions that have to be true:</p>

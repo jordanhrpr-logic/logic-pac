@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import Image from 'next/image'
 
 const tocSections = [
   { id: 'why', label: 'Why This Guide Exists' },
@@ -95,6 +96,8 @@ export default function SustainableClient() {
                 </ol>
               </div>
             </section>
+
+            <Image src="/images/guides/portfolio-aluminum-tins.jpg" alt="Huxton aluminum tin packaging with decorative illustrations — infinitely recyclable mono-material format" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             {/* 1. SPECTRUM */}
             <section id="spectrum">
@@ -273,6 +276,8 @@ export default function SustainableClient() {
                 The bottom line: every sustainability claim on beauty packaging shipping after August 2026 needs to survive a regulator audit. <strong>Verifiable, certified, jurisdictionally specific.</strong>
               </div>
             </section>
+
+            <Image src="/images/guides/sustainability-certifications.png" alt="Sustainability certification landscape — FSC, BPI, Cradle to Cradle, How2Recycle, EU PPWR, and California SB 54 compared" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             {/* 5. CLAIMS HYGIENE */}
             <section id="claims">

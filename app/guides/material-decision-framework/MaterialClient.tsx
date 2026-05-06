@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
@@ -104,6 +105,8 @@ export default function MaterialClient() {
               </ol>
             </div>
 
+            <Image src="/images/guides/portfolio-material-diversity.jpg" alt="Multiple packaging formats and materials across beauty brands — glass, rigid boxes, folding cartons, and specialty finishes" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
+
             <h2 id="five"><span className="num">02.</span>The five core materials</h2>
 
             <h3>Glass</h3>
@@ -130,6 +133,8 @@ export default function MaterialClient() {
             <p>Made from recycled paper pulp reformed under heat and pressure. Compostable, FSC-certifiable, increasingly premium. The fastest-growing sustainable secondary packaging format in beauty.</p>
             <p><strong>Where it works:</strong> inserts, structural protection, e-commerce mailers, gift sets, premium boxes &mdash; anywhere you&apos;d previously use plastic clamshells or foam.<br />
             <strong>Where it fails:</strong> primary packaging for liquids without a polymer barrier. Products that need a hermetic seal.</p>
+
+            <Image src="/images/guides/material-comparison-grid.png" alt="Material comparison grid — Glass, PET, HDPE, Aluminum, and Molded Fiber compared across weight, recyclability, MOQ, and best use cases" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="category"><span className="num">03.</span>The decision matrix &mdash; by category</h2>
             <p>Different beauty categories have different physical requirements, perception expectations, and channel constraints. Here&apos;s where each material lands by category.</p>
