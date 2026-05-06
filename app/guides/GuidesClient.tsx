@@ -20,6 +20,46 @@ const guides = [
     image: '/images/portfolio/soft-touch-spot-uv.jpg',
     gradient: 'linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)',
   },
+  {
+    slug: 'sustainable-beauty-packaging',
+    tag: 'Playbook',
+    title: 'The Sustainable Beauty Packaging Playbook: Material, Claims & Compliance',
+    description: 'PCR content, mono-material design, EU PPWR, California SB 54, greenwashing risks, cost modeling, and implementation roadmaps for beauty brands.',
+    image: '/images/portfolio/soft-touch-spot-uv.jpg',
+    gradient: 'linear-gradient(135deg,#0d2818,#1a4a2e,#2d6a4f)',
+  },
+  {
+    slug: 'material-decision-framework',
+    tag: 'Reference Guide',
+    title: "The Beauty Brand's Material Decision Framework",
+    description: 'Glass, PET, HDPE, aluminum, and molded fiber — how to choose the right material by product category, channel, and stage.',
+    image: '/images/portfolio/soft-touch-spot-uv.jpg',
+    gradient: 'linear-gradient(135deg,#1a1a2e,#2d1b69,#4a1a8a)',
+  },
+  {
+    slug: 'beauty-refillable-playbook',
+    tag: 'Playbook',
+    title: 'The Beauty Brand Refillable Packaging Playbook',
+    description: 'Refill formats, material selection, consumer behavior, cost modeling, regulatory compliance, and implementation timelines.',
+    image: '/images/portfolio/soft-touch-spot-uv.jpg',
+    gradient: 'linear-gradient(135deg,#0f2027,#1a3a4a,#2c5364)',
+  },
+  {
+    slug: 'concept-to-shelf-timeline',
+    tag: 'Reference Guide',
+    title: 'From Concept to Shelf in 12 Weeks: The Custom Packaging Timeline',
+    description: 'A realistic phase-by-phase timeline for custom packaging development — design, prototyping, tooling, production, and freight.',
+    image: '/images/portfolio/soft-touch-spot-uv.jpg',
+    gradient: 'linear-gradient(135deg,#1a0a2e,#2e1a4a,#4a2c6a)',
+  },
+  {
+    slug: 'packaging-brief-template',
+    tag: 'Template',
+    title: 'The Packaging Brief Template Every Brand Manager Needs',
+    description: 'The ten sections every brief should contain, the omissions that cost weeks, and an annotated sample you can adapt.',
+    image: '/images/portfolio/soft-touch-spot-uv.jpg',
+    gradient: 'linear-gradient(135deg,#2d1b0e,#4a2e1a,#6b3f2c)',
+  },
 ]
 
 export default function GuidesClient() {
