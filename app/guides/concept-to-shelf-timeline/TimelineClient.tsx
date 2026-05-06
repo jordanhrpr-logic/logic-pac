@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import FAQSidebar from '@/components/FAQSidebar'
 import Image from 'next/image'
 
 const tocSections = [
@@ -206,35 +207,33 @@ export default function TimelineClient() {
               <li>Product fits, dispenses, and seals correctly</li>
             </ul>
 
-            <section className="faq-cta-block" id="faq">
-              <div className="ey">Quick Answers</div>
-              <h2>Packaging Timeline <em>FAQs</em></h2>
-              <div className="faq-list">
-                {faqs.map((faq, i) => (
-                  <details key={i}>
-                    <summary>{faq.question}</summary>
-                    <p>{faq.answer}</p>
-                  </details>
-                ))}
-              </div>
-              <div className="cta-final">
-                <p>Most brands lose weeks because the brief was too thin to hold its shape under design pressure. We help you lock the brief, choose the right structural format, and route the work to suppliers who can deliver &mdash; without rebriefing in Week 5.</p>
-                <button className="bp" onClick={() => openModal('Guide - Timeline Consultation')}>Book a Timeline Consultation</button>
-              </div>
-            </section>
-
-            <section className="sources-section">
-              <h2>Sources</h2>
-              <p className="sources-lede">External standards and industry data referenced in this guide. Phase durations and project sequencing are drawn from Logic Pac&rsquo;s own engagement archive.</p>
-              <ul className="sources-list">
-                <li><strong>ASTM International &mdash; Packaging Test Standards</strong> <span>&mdash; D4169 (distribution simulation), D5276 (drop testing), D642 (compression). Referenced for Week 7&ndash;8 sample testing protocols.</span></li>
-                <li><strong>Drewry &amp; Freightos &mdash; Ocean Freight Transit Time Data</strong> <span>&mdash; Asia&ndash;US lane benchmarks: typical 4&ndash;6 week ocean transit plus 1&ndash;2 weeks customs and warehouse intake.</span></li>
-              </ul>
-            </section>
-
           </div>
         </div>
       </div>
+
+      <div className="guide-faq">
+        <div className="guide-faq-inner">
+          <div className="guide-faq-content">
+            <h2>Still Have Questions?</h2>
+            <p>Most brands lose weeks because the brief was too thin to hold its shape under design pressure. We help you lock the brief, choose the right structural format, and route the work to suppliers who can deliver &mdash; without rebriefing in Week 5.</p>
+          </div>
+          <FAQSidebar
+            eyebrow="Quick Answers"
+            title="Packaging Timeline FAQs"
+            faqs={faqs}
+            ctaText="Book a Timeline Consultation"
+            ctaProjectType="Guide - Timeline Consultation"
+          />
+        </div>
+      </div>
+
+      <section className="ctas">
+        <div className="ctai">
+          <h2>Hit the<br /><em>Timeline</em></h2>
+          <p>Twelve weeks is realistic &mdash; if you start with the right brief. Let&apos;s build yours.</p>
+          <button className="bi" onClick={() => openModal('Guide - Timeline Consultation')}>Book a Timeline Consultation</button>
+        </div>
+      </section>
     </>
   )
 }

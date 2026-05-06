@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import FAQSidebar from '@/components/FAQSidebar'
 import Image from 'next/image'
 
 const tocSections = [
@@ -216,26 +217,33 @@ export default function BriefClient() {
             <h2 id="bring"><span className="num">05.</span>Bring it to the table on day one</h2>
             <p>The version above is a clean, fillable template &mdash; the same one we use with every new client. Adapt it to your project, then walk us through it in your kickoff. The brief lock is Gate 1 of every project; the more decisions captured here, the fewer surface in week six.</p>
 
-            <section className="faq-cta-block" id="faq">
-              <div className="ey">Quick Answers</div>
-              <h2>Brief Template <em>FAQs</em></h2>
-              <div className="faq-list">
-                {faqs.map((faq, i) => (
-                  <details key={i}>
-                    <summary>{faq.question}</summary>
-                    <p>{faq.answer}</p>
-                  </details>
-                ))}
-              </div>
-              <div className="cta-final">
-                <p>Bring us your brief &mdash; even in draft &mdash; and we&apos;ll review the gaps, suggest the structural format, and route the work in a single working session.</p>
-                <button className="bp" onClick={() => openModal('Guide - Brief Consultation')}>Book a Brief Consultation</button>
-              </div>
-            </section>
-
           </div>
         </div>
       </div>
+
+      <div className="guide-faq">
+        <div className="guide-faq-inner">
+          <div className="guide-faq-content">
+            <h2>Still Have Questions?</h2>
+            <p>Bring us your brief &mdash; even in draft &mdash; and we&apos;ll review the gaps, suggest the structural format, and route the work in a single working session.</p>
+          </div>
+          <FAQSidebar
+            eyebrow="Quick Answers"
+            title="Packaging Brief FAQs"
+            faqs={faqs}
+            ctaText="Book a Brief Consultation"
+            ctaProjectType="Guide - Brief Consultation"
+          />
+        </div>
+      </div>
+
+      <section className="ctas">
+        <div className="ctai">
+          <h2>Lock the Brief<br /><em>Day One</em></h2>
+          <p>The cost of a 30-minute conversation in week one is approximately zero. The cost of the same decision in week six is two weeks of redesign.</p>
+          <button className="bi" onClick={() => openModal('Guide - Brief Consultation')}>Book a Brief Consultation</button>
+        </div>
+      </section>
     </>
   )
 }

@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import FAQSidebar from '@/components/FAQSidebar'
 import Image from 'next/image'
 
 const tocSections = [
@@ -44,7 +45,6 @@ const faqs = [
 export default function RefillableClient() {
   const { openModal } = useModal()
   const [activeSection, setActiveSection] = useState('')
-  const [openFaq, setOpenFaq] = useState<number | null>(null)
   const observerRef = useRef<IntersectionObserver | null>(null)
 
   useEffect(() => {
@@ -253,38 +253,33 @@ export default function RefillableClient() {
             </ol>
             <p>If you answered yes to all five, you&apos;re ready to design the system. If even one answer is no, you have a different problem to solve first &mdash; usually around customer retention, not packaging.</p>
 
-            <section className="faq-cta-block" id="faq">
-              <div className="ey">Quick Answers</div>
-              <h2>Refillable System <em>FAQs</em></h2>
-              <div className="faq-list">
-                {faqs.map((faq, i) => (
-                  <details key={i} open={openFaq === i} onClick={(e) => { e.preventDefault(); setOpenFaq(openFaq === i ? null : i) }}>
-                    <summary>{faq.question}</summary>
-                    <p>{faq.answer}</p>
-                  </details>
-                ))}
-              </div>
-              <div className="cta-final">
-                <p>We help beauty brands separate the refill systems that actually deliver from the ones that look good in a press release &mdash; and design programs that customers, retailers, and regulators all accept.</p>
-                <button className="cta-pill" onClick={() => openModal('Guide - Refillable Consultation')}>Book a Refillable Consultation</button>
-              </div>
-            </section>
-
-            <section className="sources-section">
-              <h2>Sources</h2>
-              <p className="sources-lede">External lifecycle research, regulatory references, and named brand precedents cited in this guide.</p>
-              <ul className="sources-list">
-                <li><strong>Ellen MacArthur Foundation &mdash; Reuse: Rethinking Packaging</strong> <span>&mdash; modeling on adoption thresholds (~40%) below which refill systems can underperform well-designed single-use on lifecycle carbon.</span></li>
-                <li><strong>EU Packaging and Packaging Waste Regulation (PPWR)</strong> <span>&mdash; effective August 2026. Refill and reuse targets, incentive structures, and reporting requirements.</span></li>
-                <li><strong>EU Empowering Consumers for the Green Transition Directive (ECGT)</strong> <span>&mdash; effective September 2026. Restricts unqualified sustainability claims on refill marketing language.</span></li>
-                <li><strong>Public brand disclosures: Charlotte Tilbury, Hourglass, La Mer, Aesop, Le Labo, La Bouche Rouge</strong> <span>&mdash; refillable product launches and packaging architecture announcements referenced for primary&ndash;refill precedent.</span></li>
-                <li><strong>Public brand disclosures: Wild, Bite</strong> <span>&mdash; pod/cartridge refill models referenced for sub-premium category precedent.</span></li>
-              </ul>
-            </section>
-
           </div>
         </div>
       </div>
+
+      <div className="guide-faq">
+        <div className="guide-faq-inner">
+          <div className="guide-faq-content">
+            <h2>Still Have Questions?</h2>
+            <p>We help beauty brands separate the refill systems that actually deliver from the ones that look good in a press release &mdash; and design programs that customers, retailers, and regulators all accept.</p>
+          </div>
+          <FAQSidebar
+            eyebrow="Quick Answers"
+            title="Refillable System FAQs"
+            faqs={faqs}
+            ctaText="Book a Refillable Consultation"
+            ctaProjectType="Guide - Refillable Consultation"
+          />
+        </div>
+      </div>
+
+      <section className="ctas">
+        <div className="ctai">
+          <h2>Design the Refill<br /><em>Right</em></h2>
+          <p>The wrong refill system costs more to run than single-use and undercuts the sustainability claim you launched it on. Let&apos;s design one that works.</p>
+          <button className="bi" onClick={() => openModal('Guide - Refillable Consultation')}>Book a Refillable Consultation</button>
+        </div>
+      </section>
     </>
   )
 }
