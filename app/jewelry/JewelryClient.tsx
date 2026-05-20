@@ -36,6 +36,7 @@ export default function JewelryClient() {
     <>
       <div className="kph">
         <div className="kphv" style={{ background: 'linear-gradient(135deg,#0d1b2a,#1a2a3d,#2a1f2d)' }}>
+          <Image src="/images/portfolio/jewelry/maor-collection.jpg" alt="Custom jewelry packaging collection — multiple box sizes with consistent branding" fill style={{ objectFit: 'cover' }} sizes="50vw" priority />
           <div>
             <div className="kvl">Custom Jewelry Packaging</div>
             <div className="kvt" style={{ fontSize: 'clamp(28px,3.5vw,44px)' }}>Jewelry Packaging<br />That Matches Your<br /><em>Craftsmanship</em></div>
