@@ -25,7 +25,8 @@ export const organizationJsonLd = {
     "Influencer kit production", "Influencer kit producer", "PR mailer packaging",
     "PR mailer company", "Folding carton supplier", "Rigid box manufacturer",
     "Custom box manufacturer", "Advent calendar packaging", "Global packaging sourcing",
-    "Packaging vendor for beauty brands", "Retail packaging compliance", "Packaging fulfillment services"
+    "Packaging vendor for beauty brands", "Retail packaging compliance", "Packaging fulfillment services",
+    "Custom jewelry packaging", "Jewelry box manufacturer", "Jewelry packaging company"
   ]
 }
 
@@ -183,6 +184,42 @@ export const playbookFaqJsonLd = {
     { "@type": "Question", "name": "Can you personalize kits at scale with creator names?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Options include foil-stamped names, custom stickers, variable-print inserts, and handwritten note cards. The right approach depends on your quantity and budget." } },
     { "@type": "Question", "name": "Do you work directly with PR agencies?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Most of our influencer kit projects start with a brief from a PR agency or creative studio. We coordinate production and delivery without pulling in the end client." } },
     { "@type": "Question", "name": "What's the typical budget range for influencer kits?", "acceptedAnswer": { "@type": "Answer", "text": "Costs vary by structure and quantity. Simple mailer boxes start around $8 to $15 per unit at 500+. Fully custom rigid kits with specialty finishes range from $25 to $75+ per unit depending on complexity." } }
+  ]
+}
+
+export const jewelryServiceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom Jewelry Packaging",
+  "alternateName": "Custom Jewelry Box Manufacturing",
+  "description": "Custom jewelry packaging manufacturer for brands and designers. Rigid jewelry boxes with magnetic closure, hinged lids, PU leather, velvet, linen finishes, and brand-consistent color matching across all box sizes. Holiday gift set packaging and warehousing programs available.",
+  "provider": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com" },
+  "serviceType": "Custom Packaging Manufacturing",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Jewelry Packaging Formats",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom Rigid Jewelry Box with Magnetic Closure" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Hinged Jewelry Box with Metal Hardware" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Velvet-Lined Ring Box" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Holiday Jewelry Gift Set Packaging" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom Inserts and Cushions for Jewelry" } }
+    ]
+  }
+}
+
+export const jewelryFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Custom Jewelry Packaging FAQs",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the minimum order for custom jewelry boxes?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom rigid jewelry boxes start at 500 to 1,000 units per size. Pricing improves significantly at higher quantities, and multiple sizes can run on a single production order." } },
+    { "@type": "Question", "name": "Can you match our brand color across all jewelry box sizes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We run pre-production color proofs across every SKU so PU leather, paper wraps, foil stamping, and interior lining all match before mass production begins." } },
+    { "@type": "Question", "name": "Do you produce holiday gift set packaging for jewelry brands?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Seasonal gift sets and brand collaboration kits are one of the most common entry points for jewelry brands working with us for the first time." } },
+    { "@type": "Question", "name": "How much does custom jewelry box packaging cost?", "acceptedAnswer": { "@type": "Answer", "text": "Custom jewelry boxes typically range from $3 to $12 per unit depending on materials, hardware (hinges, magnetic closure), finishing, and quantity." } },
+    { "@type": "Question", "name": "What materials do you use for jewelry packaging?", "acceptedAnswer": { "@type": "Answer", "text": "PU leather, linen, velvet, specialty papers, rigid greyboard, and metal hardware (hinges, clasps, magnetic closures). Material selection depends on brand positioning and price point." } },
+    { "@type": "Question", "name": "Can you handle watch and accessories packaging?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We produce custom packaging for watches, accessories, and fine goods as one-off or ongoing programs." } }
   ]
 }
 

@@ -28,6 +28,7 @@ export default function Footer() {
           <h4>Programs</h4>
           <Link href="/holiday">Holiday Gift Sets</Link>
           <Link href="/influencer">Influencer Kits</Link>
+          <Link href="/jewelry">Jewelry Packaging</Link>
           <Link href="/influencer">PR Mailers</Link>
           <Link href="/work">Our Work</Link>
         </div>

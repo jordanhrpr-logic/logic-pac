@@ -1,14 +1,23 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useModal } from './ModalContext'
 
+const capabilitiesLinks = [
+  { href: '/capabilities', label: 'Overview' },
+  { href: '/holiday', label: 'Holiday Gift Sets' },
+  { href: '/influencer', label: 'Influencer Kits' },
+  { href: '/jewelry', label: 'Jewelry Packaging' },
+]
+
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [ddOpen, setDdOpen] = useState(false)
   const pathname = usePathname()
   const { openModal } = useModal()
+  const ddTimer = useRef<NodeJS.Timeout | null>(null)
 
   const toggleMenu = useCallback(() => {
     setMenuOpen(prev => {
@@ -22,18 +31,25 @@ export default function Navigation() {
     document.body.style.overflow = ''
   }, [])
 
-  const isActive = (path: string) => {
-    if (path === '/') return pathname === '/'
-    return pathname === path
-  }
+  const isCapActive = capabilitiesLinks.some(l => pathname === l.href)
 
-  const links = [
-    { href: '/', label: 'Home', id: 'nv-home' },
-    { href: '/work', label: 'Our Work', id: 'nv-work' },
-    { href: '/capabilities', label: 'Capabilities', id: 'nv-capabilities' },
-    { href: '/holiday', label: 'Holiday Kits', id: 'nv-holiday' },
-    { href: '/influencer', label: 'Influencer Kits', id: 'nv-influencer' },
-    { href: '/guides', label: 'Guides', id: 'nv-guides' },
+  const handleDdEnter = useCallback(() => {
+    if (ddTimer.current) clearTimeout(ddTimer.current)
+    setDdOpen(true)
+  }, [])
+
+  const handleDdLeave = useCallback(() => {
+    ddTimer.current = setTimeout(() => setDdOpen(false), 150)
+  }, [])
+
+  useEffect(() => {
+    return () => { if (ddTimer.current) clearTimeout(ddTimer.current) }
+  }, [])
+
+  const topLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/work', label: 'Our Work' },
+    { href: '/guides', label: 'Guides' },
   ]
 
   return (
@@ -44,13 +60,29 @@ export default function Navigation() {
           <div className="lt">Logic Pac <small>by Logic Agency Inc.</small></div>
         </Link>
         <ul className="nav-links">
-          {links.map(l => (
-            <li key={l.id}>
-              <Link href={l.href} id={l.id} className={isActive(l.href) ? 'act' : ''}>
+          {topLinks.map(l => (
+            <li key={l.href}>
+              <Link href={l.href} className={pathname === l.href ? 'act' : ''}>
                 {l.label}
               </Link>
             </li>
           ))}
+          <li
+            className="nav-dd"
+            onMouseEnter={handleDdEnter}
+            onMouseLeave={handleDdLeave}
+          >
+            <span className={`nav-dd-trigger${isCapActive ? ' act' : ''}`}>
+              Capabilities <span className="nav-dd-arrow">&#9662;</span>
+            </span>
+            <div className={`nav-dd-menu${ddOpen ? ' open' : ''}`}>
+              {capabilitiesLinks.map(l => (
+                <Link key={l.href} href={l.href} className={pathname === l.href ? 'act' : ''}>
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </li>
           <li><a onClick={() => openModal()} className="ncta" style={{ cursor: 'pointer' }}>Book a Call</a></li>
         </ul>
         <button
@@ -62,8 +94,14 @@ export default function Navigation() {
         </button>
       </nav>
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
-        {links.map(l => (
-          <Link key={l.id} href={l.href} onClick={closeMenu}>{l.label}</Link>
+        {topLinks.map(l => (
+          <Link key={l.href} href={l.href} onClick={closeMenu}>{l.label}</Link>
+        ))}
+        <div className="mobile-dd-label">Capabilities</div>
+        {capabilitiesLinks.map(l => (
+          <Link key={l.href} href={l.href} onClick={closeMenu} className="mobile-dd-item">
+            {l.label}
+          </Link>
         ))}
         <button className="ncta-m" onClick={() => { openModal(); closeMenu() }}>Book a Call</button>
       </div>
