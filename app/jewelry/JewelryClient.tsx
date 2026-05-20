@@ -38,13 +38,15 @@ export default function JewelryClient() {
   const { openModal } = useModal()
   const [currentSlide, setCurrentSlide] = useState(0)
 
+  const maxSlide = portfolioItems.length - 4
+
   const nextSlide = useCallback(() => {
-    setCurrentSlide(prev => (prev + 1) % portfolioItems.length)
-  }, [])
+    setCurrentSlide(prev => prev >= maxSlide ? 0 : prev + 1)
+  }, [maxSlide])
 
   const prevSlide = useCallback(() => {
-    setCurrentSlide(prev => (prev - 1 + portfolioItems.length) % portfolioItems.length)
-  }, [])
+    setCurrentSlide(prev => prev <= 0 ? maxSlide : prev - 1)
+  }, [maxSlide])
 
   return (
     <>
@@ -85,7 +87,7 @@ export default function JewelryClient() {
         <div className="jpcar">
           <button className="jpcar-arrow jpcar-prev" onClick={prevSlide} aria-label="Previous project">&#8249;</button>
           <div className="jpcar-viewport">
-            <div className="jpcar-track" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            <div className="jpcar-track" style={{ transform: `translateX(-${currentSlide * 25}%)` }}>
               {portfolioItems.map((item, i) => (
                 <div key={i} className="jpcar-slide">
                   <div className="jpcar-img">
@@ -97,11 +99,6 @@ export default function JewelryClient() {
             </div>
           </div>
           <button className="jpcar-arrow jpcar-next" onClick={nextSlide} aria-label="Next project">&#8250;</button>
-        </div>
-        <div className="jpcar-dots">
-          {portfolioItems.map((_, i) => (
-            <button key={i} className={`jpcar-dot${i === currentSlide ? ' act' : ''}`} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} />
-          ))}
         </div>
       </section>
 
