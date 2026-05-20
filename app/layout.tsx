@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from '@/lib/metadata'
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-66P9B5E4KR'
 
 export const metadata: Metadata = {
   title: {
