@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useCallback } from 'react'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
@@ -35,6 +36,15 @@ const portfolioItems = [
 
 export default function JewelryClient() {
   const { openModal } = useModal()
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide(prev => (prev + 1) % portfolioItems.length)
+  }, [])
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide(prev => (prev - 1 + portfolioItems.length) % portfolioItems.length)
+  }, [])
 
   return (
     <>
@@ -72,14 +82,25 @@ export default function JewelryClient() {
       <section className="jpf">
         <div className="ey">Jewelry Packaging</div>
         <h2 style={{ fontSize: 'clamp(24px,3vw,36px)' }}>Jewelry Packaging We&apos;ve Produced</h2>
-        <div className="jpfg">
-          {portfolioItems.map((item, i) => (
-            <div key={i} className="jpfi">
-              <div className="jpfimg">
-                <Image src={item.src} alt={item.alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" />
-              </div>
-              <p className="jpfc">{item.caption}</p>
+        <div className="jpcar">
+          <button className="jpcar-arrow jpcar-prev" onClick={prevSlide} aria-label="Previous project">&#8249;</button>
+          <div className="jpcar-viewport">
+            <div className="jpcar-track" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+              {portfolioItems.map((item, i) => (
+                <div key={i} className="jpcar-slide">
+                  <div className="jpcar-img">
+                    <Image src={item.src} alt={item.alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 80vw" />
+                  </div>
+                  <p className="jpcar-cap">{item.caption}</p>
+                </div>
+              ))}
             </div>
+          </div>
+          <button className="jpcar-arrow jpcar-next" onClick={nextSlide} aria-label="Next project">&#8250;</button>
+        </div>
+        <div className="jpcar-dots">
+          {portfolioItems.map((_, i) => (
+            <button key={i} className={`jpcar-dot${i === currentSlide ? ' act' : ''}`} onClick={() => setCurrentSlide(i)} aria-label={`Go to slide ${i + 1}`} />
           ))}
         </div>
       </section>
