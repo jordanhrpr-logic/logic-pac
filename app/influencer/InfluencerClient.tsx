@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 
@@ -27,6 +28,7 @@ export default function InfluencerClient() {
     <>
       <div className="kph">
         <div className="kphv" style={{ background: 'linear-gradient(135deg,#0f2027,#203a43,#2c5364)' }}>
+          <Image src="/images/portfolio/influencer-adidas-nemesis.jpg" alt="Custom PR kit with multi-drawer rigid box structure and branded inserts" fill style={{ objectFit: 'cover' }} priority />
           <div>
             <div className="kvl">Campaign Production</div>
             <div className="kvt" style={{ fontSize: 'clamp(28px,3.5vw,44px)' }}>PR &amp; Influencer<br />Kits Built for<br /><em>the Camera</em></div>

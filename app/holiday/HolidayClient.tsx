@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import { HolidayWindowLabel } from '@/components/SeasonalBar'
 import FAQSidebar from '@/components/FAQSidebar'
@@ -29,6 +30,7 @@ export default function HolidayClient() {
     <>
       <div className="kph">
         <div className="kphv" style={{ background: 'linear-gradient(135deg,#0d1b2a,#1a2a4a,#2a1f3d)' }}>
+          <Image src="/images/portfolio/holiday-epicutis-gift-sets.jpg" alt="Epicutis luxury skincare holiday gift set collection with multiple box sizes and premium finishes" fill style={{ objectFit: 'cover' }} priority />
           <div>
             <div className="kvl">Seasonal Production &mdash; Slots Open</div>
             <div className="kvt" style={{ fontSize: 'clamp(28px,3.5vw,44px)' }}>Holiday Gift Set<br />Packaging for<br /><em>Beauty Brands</em></div>
