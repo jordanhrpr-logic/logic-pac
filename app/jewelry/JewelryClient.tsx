@@ -27,6 +27,10 @@ const portfolioItems = [
   { src: '/images/portfolio/jewelry/pearl-source-necklace.jpg', alt: 'The Pearl Source — custom necklace box with rose gold metal hardware and branded closure', caption: 'Metal hardware, rose gold accent, custom insert' },
   { src: '/images/portfolio/jewelry/made-by-mary-collection.jpg', alt: 'Made by Mary — multi-size jewelry box collection with book-style, hinged, and ring box formats', caption: 'Ring to necklace — every size matches' },
   { src: '/images/portfolio/jewelry/made-by-mary-advent.jpg', alt: 'Made by Mary — holiday jewelry advent calendar with 12 individually branded boxes', caption: 'Jewelry advent calendar — holiday gift set' },
+  { src: '/images/portfolio/jewelry/oak-park-jewelry-collection.jpg', alt: 'Oak Park Jewelers — custom PU leather ring boxes in forest green and white with gold foil stamped logo and metal hardware', caption: 'PU leather, gold foil, dual colorway' },
+  { src: '/images/portfolio/jewelry/oc-tanner-collection.jpg', alt: 'OC Tanner — white textured rigid jewelry boxes with silver foil monogram across multiple sizes', caption: 'Textured paper, silver foil, multi-size set' },
+  { src: '/images/portfolio/jewelry/olive-ave-ring-boxes.jpg', alt: 'Olive Ave Jewelry — blush linen ring boxes with tone-on-tone embossed branding and hinged lid', caption: 'Linen wrap, tone-on-tone emboss, hinged ring box' },
+  { src: '/images/portfolio/jewelry/lifevantage-watch-packaging.jpg', alt: 'LifeVantage — custom blue rigid watch boxes with branded interior print, velvet cushion insert, and magnetic closure', caption: 'Custom watch box — branded interior, velvet insert' },
 ]
 
 export default function JewelryClient() {
