@@ -287,8 +287,13 @@ nav .nav-toggle span{background:var(--navy)}
 /* ── KIT PAGES ── */
 .kph{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
 .kphv{background:var(--navy);display:flex;align-items:center;justify-content:center;padding:80px 56px;text-align:center;position:relative;overflow:hidden}
-.kphv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.kphv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.25}
 .kphv>div{position:relative;z-index:1}
+.kphv .kvl{color:rgba(255,255,255,.45)}
+.kphv .kvt{color:white}
+.kphv .kvt em{color:var(--lime);font-style:italic}
+.kphv .kvr{background:rgba(224,253,44,.35)}
+.kphv .kvs{color:rgba(224,253,44,.5)}
 .kphc{background:var(--bg);border-bottom:1px solid var(--ice);padding:80px 56px;display:flex;flex-direction:column;justify-content:center}
 .kphc h1{font-size:clamp(30px,3.5vw,48px);margin-bottom:18px}
 .kphc h1 em{font-style:italic}
