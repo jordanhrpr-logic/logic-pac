@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 
@@ -19,6 +20,13 @@ const components = [
   { num: '04', title: 'Holiday & Gift Sets', desc: 'Seasonal gift sets, advent calendars, brand collaboration kits. A contained first project — limited SKUs, clear timeline — that lets you test working with us before committing your core line.' },
   { num: '05', title: 'Quality Control', desc: 'Pre-production color proofs, material samples, and finish approvals. PU color vs. paper color vs. foil consistency verified before mass production — not after.' },
   { num: '06', title: 'Warehousing & Reorder', desc: 'Stock standard configurations in our SLC warehouse. Reorder without minimum wait times or ocean freight delays. Available after initial production run.' },
+]
+
+const portfolioItems = [
+  { src: '/images/portfolio/jewelry/maor-collection.jpg', alt: 'MAOR Jewelry — complete custom packaging collection showing brand consistency across 6+ box sizes, ribbon, bags, and hang tags', caption: 'Full collection — 6 box sizes, one brand system' },
+  { src: '/images/portfolio/jewelry/pearl-source-necklace.jpg', alt: 'The Pearl Source — custom necklace box with rose gold metal hardware and branded closure', caption: 'Metal hardware, rose gold accent, custom insert' },
+  { src: '/images/portfolio/jewelry/made-by-mary-collection.jpg', alt: 'Made by Mary — multi-size jewelry box collection with book-style, hinged, and ring box formats', caption: 'Ring to necklace — every size matches' },
+  { src: '/images/portfolio/jewelry/made-by-mary-advent.jpg', alt: 'Made by Mary — holiday jewelry advent calendar with 12 individually branded boxes', caption: 'Jewelry advent calendar — holiday gift set' },
 ]
 
 export default function JewelryClient() {
@@ -55,6 +63,21 @@ export default function JewelryClient() {
           ))}
         </div>
       </div>
+
+      <section className="jpf">
+        <div className="ey">Jewelry Packaging</div>
+        <h2 style={{ fontSize: 'clamp(24px,3vw,36px)' }}>Jewelry Packaging We&apos;ve Produced</h2>
+        <div className="jpfg">
+          {portfolioItems.map((item, i) => (
+            <div key={i} className="jpfi">
+              <div className="jpfimg">
+                <Image src={item.src} alt={item.alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+              </div>
+              <p className="jpfc">{item.caption}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <div className="hr"></div>
 

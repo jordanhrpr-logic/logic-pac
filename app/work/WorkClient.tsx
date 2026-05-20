@@ -12,6 +12,7 @@ const categories = [
   { key: 'beauty', label: 'Beauty & Cosmetics' },
   { key: 'retail', label: 'Retail Packaging' },
   { key: 'specialty', label: 'Specialty Finishes' },
+  { key: 'jewelry', label: 'Jewelry Packaging' },
 ]
 
 const workItems = [
@@ -27,6 +28,12 @@ const workItems = [
   { cat: 'holiday', cls: 'wide', gradient: 'linear-gradient(135deg,#1e3c72,#0f2027)', image: '/images/portfolio/holiday-kits.jpeg', category: 'Holiday Kits', name: 'Holiday Gift Set Collection \u2014 Multi-SKU Program', desc: 'Three-piece holiday collection, lift-lid rigid boxes. Sephora compliant. 5,000 sets.' },
   { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#141e30,#360033)', image: '', category: 'Influencer & PR', name: 'Personalized Name Foil Campaign', desc: 'Foil-stamped names, layered interior reveal. 300 units, PR agency.' },
   { cat: 'retail', cls: '', gradient: 'linear-gradient(135deg,#1a1a2e,#3d5a80)', image: '', category: 'Retail', name: 'Fragrance Retail Carton', desc: 'Rigid carton, die-cut window, soft-touch exterior, embossed logo.' },
+  { cat: 'jewelry', cls: 'wide', gradient: 'linear-gradient(135deg,#0d1b2a,#1a2a3d)', image: '/images/portfolio/jewelry/maor-collection.jpg', category: 'Jewelry Packaging', name: 'MAOR — Full Collection Packaging System', desc: 'Custom rigid boxes in 6+ sizes, foil-stamped branding, coordinated ribbon, bags, and hang tags. Complete brand system.' },
+  { cat: 'jewelry', cls: 'tall', gradient: 'linear-gradient(135deg,#1a1a2e,#2a1f2d)', image: '/images/portfolio/jewelry/pearl-source-necklace.jpg', category: 'Jewelry Packaging', name: 'The Pearl Source — Necklace Box', desc: 'Custom rigid box with rose gold metal hardware, branded closure, and PU leather wrap.' },
+  { cat: 'jewelry', cls: '', gradient: 'linear-gradient(135deg,#2d1b28,#1a2a3d)', image: '/images/portfolio/jewelry/made-by-mary-collection.jpg', category: 'Jewelry Packaging', name: 'Made by Mary — Multi-Size Collection', desc: 'Ring to necklace boxes, book-style packaging, coordinated finishes across the full product line.' },
+  { cat: 'jewelry', cls: '', gradient: 'linear-gradient(135deg,#2b1d0e,#1a2a3d)', image: '/images/portfolio/jewelry/made-by-mary-advent.jpg', category: 'Jewelry Packaging', name: 'Made by Mary — Jewelry Advent Calendar', desc: '12-box advent calendar, gold foil numbering, custom tray structure. Holiday gift set program.' },
+  { cat: 'jewelry', cls: '', gradient: 'linear-gradient(135deg,#1e1e2e,#2a2a3d)', image: '/images/portfolio/jewelry/oc-tanner-collection.jpg', category: 'Jewelry Packaging', name: 'O.C. Tanner — Embossed Collection', desc: 'White textured rigid boxes with embossed monogram. Multiple sizes, consistent branding.' },
+  { cat: 'jewelry', cls: '', gradient: 'linear-gradient(135deg,#0a1628,#1a3020)', image: '/images/portfolio/jewelry/maor-jewelry-boxes.jpg', category: 'Jewelry Packaging', name: 'MAOR — Branded Ring Boxes', desc: 'Fabric-wrapped rigid boxes with gold foil, matched interior velvet, and coordinated jewelry display.' },
 ]
 
 export default function WorkClient() {

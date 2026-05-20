@@ -243,6 +243,15 @@ nav .nav-toggle span{background:var(--navy)}
 .pnum{font-family:'DM Serif Display',serif;font-size:80px;color:rgba(255,255,255,.03);position:absolute;top:2px;right:12px;line-height:1;pointer-events:none}
 .pstep h3{font-size:15px;font-weight:600;color:white;margin-bottom:12px;position:relative;z-index:1}
 .pstep p{font-size:14px;color:rgba(255,255,255,.38);line-height:1.75;position:relative;z-index:1}
+/* ── JEWELRY PORTFOLIO ── */
+.jpf{padding:80px 80px 40px;text-align:center}
+.jpf h2{margin-bottom:48px}
+.jpfg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto}
+.jpfi{text-align:center}
+.jpfimg{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:4px}
+.jpfimg img{transition:transform .4s}
+.jpfi:hover .jpfimg img{transform:scale(1.03)}
+.jpfc{font-size:13px;color:var(--slate);margin-top:12px;line-height:1.5}
 /* ── CTA SECTION ── */
 .ctas{background:var(--navy);padding:120px 80px}
 .ctai{max-width:660px;margin:0 auto;text-align:center}
@@ -427,8 +436,9 @@ nav{padding:0 24px}
 .hrbar{padding:14px 24px}
 .bbar,.gprevh{padding:18px 24px}
 .gprevh{flex-direction:column;align-items:flex-start;gap:14px}
-.fmts,.caps,.tls,.procs,.ctas,.ags,.poss{padding:64px 24px}
+.fmts,.caps,.tls,.procs,.ctas,.ags,.poss,.jpf{padding:64px 24px}
 .capg,.incg,.fcg{grid-template-columns:1fr}
+.jpfg{grid-template-columns:1fr 1fr}
 .fmtg,.procg{grid-template-columns:1fr 1fr}
 .fmti{grid-template-columns:1fr}
 .ggrid{grid-template-columns:repeat(6,1fr)}
@@ -456,7 +466,7 @@ footer{padding:48px 24px 32px}
 @media(max-width:600px){
 .htag{letter-spacing:1.5px;font-size:9px}
 .ftr,.fr2{grid-template-columns:1fr}
-.fmtg,.procg,.wgrid{grid-template-columns:1fr}
+.fmtg,.procg,.wgrid,.jpfg{grid-template-columns:1fr}
 .wgi.tall,.wgi.wide{grid-column:span 1;grid-row:span 1;min-height:auto;aspect-ratio:4/3}
 .ggrid .ge{grid-column:span 6!important}
 .modal{border-radius:12px 12px 0 0;max-height:90vh;overflow-y:auto}
