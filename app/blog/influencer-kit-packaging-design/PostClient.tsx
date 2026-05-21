@@ -2,15 +2,6 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
-import FAQSidebar from '@/components/FAQSidebar'
-
-const faqs = [
-  { question: 'How many units do I need for a custom influencer kit?', answer: 'Most custom kits start at 50–100 units. Pricing improves at 500+ as setup costs spread. Simpler mailer configurations can start lower. For runs under 50, consider semi-custom: stock structures with custom printing.' },
-  { question: 'What’s the difference between a PR mailer and an influencer kit?', answer: 'A PR mailer delivers product safely with basic brand presentation. An influencer kit is engineered for the filming moment — structured reveals, intentional staging, materials that read on camera, and design elements that give creators content. The investment is higher because the goal is content generation, not product delivery.' },
-  { question: 'Can influencer kits be sustainable without looking cheap?', answer: 'Yes. FSC-certified rigid boards, molded fiber inserts, seed paper accessories, and mono-material designs all feel premium. Molded fiber has a sculptural quality foam doesn’t. The key is treating sustainability as a design constraint that drives creativity, not a downgrade.' },
-  { question: 'How do I personalize kits at scale?', answer: 'Variable digital printing, foil-stamped name cards, custom sticker seals, or variable inserts scale best. Full-box personalization works under 200 units. Most cost-effective approach: standardize the box, personalize one interior element.' },
-  { question: 'What if my products change after production starts?', answer: 'This is why insert design matters. Fixed foam cutouts lock you into specific SKUs. Adjustable inserts — flexible wells, fabric wraps, modular trays — accommodate changes without retooling. Flag this risk upfront so the system is designed with flexibility.' },
-]
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -30,9 +21,7 @@ export default function PostClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
-        <div className="guide-main">
-          <div className="seo">
+      <div className="blog-body">
             <p>To design influencer kit packaging that actually gets posted, engineer one clear reveal moment, choose materials that read as premium on camera, stage products so filming is intuitive, include one shareable detail worth showing the lens, and ship at a weight that says &ldquo;this matters&rdquo; before the box opens. The kits that generate organic content aren&apos;t louder. They&apos;re more intentional about what happens in the first five seconds after the lid comes off.</p>
             <p>We&apos;ve produced influencer kits ranging from 50-unit VIP drops to 5,000-unit creator programs. The pattern is consistent: brands that design around the filming moment get 3&ndash;5x the post rate of brands that design around the product list.</p>
 
@@ -144,18 +133,6 @@ export default function PostClient() {
             <p>The kits that generate content were designed around a specific filming moment, not a product list. Decide your one reveal. Build the structure around it. Choose materials that support it on camera. Stage products so the creator doesn&apos;t rearrange anything. Include one detail worth showing. Ship it at a weight that says &ldquo;pay attention.&rdquo;</p>
             <p>Everything else is logistics. Important logistics&mdash;timeline, fulfillment, freight, storage&mdash;but logistics that follow from the design decision, not the other way around.</p>
             <p>For the full structural framework, production specs, and format comparisons, read the <Link href="/guides/influencer-kit-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_playbook">Influencer Kit Playbook</Link>. Ready to move from concept to production? <Link href="/influencer?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_capability">See what we build for influencer campaigns</Link>.</p>
-          </div>
-        </div>
-
-        <div>
-          <FAQSidebar
-            eyebrow="Quick Answers"
-            title="Influencer Kit FAQs"
-            faqs={faqs}
-            ctaText="Start Your Kit Project"
-            ctaProjectType="Influencer / PR Kit"
-          />
-        </div>
       </div>
 
       <section className="ctas">

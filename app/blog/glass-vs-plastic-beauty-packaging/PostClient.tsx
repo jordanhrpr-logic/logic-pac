@@ -2,15 +2,6 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
-import FAQSidebar from '@/components/FAQSidebar'
-
-const faqs = [
-  { question: 'Is glass or plastic better for skincare packaging?', answer: 'It depends on the product type, price point, and sales channel. Glass is better for high-value serums and treatment products where formula protection and premium perception matter. Plastic (PET or HDPE) is better for cleansers, body care, and DTC-heavy brands where breakage risk and freight cost outweigh the perception benefit. Most skincare lines use both—glass for hero SKUs, plastic for the rest.' },
-  { question: 'How much more does glass packaging cost than plastic?', answer: 'Glass containers cost 3–5x more than PET at equivalent volume. On a total landed basis—including freight, secondary packaging, and breakage—the gap widens to 4–7x. A 50ml PET jar typically costs $0.20–$0.45 per unit; the glass equivalent runs $0.80–$2.00 before closures and decoration.' },
-  { question: 'Is glass packaging actually more sustainable than plastic?', answer: 'Glass is infinitely recyclable without material degradation, which is a genuine advantage. But glass production is energy-intensive (1500°C+ furnace temperatures) and its weight increases transportation emissions. PET is petroleum-derived but lighter to transport. PCR plastic (post-consumer recycled) offsets the virgin-material concern. Neither is a clean win—the most sustainable option depends on your full supply chain, distribution model, and end-of-life infrastructure in your markets.' },
-  { question: 'What is PCR packaging, and why does it matter for beauty brands?', answer: 'PCR stands for Post-Consumer Recycled—plastic resin made from recycled consumer packaging rather than virgin petroleum. PCR PET and PCR HDPE are available at 25–100% recycled content levels, with a 10–30% cost premium over virgin resin. PCR matters because California SB 54 and the EU PPWR are mandating minimum recycled content in plastic packaging (30% by 2028 under SB 54). Beauty retailers like Sephora and Target also use recycled content as a qualification criterion for sustainability programs.' },
-  { question: 'Can I use glass for e-commerce beauty packaging?', answer: 'You can, but the economics work against it. Glass breakage rates in e-commerce fulfillment run 1–3%, and the heavier weight increases shipping costs by $0.50–$2.00 per order. You’ll also need sturdier secondary packaging—molded inserts, foam dividers, or double-boxing—which adds $0.10–$0.50 per unit. Brands that sell glass products DTC typically reserve it for high-AOV hero SKUs where the margin absorbs the added cost, and use plastic for everyday replenishment items.' },
-]
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -30,9 +21,7 @@ export default function PostClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
-        <div className="guide-main">
-          <div className="seo">
+      <div className="blog-body">
             <p>The short answer: neither glass nor plastic is universally better for beauty packaging. Glass costs 3&ndash;5x more than PET at equivalent volume, weighs 5&ndash;10x more per unit, and breaks in transit. But it signals premium, recycles infinitely, and holds fragrance formulas without interaction. Plastic is lighter, cheaper, and safer for e-commerce &mdash; but carries a perception penalty in prestige skincare and requires a stronger sustainability narrative to defend.</p>
             <p>The real question isn&apos;t &ldquo;glass or plastic?&rdquo; It&apos;s: <strong>what does the package need to do, for which product, in which channel, at what margin?</strong></p>
             <p>We&apos;ve sourced thousands of SKUs across both materials for beauty brands ranging from indie DTC launches to enterprise retail programs. The brands that get material selection right treat it as a strategic decision made during concept stage &mdash; not a follow-on detail handed to the supplier. The brands that get it wrong end up redesigning 12 months later, absorbing tooling costs twice.</p>
@@ -163,18 +152,6 @@ export default function PostClient() {
             <p>The mistake is making this decision based on aesthetics alone, or defaulting to whatever the packaging supplier recommends. Material is the highest-leverage decision in packaging development because it determines everything downstream: cost, freight, compliance, recyclability, shelf signal, and customer experience.</p>
             <p>Start with the product formula and sales channel. Layer in the margin model. Factor in sustainability requirements &mdash; SB 54 and PPWR are not optional. Then choose the material.</p>
             <p>If you want to run this decision through a structured framework that includes all five core materials &mdash; glass, PET, HDPE, aluminum, and molded fiber &mdash; our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_material_guide">Material Decision Framework</Link> guide gives you the full evaluation model. And if you&apos;d rather walk through it with someone who&apos;s sourced both materials at scale, <Link href="/contact?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_cta">book a packaging consultation</Link> and we&apos;ll help you make the call.</p>
-          </div>
-        </div>
-
-        <div>
-          <FAQSidebar
-            eyebrow="Quick Answers"
-            title="Glass vs. Plastic FAQs"
-            faqs={faqs}
-            ctaText="Get Material Guidance"
-            ctaProjectType="Custom Packaging"
-          />
-        </div>
       </div>
 
       <section className="ctas">

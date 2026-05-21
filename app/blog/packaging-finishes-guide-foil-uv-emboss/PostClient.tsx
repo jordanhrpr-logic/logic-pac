@@ -2,15 +2,6 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
-import FAQSidebar from '@/components/FAQSidebar'
-
-const faqs = [
-  { question: 'What are the most common packaging finishes for beauty brands?', answer: 'The most common finishes are foil stamping, soft-touch lamination, spot UV, embossing, debossing, interior printing, and specialty papers.' },
-  { question: 'How much does foil stamping cost?', answer: 'Foil stamping usually adds $0.15–$0.60 per unit depending on coverage, foil type, quantity, and die setup.' },
-  { question: 'What is the difference between embossing and debossing?', answer: 'Embossing raises the surface. Debossing presses the surface down. Both create tactile dimension and usually require a custom die.' },
-  { question: 'Is soft-touch lamination worth it?', answer: 'Soft touch is worth it when hand feel is part of the brand experience. It usually adds $0.08–$0.20 per unit, but it needs scuff testing.' },
-  { question: 'Can you use multiple finishes on one package?', answer: 'Yes, but every finish should have a job. One signature finish with one supporting detail usually feels more premium than five effects competing.' },
-]
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -30,9 +21,7 @@ export default function PostClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
-        <div className="guide-main">
-          <div className="seo">
+      <div className="blog-body">
             <p>Packaging finishes usually add <strong>$0.05&ndash;$0.60 per unit</strong> for common effects like foil stamping, embossing, spot UV, soft-touch lamination, and interior printing, with specialty coatings and large coverage areas costing more. The right finish can make a simple structure feel premium. The wrong stack of finishes can make an expensive box feel confused.</p>
             <p>For beauty brands, finishes are not decoration after the fact. They&apos;re how the package catches light, changes hand feel, signals price point, and creates a sensory memory before the customer opens the product.</p>
             <p>Use finishes deliberately. One signature moment usually beats five competing effects.</p>
@@ -299,18 +288,6 @@ export default function PostClient() {
             <p>Finishes are not decoration. They&apos;re signals.</p>
             <p>A foil stamp says precision. Soft touch says calm. Embossing says tactility. Spot UV says contrast. Interior print says there is more to discover.</p>
             <p>The best finish is the one that makes the brand feel more true, not more expensive for no reason.</p>
-          </div>
-        </div>
-
-        <div>
-          <FAQSidebar
-            eyebrow="Quick Answers"
-            title="Finish FAQs"
-            faqs={faqs}
-            ctaText="Get a Finish Consultation"
-            ctaProjectType="Custom Packaging"
-          />
-        </div>
       </div>
 
       <section className="ctas">

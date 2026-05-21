@@ -2,15 +2,6 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
-import FAQSidebar from '@/components/FAQSidebar'
-
-const faqs = [
-  { question: "What’s the minimum order for custom packaging?", answer: 'Most custom folding cartons and rigid boxes start at 500–1,000 units. Influencer kits and short-run PR packaging can sometimes start at 50–100 units, but the unit cost improves significantly at higher volumes.' },
-  { question: 'How much do packaging samples cost?', answer: 'Packaging samples usually cost $100–$1,000 depending on structure, materials, and finish. Simple white samples cost less; fully printed, finished, and production-representative samples cost more.' },
-  { question: 'How long does custom packaging take to produce?', answer: 'Most custom packaging takes 8–16 weeks after design approval, depending on tooling, sampling, production, freight, and customs. Complex rigid boxes, refillable systems, or holiday kits should be planned 4–6 months ahead.' },
-  { question: 'Can I get custom packaging for under $1 per unit?', answer: 'Yes, but usually only for simpler formats like folding cartons, labels, sleeves, or high-volume stock-decorated components. Rigid boxes, custom inserts, premium finishes, and low-volume runs usually cost more than $1 per unit.' },
-  { question: "What’s included in a packaging quote?", answer: 'A complete packaging quote should include unit cost, quantity, dimensions, materials, finishes, tooling, sample cost, production timeline, freight terms, and delivery location. If freight, tooling, or inserts are missing, you are not looking at the full cost.' },
-]
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -30,9 +21,7 @@ export default function PostClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
-        <div className="guide-main">
-          <div className="seo">
+      <div className="blog-body">
             <p>Custom packaging for beauty brands typically costs <strong>$0.30&ndash;$15.00 per unit</strong> depending on the format, material, finish, and order volume. Folding cartons usually land around <strong>$0.50&ndash;$3.00 per unit</strong>. Rigid set-up boxes usually land around <strong>$3.00&ndash;$15.00 per unit</strong>. Tubes, bottles, and jars can range from <strong>$0.30&ndash;$5.00 per unit</strong> before decoration, pumps, caps, cartons, or inserts.</p>
             <p>That range is wide because &ldquo;custom packaging&rdquo; is not one thing. A printed folding carton for a serum bottle is not priced like a rigid PR kit box with a magnetic closure, foil stamp, molded insert, and specialty paper wrap.</p>
             <p>The mistake most beauty brands make is asking, &ldquo;How much does custom packaging cost?&rdquo; before defining what packaging has to do. The better question is: what format, material, finish, volume, and timeline will protect the product, carry the brand, and still work inside the margin model?</p>
@@ -252,18 +241,6 @@ export default function PostClient() {
             <p>Beauty brands get into trouble when they treat packaging as a design expense only. It is also a margin decision. A launch decision. A retail decision. A customer-experience decision.</p>
             <p>The goal is not to spend the least. The goal is to spend where the customer notices, simplify where they do not, and build a packaging system the brand can reorder without starting over every time.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will help you pressure-test the format, materials, finishes, and quantity before you commit to production.</p>
-          </div>
-        </div>
-
-        <div>
-          <FAQSidebar
-            eyebrow="Quick Answers"
-            title="Packaging Cost FAQs"
-            faqs={faqs}
-            ctaText="Get a Packaging Quote"
-            ctaProjectType="Custom Packaging"
-          />
-        </div>
       </div>
 
       <section className="ctas">

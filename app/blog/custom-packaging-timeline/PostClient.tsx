@@ -2,15 +2,6 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
-import FAQSidebar from '@/components/FAQSidebar'
-
-const faqs = [
-  { question: 'Can I get custom packaging in less than 8 weeks?', answer: 'Yes, but only under specific conditions: existing tooling, stock materials, domestic production (US or Mexico), and a locked brief on day one. Expect rush premiums of 15–25%. Most realistic minimum is 8–10 weeks for simple formats.' },
-  { question: 'How long do packaging samples take?', answer: 'Physical samples typically take 2–4 weeks after design approval. Simple formats (folding cartons with standard board) land at 2 weeks. Complex structures (rigid boxes with specialty materials and multiple finishes) need 3–4 weeks. Each revision adds 7–10 days.' },
-  { question: 'What delays the packaging timeline most?', answer: 'Artwork approval loops are the #1 delay. Brands approve the structure quickly, then spend weeks iterating on graphic design. Every round of changes adds 5–10 days. Lock your design direction before sampling starts.' },
-  { question: 'How far in advance should I start holiday packaging?', answer: '5–7 months before your retail ship date. For most beauty brands selling through Ulta, Sephora, or specialty retail, that means starting in January–February for Q4 delivery. Starting after March typically requires rush production or compressed timelines.' },
-  { question: 'What is the difference between domestic and international packaging timelines?', answer: 'Domestic (US or Mexico) production eliminates 4–8 weeks of ocean freight and customs. Total timeline drops to 8–12 weeks for most formats. The tradeoff: domestic unit costs are typically 20–40% higher than Asia-sourced equivalent.' },
-]
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -30,9 +21,7 @@ export default function PostClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
-        <div className="guide-main">
-          <div className="seo">
+      <div className="blog-body">
             <p>Custom packaging typically takes <strong>12&ndash;20 weeks</strong> from approved brief to product in hand. Simple formats with existing tooling can land closer to 12 weeks. Complex rigid structures, international manufacturing, and multi-component kits push toward 20 weeks or beyond.</p>
             <p>That range frustrates brand managers because it sounds vague. It is not vague &mdash; it is conditional. The timeline depends on five variables: structural complexity, material availability, approval speed, manufacturing location, and freight method.</p>
             <p>This guide breaks down the real phase-by-phase timeline so you can work backward from your launch date and avoid the two most expensive mistakes in packaging development: starting too late and approving too fast.</p>
@@ -204,18 +193,6 @@ export default function PostClient() {
             <p>The brands that hit their launch dates consistently do one thing differently: they start with the calendar and work backward, instead of starting with the design and hoping the timeline works out.</p>
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>
             <p>See the full phase-by-phase breakdown in our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_concept_shelf_guide">Concept to Shelf Timeline guide</Link>.</p>
-          </div>
-        </div>
-
-        <div>
-          <FAQSidebar
-            eyebrow="Quick Answers"
-            title="Packaging Timeline FAQs"
-            faqs={faqs}
-            ctaText="Plan Your Timeline"
-            ctaProjectType="Custom Packaging"
-          />
-        </div>
       </div>
 
       <section className="ctas">

@@ -250,6 +250,19 @@ nav .nav-toggle span{background:var(--navy)}
 .blog-takeaways ul{list-style:none;padding:0;margin:0}
 .blog-takeaways li{font-size:14px;color:var(--slate);line-height:1.7;padding:6px 0 6px 20px;position:relative}
 .blog-takeaways li::before{content:'';position:absolute;left:0;top:14px;width:8px;height:8px;border-radius:50%;background:var(--lime);opacity:.7}
+.blog-body{max-width:760px;margin:0 auto;padding:0 48px 80px}
+.blog-body h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,2.5vw,28px);font-weight:400;color:var(--navy);margin-top:48px;margin-bottom:16px}
+.blog-body h2:first-child{margin-top:0}
+.blog-body h3{font-family:'DM Serif Display',serif;font-size:clamp(18px,2vw,22px);font-weight:400;color:var(--navy);margin-top:32px;margin-bottom:12px}
+.blog-body p{font-size:15px;color:var(--slate);line-height:1.82;margin-bottom:16px}
+.blog-body ul,.blog-body ol{font-size:15px;color:var(--slate);line-height:1.82;margin:0 0 20px 20px}
+.blog-body li{margin-bottom:6px}
+.blog-body strong{color:var(--navy)}
+.blog-body a{color:var(--navy);text-decoration:underline;text-underline-offset:2px}
+.blog-body a:hover{color:var(--lime)}
+.blog-faq{background:var(--bg);padding:80px 48px}
+.blog-faq-inner{max-width:760px;margin:0 auto}
+.blog-faq-inner h2{font-family:'DM Serif Display',serif;font-size:28px;font-weight:400;color:var(--navy);margin-bottom:32px}
 /* ── JEWELRY PORTFOLIO ── */
 .jpf{padding:80px 80px 40px;text-align:center}
 .jpf h2{margin-bottom:48px}
@@ -445,6 +458,8 @@ nav{padding:0 24px}
 .gcards{grid-template-columns:1fr}
 .gidx{padding:64px 24px 80px}
 .guide-faq{padding:48px 24px}
+.blog-body{padding:0 24px 64px}
+.blog-faq{padding:48px 24px}
 .guide-faq-inner{display:block}
 .posr{padding-top:0}
 .hero-content{padding:80px 24px 48px}

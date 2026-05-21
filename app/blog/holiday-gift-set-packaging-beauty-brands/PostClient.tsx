@@ -2,15 +2,6 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
-import FAQSidebar from '@/components/FAQSidebar'
-
-const faqs = [
-  { question: 'How far in advance should I start holiday gift set packaging?', answer: 'Start 5–7 months before your delivery date. For a November retail launch, that means beginning structural planning in January or February and locking artwork by April. Simple seasonal sleeves can move faster (10–14 weeks), but custom rigid sets and advent calendars need the full runway.' },
-  { question: 'What’s the minimum order for custom holiday gift set packaging?', answer: 'Most custom rigid holiday gift boxes start at 500–1,000 units. Advent calendars typically start at 500+ units due to tooling complexity. Folding carton formats can sometimes run lower, but per-unit costs at sub-500 quantities are significantly higher.' },
-  { question: 'How do I keep holiday packaging costs under control?', answer: 'Set a target landed cost before design begins. Pick one structural upgrade (rigid lid, drawer, magnetic closure) and one signature finish (foil, soft-touch, emboss). Simplify the insert. Volume is the other lever: moving from 1,000 to 3,000 units can drop per-unit cost 15–30%.' },
-  { question: 'Can holiday gift sets be both premium and sustainable?', answer: 'Yes, but it requires material decisions upfront. FSC-certified paperboard, soy-based inks, water-based coatings, and mono-material inserts (paper pulp instead of plastic trays) can deliver a premium feel while meeting retailer sustainability requirements. The key is designing for recyclability from the start.' },
-  { question: 'Do you handle retailer compliance for Ulta, Sephora, and Target?', answer: 'Retailer compliance is standard in our process. We manage barcoding, master carton labeling, case pack configurations, FSC documentation, and retailer-specific requirements. Compliance should be built into the packaging brief before structural design begins, not added during production.' },
-]
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -30,9 +21,7 @@ export default function PostClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
-        <div className="guide-main">
-          <div className="seo">
+      <div className="blog-body">
             <p>Holiday gift set packaging for beauty brands requires a <strong>5&ndash;7 month lead time</strong> from concept to delivery. Custom holiday gift set packaging that includes rigid structures, specialty finishes, custom inserts, and retailer compliance documentation can&apos;t be compressed into a summer sprint. For Q4 retail placement, brands should begin structural planning by January or February and lock artwork by April.</p>
             <p>Most brands underestimate how quickly that calendar disappears. Between structural tooling, sample rounds, mass production, ocean freight, and kitting, the window between &ldquo;we should start&rdquo; and &ldquo;we&apos;re already late&rdquo; is smaller than it looks.</p>
             <p>We&apos;ve produced holiday programs for beauty brands shipping to Ulta, Sephora, Target, and DTC channels. The brands that launch clean don&apos;t have bigger budgets. They have earlier start dates.</p>
@@ -206,18 +195,6 @@ export default function PostClient() {
             <p>The package can feel seasonal. The process can&apos;t afford to be.</p>
             <p>If you&apos;re planning holiday gift sets for this year&apos;s Q4, we should be talking now. We&apos;ll scope the project, confirm timelines, and tell you what we need to get started.</p>
             <p><Link href="/holiday?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_capability">Explore our holiday packaging capabilities</Link> or <a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_gift_set_packaging_consultation" target="_blank" rel="noopener noreferrer">book a holiday kit consultation</a>.</p>
-          </div>
-        </div>
-
-        <div>
-          <FAQSidebar
-            eyebrow="Quick Answers"
-            title="Holiday Packaging FAQs"
-            faqs={faqs}
-            ctaText="Plan Your Holiday Kit"
-            ctaProjectType="Holiday Gift Set / Seasonal Kit"
-          />
-        </div>
       </div>
 
       <section className="ctas">
