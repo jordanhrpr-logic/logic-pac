@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PostClient from './PostClient'
 
 export const metadata: Metadata = {
   title: 'Sustainable Beauty Packaging: What Actually Works, What\'s Greenwashing, and What the Regulations Require',
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
 }
 
 export default function SustainablePackagingPost() {
-  return <p>Article coming soon.</p>
+  return <PostClient />
 }

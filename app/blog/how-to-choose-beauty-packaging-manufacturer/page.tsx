@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PostClient from './PostClient'
 
 export const metadata: Metadata = {
   title: 'How to Choose a Beauty Packaging Manufacturer: What to Ask, What to Verify, and Red Flags',
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
 }
 
 export default function ChooseManufacturerPost() {
-  return <p>Article coming soon.</p>
+  return <PostClient />
 }

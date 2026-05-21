@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PostClient from './PostClient'
 
 export const metadata: Metadata = {
   title: 'Skincare Packaging Design Guide: Formats, Materials, and What Sells on Shelf',
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
 }
 
 export default function SkincarePackagingPost() {
-  return <p>Article coming soon.</p>
+  return <PostClient />
 }

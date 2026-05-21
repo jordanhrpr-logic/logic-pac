@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '10 min read',
     image: '/images/portfolio/foil-stamped-cylinder.jpeg',
     gradient: 'linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)',
-    published: false,
+    published: true,
   },
   {
     slug: 'sustainable-beauty-packaging-sb54',
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '12 min read',
     image: '/images/portfolio/velvet-interior-unboxing-kit.jpeg',
     gradient: 'linear-gradient(135deg,#0d2818,#1a4a2e,#2d6a4f)',
-    published: false,
+    published: true,
   },
   {
     slug: 'influencer-kit-packaging-design',
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '9 min read',
     image: '/images/portfolio/skincare-launch-pr-mailer.jpg',
     gradient: 'linear-gradient(135deg,#0f2027,#203a43,#2c5364)',
-    published: false,
+    published: true,
   },
   {
     slug: 'custom-packaging-timeline',
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '9 min read',
     image: '/images/portfolio/holiday-kits.jpeg',
     gradient: 'linear-gradient(135deg,#1a0a2e,#2e1a4a,#4a2c6a)',
-    published: false,
+    published: true,
   },
   {
     slug: 'sb54-packaging-compliance-beauty',
@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '11 min read',
     image: '/images/portfolio/cosmetics-folding-carton.jpeg',
     gradient: 'linear-gradient(135deg,#1a1a2e,#0f3460,#16213e)',
-    published: false,
+    published: true,
   },
   {
     slug: 'holiday-gift-set-packaging-beauty-brands',
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '10 min read',
     image: '/images/portfolio/24-door-advent-calendar.jpeg',
     gradient: 'linear-gradient(135deg,#2e1a0a,#4a2c1a,#6a3c2a)',
-    published: false,
+    published: true,
   },
   {
     slug: 'glass-vs-plastic-beauty-packaging',
@@ -94,7 +94,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '9 min read',
     image: '/images/portfolio/premium-beauty-gift-set1.jpg',
     gradient: 'linear-gradient(135deg,#0a2e1a,#1a4a3c,#2c6a5a)',
-    published: false,
+    published: true,
   },
   {
     slug: 'packaging-finishes-guide-foil-uv-emboss',
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '11 min read',
     image: '/images/portfolio/soft-touch-spot-uv.jpg',
     gradient: 'linear-gradient(135deg,#1a0a2e,#3c1a5a,#5a2c7a)',
-    published: false,
+    published: true,
   },
   {
     slug: 'skincare-packaging-design-guide',
@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '11 min read',
     image: '/images/portfolio/holiday-epicutis-gift-sets.jpg',
     gradient: 'linear-gradient(135deg,#2e0a1a,#4a1a2e,#6a2c3c)',
-    published: false,
+    published: true,
   },
   {
     slug: 'packaging-brief-template-beauty-brands',
@@ -130,7 +130,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '9 min read',
     image: '/images/portfolio/shelf-ready-display-unit.jpeg',
     gradient: 'linear-gradient(135deg,#1a1a2e,#2e2e3e,#3c3c4e)',
-    published: false,
+    published: true,
   },
   {
     slug: 'how-to-choose-beauty-packaging-manufacturer',
@@ -142,7 +142,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '11 min read',
     image: '/images/portfolio/influencer-adidas-nemesis.jpg',
     gradient: 'linear-gradient(135deg,#0f2027,#1a3a43,#2c5a64)',
-    published: false,
+    published: true,
   },
 ]
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PostClient from './PostClient'
 
 export const metadata: Metadata = {
   title: 'SB 54 Packaging Compliance for Beauty Brands: Deadlines, Requirements, and What to Do Now',
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
 }
 
 export default function SB54CompliancePost() {
-  return <p>Article coming soon.</p>
+  return <PostClient />
 }
