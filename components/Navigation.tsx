@@ -50,6 +50,7 @@ export default function Navigation() {
     { href: '/', label: 'Home' },
     { href: '/work', label: 'Our Work' },
     { href: '/guides', label: 'Guides' },
+    { href: '/blog', label: 'Blog' },
   ]
 
   return (

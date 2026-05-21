@@ -258,3 +258,35 @@ export const finishGuideFaqJsonLd = {
     { "@type": "Question", "name": "How do I prepare files for specialty finishes?", "acceptedAnswer": { "@type": "Answer", "text": "Spot UV and foil areas need a separate layer or spot color in your design file. Embossing requires vector artwork with clear depth specifications. Your packaging vendor should provide a finish-specific dieline template." } }
   ]
 }
+
+export const packagingCostArticleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Much Does Custom Packaging Cost? A Real Pricing Breakdown for Beauty Brands",
+  "description": "Actual per-unit packaging costs by format — folding cartons, rigid boxes, tubes, and specialty finishes. What drives the price up, how to compare quotes, and where beauty brands overpay.",
+  "author": { "@type": "Person", "name": "Jordan Harper", "jobTitle": "Founder", "worksFor": { "@type": "Organization", "name": "Logic Pac" } },
+  "publisher": { "@type": "Organization", "name": "Logic Pac", "url": "https://logic-pac.com", "logo": { "@type": "ImageObject", "url": "https://logic-pac.com/images/logo.png" } },
+  "datePublished": "2026-05-21",
+  "dateModified": "2026-05-21",
+  "image": ["https://logic-pac.com/images/portfolio/foil-stamped-cylinder.jpeg"],
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://logic-pac.com/blog/custom-packaging-cost-beauty-brands" },
+  "about": [
+    { "@type": "Thing", "name": "Custom packaging costs" },
+    { "@type": "Thing", "name": "Beauty packaging pricing" },
+    { "@type": "Thing", "name": "Folding carton costs" },
+    { "@type": "Thing", "name": "Rigid box pricing" }
+  ]
+}
+
+export const packagingCostFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Custom Packaging Cost FAQs",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the minimum order for custom packaging?", "acceptedAnswer": { "@type": "Answer", "text": "Most custom packaging starts at 500 to 1,000 units per SKU. Folding cartons can sometimes run at lower minimums (250+), while rigid boxes typically require 500+. Pricing improves significantly at 2,500+ units." } },
+    { "@type": "Question", "name": "How much do packaging samples cost?", "acceptedAnswer": { "@type": "Answer", "text": "Pre-production samples typically cost $200 to $800 depending on complexity. This covers tooling setup, material sourcing, and hand-assembly. Sample costs are usually credited toward your production order." } },
+    { "@type": "Question", "name": "How long does custom packaging take to produce?", "acceptedAnswer": { "@type": "Answer", "text": "Custom packaging typically takes 12 to 20 weeks from approved brief to delivery: design (2 to 4 weeks), prototyping (2 to 4 weeks), tooling (4 to 6 weeks), production (4 to 8 weeks), and freight (4 to 8 weeks if international)." } },
+    { "@type": "Question", "name": "Can I get custom packaging for under $1 per unit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Folding cartons with standard finishes at quantities of 5,000+ can come in under $1 per unit. Rigid boxes, specialty structures, and low-quantity runs will be higher." } },
+    { "@type": "Question", "name": "What's included in a packaging quote?", "acceptedAnswer": { "@type": "Answer", "text": "A complete quote should include: unit cost (FOB or landed), tooling fees, finish costs broken out line by line, sample costs, minimum order quantity, and production timeline." } }
+  ]
+}

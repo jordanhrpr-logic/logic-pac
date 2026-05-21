@@ -33,8 +33,9 @@ export default function Footer() {
           <Link href="/work">Our Work</Link>
         </div>
         <div className="ftrc">
-          <h4>Guides</h4>
+          <h4>Resources</h4>
           <Link href="/guides">Packaging Guides</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/guides/influencer-kit-playbook">Influencer Kit Playbook</Link>
           <Link href="/guides/packaging-finish-guide">Finish Guide</Link>
         </div>
