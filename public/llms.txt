@@ -1,0 +1,82 @@
+# Logic Pac
+
+> Logic Pac is a custom packaging development partner for beauty, cosmetic, and consumer brands. Structural design, global sourcing, holiday gift set manufacturing, influencer kit production, jewelry packaging, and fulfillment. Backed by Logic Agency Inc. with 20+ years of supply chain operations across 15+ countries. Based in Orange County, CA and Salt Lake City, UT.
+
+Logic Pac is the packaging arm of Logic Agency Inc. Every project runs through structural engineering, global sourcing, quality control, retailer compliance, and (when needed) US-based kitting and fulfillment. Typical minimums start at 50 units for PR kits and 500-1,000 units for custom retail packaging. Timelines range from 6-10 weeks for standard programs to 5-7 months for holiday gift sets.
+
+## Capabilities
+
+- [Overview of Capabilities](https://logic-pac.com/capabilities): Structural design, global sourcing, quality control, compliance, kitting, and fulfillment.
+- [Holiday Gift Set Packaging](https://logic-pac.com/holiday): Custom rigid boxes, advent calendars, multi-component kits, kitting, and retail compliance for Ulta, Sephora, and Target.
+- [Influencer Kit & PR Mailer Production](https://logic-pac.com/influencer): Custom kits designed for unboxing, 50 to 5,000+ units, with direct-to-recipient fulfillment.
+- [Custom Jewelry Packaging](https://logic-pac.com/jewelry): Rigid jewelry boxes, branded inserts, holiday gift sets, and coordinated brand systems across all box sizes.
+- [Portfolio and Case Studies](https://logic-pac.com/work): Filterable portfolio of holiday kits, influencer/PR programs, beauty and cosmetics packaging, retail packaging, specialty finishes, and jewelry packaging.
+
+## Long-Form Guides
+
+- [Influencer Kit Playbook](https://logic-pac.com/guides/influencer-kit-playbook): Structural framework, production specs, and format comparisons for influencer kit design.
+- [Packaging Finish Guide](https://logic-pac.com/guides/packaging-finish-guide): Foil stamping, spot UV, embossing, soft-touch, and other finishes with cost impacts and use cases.
+- [Sustainable Beauty Packaging](https://logic-pac.com/guides/sustainable-beauty-packaging): PCR performance, SB 54 timeline, EU PPWR, and material comparisons for beauty brands.
+- [Material Decision Framework](https://logic-pac.com/guides/material-decision-framework): Structured evaluation of glass, PET, HDPE, aluminum, and molded fiber for beauty packaging.
+- [Beauty Refillable Playbook](https://logic-pac.com/guides/beauty-refillable-playbook): Economics and material combinations for refillable packaging systems at scale.
+- [Concept to Shelf Timeline](https://logic-pac.com/guides/concept-to-shelf-timeline): 90-day and longer production timelines from brief to delivery.
+- [Packaging Brief Template](https://logic-pac.com/guides/packaging-brief-template): The document that determines whether a packaging project runs smoothly or costs 2x in revisions.
+
+## Blog: Pricing and Cost
+
+- [How Much Does Custom Packaging Cost? A Real Pricing Breakdown for Beauty Brands](https://logic-pac.com/blog/custom-packaging-cost-beauty-brands): Per-unit ranges by format — folding cartons, rigid boxes, tubes, and specialty finishes.
+- [Packaging Cost Per Unit Benchmarks by Product Category](https://logic-pac.com/blog/packaging-cost-per-unit-benchmarks): Real cost ranges across beauty, food, and jewelry categories.
+- [PR Kit Cost Breakdown](https://logic-pac.com/blog/pr-kit-cost-breakdown): Where money goes in PR mailer programs and what drives the total.
+- [How Much Does Custom Jewelry Packaging Cost?](https://logic-pac.com/blog/custom-jewelry-packaging-cost): Real pricing guide for branded jewelry boxes.
+
+## Blog: Sustainability and Compliance
+
+- [Sustainable Beauty Packaging: What Actually Works, What's Greenwashing, and What the Regulations Require](https://logic-pac.com/blog/sustainable-beauty-packaging-sb54): PCR reality, SB 54 deadlines, EU PPWR, FTC Green Guides, and honest cost comparisons.
+- [SB 54 Packaging Compliance for Beauty Brands](https://logic-pac.com/blog/sb54-packaging-compliance-beauty): Deadlines, requirements, and roadmap.
+- [EU PPWR Packaging Requirements for Beauty](https://logic-pac.com/blog/eu-ppwr-packaging-requirements-beauty): Recycled content targets, recyclability criteria, and design-for-recycling.
+- [PCR Packaging for Beauty Brands](https://logic-pac.com/blog/pcr-packaging-beauty-brands): Post-consumer recycled content, availability, and cost premium.
+- [Refillable Beauty Packaging Guide](https://logic-pac.com/blog/refillable-beauty-packaging-guide): Refill architectures, economics, and material selection.
+- [Mono-Material Packaging Design](https://logic-pac.com/blog/mono-material-packaging-design): Why single-material construction matters for real recyclability.
+- [Sustainable Jewelry Packaging](https://logic-pac.com/blog/sustainable-jewelry-packaging): FSC, recycled paper, molded fiber, and mono-materials for jewelry.
+
+## Blog: Materials
+
+- [Glass vs. Plastic Beauty Packaging: Cost, Sustainability, Weight, and Perception Compared](https://logic-pac.com/blog/glass-vs-plastic-beauty-packaging): Full comparison of the two dominant primary packaging materials.
+- [HDPE vs. PET Packaging Comparison](https://logic-pac.com/blog/hdpe-vs-pet-packaging-comparison): Which plastic to choose for beauty applications.
+- [Packaging Finishes Guide: Foil, Spot UV, Emboss](https://logic-pac.com/blog/packaging-finishes-guide-foil-uv-emboss): Every finish explained with real cost-per-unit additions.
+- [Soft-Touch Lamination for Packaging](https://logic-pac.com/blog/soft-touch-lamination-packaging): Perceived-quality signal, cost, and use cases.
+
+## Blog: Formats and Design
+
+- [Custom Cosmetic Packaging Formats](https://logic-pac.com/blog/custom-cosmetic-packaging-formats): Compacts, palettes, tubes, bottles, jars, airless systems, and kits.
+- [Luxury Beauty Packaging Guide](https://logic-pac.com/blog/luxury-beauty-packaging-guide): What separates premium from mass market.
+- [Skincare Packaging Design Guide](https://logic-pac.com/blog/skincare-packaging-design-guide): Category-specific packaging for skincare brands.
+- [Fragrance Packaging Design Guide](https://logic-pac.com/blog/fragrance-packaging-design-guide): Structural, closure, and material considerations for fragrance.
+- [Food and Beverage Packaging Design Guide](https://logic-pac.com/blog/food-beverage-packaging-design-guide): F&B packaging structures, materials, and compliance.
+- [Jewelry Packaging Design Guide](https://logic-pac.com/blog/jewelry-packaging-design-guide): Boxes, inserts, materials, and unboxing for jewelry brands.
+- [Luxury Jewelry Packaging Guide](https://logic-pac.com/blog/luxury-jewelry-packaging-guide): When premium jewelry packaging is worth it.
+- [Jewelry Packaging: Retail vs. DTC](https://logic-pac.com/blog/jewelry-packaging-retail-vs-dtc): What has to change between channels.
+- [Unboxing Experience Design Guide](https://logic-pac.com/blog/unboxing-experience-design-guide): Engineering the reveal sequence for owned and creator content.
+- [How to Design an Influencer Kit That Actually Gets Posted](https://logic-pac.com/blog/influencer-kit-packaging-design): The 5 elements that separate kits that get filmed from kits that get recycled.
+
+## Blog: Holiday and Kits
+
+- [Holiday Gift Set Packaging for Beauty Brands](https://logic-pac.com/blog/holiday-gift-set-packaging-beauty-brands): Formats, timelines, and what to plan now.
+- [Advent Calendar Packaging for Beauty Brands](https://logic-pac.com/blog/advent-calendar-packaging-beauty): Structures, costs, and timelines for advent programs.
+- [Gift Set Packaging Design](https://logic-pac.com/blog/gift-set-packaging-design): Rigid box, folding carton, and sleeve+tray structures for multi-product kits.
+
+## Blog: Planning and Process
+
+- [Custom Packaging Timeline](https://logic-pac.com/blog/custom-packaging-timeline): Real timeline from concept to shelf.
+- [Custom Packaging Development Process](https://logic-pac.com/blog/custom-packaging-development-process): Design, prototyping, tooling, and production stages.
+- [Custom Packaging MOQ Guide](https://logic-pac.com/blog/custom-packaging-moq-guide): Understanding minimum order quantities.
+- [Packaging Brief Template for Beauty Brands](https://logic-pac.com/blog/packaging-brief-template-beauty-brands): Section-by-section walkthrough of a complete packaging brief.
+- [How to Choose a Beauty Packaging Manufacturer](https://logic-pac.com/blog/how-to-choose-beauty-packaging-manufacturer): Decision framework and qualification questions.
+
+## Optional
+
+- [Sitemap](https://logic-pac.com/sitemap.xml): Full URL index.
+- [Blog Index](https://logic-pac.com/blog): All published posts.
+- [Guides Index](https://logic-pac.com/guides): All published long-form guides.
+- Contact: sean@logicagencyinc.com or +1 (949) 284-5134.
+- Parent company: [Logic Agency Inc.](https://logicagencyinc.com) — fractional supply chain operations for scaling brands.

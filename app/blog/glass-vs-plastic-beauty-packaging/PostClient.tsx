@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -153,6 +154,20 @@ export default function PostClient() {
             <p>Start with the product formula and sales channel. Layer in the margin model. Factor in sustainability requirements &mdash; SB 54 and PPWR are not optional. Then choose the material.</p>
             <p>If you want to run this decision through a structured framework that includes all five core materials &mdash; glass, PET, HDPE, aluminum, and molded fiber &mdash; our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_material_guide">Material Decision Framework</Link> guide gives you the full evaluation model. And if you&apos;d rather walk through it with someone who&apos;s sourced both materials at scale, <Link href="/contact?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_cta">book a packaging consultation</Link> and we&apos;ll help you make the call.</p>
       </div>
+
+      <BlogFAQ
+        title="Glass vs. Plastic Beauty Packaging FAQs"
+        faqs={[
+          { question: 'Is glass or plastic cheaper for beauty packaging?', answer: 'Plastic is cheaper across the board. Glass containers typically cost 3-5x more than PET at equivalent volume. A 50ml PET jar runs $0.20-$0.45; a 50ml glass jar runs $0.80-$2.00. When you factor in freight (glass weighs 5-10x more), tooling ($15K-$50K+ for glass vs. $3K-$10K for PET), heavier secondary packaging, and 1-3% breakage in fulfillment, glass is 4-7x more expensive than PET on a total landed basis.' },
+          { question: 'When should I use glass for beauty packaging?', answer: 'Glass is the right call for prestige positioning where shelf weight is part of the brand signal, for fragrance and high-concentration serums (alcohol and light-sensitive actives interact with most plastics), and for refillable systems where the outer container needs to feel worth keeping. In Sephora, Nordstrom, Bluemercury, and Space NK, glass is table stakes for prestige skincare and fragrance.' },
+          { question: 'When should I use plastic for beauty packaging?', answer: 'Plastic is the right call for DTC and e-commerce (weight and breakage both hurt margins), high-volume body care and cleansers, SPF and on-the-go formats, and any product where the retail price cannot absorb a $1.50-$2.50 glass container. PET or HDPE with post-consumer recycled content is the modern default for online-first brands.' },
+          { question: 'Is glass more sustainable than plastic?', answer: 'Neither is a clean win. Glass is infinitely recyclable without degradation and has higher consumer-perceived sustainability, but production requires 1500°C+ furnace temperatures and its weight raises transportation emissions. PET (resin #1) is the most widely recycled plastic in the US (around 30% actual reprocessing) but is petroleum-derived. Actual glass recycling in the US sits around 33%. The material choice depends more on channel and product than a universal sustainability winner.' },
+          { question: 'What is PCR plastic and how much does it cost?', answer: 'Post-Consumer Recycled (PCR) plastic is resin made from previously used PET or HDPE. It is commercially available at 25%, 50%, 75%, and 100% recycled content grades. The cost premium runs 10-30% over virgin resin depending on percentage, color (clear PCR costs more), and volume. PCR is increasingly required to qualify for Sephora Clean + Planet Positive, Target Zero, and Ulta sustainability programs.' },
+          { question: 'How do California SB 54 and EU PPWR affect beauty packaging materials?', answer: 'California SB 54 requires all packaging sold in the state to be recyclable or compostable by 2032, with recycled content minimums of 30% by 2028, 40% by 2030, and 65% by 2032 for plastic packaging. The EU Packaging and Packaging Waste Regulation (PPWR) sets recycled content targets of 10% by 2030 rising to 35% by 2040 for contact-sensitive packaging, plus mandatory recyclability criteria. For any beauty brand with national or international distribution, PCR content is a compliance requirement, not a marketing choice.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Packaging"
+      />
 
       <section className="ctas">
         <div className="ctai">

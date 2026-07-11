@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -134,6 +135,20 @@ export default function PostClient() {
             <p>Everything else is logistics. Important logistics&mdash;timeline, fulfillment, freight, storage&mdash;but logistics that follow from the design decision, not the other way around.</p>
             <p>For the full structural framework, production specs, and format comparisons, read the <Link href="/guides/influencer-kit-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_playbook">Influencer Kit Playbook</Link>. Ready to move from concept to production? <Link href="/influencer?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_capability">See what we build for influencer campaigns</Link>.</p>
       </div>
+
+      <BlogFAQ
+        title="Influencer Kit Packaging FAQs"
+        faqs={[
+          { question: 'What makes an influencer kit more likely to get posted?', answer: 'Kits engineered around a single reveal moment see 3-5x higher post rates than decorated shipping boxes. The five elements that drive filming are: a clear reveal in the first three to five seconds, intentional product staging that suggests camera angles, texture contrast between materials, one shareable detail worth showing the lens, and a shipping weight that signals importance before the box opens.' },
+          { question: 'How much does an influencer kit cost per unit?', answer: 'Budget-tier kits (printed mailers with die-cut inserts) run $8-15 per unit and work best for high-quantity seeding of 500-5,000+ recipients. Mid-range kits (rigid box, magnetic closure, soft-touch, one foil application) run $15-30 and fit product launches of 250-1,000 units. Premium fully-engineered kits (drawer or book-style structure, velvet lining, personalization) run $30-50+ and are typically reserved for VIP drops of 50-200 units.' },
+          { question: 'How long does it take to produce a custom influencer kit?', answer: 'Most projects run 6-10 weeks from approved brief to delivery, and fully custom rigid builds with specialty finishes need 10-12 weeks. Accelerated timelines of 4-5 weeks are possible with simple structures and stock materials but eliminate sampling. Holiday campaigns need 12-16 weeks because factory capacity fills by August for Q4 delivery.' },
+          { question: 'What is the ideal size and weight for an influencer kit?', answer: 'The sweet spot is 12" x 10" x 4" for standard seeding, 14" x 12" x 6" for premium multi-product kits, with a total weight of 2-5 lbs. The weight should come from structural materials, not filler. Oversized kits create shipping cost, space, and waste problems that outweigh the "premium" signal.' },
+          { question: 'Is premium influencer packaging worth the extra cost?', answer: 'Yes, when the math works out. A $8 mailer to 500 creators at 15% post rate generates 75 posts at $53 per post in packaging cost. A $16 engineered kit at 45% post rate generates 225 posts at $36 each. That $8 upgrade generated 150 additional posts at $27 incremental cost. At $500-$2,000 earned media value per post, a $4,000 incremental spend returns $75,000-$300,000.' },
+          { question: 'What should I include in a brief to a packaging partner?', answer: 'A complete brief that gets quoted within 48 hours includes: campaign type (launch, seasonal, seeding), recipient count and profile, product dimensions and weights, target delivery date, per-unit budget range, sustainability requirements, personalization needs, and kitting scope. Most brands forget to specify the outer shipper, variable elements between recipients, storage needs, and reorder potential.' },
+        ]}
+        ctaText="Start Your Influencer Kit Project"
+        ctaProjectType="Influencer / PR Kit"
+      />
 
       <section className="ctas">
         <div className="ctai">
