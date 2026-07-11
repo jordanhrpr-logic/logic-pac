@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import PostClient from './PostClient'
+import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
   title: 'Advent Calendar Packaging for Beauty Brands: What It Actually Takes to Produce One',
@@ -15,5 +16,14 @@ export const metadata: Metadata = {
 }
 
 export default function AdventCalendarPackagingBeautyPost() {
-  return <PostClient />
+  const slug = 'advent-calendar-packaging-beauty'
+  const articleJsonLd = buildBlogArticleSchema(slug)
+  const breadcrumbJsonLd = buildBlogBreadcrumbSchema(slug)
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <PostClient />
+    </>
+  )
 }

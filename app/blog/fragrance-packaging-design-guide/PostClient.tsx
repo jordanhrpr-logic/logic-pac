@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -178,20 +179,23 @@ export default function PostClient() {
             <p>That means the same scent can need different packaging economics by channel. DTC can tolerate a slightly larger unboxing moment if freight is controlled. Retail needs the package to work inside receiving, shelf, and reorder systems. Holiday gifting can justify more structure because the package is part of the purchase reason.</p>
             <p>The mistake is building one beautiful box and assuming it works everywhere. Fragrance packaging should be designed around the channel where the customer actually meets the product.</p>
 
-            <h2>FAQ</h2>
-            <h3>How much does custom fragrance packaging cost?</h3>
-            <p>Custom fragrance packaging usually costs $5-$25+ per unit for secondary packaging, depending on structure, board weight, inserts, closure, finishes, and order volume.</p>
-            <h3>What type of box is best for perfume packaging?</h3>
-            <p>Rigid boxes are common for premium fragrance because they give weight, protection, and a better unboxing experience. Folding cartons can work for samples, discovery sets, and mass-market formats.</p>
-            <h3>Are magnetic closures necessary for fragrance packaging?</h3>
-            <p>No. Magnetic closures are common, but they are not always necessary. Lift-off lids, drawer boxes, rigid sleeves, and book-style boxes can all work when they match the brand and price point.</p>
-            <h3>How long does fragrance packaging production take?</h3>
-            <p>Plan for 4-6 months from brief to delivery. Complex coffrets, custom inserts, or holiday retail programs should start closer to six months before the launch date.</p>
-            <h3>What finishes make perfume packaging feel premium?</h3>
-            <p>Foil stamping, embossing, debossing, soft-touch lamination, and specialty papers all work well. The strongest fragrance packaging usually uses one signature finish instead of stacking every option.</p>
-            <h3>Can Logic Pac produce fragrance gift sets or coffrets?</h3>
-            <p>Yes. We develop rigid boxes, inserts, discovery sets, coffrets, holiday kits, and retail-ready secondary packaging for fragrance and beauty brands.</p>
+      </div>
 
+      <BlogFAQ
+        title="Fragrance Packaging FAQ"
+        faqs={[
+          { question: 'How much does custom fragrance packaging cost?', answer: 'Custom fragrance packaging usually costs $5-$25+ per unit for secondary packaging, depending on structure, board weight, inserts, closure, finishes, and order volume.' },
+          { question: 'What type of box is best for perfume packaging?', answer: 'Rigid boxes are common for premium fragrance because they give weight, protection, and a better unboxing experience. Folding cartons can work for samples, discovery sets, and mass-market formats.' },
+          { question: 'Are magnetic closures necessary for fragrance packaging?', answer: 'No. Magnetic closures are common, but they are not always necessary. Lift-off lids, drawer boxes, rigid sleeves, and book-style boxes can all work when they match the brand and price point.' },
+          { question: 'How long does fragrance packaging production take?', answer: 'Plan for 4-6 months from brief to delivery. Complex coffrets, custom inserts, or holiday retail programs should start closer to six months before the launch date.' },
+          { question: 'What finishes make perfume packaging feel premium?', answer: 'Foil stamping, embossing, debossing, soft-touch lamination, and specialty papers all work well. The strongest fragrance packaging usually uses one signature finish instead of stacking every option.' },
+          { question: 'Can Logic Pac produce fragrance gift sets or coffrets?', answer: 'Yes. We develop rigid boxes, inserts, discovery sets, coffrets, holiday kits, and retail-ready secondary packaging for fragrance and beauty brands.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Fragrance Packaging"
+      />
+
+      <div className="blog-body">
             <h2>Build Fragrance Packaging That Supports the Price Point</h2>
             <p>Fragrance packaging has to do more than protect a bottle. It has to make the customer believe the scent is worth the price before they open it.</p>
             <p>If you are planning a fragrance launch, coffret, or retail-ready secondary box, we can help build the structure, source the materials, manage production, and keep the cost tied to the margin model.</p>

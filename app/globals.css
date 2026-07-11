@@ -260,9 +260,9 @@ nav .nav-toggle span{background:var(--navy)}
 .blog-body strong{color:var(--navy)}
 .blog-body a{color:var(--navy);text-decoration:underline;text-underline-offset:2px}
 .blog-body a:hover{color:var(--lime)}
-.blog-faq{background:var(--bg);padding:80px 48px}
+.blog-faq{background:var(--navy);padding:80px 48px}
 .blog-faq-inner{max-width:760px;margin:0 auto}
-.blog-faq-inner h2{font-family:'DM Serif Display',serif;font-size:28px;font-weight:400;color:var(--navy);margin-bottom:32px}
+.blog-faq-inner h2{font-family:'DM Serif Display',serif;font-size:28px;font-weight:400;color:white;margin-bottom:24px}
 /* ── JEWELRY PORTFOLIO ── */
 .jpf{padding:80px 80px 40px;text-align:center}
 .jpf h2{margin-bottom:48px}

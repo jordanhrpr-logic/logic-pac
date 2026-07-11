@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -59,6 +61,8 @@ export default function PostClient() {
             <p>Paperboard palettes (folding carton with thermoformed or paperboard inserts) offer a lower-tooling alternative at <strong>$1.50-$5.00 per unit</strong>, but they sacrifice the rigid, premium feel of injection-molded formats. They work well for limited-edition launches and seasonal collections where the tooling investment of a custom mold is hard to justify.</p>
             <h3>Decision criteria</h3>
             <p>Choose injection-molded palettes when the format will be permanent or semi-permanent in the line. Choose paperboard palettes for seasonal drops, collaborations, or limited runs under 10,000 units. Either way, the <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_timeline">Concept to Shelf Timeline</Link> matters &mdash; palette development typically takes <strong>14-20 weeks</strong> from approved design to delivered inventory.</p>
+
+            <Image src="/images/portfolio/kiki-world-folding-cartons.jpg" alt="Cosmetic folding carton packaging in production layout" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <h2>Lip Gloss Tubes: High Volume, High Decoration Potential</h2>
             <p>Lip gloss tubes are one of the highest-volume cosmetic packaging formats globally. The standard format is a cylindrical or tapered tube with a doe-foot applicator, wiper insert, and screw or snap cap.</p>
@@ -131,20 +135,23 @@ export default function PostClient() {
             <p>A competitor&apos;s compact may have required $8,000 in mold tooling and a 15,000-unit first order. If your launch plan is 2,000 units, that same format may not be financially viable yet.</p>
             <p>Start with the <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_cost_post">custom packaging cost breakdown</Link> to understand the economics before you commit to a format.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>What is the cheapest custom cosmetic packaging format?</h3>
-            <p>Lip gloss tubes and wood pencils are typically the lowest-cost custom cosmetic packaging formats, starting at <strong>$0.20-$0.50 per unit</strong> in volume. Stock bodies with custom decoration keep costs low while still delivering brand-specific aesthetics. Folding cartons as secondary packaging also offer strong cost efficiency at <strong>$0.50-$3.00 per unit</strong>.</p>
-            <h3>How long does custom cosmetic packaging take to develop?</h3>
-            <p>Most custom cosmetic packaging takes <strong>10-20 weeks</strong> from design approval to delivered inventory. Simple formats like decorated stock tubes may be faster (8-12 weeks). Complex formats requiring custom molds &mdash; compacts, palettes, airless systems &mdash; typically take 14-20 weeks including tooling, sampling, and production.</p>
-            <h3>Can I order custom cosmetic packaging in small quantities?</h3>
-            <p>Yes, but the unit economics change significantly at low volumes. Stock-body formats with custom decoration can start at <strong>1,000-3,000 units</strong>. Custom-molded formats typically require <strong>5,000-20,000 units</strong> to justify tooling investment. Influencer kits and PR packaging can sometimes start at <strong>50-100 units</strong> in rigid box formats.</p>
-            <h3>What cosmetic packaging format has the highest perceived value?</h3>
-            <p>Rigid set-up boxes with custom inserts, magnetic closures, and premium finishes create the highest perceived value. Heavy compacts with metal components and soft-touch finishes also signal luxury strongly. The key is weight, closure quality, and material feel &mdash; not the number of decorative effects stacked on the surface.</p>
-            <h3>Do I need different packaging for DTC vs. retail?</h3>
-            <p>Often yes. DTC packaging needs to survive shipping and create an unboxing moment. Retail packaging needs shelf presence, barcode compliance, and sometimes display-ready structure. Many brands use the same primary package but different secondary packaging for each channel.</p>
-            <h3>Should I start with stock or custom packaging for a new cosmetic brand?</h3>
-            <p>Start with stock bodies and custom decoration if your first production run is under 5,000 units. This lets you test the market without committing to mold tooling. Once you have validated the product and scaled to predictable volume, custom tooling becomes a smarter investment with better per-unit economics.</p>
+      </div>
 
+      <BlogFAQ
+        title="Custom Cosmetic Packaging Formats FAQ"
+        faqs={[
+          { question: 'What is the cheapest custom cosmetic packaging format?', answer: 'Lip gloss tubes and wood pencils are typically the lowest-cost custom cosmetic packaging formats, starting at $0.20-$0.50 per unit in volume. Stock bodies with custom decoration keep costs low while still delivering brand-specific aesthetics. Folding cartons as secondary packaging also offer strong cost efficiency at $0.50-$3.00 per unit.' },
+          { question: 'How long does custom cosmetic packaging take to develop?', answer: 'Most custom cosmetic packaging takes 10-20 weeks from design approval to delivered inventory. Simple formats like decorated stock tubes may be faster (8-12 weeks). Complex formats requiring custom molds -- compacts, palettes, airless systems -- typically take 14-20 weeks including tooling, sampling, and production.' },
+          { question: 'Can I order custom cosmetic packaging in small quantities?', answer: 'Yes, but the unit economics change significantly at low volumes. Stock-body formats with custom decoration can start at 1,000-3,000 units. Custom-molded formats typically require 5,000-20,000 units to justify tooling investment. Influencer kits and PR packaging can sometimes start at 50-100 units in rigid box formats.' },
+          { question: 'What cosmetic packaging format has the highest perceived value?', answer: 'Rigid set-up boxes with custom inserts, magnetic closures, and premium finishes create the highest perceived value. Heavy compacts with metal components and soft-touch finishes also signal luxury strongly. The key is weight, closure quality, and material feel -- not the number of decorative effects stacked on the surface.' },
+          { question: 'Do I need different packaging for DTC vs. retail?', answer: 'Often yes. DTC packaging needs to survive shipping and create an unboxing moment. Retail packaging needs shelf presence, barcode compliance, and sometimes display-ready structure. Many brands use the same primary package but different secondary packaging for each channel.' },
+          { question: 'Should I start with stock or custom packaging for a new cosmetic brand?', answer: 'Start with stock bodies and custom decoration if your first production run is under 5,000 units. This lets you test the market without committing to mold tooling. Once you have validated the product and scaled to predictable volume, custom tooling becomes a smarter investment with better per-unit economics.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Cosmetic Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Choosing the right cosmetic packaging format is easier when you can see the full picture &mdash; formula requirements, volume plan, channel constraints, and budget &mdash; in one conversation.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will walk through the format options that fit your product, your timeline, and your margin model.</p>

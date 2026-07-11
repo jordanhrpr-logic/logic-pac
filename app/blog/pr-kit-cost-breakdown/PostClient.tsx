@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -50,6 +52,8 @@ export default function PostClient() {
             <h3>When This Tier Makes Sense</h3>
             <p>Basic mailers work for product seedings where the product itself is the star. If you&apos;re sending a single hero product to 500 micro-influencers, the packaging needs to protect the product and identify the brand. It doesn&apos;t need to be an experience. The product and the personal note do the work.</p>
             <p>This tier also works for media sends where the journalist or editor is evaluating the product, not the box. A well-designed mailer with clean branding signals professionalism without overinvesting in packaging that gets recycled within minutes.</p>
+
+            <Image src="/images/portfolio/skincare-launch-pr-mailer.jpg" alt="Custom skincare launch PR mailer kit packaging" width={500} height={751} className="guide-img" style={{ width: '65%', height: 'auto', margin: '24px auto 32px', display: 'block' }} />
 
             <h2>Tier 2: Branded Kit ($15-30 per Unit)</h2>
             <p>The branded kit adds structural intention and a curated unboxing sequence. This is where the packaging becomes part of the content. Most beauty PR kits that generate social posts live in this tier.</p>
@@ -128,20 +132,24 @@ export default function PostClient() {
             <p>3. <strong>Timing:</strong> Kits timed to a product launch, holiday season, or trend moment get prioritized. A random Tuesday arrival competes with every other package that week.</p>
             <p>Our <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pr-kit-cost-breakdown">packaging finish guide</Link> covers which finishes photograph best and translate to camera.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>How much does a basic PR mailer cost?</h3>
-            <p>A basic branded PR mailer costs <strong>$8-15 per unit</strong> in packaging at 500 units. This includes a custom-printed corrugated box, branded tissue paper, printed insert card, and sticker seal. Product cost, kitting labor ($1.50-2.50/unit), and shipping ($8-18/unit domestic) are additional. Total landed cost per kit (packaging + assembly + shipping, no product) runs $17-35.</p>
-            <h3>What&apos;s the cost difference between 50 units and 500 units?</h3>
-            <p>Quantity is the largest cost lever. At 50 units, per-unit packaging costs run <strong>40-60% higher</strong> than at 500 units because printing, tooling, and material minimums get spread across fewer units. A rigid box that costs $12/unit at 500 might cost $18-20/unit at 50. The breakpoint where per-unit economics improve most is the 200-500 unit range.</p>
-            <h3>Should I invest in the box or the products inside?</h3>
-            <p>Both matter, but they serve different functions. The box determines whether the kit gets filmed. The products determine whether the influencer recommends the brand. If budget is limited, allocate enough to the packaging to hit Tier 2 (branded kit with a structured insert) and put the remaining budget into product quality and personalization.</p>
-            <h3>How do I calculate PR kit ROI?</h3>
-            <p>Divide total program cost (packaging + product + kitting + shipping) by the number of social posts generated. Then calculate cost per impression by dividing total cost by total impressions across all posts. Compare against your brand&apos;s paid media CPM. Most Tier 2 PR kit programs deliver cost-per-impression rates <strong>5-20x cheaper</strong> than equivalent paid placements.</p>
-            <h3>Do you handle fulfillment and shipping for PR kits?</h3>
-            <p>Yes. We handle kitting, assembly, and outbound fulfillment from our Salt Lake City warehouse. Products and packaging components arrive separately. We assemble the kits, run QC, and ship to your influencer list. This eliminates the operational burden on your internal team and ensures every kit is assembled consistently.</p>
-            <h3>What&apos;s the minimum order for a custom PR kit?</h3>
-            <p>We produce PR kits in runs as small as <strong>50 units</strong> for VIP or press sends. Per-unit costs are higher at that volume, but the total investment stays manageable. For broader influencer seeding programs, 200-500 units is the sweet spot where per-unit economics balance against program scale. Runs above 1,000 units are common for major launch campaigns.</p>
 
+      </div>
+
+      <BlogFAQ
+        title="PR Kit Cost FAQs"
+        faqs={[
+          { question: 'How much does a basic PR mailer cost?', answer: 'A basic branded PR mailer costs $8-15 per unit in packaging at 500 units. This includes a custom-printed corrugated box, branded tissue paper, printed insert card, and sticker seal. Product cost, kitting labor ($1.50-2.50/unit), and shipping ($8-18/unit domestic) are additional. Total landed cost per kit (packaging + assembly + shipping, no product) runs $17-35.' },
+          { question: 'What is the cost difference between 50 units and 500 units?', answer: 'Quantity is the largest cost lever. At 50 units, per-unit packaging costs run 40-60% higher than at 500 units because printing, tooling, and material minimums get spread across fewer units. A rigid box that costs $12/unit at 500 might cost $18-20/unit at 50. The breakpoint where per-unit economics improve most is the 200-500 unit range.' },
+          { question: 'Should I invest in the box or the products inside?', answer: 'Both matter, but they serve different functions. The box determines whether the kit gets filmed. The products determine whether the influencer recommends the brand. If budget is limited, allocate enough to the packaging to hit Tier 2 (branded kit with a structured insert) and put the remaining budget into product quality and personalization.' },
+          { question: 'How do I calculate PR kit ROI?', answer: 'Divide total program cost (packaging + product + kitting + shipping) by the number of social posts generated. Then calculate cost per impression by dividing total cost by total impressions across all posts. Compare against your brand\'s paid media CPM. Most Tier 2 PR kit programs deliver cost-per-impression rates 5-20x cheaper than equivalent paid placements.' },
+          { question: 'Do you handle fulfillment and shipping for PR kits?', answer: 'Yes. We handle kitting, assembly, and outbound fulfillment from our Salt Lake City warehouse. Products and packaging components arrive separately. We assemble the kits, run QC, and ship to your influencer list. This eliminates the operational burden on your internal team and ensures every kit is assembled consistently.' },
+          { question: 'What is the minimum order for a custom PR kit?', answer: 'We produce PR kits in runs as small as 50 units for VIP or press sends. Per-unit costs are higher at that volume, but the total investment stays manageable. For broader influencer seeding programs, 200-500 units is the sweet spot where per-unit economics balance against program scale. Runs above 1,000 units are common for major launch campaigns.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="PR Kit Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Start with the send list. How many influencers, what tier of creator, and what&apos;s the occasion? The answers determine which packaging tier makes sense, what the per-unit budget should be, and whether the ROI math works.</p>
             <p>We&apos;ll quote the packaging, map the timeline, and show you where to allocate budget for maximum post rate.</p>

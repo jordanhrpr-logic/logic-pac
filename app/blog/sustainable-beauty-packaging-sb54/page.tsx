@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import PostClient from './PostClient'
+import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
   title: 'Sustainable Beauty Packaging: What Actually Works, What\'s Greenwashing, and What the Regulations Require',
@@ -15,5 +16,14 @@ export const metadata: Metadata = {
 }
 
 export default function SustainablePackagingPost() {
-  return <PostClient />
+  const slug = 'sustainable-beauty-packaging-sb54'
+  const articleJsonLd = buildBlogArticleSchema(slug)
+  const breadcrumbJsonLd = buildBlogBreadcrumbSchema(slug)
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <PostClient />
+    </>
+  )
 }

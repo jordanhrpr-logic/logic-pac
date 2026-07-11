@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -147,20 +148,23 @@ export default function PostClient() {
               <li>Direct print, in-mold labeling, and minimal label formats improve recyclability scores</li>
             </ul>
 
-            <h2>FAQ</h2>
-            <h3>Does PPWR apply to US-based beauty brands?</h3>
-            <p>PPWR applies to any packaging placed on the EU market, regardless of where the brand is headquartered. If you sell products in EU member states, your packaging must comply with PPWR requirements according to the phased timeline.</p>
-            <h3>When do the PPWR recycled content targets start?</h3>
-            <p>The first mandatory recycled content targets take effect in 2030. Contact-sensitive plastic packaging must contain at least 10% post-consumer recycled content. Non-contact-sensitive plastic must reach 35%. These increase in 2040 to 25% and 65% respectively.</p>
-            <h3>How does PPWR affect luxury beauty packaging?</h3>
-            <p>Luxury formats that rely on mixed materials, magnets, foam inserts, and non-separable layers face the most significant redesign requirements. The regulation does not ban premium packaging, but it requires that all packaging be designed for recycling. Premium brands will need to achieve shelf presence through mono-material structures, certified substrates, and print finishes rather than material complexity.</p>
-            <h3>What is the difference between &ldquo;designed for recycling&rdquo; and &ldquo;recyclable at scale&rdquo;?</h3>
-            <p>Designed for recycling (required by 2030) means the packaging is made from materials and in formats that can be recycled. Recyclable at scale (required by 2035) means the collection, sorting, and recycling infrastructure to actually process that packaging exists and operates at commercial volume. The second requirement is harder because it depends on system-level infrastructure, not just packaging design.</p>
-            <h3>Can digital labeling replace physical labels under PPWR?</h3>
-            <p>PPWR permits digital labeling through QR codes for detailed information such as material composition and disposal instructions. However, basic sortation information and material identification must remain physically on the package. QR codes supplement physical labels rather than fully replacing them.</p>
-            <h3>How should brands selling in both California and the EU approach compliance?</h3>
-            <p>Design to the stricter standard at each phase. In most cases, this means using PPWR recyclability design requirements and SB 54 EPR documentation requirements simultaneously. A packaging system that satisfies both creates the least rework risk as both regulatory frameworks evolve.</p>
+      </div>
 
+      <BlogFAQ
+        title="EU PPWR Packaging Requirements FAQ"
+        faqs={[
+          { question: 'Does PPWR apply to US-based beauty brands?', answer: 'PPWR applies to any packaging placed on the EU market, regardless of where the brand is headquartered. If you sell products in EU member states, your packaging must comply with PPWR requirements according to the phased timeline.' },
+          { question: 'When do the PPWR recycled content targets start?', answer: 'The first mandatory recycled content targets take effect in 2030. Contact-sensitive plastic packaging must contain at least 10% post-consumer recycled content. Non-contact-sensitive plastic must reach 35%. These increase in 2040 to 25% and 65% respectively.' },
+          { question: 'How does PPWR affect luxury beauty packaging?', answer: 'Luxury formats that rely on mixed materials, magnets, foam inserts, and non-separable layers face the most significant redesign requirements. The regulation does not ban premium packaging, but it requires that all packaging be designed for recycling. Premium brands will need to achieve shelf presence through mono-material structures, certified substrates, and print finishes rather than material complexity.' },
+          { question: 'What is the difference between "designed for recycling" and "recyclable at scale"?', answer: 'Designed for recycling (required by 2030) means the packaging is made from materials and in formats that can be recycled. Recyclable at scale (required by 2035) means the collection, sorting, and recycling infrastructure to actually process that packaging exists and operates at commercial volume. The second requirement is harder because it depends on system-level infrastructure, not just packaging design.' },
+          { question: 'Can digital labeling replace physical labels under PPWR?', answer: 'PPWR permits digital labeling through QR codes for detailed information such as material composition and disposal instructions. However, basic sortation information and material identification must remain physically on the package. QR codes supplement physical labels rather than fully replacing them.' },
+          { question: 'How should brands selling in both California and the EU approach compliance?', answer: 'Design to the stricter standard at each phase. In most cases, this means using PPWR recyclability design requirements and SB 54 EPR documentation requirements simultaneously. A packaging system that satisfies both creates the least rework risk as both regulatory frameworks evolve.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="PPWR Compliance"
+      />
+
+      <div className="blog-body">
             <h2>Start Planning Before the Deadlines Arrive</h2>
             <p>PPWR compliance is not a single event. It is a phased transition that rewards brands who start early and penalizes brands who wait for enforcement.</p>
             <p>The brands that audit their packaging now, qualify PCR supply in 2026-2027, redesign multi-material formats before the 2030 deadline, and build labeling systems for harmonized EU requirements will have lower cost, less disruption, and more credible sustainability claims than brands that scramble at each phase gate.</p>

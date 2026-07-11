@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -245,23 +246,22 @@ export default function PostClient() {
             <p>Start with the highest-volume SKU or the highest-risk component. Fix the biggest problem first. Then move through the system.</p>
             <p>Sustainability gets easier when it becomes a packaging operating system instead of a seasonal campaign.</p>
 
-            <h2>FAQ: Sustainable Beauty Packaging</h2>
+      </div>
 
-            <h3>What is the most sustainable beauty packaging material?</h3>
-            <p>There is no single most sustainable beauty packaging material. The best option depends on the formula, channel, volume, refill behavior, recyclability, and claim support. Mono-material formats, FSC paperboard, PCR plastics, aluminum, glass, and refill systems can all work in the right use case.</p>
+      <BlogFAQ
+        title="Sustainable Beauty Packaging FAQ"
+        faqs={[
+          { question: 'What is the most sustainable beauty packaging material?', answer: 'There is no single most sustainable beauty packaging material. The best option depends on the formula, channel, volume, refill behavior, recyclability, and claim support. Mono-material formats, FSC paperboard, PCR plastics, aluminum, glass, and refill systems can all work in the right use case.' },
+          { question: 'Is glass more sustainable than plastic for beauty packaging?', answer: 'Glass can be a strong choice for premium products, fragrance, and formulas that need strong barrier properties. It is also heavier and more fragile, which can increase freight cost, breakage risk, and protective packaging needs. Plastic can be more efficient for high-volume shipping when it is lightweight, recyclable, or made with verified PCR content.' },
+          { question: 'What is PCR packaging in beauty?', answer: 'PCR packaging uses post-consumer recycled material, usually recycled PET, HDPE, PP, or paper content. It can reduce virgin material use, but brands need to test color, odor, quality consistency, supply reliability, and claim documentation before committing.' },
+          { question: 'Does SB 54 apply to beauty brands?', answer: 'SB 54 can affect beauty brands that sell covered packaging into California, even if the brand is not based there. Brands should audit primary, secondary, and shipping packaging to understand material composition, recyclability, compostability, and documentation needs.' },
+          { question: 'What sustainability claims are risky on beauty packaging?', answer: 'Broad claims like "eco-friendly," "green," or "sustainable" are risky when they are not tied to specific proof. Stronger claims name the material, percentage, certification, or verified end-of-life pathway.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Sustainable Packaging"
+      />
 
-            <h3>Is glass more sustainable than plastic for beauty packaging?</h3>
-            <p>Glass can be a strong choice for premium products, fragrance, and formulas that need strong barrier properties. It is also heavier and more fragile, which can increase freight cost, breakage risk, and protective packaging needs. Plastic can be more efficient for high-volume shipping when it is lightweight, recyclable, or made with verified PCR content.</p>
-
-            <h3>What is PCR packaging in beauty?</h3>
-            <p>PCR packaging uses post-consumer recycled material, usually recycled PET, HDPE, PP, or paper content. It can reduce virgin material use, but brands need to test color, odor, quality consistency, supply reliability, and claim documentation before committing.</p>
-
-            <h3>Does SB 54 apply to beauty brands?</h3>
-            <p>SB 54 can affect beauty brands that sell covered packaging into California, even if the brand is not based there. Brands should audit primary, secondary, and shipping packaging to understand material composition, recyclability, compostability, and documentation needs.</p>
-
-            <h3>What sustainability claims are risky on beauty packaging?</h3>
-            <p>Broad claims like &ldquo;eco-friendly,&rdquo; &ldquo;green,&rdquo; or &ldquo;sustainable&rdquo; are risky when they are not tied to specific proof. Stronger claims name the material, percentage, certification, or verified end-of-life pathway.</p>
-
+      <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>The strongest sustainable beauty packaging starts with structure. Material first. Claim second.</p>
             <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board.</p>

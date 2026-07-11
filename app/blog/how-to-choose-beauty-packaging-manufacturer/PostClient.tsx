@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -264,23 +265,22 @@ export default function PostClient() {
             <p>Do not switch in the middle of a crisis unless you have to. Switching suppliers takes time: new samples, new tooling, new color standards, new production approvals.</p>
             <p>The best time to qualify a new partner is before the old one fails.</p>
 
-            <h2>FAQ: Choosing a Beauty Packaging Manufacturer</h2>
+      </div>
 
-            <h3>What should I look for in a beauty packaging manufacturer?</h3>
-            <p>Look for category experience, clear MOQs, material sourcing depth, a real sample process, documented QC, and transparent timelines. If they cannot explain how your packaging will be made and checked, keep looking.</p>
+      <BlogFAQ
+        title="Choosing a Beauty Packaging Manufacturer FAQ"
+        faqs={[
+          { question: 'What should I look for in a beauty packaging manufacturer?', answer: 'Look for category experience, clear MOQs, material sourcing depth, a real sample process, documented QC, and transparent timelines. If they cannot explain how your packaging will be made and checked, keep looking.' },
+          { question: 'How many packaging manufacturers should I quote?', answer: 'Quote two to four qualified partners. More than that usually creates noise unless the brief is extremely standardized.' },
+          { question: 'Should I choose a domestic or international packaging manufacturer?', answer: 'Choose domestic when speed, small runs, or proximity matter most. Choose international when volume, material range, finishing capability, or unit cost matter more and you have enough timeline.' },
+          { question: 'What is a good MOQ for beauty packaging?', answer: 'Common MOQs are 500-1,000 units for folding cartons or rigid boxes, 50-100 for some influencer kits, and 5,000+ for many custom primary packaging components. The right MOQ depends on format and tooling.' },
+          { question: 'What are the biggest red flags in a packaging supplier?', answer: 'The biggest red flags are no samples, vague timelines, unclear material specs, hidden costs, no QC process, and no pushback on unrealistic requests.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Packaging Manufacturer"
+      />
 
-            <h3>How many packaging manufacturers should I quote?</h3>
-            <p>Quote two to four qualified partners. More than that usually creates noise unless the brief is extremely standardized.</p>
-
-            <h3>Should I choose a domestic or international packaging manufacturer?</h3>
-            <p>Choose domestic when speed, small runs, or proximity matter most. Choose international when volume, material range, finishing capability, or unit cost matter more and you have enough timeline.</p>
-
-            <h3>What is a good MOQ for beauty packaging?</h3>
-            <p>Common MOQs are 500&ndash;1,000 units for folding cartons or rigid boxes, 50&ndash;100 for some influencer kits, and 5,000+ for many custom primary packaging components. The right MOQ depends on format and tooling.</p>
-
-            <h3>What are the biggest red flags in a packaging supplier?</h3>
-            <p>The biggest red flags are no samples, vague timelines, unclear material specs, hidden costs, no QC process, and no pushback on unrealistic requests.</p>
-
+      <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>A good beauty packaging manufacturer does more than make the thing you ask for.</p>
             <p>They protect the project from bad assumptions. Wrong material. Wrong MOQ. Wrong timeline. Wrong finish. Wrong supplier. Wrong cost target.</p>

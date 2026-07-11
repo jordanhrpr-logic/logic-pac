@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -181,20 +182,23 @@ export default function PostClient() {
             <p>Ensure refills are available in the same channels as the original product. If the product sells at Sephora, the refill must be at Sephora. If it sells DTC, the refill must be easy to reorder online.</p>
             <p>For a timeline of the full packaging development process from brief to shelf, see the <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=refillable-beauty-packaging-guide">Concept to Shelf Timeline</Link>.</p>
 
-            <h2>FAQ</h2>
-            <h3>How much does refillable beauty packaging cost compared to single-use?</h3>
-            <p>The outer vessel for a refillable system typically costs 30-60% more than an equivalent single-use package due to heavier materials, complex engineering, and durability requirements. The refill unit should cost 20-40% less than the original complete package. The system breaks even when the consumer purchases at least two refills.</p>
-            <h3>What is the biggest challenge with refillable packaging?</h3>
-            <p>Consumer adoption. Surveys show 60-80% interest in refillable packaging, but actual refill purchase rates are often 15-30% for the first refill and lower for subsequent ones. The gap is driven by inconvenience, forgetting, and uncertainty. Designing for the willing-but-forgetful consumer is the central challenge.</p>
-            <h3>Which beauty products work best as refillable?</h3>
-            <p>Fragrance, lipstick, powder compacts, and body care (shampoo, conditioner, hand soap) are the strongest candidates. These formats have either high vessel attachment (fragrance, lip), proven refill mechanics (powder pans), or high purchase frequency that supports repeat refill behavior (body care).</p>
-            <h3>Are refillable packaging systems required by regulation?</h3>
-            <p>The EU PPWR includes reuse and refill targets for certain packaging categories, with cosmetics potentially covered in future regulatory phases. California&apos;s SB 54 does not mandate refillable systems, but the broader regulatory direction across markets favors reuse. Investing in refillable capability now builds optionality.</p>
-            <h3>How do you prevent contamination in refillable beauty packaging?</h3>
-            <p>Cartridge and pod systems provide the strongest contamination barrier because the consumer does not touch the product during the refill process. Pour-in systems carry higher contamination risk and may require vessel cleaning instructions. Return-and-refill systems eliminate consumer-side contamination through professional cleaning and inspection.</p>
-            <h3>What refill rate does a brand need for the economics to work?</h3>
-            <p>Most refillable systems need a refill rate above 30% to be economically viable at the portfolio level. A 50%+ refill rate is the target for strong financial performance. Below 20%, the system typically loses money because the outer vessel premium is not recovered through lower refill costs.</p>
+      </div>
 
+      <BlogFAQ
+        title="Refillable Beauty Packaging FAQ"
+        faqs={[
+          { question: 'How much does refillable beauty packaging cost compared to single-use?', answer: 'The outer vessel for a refillable system typically costs 30-60% more than an equivalent single-use package due to heavier materials, complex engineering, and durability requirements. The refill unit should cost 20-40% less than the original complete package. The system breaks even when the consumer purchases at least two refills.' },
+          { question: 'What is the biggest challenge with refillable packaging?', answer: 'Consumer adoption. Surveys show 60-80% interest in refillable packaging, but actual refill purchase rates are often 15-30% for the first refill and lower for subsequent ones. The gap is driven by inconvenience, forgetting, and uncertainty. Designing for the willing-but-forgetful consumer is the central challenge.' },
+          { question: 'Which beauty products work best as refillable?', answer: 'Fragrance, lipstick, powder compacts, and body care (shampoo, conditioner, hand soap) are the strongest candidates. These formats have either high vessel attachment (fragrance, lip), proven refill mechanics (powder pans), or high purchase frequency that supports repeat refill behavior (body care).' },
+          { question: 'Are refillable packaging systems required by regulation?', answer: 'The EU PPWR includes reuse and refill targets for certain packaging categories, with cosmetics potentially covered in future regulatory phases. California\'s SB 54 does not mandate refillable systems, but the broader regulatory direction across markets favors reuse. Investing in refillable capability now builds optionality.' },
+          { question: 'How do you prevent contamination in refillable beauty packaging?', answer: 'Cartridge and pod systems provide the strongest contamination barrier because the consumer does not touch the product during the refill process. Pour-in systems carry higher contamination risk and may require vessel cleaning instructions. Return-and-refill systems eliminate consumer-side contamination through professional cleaning and inspection.' },
+          { question: 'What refill rate does a brand need for the economics to work?', answer: 'Most refillable systems need a refill rate above 30% to be economically viable at the portfolio level. A 50%+ refill rate is the target for strong financial performance. Below 20%, the system typically loses money because the outer vessel premium is not recovered through lower refill costs.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Refillable Packaging"
+      />
+
+      <div className="blog-body">
             <h2>Design the System Before the Vessel</h2>
             <p>The most common mistake in refillable beauty packaging is designing a beautiful outer vessel first and figuring out the refill mechanics second. The system architecture, consumer experience, cost model, and retail strategy should drive the vessel design &mdash; not the other way around.</p>
             <p>If your team is evaluating refillable packaging for a beauty or skincare line, we can help map the system options, model the economics, and engineer a refill mechanism that consumers will actually use.</p>

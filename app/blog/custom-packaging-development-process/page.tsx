@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import PostClient from './PostClient'
+import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
   title: 'How Custom Packaging Development Works: From Brief to Shelf in 12-16 Weeks',
@@ -15,5 +16,14 @@ export const metadata: Metadata = {
 }
 
 export default function CustomPackagingDevelopmentProcessPost() {
-  return <PostClient />
+  const slug = 'custom-packaging-development-process'
+  const articleJsonLd = buildBlogArticleSchema(slug)
+  const breadcrumbJsonLd = buildBlogBreadcrumbSchema(slug)
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <PostClient />
+    </>
+  )
 }

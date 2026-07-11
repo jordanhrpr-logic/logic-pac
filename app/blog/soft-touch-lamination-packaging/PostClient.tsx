@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -37,6 +39,7 @@ export default function PostClient() {
             </div>
 
             <h2>What Soft Touch Lamination Actually Is</h2>
+            <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft touch lamination finish on premium beauty packaging" width={760} height={570} className="guide-img" style={{ width: '100%', height: 'auto' }} />
             <p>Soft touch lamination is a thin film &mdash; typically 12-18 microns of treated polyester (PET) or polypropylene (BOPP) &mdash; that is thermally bonded or adhesive-bonded to a printed substrate. The film surface has a micro-textured coating that creates the characteristic velvet feel.</p>
             <p>The lamination process runs after printing, before any post-lamination finishing (foil stamping, embossing, die-cutting). The film is applied to the full printed sheet, then the sheet is cut and converted into cartons, boxes, sleeves, or wraps.</p>
             <h3>How it differs from standard lamination</h3>
@@ -141,20 +144,23 @@ export default function PostClient() {
             <p>Soft touch lamination is often combined with foil stamping, embossing, or spot UV. Budget the full finish stack, not just the lamination. A soft-touch carton with foil and emboss may add $0.40-$1.20 per unit total in finishing costs &mdash; all of which are justified if they align with the brand positioning, but all of which must be planned.</p>
             <p>For complete cost planning, see the <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_cost_post">custom packaging cost breakdown</Link>.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>How much does soft touch lamination cost per unit?</h3>
-            <p>Soft touch lamination typically adds <strong>$0.08-$0.60 per unit</strong> depending on the packaging format, substrate area, and production volume. Small folding cartons are at the lower end. Large rigid box wraps are at the higher end. Volume improves the economics &mdash; the same carton may cost $0.25 per unit for soft touch at 2,000 units and $0.12 per unit at 20,000 units.</p>
-            <h3>What is the difference between soft touch lamination and matte lamination?</h3>
-            <p>Matte lamination creates a smooth, flat surface with low sheen but no distinctive tactile quality. Soft touch lamination creates a micro-textured surface with a velvet feel that consumers actively notice. The tactile difference is immediately apparent when you hold both side by side. Soft touch costs more and scuffs slightly more easily than standard matte, but the perceived value increase is significant for premium products.</p>
-            <h3>Does soft touch lamination show fingerprints?</h3>
-            <p>Yes, particularly on dark colors. Matte black, deep navy, and dark plum soft touch surfaces show fingerprint oils visibly. Lighter colors &mdash; white, cream, pastel, light gray &mdash; show fingerprints much less. If your brand requires a dark-colored soft touch surface, plan for protective shrink wrapping at retail or accept that some fingerprint visibility is inherent to the finish.</p>
-            <h3>Can you foil stamp on top of soft touch lamination?</h3>
-            <p>Yes. Foil stamping on soft touch lamination is one of the most popular and effective finish combinations in beauty packaging. The contrast between the matte-velvet surface and the reflective metallic foil creates strong visual impact. The process requires slightly more heat and pressure than foil on standard lamination, but the results are excellent when properly calibrated.</p>
-            <h3>Is soft touch lamination recyclable?</h3>
-            <p>Soft touch lamination adds a thin plastic film to paperboard, which technically makes the substrate less recyclable than uncoated paperboard. The film must be separated from the fiber for effective recycling, and most municipal recycling facilities do not separate them. For brands with strict sustainability commitments, soft touch varnish (which does not add a separate film layer) may be a more recyclable alternative, though the tactile quality is reduced.</p>
-            <h3>How long does soft touch lamination last?</h3>
-            <p>Soft touch lamination is durable under normal consumer handling &mdash; years of occasional contact will not degrade the finish. The limitation is abrasion from repeated friction (retail handling, shipping without protection). In normal use, the finish will maintain its tactile quality for the lifetime of the product. On a retail shelf with heavy traffic, protective packaging is recommended.</p>
+      </div>
 
+      <BlogFAQ
+        title="Soft Touch Lamination FAQ"
+        faqs={[
+          { question: 'How much does soft touch lamination cost per unit?', answer: 'Soft touch lamination typically adds $0.08-$0.60 per unit depending on the packaging format, substrate area, and production volume. Small folding cartons are at the lower end. Large rigid box wraps are at the higher end. Volume improves the economics -- the same carton may cost $0.25 per unit for soft touch at 2,000 units and $0.12 per unit at 20,000 units.' },
+          { question: 'What is the difference between soft touch lamination and matte lamination?', answer: 'Matte lamination creates a smooth, flat surface with low sheen but no distinctive tactile quality. Soft touch lamination creates a micro-textured surface with a velvet feel that consumers actively notice. The tactile difference is immediately apparent when you hold both side by side. Soft touch costs more and scuffs slightly more easily than standard matte, but the perceived value increase is significant for premium products.' },
+          { question: 'Does soft touch lamination show fingerprints?', answer: 'Yes, particularly on dark colors. Matte black, deep navy, and dark plum soft touch surfaces show fingerprint oils visibly. Lighter colors -- white, cream, pastel, light gray -- show fingerprints much less. If your brand requires a dark-colored soft touch surface, plan for protective shrink wrapping at retail or accept that some fingerprint visibility is inherent to the finish.' },
+          { question: 'Can you foil stamp on top of soft touch lamination?', answer: 'Yes. Foil stamping on soft touch lamination is one of the most popular and effective finish combinations in beauty packaging. The contrast between the matte-velvet surface and the reflective metallic foil creates strong visual impact. The process requires slightly more heat and pressure than foil on standard lamination, but the results are excellent when properly calibrated.' },
+          { question: 'Is soft touch lamination recyclable?', answer: 'Soft touch lamination adds a thin plastic film to paperboard, which technically makes the substrate less recyclable than uncoated paperboard. The film must be separated from the fiber for effective recycling, and most municipal recycling facilities do not separate them. For brands with strict sustainability commitments, soft touch varnish (which does not add a separate film layer) may be a more recyclable alternative, though the tactile quality is reduced.' },
+          { question: 'How long does soft touch lamination last?', answer: 'Soft touch lamination is durable under normal consumer handling -- years of occasional contact will not degrade the finish. The limitation is abrasion from repeated friction (retail handling, shipping without protection). In normal use, the finish will maintain its tactile quality for the lifetime of the product. On a retail shelf with heavy traffic, protective packaging is recommended.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Soft touch lamination is one of the most effective finishes for beauty packaging, but the execution details matter &mdash; substrate compatibility, color selection, post-lamination finishing, and scuff protection all affect whether the finish delivers on its promise.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_consultation" target="_blank" rel="noopener noreferrer">Book a finish consultation</a> and we will help you evaluate whether soft touch lamination fits your product, your retail environment, and your cost model &mdash; and specify it correctly if it does.</p>

@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -163,6 +165,8 @@ export default function PostClient() {
             <p>Avoid specialty effects when the only reason is &ldquo;make it pop.&rdquo;</p>
             <p>That phrase usually means the design strategy is not clear enough.</p>
 
+            <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft touch coating and spot UV finish detail on custom packaging" width={760} height={570} className="guide-img" style={{ width: '100%', height: 'auto' }} />
+
             <h2>How to Combine Packaging Finishes Without Overbuilding</h2>
             <p>Finish stacking is where budgets disappear.</p>
             <p>Soft touch plus foil plus embossing plus spot UV plus specialty paper can work. But only if each finish has a job. Otherwise, the package starts to feel like a sample book.</p>
@@ -267,23 +271,23 @@ export default function PostClient() {
             <p>For baseline unit-cost ranges across cartons, rigid boxes, inserts, and primary packaging, start with our <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_finishes_cost_breakdown">custom packaging cost breakdown</Link>.</p>
             <p>If you&apos;re trying to reduce cost without flattening the brand, read the Logic Agency guide to <a href="https://www.logicagencyinc.com/guides/packaging-cost-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_finishes_cost_reduction" target="_blank" rel="noopener noreferrer">Packaging Cost Reduction</a>.</p>
 
-            <h2>FAQ: Packaging Finishes</h2>
 
-            <h3>What are the most common packaging finishes for beauty brands?</h3>
-            <p>The most common finishes are foil stamping, soft-touch lamination, spot UV, embossing, debossing, interior printing, and specialty papers.</p>
+      </div>
 
-            <h3>How much does foil stamping cost?</h3>
-            <p>Foil stamping usually adds <strong>$0.15&ndash;$0.60 per unit</strong> depending on coverage, foil type, quantity, and die setup.</p>
+      <BlogFAQ
+        title="Packaging Finishes FAQs"
+        faqs={[
+          { question: 'What are the most common packaging finishes for beauty brands?', answer: 'The most common finishes are foil stamping, soft-touch lamination, spot UV, embossing, debossing, interior printing, and specialty papers.' },
+          { question: 'How much does foil stamping cost?', answer: 'Foil stamping usually adds $0.15-$0.60 per unit depending on coverage, foil type, quantity, and die setup.' },
+          { question: 'What is the difference between embossing and debossing?', answer: 'Embossing raises the surface. Debossing presses the surface down. Both create tactile dimension and usually require a custom die.' },
+          { question: 'Is soft-touch lamination worth it?', answer: 'Soft touch is worth it when hand feel is part of the brand experience. It usually adds $0.08-$0.20 per unit, but it needs scuff testing.' },
+          { question: 'Can you use multiple finishes on one package?', answer: 'Yes, but every finish should have a job. One signature finish with one supporting detail usually feels more premium than five effects competing.' },
+        ]}
+        ctaText="Book a Finish Consultation"
+        ctaProjectType="Packaging Finishes"
+      />
 
-            <h3>What is the difference between embossing and debossing?</h3>
-            <p>Embossing raises the surface. Debossing presses the surface down. Both create tactile dimension and usually require a custom die.</p>
-
-            <h3>Is soft-touch lamination worth it?</h3>
-            <p>Soft touch is worth it when hand feel is part of the brand experience. It usually adds <strong>$0.08&ndash;$0.20 per unit</strong>, but it needs scuff testing.</p>
-
-            <h3>Can you use multiple finishes on one package?</h3>
-            <p>Yes, but every finish should have a job. One signature finish with one supporting detail usually feels more premium than five effects competing.</p>
-
+      <div className="blog-body">
             <h2>Pick the Finish That Carries the Moment</h2>
             <p>Finishes are not decoration. They&apos;re signals.</p>
             <p>A foil stamp says precision. Soft touch says calm. Embossing says tactility. Spot UV says contrast. Interior print says there is more to discover.</p>

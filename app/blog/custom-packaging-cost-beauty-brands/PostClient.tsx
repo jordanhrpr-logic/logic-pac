@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -26,6 +28,8 @@ export default function PostClient() {
             <p>That range is wide because &ldquo;custom packaging&rdquo; is not one thing. A printed folding carton for a serum bottle is not priced like a rigid PR kit box with a magnetic closure, foil stamp, molded insert, and specialty paper wrap.</p>
             <p>The mistake most beauty brands make is asking, &ldquo;How much does custom packaging cost?&rdquo; before defining what packaging has to do. The better question is: what format, material, finish, volume, and timeline will protect the product, carry the brand, and still work inside the margin model?</p>
             <p>This guide breaks down the real cost drivers so you can compare quotes without guessing.</p>
+
+            <Image src="/images/portfolio/packaging-portfolio-overview.jpg" alt="Custom packaging formats including rigid boxes, folding cartons, and specialty finishes" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <div className="blog-takeaways">
               <h4>Key Takeaways</h4>
@@ -219,23 +223,22 @@ export default function PostClient() {
             <p>If the budget only accounts for unit price, it is incomplete.</p>
             <p>The unit price matters. The landed cost matters more.</p>
 
-            <h2>FAQ: Custom Packaging Cost for Beauty Brands</h2>
+      </div>
 
-            <h3>What is the minimum order for custom packaging?</h3>
-            <p>Most custom folding cartons and rigid boxes start at <strong>500&ndash;1,000 units</strong>. Influencer kits and short-run PR packaging can sometimes start at <strong>50&ndash;100 units</strong>, but the unit cost improves significantly at higher volumes.</p>
+      <BlogFAQ
+        title="Custom Packaging Cost FAQs"
+        faqs={[
+          { question: 'What is the minimum order for custom packaging?', answer: 'Most custom folding cartons and rigid boxes start at 500–1,000 units. Influencer kits and short-run PR packaging can sometimes start at 50–100 units, but the unit cost improves significantly at higher volumes.' },
+          { question: 'How much do packaging samples cost?', answer: 'Packaging samples usually cost $100–$1,000 depending on structure, materials, and finish. Simple white samples cost less; fully printed, finished, and production-representative samples cost more.' },
+          { question: 'How long does custom packaging take to produce?', answer: 'Most custom packaging takes 8–16 weeks after design approval, depending on tooling, sampling, production, freight, and customs. Complex rigid boxes, refillable systems, or holiday kits should be planned 4–6 months ahead.' },
+          { question: 'Can I get custom packaging for under $1 per unit?', answer: 'Yes, but usually only for simpler formats like folding cartons, labels, sleeves, or high-volume stock-decorated components. Rigid boxes, custom inserts, premium finishes, and low-volume runs usually cost more than $1 per unit.' },
+          { question: 'What is included in a packaging quote?', answer: 'A complete packaging quote should include unit cost, quantity, dimensions, materials, finishes, tooling, sample cost, production timeline, freight terms, and delivery location. If freight, tooling, or inserts are missing, you are not looking at the full cost.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Packaging"
+      />
 
-            <h3>How much do packaging samples cost?</h3>
-            <p>Packaging samples usually cost <strong>$100&ndash;$1,000</strong> depending on structure, materials, and finish. Simple white samples cost less; fully printed, finished, and production-representative samples cost more.</p>
-
-            <h3>How long does custom packaging take to produce?</h3>
-            <p>Most custom packaging takes <strong>8&ndash;16 weeks</strong> after design approval, depending on tooling, sampling, production, freight, and customs. Complex rigid boxes, refillable systems, or holiday kits should be planned <strong>4&ndash;6 months</strong> ahead.</p>
-
-            <h3>Can I get custom packaging for under $1 per unit?</h3>
-            <p>Yes, but usually only for simpler formats like folding cartons, labels, sleeves, or high-volume stock-decorated components. Rigid boxes, custom inserts, premium finishes, and low-volume runs usually cost more than $1 per unit.</p>
-
-            <h3>What is included in a packaging quote?</h3>
-            <p>A complete packaging quote should include unit cost, quantity, dimensions, materials, finishes, tooling, sample cost, production timeline, freight terms, and delivery location. If freight, tooling, or inserts are missing, you are not looking at the full cost.</p>
-
+      <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>Custom packaging cost is not mysterious. It is a stack of decisions: format, material, finish, tooling, volume, freight, and timeline.</p>
             <p>Beauty brands get into trouble when they treat packaging as a design expense only. It is also a margin decision. A launch decision. A retail decision. A customer-experience decision.</p>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -345,23 +346,22 @@ export default function PostClient() {
             </ul>
             <p>The brief is not a formality. It is the handoff from brand intent to manufacturing reality. The cleaner that handoff, the fewer expensive corrections happen later.</p>
 
-            <h2>FAQ: Packaging Brief Template</h2>
+      </div>
 
-            <h3>What should be included in a packaging brief?</h3>
-            <p>A packaging brief should include project context, brand overview, product specs, channels, volume, budget, materials, finishes, sustainability requirements, timeline, and stakeholder approvals.</p>
+      <BlogFAQ
+        title="Packaging Brief Template FAQ"
+        faqs={[
+          { question: 'What should be included in a packaging brief?', answer: 'A packaging brief should include project context, brand overview, product specs, channels, volume, budget, materials, finishes, sustainability requirements, timeline, and stakeholder approvals.' },
+          { question: 'How long should a packaging brief be?', answer: 'Most packaging briefs should be 2-5 pages plus attachments. The goal is not length. The goal is complete information a supplier can use to quote and sample accurately.' },
+          { question: 'Do I need a budget in my packaging brief?', answer: 'Yes. Include a target unit cost and a maximum acceptable cost. Without budget guidance, suppliers may design packaging that looks good but cannot work inside your margin.' },
+          { question: 'What is the difference between a packaging brief and an RFQ?', answer: 'A packaging brief explains the project, brand, product, constraints, and goals. An RFQ asks suppliers to quote against those requirements. A strong brief makes the RFQ useful.' },
+          { question: 'Can I use the same packaging brief for multiple suppliers?', answer: 'Yes. In fact, you should. A consistent brief lets you compare suppliers fairly because each one is quoting the same scope, volume, materials, finishes, and timeline.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Packaging Brief"
+      />
 
-            <h3>How long should a packaging brief be?</h3>
-            <p>Most packaging briefs should be 2&ndash;5 pages plus attachments. The goal is not length. The goal is complete information a supplier can use to quote and sample accurately.</p>
-
-            <h3>Do I need a budget in my packaging brief?</h3>
-            <p>Yes. Include a target unit cost and a maximum acceptable cost. Without budget guidance, suppliers may design packaging that looks good but cannot work inside your margin.</p>
-
-            <h3>What is the difference between a packaging brief and an RFQ?</h3>
-            <p>A packaging brief explains the project, brand, product, constraints, and goals. An RFQ asks suppliers to quote against those requirements. A strong brief makes the RFQ useful.</p>
-
-            <h3>Can I use the same packaging brief for multiple suppliers?</h3>
-            <p>Yes. In fact, you should. A consistent brief lets you compare suppliers fairly because each one is quoting the same scope, volume, materials, finishes, and timeline.</p>
-
+      <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>Packaging projects don&apos;t usually fail because the supplier can&apos;t make a box.</p>
             <p>They fail because the team started without enough clarity.</p>

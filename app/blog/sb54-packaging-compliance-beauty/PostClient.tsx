@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -295,23 +296,22 @@ export default function PostClient() {
             <p>That matters because most packaging teams don&apos;t have a sustainability problem first. They have a visibility problem. They don&apos;t know how many materials are in the system, which supplier owns which component, or which claims are actually supported.</p>
             <p>Once the table is complete, the next step is prioritization. Start with high-volume SKUs, high-risk claims, and components that are expensive or slow to redesign. Those three filters tell you where to focus first.</p>
 
-            <h2>FAQ: SB 54 Packaging Compliance</h2>
+      </div>
 
-            <h3>What is SB 54 packaging compliance for beauty brands?</h3>
-            <p>SB 54 packaging compliance means understanding whether your primary, secondary, and shipping packaging falls under California&apos;s covered material rules, documenting the materials, and planning changes for components that are difficult to recycle, compost, or defend.</p>
+      <BlogFAQ
+        title="SB 54 Packaging Compliance FAQ"
+        faqs={[
+          { question: 'What is SB 54 packaging compliance for beauty brands?', answer: 'SB 54 packaging compliance means understanding whether your primary, secondary, and shipping packaging falls under California\'s covered material rules, documenting the materials, and planning changes for components that are difficult to recycle, compost, or defend.' },
+          { question: 'Does SB 54 apply if my beauty brand is not based in California?', answer: 'It can. If your products are sold or shipped into California, your packaging may be exposed even if your company is based elsewhere.' },
+          { question: 'What beauty packaging should we audit first for SB 54?', answer: 'Start with the highest-volume SKUs and the most complex packaging structures: pumps, mixed-material cartons, foam inserts, plastic windows, laminated wraps, and e-commerce shippers.' },
+          { question: 'Can beauty brands still use multi-material packaging under SB 54?', answer: 'Some multi-material packaging may still be used, but every material choice needs a reason and documentation. Mixed-material structures are harder to recycle and harder to defend, so they should be reviewed early.' },
+          { question: 'What should we do before the 2027 SB 54 window?', answer: 'Build a packaging bill of materials, gather supplier documentation, identify risky components, start fast material swaps, and create a redesign plan for long-lead packaging changes.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="SB 54 Compliance"
+      />
 
-            <h3>Does SB 54 apply if my beauty brand is not based in California?</h3>
-            <p>It can. If your products are sold or shipped into California, your packaging may be exposed even if your company is based elsewhere.</p>
-
-            <h3>What beauty packaging should we audit first for SB 54?</h3>
-            <p>Start with the highest-volume SKUs and the most complex packaging structures: pumps, mixed-material cartons, foam inserts, plastic windows, laminated wraps, and e-commerce shippers.</p>
-
-            <h3>Can beauty brands still use multi-material packaging under SB 54?</h3>
-            <p>Some multi-material packaging may still be used, but every material choice needs a reason and documentation. Mixed-material structures are harder to recycle and harder to defend, so they should be reviewed early.</p>
-
-            <h3>What should we do before the 2027 SB 54 window?</h3>
-            <p>Build a packaging bill of materials, gather supplier documentation, identify risky components, start fast material swaps, and create a redesign plan for long-lead packaging changes.</p>
-
+      <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>SB 54 is not a reason to panic. It is a reason to get precise.</p>
             <p>Start with the packaging you already have. Map every component. Gather the proof. Identify what needs to change. Then redesign in the right order.</p>

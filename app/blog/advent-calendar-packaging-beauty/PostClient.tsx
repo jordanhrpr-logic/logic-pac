@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -39,6 +41,7 @@ export default function PostClient() {
 
             <h2>Structural Options for Custom Advent Calendar Packaging</h2>
             <p>The structural format is the first and most consequential decision. It determines tooling cost, assembly complexity, per-unit price, and how the calendar feels in the customer&apos;s hands. There are four primary structures we produce for beauty advent calendars.</p>
+            <Image src="/images/portfolio/24-door-advent-calendar.jpeg" alt="Custom 24-door beauty advent calendar packaging" width={760} height={760} className="guide-img" style={{ width: '100%', height: 'auto' }} />
             <h3>Door-Style (Hinged Panel)</h3>
             <p>The classic advent calendar structure. A rigid or semi-rigid front panel with perforated or die-cut doors that open to reveal individual cavities behind them. The doors are numbered, and the customer opens one per day.</p>
             <p><strong>Pros:</strong> Familiar format. Lower tooling cost than drawers. Single-plane construction simplifies assembly. Works well for flat or small products (sachets, sheet masks, mini vials, lip products).</p>
@@ -140,20 +143,23 @@ export default function PostClient() {
             <p>A beautiful calendar that arrives with warped panels, stuck drawers, or broken doors is worse than no calendar at all. Rigid structures need adequate board weight. Drawers need clearance tolerances that account for humidity changes during ocean freight. Doors need perforation engineering that allows clean opening without tearing the facing material.</p>
             <p><strong>Prevention:</strong> Ship test units through the actual distribution chain before committing to mass production. Test in the freight conditions the calendar will actually experience.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>How much does custom advent calendar packaging cost for beauty brands?</h3>
-            <p>Custom advent calendar packaging costs <strong>$8-25+ per unit</strong> at production runs of 1,000-5,000 units. Door-style calendars fall at the lower end ($8-14), while drawer systems with premium finishes reach the higher end ($16-25+). Tooling adds $1,500-$8,000 as a one-time cost. Volume is the most effective lever for reducing per-unit price.</p>
-            <h3>How far in advance do I need to start an advent calendar project?</h3>
-            <p>Start <strong>6-8 months before your delivery date</strong>. For a November retail or DTC launch, that means beginning the brief in January or February, locking product dimensions by March, approving structural samples by April, and entering mass production by June or July. Drawer systems need the full 8 months. Door-style calendars can sometimes compress to 6.</p>
-            <h3>What&apos;s the minimum order quantity for a custom beauty advent calendar?</h3>
-            <p>Most custom advent calendar production starts at <strong>500-1,000 units</strong> due to tooling investment. Below 500 units, per-unit costs become prohibitive for most brands. At 500 units, expect per-unit costs 40-60% higher than at 3,000 units. PR-only programs sometimes run 200-500 units at a premium price.</p>
-            <h3>Can advent calendar packaging be made sustainable?</h3>
-            <p>Yes, with intentional material choices. FSC-certified paperboard, molded pulp inserts (replacing plastic trays), soy-based inks, and water-based coatings create a recyclable calendar. The main sustainability challenge is multi-material construction. Magnets, foam inserts, and plastic trays must be separated before recycling. Designing for mono-material or easily separable components improves end-of-life recyclability.</p>
-            <h3>What&apos;s the difference between a door-style and drawer-style advent calendar?</h3>
-            <p>Door-style calendars use hinged or perforated panels on a flat front face. They&apos;re simpler to produce, lower cost, and better suited for flat or small products. Drawer-style calendars use individual sliding compartments that pull out from a housing structure. They&apos;re more premium, accommodate deeper products, and create a stronger unboxing moment, but they cost 50-80% more and require significantly more assembly time.</p>
-            <h3>Do retailers have special requirements for advent calendar packaging?</h3>
-            <p>Yes. Advent calendars need their own UPC barcode, must meet case pack specifications that account for their larger size and weight, and must comply with retailer sustainability requirements. Sephora, Ulta, and Target each have specific case pack, labeling, and documentation requirements. These must be built into the structural design from the start.</p>
+      </div>
 
+      <BlogFAQ
+        title="Advent Calendar Packaging FAQ"
+        faqs={[
+          { question: 'How much does custom advent calendar packaging cost for beauty brands?', answer: 'Custom advent calendar packaging costs $8-25+ per unit at production runs of 1,000-5,000 units. Door-style calendars fall at the lower end ($8-14), while drawer systems with premium finishes reach the higher end ($16-25+). Tooling adds $1,500-$8,000 as a one-time cost. Volume is the most effective lever for reducing per-unit price.' },
+          { question: 'How far in advance do I need to start an advent calendar project?', answer: 'Start 6-8 months before your delivery date. For a November retail or DTC launch, that means beginning the brief in January or February, locking product dimensions by March, approving structural samples by April, and entering mass production by June or July. Drawer systems need the full 8 months. Door-style calendars can sometimes compress to 6.' },
+          { question: 'What is the minimum order quantity for a custom beauty advent calendar?', answer: 'Most custom advent calendar production starts at 500-1,000 units due to tooling investment. Below 500 units, per-unit costs become prohibitive for most brands. At 500 units, expect per-unit costs 40-60% higher than at 3,000 units. PR-only programs sometimes run 200-500 units at a premium price.' },
+          { question: 'Can advent calendar packaging be made sustainable?', answer: 'Yes, with intentional material choices. FSC-certified paperboard, molded pulp inserts (replacing plastic trays), soy-based inks, and water-based coatings create a recyclable calendar. The main sustainability challenge is multi-material construction. Magnets, foam inserts, and plastic trays must be separated before recycling. Designing for mono-material or easily separable components improves end-of-life recyclability.' },
+          { question: 'What is the difference between a door-style and drawer-style advent calendar?', answer: 'Door-style calendars use hinged or perforated panels on a flat front face. They\'re simpler to produce, lower cost, and better suited for flat or small products. Drawer-style calendars use individual sliding compartments that pull out from a housing structure. They\'re more premium, accommodate deeper products, and create a stronger unboxing moment, but they cost 50-80% more and require significantly more assembly time.' },
+          { question: 'Do retailers have special requirements for advent calendar packaging?', answer: 'Yes. Advent calendars need their own UPC barcode, must meet case pack specifications that account for their larger size and weight, and must comply with retailer sustainability requirements. Sephora, Ulta, and Target each have specific case pack, labeling, and documentation requirements. These must be built into the structural design from the start.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Advent Calendar Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>If you&apos;ve been asked to produce an advent calendar for this year&apos;s holiday season, the timeline starts now. The structural format, product lineup, and budget need to be defined before design can begin. We&apos;ll scope the project, confirm what&apos;s realistic for your timeline, and walk you through the format options that fit your product mix and price point.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=advent-calendar-packaging-beauty" target="_blank" rel="noopener noreferrer">Book a consultation</a> to start scoping your advent calendar project.</p>

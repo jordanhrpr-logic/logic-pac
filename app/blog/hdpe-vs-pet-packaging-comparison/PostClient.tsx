@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -161,18 +162,22 @@ export default function PostClient() {
             <p>The solution is not picking the &ldquo;better&rdquo; material in the abstract. It is testing the specific formula in the specific container over the planned shelf life period. A 24-month shelf life claim needs 24-month stability data &mdash; or at minimum, accelerated aging data that extrapolates reliably.</p>
             <p>For brands with oxidation-sensitive formulas in products that also contain mild surfactants, an airless pump system may outperform both HDPE and PET open-mouth containers. The dispensing system matters as much as the material.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>Is HDPE or PET better for skincare packaging?</h3>
-            <p>It depends on the formula. PET is better for serums, toners, and products where clarity matters and the formula is primarily aqueous. HDPE is better for cleansers, body washes, and products with essential oils or strong surfactants. Neither is universally &ldquo;better&rdquo; for skincare &mdash; the formula chemistry determines the correct material.</p>
-            <h3>Can PET bottles hold essential oils?</h3>
-            <p>PET is generally not recommended for products with high essential oil content. Essential oils &mdash; particularly citrus and tea tree &mdash; can cause environmental stress cracking in PET over time. HDPE is the more chemically resistant choice for essential oil formulas. If a brand must use PET for aesthetic reasons, reduced essential oil concentrations and shorter shelf life claims may be necessary.</p>
-            <h3>Which plastic is more sustainable &mdash; HDPE or PET?</h3>
-            <p>Both are highly recyclable and widely accepted in curbside recycling programs. PET has a slightly higher recycling rate and a more established rPET supply chain. HDPE has more affordable PCR resin availability. From a sustainability standpoint, the most impactful decision is designing for recyclability (mono-material, removable labels, compatible closures) rather than choosing one resin over the other.</p>
-            <h3>Does PET packaging look more premium than HDPE?</h3>
-            <p>PET&apos;s optical clarity creates a glass-like appearance that many consumers associate with premium quality. HDPE&apos;s opaque or translucent appearance reads as more utilitarian. However, with the right decoration strategy &mdash; spray coating, metallic labeling, or premium shrink sleeves &mdash; HDPE containers can achieve premium shelf presence. The material sets the baseline; the decoration determines the final perception.</p>
-            <h3>What is the cost difference between HDPE and PET for beauty containers?</h3>
-            <p>The cost difference is typically <strong>$0.05-$0.20 per unit</strong> for equivalent container sizes, with PET being slightly more expensive. This difference is small enough that it should not drive the material decision. Formula compatibility, clarity requirements, and dispensing method are more consequential factors.</p>
+      </div>
 
+      <BlogFAQ
+        title="HDPE vs PET Packaging FAQ"
+        faqs={[
+          { question: 'Is HDPE or PET better for skincare packaging?', answer: 'It depends on the formula. PET is better for serums, toners, and products where clarity matters and the formula is primarily aqueous. HDPE is better for cleansers, body washes, and products with essential oils or strong surfactants. Neither is universally "better" for skincare -- the formula chemistry determines the correct material.' },
+          { question: 'Can PET bottles hold essential oils?', answer: 'PET is generally not recommended for products with high essential oil content. Essential oils -- particularly citrus and tea tree -- can cause environmental stress cracking in PET over time. HDPE is the more chemically resistant choice for essential oil formulas. If a brand must use PET for aesthetic reasons, reduced essential oil concentrations and shorter shelf life claims may be necessary.' },
+          { question: 'Which plastic is more sustainable -- HDPE or PET?', answer: 'Both are highly recyclable and widely accepted in curbside recycling programs. PET has a slightly higher recycling rate and a more established rPET supply chain. HDPE has more affordable PCR resin availability. From a sustainability standpoint, the most impactful decision is designing for recyclability (mono-material, removable labels, compatible closures) rather than choosing one resin over the other.' },
+          { question: 'Does PET packaging look more premium than HDPE?', answer: 'PET\'s optical clarity creates a glass-like appearance that many consumers associate with premium quality. HDPE\'s opaque or translucent appearance reads as more utilitarian. However, with the right decoration strategy -- spray coating, metallic labeling, or premium shrink sleeves -- HDPE containers can achieve premium shelf presence. The material sets the baseline; the decoration determines the final perception.' },
+          { question: 'What is the cost difference between HDPE and PET for beauty containers?', answer: 'The cost difference is typically $0.05-$0.20 per unit for equivalent container sizes, with PET being slightly more expensive. This difference is small enough that it should not drive the material decision. Formula compatibility, clarity requirements, and dispensing method are more consequential factors.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Material Selection"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>The HDPE vs PET decision is a formula-and-function question first, an aesthetics question second. Start with compatibility testing, confirm the dispensing method, then optimize for brand presentation within the material that works.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_consultation" target="_blank" rel="noopener noreferrer">Book a material consultation</a> and we will help you match the right material to your formula, volume plan, and brand requirements.</p>

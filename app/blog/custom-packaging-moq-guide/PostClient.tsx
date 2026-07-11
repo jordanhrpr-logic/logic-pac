@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -172,18 +173,22 @@ export default function PostClient() {
             <p>Look at four numbers together: unit cost, total cash outlay, storage requirement, and reorder lead time. A quote that wins on one number can lose on the other three.</p>
             <p>Also ask whether the supplier can hold pricing for a reorder. Sometimes the first order is expensive because setup is included, but the reorder improves. Other times the first quote hides costs that show up later.</p>
 
-            <h2>FAQ</h2>
-            <h3>What is the minimum order for custom packaging?</h3>
-            <p>Most custom packaging starts around 500-1,000 units for rigid boxes and corrugated, 1,000-3,000 units for folding cartons, and 5,000-10,000 units for flexible pouches.</p>
-            <h3>Can I get custom packaging under 500 units?</h3>
-            <p>Yes, but full custom manufacturing is usually not the best route. Under 500 units, stock structures with custom labels, sleeves, inserts, or digital print are often smarter.</p>
-            <h3>Why are flexible pouch MOQs higher than box MOQs?</h3>
-            <p>Flexible pouches often require film minimums, press setup, barrier materials, and sealing runs that only make economic sense at higher volumes, usually 5,000-10,000 units or more.</p>
-            <h3>How can I lower my packaging MOQ?</h3>
-            <p>Use standard structures, shared tooling, digital print, variable graphics, or fewer custom finishes. The more custom the structure, the harder it is to lower the MOQ.</p>
-            <h3>Should I choose the lowest MOQ or the lowest unit cost?</h3>
-            <p>Neither by itself. Choose the order quantity that fits cash flow, storage, sell-through, and packaging change risk. Lowest unit cost can still be expensive if half the inventory goes unused.</p>
+      </div>
 
+      <BlogFAQ
+        title="Custom Packaging MOQ FAQ"
+        faqs={[
+          { question: 'What is the minimum order for custom packaging?', answer: 'Most custom packaging starts around 500-1,000 units for rigid boxes and corrugated, 1,000-3,000 units for folding cartons, and 5,000-10,000 units for flexible pouches.' },
+          { question: 'Can I get custom packaging under 500 units?', answer: 'Yes, but full custom manufacturing is usually not the best route. Under 500 units, stock structures with custom labels, sleeves, inserts, or digital print are often smarter.' },
+          { question: 'Why are flexible pouch MOQs higher than box MOQs?', answer: 'Flexible pouches often require film minimums, press setup, barrier materials, and sealing runs that only make economic sense at higher volumes, usually 5,000-10,000 units or more.' },
+          { question: 'How can I lower my packaging MOQ?', answer: 'Use standard structures, shared tooling, digital print, variable graphics, or fewer custom finishes. The more custom the structure, the harder it is to lower the MOQ.' },
+          { question: 'Should I choose the lowest MOQ or the lowest unit cost?', answer: 'Neither by itself. Choose the order quantity that fits cash flow, storage, sell-through, and packaging change risk. Lowest unit cost can still be expensive if half the inventory goes unused.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Packaging"
+      />
+
+      <div className="blog-body">
             <h2>Build the Right Quantity for the Stage You&apos;re In</h2>
             <p>MOQ strategy is not about forcing custom packaging too early or buying more inventory than you can use. It is about matching structure, volume, and cash to the stage of the brand.</p>
             <p>If you are trying to move from stock packaging into custom production, we can help you find the right bridge: standard structure, custom finish, low-risk test run, or full production order.</p>

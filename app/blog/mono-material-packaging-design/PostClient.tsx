@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -147,20 +148,23 @@ export default function PostClient() {
             <p>The net cost impact for most beauty brands transitioning to mono-material is modest &mdash; typically within 5-15% of the existing packaging cost, and sometimes neutral. The larger cost is the redesign work: engineering time, prototyping, testing, and artwork revision.</p>
             <p>Over time, mono-material packaging may become cheaper as recycling infrastructure penalizes multi-material formats through EPR fees and surcharges. Both SB 54 and <Link href="/blog/eu-ppwr-packaging-requirements-beauty?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design">EU PPWR</Link> frameworks create financial incentives for recyclable packaging. Brands that transition now avoid future cost increases.</p>
 
-            <h2>FAQ</h2>
-            <h3>What is mono-material packaging?</h3>
-            <p>Mono-material packaging is a package designed from a single recyclable material family so it can enter one recycling stream without separation. Examples include a mono-PP jar with a PP cap, a mono-PE tube, or a paperboard carton with paper inserts and water-based coatings. The goal is to make the package sortable and recyclable in existing infrastructure.</p>
-            <h3>Why does mono-material packaging matter for recyclability?</h3>
-            <p>Multi-material packaging &mdash; even when each individual material is technically recyclable &mdash; cannot be processed in most recycling facilities because the materials cannot be separated at speed. Mono-material design eliminates this problem. The entire package enters one stream and can be processed as a single material type.</p>
-            <h3>What is the difference between mono-PP, mono-PE, and mono-PET?</h3>
-            <p>Mono-PP (polypropylene) is the most versatile option with good chemical resistance and moderate clarity. Mono-PE (polyethylene) is strongest for flexible formats like tubes and pouches. Mono-PET (polyethylene terephthalate) offers the best optical clarity and the most established recycling infrastructure. The right choice depends on the product format, formula requirements, and aesthetic goals.</p>
-            <h3>Can mono-material packaging still look premium?</h3>
-            <p>Mono-material packaging can achieve premium shelf presence through structural design (distinctive shapes, textured surfaces), compatible decoration (embossing, debossing, direct print, in-mold labeling), and clean graphic design. The constraint removes multi-material complexity, not creativity. Some of the most visually striking packaging on shelf uses mono-material with one strong design decision rather than layered mixed-material decoration.</p>
-            <h3>Does SB 54 require mono-material packaging?</h3>
-            <p>SB 54 does not explicitly require mono-material packaging, but its recyclability goals and EPR fee structure create strong incentives for it. Packaging that is easier to recycle in practice &mdash; which mono-material inherently is &mdash; will face lower compliance costs. EU PPWR similarly rewards design-for-recycling, and mono-material is one of the most direct paths to meeting its recyclability criteria.</p>
-            <h3>How do I transition existing packaging to mono-material?</h3>
-            <p>Start with the highest-volume SKU and the simplest format. Audit the current bill of materials, identify mixed-material components, and evaluate mono-material alternatives for each. Secondary packaging (cartons, inserts) is usually the easiest transition. Primary packaging with pumps or dispensers is typically the hardest. Plan for 8-14 weeks of engineering, prototyping, and testing before production.</p>
+      </div>
 
+      <BlogFAQ
+        title="Mono-Material Packaging FAQ"
+        faqs={[
+          { question: 'What is mono-material packaging?', answer: 'Mono-material packaging is a package designed from a single recyclable material family so it can enter one recycling stream without separation. Examples include a mono-PP jar with a PP cap, a mono-PE tube, or a paperboard carton with paper inserts and water-based coatings. The goal is to make the package sortable and recyclable in existing infrastructure.' },
+          { question: 'Why does mono-material packaging matter for recyclability?', answer: 'Multi-material packaging -- even when each individual material is technically recyclable -- cannot be processed in most recycling facilities because the materials cannot be separated at speed. Mono-material design eliminates this problem. The entire package enters one stream and can be processed as a single material type.' },
+          { question: 'What is the difference between mono-PP, mono-PE, and mono-PET?', answer: 'Mono-PP (polypropylene) is the most versatile option with good chemical resistance and moderate clarity. Mono-PE (polyethylene) is strongest for flexible formats like tubes and pouches. Mono-PET (polyethylene terephthalate) offers the best optical clarity and the most established recycling infrastructure. The right choice depends on the product format, formula requirements, and aesthetic goals.' },
+          { question: 'Can mono-material packaging still look premium?', answer: 'Mono-material packaging can achieve premium shelf presence through structural design (distinctive shapes, textured surfaces), compatible decoration (embossing, debossing, direct print, in-mold labeling), and clean graphic design. The constraint removes multi-material complexity, not creativity. Some of the most visually striking packaging on shelf uses mono-material with one strong design decision rather than layered mixed-material decoration.' },
+          { question: 'Does SB 54 require mono-material packaging?', answer: 'SB 54 does not explicitly require mono-material packaging, but its recyclability goals and EPR fee structure create strong incentives for it. Packaging that is easier to recycle in practice -- which mono-material inherently is -- will face lower compliance costs. EU PPWR similarly rewards design-for-recycling, and mono-material is one of the most direct paths to meeting its recyclability criteria.' },
+          { question: 'How do I transition existing packaging to mono-material?', answer: 'Start with the highest-volume SKU and the simplest format. Audit the current bill of materials, identify mixed-material components, and evaluate mono-material alternatives for each. Secondary packaging (cartons, inserts) is usually the easiest transition. Primary packaging with pumps or dispensers is typically the hardest. Plan for 8-14 weeks of engineering, prototyping, and testing before production.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Sustainable Packaging"
+      />
+
+      <div className="blog-body">
             <h2>Design for the Stream, Not the Label</h2>
             <p>The packaging industry spent years putting recyclable symbols on packages that recycling systems cannot actually process. Mono-material packaging design closes that gap. It does not require exotic materials or radical formats. It requires discipline: one material family, compatible components, and honest claims.</p>
             <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path.</p>

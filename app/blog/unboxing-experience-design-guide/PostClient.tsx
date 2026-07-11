@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -66,6 +68,7 @@ export default function PostClient() {
             <h3>Outer → Inner → Product Contact</h3>
             <p>The classic tactile hierarchy for a premium unboxing experience:</p>
             <p><strong>Outer surface:</strong> Matte, controlled, composed. Soft-touch lamination is the default because it reads as premium without being flashy. Uncoated textured stock (linen, cotton, felt) works for brands with an artisanal or editorial identity.</p>
+            <Image src="/images/portfolio/custom-unboxing-experience.jpg" alt="Custom rigid box unboxing experience with printed interior and foam insert" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
             <p><strong>Inner surface (lid underside or box interior):</strong> A contrast to the exterior. If the outside is matte, the inside can be gloss or satin. Interior print on a smooth coated surface creates visual richness that contrasts with the restrained exterior. This is the moment the box &ldquo;opens up.&rdquo;</p>
             <p><strong>Insert surface:</strong> The material that touches or cradles the products. Velvet flocking feels luxurious. Smooth EVA foam feels technical and precise. Molded pulp feels organic and sustainable. The insert material communicates the brand&apos;s design sensibility through touch.</p>
             <p><strong>Product contact:</strong> The products themselves. Their packaging (bottles, jars, tubes) has its own tactile language. The unboxing insert should frame the product packaging. If the product has a matte soft-touch finish, the insert shouldn&apos;t be the same. Contrast keeps each element distinct.</p>
@@ -128,18 +131,22 @@ export default function PostClient() {
             <h3>Subscription Boxes</h3>
             <p>Monthly unboxing means the novelty must be maintained. The structural format stays consistent, but seasonal variations (different tissue colors, rotating insert cards, seasonal sleeve wraps) keep the experience fresh. The danger of subscription unboxing is diminishing returns. Each month&apos;s box competes with the memory of last month&apos;s.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>What makes an unboxing experience &ldquo;premium&rdquo;?</h3>
-            <p>A premium unboxing experience is defined by three elements: tactile quality (board weight, surface finish, insert material), reveal sequencing (a layered opening that builds anticipation), and design intention (every element looks deliberate, not incidental). Premium is a design outcome, not a budget outcome. A $15 box with one great finish and a structured insert feels more premium than a $30 box with multiple finishes but no interior organization.</p>
-            <h3>How do I design packaging for unboxing videos?</h3>
-            <p>Design for camera-readiness: ensure brand visibility from top-down and 30-45 degree angles, use finishes that catch light (foil, metallic), create a reveal sequence that takes 10-15 seconds, and make sure the open box looks composed from above. Eliminate loose fill, tape, and anything that creates logistics sounds (bubble wrap, styrofoam). The products should look arranged, not packed.</p>
-            <h3>Does unboxing design packaging cost more than regular packaging?</h3>
-            <p>Not necessarily. The key investments are a structured insert ($1.50-4.00/unit over loose fill), a transition layer like tissue or a reveal card ($0.30-1.00/unit), and one signature finish ($0.15-0.50/unit). Total premium over a basic box: $2-6/unit. The structural complexity doesn&apos;t need to change. A standard rigid box or folding carton becomes an unboxing experience through interior design choices, not exterior engineering.</p>
-            <h3>What&apos;s the most important element of unboxing design?</h3>
-            <p>The insert. Products held in a structured insert look curated and intentional. Products in crinkle fill look packed for shipping. The insert determines whether the open-box shot looks like a flat lay or a dig-through. It&apos;s also the element that controls reveal sequencing, product protection, and the tactile experience as the recipient removes each item.</p>
-            <h3>How do I make packaging look expensive on a budget?</h3>
-            <p>Three moves: upgrade board weight by one step ($0.10-0.30/unit), add soft-touch lamination ($0.15-0.35/unit), and replace loose fill with a die-cut card or thermoformed insert ($0.50-3.00/unit). Total additional cost: $0.75-3.65/unit. These three changes transform the in-hand feel, the visual presentation, and the interior composition. Skip multiple finishes and complex closures. One finish applied well outperforms three finishes competing for attention.</p>
+      </div>
 
+      <BlogFAQ
+        title="Unboxing Experience Design FAQ"
+        faqs={[
+          { question: 'What makes an unboxing experience "premium"?', answer: 'A premium unboxing experience is defined by three elements: tactile quality (board weight, surface finish, insert material), reveal sequencing (a layered opening that builds anticipation), and design intention (every element looks deliberate, not incidental). Premium is a design outcome, not a budget outcome. A $15 box with one great finish and a structured insert feels more premium than a $30 box with multiple finishes but no interior organization.' },
+          { question: 'How do I design packaging for unboxing videos?', answer: 'Design for camera-readiness: ensure brand visibility from top-down and 30-45 degree angles, use finishes that catch light (foil, metallic), create a reveal sequence that takes 10-15 seconds, and make sure the open box looks composed from above. Eliminate loose fill, tape, and anything that creates logistics sounds (bubble wrap, styrofoam). The products should look arranged, not packed.' },
+          { question: 'Does unboxing design packaging cost more than regular packaging?', answer: 'Not necessarily. The key investments are a structured insert ($1.50-4.00/unit over loose fill), a transition layer like tissue or a reveal card ($0.30-1.00/unit), and one signature finish ($0.15-0.50/unit). Total premium over a basic box: $2-6/unit. The structural complexity doesn\'t need to change. A standard rigid box or folding carton becomes an unboxing experience through interior design choices, not exterior engineering.' },
+          { question: 'What is the most important element of unboxing design?', answer: 'The insert. Products held in a structured insert look curated and intentional. Products in crinkle fill look packed for shipping. The insert determines whether the open-box shot looks like a flat lay or a dig-through. It\'s also the element that controls reveal sequencing, product protection, and the tactile experience as the recipient removes each item.' },
+          { question: 'How do I make packaging look expensive on a budget?', answer: 'Three moves: upgrade board weight by one step ($0.10-0.30/unit), add soft-touch lamination ($0.15-0.35/unit), and replace loose fill with a die-cut card or thermoformed insert ($0.50-3.00/unit). Total additional cost: $0.75-3.65/unit. These three changes transform the in-hand feel, the visual presentation, and the interior composition. Skip multiple finishes and complex closures. One finish applied well outperforms three finishes competing for attention.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Unboxing Experience Design"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Unboxing experience design starts in the brief, not in the graphic design phase. Define the channel (DTC, PR, retail), the reveal sequence you want to create, the tactile hierarchy, and the camera angles that matter. Those decisions shape the structure, materials, and finish selections that follow.</p>
             <p>We design unboxing experiences for beauty and wellness brands from initial concept through production. We&apos;ll walk you through the structural options, show you material samples, and prototype the sequence before committing to production.</p>

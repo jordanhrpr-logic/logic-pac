@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -142,20 +143,23 @@ export default function PostClient() {
             <h3>The Brand&apos;s Role</h3>
             <p>Confirm the delivery address and receiving contact. Arrange for receiving at the warehouse or co-packer. Inspect goods upon arrival and flag any issues immediately. Damage claims have time limits.</p>
 
-            <h2>FAQ</h2>
-            <h3>How long does custom packaging development take?</h3>
-            <p>The typical custom packaging development process takes 12-16 weeks from an approved brief to delivered goods. Simple formats (folding cartons, stock bottles with custom decoration) can be faster. Complex formats (custom molds, rigid boxes with specialty finishes, multi-component kits) may take longer. The most common cause of timeline extension is delayed brand approvals.</p>
-            <h3>How much does custom packaging cost?</h3>
-            <p>Custom packaging cost varies by format, material, quantity, and complexity. Folding cartons might cost $0.30-$1.50 per unit. Custom bottles with injection molds range from $0.50-$3.00+ per unit depending on material, size, and finish. Rigid boxes for luxury or gift sets can range from $2.00-$15.00+ per unit. Tooling costs are separate and typically range from $500-$15,000 depending on format complexity.</p>
-            <h3>What is the minimum order quantity for custom packaging?</h3>
-            <p>MOQs vary by format and supplier. Folding cartons typically start at 1,000-5,000 units. Custom bottles with stock molds may start at 5,000-10,000 units. Fully custom injection-molded packaging often requires 10,000-25,000+ units for the first run. Rigid boxes and specialty formats can sometimes accommodate lower MOQs of 500-2,000 units.</p>
-            <h3>What information do I need to provide in a packaging brief?</h3>
-            <p>A complete packaging brief includes: product type and formula details, packaging format, target unit cost, order quantity, timeline, brand visual direction, finish preferences, material requirements or sustainability targets, regulatory and labeling requirements, and channel specifications (retail, e-commerce, DTC). The more specific the brief, the faster and more accurate the development process.</p>
-            <h3>What is the most common cause of packaging project delays?</h3>
-            <p>Delayed brand approvals. Every stage of the packaging development process requires brand sign-off before the next stage can begin. When a concept approval takes two weeks instead of three days, or artwork feedback arrives a week late, the entire downstream timeline shifts. Internal alignment before each review round is the single most effective way to keep the project on schedule.</p>
-            <h3>Can I make design changes after tooling is started?</h3>
-            <p>Changes after tooling has begun are possible but costly. Structural changes typically require new tooling at full tooling cost. Graphic changes to printed elements are easier if they do not affect dieline dimensions. The best practice is to make all structural and material decisions final before approving tooling, and to limit post-tooling changes to minor artwork revisions.</p>
+      </div>
 
+      <BlogFAQ
+        title="Custom Packaging Development FAQ"
+        faqs={[
+          { question: 'How long does custom packaging development take?', answer: 'The typical custom packaging development process takes 12-16 weeks from an approved brief to delivered goods. Simple formats like folding cartons or stock bottles with custom decoration can be faster. Complex formats like custom molds, rigid boxes with specialty finishes, or multi-component kits may take longer. The most common cause of timeline extension is delayed brand approvals.' },
+          { question: 'How much does custom packaging cost?', answer: 'Custom packaging cost varies by format, material, quantity, and complexity. Folding cartons might cost $0.30-$1.50 per unit. Custom bottles with injection molds range from $0.50-$3.00+ per unit depending on material, size, and finish. Rigid boxes for luxury or gift sets can range from $2.00-$15.00+ per unit. Tooling costs are separate and typically range from $500-$15,000 depending on format complexity.' },
+          { question: 'What is the minimum order quantity for custom packaging?', answer: 'MOQs vary by format and supplier. Folding cartons typically start at 1,000-5,000 units. Custom bottles with stock molds may start at 5,000-10,000 units. Fully custom injection-molded packaging often requires 10,000-25,000+ units for the first run. Rigid boxes and specialty formats can sometimes accommodate lower MOQs of 500-2,000 units.' },
+          { question: 'What information do I need to provide in a packaging brief?', answer: 'A complete packaging brief includes product type and formula details, packaging format, target unit cost, order quantity, timeline, brand visual direction, finish preferences, material requirements or sustainability targets, regulatory and labeling requirements, and channel specifications (retail, e-commerce, DTC). The more specific the brief, the faster and more accurate the development process.' },
+          { question: 'What is the most common cause of packaging project delays?', answer: 'Delayed brand approvals. Every stage of the packaging development process requires brand sign-off before the next stage can begin. When a concept approval takes two weeks instead of three days, or artwork feedback arrives a week late, the entire downstream timeline shifts. Internal alignment before each review round is the single most effective way to keep the project on schedule.' },
+          { question: 'Can I make design changes after tooling is started?', answer: 'Changes after tooling has begun are possible but costly. Structural changes typically require new tooling at full tooling cost. Graphic changes to printed elements are easier if they do not affect dieline dimensions. The best practice is to make all structural and material decisions final before approving tooling, and to limit post-tooling changes to minor artwork revisions.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Packaging"
+      />
+
+      <div className="blog-body">
             <h2>Know the Process Before You Start the Process</h2>
             <p>Custom packaging development is not mysterious. It is a sequence of decisions, each building on the last, with clear inputs and outputs at every stage. The brands that move through it efficiently are the ones that understand the stages, make decisions promptly, and treat their packaging partner as a collaborator, not a vendor waiting for instructions.</p>
             <p>If you are developing custom packaging for a beauty, wellness, or consumer brand and want a partner who manages the process from brief through delivery, we can walk through your project scope and build a realistic timeline.</p>

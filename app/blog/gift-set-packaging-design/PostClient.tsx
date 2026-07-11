@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -38,6 +40,9 @@ export default function PostClient() {
 
             <h2>Structural Approaches for Multi-Product Gift Set Packaging</h2>
             <p>The structure is the first decision and the hardest to change later. Each approach carries a different cost profile, perceived value, production complexity, and suitability for different product counts and channels.</p>
+
+            <Image src="/images/portfolio/holiday-epicutis-gift-sets.jpg" alt="Premium skincare gift set packaging with rigid boxes and custom inserts" width={760} height={570} className="guide-img" style={{ width: '100%', height: 'auto' }} />
+
             <h3>Rigid Box with Custom Insert</h3>
             <p>A two-piece rigid box (separate lid and base), paper-over-board construction, with a custom insert that holds each product in its own cavity. This is the premium standard for beauty gift box packaging.</p>
             <p><strong>Best for:</strong> Skincare routines (3-5 products), fragrance sets, premium color cosmetics. Retail price points above $40. Brands that want the lift-lid reveal moment.</p>
@@ -123,18 +128,23 @@ export default function PostClient() {
             <p>Rigid boxes survive shipping well but are heavy and expensive to ship. Folding cartons are lighter and cheaper to ship but offer less protection. The solution is usually structural: a rigid insert inside a lighter outer carton, or a corrugated shipping sleeve over a premium inner box.</p>
             <p>For DTC gift sets, the outer shipping box is part of the unboxing experience. For retail, the shipping carton is invisible to the customer but must protect the product through warehouse handling, truck transport, and store receiving.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>How much does custom gift set packaging cost?</h3>
-            <p>Custom gift set packaging costs <strong>$2-18+ per unit</strong> depending on structure. Folding cartons run $2-6, sleeve + tray builds run $4-12, and rigid boxes run $6-18+. The primary cost driver is component count. A 3-product set in a folding carton at 3,000 units might cost $3.50/unit. The same 3 products in a rigid box with EVA foam insert and foil stamping might cost $14/unit.</p>
-            <h3>What&apos;s the best insert type for a beauty gift set?</h3>
-            <p>Thermoformed trays are the most common insert for beauty gift sets because they accommodate mixed product sizes precisely and cost $1.50-4.00 per unit. For luxury sets above $75 retail, EVA foam adds a premium feel at $3-7/unit. For sustainable programs, molded pulp is the best option at $1-3.50/unit. Die-cut card works for budget sets with uniform lightweight products.</p>
-            <h3>How long does gift set packaging production take?</h3>
-            <p>Rigid gift set packaging typically takes <strong>14-18 weeks</strong> from approved brief to delivery. Folding carton formats are faster at <strong>10-14 weeks</strong>. These timelines include structural design, sampling (2 rounds), tooling, production, and freight. Holiday programs should add 2-4 weeks of buffer for retailer compliance documentation and kitting.</p>
-            <h3>Can I use the same gift set box for DTC and retail?</h3>
-            <p>You can, but there are tradeoffs. Retail requires specific barcode placement, case pack configurations, and sometimes supplemental labeling that DTC doesn&apos;t need. Some brands produce one box for both channels and add retailer-specific stickers or sleeves. Others produce separate versions. The cost of a second version depends on whether the structural box changes or just the labeling.</p>
-            <h3>What&apos;s the minimum order for custom gift set packaging?</h3>
-            <p>Most custom rigid gift set boxes start at <strong>500-1,000 units</strong> MOQ. Folding cartons can sometimes go lower (300-500 units), but per-unit costs at those quantities are 30-50% higher than at 2,000+ units. For test runs or PR programs, we can sometimes run 250-500 units at a premium price.</p>
 
+      </div>
+
+      <BlogFAQ
+        title="Gift Set Packaging FAQs"
+        faqs={[
+          { question: 'How much does custom gift set packaging cost?', answer: 'Custom gift set packaging costs $2-18+ per unit depending on structure. Folding cartons run $2-6, sleeve + tray builds run $4-12, and rigid boxes run $6-18+. The primary cost driver is component count. A 3-product set in a folding carton at 3,000 units might cost $3.50/unit. The same 3 products in a rigid box with EVA foam insert and foil stamping might cost $14/unit.' },
+          { question: 'What is the best insert type for a beauty gift set?', answer: 'Thermoformed trays are the most common insert for beauty gift sets because they accommodate mixed product sizes precisely and cost $1.50-4.00 per unit. For luxury sets above $75 retail, EVA foam adds a premium feel at $3-7/unit. For sustainable programs, molded pulp is the best option at $1-3.50/unit. Die-cut card works for budget sets with uniform lightweight products.' },
+          { question: 'How long does gift set packaging production take?', answer: 'Rigid gift set packaging typically takes 14-18 weeks from approved brief to delivery. Folding carton formats are faster at 10-14 weeks. These timelines include structural design, sampling (2 rounds), tooling, production, and freight. Holiday programs should add 2-4 weeks of buffer for retailer compliance documentation and kitting.' },
+          { question: 'Can I use the same gift set box for DTC and retail?', answer: 'You can, but there are tradeoffs. Retail requires specific barcode placement, case pack configurations, and sometimes supplemental labeling that DTC doesn\'t need. Some brands produce one box for both channels and add retailer-specific stickers or sleeves. Others produce separate versions. The cost of a second version depends on whether the structural box changes or just the labeling.' },
+          { question: 'What is the minimum order for custom gift set packaging?', answer: 'Most custom rigid gift set boxes start at 500-1,000 units MOQ. Folding cartons can sometimes go lower (300-500 units), but per-unit costs at those quantities are 30-50% higher than at 2,000+ units. For test runs or PR programs, we can sometimes run 250-500 units at a premium price.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Gift Set Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Gift set packaging design is a series of decisions that compound. The structure determines cost. The insert determines product fit. The finish determines shelf presence. The timeline determines whether you have room to get it right.</p>
             <p>Start with the brief. Define the products, the target cost, the channel, and the quantity. That gives us enough to recommend a structure, quote realistic pricing, and map the production timeline.</p>

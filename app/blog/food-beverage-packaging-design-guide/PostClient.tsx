@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -191,18 +192,22 @@ export default function PostClient() {
             <p>Start with the job the package has to do in the next channel. If the brand is still proving repeat purchase, keep the structure simple and spend on protection, label clarity, and shelf readability. If the brand is entering specialty retail, invest in the parts that help a buyer understand the product and help the store replenish it cleanly.</p>
             <p>A package can evolve. The first retail-ready version does not have to be the final national-retail version.</p>
 
-            <h2>FAQ</h2>
-            <h3>How much does food and beverage packaging cost?</h3>
-            <p>Most emerging food and beverage packaging lands around $0.30-$3.00 per unit, depending on material, format, volume, barrier needs, print method, and retail requirements.</p>
-            <h3>What packaging format is best for food products?</h3>
-            <p>It depends on product form. Dry goods often use pouches or cartons, beverages use bottles, cans, or labels, frozen products need moisture and cold-chain performance, and retail programs often need corrugated case packs.</p>
-            <h3>What compliance information needs to be on food packaging?</h3>
-            <p>Most food packaging needs ingredient information, net weight, manufacturer or distributor details, storage instructions, UPC, and any required nutrition or allergen information. Confirm the final label with a qualified regulatory partner.</p>
-            <h3>When should a food brand redesign packaging for retail?</h3>
-            <p>Before the buyer says yes. Retail packaging affects case pack, pallet pattern, UPC placement, chargebacks, shelf presentation, and reorder reliability.</p>
-            <h3>Can Logic Pac handle food and beverage packaging?</h3>
-            <p>Yes. We develop custom packaging for food, beverage, wellness, and CPG brands, including cartons, pouches, labels, shippers, retail displays, and gift sets.</p>
+      </div>
 
+      <BlogFAQ
+        title="Food and Beverage Packaging FAQ"
+        faqs={[
+          { question: 'How much does food and beverage packaging cost?', answer: 'Most emerging food and beverage packaging lands around $0.30-$3.00 per unit, depending on material, format, volume, barrier needs, print method, and retail requirements.' },
+          { question: 'What packaging format is best for food products?', answer: 'It depends on product form. Dry goods often use pouches or cartons, beverages use bottles, cans, or labels, frozen products need moisture and cold-chain performance, and retail programs often need corrugated case packs.' },
+          { question: 'What compliance information needs to be on food packaging?', answer: 'Most food packaging needs ingredient information, net weight, manufacturer or distributor details, storage instructions, UPC, and any required nutrition or allergen information. Confirm the final label with a qualified regulatory partner.' },
+          { question: 'When should a food brand redesign packaging for retail?', answer: 'Before the buyer says yes. Retail packaging affects case pack, pallet pattern, UPC placement, chargebacks, shelf presentation, and reorder reliability.' },
+          { question: 'Can Logic Pac handle food and beverage packaging?', answer: 'Yes. We develop custom packaging for food, beverage, wellness, and CPG brands, including cartons, pouches, labels, shippers, retail displays, and gift sets.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Food & Beverage Packaging"
+      />
+
+      <div className="blog-body">
             <h2>Build Packaging That Works Beyond the First Sale</h2>
             <p>Food and beverage packaging has to do more than look good on shelf. It has to protect product quality, carry required information, fit the retail system, and keep the margin intact.</p>
             <p>If you are moving from local sales, DTC, or early wholesale into a bigger retail channel, we can help build packaging that is designed for the next stage, not just the next photoshoot.</p>

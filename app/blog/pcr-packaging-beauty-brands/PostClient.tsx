@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -135,20 +136,23 @@ export default function PostClient() {
             <h3>Step 5: Plan for supply variability</h3>
             <p>PCR supply fluctuates. Build relationships with multiple qualified suppliers and maintain the option to adjust PCR percentages within a range rather than committing to a single fixed number that may not be achievable every quarter.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>How much more does PCR packaging cost than virgin plastic?</h3>
-            <p>PCR packaging typically costs <strong>10-30% more</strong> than equivalent virgin plastic packaging. The exact premium depends on the resin type (rPET and rHDPE are most available), the PCR percentage (higher content costs more), color requirements (clear PCR commands higher prices), and current market supply conditions.</p>
-            <h3>Can PCR packaging be recycled again?</h3>
-            <p>Yes. PCR plastic can generally be recycled again through the same collection and processing infrastructure as virgin plastic. The material does not become non-recyclable after one recycling cycle. However, each recycling cycle can degrade polymer quality slightly, which is why blending PCR with virgin resin is common practice.</p>
-            <h3>Is PCR packaging safe for cosmetics?</h3>
-            <p>PCR packaging is safe for cosmetics when properly tested for formula compatibility. The key concern is potential migration of trace contaminants from the recycled feedstock. Brands should conduct migration testing, barrier testing, and stability testing before approving PCR packaging for production. Reputable PCR resin suppliers provide safety data and comply with FDA and EU cosmetic packaging regulations.</p>
-            <h3>What is the difference between PCR and PIR recycled content?</h3>
-            <p>PCR (post-consumer recycled) content comes from materials that were used by consumers and entered the waste stream. PIR (post-industrial recycled) content comes from manufacturing scrap that never reached consumers. PCR carries a stronger environmental impact claim because it diverts actual waste. PIR is essentially clean manufacturing efficiency &mdash; useful, but not the same as closing the consumer waste loop.</p>
-            <h3>Do I need PCR packaging to sell in California?</h3>
-            <p>Starting in 2028, California&apos;s SB 54 requires plastic packaging sold in the state to contain at least <strong>30% recycled content</strong>, increasing to <strong>65% by 2032</strong>. If you sell products in California &mdash; which includes most national beauty retailers &mdash; you need a recycled content strategy. Brands that start qualifying PCR suppliers now will have the smoothest compliance path.</p>
-            <h3>How do I know if a supplier&apos;s PCR claim is real?</h3>
-            <p>Request third-party certification from recognized bodies like SCS Global Services, UL Environmental, or GreenCircle Certified. Ask for chain-of-custody documentation tracing the recycled feedstock to its source. If a supplier cannot provide documentation beyond a verbal claim, the PCR content is unverifiable and should not be used for marketing or label claims.</p>
+      </div>
 
+      <BlogFAQ
+        title="PCR Packaging FAQ"
+        faqs={[
+          { question: 'How much more does PCR packaging cost than virgin plastic?', answer: 'PCR packaging typically costs 10-30% more than equivalent virgin plastic packaging. The exact premium depends on the resin type (rPET and rHDPE are most available), the PCR percentage (higher content costs more), color requirements (clear PCR commands higher prices), and current market supply conditions.' },
+          { question: 'Can PCR packaging be recycled again?', answer: 'Yes. PCR plastic can generally be recycled again through the same collection and processing infrastructure as virgin plastic. The material does not become non-recyclable after one recycling cycle. However, each recycling cycle can degrade polymer quality slightly, which is why blending PCR with virgin resin is common practice.' },
+          { question: 'Is PCR packaging safe for cosmetics?', answer: 'PCR packaging is safe for cosmetics when properly tested for formula compatibility. The key concern is potential migration of trace contaminants from the recycled feedstock. Brands should conduct migration testing, barrier testing, and stability testing before approving PCR packaging for production. Reputable PCR resin suppliers provide safety data and comply with FDA and EU cosmetic packaging regulations.' },
+          { question: 'What is the difference between PCR and PIR recycled content?', answer: 'PCR (post-consumer recycled) content comes from materials that were used by consumers and entered the waste stream. PIR (post-industrial recycled) content comes from manufacturing scrap that never reached consumers. PCR carries a stronger environmental impact claim because it diverts actual waste. PIR is essentially clean manufacturing efficiency -- useful, but not the same as closing the consumer waste loop.' },
+          { question: 'Do I need PCR packaging to sell in California?', answer: 'Starting in 2028, California\'s SB 54 requires plastic packaging sold in the state to contain at least 30% recycled content, increasing to 65% by 2032. If you sell products in California -- which includes most national beauty retailers -- you need a recycled content strategy. Brands that start qualifying PCR suppliers now will have the smoothest compliance path.' },
+          { question: 'How do I know if a supplier\'s PCR claim is real?', answer: 'Request third-party certification from recognized bodies like SCS Global Services, UL Environmental, or GreenCircle Certified. Ask for chain-of-custody documentation tracing the recycled feedstock to its source. If a supplier cannot provide documentation beyond a verbal claim, the PCR content is unverifiable and should not be used for marketing or label claims.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Sustainable Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>PCR adoption is a material science decision, a regulatory compliance decision, and a brand positioning decision all at once. Getting it right requires testing the formula against the material, verifying supplier claims, and building a sourcing plan that accounts for supply variability.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pcr_consultation" target="_blank" rel="noopener noreferrer">Book a sustainability packaging consultation</a> and we will help you define the right PCR specification for your products, identify qualified suppliers, and plan the testing and certification process.</p>

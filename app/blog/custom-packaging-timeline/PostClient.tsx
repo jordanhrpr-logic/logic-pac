@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -172,23 +173,22 @@ export default function PostClient() {
             <p><strong>2. Material availability.</strong> The specified material (specialty paper, specific PCR content, custom color PU leather) is not in stock. Sourcing it takes 2&ndash;4 weeks &mdash; often discovered during sampling, not during design.</p>
             <p><strong>3. Factory calendar conflicts.</strong> Chinese New Year (January&ndash;February) shuts production for 2&ndash;4 weeks. Golden Week (October) pauses for 1 week. Ramadan affects some Southeast Asian suppliers. These are predictable but regularly missed in planning.</p>
 
-            <h2>FAQ</h2>
+      </div>
 
-            <h3>Can I get custom packaging in less than 8 weeks?</h3>
-            <p>Yes, but only under specific conditions: existing tooling, stock materials, domestic production (US or Mexico), and a locked brief on day one. Expect rush premiums of 15&ndash;25%. Most realistic minimum is 8&ndash;10 weeks for simple formats.</p>
+      <BlogFAQ
+        title="Custom Packaging Timeline FAQ"
+        faqs={[
+          { question: 'Can I get custom packaging in less than 8 weeks?', answer: 'Yes, but only under specific conditions: existing tooling, stock materials, domestic production (US or Mexico), and a locked brief on day one. Expect rush premiums of 15-25%. Most realistic minimum is 8-10 weeks for simple formats.' },
+          { question: 'How long do packaging samples take?', answer: 'Physical samples typically take 2-4 weeks after design approval. Simple formats (folding cartons with standard board) land at 2 weeks. Complex structures (rigid boxes with specialty materials and multiple finishes) need 3-4 weeks. Each revision adds 7-10 days.' },
+          { question: 'What delays the packaging timeline most?', answer: 'Artwork approval loops are the #1 delay. Brands approve the structure quickly, then spend weeks iterating on graphic design. Every round of changes adds 5-10 days. Lock your design direction before sampling starts.' },
+          { question: 'How far in advance should I start holiday packaging?', answer: '5-7 months before your retail ship date. For most beauty brands selling through Ulta, Sephora, or specialty retail, that means starting in January-February for Q4 delivery. Starting after March typically requires rush production or compressed timelines.' },
+          { question: 'What is the difference between domestic and international packaging timelines?', answer: 'Domestic (US or Mexico) production eliminates 4-8 weeks of ocean freight and customs. Total timeline drops to 8-12 weeks for most formats. The tradeoff: domestic unit costs are typically 20-40% higher than Asia-sourced equivalent.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Custom Packaging"
+      />
 
-            <h3>How long do packaging samples take?</h3>
-            <p>Physical samples typically take <strong>2&ndash;4 weeks</strong> after design approval. Simple formats (folding cartons with standard board) land at 2 weeks. Complex structures (rigid boxes with specialty materials and multiple finishes) need 3&ndash;4 weeks. Each revision adds 7&ndash;10 days.</p>
-
-            <h3>What delays the packaging timeline most?</h3>
-            <p>Artwork approval loops are the #1 delay. Brands approve the structure quickly, then spend weeks iterating on graphic design. Every round of changes adds 5&ndash;10 days. Lock your design direction before sampling starts.</p>
-
-            <h3>How far in advance should I start holiday packaging?</h3>
-            <p><strong>5&ndash;7 months</strong> before your retail ship date. For most beauty brands selling through Ulta, Sephora, or specialty retail, that means starting in January&ndash;February for Q4 delivery. Starting after March typically requires rush production or compressed timelines.</p>
-
-            <h3>What is the difference between domestic and international packaging timelines?</h3>
-            <p>Domestic (US or Mexico) production eliminates 4&ndash;8 weeks of ocean freight and customs. Total timeline drops to <strong>8&ndash;12 weeks</strong> for most formats. The tradeoff: domestic unit costs are typically 20&ndash;40% higher than Asia-sourced equivalent.</p>
-
+      <div className="blog-body">
             <h2>Start With the Timeline, Not the Design</h2>
             <p>The brands that hit their launch dates consistently do one thing differently: they start with the calendar and work backward, instead of starting with the design and hoping the timeline works out.</p>
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>

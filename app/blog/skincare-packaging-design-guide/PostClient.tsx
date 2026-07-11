@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -26,6 +28,8 @@ export default function PostClient() {
             <p>The mistake is treating skincare packaging like decoration. It isn&apos;t. The package is part of the product experience and part of the supply chain.</p>
             <p>A beautiful jar that leaks is bad packaging. A recyclable bottle that makes the formula unstable is bad packaging. A perfect carton that can&apos;t survive retail handling is bad packaging.</p>
             <p>Good skincare packaging does all three jobs: formula fit, brand fit, and channel fit.</p>
+
+            <Image src="/images/portfolio/epicutis-kits-group.jpg" alt="Skincare packaging collection showing rigid boxes, drawer boxes, and folding cartons" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <div className="blog-takeaways">
               <h4>Key Takeaways</h4>
@@ -236,23 +240,23 @@ export default function PostClient() {
             <p>A pump that sticks during sampling is fixable. A pump that sticks after 30,000 filled units is a customer service problem. A carton that scuffs in transit during testing is annoying. A carton that scuffs on a retail shelf is a brand problem.</p>
             <p>This is why we prefer packaging decisions that can be sampled, touched, filled, shipped, and inspected before mass production starts.</p>
 
-            <h2>FAQ: Skincare Packaging Design</h2>
 
-            <h3>What is the best packaging for skincare products?</h3>
-            <p>The best skincare packaging depends on the formula. Serums often use droppers or airless pumps, moisturizers use jars, tubes, or pumps, cleansers use bottles or tubes, and active treatments often need stronger barrier protection.</p>
+      </div>
 
-            <h3>Is glass better than plastic for skincare packaging?</h3>
-            <p>Glass feels premium and protects many formulas well, but it is heavier, more fragile, and more expensive to ship. PET, HDPE, PP, and airless systems can be better for scale, DTC shipping, and cost control.</p>
+      <BlogFAQ
+        title="Skincare Packaging FAQs"
+        faqs={[
+          { question: 'What is the best packaging for skincare products?', answer: 'The best skincare packaging depends on the formula. Serums often use droppers or airless pumps, moisturizers use jars, tubes, or pumps, cleansers use bottles or tubes, and active treatments often need stronger barrier protection.' },
+          { question: 'Is glass better than plastic for skincare packaging?', answer: 'Glass feels premium and protects many formulas well, but it is heavier, more fragile, and more expensive to ship. PET, HDPE, PP, and airless systems can be better for scale, DTC shipping, and cost control.' },
+          { question: 'What packaging is best for vitamin C serum?', answer: 'Vitamin C serums usually need protection from light and oxygen, so amber glass, opaque bottles, or airless systems are common starting points. The final choice depends on formula stability and compatibility testing.' },
+          { question: 'How much does skincare packaging cost?', answer: 'Skincare packaging can range from under $1.00 for simple stock bottles or cartons to $5.00+ for decorated primary packaging, airless systems, rigid sets, or complex secondary packaging. Custom tooling and finishes increase cost.' },
+          { question: 'What should be included in a skincare packaging brief?', answer: 'A skincare packaging brief should include formula type, fill volume, compatibility needs, target channel, material preferences, sustainability requirements, decoration direction, timeline, budget, and order volume.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Skincare Packaging"
+      />
 
-            <h3>What packaging is best for vitamin C serum?</h3>
-            <p>Vitamin C serums usually need protection from light and oxygen, so amber glass, opaque bottles, or airless systems are common starting points. The final choice depends on formula stability and compatibility testing.</p>
-
-            <h3>How much does skincare packaging cost?</h3>
-            <p>Skincare packaging can range from under $1.00 for simple stock bottles or cartons to $5.00+ for decorated primary packaging, airless systems, rigid sets, or complex secondary packaging. Custom tooling and finishes increase cost.</p>
-
-            <h3>What should be included in a skincare packaging brief?</h3>
-            <p>A skincare packaging brief should include formula type, fill volume, compatibility needs, target channel, material preferences, sustainability requirements, decoration direction, timeline, budget, and order volume.</p>
-
+      <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>Good skincare packaging starts with the formula and ends with the customer experience.</p>
             <p>The right structure protects the product. The right material supports the claim. The right finish makes the brand feel intentional without overbuilding the cost.</p>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -173,23 +174,22 @@ export default function PostClient() {
             </ul>
             <p>Our Salt Lake City warehouse handles kitting, assembly, and outbound fulfillment for holiday programs. Products and packaging arrive separately. We assemble, QC, and ship the finished kits. This keeps the brand&apos;s internal team focused on marketing and sales during the busiest quarter.</p>
 
-            <h2>FAQ: Holiday Gift Set Packaging for Beauty Brands</h2>
+      </div>
 
-            <h3>How far in advance should I start holiday gift set packaging?</h3>
-            <p>Start <strong>5&ndash;7 months before your delivery date</strong>. For a November retail launch, that means beginning structural planning in January or February and locking artwork by April. Simple seasonal sleeves can move faster (10&ndash;14 weeks), but custom rigid sets and advent calendars need the full runway.</p>
+      <BlogFAQ
+        title="Holiday Gift Set Packaging FAQ"
+        faqs={[
+          { question: 'How far in advance should I start holiday gift set packaging?', answer: 'Start 5-7 months before your delivery date. For a November retail launch, that means beginning structural planning in January or February and locking artwork by April. Simple seasonal sleeves can move faster (10-14 weeks), but custom rigid sets and advent calendars need the full runway.' },
+          { question: 'What is the minimum order for custom holiday gift set packaging?', answer: 'Most custom rigid holiday gift boxes start at 500-1,000 units. Advent calendars typically start at 500+ units due to tooling complexity. Folding carton formats can sometimes run lower, but per-unit costs at sub-500 quantities are significantly higher.' },
+          { question: 'How do I keep holiday packaging costs under control?', answer: 'Set a target landed cost before design begins. Pick one structural upgrade (rigid lid, drawer, magnetic closure) and one signature finish (foil, soft-touch, emboss). Simplify the insert. The best holiday sets feel intentional, not overloaded. Volume is the other lever: moving from 1,000 to 3,000 units can drop per-unit cost 15-30%.' },
+          { question: 'Can holiday gift sets be both premium and sustainable?', answer: 'Yes, but it requires material decisions upfront. FSC-certified paperboard, soy-based inks, water-based coatings, and mono-material inserts (paper pulp instead of plastic trays) can deliver a premium feel while meeting retailer sustainability requirements. The key is designing for recyclability from the start, not trying to retrofit it after the structure is finalized.' },
+          { question: 'Do you handle retailer compliance for Ulta, Sephora, and Target?', answer: 'Retailer compliance is standard in our process. We manage barcoding, master carton labeling, case pack configurations, FSC documentation, and retailer-specific requirements. Compliance should be built into the packaging brief before structural design begins, not added during production.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Holiday Gift Set Packaging"
+      />
 
-            <h3>What&apos;s the minimum order for custom holiday gift set packaging?</h3>
-            <p>Most custom rigid holiday gift boxes start at <strong>500&ndash;1,000 units</strong>. Advent calendars typically start at <strong>500+ units</strong> due to tooling complexity. Folding carton formats can sometimes run lower, but per-unit costs at sub-500 quantities are significantly higher.</p>
-
-            <h3>How do I keep holiday packaging costs under control?</h3>
-            <p>Set a target landed cost before design begins. Pick one structural upgrade (rigid lid, drawer, magnetic closure) and one signature finish (foil, soft-touch, emboss). Simplify the insert. The best holiday sets feel intentional, not overloaded. Volume is the other lever: moving from 1,000 to 3,000 units can drop per-unit cost 15&ndash;30%.</p>
-
-            <h3>Can holiday gift sets be both premium and sustainable?</h3>
-            <p>Yes, but it requires material decisions upfront. FSC-certified paperboard, soy-based inks, water-based coatings, and mono-material inserts (paper pulp instead of plastic trays) can deliver a premium feel while meeting retailer sustainability requirements. The key is designing for recyclability from the start, not trying to retrofit it after the structure is finalized.</p>
-
-            <h3>Do you handle retailer compliance for Ulta, Sephora, and Target?</h3>
-            <p>Retailer compliance is standard in our process. We manage barcoding, master carton labeling, case pack configurations, FSC documentation, and retailer-specific requirements. Compliance should be built into the packaging brief before structural design begins, not added during production.</p>
-
+      <div className="blog-body">
             <h2>Start Your Holiday Packaging Program Now</h2>
             <p>Holiday packaging is a calendar discipline. The brands that win Q4 don&apos;t wait for the marketing team to feel the urgency. They lock the format early, build the brief, approve samples on schedule, and leave room for freight.</p>
             <p>The package can feel seasonal. The process can&apos;t afford to be.</p>

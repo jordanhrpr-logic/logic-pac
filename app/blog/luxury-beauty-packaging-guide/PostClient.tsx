@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
+import BlogFAQ from '@/components/BlogFAQ'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -35,6 +37,8 @@ export default function PostClient() {
                 <li>Insert design is the most underestimated element &mdash; a luxury product in a rattling, poorly fitted insert feels like a return, not a gift.</li>
               </ul>
             </div>
+
+            <Image src="/images/portfolio/futuremood-rigid-box.jpg" alt="Luxury rigid box packaging with foil stamping and custom interior insert" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <h2>The Structural Foundation: Why Weight Is the First Luxury Signal</h2>
             <p>Pick up any mass-market beauty product. Then pick up a Chanel compact, a Tom Ford lipstick, or a La Mer jar. The difference registers in the first half-second &mdash; before you read the logo, before you see the finish. It is weight.</p>
@@ -135,20 +139,24 @@ export default function PostClient() {
             <p>Luxury is not the most complicated packaging. It is the most intentional. Some of the most effective luxury packaging we have produced uses a single material, a single finish, and a perfect closure. Nothing more.</p>
             <p>To see examples of how we approach luxury projects, visit the <Link href="/work?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_portfolio">Logic Pac portfolio</Link>.</p>
 
-            <h2>Frequently Asked Questions</h2>
-            <h3>How much more does luxury packaging cost than standard packaging?</h3>
-            <p>Luxury beauty packaging typically costs <strong>3-5x more per unit</strong> than standard packaging for the same product format. Most of the premium comes from structural weight, closure engineering, and insert quality &mdash; not surface finishes. A rigid box that costs $4.00 at standard spec may cost $10.00-$18.00 at luxury spec once all components are included.</p>
-            <h3>What is the minimum order quantity for luxury packaging?</h3>
-            <p>Most luxury packaging formats start at <strong>500-1,000 units</strong> for rigid boxes with custom finishes. Custom-molded primary packaging (compacts, jars, bottles) typically requires <strong>5,000-10,000 units</strong>. Short-run luxury projects like influencer kits can sometimes start at <strong>50-100 units</strong>, though unit economics improve significantly at higher volumes.</p>
-            <h3>What makes packaging feel luxury to consumers?</h3>
-            <p>Weight, closure quality, and surface texture are the three strongest luxury signals consumers register before conscious evaluation. A heavy box with a smooth magnetic closure and a soft-touch surface reads as luxury within the first second of interaction. Consumers describe this as &ldquo;it feels expensive&rdquo; without being able to articulate why.</p>
-            <h3>Can I make folding cartons feel luxury?</h3>
-            <p>Yes, but with limits. Heavy-caliper board (18pt-24pt), soft-touch lamination, foil stamping, and precise die-cutting can create premium folding cartons that outperform generic rigid boxes. Folding cartons will not replicate the weight and closure experience of rigid construction, but they can serve as effective luxury packaging at lower price points &mdash; particularly for skincare and fragrance secondary packaging.</p>
-            <h3>How long does luxury packaging development take?</h3>
-            <p>Luxury packaging typically requires <strong>14-22 weeks</strong> from design brief to delivered inventory. The timeline is longer than standard packaging because structural prototyping, closure testing, and finish sampling each require dedicated rounds. Complex multi-component kits can take 20-26 weeks. Plan luxury packaging 5-6 months ahead of launch.</p>
-            <h3>Should I work with a luxury packaging manufacturer or a general packaging supplier?</h3>
-            <p>Work with a supplier that has demonstrated experience in luxury formats &mdash; specifically in closure engineering, finish layering, and insert precision. A general packaging supplier can produce a box with premium finishes, but the structural engineering, sensory sequencing, and quality control standards required for true luxury packaging require specialized experience.</p>
 
+      </div>
+
+      <BlogFAQ
+        title="Luxury Beauty Packaging FAQs"
+        faqs={[
+          { question: 'How much more does luxury packaging cost than standard packaging?', answer: 'Luxury beauty packaging typically costs 3-5x more per unit than standard packaging for the same product format. Most of the premium comes from structural weight, closure engineering, and insert quality -- not surface finishes. A rigid box that costs $4.00 at standard spec may cost $10.00-$18.00 at luxury spec once all components are included.' },
+          { question: 'What is the minimum order quantity for luxury packaging?', answer: 'Most luxury packaging formats start at 500-1,000 units for rigid boxes with custom finishes. Custom-molded primary packaging (compacts, jars, bottles) typically requires 5,000-10,000 units. Short-run luxury projects like influencer kits can sometimes start at 50-100 units, though unit economics improve significantly at higher volumes.' },
+          { question: 'What makes packaging feel luxury to consumers?', answer: 'Weight, closure quality, and surface texture are the three strongest luxury signals consumers register before conscious evaluation. A heavy box with a smooth magnetic closure and a soft-touch surface reads as luxury within the first second of interaction. Consumers describe this as "it feels expensive" without being able to articulate why.' },
+          { question: 'Can I make folding cartons feel luxury?', answer: 'Yes, but with limits. Heavy-caliper board (18pt-24pt), soft-touch lamination, foil stamping, and precise die-cutting can create premium folding cartons that outperform generic rigid boxes. Folding cartons will not replicate the weight and closure experience of rigid construction, but they can serve as effective luxury packaging at lower price points -- particularly for skincare and fragrance secondary packaging.' },
+          { question: 'How long does luxury packaging development take?', answer: 'Luxury packaging typically requires 14-22 weeks from design brief to delivered inventory. The timeline is longer than standard packaging because structural prototyping, closure testing, and finish sampling each require dedicated rounds. Complex multi-component kits can take 20-26 weeks. Plan luxury packaging 5-6 months ahead of launch.' },
+          { question: 'Should I work with a luxury packaging manufacturer or a general packaging supplier?', answer: 'Work with a supplier that has demonstrated experience in luxury formats -- specifically in closure engineering, finish layering, and insert precision. A general packaging supplier can produce a box with premium finishes, but the structural engineering, sensory sequencing, and quality control standards required for true luxury packaging require specialized experience.' },
+        ]}
+        ctaText="Book a Packaging Consultation"
+        ctaProjectType="Luxury Packaging"
+      />
+
+      <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Luxury packaging development starts with a structure conversation, not a mood board. Before committing to finishes or materials, define the weight, the closure, and the insert architecture. Everything else follows.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_consultation" target="_blank" rel="noopener noreferrer">Book a consultation</a> and we will help you define the structural foundation, finish hierarchy, and cost model for your luxury packaging project.</p>
