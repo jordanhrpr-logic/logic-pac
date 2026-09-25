@@ -4,6 +4,8 @@ import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideAnswerSummary from '@/components/GuideAnswerSummary'
+import GuideBottomLine from '@/components/GuideBottomLine'
 import Image from 'next/image'
 
 const tocSections = [
@@ -22,11 +24,11 @@ const tocSections = [
 const faqs = [
   {
     question: 'Can we do this in 8 weeks instead of 12?',
-    answer: 'Sometimes. It requires pre-locked design direction, existing material specs, and a partner running phases in parallel. Add a rush premium of 15–25%. Don’t try to compress weeks 1–2 — that’s where compressed projects fail.',
+    answer: 'Sometimes. It requires pre-locked design direction, existing material specs, available capacity, and phases that can safely run in parallel. Rush costs and feasibility vary by supplier and format. Do not compress the briefing and approval decisions that protect later phases.',
   },
   {
     question: 'What if our product is glass and breakable?',
-    answer: 'Add 2–3 weeks for structural engineering and protective sub-packaging design. Drop testing in weeks 7–8 becomes critical. Don’t ship glass to retail without a tested e-commerce variant if you’re also selling DTC.',
+    answer: 'Glass often requires added structural engineering, protective packaging, and drop testing. The schedule impact depends on the format, channel, test protocol, and whether an e-commerce variant is required.',
   },
   {
     question: 'How does international production change the timeline?',
@@ -68,11 +70,11 @@ export default function TimelineClient() {
     <>
       <div className="phdr">
         <div className="ey inv">Logic Pac &middot; Production Timelines</div>
-        <h1>From concept to shelf in <em>12 weeks.</em> What a realistic packaging timeline actually looks like.</h1>
-        <p>Most brand managers ask &ldquo;how fast can we get packaging to market?&rdquo; before they ask anything else. The honest answer is 90 days &mdash; but only if you know what happens in each phase, and what compresses or extends the timeline.</p>
+        <h1>The custom packaging timeline, <em>phase by phase.</em></h1>
+        <p>A realistic schedule for discovery, design, prototypes, testing, production, quality control, and freight.</p>
         <div className="phdr-meta">
           <span>15 min read</span>
-          <span>Updated April 2026</span>
+          <span>Updated September 2026</span>
           <span>Design + Production</span>
         </div>
       </div>
@@ -88,7 +90,9 @@ export default function TimelineClient() {
         <div className="guide-main">
           <div className="seo">
 
-            <h2 id="why"><span className="num">01.</span>Why packaging timelines slip</h2>
+            <GuideAnswerSummary title="How long does custom packaging take?" answer="A 12-week custom packaging program is possible for a tightly defined project with fast approvals, proven materials, available capacity, and a freight plan that fits the deadline. More complex structures, new tooling, repeated sampling, testing, or ocean freight extend the schedule. The timeline is protected in the brief and approval process long before production begins." takeaways={['The first two weeks determine whether later phases stay on schedule.','Structural decisions must be resolved before artwork and finish approvals lock.','Test the real product inside the prototype—not an empty package.','Separate production time from freight time when setting the launch date.']} />
+
+            <h2 id="why"><span className="num">01.</span>Most delays begin before the production order</h2>
             <p>Every packaging project has the same six phases. The brands that hit shelf on schedule don&rsquo;t move faster &mdash; they make decisions earlier and respect the dependencies between stages.</p>
             <p>Here&rsquo;s the pattern we see across hundreds of projects: <strong>delays don&rsquo;t come from production. They come from indecision in the first four weeks.</strong> One material change in week 7 can push your launch by a month. One unclear brand brief in week 1 can compound into three rounds of redesign before sampling.</p>
             <p>This guide breaks down what actually happens in each phase, what kills the timeline, and what you can do upstream to protect a 12-week launch window.</p>
@@ -207,6 +211,7 @@ export default function TimelineClient() {
               <li>Product fits, dispenses, and seals correctly</li>
             </ul>
 
+            <GuideBottomLine>Speed comes from fewer late decisions, not less diligence. A clear brief, named approvers, defined testing, and an agreed freight plan do more to protect launch timing than asking production to move faster after the project has drifted.</GuideBottomLine>
           </div>
         </div>
       </div>

@@ -4,8 +4,8 @@ import { finishGuideFaqJsonLd } from '@/lib/metadata'
 import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide-schemas'
 
 const slug = 'packaging-finish-guide'
-const title = 'Packaging Finish Guide: Soft-Touch, Foil Stamp, Spot UV & Emboss'
-const description = 'A comprehensive reference guide covering soft-touch lamination, foil stamping, spot UV coating, embossing, and debossing for custom packaging. Includes comparisons, cost considerations, and file prep guidance.'
+const title = 'Packaging Finish Selection Guide'
+const description = 'Compare soft-touch lamination, foil stamping, spot UV, embossing, and debossing by appearance, feel, durability, file setup, and cost.'
 
 export const metadata: Metadata = {
   title,
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function FinishGuidePage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/portfolio/soft-touch-spot-uv.jpg', datePublished: '2026-03-14' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/portfolio/soft-touch-spot-uv.jpg', datePublished: '2026-03-14', dateModified: '2026-09-25' })
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>

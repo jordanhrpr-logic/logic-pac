@@ -516,6 +516,10 @@ footer{padding:48px 24px 32px}
 .ggrid .ge{grid-column:span 6!important}
 .modal{border-radius:12px 12px 0 0;max-height:90vh;overflow-y:auto}
 .fr input,.fr select,.fr textarea{font-size:16px}
+.guide-answer{padding:24px 22px}
+.guide-answer h2{font-size:20px}
+.guide-answer p{font-size:15px}
+.guide-bottom-line{padding:24px 22px;margin:36px 0}
 }
 @media(prefers-reduced-motion:reduce){
 *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}

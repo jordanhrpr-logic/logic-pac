@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideAnswerSummary from '@/components/GuideAnswerSummary'
+import GuideBottomLine from '@/components/GuideBottomLine'
 
 const tocSections = [
   { id: 'why', label: 'Why material matters' },
@@ -69,11 +71,11 @@ export default function MaterialClient() {
     <>
       <div className="phdr">
         <div className="ey inv">Logic Pac &middot; Material Strategy</div>
-        <h1>The beauty brand&apos;s <em>material decision</em> framework.</h1>
+        <h1>How to choose the right <em>beauty packaging material.</em></h1>
         <p>Glass. PET. HDPE. Aluminum. Molded fiber. Every beauty packaging project starts with the same five-way material call &mdash; and most brands make it on aesthetics alone. Here&apos;s how to make it the right way.</p>
         <div className="phdr-meta">
           <span>14 min read</span>
-          <span>Updated April 2026</span>
+          <span>Updated September 2026</span>
           <span>Concept Stage</span>
         </div>
       </div>
@@ -89,7 +91,9 @@ export default function MaterialClient() {
         <div className="guide-main">
           <div className="seo">
 
-            <h2 id="why"><span className="num">01.</span>Why material is the highest-leverage decision in packaging</h2>
+            <GuideAnswerSummary title="What should determine a beauty packaging material?" answer="Choose packaging material by working outward from the formula and channel—not inward from a mood board. Glass, PET, HDPE, aluminum, and molded fiber each change product compatibility, freight, breakage risk, minimums, decoration, recyclability, and shelf signal. The right material protects the product and fits the operating model while still carrying the brand." takeaways={['Formula compatibility and product protection are the first filters.','Freight, breakage, and minimums can change the real cost more than the quoted unit price.','Material and closure decisions must be evaluated as one system.','Premium perception comes from structure, proportion, finish, and execution—not weight alone.']} />
+
+            <h2 id="why"><span className="num">01.</span>Material sets the rules for everything downstream</h2>
             <p>You can change colors, fonts, finishes, even structures &mdash; within reason &mdash; without rebuilding your supply chain. <strong>You can&apos;t change the material without changing everything downstream.</strong> Cost. MOQs. Lead times. Recyclability. Compliance. Shelf weight. Freight. Customer perception.</p>
             <p>The brands that get this right treat material as a strategic decision made in concept stage, with full input from product, brand, ops, and finance. The brands that get it wrong treat it as a follow-on detail handled by the packaging supplier.</p>
             <p>This guide breaks down the five core material families used in beauty, what each one delivers, when each one fails, and how to choose by product category, channel, and stage.</p>
@@ -110,12 +114,12 @@ export default function MaterialClient() {
             <h2 id="five"><span className="num">02.</span>The five core materials</h2>
 
             <h3>Glass</h3>
-            <p>Heavy, premium, infinitely recyclable, breakable, freight-expensive. The luxury default for serums, fragrance, and refillable systems. Glass photographs beautifully and signals quality without saying anything.</p>
+            <p>Heavy, premium-positioned, recyclable where accepted, breakable, and freight-intensive. Glass is common for serums, fragrance, and some refillable systems, but the full package and local recovery infrastructure determine the real outcome.</p>
             <p><strong>Where it works:</strong> hero SKUs, fragrance, prestige skincare, refillable bases.<br />
             <strong>Where it fails:</strong> high-volume DTC (breakage + freight emissions), travel formats, value tiers.</p>
 
             <h3>PET (Polyethylene Terephthalate)</h3>
-            <p>The most recycled plastic in the world. Clear, lightweight, durable, and available with high PCR content. Workhorse material for clear bottles, jars, and tubes.</p>
+            <p>Clear, lightweight, durable, and available with PCR content. PET is a common material for clear bottles and jars, with recovery dependent on color, format, closures, labels, and local infrastructure.</p>
             <p><strong>Where it works:</strong> clear-format products where you want product visibility, mid-tier skincare, haircare, body.<br />
             <strong>Where it fails:</strong> luxury positioning where weight signals quality. Heat-sensitive formats (lower thermal resistance than HDPE).</p>
 
@@ -125,12 +129,12 @@ export default function MaterialClient() {
             <strong>Where it fails:</strong> brand positioning that demands a more refined surface or feel.</p>
 
             <h3>Aluminum</h3>
-            <p>Premium, infinitely recyclable, light, and surprisingly cost-competitive at volume. Increasingly used in deodorants, fragrance, and refillable formats. Mono-aluminum systems are EU PPWR-compliant by design.</p>
+            <p>Light, premium-positioned, and recyclable where accepted. Aluminum is used in deodorants, fragrance, and refillable formats, but coatings, pumps, closures, and local recycling systems still need to be evaluated.</p>
             <p><strong>Where it works:</strong> deodorant, refillable bases, prestige skincare, fragrance, products where the package itself becomes the brand asset.<br />
             <strong>Where it fails:</strong> products that need transparency (you can&apos;t see the formula). Reactive formulations (some require interior coatings).</p>
 
             <h3>Molded Fiber</h3>
-            <p>Made from recycled paper pulp reformed under heat and pressure. Compostable, FSC-certifiable, increasingly premium. The fastest-growing sustainable secondary packaging format in beauty.</p>
+            <p>Made from paper pulp reformed under heat and pressure. Molded fiber can use recycled or certified feedstock and works well for protective inserts when its coatings and end-of-life path match the intended claim.</p>
             <p><strong>Where it works:</strong> inserts, structural protection, e-commerce mailers, gift sets, premium boxes &mdash; anywhere you&apos;d previously use plastic clamshells or foam.<br />
             <strong>Where it fails:</strong> primary packaging for liquids without a polymer barrier. Products that need a hermetic seal.</p>
 
@@ -366,6 +370,8 @@ export default function MaterialClient() {
               </ul>
             </section>
 
+            <GuideBottomLine>There is no universally best packaging material. There is a best-fit material for a specific formula, price point, channel, volume, and brand position. Eliminate options that fail product protection or operating economics first. Then make the design decision inside the viable set.</GuideBottomLine>
+
           </div>
         </div>
       </div>
@@ -388,9 +394,9 @@ export default function MaterialClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Get the Material<br /><em>Right</em></h2>
-          <p>Get the substrate wrong and every downstream choice &mdash; finish, structure, claims, freight, retailer compliance &mdash; has to bend around it. We help beauty brands match material to brand position, regulatory exposure, and unit economics in a single session.</p>
-          <button className="bi" onClick={() => openModal('Guide - Material Consultation')}>Book a Material Consultation</button>
+          <h2>Narrow the Material Set<br /><em>Before Sampling</em></h2>
+          <p>Share the formula format, channel, target quantity, price position, and sustainability requirements. We can identify which paths deserve a sample and which may create avoidable cost or supply risk.</p>
+          <button className="bi" onClick={() => openModal('Guide - Material Consultation')}>Review My Material Options</button>
         </div>
       </section>
     </>

@@ -3,8 +3,8 @@ import RefillableClient from './RefillableClient'
 import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide-schemas'
 
 const slug = 'beauty-refillable-playbook'
-const title = 'The Beauty Brand Refillable Packaging Playbook'
-const description = 'A practical guide to refillable packaging for beauty brands. Covers refill formats, material selection, consumer behavior, cost modeling, regulatory compliance, and implementation timelines.'
+const title = 'Refillable Beauty Packaging Playbook'
+const description = 'Evaluate refill cartridges, replaceable pods, and return-to-refill systems by product fit, repeat purchase behavior, cost, channel, and execution risk.'
 
 export const metadata: Metadata = {
   title,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 }
 
 export default function RefillablePage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/refillable-system-diagram.png', datePublished: '2026-05-06' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/refillable-system-diagram.png', datePublished: '2026-05-06', dateModified: '2026-09-25' })
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} /><RefillableClient /></>
 }

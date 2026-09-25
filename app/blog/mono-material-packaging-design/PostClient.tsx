@@ -23,9 +23,9 @@ export default function PostClient() {
       </div>
 
       <div className="blog-body">
-            <p>Mono-material packaging design means building a package from a single recyclable material stream so it can be sorted, processed, and recycled without separation. For beauty brands, mono-material design is where packaging sustainability is heading &mdash; both California&apos;s SB 54 and the EU PPWR drive toward it because multi-material packaging is non-recyclable in most municipal systems.</p>
-            <p>This is not a trend. It is the structural logic of how recycling infrastructure works. Sorting facilities identify materials by resin type. When a package combines PET, PP, metal, silicone, and paper in one unit, the system cannot process it. The package goes to landfill regardless of what the label claims.</p>
-            <p>Mono-material design forces the packaging to be honest. One material. One stream. One path to recovery.</p>
+            <p>Mono-material packaging design means building a package primarily from one compatible material family so it has a clearer path through collection, sorting, and reprocessing. Actual acceptance still varies by resin, format, color, dimensions, labels, adhesives, and local infrastructure. California&apos;s SB 54 and the EU PPWR increase the pressure to design for real recycling systems rather than theoretical recyclability.</p>
+            <p>Sorting and reprocessing systems have material-specific requirements. A package that combines incompatible plastics, metal, silicone, paper, labels, and adhesives may be harder to identify and process at scale. Mono-material design reduces that complexity, but it does not guarantee that every local program will accept or recycle the finished package.</p>
+            <p>The practical goal is compatibility: simplify the package, remove components that disrupt the intended stream, and verify the finished specification against the markets where it will be sold.</p>
             <div className="blog-takeaways">
               <h4>Key Takeaways</h4>
               <ul>

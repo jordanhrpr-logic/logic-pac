@@ -4,6 +4,8 @@ import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideAnswerSummary from '@/components/GuideAnswerSummary'
+import GuideBottomLine from '@/components/GuideBottomLine'
 import Image from 'next/image'
 
 const tocSections = [
@@ -67,11 +69,11 @@ export default function RefillableClient() {
       <div className="phdr">
         <div className="phdr-inner">
           <div className="ey">Logic Pac &middot; Refillable Strategy</div>
-          <h1>The beauty refillable playbook. <em>When it works &mdash; and when it&apos;s theater.</em></h1>
+          <h1>Refillable beauty packaging: <em>when the system works.</em></h1>
           <p className="phdr-lede">Refillables are the most-marketed sustainability play in beauty and the most-misunderstood. The honest version: refillability only delivers an environmental win when customers actually refill. Here&apos;s how to design systems that earn that adoption.</p>
           <div className="phdr-meta">
             <span>11 min read</span>
-            <span>Updated April 2026</span>
+            <span>Updated September 2026</span>
             <span>Sustainability Strategy</span>
           </div>
         </div>
@@ -88,12 +90,14 @@ export default function RefillableClient() {
         <div className="guide-main">
           <div className="seo">
 
-            <h2 id="why"><span className="num">01.</span>Why refillables matter now</h2>
+            <GuideAnswerSummary title="When does refillable beauty packaging work?" answer="Refillable packaging works when customers repurchase often enough to reuse the primary pack and the refill is easier, less expensive, and operationally simpler than replacing it. It fails when the primary package becomes heavier and more complex without repeat adoption. Start with customer behavior and unit economics, then design the container, refill, and recovery path as one system." takeaways={['A refill is a repeat-purchase system, not just a packaging format.','Hero SKUs with predictable replenishment are stronger candidates than occasional-purchase products.','The primary pack and refill need compatible tolerances across production runs.','Model adoption, component cost, channel behavior, and logistics before making an environmental claim.']} />
+
+            <h2 id="why"><span className="num">01.</span>The business case starts with reuse, not launch press</h2>
             <p>Three forces are converging in 2026 to make refillability a serious strategic question for beauty brands:</p>
             <ul>
               <li><strong>Regulation.</strong> The EU PPWR (effective August 2026) introduces minimum reuse targets for certain packaging types and rewards systems that reduce single-use volume.</li>
               <li><strong>Retailer pressure.</strong> Major beauty retailers &mdash; Sephora, Ulta, John Lewis, Selfridges &mdash; have all published packaging sustainability scorecards that score refillable systems higher than single-use.</li>
-              <li><strong>Consumer signal.</strong> Charlotte Tilbury, Hourglass, La Mer, Chanel, and A&euml;sop have all made refillable hero SKUs commercial, not experimental. Refillability is now a category expectation in prestige.</li>
+              <li><strong>Category experimentation.</strong> Prestige brands have introduced refillable hero SKUs, creating useful operating examples without proving that every category or customer will adopt the model.</li>
             </ul>
             <p>The strategic question for most brands isn&apos;t <em>whether</em> to introduce a refillable. It&apos;s <em>which model, on which SKUs, with what infrastructure</em> &mdash; and whether the math actually works.</p>
 
@@ -103,7 +107,7 @@ export default function RefillableClient() {
                 <li>The three refillable models &mdash; and the supply chain each one demands</li>
                 <li>When refillability earns its claim, and when it&apos;s worse than single-use</li>
                 <li>Unit economics: the upfront premium, the refill margin, the breakeven point</li>
-                <li>Real adoption data and the 40% threshold every brand should know</li>
+                <li>The adoption assumptions every brand should model before launch</li>
                 <li>A decision framework for picking the right model for your category</li>
               </ol>
             </div>
@@ -159,7 +163,7 @@ export default function RefillableClient() {
             </ul>
 
             <div className="callout">
-              <p>Below 40% refill adoption, a heavier primary container can produce a worse carbon footprint than single-use. The system has to actually run to deliver the claim.</p>
+              <p>A heavier primary container needs enough repeat use to justify its additional material and production impact. The required adoption level depends on component weight, durability, transport, cleaning or recovery, and the single-use package used as the baseline.</p>
             </div>
 
             <h2 id="economics"><span className="num">05.</span>The unit economics</h2>
@@ -214,14 +218,14 @@ export default function RefillableClient() {
               </table>
             </div>
 
-            <p>The math depends entirely on adoption. At 70% refill adoption, the system is materially more profitable than single-use. At 25% adoption, you&apos;ve raised primary cost without recovering it &mdash; and you&apos;ve raised your carbon footprint while you&apos;re at it.</p>
+            <p>The math depends on adoption. Higher repeat use spreads the primary package cost across more purchases; low adoption leaves the brand carrying a more complex primary without recovering the investment. Model several adoption scenarios rather than treating a single threshold as universal.</p>
 
             <h2 id="behavior"><span className="num">06.</span>What consumer behavior data tells us</h2>
             <ul>
               <li><strong>Adoption ceiling:</strong> mature refillable categories (fragrance, prestige skincare) are seeing 35&ndash;55% refill rates among brand-loyal buyers.</li>
               <li><strong>Trial buyers do not refill.</strong> Customers who try a product as a one-off rarely return for a refill. Refill economics live inside loyalty programs and retention loops.</li>
               <li><strong>Convenience drives adoption.</strong> Refills sold next to primaries, with subscription options and clear pricing, hit 2&ndash;3&times; higher adoption than refills hidden in DTC microsites.</li>
-              <li><strong>Price gap matters.</strong> Refills priced 30&ndash;40% below the primary hit highest adoption. Smaller discounts (under 20%) underperform.</li>
+              <li><strong>Price gap matters.</strong> The refill needs a clear value advantage over replacing the primary. Test the price difference against your margin, category, and customer behavior rather than assuming one universal discount.</li>
             </ul>
 
             <h2 id="channel"><span className="num">07.</span>Channel and retailer reality</h2>
@@ -245,13 +249,15 @@ export default function RefillableClient() {
             <h2 id="framework"><span className="num">09.</span>The decision framework</h2>
             <p>Five questions, in order, before greenlighting a refillable program:</p>
             <ol>
-              <li><strong>Does this SKU have repurchase frequency above 4&times;/year?</strong> If no, refill won&apos;t deliver the claim.</li>
+              <li><strong>Does this SKU have predictable repeat purchase?</strong> If not, the refill may struggle to earn enough reuse to support the model.</li>
               <li><strong>Is your customer base brand-loyal at this SKU?</strong> If trial-heavy, refill economics break.</li>
               <li><strong>Can your supply chain support a refill SKU at retail consistently?</strong> If stockouts are likely, don&apos;t launch yet.</li>
-              <li><strong>Is the primary container glass, aluminum, or another durable material?</strong> Plastic primaries undercut the carbon claim.</li>
+              <li><strong>Can the primary survive repeated use?</strong> Durability, component weight, and the refill format all affect the environmental case.</li>
               <li><strong>Can you publish actual adoption data?</strong> If not, you&apos;re not ready to make the public sustainability claim.</li>
             </ol>
             <p>If you answered yes to all five, you&apos;re ready to design the system. If even one answer is no, you have a different problem to solve first &mdash; usually around customer retention, not packaging.</p>
+
+            <GuideBottomLine>Do not start with the most beautiful refill mechanism. Start with the product customers already replenish, the adoption needed to support the model, and the channel that can explain and stock the system. If those pieces do not hold, solve the repeat-purchase problem before adding packaging complexity.</GuideBottomLine>
 
           </div>
         </div>
@@ -275,9 +281,9 @@ export default function RefillableClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Design the Refill<br /><em>Right</em></h2>
-          <p>The wrong refill system costs more to run than single-use and undercuts the sustainability claim you launched it on. Let&apos;s design one that works.</p>
-          <button className="bi" onClick={() => openModal('Guide - Refillable Consultation')}>Book a Refillable Consultation</button>
+          <h2>Test the Refill Model<br /><em>Before Engineering</em></h2>
+          <p>We can compare refill formats against your SKU economics, customer behavior, channel, quantities, and manufacturing constraints.</p>
+          <button className="bi" onClick={() => openModal('Guide - Refillable Consultation')}>Review the Refill Model</button>
         </div>
       </section>
     </>

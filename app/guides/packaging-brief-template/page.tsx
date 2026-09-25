@@ -3,8 +3,8 @@ import BriefClient from './BriefClient'
 import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide-schemas'
 
 const slug = 'packaging-brief-template'
-const title = 'The Packaging Brief Template Every Brand Manager Needs'
-const description = 'The ten sections every packaging brief should contain, common omissions that cost weeks, and a downloadable template you can adapt for your next project.'
+const title = 'Packaging Brief Template for Brand Teams'
+const description = 'Build a packaging brief covering objectives, product, channels, materials, budget, quantity, timing, testing, deliverables, and approvals.'
 
 export const metadata: Metadata = {
   title,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 }
 
 export default function BriefPage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/packaging-brief-checklist.png', datePublished: '2026-05-06' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/packaging-brief-checklist.png', datePublished: '2026-05-06', dateModified: '2026-09-25' })
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} /><BriefClient /></>
 }

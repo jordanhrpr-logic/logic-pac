@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideAnswerSummary from '@/components/GuideAnswerSummary'
+import GuideBottomLine from '@/components/GuideBottomLine'
 
 const tocSections = [
   { id: 'why-finishes', label: 'Why Finishes Matter' },
@@ -55,8 +57,9 @@ export default function FinishGuideClient() {
     <>
       <div className="phdr">
         <div className="ey inv">Reference Guide</div>
-        <h1>The Definitive Guide to Packaging Finishes</h1>
+        <h1>How to choose packaging finishes that earn their cost</h1>
         <p>Soft-Touch, Foil Stamp, Spot UV &amp; Emboss</p>
+        <div className="phdr-meta"><span>Updated September 2026</span><span>Production Reference</span></div>
       </div>
 
       <div className="guide-wrap">
@@ -69,8 +72,10 @@ export default function FinishGuideClient() {
 
         <div className="guide-main">
           <div className="seo">
-            <h2 id="why-finishes">Why Finish Selection Matters</h2>
-            <p>The finish on a package is the first thing a customer touches and often the last thing they see before making a purchase decision. In a world where consumers judge quality by feel, the right finish communicates brand value more effectively than any printed message.</p>
+
+            <GuideAnswerSummary title="How should you choose a packaging finish?" answer="Choose a packaging finish for the job it needs to do: change the way the pack feels, catch light, create contrast, add physical depth, or protect the printed surface. Soft-touch lamination, foil stamping, spot UV, embossing, and debossing each create a different effect and production requirement. The best finish supports the brand signal without adding detail the design does not need." takeaways={['Soft-touch changes the feel and creates a low-gloss base for contrast.','Foil stamping adds reflective detail and requires artwork built for the stamping process.','Spot UV works best when gloss is used selectively against a matte surface.','Embossing and debossing add physical depth but require suitable stock, tooling, and tolerances.']} />
+            <h2 id="why-finishes">A Finish Should Do a Specific Job</h2>
+            <p>A finish changes how a package feels, reflects light, handles wear, and directs attention. The right choice should support a specific design and production objective rather than add decoration for its own sake.</p>
             <p>Finishes influence three critical dimensions of brand perception:</p>
             <ul>
               <li><strong>Tactile quality:</strong> How the package feels in the hand &mdash; velvety, smooth, textured, or glossy</li>
@@ -333,6 +338,7 @@ export default function FinishGuideClient() {
               <p>Tell us about your project and we&apos;ll recommend the right finish combination for your brand, budget, and substrate.</p>
               <button className="bi" onClick={() => openModal('Guide - Finish Consultation')}>Book a Consultation</button>
             </div>
+            <GuideBottomLine>Finish selection is an exercise in restraint. Pick one primary effect, confirm that it survives production and handling, and use any secondary finish to create hierarchy. When every surface competes for attention, the package usually feels more expensive to make—not more premium.</GuideBottomLine>
           </div>
         </div>
       </div>

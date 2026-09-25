@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideAnswerSummary from '@/components/GuideAnswerSummary'
+import GuideBottomLine from '@/components/GuideBottomLine'
 
 const tocSections = [
   { id: 'why-packaging', label: 'Why Packaging Is Content' },
@@ -54,8 +56,9 @@ export default function PlaybookClient() {
     <>
       <div className="phdr">
         <div className="ey inv">Playbook</div>
-        <h1>The Influencer Kit Playbook</h1>
-        <p>How to Design PR Mailers That Get Posted</p>
+        <h1>The influencer kit and PR mailer playbook</h1>
+        <p>How to plan structure, product presentation, personalization, kitting, and fulfillment</p>
+        <div className="phdr-meta"><span>Updated September 2026</span><span>Campaign Production</span></div>
       </div>
 
       <div className="guide-wrap">
@@ -68,11 +71,13 @@ export default function PlaybookClient() {
 
         <div className="guide-main">
           <div className="seo">
-            <h2 id="why-packaging">Why Packaging Is the Content</h2>
-            <p>In the creator economy, packaging isn&apos;t just a container &mdash; it&apos;s the content itself. When an influencer opens a PR mailer on camera, the packaging is the first 15 seconds of content their audience sees. That moment determines whether the video gets made, gets posted, and gets engagement.</p>
-            <p>Brands that invest in the packaging experience generate significantly more organic content per send. The return on a $40 custom kit versus a $10 standard mailer isn&apos;t 4x &mdash; it&apos;s often 10&ndash;50x in earned media value, because the premium kit gets posted and the standard one doesn&apos;t.</p>
+
+            <GuideAnswerSummary title="What makes an influencer kit effective?" answer="An effective influencer kit makes the product easy to understand, film, and share while surviving the trip to the creator. Structure, reveal sequence, product restraint, insert design, personalization, kitting, and shipping all matter. The goal is not the biggest box or the most finishes. It is a coherent unboxing that supports the campaign story and arrives intact." takeaways={['Design the reveal around the product and campaign message, not empty spectacle.','Select the outer structure for transit first; build the interior presentation inside it.','Match the personalization method to quantity and timing.','Treat kitting, address data, and direct-to-recipient fulfillment as part of the production plan.']} />
+            <h2 id="why-packaging">The Package Shapes the First Frame of the Story</h2>
+            <p>When a creator opens a PR mailer on camera, the package becomes part of the campaign story. Its structure can make the product and message easier to understand, while poor presentation or transit damage can make the reveal harder to use.</p>
+            <p>The package cannot guarantee a post. It can remove friction by making the product easier to understand, the reveal easier to film, and the campaign more coherent when it arrives.</p>
             <ul>
-              <li><strong>82% of consumers</strong> say packaging influences their perception of the brand</li>
+              <li><strong>Structure shapes comprehension:</strong> the product and campaign idea should be clear before the creator reads a long insert</li>
               <li><strong>Unboxing videos</strong> are among the most-watched content categories on TikTok and YouTube</li>
               <li><strong>Creators report</strong> that premium packaging makes them more likely to feature a product organically</li>
               <li><strong>The cost per impression</strong> on a well-designed kit is a fraction of paid media costs</li>
@@ -296,6 +301,7 @@ export default function PlaybookClient() {
               <p>Tell us your campaign, timeline, and quantities. We&apos;ll give you a realistic plan and quote.</p>
               <button className="bi" onClick={() => openModal('Guide - Influencer Kit')}>Book a Consultation</button>
             </div>
+            <GuideBottomLine>A PR kit cannot guarantee a post. It can remove reasons not to engage: unclear presentation, damaged product, generic execution, and a reveal that gives the creator nothing to work with. Build the kit around the product story, then make every production decision support that story.</GuideBottomLine>
           </div>
         </div>
       </div>

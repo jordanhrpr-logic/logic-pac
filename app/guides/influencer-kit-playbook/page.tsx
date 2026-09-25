@@ -4,8 +4,8 @@ import { playbookFaqJsonLd } from '@/lib/metadata'
 import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide-schemas'
 
 const slug = 'influencer-kit-playbook'
-const title = 'Influencer Kit & PR Mailer Playbook — How to Design Kits That Get Posted'
-const description = 'A comprehensive guide to designing and producing influencer kits and PR mailers that generate organic content. Covers kit structures, finishes, personalization, timelines, and budgets.'
+const title = 'Influencer Kit & PR Mailer Playbook'
+const description = 'Plan PR kit structure, product presentation, personalization, finishes, production, kitting, fulfillment, budget, and timeline.'
 
 export const metadata: Metadata = {
   title,
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function PlaybookPage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/portfolio/influencer-kits.jpg', datePublished: '2026-03-14' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/portfolio/influencer-kits.jpg', datePublished: '2026-03-14', dateModified: '2026-09-25' })
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>

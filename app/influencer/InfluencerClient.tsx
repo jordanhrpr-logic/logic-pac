@@ -37,9 +37,9 @@ export default function InfluencerClient() {
           </div>
         </div>
         <div className="kphc">
-          <h1>PR Kits That Get<br />Posted. <em>Every</em> Time.</h1>
-          <p>We design and produce influencer kits that creators actually want to share &mdash; because the packaging is part of the narrative, not just the container.</p>
-          <button className="bp" onClick={() => openModal('Influencer / PR Kit')}>Request a Quote</button>
+          <h1>Influencer Kits Built for<br />the Unboxing&mdash;and <em>the Trip There.</em></h1>
+          <p>We design and produce PR kits that present the product clearly, carry the campaign story, survive transit, and arrive ready to film.</p>
+          <button className="bp" onClick={() => openModal('Influencer / PR Kit')}>Discuss the Kit</button>
         </div>
       </div>
 
@@ -61,19 +61,19 @@ export default function InfluencerClient() {
 
       <div className="kcr">
         <div className="seo">
-          <h2>Producing Influencer Kits That Actually Get Posted</h2>
-          <p>Brands that invest in the packaging experience generate significantly more organic content per send. As an influencer kit producer, we design every structural choice with the unboxing moment in mind.</p>
-          <h3>What Separates a Shareable Influencer Kit from a Forgettable One?</h3>
+          <h2>Producing Kits Creators Can Understand and Film</h2>
+          <p>The package cannot guarantee a post. It can make the product easier to understand, the reveal easier to film, and the campaign more considered when it arrives.</p>
+          <h3>What the Production Plan Needs to Solve</h3>
           <ul>
-            <li>A distinctive outer structure sets the tone before it&apos;s even opened</li>
-            <li>Layered reveals extend the filming moment and give creators more to show</li>
-            <li>Personalized elements &mdash; names, custom cards &mdash; drive emotional response</li>
-            <li>Quality materials signal the brand takes the relationship seriously</li>
+            <li>The outer pack survives parcel handling without arriving overbuilt.</li>
+            <li>Each product is secured, visible, and presented in the intended order.</li>
+            <li>Personalization is practical at the campaign quantity and timing.</li>
+            <li>Kitting, address data, and fulfillment are planned before production locks.</li>
           </ul>
           <h3>Working Directly with PR Agencies as a Packaging Vendor</h3>
-          <p>Most of our influencer kit projects start with a brief from a PR agency or creative studio. We coordinate production, specs, and delivery without pulling you into factory conversations &mdash; operating as your agency&apos;s production arm, on-brand and on-time.</p>
+          <p>Most of our influencer kit projects start with a brief from a PR agency or creative studio. We coordinate production, specs, and delivery without pulling you into factory conversations&mdash;operating as a production partner aligned to the approved brand direction and delivery plan.</p>
           <h3>Lead Times for Custom PR Mailer Packaging</h3>
-          <p>For simpler configurations, 6 weeks is achievable. Fully custom builds with rigid structures, specialty finishes, and custom inserts typically require 10&ndash;12 weeks. Book a call for a straight answer on your specific project.</p>
+          <p>For simpler configurations, 6 weeks can be achievable. Fully custom builds with rigid structures, specialty finishes, and custom inserts commonly require 10&ndash;12 weeks, depending on approvals, capacity, testing, and freight.</p>
         </div>
         <div>
           <FAQSidebar
@@ -88,9 +88,9 @@ export default function InfluencerClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Make the Unboxing<br /><em>Worth Posting</em></h2>
-          <p>Tell us your campaign, timeline, and quantities. We&apos;ll tell you how to make it happen.</p>
-          <button className="bi" onClick={() => openModal('Influencer / PR Kit')}>Book a Consultation</button>
+          <h2>Turn the Campaign Idea<br /><em>Into a Producible Kit</em></h2>
+          <p>Share the product set, audience, quantity, delivery date, and creative direction. We can shape the structure, inserts, finish plan, kitting, and fulfillment around the moment you want creators to capture.</p>
+          <button className="bi" onClick={() => openModal('Influencer / PR Kit')}>Discuss the Kit</button>
         </div>
       </section>
     </>

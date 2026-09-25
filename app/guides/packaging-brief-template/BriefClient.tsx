@@ -4,6 +4,8 @@ import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideAnswerSummary from '@/components/GuideAnswerSummary'
+import GuideBottomLine from '@/components/GuideBottomLine'
 import Image from 'next/image'
 
 const tocSections = [
@@ -66,11 +68,11 @@ export default function BriefClient() {
     <>
       <div className="phdr">
         <div className="ey inv">Logic Pac &middot; Project Toolkit</div>
-        <h1>The packaging brief template <em>every brand manager needs.</em></h1>
-        <p>A clear brief is the difference between a 12-week launch and an 18-week one. This is the exact template we use with our clients &mdash; the ten sections every brief should contain, the omissions that cost weeks, and a downloadable version you can adapt.</p>
+        <h1>The packaging brief template that <em>keeps projects moving.</em></h1>
+        <p>A clear brief moves decisions upstream and reduces avoidable rework. This guide is based on the briefing structure we use with clients&mdash;the ten sections a useful brief should contain and the omissions that commonly delay design, quoting, and approvals.</p>
         <div className="phdr-meta">
           <span>8 min read</span>
-          <span>Updated April 2026</span>
+          <span>Updated September 2026</span>
           <span>Includes downloadable template</span>
         </div>
       </div>
@@ -86,9 +88,11 @@ export default function BriefClient() {
         <div className="guide-main">
           <div className="seo">
 
-            <h2 id="why"><span className="num">01.</span>Why a clear brief saves weeks</h2>
+            <GuideAnswerSummary title="What belongs in a packaging brief?" answer="A useful packaging brief resolves the decisions suppliers, designers, engineers, and approvers need before development starts. It should define the product, objective, channel, sustainability requirements, target cost, quantity, timeline, performance needs, deliverables, and approval owners. The goal is not a long document. It is fewer expensive decisions arriving late." takeaways={['Name the business objective and distribution channel before discussing aesthetics.','Include target quantity and cost so proposed structures are commercially relevant.','Define performance, testing, and sustainability requirements in the first brief.','Assign final decision owners and response deadlines for every approval stage.']} />
+
+            <h2 id="why"><span className="num">01.</span>A strong brief moves decisions upstream</h2>
             <p>Every packaging project has a finite number of decisions that need to be made. The brief is where they get captured. The more decisions resolved on day one, the fewer resurface in week six &mdash; when fixing them costs real time and money.</p>
-            <p>We&apos;ve seen single-page briefs produce four-month projects, and ten-page briefs produce eight-week projects. The length doesn&apos;t matter. What matters is that the brief answers every question your packaging partner is going to ask in the first 30 days.</p>
+            <p>The length does not determine the quality of a brief. What matters is whether it answers the questions the design, engineering, sourcing, and approval teams need to resolve early.</p>
 
             <div className="callout">
               <p>The cost of a 30-minute conversation in week one is approximately zero. The cost of the same decision in week six is two weeks of redesign.</p>
@@ -217,6 +221,7 @@ export default function BriefClient() {
             <h2 id="bring"><span className="num">05.</span>Bring it to the table on day one</h2>
             <p>The version above is a clean, fillable template &mdash; the same one we use with every new client. Adapt it to your project, then walk us through it in your kickoff. The brief lock is Gate 1 of every project; the more decisions captured here, the fewer surface in week six.</p>
 
+            <GuideBottomLine>The best brief is not the longest. It is the one that lets the team develop, quote, test, and approve the right package without guessing. If a decision is known, document it. If it is not known, name the owner and deadline for resolving it.</GuideBottomLine>
           </div>
         </div>
       </div>
