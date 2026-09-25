@@ -7,6 +7,7 @@ import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
+import GuideByline from '@/components/GuideByline'
 
 const tocSections = [
   { id: 'why-packaging', label: 'Why Packaging Is Content' },
@@ -58,7 +59,7 @@ export default function PlaybookClient() {
         <div className="ey inv">Playbook</div>
         <h1>The influencer kit and PR mailer playbook</h1>
         <p>How to plan structure, product presentation, personalization, kitting, and fulfillment</p>
-        <div className="phdr-meta"><span>Updated September 2026</span><span>Campaign Production</span></div>
+        <div className="phdr-meta"><GuideByline /><span>Updated September 2026</span><span>Campaign Production</span></div>
       </div>
 
       <div className="guide-wrap">

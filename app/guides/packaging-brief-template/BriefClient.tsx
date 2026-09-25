@@ -6,6 +6,7 @@ import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
+import GuideByline from '@/components/GuideByline'
 import Image from 'next/image'
 
 const tocSections = [
@@ -71,6 +72,7 @@ export default function BriefClient() {
         <h1>The packaging brief template that <em>keeps projects moving.</em></h1>
         <p>A clear brief moves decisions upstream and reduces avoidable rework. This guide is based on the briefing structure we use with clients&mdash;the ten sections a useful brief should contain and the omissions that commonly delay design, quoting, and approvals.</p>
         <div className="phdr-meta">
+          <GuideByline />
           <span>8 min read</span>
           <span>Updated September 2026</span>
           <span>Includes downloadable template</span>

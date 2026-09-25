@@ -6,6 +6,7 @@ import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
+import GuideByline from '@/components/GuideByline'
 import Image from 'next/image'
 
 const tocSections = [
@@ -73,6 +74,7 @@ export default function TimelineClient() {
         <h1>The custom packaging timeline, <em>phase by phase.</em></h1>
         <p>A realistic schedule for discovery, design, prototypes, testing, production, quality control, and freight.</p>
         <div className="phdr-meta">
+          <GuideByline />
           <span>15 min read</span>
           <span>Updated September 2026</span>
           <span>Design + Production</span>

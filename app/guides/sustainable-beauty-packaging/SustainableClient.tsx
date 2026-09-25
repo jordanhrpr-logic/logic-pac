@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
+import GuideByline from '@/components/GuideByline'
 import Image from 'next/image'
 
 const tocSections = [
@@ -57,6 +58,7 @@ export default function SustainableClient() {
           <h1>Sustainable beauty packaging: the practical <em>playbook.</em></h1>
           <p className="phdr-lede">A decision guide to materials, claims, product protection, cost, and compliance for beauty brands.</p>
           <div className="phdr-meta">
+            <GuideByline />
             <span>18 min read</span>
             <span>For brand managers &amp; founders</span>
             <span>Updated September 2026</span>

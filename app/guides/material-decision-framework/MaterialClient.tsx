@@ -7,6 +7,7 @@ import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
+import GuideByline from '@/components/GuideByline'
 
 const tocSections = [
   { id: 'why', label: 'Why material matters' },
@@ -74,6 +75,7 @@ export default function MaterialClient() {
         <h1>How to choose the right <em>beauty packaging material.</em></h1>
         <p>Glass. PET. HDPE. Aluminum. Molded fiber. Every beauty packaging project starts with the same five-way material call &mdash; and most brands make it on aesthetics alone. Here&apos;s how to make it the right way.</p>
         <div className="phdr-meta">
+          <GuideByline />
           <span>14 min read</span>
           <span>Updated September 2026</span>
           <span>Concept Stage</span>

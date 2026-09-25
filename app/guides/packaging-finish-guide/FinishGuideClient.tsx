@@ -7,6 +7,7 @@ import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
+import GuideByline from '@/components/GuideByline'
 
 const tocSections = [
   { id: 'why-finishes', label: 'Why Finishes Matter' },
@@ -59,7 +60,7 @@ export default function FinishGuideClient() {
         <div className="ey inv">Reference Guide</div>
         <h1>How to choose packaging finishes that earn their cost</h1>
         <p>Soft-Touch, Foil Stamp, Spot UV &amp; Emboss</p>
-        <div className="phdr-meta"><span>Updated September 2026</span><span>Production Reference</span></div>
+        <div className="phdr-meta"><GuideByline /><span>Updated September 2026</span><span>Production Reference</span></div>
       </div>
 
       <div className="guide-wrap">

@@ -29,9 +29,15 @@ export function buildGuideArticleSchema({
     headline: title,
     description,
     author: {
-      '@type': 'Organization',
-      name: 'Logic Pac',
-      url: SITE_URL,
+      '@type': 'Person',
+      name: 'Sean Klein',
+      jobTitle: 'Packaging Development and Production',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Logic Pac',
+        url: SITE_URL,
+      },
+      sameAs: ['https://www.linkedin.com/in/sean-klein-75a312235/'],
     },
     publisher: {
       '@type': 'Organization',

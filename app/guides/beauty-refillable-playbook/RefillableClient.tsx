@@ -6,6 +6,7 @@ import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
+import GuideByline from '@/components/GuideByline'
 import Image from 'next/image'
 
 const tocSections = [
@@ -72,6 +73,7 @@ export default function RefillableClient() {
           <h1>Refillable beauty packaging: <em>when the system works.</em></h1>
           <p className="phdr-lede">Refillables are the most-marketed sustainability play in beauty and the most-misunderstood. The honest version: refillability only delivers an environmental win when customers actually refill. Here&apos;s how to design systems that earn that adoption.</p>
           <div className="phdr-meta">
+            <GuideByline />
             <span>11 min read</span>
             <span>Updated September 2026</span>
             <span>Sustainability Strategy</span>
