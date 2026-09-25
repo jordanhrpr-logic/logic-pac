@@ -8,6 +8,10 @@ const BASE_URL = 'https://logic-pac.com'
 const staticRoutes: Array<{ path: string; lastmod: string; changefreq: 'monthly' | 'weekly'; priority: number }> = [
   { path: '/', lastmod: '2026-03-13', changefreq: 'monthly', priority: 1.0 },
   { path: '/work', lastmod: '2026-03-13', changefreq: 'monthly', priority: 0.8 },
+  { path: '/work/epicutis', lastmod: '2026-09-25', changefreq: 'monthly', priority: 0.8 },
+  { path: '/work/adidas-nemeziz-influencer-kit', lastmod: '2026-09-25', changefreq: 'monthly', priority: 0.8 },
+  { path: '/work/artilect-packaging-reduction', lastmod: '2026-09-25', changefreq: 'monthly', priority: 0.7 },
+  { path: '/work/audio-enhancement-packaging-system', lastmod: '2026-09-25', changefreq: 'monthly', priority: 0.7 },
   { path: '/capabilities', lastmod: '2026-03-13', changefreq: 'monthly', priority: 0.8 },
   { path: '/holiday', lastmod: '2026-03-13', changefreq: 'monthly', priority: 0.9 },
   { path: '/influencer', lastmod: '2026-03-13', changefreq: 'monthly', priority: 0.9 },

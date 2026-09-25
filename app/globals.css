@@ -346,6 +346,8 @@ nav .nav-toggle span{background:var(--navy)}
 .case-outcome{padding:110px max(12vw,56px);max-width:1100px;margin:auto;text-align:center}
 .case-outcome h2{margin:17px 0 28px}
 .case-outcome .case-proof-note{margin:38px auto 0;padding:20px 24px;max-width:850px;background:#f4f6f3;font-size:13px;text-align:left;border-left:3px solid var(--lime)}
+.case-proof-grid{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:30px 0}.case-proof-grid div{background:var(--navy);color:white;padding:22px 26px;min-width:180px;border-radius:6px;text-align:left}.case-proof-grid strong{display:block;color:var(--lime);font-family:'DM Serif Display',serif;font-size:30px;font-weight:400}.case-proof-grid span{display:block;font-size:11px;margin-top:4px;color:rgba(255,255,255,.6)}
+.case-inline-image{margin:36px auto;max-width:980px}.case-inline-image img{display:block;width:100%;height:auto;border-radius:8px}
 .case-related{padding:80px max(8vw,50px);background:#eef0ed;display:flex;align-items:flex-end;justify-content:space-between;gap:60px}
 .case-related>div:first-child{max-width:720px}
 .case-related h2{margin:14px 0 18px}
