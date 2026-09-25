@@ -3,8 +3,8 @@ import SustainableClient from './SustainableClient'
 import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide-schemas'
 
 const slug = 'sustainable-beauty-packaging'
-const title = 'The Sustainable Beauty Packaging Playbook — Material, Claims & Compliance'
-const description = 'A comprehensive guide to sustainable packaging for beauty brands. Covers PCR content, mono-material design, EU PPWR, California SB 54, greenwashing risks, cost modeling, and implementation roadmaps.'
+const title = 'Sustainable Beauty Packaging Playbook'
+const description = 'Compare PCR, mono-material, refillable, glass, aluminum, and fiber packaging by cost, claims risk, product fit, and implementation complexity.'
 
 export const metadata: Metadata = {
   title,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 }
 
 export default function SustainablePage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/sustainability-certifications.png', datePublished: '2026-05-06' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/sustainability-certifications.png', datePublished: '2026-05-06', dateModified: '2026-09-25' })
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} /><SustainableClient /></>
 }

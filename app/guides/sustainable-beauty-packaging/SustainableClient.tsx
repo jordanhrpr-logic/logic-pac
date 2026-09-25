@@ -6,18 +6,18 @@ import FAQSidebar from '@/components/FAQSidebar'
 import Image from 'next/image'
 
 const tocSections = [
-  { id: 'why', label: 'Why This Guide Exists' },
-  { id: 'spectrum', label: '1. The Sustainability Spectrum' },
+  { id: 'why', label: 'The Packaging-System Decision' },
+  { id: 'spectrum', label: '1. Six Practical Paths' },
   { id: 'materials', label: '2. Material Families' },
-  { id: 'certifications', label: '3. Certifications That Carry Weight' },
-  { id: 'regulatory', label: '4. The Regulatory Landscape' },
+  { id: 'certifications', label: '3. What to Verify' },
+  { id: 'regulatory', label: '4. Claims, Materials & Access' },
   { id: 'claims', label: '5. The Claims Hygiene Framework' },
   { id: 'mistakes', label: '6. The Mistakes Brands Make' },
-  { id: 'swaps', label: '7. Where to Start' },
+  { id: 'swaps', label: '7. Lowest-Drag Improvements' },
 ]
 
 const faqs = [
-  { question: 'How much does sustainable beauty packaging actually cost?', answer: 'Depending on tier and material family, expect a 5-35% premium over conventional packaging. The premium narrows at higher volumes and is often offset by reduced EPR fees, longer shelf life, and consumer willingness to pay (15-25% higher repeat purchase rates for verified sustainable brands).' },
+  { question: 'How much does sustainable beauty packaging actually cost?', answer: 'The cost depends on the material, format, volume, decoration, tooling, freight, and testing requirements. Some reduction moves can lower cost, while PCR, mono-material, fiber, glass, aluminum, and refill systems may carry different premiums. Compare landed cost and operating impact rather than relying on one headline percentage.' },
   { question: "What's the fastest sustainability win for a brand launching in 90 days?", answer: 'FSC-certified outer cartons + 30% PCR primary containers + soy-based ink + audited claims. All four can be specified at brief stage with no impact on production timeline.' },
   { question: 'Do refillable systems actually work for beauty?', answer: "Yes - but only for hero SKUs with high repurchase frequency (foundation, fragrance, deodorant, color cosmetics). Refillability under 40% adoption rate has worse environmental outcomes than well-designed single-use systems. Don't deploy refills until your category and customer base support it." },
   { question: 'How do I tell which sustainability certifications matter?', answer: 'Look for third-party certifying bodies with public audit trails - FSC, BPI, TUV, Cradle to Cradle. Skip self-declared programs and generic "green" graphics. The credibility test: could a regulator request the certification documentation and receive it from the certifying body within 24 hours?' },
@@ -54,12 +54,12 @@ export default function SustainableClient() {
       <div className="phdr">
         <div className="phdr-inner">
           <div className="ey">Logic Pac &middot; Sustainability</div>
-          <h1>The Sustainable Beauty Packaging <em>Playbook.</em></h1>
-          <p className="phdr-lede">The brand manager&apos;s field guide to material choice, claims, and compliance &mdash; before regulators and consumers force the issue.</p>
+          <h1>Sustainable beauty packaging: the practical <em>playbook.</em></h1>
+          <p className="phdr-lede">A decision guide to materials, claims, product protection, cost, and compliance for beauty brands.</p>
           <div className="phdr-meta">
             <span>18 min read</span>
             <span>For brand managers &amp; founders</span>
-            <span>Updated April 2026</span>
+            <span>Updated September 2026</span>
           </div>
         </div>
       </div>
@@ -75,12 +75,27 @@ export default function SustainableClient() {
         <div className="guide-main">
           <div className="seo">
 
+            <div className="guide-answer" aria-labelledby="guide-answer-title">
+              <h2 id="guide-answer-title">What sustainable beauty packaging actually means</h2>
+              <p>Sustainable beauty packaging is not one material or claim. It is a sequence of decisions about material reduction, recycled content, recyclability, product protection, sourcing, and end-of-life infrastructure. The right option is the one your product, customer, channel, and supply chain can support&mdash;and the one your team can substantiate without vague environmental language.</p>
+            </div>
+
+            <div className="blog-takeaways guide-takeaways">
+              <h4>What to know</h4>
+              <ul>
+                <li>Start with reduction and product protection before changing materials.</li>
+                <li>Treat PCR, mono-material, refillable, glass, aluminum, and fiber as different systems&mdash;not interchangeable &ldquo;green&rdquo; options.</li>
+                <li>Match every environmental claim to documentation for the finished package, not a supplier&apos;s general marketing sheet.</li>
+                <li>Build compliance review into concept development. Fixing claims and materials after production is slower and more expensive.</li>
+              </ul>
+            </div>
+
             {/* WHY */}
             <section id="why">
-              <h2>Why This Guide Exists</h2>
-              <p className="lede">Sustainable beauty packaging used to be a marketing decision. It&apos;s becoming a compliance one.</p>
+              <h2>Sustainability Is Now a Packaging-System Decision</h2>
+              <p className="lede">Material, product protection, sourcing, claims, and recovery have to work together.</p>
               <p>Three jurisdictions &mdash; the EU, California, and the FTC &mdash; have all moved to restrict, regulate, or outright ban generic environmental claims. The deadlines land between August and October 2026. Brands that haven&apos;t reviewed their packaging claims, certifications, and material sourcing by then will be relabeling, withdrawing stock, or paying penalties.</p>
-              <p>At the same time, consumers have stopped accepting &ldquo;eco-friendly&rdquo; at face value. 54% of shoppers now deliberately choose sustainable packaging, and beauty leads the category &mdash; but only when the claim is verifiable. Brands using verified materials (rPET, mono-PP/PE, bio-based plastics) report 15&ndash;25% higher repeat purchase rates than competitors making vague claims.</p>
+              <p>At the same time, generic &ldquo;eco-friendly&rdquo; language is harder to defend. A material choice and its marketing claim must be supported by documentation for the finished package, the markets where it will be sold, and the recovery infrastructure customers can actually access.</p>
               <p>This guide is for brand managers who need to make defensible material decisions &mdash; without losing the design quality, premium feel, or production timeline their brand depends on.</p>
 
               <div className="body-toc">
@@ -101,7 +116,7 @@ export default function SustainableClient() {
 
             {/* 1. SPECTRUM */}
             <section id="spectrum">
-              <h2><span className="num">01.</span>The Sustainability Spectrum</h2>
+              <h2><span className="num">01.</span>Six Practical Paths&mdash;and What Each Asks of the Operation</h2>
               <p>Most brands talk about &ldquo;sustainable packaging&rdquo; as a binary &mdash; you either are or you aren&apos;t.</p>
               <p>The reality is a spectrum. Six tiers, each with different cost, perception, and infrastructure tradeoffs.</p>
 
@@ -152,7 +167,7 @@ export default function SustainableClient() {
               <h3>Mono-Material Systems</h3>
               <p>Packaging built from a single resin family &mdash; mono-PE tubes with PE caps, mono-PP jars with PP closures, mono-aluminum systems.</p>
               <ul>
-                <li><strong>Cost:</strong> 10&ndash;20% premium initially, often offset by simplified supply chain</li>
+                <li><strong>Cost:</strong> Often quoted above a comparable conventional structure; the final difference depends on format, supplier, tooling, and volume</li>
                 <li><strong>Why it matters:</strong> EU PPWR (effective August 2026) penalizes hard-to-recycle multi-material formats</li>
                 <li><strong>Where it works:</strong> Tubes, bottles, secondary cartons</li>
                 <li><strong>Tradeoff:</strong> Limited barrier properties for oxygen-sensitive formulas</li>
@@ -195,7 +210,7 @@ export default function SustainableClient() {
 
             {/* 3. CERTIFICATIONS */}
             <section id="certifications">
-              <h2><span className="num">03.</span>Certifications That Carry Weight</h2>
+              <h2><span className="num">03.</span>What to Verify Before You Repeat a Sustainability Claim</h2>
               <p>Certifications protect your brand from greenwashing exposure and signal credibility to buyers, retailers, and regulators. Not all of them carry equal weight. Here&apos;s what to specify, what to skip.</p>
 
               <h3>FSC (Forest Stewardship Council)</h3>
@@ -237,7 +252,7 @@ export default function SustainableClient() {
 
             {/* 4. REGULATORY */}
             <section id="regulatory">
-              <h2><span className="num">04.</span>The Regulatory Landscape</h2>
+              <h2><span className="num">04.</span>Where Claims, Materials, and Market Access Intersect</h2>
               <p>Three regulatory deadlines hit beauty packaging within an eight-week window in 2026. A fourth &mdash; the FTC Green Guides &mdash; is being updated and already actively enforced via state regulators.</p>
 
               <h3>EU Packaging and Packaging Waste Regulation (PPWR)</h3>
@@ -355,7 +370,7 @@ export default function SustainableClient() {
 
             {/* 7. SWAPS */}
             <section id="swaps">
-              <h2><span className="num">07.</span>Where to Start</h2>
+              <h2><span className="num">07.</span>The Lowest-Drag Improvements to Assess First</h2>
               <p>Seven changes that deliver immediate impact on most existing packaging systems &mdash; without a full redesign.</p>
 
               <div className="swap-card">
@@ -394,6 +409,11 @@ export default function SustainableClient() {
               </div>
             </section>
 
+            <section className="guide-bottom-line" aria-labelledby="bottom-line-heading">
+              <h2 id="bottom-line-heading">Bottom Line</h2>
+              <p>The strongest sustainability move is rarely the most dramatic one. It is the change that reduces material or improves recovery without compromising the formula, shelf life, customer experience, or production plan. Make the claim only after the package and its documentation can support it.</p>
+            </section>
+
             {/* Sources */}
             <section className="sources-section">
               <h2>Sources</h2>
@@ -412,14 +432,13 @@ export default function SustainableClient() {
                 <li><strong>Future Market Insights &mdash; Post-Consumer Recycled Packaging Market</strong> <span>&mdash; $23.25B in 2025, projected $46.86B by 2034 (8.17% CAGR); cosmetics segment 7.65% CAGR.</span></li>
                 <li><strong>REN Clean Skincare</strong> <span>&mdash; 2026 launch of 100% PCR airless bottle program, 68% lower emissions vs. virgin baseline (public announcement).</span></li>
                 <li><strong>L&apos;Or&eacute;al Group Sustainability Disclosures</strong> <span>&mdash; 32% recycled or biobased content achievement across multi-brand portfolio.</span></li>
-                <li><strong>Sustainable packaging consumer behavior research, 2025&ndash;2026</strong> <span>&mdash; 54% of shoppers deliberately choose sustainable packaging; 30%+ of beauty consumers notice packaging improvements; 15&ndash;25% repeat purchase lift on rPET / mono-material / bio-based plastics.</span></li>
               </ul>
             </section>
 
             <div className="guide-cta">
-              <h3>Ready to Make Your Packaging Defensible?</h3>
-              <p>We help beauty brands move from generic claims to defensible specs &mdash; matching the right tier, the right certification, and the right claim across every component, in every jurisdiction you ship into.</p>
-              <button className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Book a Sustainability Consultation</button>
+              <h3>Pressure-Test the Packaging Decision Before You Brief Suppliers</h3>
+              <p>If you are comparing materials, claims, or refill formats, we can help map the tradeoffs against your product, channel, quantities, and timeline. You will leave with a clearer direction&mdash;even if the right answer is to change less than expected.</p>
+              <button className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Review the Packaging Direction</button>
             </div>
           </div>
         </div>
