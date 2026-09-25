@@ -16,6 +16,7 @@ const categories = [
 ]
 
 const workItems = [
+  { cat: 'influencer', cls: 'wide', href: '/work/adidas-nemeziz-influencer-kit', gradient: 'linear-gradient(135deg,#050d1f,#151515)', image: '/images/portfolio/influencer-adidas-nemesis.jpg', category: 'Case Study · Influencer & PR', name: 'Adidas Nemeziz Launch Kit', desc: 'Multi-level rigid presentation system with dedicated product compartments and a staged reveal.' },
   { cat: 'holiday', cls: 'tall', gradient: 'linear-gradient(135deg,#1a1a2e,#0f3460)', image: '/images/portfolio/premium-beauty-gift-set1.jpg', category: 'Holiday Kits', name: 'Premium Beauty Holiday Gift Set', desc: 'Multi-component beauty set, magnetic closure, soft-touch lam. 2,500 units.' },
   { cat: 'influencer', cls: '', gradient: 'linear-gradient(135deg,#0f2027,#2c5364)', image: '/images/portfolio/skincare-launch-pr-mailer.jpg', category: 'Influencer & PR', name: 'Skincare Launch PR Mailer', desc: 'Rigid interior box, ribbon lift, custom tissue. 500 units, direct fulfillment.' },
   { cat: 'beauty', cls: '', gradient: 'linear-gradient(135deg,#360033,#0b8793)', image: '/images/portfolio/cosmetics-folding-carton.jpeg', category: 'Beauty & Cosmetics', name: 'Cosmetics Folding Carton \u2014 Ulta Compliant', desc: 'Foil stamp, emboss, Ulta retail compliance. 50,000 units.' },
@@ -60,21 +61,32 @@ export default function WorkClient() {
         ))}
       </div>
       <div className="wgrid" id="workGrid">
-        {workItems.map((item, i) => (
-          <div
-            key={i}
-            className={`wgi${item.cls ? ' ' + item.cls : ''}`}
-            data-cat={item.cat}
-            style={{ display: activeFilter === 'all' || item.cat === activeFilter ? '' : 'none' }}
-          >
+        {workItems.map((item, i) => {
+          const content = <>
             {item.image ? <Image src={item.image} alt={`${item.name} — packaging by Logic Pac`} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="img-placeholder" style={{ background: item.gradient, height: '100%' }}></div>}
             <div className="wgov">
               <div className="wgcat">{item.category}</div>
               <div className="wgnm">{item.name}</div>
               <div className="wgdesc">{item.desc}</div>
             </div>
+          </>
+          const className = `wgi${item.cls ? ' ' + item.cls : ''}`
+          const style = { display: activeFilter === 'all' || item.cat === activeFilter ? '' : 'none' }
+          return item.href ? (
+            <Link key={i} href={item.href} className={className} data-cat={item.cat} style={style} aria-label={`View case study: ${item.name}`}>
+              {content}
+            </Link>
+          ) : (
+          <div
+            key={i}
+            className={className}
+            data-cat={item.cat}
+            style={style}
+          >
+            {content}
           </div>
-        ))}
+          )
+        })}
       </div>
       <div className="gcta">
         <h2>Your Work Could Be Here Next</h2>
