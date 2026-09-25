@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -20,6 +21,7 @@ export default function PostClient() {
           <span>&middot;</span>
           <span>12 min read</span>
         </div>
+        <VerifiedAsOf />
       </div>
 
       <div className="blog-body">
@@ -266,6 +268,16 @@ export default function PostClient() {
             <p>The strongest sustainable beauty packaging starts with structure. Material first. Claim second.</p>
             <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a sustainable packaging consultation</a> and we&apos;ll help you build the system before the claim.</p>
+            <section className="sources-section">
+              <h2>Primary Sources</h2>
+              <VerifiedAsOf />
+              <ul className="sources-list">
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Environmental Claims and Green Guides</a></li>
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 (PPWR)</a></li>
+                <li><a href="https://www.us.fsc.org/chain-of-custody" target="_blank" rel="noopener noreferrer">FSC: Chain of Custody Certification</a></li>
+              </ul>
+            </section>
       </div>
 
       <section className="ctas">

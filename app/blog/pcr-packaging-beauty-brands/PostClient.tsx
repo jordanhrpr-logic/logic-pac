@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -20,6 +21,7 @@ export default function PostClient() {
           <span>&middot;</span>
           <span>14 min read</span>
         </div>
+        <VerifiedAsOf />
       </div>
 
       <div className="blog-body">
@@ -31,7 +33,7 @@ export default function PostClient() {
               <ul>
                 <li>PCR content in beauty packaging typically adds a <strong>10-30% cost premium</strong> over virgin resin, depending on resin type, color requirements, and order volume.</li>
                 <li>100% PCR is achievable in HDPE and PET but comes with color limitations (gray or amber tint) and potential clarity loss that affect brand presentation.</li>
-                <li>California&apos;s SB 54 requires plastic packaging to contain 30% recycled content by 2028 and 65% by 2032 &mdash; brands selling in California need a PCR strategy now.</li>
+                <li>California&apos;s SB 54 establishes an EPR program and statewide source-reduction, recycling, and recyclability or compostability goals. Covered producers need current material data and a compliance strategy.</li>
                 <li>PCR compatibility with beauty formulas must be tested. Migration, odor, and barrier properties can differ from virgin material, especially at higher PCR percentages.</li>
                 <li>Third-party certification (SCS Global, UL, GreenCircle) is the only reliable way to verify PCR content claims from suppliers. Ask for chain-of-custody documentation.</li>
               </ul>
@@ -145,7 +147,7 @@ export default function PostClient() {
           { question: 'Can PCR packaging be recycled again?', answer: 'Yes. PCR plastic can generally be recycled again through the same collection and processing infrastructure as virgin plastic. The material does not become non-recyclable after one recycling cycle. However, each recycling cycle can degrade polymer quality slightly, which is why blending PCR with virgin resin is common practice.' },
           { question: 'Is PCR packaging safe for cosmetics?', answer: 'PCR packaging is safe for cosmetics when properly tested for formula compatibility. The key concern is potential migration of trace contaminants from the recycled feedstock. Brands should conduct migration testing, barrier testing, and stability testing before approving PCR packaging for production. Reputable PCR resin suppliers provide safety data and comply with FDA and EU cosmetic packaging regulations.' },
           { question: 'What is the difference between PCR and PIR recycled content?', answer: 'PCR (post-consumer recycled) content comes from materials that were used by consumers and entered the waste stream. PIR (post-industrial recycled) content comes from manufacturing scrap that never reached consumers. PCR carries a stronger environmental impact claim because it diverts actual waste. PIR is essentially clean manufacturing efficiency -- useful, but not the same as closing the consumer waste loop.' },
-          { question: 'Do I need PCR packaging to sell in California?', answer: 'Starting in 2028, California\'s SB 54 requires plastic packaging sold in the state to contain at least 30% recycled content, increasing to 65% by 2032. If you sell products in California -- which includes most national beauty retailers -- you need a recycled content strategy. Brands that start qualifying PCR suppliers now will have the smoothest compliance path.' },
+          { question: 'Do I need PCR packaging to sell in California?', answer: 'SB 54 creates an extended producer responsibility program and statewide source-reduction, recyclability or compostability, and recycling goals. It does not impose a universal 30% PCR requirement on every beauty package. Producers should confirm whether their packaging is covered and follow current CalRecycle guidance.' },
           { question: 'How do I know if a supplier\'s PCR claim is real?', answer: 'Request third-party certification from recognized bodies like SCS Global Services, UL Environmental, or GreenCircle Certified. Ask for chain-of-custody documentation tracing the recycled feedstock to its source. If a supplier cannot provide documentation beyond a verbal claim, the PCR content is unverifiable and should not be used for marketing or label claims.' },
         ]}
         ctaText="Book a Packaging Consultation"
@@ -157,6 +159,15 @@ export default function PostClient() {
             <p>PCR adoption is a material science decision, a regulatory compliance decision, and a brand positioning decision all at once. Getting it right requires testing the formula against the material, verifying supplier claims, and building a sourcing plan that accounts for supply variability.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pcr_consultation" target="_blank" rel="noopener noreferrer">Book a sustainability packaging consultation</a> and we will help you define the right PCR specification for your products, identify qualified suppliers, and plan the testing and certification process.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
+            <section className="sources-section">
+              <h2>Primary Sources</h2>
+              <VerifiedAsOf />
+              <ul className="sources-list">
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR</a></li>
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Recycled-content and environmental marketing claims</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: PPWR recycled-content requirements by packaging category</a></li>
+              </ul>
+            </section>
       </div>
 
       <section className="ctas">

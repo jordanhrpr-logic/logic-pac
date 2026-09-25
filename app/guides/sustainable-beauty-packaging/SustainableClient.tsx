@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideByline from '@/components/GuideByline'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 import Image from 'next/image'
 
 const tocSections = [
@@ -19,10 +20,10 @@ const tocSections = [
 
 const faqs = [
   { question: 'How much does sustainable beauty packaging actually cost?', answer: 'The cost depends on the material, format, volume, decoration, tooling, freight, and testing requirements. Some reduction moves can lower cost, while PCR, mono-material, fiber, glass, aluminum, and refill systems may carry different premiums. Compare landed cost and operating impact rather than relying on one headline percentage.' },
-  { question: "What's the fastest sustainability win for a brand launching in 90 days?", answer: 'FSC-certified outer cartons + 30% PCR primary containers + soy-based ink + audited claims. All four can be specified at brief stage with no impact on production timeline.' },
+  { question: "What's the fastest sustainability win for a brand launching in 90 days?", answer: 'Start by reducing unnecessary material, documenting the current bill of materials, and reviewing claims. FSC-certified cartons or verified recycled content may be practical next steps, but timing depends on supplier availability, testing, and the final specification.' },
   { question: 'Do refillable systems actually work for beauty?', answer: "Yes - but only for hero SKUs with high repurchase frequency (foundation, fragrance, deodorant, color cosmetics). Refillability under 40% adoption rate has worse environmental outcomes than well-designed single-use systems. Don't deploy refills until your category and customer base support it." },
   { question: 'How do I tell which sustainability certifications matter?', answer: 'Look for third-party certifying bodies with public audit trails - FSC, BPI, TUV, Cradle to Cradle. Skip self-declared programs and generic "green" graphics. The credibility test: could a regulator request the certification documentation and receive it from the certifying body within 24 hours?' },
-  { question: "What happens if I make claims that don't meet the new regulations?", answer: 'In the EU under ECGT (effective September 2026): financial penalties, product recall, mandatory rebranding. In California under SB 343: enforcement action, restrictions on the recyclable claim, fines. Under FTC Green Guides: enforcement action and corrective advertising orders.' },
+  { question: "What happens if I make claims that don't meet the new regulations?", answer: 'Consequences vary by jurisdiction and claim and can include enforcement, relabeling, withdrawal of misleading marketing, or penalties under applicable law. Have legal or compliance counsel review market-specific claims before launch.' },
   { question: 'Can sustainable packaging really feel premium?', answer: 'Yes - and the brands proving it (Aesop, Le Labo, La Bouche Rouge, Function of Beauty) are doing it with molded fiber, mono-aluminum, refillable glass, and engineered minimalism. The materials exist. Specifying them is the work.' },
 ]
 
@@ -96,7 +97,7 @@ export default function SustainableClient() {
             <section id="why">
               <h2>Sustainability Is Now a Packaging-System Decision</h2>
               <p className="lede">Material, product protection, sourcing, claims, and recovery have to work together.</p>
-              <p>Three jurisdictions &mdash; the EU, California, and the FTC &mdash; have all moved to restrict, regulate, or outright ban generic environmental claims. The deadlines land between August and October 2026. Brands that haven&apos;t reviewed their packaging claims, certifications, and material sourcing by then will be relabeling, withdrawing stock, or paying penalties.</p>
+              <p>The EU, California, and the FTC each regulate environmental claims or packaging in different ways. Several rules enter new phases in 2026, but applicability and enforcement depend on the market, packaging category, and claim. Brands should review claims, certifications, and material records against the official requirements that apply to them.</p>
               <p>At the same time, generic &ldquo;eco-friendly&rdquo; language is harder to defend. A material choice and its marketing claim must be supported by documentation for the finished package, the markets where it will be sold, and the recovery infrastructure customers can actually access.</p>
               <p>This guide is for brand managers who need to make defensible material decisions &mdash; without losing the design quality, premium feel, or production timeline their brand depends on.</p>
 
@@ -154,7 +155,7 @@ export default function SustainableClient() {
                 <li><strong>Perception:</strong> The most recognized &ldquo;second life&rdquo; claim in beauty</li>
                 <li><strong>Color performance:</strong> Variable; expect tighter QC tolerance and higher reject rates on opaque white or clear formats</li>
                 <li><strong>Where it works:</strong> Bottles, jars, tubes, caps at 30&ndash;100% PCR content</li>
-                <li><strong>Proof:</strong> REN Clean Skincare launched 100% PCR airless bottles in 2026 with 68% lower emissions. L&apos;Or&eacute;al hit 32% recycled or biobased content across its portfolio.</li>
+                <li><strong>Verification:</strong> Require the resin declaration, recycled-content percentage, chain-of-custody records, and finished-component specification before making an on-pack PCR claim.</li>
               </ul>
 
               <h3>PIR (Post-Industrial Recycled) Plastic</h3>
@@ -189,7 +190,7 @@ export default function SustainableClient() {
                 <li><strong>Cost:</strong> Custom mold tooling $5K&ndash;15K upfront; per-unit 15&ndash;30% premium over corrugate</li>
                 <li><strong>Lead time:</strong> 8&ndash;12 weeks (vs. 4&ndash;6 for standard cardboard)</li>
                 <li><strong>Where it works:</strong> Inserts, structural protection, e-commerce mailers, premium boxes</li>
-                <li><strong>Market signal:</strong> $10.5B global market in 2026, with cosmetics-specific applications growing at 7.4% CAGR through 2030</li>
+                <li><strong>Verification:</strong> Confirm fiber source, additives, coatings, and the recovery pathway for the finished component.</li>
               </ul>
 
               <h3>Refillable Systems</h3>
@@ -204,8 +205,8 @@ export default function SustainableClient() {
               <h3>Plant-Based Inks</h3>
               <p>Inks derived from soy, corn, or sugarcane instead of petroleum.</p>
               <ul>
-                <li><strong>VOC reduction:</strong> Soy inks contain under 1% volatile organic compounds vs. 4&ndash;6% for petroleum (over 80% reduction, per EPA documentation)</li>
-                <li><strong>Recycling benefit:</strong> Easier to remove during paper de-inking, improving recyclability of printed substrates</li>
+                <li><strong>Specification:</strong> Ask the printer for the ink formulation, VOC documentation, and compatibility with the selected coating and recycling pathway.</li>
+                <li><strong>Tradeoff:</strong> The ink alone does not determine recyclability; substrate, coating, adhesive, and local processing also matter.</li>
                 <li><strong>Cost:</strong> Negligible premium for most applications</li>
               </ul>
             </section>
@@ -218,15 +219,14 @@ export default function SustainableClient() {
               <h3>FSC (Forest Stewardship Council)</h3>
               <p>Certifies paper, cardboard, and fiber-based packaging sourced from responsibly managed forests.</p>
               <ul>
-                <li><strong>Consumer recognition:</strong> 46% across 33 countries &mdash; higher than any other forest certification system</li>
-                <li><strong>Behavioral lift:</strong> 62% of consumers will choose an FSC-certified product over a non-certified equivalent</li>
-                <li><strong>Use it on:</strong> Cartons, secondary packaging, molded fiber inserts, paper labels</li>
+                <li><strong>What it verifies:</strong> Certified material is traced through an FSC chain-of-custody system.</li>
+                <li><strong>Use it on:</strong> Eligible cartons, secondary packaging, molded fiber inserts, paper labels, and other fiber components.</li>
               </ul>
 
               <h3>BPI (Biodegradable Products Institute)</h3>
-              <p>Certifies compostable products under ASTM D6400 &mdash; the only meaningful US compostability standard.</p>
+              <p>Certifies eligible compostable products against ASTM-based requirements for commercial composting. Certification scope and current standard version should be checked for the specific item.</p>
               <ul>
-                <li><strong>Standard:</strong> 90% biodegradation within 180 days at 55&ndash;60&deg;C in commercial composting</li>
+                <li><strong>Standard:</strong> ASTM D6400 and related requirements used by BPI for eligible products and packaging.</li>
                 <li><strong>Use it on:</strong> Compostable wrappers, refill pouches, mailer fills</li>
               </ul>
 
@@ -255,15 +255,16 @@ export default function SustainableClient() {
             {/* 4. REGULATORY */}
             <section id="regulatory">
               <h2><span className="num">04.</span>Where Claims, Materials, and Market Access Intersect</h2>
-              <p>Three regulatory deadlines hit beauty packaging within an eight-week window in 2026. A fourth &mdash; the FTC Green Guides &mdash; is being updated and already actively enforced via state regulators.</p>
+              <p>Several packaging and environmental-claims rules enter new implementation phases in 2026. The requirements differ by jurisdiction, product, packaging category, and claim, so brands should verify the applicable text rather than treat them as one deadline.</p>
 
               <h3>EU Packaging and Packaging Waste Regulation (PPWR)</h3>
               <p><strong>Effective:</strong> August 12, 2026</p>
-              <p>Mandates minimum recycled content, restricts hard-to-recycle formats, and harmonizes EPR (Extended Producer Responsibility) frameworks across all 27 member states. By January 2030, the regulation requires:</p>
+              <p>Introduces packaging-minimization, recyclability, labeling, and recycled-content requirements across the EU. Under Article 7, the 2030 minimums depend on packaging category:</p>
               <ul>
-                <li>30% recycled content for PET packaging</li>
-                <li>10% recycled content for other plastics</li>
-                <li>All packaging recyclable by design</li>
+                <li>30% for contact-sensitive packaging whose main component is PET</li>
+                <li>10% for contact-sensitive plastic packaging made from plastics other than PET</li>
+                <li>35% for plastic packaging outside the specified contact-sensitive and beverage-bottle categories</li>
+                <li>Design-for-recycling requirements apply on the regulation&apos;s phased timetable</li>
               </ul>
               <p><strong>Impact on beauty:</strong> Multi-layer films, mixed-material bottles with PET bodies and PP caps, and decorative metallic coatings will face higher EPR fees. Mono-material systems will become the cost-efficient default.</p>
 
@@ -290,7 +291,7 @@ export default function SustainableClient() {
               </ul>
 
               <div className="callout">
-                The bottom line: every sustainability claim on beauty packaging shipping after August 2026 needs to survive a regulator audit. <strong>Verifiable, certified, jurisdictionally specific.</strong>
+                The bottom line: every sustainability claim should be specific, substantiated, and appropriate for the market where the package is sold. <strong>Verifiable, documented, jurisdictionally specific.</strong>
               </div>
             </section>
 
@@ -419,21 +420,16 @@ export default function SustainableClient() {
             {/* Sources */}
             <section className="sources-section">
               <h2>Sources</h2>
-              <p className="sources-lede">Every regulatory date, market figure, and consumer statistic cited in this guide is traceable to a public regulatory filing, peer-reviewed dataset, or named brand announcement.</p>
+              <VerifiedAsOf />
+              <p className="sources-lede">Primary regulatory and certification sources used for the claims in this guide. Cost and lead-time ranges are Logic Pac operating guidance and vary by specification, volume, and supplier.</p>
               <ul className="sources-list">
-                <li><strong>EU Empowering Consumers for the Green Transition Directive (ECGT)</strong> <span>&mdash; effective 27 September 2026 across all EU member states. Bans generic environmental claims; regulates sustainability labels.</span></li>
-                <li><strong>EU Packaging and Packaging Waste Regulation (PPWR)</strong> <span>&mdash; applies from 12 August 2026. Mandates minimum 30% recycled content for PET and 10% for other plastics by January 2030.</span></li>
-                <li><strong>California SB 343 (Truth in Recycling)</strong> <span>&mdash; full enforcement October 2026. Restricts the chasing arrows symbol and &ldquo;recyclable&rdquo; claims to packaging accepted by 60%+ of in-state programs.</span></li>
-                <li><strong>FTC Green Guides &mdash; 16 CFR Part 260</strong> <span>&mdash; Federal Trade Commission. Restricts unqualified &ldquo;biodegradable&rdquo; claims to materials that decompose within one year of customary disposal; defines &ldquo;substantial majority&rdquo; recycling access as 60%.</span></li>
-                <li><strong>ASTM D6400</strong> <span>&mdash; Standard Specification for Labeling of Plastics Designed to be Aerobically Composted. 90% biodegradation in 180 days at 55&ndash;60&deg;C.</span></li>
-                <li><strong>Biodegradable Products Institute (BPI)</strong> <span>&mdash; North American compostability certification body using ASTM D6400 / D6868 testing standards.</span></li>
-                <li><strong>FSC 2025 Global Consumer Recognition Survey</strong> <span>&mdash; Ipsos for Forest Stewardship Council. 46% recognition across 33 countries; 62% prefer FSC-certified; 66% expect non-deforestation packaging.</span></li>
-                <li><strong>U.S. EPA &mdash; Volatile Organic Compounds in Inks</strong> <span>&mdash; Soy-based inks &lt;1% VOC vs. petroleum 4&ndash;6% (over 80% reduction).</span></li>
-                <li><strong>U.S. EPA &mdash; Plastics Material-Specific Data, Facts and Figures about Materials, Waste and Recycling</strong> <span>&mdash; U.S. plastic recycling rate decline from 9% (2018) to ~5% (current); 13.3% rate for plastic packaging specifically.</span></li>
-                <li><strong>Future Market Insights &mdash; Molded Fiber Pulp Packaging Market 2026&ndash;2036</strong> <span>&mdash; $10.5B global market in 2026; cosmetics-specific applications growing 7.4% CAGR through 2030.</span></li>
-                <li><strong>Future Market Insights &mdash; Post-Consumer Recycled Packaging Market</strong> <span>&mdash; $23.25B in 2025, projected $46.86B by 2034 (8.17% CAGR); cosmetics segment 7.65% CAGR.</span></li>
-                <li><strong>REN Clean Skincare</strong> <span>&mdash; 2026 launch of 100% PCR airless bottle program, 68% lower emissions vs. virgin baseline (public announcement).</span></li>
-                <li><strong>L&apos;Or&eacute;al Group Sustainability Disclosures</strong> <span>&mdash; 32% recycled or biobased content achievement across multi-brand portfolio.</span></li>
+                <li><a href="https://eur-lex.europa.eu/eli/dir/2024/825/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Directive (EU) 2024/825</a> <span>&mdash; environmental claims, sustainability labels, and application from September 27, 2026.</span></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 (PPWR)</a> <span>&mdash; recyclability, recycled-content, labeling, and packaging-minimization requirements.</span></li>
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR</a> <span>&mdash; covered materials, producer obligations, regulations, and implementation resources.</span></li>
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Environmental Claims and Green Guides</a> <span>&mdash; recyclable, compostable, degradable, and general environmental-benefit claims.</span></li>
+                <li><a href="https://www.us.fsc.org/chain-of-custody" target="_blank" rel="noopener noreferrer">FSC: Chain of Custody Certification</a> <span>&mdash; requirements for tracing FSC-certified material through the supply chain.</span></li>
+                <li><a href="https://bpiworld.org/compostable-products-standard-revised" target="_blank" rel="noopener noreferrer">BPI: Compostable Products Standard</a> <span>&mdash; certification tied to ASTM compostability standards.</span></li>
+                <li><a href="https://c2ccertified.org/the-standard" target="_blank" rel="noopener noreferrer">Cradle to Cradle Products Innovation Institute: Certification Standard</a> <span>&mdash; material health, circularity, climate, water and soil, and social-fairness criteria.</span></li>
               </ul>
             </section>
 

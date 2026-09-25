@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -20,6 +21,7 @@ export default function PostClient() {
           <span>&middot;</span>
           <span>12 min read</span>
         </div>
+        <VerifiedAsOf />
       </div>
 
       <div className="blog-body">
@@ -49,7 +51,7 @@ export default function PostClient() {
             <ul>
               <li>10% recycled content for contact-sensitive plastic packaging (this includes most primary beauty packaging that touches the product)</li>
               <li>35% recycled content for non-contact-sensitive plastic packaging (secondary cartons with plastic components, plastic shipping materials)</li>
-              <li>35% recycled content for single-use plastic beverage bottles (less relevant for beauty, but sets the benchmark)</li>
+              <li>30% recycled content for single-use plastic beverage bottles</li>
             </ul>
             <p><strong>By 2040:</strong></p>
             <ul>
@@ -173,10 +175,11 @@ export default function PostClient() {
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
 
             <h2>Sources Reviewed</h2>
+            <VerifiedAsOf />
             <ul>
-              <li><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty" target="_blank" rel="noopener noreferrer">European Commission: Packaging waste and PPWR</a></li>
-              <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 on packaging and packaging waste</a></li>
-              <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Plastic Pollution Prevention and Packaging Producer Responsibility Act</a></li>
+              <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 on packaging and packaging waste</a></li>
+              <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=intcom%3AC%282026%293702" target="_blank" rel="noopener noreferrer">European Commission: PPWR guidance document</a></li>
+              <li><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en" target="_blank" rel="noopener noreferrer">European Commission: Packaging waste policy overview</a></li>
             </ul>
       </div>
 

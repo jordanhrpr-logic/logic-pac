@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -20,6 +21,7 @@ export default function PostClient() {
           <span>&middot;</span>
           <span>11 min read</span>
         </div>
+        <VerifiedAsOf />
       </div>
 
       <div className="blog-body">
@@ -317,6 +319,15 @@ export default function PostClient() {
             <p>Start with the packaging you already have. Map every component. Gather the proof. Identify what needs to change. Then redesign in the right order.</p>
             <p>If your team needs help translating SB 54 into a packaging roadmap, we can help.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_packaging_consultation" target="_blank" rel="noopener noreferrer">Book an SB 54 packaging consultation</a> and we&apos;ll help you build the audit before the redesign.</p>
+            <section className="sources-section">
+              <h2>Primary Sources</h2>
+              <VerifiedAsOf />
+              <ul className="sources-list">
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR program</a></li>
+                <li><a href="https://calrecycle.ca.gov/laws/rulemaking/sb54regulations/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 permanent regulations and rulemaking record</a></li>
+                <li><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB54" target="_blank" rel="noopener noreferrer">California Legislature: SB 54 statutory text</a></li>
+              </ul>
+            </section>
       </div>
 
       <section className="ctas">

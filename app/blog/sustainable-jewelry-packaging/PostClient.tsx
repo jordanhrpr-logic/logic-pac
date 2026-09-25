@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -21,6 +22,7 @@ export default function PostClient() {
           <span>&middot;</span>
           <span>13 min read</span>
         </div>
+        <VerifiedAsOf />
       </div>
 
       <div className="blog-body">
@@ -137,6 +139,15 @@ export default function PostClient() {
             <p>Turn the article into a brief before you ask for pricing. List the product formats, dimensions, materials, inserts, finishes, order quantities, launch date, sales channel, shipping method, and target landed cost. Then separate what is required from what is optional. Required items protect the product and brand. Optional items are where cost can be adjusted without damaging the experience.</p>
             <p>For jewelry brands, the most important brief detail is the full collection map. A supplier needs to know whether this is one ring box or a system across rings, earrings, necklaces, bracelets, pendants, and seasonal kits. Without that map, the first sample can look good and still fail the collection.</p>
             <p>Also include approval owners. Jewelry packaging often gets reviewed by founders, brand, product, retail, and operations. If those people review samples one at a time, the project slows down. If they review against the same brief, decisions get cleaner.</p>
+            <section className="sources-section">
+              <h2>Primary Sources</h2>
+              <VerifiedAsOf />
+              <ul className="sources-list">
+                <li><a href="https://www.us.fsc.org/chain-of-custody" target="_blank" rel="noopener noreferrer">FSC: Chain of Custody Certification</a></li>
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR</a></li>
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Environmental marketing claims</a></li>
+              </ul>
+            </section>
       </div>
 
       <section className="ctas">

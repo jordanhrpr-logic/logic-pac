@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import VerifiedAsOf from '@/components/VerifiedAsOf'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -20,6 +21,7 @@ export default function PostClient() {
           <span>&middot;</span>
           <span>13 min read</span>
         </div>
+        <VerifiedAsOf />
       </div>
 
       <div className="blog-body">
@@ -170,6 +172,15 @@ export default function PostClient() {
             <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
+            <section className="sources-section">
+              <h2>Primary Sources</h2>
+              <VerifiedAsOf />
+              <ul className="sources-list">
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: PPWR design-for-recycling requirements</a></li>
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 covered-material and recyclability program</a></li>
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Guidance for recyclable and environmental-benefit claims</a></li>
+              </ul>
+            </section>
       </div>
 
       <section className="ctas">

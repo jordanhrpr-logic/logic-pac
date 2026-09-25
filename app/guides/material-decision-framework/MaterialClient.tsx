@@ -366,8 +366,6 @@ export default function MaterialClient() {
               <ul className="sources-list">
                 <li><strong>EU Packaging and Packaging Waste Regulation (PPWR)</strong> <span>&mdash; effective August 2026. Mono-material requirements, recycled-content thresholds, EPR fee schedules driving material penalties for multi-layer formats.</span></li>
                 <li><strong>U.S. EPA &mdash; Plastics Material-Specific Data</strong> <span>&mdash; PET bottles 29.1% recycling rate, HDPE natural bottles 29.3%, broader plastic packaging 13.3%.</span></li>
-                <li><strong>Future Market Insights &mdash; Molded Fiber Pulp Packaging Market 2026&ndash;2036</strong> <span>&mdash; $10.5B global market in 2026; cosmetics-specific applications growing 7.4% CAGR through 2030.</span></li>
-                <li><strong>Future Market Insights &mdash; PCR Plastic Packaging Market</strong> <span>&mdash; $21.28B (2025) projected to $56.43B (2035), 10.24% CAGR; cosmetics segment 7.65%.</span></li>
                 <li><strong>FSC 2025 Global Consumer Recognition Survey</strong> <span>&mdash; Ipsos for Forest Stewardship Council. 46% recognition across 33 countries; 62% prefer FSC-certified.</span></li>
               </ul>
             </section>

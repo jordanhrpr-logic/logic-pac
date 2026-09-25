@@ -452,6 +452,10 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-bottom-line{border-left:4px solid var(--lime);background:var(--bg);padding:28px 32px;margin:48px 0}
 .guide-bottom-line h2{font-size:24px;margin:0 0 10px}
 .guide-bottom-line p{margin:0}
+.verified-as-of{font-size:12px!important;color:var(--slate)!important;margin:10px 0 24px!important;font-style:italic}
+.phdr .verified-as-of{color:rgba(255,255,255,.48)!important;max-width:none;margin:10px 0 0!important}
+.sources-list a{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+.sources-list a:hover,.sources-list a:focus-visible{color:#526000}
 .guide-faq{padding:80px 48px;background:var(--bg)}
 .guide-faq-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:start}
 .guide-faq-content{padding-top:8px;margin-bottom:32px}
