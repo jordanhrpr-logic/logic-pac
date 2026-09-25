@@ -514,3 +514,19 @@ footer{padding:48px 24px 32px}
 *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}
 .reveal{opacity:1;transform:none}
 }
+.inline-link-button {
+  appearance: none;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.inline-link-button:hover,
+.inline-link-button:focus-visible {
+  color: var(--orange, #f05a28);
+}

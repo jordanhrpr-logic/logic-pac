@@ -130,7 +130,7 @@ export default function PostClient() {
       <div className="blog-body">
             <h2>Build Jewelry Packaging That Matches the Product</h2>
             <p>Jewelry packaging carries more responsibility than most categories. It protects the piece, frames the value, and turns a small object into a complete brand experience. If you&rsquo;re planning a new jewelry box, retail-ready format, seasonal gift set, or full packaging refresh, start with the structure, material, volume, and channel requirements before chasing finishes.</p>
-            <p>When you&rsquo;re ready to pressure-test the direction, <a href="https://calendly.com/sean-logicagencyinc/30min?month=2026-03&utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=jewelry-packaging-design-guide_consultation" target="_blank" rel="noopener noreferrer">book a jewelry packaging consultation</a>. We&rsquo;ll give you a straight read on format, cost, MOQ, timeline, and what should be solved before the first sample is made.</p>
+            <p>When you&rsquo;re ready to pressure-test the direction, <a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=jewelry-packaging-design-guide_consultation" target="_blank" rel="noopener noreferrer">book a jewelry packaging consultation</a>. We&rsquo;ll give you a straight read on format, cost, MOQ, timeline, and what should be solved before the first sample is made.</p>
 
             <p><em>Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, jewelry, and luxury goods brands design packaging that looks premium, protects the product, and works in production.</em></p>
 

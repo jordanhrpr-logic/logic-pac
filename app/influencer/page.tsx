@@ -5,6 +5,7 @@ import { influencerServiceJsonLd, influencerFaqJsonLd } from '@/lib/metadata'
 export const metadata: Metadata = {
   title: 'Influencer Kit & PR Mailer Production',
   description: 'Influencer kit producer and PR mailer company. Custom kits designed for unboxing, 50 to 5,000+ units with direct-to-recipient fulfillment.',
+  alternates: { canonical: '/influencer' },
 }
 
 export default function InfluencerPage() {

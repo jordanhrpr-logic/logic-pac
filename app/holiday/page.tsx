@@ -5,6 +5,7 @@ import { holidayServiceJsonLd, holidayFaqJsonLd } from '@/lib/metadata'
 export const metadata: Metadata = {
   title: 'Holiday Gift Set Packaging for Beauty Brands',
   description: 'Holiday gift set manufacturer for beauty and cosmetic brands. Custom rigid boxes, advent calendars, premium finishes, kitting, and retail compliance.',
+  alternates: { canonical: '/holiday' },
 }
 
 export default function HolidayPage() {
