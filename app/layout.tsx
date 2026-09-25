@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import { ModalProvider } from '@/components/ModalContext'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import AnalyticsClickTracker from '@/components/AnalyticsClickTracker'
 import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from '@/lib/metadata'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-66P9B5E4KR'
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ModalProvider>
+          <AnalyticsClickTracker />
           <a href="#main" className="skip-link">Skip to content</a>
           <Navigation />
           <main id="main" style={{ paddingTop: 64 }}>
