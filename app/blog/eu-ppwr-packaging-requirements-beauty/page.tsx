@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'EU PPWR Packaging Requirements for Beauty Brands: What to Change and When',
+  title: 'EU PPWR Packaging Rules for Beauty',
   description: 'EU PPWR packaging requirements affect any beauty brand selling into Europe. Learn recycled content targets, recyclability rules, and compliance timelines.',
   alternates: { canonical: '/blog/eu-ppwr-packaging-requirements-beauty' },
   openGraph: {

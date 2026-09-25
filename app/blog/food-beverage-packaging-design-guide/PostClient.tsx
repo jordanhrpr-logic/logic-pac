@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How is F&amp;B packaging different from beauty?</h2>
+            <p>Food and beverage packaging runs $0.30&#8211;3.00/unit and is more compliance-constrained and cost-sensitive than beauty packaging. The package must protect shelf life, carry mandatory labeling (nutrition facts, allergens, net weight), survive temperature changes, and fit retailer case-pack and pallet-pattern rules. Design matters, but the package must clear operational and regulatory hurdles first.</p>
+          </div>
+
       <div className="blog-body">
             <p>Food and beverage packaging design has to protect product quality, meet labeling requirements, survive distribution, and sell on shelf at a much lower cost ceiling than beauty packaging. Most emerging F&amp;B brands should expect packaging to land around $0.30-$3.00 per unit depending on format, volume, compliance needs, and retail channel.</p>
             <p>That cost discipline changes every design decision. The package still has to look good. But it also has to hold shelf life, carry required information, scan cleanly, pack efficiently, and work inside retailer case-pack rules.</p>

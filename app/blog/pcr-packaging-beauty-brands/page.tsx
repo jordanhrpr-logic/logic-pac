@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'PCR Packaging for Beauty Brands: What Post-Consumer Recycled Content Actually Means',
+  title: 'PCR Packaging for Beauty Brands',
   description: 'PCR packaging uses post-consumer recycled plastic in beauty containers. Learn what 30%, 50%, and 100% PCR content means, what it costs, and how to verify it.',
   alternates: { canonical: '/blog/pcr-packaging-beauty-brands' },
   openGraph: {

@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How does custom packaging development work?</h2>
+            <p>Custom packaging moves through six stages over 12&#8211;16 weeks: brief and discovery, concept development, material selection and sampling, production artwork, tooling and production, and QC/shipping. The brief is the single most important deliverable. Material and structural decisions lock during weeks 4&#8211;6; changes after sampling approval are expensive.</p>
+          </div>
+
       <div className="blog-body">
             <p>The packaging development process typically takes 12-16 weeks from brief to delivered product, moving through six stages: discovery, concept development, material selection and sampling, production artwork, tooling and production, and quality inspection and shipping. Each stage has specific decisions, deliverables, and approval gates that determine whether the project stays on timeline and on budget.</p>
             <p>If you have never developed custom packaging before, the process can feel opaque. Timelines slip for reasons that seem unclear. Costs appear at stages you did not expect. Decisions you thought were final turn out to need revision.</p>
@@ -162,7 +167,7 @@ export default function PostClient() {
       <div className="blog-body">
             <h2>Know the Process Before You Start the Process</h2>
             <p>Custom packaging development is not mysterious. It is a sequence of decisions, each building on the last, with clear inputs and outputs at every stage. The brands that move through it efficiently are the ones that understand the stages, make decisions promptly, and treat their packaging partner as a collaborator, not a vendor waiting for instructions.</p>
-            <p>If you are developing custom packaging for a beauty, wellness, or consumer brand and want a partner who manages the process from brief through delivery, we can walk through your project scope and build a realistic timeline.</p>
+            <p>If you are developing custom packaging for a beauty, wellness, or consumer brand and want a partner who manages the process from brief through delivery, we can walk through your project scope and build a realistic timeline. See the process applied at scale in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=dev_process_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
       </div>

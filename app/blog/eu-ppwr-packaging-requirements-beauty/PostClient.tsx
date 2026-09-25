@@ -24,6 +24,11 @@ export default function PostClient() {
         <VerifiedAsOf />
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What does EU PPWR require for beauty brands?</h2>
+            <p>The EU PPWR mandates recycled content targets, recyclability-by-design rules, reuse obligations, and harmonized labeling for all packaging sold in the EU. Contact-sensitive plastic packaging must contain 10% PCR by 2030 and 25% by 2040. All packaging must be designed for recycling by 2030 and recyclable at scale by 2035.</p>
+          </div>
+
       <div className="blog-body">
             <p>The EU Packaging and Packaging Waste Regulation sets recycled content targets, recyclability design rules, reuse obligations, and labeling requirements for all packaging placed on the European market. If your beauty brand sells into the EU or plans to, these EU PPWR packaging requirements apply regardless of where you are based.</p>
             <p>This is the most significant packaging regulation since California&apos;s SB 54. The difference is scope. SB 54 targets one state&apos;s waste stream. PPWR targets 27 countries and roughly 450 million consumers. And unlike many earlier EU directives, PPWR is a regulation, meaning it applies directly across all member states without individual country transposition.</p>

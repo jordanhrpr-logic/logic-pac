@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Mono-Material Packaging Design for Beauty: The Technical Guide',
+  title: 'Mono-Material Packaging Design Guide',
   description: 'Learn mono-material packaging design for beauty brands: recyclability, material choices, cost tradeoffs, compliance, and design limits. Use this guide.',
   alternates: { canonical: '/blog/mono-material-packaging-design' },
   openGraph: {

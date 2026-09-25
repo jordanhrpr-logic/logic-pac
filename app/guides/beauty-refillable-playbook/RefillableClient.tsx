@@ -257,7 +257,7 @@ export default function RefillableClient() {
               <li><strong>Can the primary survive repeated use?</strong> Durability, component weight, and the refill format all affect the environmental case.</li>
               <li><strong>Can you publish actual adoption data?</strong> If not, you&apos;re not ready to make the public sustainability claim.</li>
             </ol>
-            <p>If you answered yes to all five, you&apos;re ready to design the system. If even one answer is no, you have a different problem to solve first &mdash; usually around customer retention, not packaging.</p>
+            <p>If you answered yes to all five, you&apos;re ready to design the system. If even one answer is no, you have a different problem to solve first &mdash; usually around customer retention, not packaging. For a case study in removing packaging complexity without weakening the brand, see the <Link href="/work/artilect-packaging-reduction?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=refillable_artilect_case_study">Artilect packaging reduction</Link>.</p>
 
             <GuideBottomLine>Do not start with the most beautiful refill mechanism. Start with the product customers already replenish, the adoption needed to support the model, and the channel that can explain and stock the system. If those pieces do not hold, solve the repeat-purchase problem before adding packaging complexity.</GuideBottomLine>
 

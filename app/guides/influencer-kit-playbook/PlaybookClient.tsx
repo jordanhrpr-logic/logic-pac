@@ -302,6 +302,7 @@ export default function PlaybookClient() {
               <p>Tell us your campaign, timeline, and quantities. We&apos;ll give you a realistic plan and quote.</p>
               <button className="bi" onClick={() => openModal('Guide - Influencer Kit')}>Book a Consultation</button>
             </div>
+            <p>See these principles in a real project: the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=influencer_playbook_adidas_case_study">Adidas Nemeziz launch kit</Link> used rigid construction, a multi-level reveal, and product-specific compartments to drive the filming moment.</p>
             <GuideBottomLine>A PR kit cannot guarantee a post. It can remove reasons not to engage: unclear presentation, damaged product, generic execution, and a reveal that gives the creator nothing to work with. Build the kit around the product story, then make every production decision support that story.</GuideBottomLine>
           </div>
         </div>

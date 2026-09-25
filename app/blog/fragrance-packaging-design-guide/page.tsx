@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Fragrance Packaging Design: What Makes Perfume Packaging Premium',
+  title: 'Fragrance Packaging Design Guide',
   description: 'Learn what makes fragrance packaging feel premium, including box structure, board weight, finishes, costs, timelines, and common perfume packaging mistakes.',
   alternates: { canonical: '/blog/fragrance-packaging-design-guide' },
   openGraph: {

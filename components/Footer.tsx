@@ -49,7 +49,11 @@ export default function Footer() {
       </div>
       <div className="ftrb">
         <p>&copy; {new Date().getFullYear()} Logic Pac. A Logic Agency Inc. company.</p>
-        <a href="https://logicagencyinc.com" target="_blank" rel="noopener">logicagencyinc.com</a>
+        <div className="ftrb-links">
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
+          <a href="https://logicagencyinc.com" target="_blank" rel="noopener">logicagencyinc.com</a>
+        </div>
       </div>
     </footer>
   )

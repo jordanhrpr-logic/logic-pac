@@ -24,6 +24,11 @@ export default function PostClient() {
         <VerifiedAsOf />
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What actually works in sustainable beauty packaging?</h2>
+            <p>Sustainable beauty packaging works when you treat it as a system, not a material swap. PCR, FSC paperboard, mono-material design, and refillable formats all perform &#8212; but only when the material is tested, the claim is documented, and the structure still protects the formula. SB 54, EU PPWR, and the FTC Green Guides are closing the window on vague claims.</p>
+          </div>
+
       <div className="blog-body">
             <p>Sustainable beauty packaging works when the material performs, the claim can be verified, and the structure still protects the product. PCR, FSC paper, mono-material designs, and refillable systems can all work. They fail when a brand treats sustainability as a label instead of a packaging architecture.</p>
             <p>The beauty category has a specific problem. Most products use multiple packaging layers: primary packaging, secondary cartons, inserts, labels, seals, shippers, and sometimes retail displays. A &ldquo;green&rdquo; bottle doesn&apos;t fix a wasteful system around it.</p>
@@ -266,7 +271,7 @@ export default function PostClient() {
       <div className="blog-body">
             <h2>The Bottom Line</h2>
             <p>The strongest sustainable beauty packaging starts with structure. Material first. Claim second.</p>
-            <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board.</p>
+            <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board. The <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_artilect_case_study">Artilect packaging reduction case study</Link> shows what material-first sustainability looks like in a real program.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a sustainable packaging consultation</a> and we&apos;ll help you build the system before the claim.</p>
             <section className="sources-section">
               <h2>Primary Sources</h2>

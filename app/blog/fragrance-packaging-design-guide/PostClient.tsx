@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What makes perfume packaging worth the cost?</h2>
+            <p>Custom fragrance packaging runs $5&#8211;25+/unit for secondary packaging because the box is part of the product experience. Standard formats land at $5&#8211;8/unit, premium at $8&#8211;15, and luxury coffrets at $15&#8211;25+. The biggest mistakes are underbuilding the insert so the bottle rattles, overstacking finishes, and designing without retail shelf constraints.</p>
+          </div>
+
       <div className="blog-body">
             <p>Fragrance packaging design costs more than most beauty packaging because the box is part of the product experience, not just a container. A custom perfume box often runs $5-$25+ per unit for secondary packaging alone, depending on board weight, closure style, paper, inserts, finishes, and order volume.</p>
             <p>The reason is simple: fragrance is bought with the senses before it is worn. The weight of the box, the drag of the lid, the way the bottle sits in the insert, the foil on the logo, and the sound of the closure all tell the customer what the bottle is worth before the first spray.</p>

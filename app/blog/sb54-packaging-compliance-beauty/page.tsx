@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'SB 54 Packaging Compliance for Beauty Brands: Deadlines, Requirements, and What to Do Now',
+  title: 'SB 54 Packaging Compliance for Beauty',
   description: 'California\'s SB 54 Packaging Reduction Act creates real compliance pressure for beauty brands by 2027. Primary, secondary, and tertiary packaging audit frameworks and compliance roadmap.',
   alternates: { canonical: '/blog/sb54-packaging-compliance-beauty' },
   openGraph: {

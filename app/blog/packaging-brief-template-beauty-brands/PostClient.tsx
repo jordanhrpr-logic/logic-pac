@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What should a packaging brief include?</h2>
+            <p>A supplier-ready brief needs 10 sections: project context, brand overview, product specs, distribution channels, volume by SKU, target unit cost, material and sustainability requirements, finish direction, timeline with real dates, and a named stakeholder approval chain. The most expensive omissions are volume, target cost, launch date, and sustainability specs.</p>
+          </div>
+
       <div className="blog-body">
             <p>A packaging brief template should give a supplier enough information to quote accurately, sample correctly, and avoid expensive revision loops. For beauty brands, that means product specs, format, volume, budget, timeline, materials, finishes, sustainability requirements, compliance needs, and decision ownership.</p>
             <p>Most packaging delays start before the supplier ever touches the project. The brief is incomplete. The volume is vague. The budget is hidden. The finish direction is a mood board with no constraints. Then everyone acts surprised when the first quote is wrong.</p>
@@ -366,7 +371,7 @@ export default function PostClient() {
             <p>Packaging projects don&apos;t usually fail because the supplier can&apos;t make a box.</p>
             <p>They fail because the team started without enough clarity.</p>
             <p>The brief is where that gets fixed. Product specs. Volume. Budget. Channel. Materials. Timeline. Approval chain. Put the real constraints on the page before the first sample.</p>
-            <p>If you need help turning a rough packaging idea into a supplier-ready brief, we can help.</p>
+            <p>If you need help turning a rough packaging idea into a supplier-ready brief, we can help. See what a well-briefed packaging program produces at scale in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=brief_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_brief_consultation" target="_blank" rel="noopener noreferrer">Book a packaging brief consultation</a> and we&apos;ll help you build the document that makes the rest of the project work.</p>
       </div>
 

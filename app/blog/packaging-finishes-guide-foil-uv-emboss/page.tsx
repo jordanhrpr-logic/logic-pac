@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Packaging Finishes Explained: Foil Stamping, Spot UV, Embossing, and Soft-Touch for Beauty Brands',
+  title: 'Packaging Finishes: Foil, UV, Emboss Guide',
   description: 'What each packaging finish costs, when to use it, and how to combine them. Foil stamping ($0.05-$0.50/unit), spot UV ($0.05-$0.30), embossing ($0.05-$0.40), and soft-touch ($0.10-$0.60).',
   alternates: { canonical: '/blog/packaging-finishes-guide-foil-uv-emboss' },
   openGraph: {

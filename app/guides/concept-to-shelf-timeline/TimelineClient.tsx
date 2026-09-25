@@ -213,6 +213,7 @@ export default function TimelineClient() {
               <li>Product fits, dispenses, and seals correctly</li>
             </ul>
 
+            <p>For a real-world example of this timeline executed across a growing SKU portfolio, see the <Link href="/work/epicutis?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=timeline_epicutis_case_study">Epicutis packaging program case study</Link>.</p>
             <GuideBottomLine>Speed comes from fewer late decisions, not less diligence. A clear brief, named approvers, defined testing, and an agreed freight plan do more to protect launch timing than asking production to move faster after the project has drifted.</GuideBottomLine>
           </div>
         </div>

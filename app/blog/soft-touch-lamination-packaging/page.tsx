@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Soft Touch Lamination for Packaging: When It Works, When It Doesn&apos;t, and What It Costs',
+  title: 'Soft Touch Lamination: Pros, Cons & Costs',
   description: 'Soft touch lamination adds a velvet tactile surface to packaging at $0.08-$0.60 per unit. Learn when it works, when it doesn&apos;t, and how it compares to alternatives.',
   alternates: { canonical: '/blog/soft-touch-lamination-packaging' },
   openGraph: {

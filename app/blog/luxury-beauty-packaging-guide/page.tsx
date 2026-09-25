@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Luxury Beauty Packaging: What Separates Premium From Mass Market',
+  title: 'Luxury vs. Mass Market Beauty Packaging',
   description: 'Luxury beauty packaging differs from mass market in structural weight, closure engineering, finish layering, and sensory sequencing. Here&apos;s the full breakdown.',
   alternates: { canonical: '/blog/luxury-beauty-packaging-guide' },
   openGraph: {

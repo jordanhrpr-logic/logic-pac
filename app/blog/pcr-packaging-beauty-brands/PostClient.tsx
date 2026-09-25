@@ -24,6 +24,11 @@ export default function PostClient() {
         <VerifiedAsOf />
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What does PCR packaging cost and require?</h2>
+            <p>PCR (post-consumer recycled) packaging adds a 10&#8211;30% cost premium over virgin resin, depending on percentage, resin type, and color requirements. At 30% PCR the material performs nearly identically to virgin. At 100% PCR, expect gray or amber tint and mandatory formula compatibility testing. Get third-party certified documentation before putting any percentage on your label.</p>
+          </div>
+
       <div className="blog-body">
             <p>PCR (post-consumer recycled) packaging uses plastic resin derived from consumer waste &mdash; bottles, containers, and packaging that completed a use cycle, entered the recycling stream, and were reprocessed into new material. For beauty brands, PCR content typically appears in PET bottles, HDPE containers, PP caps, and tubes, with content percentages ranging from <strong>30% to 100% PCR</strong> depending on material availability, formula compatibility, and cost tolerance.</p>
             <p>The sustainability story around PCR is compelling. The reality is more complicated. PCR supply is inconsistent, quality varies by source, color and clarity limitations affect brand aesthetics, formula compatibility must be tested, and most percentage claims in the beauty industry are difficult for consumers to verify. Some of what passes for &ldquo;sustainable packaging&rdquo; in beauty is greenwashing-lite &mdash; a 15% PCR claim on a non-recyclable multi-material component does not move the needle.</p>

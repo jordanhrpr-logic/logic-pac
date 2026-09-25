@@ -358,7 +358,7 @@ export default function MaterialClient() {
               <li><strong>What&apos;s your volume profile?</strong> Custom tooling justifies at scale; stock formats win at lower volume.</li>
               <li><strong>What sustainability commitments have you made?</strong> Public claims need supply-chain evidence.</li>
             </ol>
-            <p>If any of those answers are unclear, you&apos;re not ready to pick a material yet. You&apos;re ready to ask better questions.</p>
+            <p>If any of those answers are unclear, you&apos;re not ready to pick a material yet. You&apos;re ready to ask better questions. See how material decisions drove a packaging reduction program in the <Link href="/work/artilect-packaging-reduction?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=material_artilect_case_study">Artilect case study</Link>.</p>
 
             <section className="sources-section">
               <h2>Sources</h2>

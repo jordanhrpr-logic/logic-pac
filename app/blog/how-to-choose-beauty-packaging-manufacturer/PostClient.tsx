@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What should you verify before signing?</h2>
+            <p>Verify five things: category experience with samples you can hold, material sourcing depth, clear MOQs by format with reorder terms, a documented sample-to-production QC process, and a phase-by-phase timeline. The biggest risk is not price. It is a partner who says yes to everything and hides constraints until production is running.</p>
+          </div>
+
       <div className="blog-body">
             <p>Choose a beauty packaging manufacturer by verifying five things before you sign: category experience, production capability, material sourcing, quality control, and timeline transparency. A good manufacturer can explain what they make, what they don&apos;t, what it costs, what can go wrong, and how they catch problems before production ships.</p>
             <p>The wrong partner will make packaging feel cheaper at the quote stage and more expensive everywhere else.</p>
@@ -285,7 +290,7 @@ export default function PostClient() {
             <p>A good beauty packaging manufacturer does more than make the thing you ask for.</p>
             <p>They protect the project from bad assumptions. Wrong material. Wrong MOQ. Wrong timeline. Wrong finish. Wrong supplier. Wrong cost target.</p>
             <p>That is what you are really buying: production judgment.</p>
-            <p>If you are choosing a packaging partner for a launch, redesign, influencer kit, or retail program, we can help you evaluate the options before the project gets expensive.</p>
+            <p>If you are choosing a packaging partner for a launch, redesign, influencer kit, or retail program, we can help you evaluate the options before the project gets expensive. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_epicutis_case_study">Epicutis case study</Link> shows what a full design-to-production packaging partnership looks like across 21+ SKUs.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_consultation" target="_blank" rel="noopener noreferrer">Book a packaging manufacturer consultation</a> and we&apos;ll help you ask the right questions before you sign.</p>
       </div>
 

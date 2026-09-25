@@ -24,6 +24,11 @@ export default function PostClient() {
         <VerifiedAsOf />
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What should beauty brands do for SB 54?</h2>
+            <p>Start with a full packaging audit &#8212; primary containers, secondary cartons, inserts, labels, shippers, and every plastic component sold into California. SB 54 applies if your packaging enters the California market regardless of where your brand is based. The practical 2027 work is registration, data readiness, supplier documentation, and early material transition planning.</p>
+          </div>
+
       <div className="blog-body">
             <p>SB 54 packaging compliance for beauty brands starts with a full packaging audit: primary containers, secondary cartons, inserts, labels, shippers, and every plastic component used for products sold into California. The law is not just a plastics issue. It is a packaging data issue.</p>
             <p>Beauty brands are exposed because the category uses layered packaging. A serum may have a glass bottle, plastic dropper, paper carton, foil stamp, insert, label, e-commerce shipper, tape, and void fill. SB 54 forces brands to understand that system component by component.</p>

@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How should you structure gift set packaging?</h2>
+            <p>Gift set packaging has four primary structures: rigid box with insert ($6&#8211;18/unit), folding carton with tray ($2&#8211;6/unit), sleeve + tray ($4&#8211;12/unit), and window box ($3&#8211;8/unit). Component count is the number one cost driver &#8212; jumping from 3 to 5 products can increase cost 30&#8211;50% because the insert gets more complex, the box gets larger, and assembly time increases.</p>
+          </div>
+
       <div className="blog-body">
             <p>Gift set packaging design starts with a structural decision: how do you hold 3-7 different products in a single box that looks intentional, protects everything during shipping, and meets the price point the margin requires? Multi-product gift set packaging is the second most common custom format we produce after standard cartons, and it&apos;s where the gap between &ldquo;I want a beautiful box&rdquo; and &ldquo;here&apos;s what it actually costs to build&rdquo; hits hardest.</p>
             <p>The answer depends on three variables: how many products are in the set, how different their shapes and sizes are, and which channel the set ships through. A 3-product skincare routine in a rigid box with a custom insert is a different project than a 7-SKU discovery kit in a folding carton with a die-cut tray destined for Target&apos;s holiday endcap.</p>
@@ -147,7 +152,7 @@ export default function PostClient() {
       <div className="blog-body">
             <h2>What to Do Next</h2>
             <p>Gift set packaging design is a series of decisions that compound. The structure determines cost. The insert determines product fit. The finish determines shelf presence. The timeline determines whether you have room to get it right.</p>
-            <p>Start with the brief. Define the products, the target cost, the channel, and the quantity. That gives us enough to recommend a structure, quote realistic pricing, and map the production timeline.</p>
+            <p>Start with the brief. Define the products, the target cost, the channel, and the quantity. That gives us enough to recommend a structure, quote realistic pricing, and map the production timeline. See how we developed gift set packaging for a growing skincare line in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=gift_set_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=gift-set-packaging-design" target="_blank" rel="noopener noreferrer">Book a consultation</a> to scope your gift set packaging project.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, helping beauty and wellness brands design, source, and manufacture packaging from concept to delivery.*</p>
       </div>

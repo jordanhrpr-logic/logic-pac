@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">When is soft-touch lamination worth the cost?</h2>
+            <p>Soft-touch lamination adds $0.08&#8211;0.60 per unit and creates the strongest tactile luxury signal of any standard lamination. It works best on beauty packaging in the $25&#8211;150 retail range where consumers evaluate products in hand. The main tradeoff is scuff resistance &#8212; soft-touch surfaces mark more easily than gloss or standard matte, especially on dark colors.</p>
+          </div>
+
       <div className="blog-body">
             <p>Soft touch lamination is a polyester or polypropylene film applied to printed packaging that creates a velvet-like tactile surface. It typically adds <strong>$0.08-$0.60 per unit</strong> depending on substrate, coverage area, and volume. It is one of the most requested packaging finishes in beauty and wellness because it transforms how a product feels in the hand &mdash; and feeling drives purchasing decisions at shelf more than most brands realize.</p>
             <p>The finish is popular for good reason. A soft-touch carton or box feels materially different from a standard matte or gloss-laminated surface. It registers as premium within the first second of contact. Consumers describe it as &ldquo;velvety,&rdquo; &ldquo;luxurious,&rdquo; or &ldquo;expensive&rdquo; without being prompted. For beauty brands competing in the $15-$75 price range where perceived value determines conversion, that tactile signal can justify the cost.</p>

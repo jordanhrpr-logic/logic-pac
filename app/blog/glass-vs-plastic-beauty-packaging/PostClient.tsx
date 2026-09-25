@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">Should beauty brands use glass or plastic?</h2>
+            <p>Neither is universally better. Glass costs 3&#8211;5x more than PET, weighs 5&#8211;10x more, and breaks in transit at 1&#8211;3% rates. But it signals premium, recycles infinitely, and protects fragrance and active-rich formulas. Plastic is lighter, cheaper, and safer for e-commerce. Most brands use both: glass for hero SKUs and plastic for the rest.</p>
+          </div>
+
       <div className="blog-body">
             <p>The short answer: neither glass nor plastic is universally better for beauty packaging. Glass costs 3&ndash;5x more than PET at equivalent volume, weighs 5&ndash;10x more per unit, and breaks in transit. But it signals premium, recycles infinitely, and holds fragrance formulas without interaction. Plastic is lighter, cheaper, and safer for e-commerce &mdash; but carries a perception penalty in prestige skincare and requires a stronger sustainability narrative to defend.</p>
             <p>The real question isn&apos;t &ldquo;glass or plastic?&rdquo; It&apos;s: <strong>what does the package need to do, for which product, in which channel, at what margin?</strong></p>

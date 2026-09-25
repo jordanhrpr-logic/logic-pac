@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">Should you use HDPE or PET for beauty packaging?</h2>
+            <p>The formula decides the material, not aesthetics. HDPE offers superior chemical resistance for products with essential oils, surfactants, and high-alcohol content. PET offers glass-like clarity for serums, toners, and products where visibility is part of the brand experience. The cost difference is $0.05&#8211;0.20 per unit &#8212; too small to drive the decision. Run compatibility testing first.</p>
+          </div>
+
       <div className="blog-body">
             <p>HDPE (high-density polyethylene) and PET (polyethylene terephthalate) are the two most commonly used plastics in beauty packaging, and the choice between them is primarily formula-driven &mdash; not aesthetic. HDPE offers superior chemical resistance and is the better choice for formulas containing essential oils, surfactants, and aggressive actives. PET offers superior clarity and is the better choice when product visibility and a glass-like appearance matter.</p>
             <p>That is the short answer. The longer answer involves barrier properties, recyclability, PCR availability, weight, cost per unit, decoration compatibility, and shelf life impact. The wrong choice can cause stress cracking, formula degradation, or consumer complaints about leaking, discoloration, or off-odor &mdash; all problems that surface months after production, not during sampling.</p>

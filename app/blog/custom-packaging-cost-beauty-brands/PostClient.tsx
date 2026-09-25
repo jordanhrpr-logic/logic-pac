@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What does custom beauty packaging cost per unit?</h2>
+            <p>Custom beauty packaging costs $0.30&#8211;15.00/unit depending on format. Folding cartons land at $0.50&#8211;3.00/unit. Rigid set-up boxes run $3.00&#8211;15.00/unit. Tubes, bottles, and jars range from $0.30&#8211;5.00/unit before decoration. Specialty finishes add $0.05&#8211;1.50/unit. The lowest quote is rarely the cheapest total cost once you factor tooling, freight, and defect rate.</p>
+          </div>
+
       <div className="blog-body">
             <p>Custom packaging for beauty brands typically costs <strong>$0.30&ndash;$15.00 per unit</strong> depending on the format, material, finish, and order volume. Folding cartons usually land around <strong>$0.50&ndash;$3.00 per unit</strong>. Rigid set-up boxes usually land around <strong>$3.00&ndash;$15.00 per unit</strong>. Tubes, bottles, and jars can range from <strong>$0.30&ndash;$5.00 per unit</strong> before decoration, pumps, caps, cartons, or inserts.</p>
             <p>That range is wide because &ldquo;custom packaging&rdquo; is not one thing. A printed folding carton for a serum bottle is not priced like a rigid PR kit box with a magnetic closure, foil stamp, molded insert, and specialty paper wrap.</p>
@@ -242,7 +247,7 @@ export default function PostClient() {
             <h2>The Bottom Line</h2>
             <p>Custom packaging cost is not mysterious. It is a stack of decisions: format, material, finish, tooling, volume, freight, and timeline.</p>
             <p>Beauty brands get into trouble when they treat packaging as a design expense only. It is also a margin decision. A launch decision. A retail decision. A customer-experience decision.</p>
-            <p>The goal is not to spend the least. The goal is to spend where the customer notices, simplify where they do not, and build a packaging system the brand can reorder without starting over every time.</p>
+            <p>The goal is not to spend the least. The goal is to spend where the customer notices, simplify where they do not, and build a packaging system the brand can reorder without starting over every time. See how that works in practice: the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_epicutis_case_study">Epicutis packaging program</Link> scaled to 21+ SKUs with verified cost savings, and the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_artilect_case_study">Artilect packaging reduction</Link> removed material without weakening the brand experience.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will help you pressure-test the format, materials, finishes, and quantity before you commit to production.</p>
       </div>
 

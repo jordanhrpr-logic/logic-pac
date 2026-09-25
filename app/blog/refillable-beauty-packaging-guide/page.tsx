@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Refillable Beauty Packaging: A Design Guide That Includes the Hard Parts',
+  title: 'Refillable Beauty Packaging Design Guide',
   description: 'Refillable beauty packaging works when the system is designed for real consumer behavior. Learn refill types, engineering, cost modeling, and adoption data.',
   alternates: { canonical: '/blog/refillable-beauty-packaging-guide' },
   openGraph: {

@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'How to Design an Influencer Kit That Actually Gets Posted (Not Thrown Away)',
+  title: 'Influencer Kit Design That Gets Posted',
   description: 'The 5 elements that separate kits that get filmed from kits that get recycled. Real cost ranges ($8-50+/unit), production timelines, and how to brief your packaging partner.',
   alternates: { canonical: '/blog/influencer-kit-packaging-design' },
   openGraph: {

@@ -446,6 +446,8 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .ftrc a:hover{color:var(--lime)}
 .ftrb{padding-top:28px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 .ftrb p,.ftrb a{font-size:11px;color:rgba(255,255,255,.35);text-decoration:none}
+.ftrb-links{display:flex;gap:16px;align-items:center}
+.ftrb-links a:hover{color:rgba(255,255,255,.6)}
 /* ── GUIDES INDEX ── */
 .gidx{max-width:960px;margin:0 auto;padding:80px 48px 96px}
 .gidx>h1{font-family:'DM Serif Display',serif;font-size:clamp(32px,4vw,44px);font-weight:400;color:var(--navy);margin-bottom:12px}

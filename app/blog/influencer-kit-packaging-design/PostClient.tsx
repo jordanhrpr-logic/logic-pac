@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How do you design a kit that gets posted?</h2>
+            <p>Engineer one clear reveal moment in the first 3&#8211;5 seconds after the lid opens. Kits designed around a filming moment see higher post rates than decorated shipping boxes. Use texture contrast, stage products so filming requires zero rearrangement, and include one shareable detail worth showing the camera. Production runs 6&#8211;10 weeks standard, 10&#8211;12 for fully custom rigid builds.</p>
+          </div>
+
       <div className="blog-body">
             <p>To design influencer kit packaging that actually gets posted, engineer one clear reveal moment, choose materials that read as premium on camera, stage products so filming is intuitive, include one shareable detail worth showing the lens, and ship at a weight that says &ldquo;this matters&rdquo; before the box opens. The kits that generate organic content aren&apos;t louder. They&apos;re more intentional about what happens in the first five seconds after the lid comes off.</p>
             <p>We&apos;ve produced influencer kits ranging from 50-unit VIP drops to 5,000-unit creator programs. The pattern is consistent: brands that design around the filming moment get 3&ndash;5x the post rate of brands that design around the product list.</p>
@@ -133,7 +138,7 @@ export default function PostClient() {
             <h2>Start With the Moment, Not the Box</h2>
             <p>The kits that generate content were designed around a specific filming moment, not a product list. Decide your one reveal. Build the structure around it. Choose materials that support it on camera. Stage products so the creator doesn&apos;t rearrange anything. Include one detail worth showing. Ship it at a weight that says &ldquo;pay attention.&rdquo;</p>
             <p>Everything else is logistics. Important logistics&mdash;timeline, fulfillment, freight, storage&mdash;but logistics that follow from the design decision, not the other way around.</p>
-            <p>For the full structural framework, production specs, and format comparisons, read the <Link href="/guides/influencer-kit-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_playbook">Influencer Kit Playbook</Link>. Ready to move from concept to production? <Link href="/influencer?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_capability">See what we build for influencer campaigns</Link>.</p>
+            <p>For the full structural framework, production specs, and format comparisons, read the <Link href="/guides/influencer-kit-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_playbook">Influencer Kit Playbook</Link>. See how these principles came together in the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_adidas_case_study">Adidas Nemeziz launch kit</Link>. Ready to move from concept to production? <Link href="/influencer?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_capability">See what we build for influencer campaigns</Link>.</p>
       </div>
 
       <BlogFAQ

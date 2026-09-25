@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">Which packaging finishes are worth the cost?</h2>
+            <p>Common beauty packaging finishes add $0.05&#8211;0.60 per unit: soft-touch lamination ($0.08&#8211;0.20), foil stamping ($0.15&#8211;0.60 plus die), spot UV ($0.10&#8211;0.30), embossing/debossing ($0.10&#8211;0.40 plus die). The strongest premium packaging uses one signature finish as the hero, not every available effect.</p>
+          </div>
+
       <div className="blog-body">
             <p>Packaging finishes usually add <strong>$0.05&ndash;$0.60 per unit</strong> for common effects like foil stamping, embossing, spot UV, soft-touch lamination, and interior printing, with specialty coatings and large coverage areas costing more. The right finish can make a simple structure feel premium. The wrong stack of finishes can make an expensive box feel confused.</p>
             <p>For beauty brands, finishes are not decoration after the fact. They&apos;re how the package catches light, changes hand feel, signals price point, and creates a sensory memory before the customer opens the product.</p>

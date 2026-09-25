@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Unboxing Experience Design: The Psychology of Packaging That Gets Filmed',
+  title: 'Unboxing Experience Design Psychology',
   description: 'Learn unboxing experience design for beauty brands: reveal moments, inserts, textures, packaging structure, costs, and retail fit. Plan before launch.',
   alternates: { canonical: '/blog/unboxing-experience-design-guide' },
   openGraph: {

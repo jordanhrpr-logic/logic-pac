@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Custom Cosmetic Packaging Formats: Every Option Explained for Beauty Brands',
+  title: 'Custom Cosmetic Packaging Formats',
   description: 'Learn custom cosmetic packaging formats for beauty brands: bottles, jars, tubes, cartons, compacts, airless systems, and cost tradeoffs. Use this guide.',
   alternates: { canonical: '/blog/custom-cosmetic-packaging-formats' },
   openGraph: {

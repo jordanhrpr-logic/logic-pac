@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Advent Calendar Packaging for Beauty Brands: What It Actually Takes to Produce One',
+  title: 'Advent Calendar Packaging for Beauty',
   description: 'Custom advent calendar packaging for beauty brands costs $8-25+ per unit at 1,000-5,000 units and requires 6-8 months lead time. Structures, costs, and timeline inside.',
   alternates: { canonical: '/blog/advent-calendar-packaging-beauty' },
   openGraph: {

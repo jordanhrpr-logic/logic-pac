@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How do you design packaging that gets filmed?</h2>
+            <p>Engineer the sequence, not just the surface. A three-layer reveal &#8212; outer shell, transition layer (tissue, card, ribbon), product reveal in a structured insert &#8212; creates the 10&#8211;15 second arc that maps to a Reel or TikTok. A $12 box that nails the sequence outperforms a $40 box that skips the transition layer. Camera-readiness is a design spec: brand visibility at filming angles, finishes that catch light, contrast against common unboxing surfaces.</p>
+          </div>
+
       <div className="blog-body">
             <p>Unboxing experience design is the discipline of engineering a packaging sequence that makes someone reach for their phone instead of their recycling bin. The difference between those two outcomes is not budget. It&apos;s design decisions: what the recipient sees first, what they touch, what they hear, and how long the reveal takes. A $12 box that nails the sequence outperforms a $40 box that doesn&apos;t.</p>
             <p>Every unboxing follows a predictable arc. The recipient sees the outer package. They assess it. They open it. They react to what&apos;s inside. That arc takes 5-15 seconds, and the design of each second determines whether the experience generates content, creates a brand memory, or gets forgotten before the box hits the trash.</p>
@@ -117,7 +122,7 @@ export default function PostClient() {
             <p><strong>Full exterior coverage foil stamping.</strong> A foil-stamped logo creates a luxury accent. Foil stamping the entire exterior panel costs 5-10x more and often reads as over-designed rather than premium. Restraint is the premium signal. Excess is the mass-market signal.</p>
             <p><strong>Multiple unrelated finishes.</strong> Soft-touch plus foil makes sense (tactile + visual contrast). Adding spot UV on top of those two creates visual noise. Each additional finish has diminishing perceptual returns.</p>
             <p><strong>Complex closures that frustrate.</strong> A drawer mechanism that sticks, a ribbon that requires untying, a magnetic lid that&apos;s too strong to open easily. These add cost and subtract from the experience. The best closures feel effortless. Effortlessness requires engineering precision, but the mechanism itself can be simple.</p>
-            <p>For examples of these principles applied to real projects, explore our <Link href="/work?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing-experience-design-guide">work portfolio</Link>.</p>
+            <p>For examples of these principles applied to real projects, explore our <Link href="/work?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing-experience-design-guide">work portfolio</Link> &mdash; including the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing_adidas_case_study">Adidas Nemeziz launch kit</Link>, a multi-level rigid reveal engineered for the camera.</p>
 
             <h2>Designing Unboxing for Different Channels</h2>
             <p>Unboxing design packaging shifts based on where the recipient encounters the box.</p>

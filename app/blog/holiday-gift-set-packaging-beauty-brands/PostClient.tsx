@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How far ahead do you plan holiday gift sets?</h2>
+            <p>Start 5&#8211;7 months before your delivery date. For a November retail floor date, structural planning should begin in January and artwork locked by April. Rigid gift boxes cost $6&#8211;18+ per unit, folding carton kits $2&#8211;6, and advent calendars $8&#8211;30+. The most common failure is not bad design &#8212; it is starting in August.</p>
+          </div>
+
       <div className="blog-body">
             <p>Holiday gift set packaging for beauty brands requires a <strong>5&ndash;7 month lead time</strong> from concept to delivery. Custom holiday gift set packaging that includes rigid structures, specialty finishes, custom inserts, and retailer compliance documentation can&apos;t be compressed into a summer sprint. For Q4 retail placement, brands should begin structural planning by January or February and lock artwork by April.</p>
             <p>Most brands underestimate how quickly that calendar disappears. Between structural tooling, sample rounds, mass production, ocean freight, and kitting, the window between &ldquo;we should start&rdquo; and &ldquo;we&apos;re already late&rdquo; is smaller than it looks.</p>
@@ -193,7 +198,7 @@ export default function PostClient() {
             <h2>Start Your Holiday Packaging Program Now</h2>
             <p>Holiday packaging is a calendar discipline. The brands that win Q4 don&apos;t wait for the marketing team to feel the urgency. They lock the format early, build the brief, approve samples on schedule, and leave room for freight.</p>
             <p>The package can feel seasonal. The process can&apos;t afford to be.</p>
-            <p>If you&apos;re planning holiday gift sets for this year&apos;s Q4, we should be talking now. We&apos;ll scope the project, confirm timelines, and tell you what we need to get started.</p>
+            <p>If you&apos;re planning holiday gift sets for this year&apos;s Q4, we should be talking now. We&apos;ll scope the project, confirm timelines, and tell you what we need to get started. See how we produced holiday gift set packaging for a premium skincare brand in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><Link href="/holiday?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_capability">Explore our holiday packaging capabilities</Link> or <a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_gift_set_packaging_consultation" target="_blank" rel="noopener noreferrer">book a holiday kit consultation</a>.</p>
       </div>
 

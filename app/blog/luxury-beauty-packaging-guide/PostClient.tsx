@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What separates luxury from mass market packaging?</h2>
+            <p>Luxury beauty packaging is engineered from the structure outward &#8212; not decorated onto a standard box. Weight, closure resistance, insert precision, and finish hierarchy work together to create perceived value in the first half-second of handling. The structural premium accounts for most of the 3&#8211;5x cost increase over standard packaging. Invest in the bones first.</p>
+          </div>
+
       <div className="blog-body">
             <p>Luxury beauty packaging is not mass-market packaging with nicer materials. It is a fundamentally different design philosophy &mdash; one where structural weight, closure precision, finish layering, insert engineering, and sensory sequencing work together to create perceived value before the product is ever used. The difference is felt in the hand before it is seen by the eye.</p>
             <p>That distinction matters because most beauty brands that try to &ldquo;go luxury&rdquo; focus on surface effects &mdash; adding a foil stamp, upgrading to a heavier board, choosing a darker color palette. Those are finish decisions, not packaging decisions. Real luxury packaging is engineered from the structure outward. The weight is intentional. The closure has resistance. The insert holds the product like it belongs there. The finish serves the architecture, not the other way around.</p>
@@ -158,7 +163,7 @@ export default function PostClient() {
 
       <div className="blog-body">
             <h2>What to Do Next</h2>
-            <p>Luxury packaging development starts with a structure conversation, not a mood board. Before committing to finishes or materials, define the weight, the closure, and the insert architecture. Everything else follows.</p>
+            <p>Luxury packaging development starts with a structure conversation, not a mood board. Before committing to finishes or materials, define the weight, the closure, and the insert architecture. Everything else follows. See how a prestige skincare brand built a coordinated luxury packaging system in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_consultation" target="_blank" rel="noopener noreferrer">Book a consultation</a> and we will help you define the structural foundation, finish hierarchy, and cost model for your luxury packaging project.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
       </div>

@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What does it take to produce a beauty advent calendar?</h2>
+            <p>A custom beauty advent calendar requires 6&#8211;8 months of lead time and costs $8&#8211;25+ per unit at 1,000&#8211;5,000 units. Door-style calendars are cheapest ($8&#8211;14/unit); drawer systems run $16&#8211;25+ with $3,000&#8211;8,000 in tooling. Insert engineering for 12&#8211;25 differently sized products is the most underestimated technical challenge. Start in January for November delivery.</p>
+          </div>
+
       <div className="blog-body">
             <p>Custom advent calendar packaging is the most structurally complex holiday format a beauty brand can produce. A 24-door advent calendar requires <strong>6-8 months of lead time</strong>, costs <strong>$8-25+ per unit</strong> at production runs of 1,000-5,000 units, and involves more engineering decisions than most brand managers expect when someone on the leadership team says &ldquo;we should do an advent calendar this year.&rdquo;</p>
             <p>That sentence launches a project most teams aren&apos;t prepared for. An advent calendar isn&apos;t a gift set with more compartments. It&apos;s a structural engineering project with 12-25 individually sized cavities, each requiring its own door or drawer mechanism, each housing a different product format, all held together by a structure rigid enough to survive shipping and look premium on a retail shelf or in an unboxing video.</p>

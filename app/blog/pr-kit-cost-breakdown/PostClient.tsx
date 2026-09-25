@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How much does a custom PR kit cost per unit?</h2>
+            <p>Custom PR kit packaging runs $8&#8211;15/unit for a basic branded mailer, $15&#8211;30/unit for a structured branded kit, and $30&#8211;75+/unit for a premium unboxing experience &#8212; all excluding product cost. The biggest cost lever is quantity: going from 50 to 500 units can cut per-unit cost by 40&#8211;60%. Brands consistently underbudget kitting labor ($1.50&#8211;5.00/unit) and shipping ($8&#8211;25/unit domestic).</p>
+          </div>
+
       <div className="blog-body">
             <p>Custom PR kit production cost ranges from <strong>$8-15 per unit</strong> for a basic branded mailer to <strong>$30-75+ per unit</strong> for a premium unboxing experience, not including the products inside. The total cost depends on five variables: quantity, structural complexity, insert type, finish quality, and kitting labor. At 500 units, a mid-tier branded kit typically lands at <strong>$18-25 per unit</strong> for the packaging alone.</p>
             <p>Most beauty brands approaching their first PR kit have no frame of reference for what these things actually cost. They&apos;ve seen the unboxing videos. They know they want &ldquo;something like that.&rdquo; But the distance between a corrugated mailer with tissue paper and a rigid box with custom foam inserts and foil stamping is $20-60+ per unit, and the right answer isn&apos;t always the expensive one.</p>
@@ -153,6 +158,7 @@ export default function PostClient() {
             <h2>What to Do Next</h2>
             <p>Start with the send list. How many influencers, what tier of creator, and what&apos;s the occasion? The answers determine which packaging tier makes sense, what the per-unit budget should be, and whether the ROI math works.</p>
             <p>We&apos;ll quote the packaging, map the timeline, and show you where to allocate budget for maximum post rate.</p>
+            <p>For a real example of the premium tier in production, see the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pr_kit_cost_adidas_case_study">Adidas Nemeziz launch kit case study</Link>.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pr-kit-cost-breakdown" target="_blank" rel="noopener noreferrer">Book a consultation</a> to scope your PR kit program.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, helping beauty and wellness brands design, source, and manufacture packaging from concept to delivery.*</p>
       </div>

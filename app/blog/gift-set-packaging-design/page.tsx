@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Gift Set Packaging Design: Structures, Inserts, and Cost Decisions for Multi-Product Kits',
+  title: 'Gift Set Packaging: Structure & Costs',
   description: 'Gift set packaging design for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, cost drivers, and retailer display requirements.',
   alternates: { canonical: '/blog/gift-set-packaging-design' },
   openGraph: {

@@ -18,6 +18,8 @@ const staticRoutes: Array<{ path: string; lastmod: string; changefreq: 'monthly'
   { path: '/jewelry', lastmod: '2026-05-20', changefreq: 'monthly', priority: 0.9 },
   { path: '/guides', lastmod: '2026-03-13', changefreq: 'monthly', priority: 0.8 },
   { path: '/blog', lastmod: '2026-05-21', changefreq: 'weekly', priority: 0.8 },
+  { path: '/privacy', lastmod: '2026-09-25', changefreq: 'monthly', priority: 0.2 },
+  { path: '/terms', lastmod: '2026-09-25', changefreq: 'monthly', priority: 0.2 },
 ]
 
 const guideRoutes: Array<{ slug: string; lastmod: string }> = [

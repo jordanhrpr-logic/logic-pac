@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How do you choose skincare packaging?</h2>
+            <p>Start with the formula, not the mood board. Serums, moisturizers, cleansers, oils, and SPF products each need different barriers, dispensing systems, and materials. The package must protect the formula, support the brand positioning, and survive the sales channel. Glass feels premium but adds weight, breakage risk, and freight cost. Match the structure to the formula requirements first.</p>
+          </div>
+
       <div className="blog-body">
             <p>Skincare packaging design starts with the formula, not the mood board. Serums, moisturizers, cleansers, oils, balms, and SPF products all need different barriers, dispensing systems, materials, and secondary packaging. The right package protects the formula, supports the brand, and works in the channel where the product will sell.</p>
             <p>The mistake is treating skincare packaging like decoration. It isn&apos;t. The package is part of the product experience and part of the supply chain.</p>
@@ -260,7 +265,7 @@ export default function PostClient() {
             <h2>The Bottom Line</h2>
             <p>Good skincare packaging starts with the formula and ends with the customer experience.</p>
             <p>The right structure protects the product. The right material supports the claim. The right finish makes the brand feel intentional without overbuilding the cost.</p>
-            <p>If you&apos;re planning a skincare launch or redesign, we can help map the format, material, finish, and cost tradeoffs before production starts.</p>
+            <p>If you&apos;re planning a skincare launch or redesign, we can help map the format, material, finish, and cost tradeoffs before production starts. See how we built a coordinated skincare packaging system supporting 21+ SKUs in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a skincare packaging consultation</a> and we&apos;ll help you build the package around the formula.</p>
       </div>
 

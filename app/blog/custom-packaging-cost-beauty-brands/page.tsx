@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 export const metadata: Metadata = {
-  title: 'How Much Does Custom Packaging Cost? A Real Pricing Breakdown for Beauty Brands',
+  title: 'Custom Packaging Cost Breakdown',
   description: 'Actual per-unit packaging costs by format — folding cartons, rigid boxes, tubes, and specialty finishes. What drives the price up, how to compare quotes, and where beauty brands overpay.',
   alternates: { canonical: '/blog/custom-packaging-cost-beauty-brands' },
   openGraph: {

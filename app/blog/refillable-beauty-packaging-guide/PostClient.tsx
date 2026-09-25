@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">When does refillable beauty packaging work?</h2>
+            <p>Refillable packaging reduces material waste only when consumers actually refill. The outer vessel costs 30&#8211;60% more than single-use, and the system breaks even at the second refill purchase. But real-world first-refill rates run 15&#8211;30% for at-home systems. Fragrance, lipstick, powder compacts, and body care are the strongest candidates. Mascara, sunscreen, and travel sizes are poor fits.</p>
+          </div>
+
       <div className="blog-body">
             <p>Refillable beauty packaging reduces material waste when the consumer actually refills. The system works when the outer vessel is durable, the refill mechanism is intuitive, the cost structure rewards repeat purchase, and the product category supports it. It fails when the refill rate is low, the experience is messy, or the economics require four repurchases to break even on a vessel the customer only buys once.</p>
             <p>Refillable is the most discussed sustainability concept in beauty packaging right now. It is also the most misunderstood. The gap between consumer interest and consumer behavior is wide. Designing a refillable system that closes that gap requires structural engineering, honest cost modeling, and a willingness to accept that some product formats are not good refill candidates.</p>

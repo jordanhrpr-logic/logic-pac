@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">What should packaging cost per unit by category?</h2>
+            <p>Practical benchmarks: beauty/skincare $1.50&#8211;8.00, food/beverage $0.30&#8211;3.00, supplements $0.80&#8211;4.00, consumer electronics $2.00&#8211;12.00, spirits/wine $3.00&#8211;15.00, jewelry $3.00&#8211;15.00, fragrance $5.00&#8211;25.00+. Most growing CPG brands should target 10&#8211;25% of COGS for packaging. The right cost is the one that protects margin and supports the brand promise.</p>
+          </div>
+
       <div className="blog-body">
             <p>A practical packaging cost per unit benchmark is <strong>$1.50&ndash;$8.00</strong> for beauty and skincare, <strong>$0.30&ndash;$3.00</strong> for food and beverage, <strong>$0.80&ndash;$4.00</strong> for supplements, <strong>$2.00&ndash;$12.00</strong> for consumer electronics, <strong>$3.00&ndash;$15.00</strong> for spirits and wine, and <strong>$3.00&ndash;$15.00</strong> for jewelry. Most growing brands should expect packaging to represent 10&ndash;25% of COGS unless the product has unusual fragility, luxury positioning, or retail requirements.</p>
             <p>Benchmarks are starting points. The right packaging cost is the one that protects margin and supports the brand promise at the same time.</p>
@@ -217,7 +222,7 @@ export default function PostClient() {
             <h2>Use Benchmarks as a Starting Point, Not a Rule</h2>
             <p>Packaging benchmarks are useful because they show when something is obviously off. They do not replace a real cost model.</p>
             <p>The right package fits the product, the channel, the brand, and the margin. That takes more than a quote. It takes a system.</p>
-            <p>If you want to pressure-test your packaging cost against your category and channel, we can help you separate smart spend from avoidable waste.</p>
+            <p>If you want to pressure-test your packaging cost against your category and channel, we can help you separate smart spend from avoidable waste. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_epicutis_case_study">Epicutis program</Link> achieved 15% packaging cost savings across 21+ SKUs, and the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_artilect_case_study">Artilect packaging reduction</Link> cut cost by engineering out material the customer never valued.</p>
             <p><a href="https://calendly.com/jordan-harper-logic/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_consultation" target="_blank" rel="noopener noreferrer">Book a Packaging Cost Consultation</a></p>
             <p><strong>Author:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm that helps beauty, wellness, food and beverage, jewelry, and consumer brands build packaging from concept to shelf.</p>
       </div>

@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'The Packaging Brief Template Every Beauty Brand Manager Needs',
+  title: 'Packaging Brief Template for Beauty',
   description: 'The 10 sections every packaging brief should contain, the omissions that cost weeks, and an annotated sample you can adapt for your next custom packaging project.',
   alternates: { canonical: '/blog/packaging-brief-template-beauty-brands' },
   openGraph: {

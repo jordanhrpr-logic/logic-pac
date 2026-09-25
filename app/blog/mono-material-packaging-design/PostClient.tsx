@@ -24,6 +24,11 @@ export default function PostClient() {
         <VerifiedAsOf />
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How do you design mono-material packaging?</h2>
+            <p>Mono-material packaging uses one recyclable material family across all components so the package enters a single recycling stream without manual separation. Mono-PP and mono-PE are the most commercially mature options for beauty primary packaging. The net cost impact is typically within 5&#8211;15% of existing packaging. Both SB 54 and EU PPWR financially penalize multi-material formats.</p>
+          </div>
+
       <div className="blog-body">
             <p>Mono-material packaging design means building a package primarily from one compatible material family so it has a clearer path through collection, sorting, and reprocessing. Actual acceptance still varies by resin, format, color, dimensions, labels, adhesives, and local infrastructure. California&apos;s SB 54 and the EU PPWR increase the pressure to design for real recycling systems rather than theoretical recyclability.</p>
             <p>Sorting and reprocessing systems have material-specific requirements. A package that combines incompatible plastics, metal, silicone, paper, labels, and adhesives may be harder to identify and process at scale. Mono-material design reduces that complexity, but it does not guarantee that every local program will accept or recycle the finished package.</p>
@@ -169,7 +174,7 @@ export default function PostClient() {
       <div className="blog-body">
             <h2>Design for the Stream, Not the Label</h2>
             <p>The packaging industry spent years putting recyclable symbols on packages that recycling systems cannot actually process. Mono-material packaging design closes that gap. It does not require exotic materials or radical formats. It requires discipline: one material family, compatible components, and honest claims.</p>
-            <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path.</p>
+            <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path. See how disciplined material simplification works in practice in the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono_material_artilect_case_study">Artilect packaging reduction case study</Link>.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
             <section className="sources-section">

@@ -223,6 +223,7 @@ export default function BriefClient() {
             <h2 id="bring"><span className="num">05.</span>Bring it to the table on day one</h2>
             <p>The version above is a clean, fillable template &mdash; the same one we use with every new client. Adapt it to your project, then walk us through it in your kickoff. The brief lock is Gate 1 of every project; the more decisions captured here, the fewer surface in week six.</p>
 
+            <p>See how a structured brief led to a coordinated 21+ SKU packaging program in the <Link href="/work/epicutis?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=brief_epicutis_case_study">Epicutis case study</Link>.</p>
             <GuideBottomLine>The best brief is not the longest. It is the one that lets the team develop, quote, test, and approve the right package without guessing. If a decision is known, document it. If it is not known, name the owner and deadline for resolving it.</GuideBottomLine>
           </div>
         </div>

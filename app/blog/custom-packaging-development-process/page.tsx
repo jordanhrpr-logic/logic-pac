@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'How Custom Packaging Development Works: From Brief to Shelf in 12-16 Weeks',
+  title: 'Custom Packaging Development Process',
   description: 'The packaging development process takes 12-16 weeks from brief to shelf. Learn what happens at each stage, who is involved, and what decisions you need to make.',
   alternates: { canonical: '/blog/custom-packaging-development-process' },
   openGraph: {

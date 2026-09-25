@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
+import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 import GuideByline from '@/components/GuideByline'
@@ -411,6 +412,8 @@ export default function SustainableClient() {
                 <p>Before any of the regulatory deadlines hit in late 2026, audit every on-pack claim, marketing claim, and website claim against the three-question framework. Remove vague claims. Replace with specific, substantiated alternatives.</p>
               </div>
             </section>
+
+            <p>The <Link href="/work/artilect-packaging-reduction?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=sustainable_artilect_case_study">Artilect packaging reduction case study</Link> shows this approach applied to a real program &mdash; removing material and complexity while protecting the customer experience.</p>
 
             <section className="guide-bottom-line" aria-labelledby="bottom-line-heading">
               <h2 id="bottom-line-heading">Bottom Line</h2>

@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Skincare Packaging Design Guide: Formats, Materials, and What Sells on Shelf',
+  title: 'Skincare Packaging Design Guide',
   description: 'Skincare packaging formats (tubes, bottles, jars, droppers, airless), material selection by formula type, retail shelf requirements, and the design decisions that drive sell-through.',
   alternates: { canonical: '/blog/skincare-packaging-design-guide' },
   openGraph: {

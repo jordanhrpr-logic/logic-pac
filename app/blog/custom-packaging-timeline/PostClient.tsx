@@ -22,6 +22,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">How long does custom packaging take?</h2>
+            <p>Custom packaging takes 12&#8211;20 weeks from approved brief to product in hand, across five phases: design (2&#8211;4 weeks), prototyping (2&#8211;4 weeks), tooling and production setup (4&#8211;6 weeks), mass production (4&#8211;8 weeks), and freight (4&#8211;8 weeks international). The single biggest delay is artwork approval loops.</p>
+          </div>
+
       <div className="blog-body">
             <p>Custom packaging typically takes <strong>12&ndash;20 weeks</strong> from approved brief to product in hand. Simple formats with existing tooling can land closer to 12 weeks. Complex rigid structures, international manufacturing, and multi-component kits push toward 20 weeks or beyond.</p>
             <p>That range frustrates brand managers because it sounds vague. It is not vague &mdash; it is conditional. The timeline depends on five variables: structural complexity, material availability, approval speed, manufacturing location, and freight method.</p>
@@ -192,7 +197,7 @@ export default function PostClient() {
             <h2>Start With the Timeline, Not the Design</h2>
             <p>The brands that hit their launch dates consistently do one thing differently: they start with the calendar and work backward, instead of starting with the design and hoping the timeline works out.</p>
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>
-            <p>See the full phase-by-phase breakdown in our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_concept_shelf_guide">Concept to Shelf Timeline guide</Link>.</p>
+            <p>See the full phase-by-phase breakdown in our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_concept_shelf_guide">Concept to Shelf Timeline guide</Link>, or see how timeline discipline works across a growing portfolio in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_epicutis_case_study">Epicutis case study</Link>.</p>
       </div>
 
       <section className="ctas">

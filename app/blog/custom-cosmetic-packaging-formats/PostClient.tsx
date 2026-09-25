@@ -23,6 +23,11 @@ export default function PostClient() {
         </div>
       </div>
 
+      <div className="guide-answer" aria-labelledby="answer-title">
+            <h2 id="answer-title">Which cosmetic packaging format fits your product?</h2>
+            <p>Custom cosmetic packaging spans 8+ distinct formats, each with different tooling, MOQ, and cost profiles. Compacts and palettes require $3,000&#8211;15,000+ in mold tooling and 5,000&#8211;10,000 unit MOQs. Lip gloss tubes start at $0.20&#8211;0.50/unit using stock bodies with custom decoration. The format decision drives every downstream cost, timeline, and quality variable.</p>
+          </div>
+
       <div className="blog-body">
             <p>Custom cosmetic packaging spans at least eight distinct format categories, each with different tooling requirements, MOQ expectations, cost ranges, and product compatibility. The right format depends on the formula, the retail channel, the brand positioning, and the margin model &mdash; not on what looks best on a mood board.</p>
             <p>If you are a brand manager or CMO ordering custom packaging for the first time, the format decision is the most consequential choice you will make. It sets the tooling investment, the production timeline, the unit economics, and the constraints for every finish and decoration decision that follows. Get the format right and the rest of the project gets simpler. Get it wrong and you are paying to start over.</p>
@@ -153,7 +158,7 @@ export default function PostClient() {
 
       <div className="blog-body">
             <h2>What to Do Next</h2>
-            <p>Choosing the right cosmetic packaging format is easier when you can see the full picture &mdash; formula requirements, volume plan, channel constraints, and budget &mdash; in one conversation.</p>
+            <p>Choosing the right cosmetic packaging format is easier when you can see the full picture &mdash; formula requirements, volume plan, channel constraints, and budget &mdash; in one conversation. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_epicutis_case_study">Epicutis case study</Link> shows how one brand managed 21+ SKUs across multiple formats as a coordinated system.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will walk through the format options that fit your product, your timeline, and your margin model.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
       </div>

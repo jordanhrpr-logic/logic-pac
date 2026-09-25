@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'How Much Do Custom PR Kits Cost? A Tier-by-Tier Breakdown for Beauty Brands',
+  title: 'Custom PR Kit Costs: Tier-by-Tier Guide',
   description: 'Custom PR kit production costs $8-75+ per unit depending on tier. Basic mailers, branded kits, and premium experience builds with ROI framework and cost drivers.',
   alternates: { canonical: '/blog/pr-kit-cost-breakdown' },
   openGraph: {
