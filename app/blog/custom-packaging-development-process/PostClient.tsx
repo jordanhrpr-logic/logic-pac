@@ -3,9 +3,20 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'stage-1-brief-and-discovery-weeks-1-2', label: 'Stage 1: Brief and Discovery (Weeks 1-2)' },
+    { id: 'stage-2-concept-development-and-structural-design', label: 'Stage 2: Concept Development and Structural Des...' },
+    { id: 'stage-3-material-selection-and-sampling-weeks-4-6', label: 'Stage 3: Material Selection and Sampling (Weeks...' },
+    { id: 'stage-4-production-artwork-and-pre-press-weeks-6-8', label: 'Stage 4: Production Artwork and Pre-Press (Week...' },
+    { id: 'stage-5-tooling-and-production-weeks-8-14', label: 'Stage 5: Tooling and Production (Weeks 8-14)' },
+    { id: 'stage-6-quality-inspection-and-shipping-weeks-14-1', label: 'Stage 6: Quality Inspection and Shipping (Weeks...' },
+  ]
+
 
   return (
     <>
@@ -13,15 +24,12 @@ export default function PostClient() {
         <div className="ey inv">Planning</div>
         <h1>How Custom Packaging Development Works: From Brief to Shelf in 12-16 Weeks</h1>
         <p>The real timeline and process</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>15 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>15 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How does custom packaging development work?</h2>
             <p>Custom packaging moves through six stages over 12&#8211;16 weeks: brief and discovery, concept development, material selection and sampling, production artwork, tooling and production, and QC/shipping. The brief is the single most important deliverable. Material and structural decisions lock during weeks 4&#8211;6; changes after sampling approval are expensive.</p>
@@ -42,7 +50,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Stage 1: Brief and Discovery (Weeks 1-2)</h2>
+            <h2 id="stage-1-brief-and-discovery-weeks-1-2">Stage 1: Brief and Discovery (Weeks 1-2)</h2>
             <p>Every custom packaging project starts with a brief. The brief defines what the packaging needs to do, what it needs to look like, what it costs, and when it needs to arrive.</p>
             <h3>What Happens</h3>
             <p>The brand and the packaging partner align on project scope. This includes:</p>
@@ -66,7 +74,7 @@ export default function PostClient() {
             <p>Write the brief. Or if the packaging partner provides a brief template, fill it out completely. Do not leave sections blank assuming they can be figured out later. Every blank field is a decision that will need to be made eventually, and it is cheaper to make it now.</p>
             <p>For a structured starting point, use the <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process">Packaging Brief Template</Link>.</p>
 
-            <h2>Stage 2: Concept Development and Structural Design (Weeks 2-4)</h2>
+            <h2 id="stage-2-concept-development-and-structural-design">Stage 2: Concept Development and Structural Design (Weeks 2-4)</h2>
             <p>With the brief locked, the packaging team develops concepts. This is where the packaging takes shape &mdash; structurally, visually, and functionally.</p>
             <h3>What Happens</h3>
             <p><strong>Structural design.</strong> The packaging engineer creates dieline drawings and 3D structural concepts. For rigid boxes, this defines panel dimensions, closure type, insert configuration, and construction method. For bottles and jars, this defines body shape, neck finish, cap type, and wall thickness.</p>
@@ -82,7 +90,7 @@ export default function PostClient() {
             <p>Provide feedback quickly and clearly. &ldquo;We like direction B but want the closure from direction A&rdquo; is useful. &ldquo;We are not sure, let us think about it for two weeks&rdquo; is a timeline killer.</p>
             <p>Align internal stakeholders before the concept review, not during it. If the founder, CMO, and creative director are going to weigh in, they should all see the concepts at the same time and provide consolidated feedback.</p>
 
-            <h2>Stage 3: Material Selection and Sampling (Weeks 4-6)</h2>
+            <h2 id="stage-3-material-selection-and-sampling-weeks-4-6">Stage 3: Material Selection and Sampling (Weeks 4-6)</h2>
             <p>Once the concept is approved, the project moves into materials. This is where the packaging becomes physical.</p>
             <h3>What Happens</h3>
             <p><strong>Material specification.</strong> The team selects specific materials: substrate weight, resin type, board grade, finish, and any specialty treatments. For a folding carton, this means choosing between SBS, CRB, or specialty board at specific caliper. For a bottle, this means choosing between virgin PP, PCR PP, PET, or glass at specific wall thicknesses.</p>
@@ -99,7 +107,7 @@ export default function PostClient() {
             <p>Test samples with the actual formula. Not a similar formula. Not water. The actual formula. Approve samples promptly. Material holds and supplier reservations expire. Delays at sampling can push the entire production timeline.</p>
             <p>The <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process">Material Decision Framework</Link> helps brands evaluate tradeoffs across materials before sampling begins.</p>
 
-            <h2>Stage 4: Production Artwork and Pre-Press (Weeks 6-8)</h2>
+            <h2 id="stage-4-production-artwork-and-pre-press-weeks-6-8">Stage 4: Production Artwork and Pre-Press (Weeks 6-8)</h2>
             <p>With the structural design and materials locked, the project moves to final artwork. This is where the visual design becomes production-ready.</p>
             <h3>What Happens</h3>
             <p><strong>Final artwork preparation.</strong> The brand&apos;s designer or the packaging partner&apos;s design team prepares print-ready files. These include dieline-accurate layouts, CMYK or Pantone color specifications, bleed and trim marks, barcode placement, regulatory text, and finish call-outs.</p>
@@ -115,7 +123,7 @@ export default function PostClient() {
             <p>Deliver final, approved artwork files on time. Review proofs thoroughly. Do not approve a proof and then request changes after plates are made.</p>
             <p>If multiple people need to approve the artwork (design, marketing, legal, founder), build that review time into the schedule. Artwork approval is the most common bottleneck in the packaging development process.</p>
 
-            <h2>Stage 5: Tooling and Production (Weeks 8-14)</h2>
+            <h2 id="stage-5-tooling-and-production-weeks-8-14">Stage 5: Tooling and Production (Weeks 8-14)</h2>
             <p>This is where the packaging gets made. Tooling is the financial commitment point. Production is the execution.</p>
             <h3>What Happens</h3>
             <p><strong>Tooling.</strong> For custom packaging, the supplier produces tooling: die-cut dies for cartons, injection molds for bottles and caps, embossing plates for finishes. Tooling lead time varies by complexity: 2-3 weeks for simple carton dies, 4-6 weeks for injection molds.</p>
@@ -131,7 +139,7 @@ export default function PostClient() {
             <p>Approve pre-production samples before the full run starts. Respond to any production questions quickly. A factory waiting for brand approval does not pause the production schedule &mdash; it moves to the next job, and your project goes to the back of the queue.</p>
             <p>For a detailed view of production timelines, lead times, and milestone planning, see the <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process">Concept to Shelf Timeline</Link>.</p>
 
-            <h2>Stage 6: Quality Inspection and Shipping (Weeks 14-16+)</h2>
+            <h2 id="stage-6-quality-inspection-and-shipping-weeks-14-1">Stage 6: Quality Inspection and Shipping (Weeks 14-16+)</h2>
             <p>The packaging is produced. Now it needs to pass inspection and get to the right place.</p>
             <h3>What Happens</h3>
             <p><strong>Quality inspection.</strong> Finished goods are inspected against the approved specifications. This includes dimensional checks, color verification against the contract proof, finish quality assessment, structural integrity testing (drop test, compression test for shippers), and quantity verification.</p>
@@ -149,6 +157,9 @@ export default function PostClient() {
             <p>Confirm the delivery address and receiving contact. Arrange for receiving at the warehouse or co-packer. Inspect goods upon arrival and flag any issues immediately. Damage claims have time limits.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Custom Packaging Development FAQ"
@@ -164,7 +175,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Know the Process Before You Start the Process</h2>
             <p>Custom packaging development is not mysterious. It is a sequence of decisions, each building on the last, with clear inputs and outputs at every stage. The brands that move through it efficiently are the ones that understand the stages, make decisions promptly, and treat their packaging partner as a collaborator, not a vendor waiting for instructions.</p>
             <p>If you are developing custom packaging for a beauty, wellness, or consumer brand and want a partner who manages the process from brief through delivery, we can walk through your project scope and build a realistic timeline. See the process applied at scale in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=dev_process_epicutis_case_study">Epicutis case study</Link>.</p>

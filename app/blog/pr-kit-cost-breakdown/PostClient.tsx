@@ -4,9 +4,20 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'tier-1-basic-branded-mailer-8-15-per-unit', label: 'Tier 1: Basic Branded Mailer ($8-15 per Unit)' },
+    { id: 'tier-2-branded-kit-15-30-per-unit', label: 'Tier 2: Branded Kit ($15-30 per Unit)' },
+    { id: 'tier-3-premium-experience-30-75-per-unit', label: 'Tier 3: Premium Experience ($30-75+ per Unit)' },
+    { id: 'the-costs-brands-forget-to-budget', label: 'The Costs Brands Forget to Budget' },
+    { id: 'where-brands-overspend-and-where-they-underspend', label: 'Where Brands Overspend (and Where They Underspend)' },
+    { id: 'the-roi-framework-pr-kit-cost-vs-earned-media-valu', label: 'The ROI Framework: PR Kit Cost vs. Earned Media...' },
+  ]
+
 
   return (
     <>
@@ -14,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Pricing</div>
         <h1>How Much Do Custom PR Kits Cost? A Tier-by-Tier Breakdown for Beauty Brands</h1>
         <p>Real costs, not estimates</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>13 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>13 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How much does a custom PR kit cost per unit?</h2>
             <p>Custom PR kit packaging runs $8&#8211;15/unit for a basic branded mailer, $15&#8211;30/unit for a structured branded kit, and $30&#8211;75+/unit for a premium unboxing experience &#8212; all excluding product cost. The biggest cost lever is quantity: going from 50 to 500 units can cut per-unit cost by 40&#8211;60%. Brands consistently underbudget kitting labor ($1.50&#8211;5.00/unit) and shipping ($8&#8211;25/unit domestic).</p>
@@ -43,7 +51,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Tier 1: Basic Branded Mailer ($8-15 per Unit)</h2>
+            <h2 id="tier-1-basic-branded-mailer-8-15-per-unit">Tier 1: Basic Branded Mailer ($8-15 per Unit)</h2>
             <p>The basic branded mailer is a custom-printed corrugated box or rigid mailer with branded tissue paper, a printed insert card, and the products inside. No custom structural engineering. No foam inserts. No specialty finishes beyond the print on the box.</p>
             <h3>What&apos;s Included</h3>
             <ul>
@@ -60,7 +68,7 @@ export default function PostClient() {
 
             <Image src="/images/portfolio/skincare-launch-pr-mailer.jpg" alt="Custom skincare launch PR mailer kit packaging" width={500} height={751} className="guide-img" style={{ width: '65%', height: 'auto', margin: '24px auto 32px', display: 'block' }} />
 
-            <h2>Tier 2: Branded Kit ($15-30 per Unit)</h2>
+            <h2 id="tier-2-branded-kit-15-30-per-unit">Tier 2: Branded Kit ($15-30 per Unit)</h2>
             <p>The branded kit adds structural intention and a curated unboxing sequence. This is where the packaging becomes part of the content. Most beauty PR kits that generate social posts live in this tier.</p>
             <h3>What&apos;s Included</h3>
             <ul>
@@ -76,7 +84,7 @@ export default function PostClient() {
             <p>This is the tier where influencer kit cost starts to pay for itself in earned media. A $20 kit that generates a Stories post or Reel seen by 50,000-200,000 people is dramatically cheaper than the paid equivalent.</p>
             <p>For a full guide on designing kits that get posted, see our <Link href="/guides/influencer-kit-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pr-kit-cost-breakdown">influencer kit playbook</Link>.</p>
 
-            <h2>Tier 3: Premium Experience ($30-75+ per Unit)</h2>
+            <h2 id="tier-3-premium-experience-30-75-per-unit">Tier 3: Premium Experience ($30-75+ per Unit)</h2>
             <p>The premium experience tier is where the box itself becomes the content. These are the kits that get dedicated YouTube unboxing videos, TikTok posts with millions of views, and Instagram carousels with the box as the hero image. The packaging is designed as a brand artifact, not just a delivery vehicle.</p>
             <h3>What&apos;s Included</h3>
             <ul>
@@ -92,7 +100,7 @@ export default function PostClient() {
             <p>Premium experience kits make sense for three scenarios: major product launches where the kit IS the marketing campaign, VIP sends to top-tier influencers (macro and mega) where the box needs to compete with every other brand sending them product, and press events where the kit serves as the physical centerpiece.</p>
             <p>The math changes at this tier. You&apos;re not sending 500 of these. You&apos;re sending 50-200 to a curated list where each recipient has an audience of 100,000+. The cost per kit is high. The cost per impression, if the kit gets posted, is still a fraction of paid media.</p>
 
-            <h2>The Costs Brands Forget to Budget</h2>
+            <h2 id="the-costs-brands-forget-to-budget">The Costs Brands Forget to Budget</h2>
             <p>PR mailer cost conversations usually focus on the box. But the box is only 50-65% of the total per-unit cost. Here&apos;s what fills the rest.</p>
             <h3>Kitting and Assembly Labor</h3>
             <p>Every product, insert, card, tissue layer, ribbon, and sticker gets placed by hand. Kitting labor runs <strong>$1.50-$5.00+ per unit</strong> depending on component count and complexity.</p>
@@ -105,7 +113,7 @@ export default function PostClient() {
             <h3>Design and Prototyping</h3>
             <p>Structural design and prototyping for a custom PR kit runs <strong>$500-$2,500</strong> depending on complexity. This is a one-time cost, but it&apos;s real. If the design requires multiple sample rounds (common for premium builds), each additional round adds $300-$800.</p>
 
-            <h2>Where Brands Overspend (and Where They Underspend)</h2>
+            <h2 id="where-brands-overspend-and-where-they-underspend">Where Brands Overspend (and Where They Underspend)</h2>
             <p>After producing hundreds of PR kit programs, patterns emerge.</p>
             <h3>Where Brands Overspend</h3>
             <p><strong>Structural complexity over substance.</strong> Drawers, hidden compartments, and multi-layer reveals are impressive, but they add $5-15+ per unit in structural cost and significantly increase assembly time. If the extra structure doesn&apos;t create a better on-camera moment, it&apos;s wasted budget.</p>
@@ -117,7 +125,7 @@ export default function PostClient() {
             <p><strong>Personalization.</strong> A handwritten note or printed card with the influencer&apos;s name costs nearly nothing but dramatically increases post rate. Influencers receive dozens of PR kits per month. The ones with personal touches get opened first.</p>
             <p>For design strategies that maximize post rates, see our <Link href="/blog/influencer-kit-packaging-design?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pr-kit-cost-breakdown">influencer kit packaging design guide</Link>.</p>
 
-            <h2>The ROI Framework: PR Kit Cost vs. Earned Media Value</h2>
+            <h2 id="the-roi-framework-pr-kit-cost-vs-earned-media-valu">The ROI Framework: PR Kit Cost vs. Earned Media Value</h2>
             <p>Custom PR box cost feels expensive in isolation. In context, it&apos;s one of the most efficient marketing spends available to beauty brands.</p>
             <h3>The Math</h3>
             <p>A Tier 2 branded kit costs $20/unit in packaging. Add $30 in products and $12 in shipping. Total: $62 per kit.</p>
@@ -139,6 +147,9 @@ export default function PostClient() {
 
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="PR Kit Cost FAQs"
@@ -154,7 +165,7 @@ export default function PostClient() {
         ctaProjectType="PR Kit Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>Start with the send list. How many influencers, what tier of creator, and what&apos;s the occasion? The answers determine which packaging tier makes sense, what the per-unit budget should be, and whether the ROI math works.</p>
             <p>We&apos;ll quote the packaging, map the timeline, and show you where to allocate budget for maximum post rate.</p>

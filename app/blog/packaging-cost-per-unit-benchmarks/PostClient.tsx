@@ -4,9 +4,24 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'how-should-brands-think-about-packaging-cost', label: 'How Should Brands Think About Packaging Cost?' },
+    { id: 'packaging-cost-per-unit-benchmarks-by-category', label: 'Packaging Cost Per Unit Benchmarks by Category' },
+    { id: 'beauty-and-skincare-packaging-150800-per-unit', label: 'Beauty and Skincare Packaging: $1.50–$8.00 Per ...' },
+    { id: 'food-and-beverage-packaging-030300-per-unit', label: 'Food and Beverage Packaging: $0.30–$3.00 Per Unit' },
+    { id: 'supplements-packaging-080400-per-unit', label: 'Supplements Packaging: $0.80–$4.00 Per Unit' },
+    { id: 'consumer-electronics-packaging-2001200-per-unit', label: 'Consumer Electronics Packaging: $2.00–$12.00 Pe...' },
+    { id: 'spirits-wine-and-fragrance-packaging-3002500', label: 'Spirits, Wine, and Fragrance Packaging: $3.00–$...' },
+    { id: 'jewelry-packaging-3001500-per-unit', label: 'Jewelry Packaging: $3.00–$15.00 Per Unit' },
+    { id: 'when-is-packaging-too-expensive', label: 'When Is Packaging Too Expensive?' },
+    { id: 'when-does-cheap-packaging-cost-more', label: 'When Does Cheap Packaging Cost More?' },
+  ]
+
 
   return (
     <>
@@ -14,15 +29,12 @@ export default function PostClient() {
         <div className="ey inv">Pricing</div>
         <h1>Packaging Cost Per Unit Benchmarks by Product Category</h1>
         <p>Real cost ranges by product category</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>11 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>11 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What should packaging cost per unit by category?</h2>
             <p>Practical benchmarks: beauty/skincare $1.50&#8211;8.00, food/beverage $0.30&#8211;3.00, supplements $0.80&#8211;4.00, consumer electronics $2.00&#8211;12.00, spirits/wine $3.00&#8211;15.00, jewelry $3.00&#8211;15.00, fragrance $5.00&#8211;25.00+. Most growing CPG brands should target 10&#8211;25% of COGS for packaging. The right cost is the one that protects margin and supports the brand promise.</p>
@@ -47,7 +59,7 @@ export default function PostClient() {
 
             <p><strong>Related reading:</strong> <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging-cost-per-unit-benchmarks_related_custom-packaging-cost-">How Much Does Custom Packaging Cost? A Real Pricing Breakdown for Beauty Brands</Link>, <Link href="/blog/fragrance-packaging-design-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging-cost-per-unit-benchmarks_related_fragrance-packaging-de">Fragrance Packaging Design: What Makes Perfume Packaging Premium</Link>, and <Link href="/blog/food-beverage-packaging-design-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging-cost-per-unit-benchmarks_related_food-beverage-packagin">Food and Beverage Packaging Design for Emerging Brands</Link>.</p>
 
-            <h2>How Should Brands Think About Packaging Cost?</h2>
+            <h2 id="how-should-brands-think-about-packaging-cost">How Should Brands Think About Packaging Cost?</h2>
             <p>Packaging cost has three layers.</p>
             <p>The first is direct unit cost. That is the number most brands ask for first: what does each box, carton, pouch, label, insert, or shipper cost?</p>
             <p>The second is landed cost. That includes freight, duties, storage, waste, and handling. A package that looks cheap at the factory can become expensive after ocean freight, dimensional weight, and warehouse space are added.</p>
@@ -56,7 +68,7 @@ export default function PostClient() {
             <p>A $10 box can be smart for a $150 fragrance. It can be reckless for a $19 supplement. A $0.60 carton can be efficient for a food product and underbuilt for a premium skincare retail launch.</p>
             <p>For beauty-specific structure and finish ranges, start with our article on <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_beauty_cost_article">custom packaging cost for beauty brands</Link>.</p>
 
-            <h2>Packaging Cost Per Unit Benchmarks by Category</h2>
+            <h2 id="packaging-cost-per-unit-benchmarks-by-category">Packaging Cost Per Unit Benchmarks by Category</h2>
             <p>These ranges reflect common packaging economics for growing brands. Low volume, domestic rush production, complex finishes, custom tooling, and luxury rigid formats can push costs above the high end.</p>
 
             <p>| Product Category | Typical Packaging Cost Per Unit | Healthy COGS Range | Common Cost Drivers |</p>
@@ -70,7 +82,7 @@ export default function PostClient() {
 
             <p>The spread inside each category is wide because packaging is not one thing. A folding carton, rigid box, molded insert, label, cap, and shipper all behave differently in the cost model.</p>
 
-            <h2>Beauty and Skincare Packaging: $1.50&ndash;$8.00 Per Unit</h2>
+            <h2 id="beauty-and-skincare-packaging-150800-per-unit">Beauty and Skincare Packaging: $1.50&ndash;$8.00 Per Unit</h2>
             <p>Beauty packaging carries brand value. The customer judges formula quality before using the product, and packaging is part of that judgment.</p>
             <p>Typical cost ranges:</p>
             <ul>
@@ -84,7 +96,7 @@ export default function PostClient() {
             <p>Beauty brands overpay when they stack too many finishes without a clear hierarchy. One signature finish usually does more than four competing effects.</p>
             <p>Use the <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_finish_guide">Packaging Finish Guide</Link> to decide which finish earns its place.</p>
 
-            <h2>Food and Beverage Packaging: $0.30&ndash;$3.00 Per Unit</h2>
+            <h2 id="food-and-beverage-packaging-030300-per-unit">Food and Beverage Packaging: $0.30&ndash;$3.00 Per Unit</h2>
             <p>Food and beverage packaging has less room for expensive decoration. Compliance, shelf life, barrier performance, and retail handling matter more than surface drama.</p>
             <p>Typical cost ranges:</p>
             <ul>
@@ -98,7 +110,7 @@ export default function PostClient() {
             <p>F&amp;B packaging often lands around 8&ndash;18% of COGS. Premium specialty products can go higher, but most brands need to protect margin with simple structures, efficient case packs, and strong compliance planning.</p>
             <p>The biggest cost mistake in F&amp;B is approving consumer-facing packaging without checking retail-ready case requirements. The package may look right and still fail the retail system.</p>
 
-            <h2>Supplements Packaging: $0.80&ndash;$4.00 Per Unit</h2>
+            <h2 id="supplements-packaging-080400-per-unit">Supplements Packaging: $0.80&ndash;$4.00 Per Unit</h2>
             <p>Supplements usually sit between food and beauty. The package has to feel credible, clean, and compliant, but the economics often require discipline.</p>
             <p>Typical cost ranges:</p>
             <ul>
@@ -111,7 +123,7 @@ export default function PostClient() {
             <p>Supplement brands often overbuild secondary packaging too early. A carton may help retail presentation, but it also adds cost, freight volume, and inventory complexity.</p>
             <p>If retail is the channel, the carton may be worth it. If the product is still mostly DTC, the money may be better spent on a stronger label system, better component fit, or subscription shipping protection.</p>
 
-            <h2>Consumer Electronics Packaging: $2.00&ndash;$12.00 Per Unit</h2>
+            <h2 id="consumer-electronics-packaging-2001200-per-unit">Consumer Electronics Packaging: $2.00&ndash;$12.00 Per Unit</h2>
             <p>Electronics packaging has to protect the product, present the tech clearly, and often carry accessories, manuals, cables, and inserts.</p>
             <p>Typical cost ranges:</p>
             <ul>
@@ -124,7 +136,7 @@ export default function PostClient() {
             <p>Protection is the biggest driver. A premium box that prevents damage can be cheaper than a lower-cost box that creates returns.</p>
             <p>Right-sizing also matters. Electronics packaging often leaks margin through dimensional weight. A smaller structure can lower freight without hurting the unboxing.</p>
 
-            <h2>Spirits, Wine, and Fragrance Packaging: $3.00&ndash;$25.00+</h2>
+            <h2 id="spirits-wine-and-fragrance-packaging-3002500">Spirits, Wine, and Fragrance Packaging: $3.00&ndash;$25.00+</h2>
             <p>Spirits, wine, and fragrance packaging can support higher unit costs because the package is part of the giftable experience.</p>
             <p>Typical ranges:</p>
             <ul>
@@ -137,7 +149,7 @@ export default function PostClient() {
             <p>These categories justify premium packaging when the package supports price perception, shelf differentiation, or giftability. They do not justify waste by default.</p>
             <p>For fragrance-specific cost tiers, see our <Link href="/blog/fragrance-packaging-design-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_fragrance_guide">Fragrance Packaging Design Guide</Link>.</p>
 
-            <h2>Jewelry Packaging: $3.00&ndash;$15.00 Per Unit</h2>
+            <h2 id="jewelry-packaging-3001500-per-unit">Jewelry Packaging: $3.00&ndash;$15.00 Per Unit</h2>
             <p>Jewelry brands often pay $6&ndash;$10 per box for catalog packaging without full customization. Custom packaging can land in a similar range when the structure, finish, and volume are planned correctly.</p>
             <p>Typical ranges:</p>
             <ul>
@@ -150,7 +162,7 @@ export default function PostClient() {
             <p>The cost driver is consistency across box sizes. Rings, earrings, necklaces, pendants, and bracelets often need different structures, but the materials and finishes need to match.</p>
             <p>Our <Link href="/jewelry?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_jewelry_page">jewelry packaging page</Link> explains how custom jewelry box systems work.</p>
 
-            <h2>When Is Packaging Too Expensive?</h2>
+            <h2 id="when-is-packaging-too-expensive">When Is Packaging Too Expensive?</h2>
             <p>Packaging is too expensive when it does not earn back its role in the product economics.</p>
             <p>Red flags:</p>
             <ul>
@@ -163,7 +175,7 @@ export default function PostClient() {
             <p>A high packaging cost can be correct. A low packaging cost can be wrong. The question is whether the package supports the margin model.</p>
             <p>If you are trying to reduce packaging cost without weakening brand quality, the Logic Agency guide on <a href="https://www.logicagencyinc.com/guides/packaging-cost-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_agency_cost_reduction" target="_blank" rel="noopener noreferrer">packaging cost reduction</a> covers the operational levers.</p>
 
-            <h2>When Does Cheap Packaging Cost More?</h2>
+            <h2 id="when-does-cheap-packaging-cost-more">When Does Cheap Packaging Cost More?</h2>
             <p>Cheap packaging gets expensive when it creates downstream costs.</p>
             <p>Common examples:</p>
             <ul>
@@ -204,6 +216,9 @@ export default function PostClient() {
             <p>Ask what is included. Primary packaging, secondary packaging, tertiary packaging, freight, duties, storage, and waste are often quoted separately. A clean benchmark compares the same scope across suppliers.</p>
             <p>The strongest quote review separates three questions: is the package right for the brand, is the cost right for the margin, and is the supplier set up to repeat it reliably?</p>
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Packaging Cost Per Unit Benchmarks FAQ"
@@ -218,7 +233,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Use Benchmarks as a Starting Point, Not a Rule</h2>
             <p>Packaging benchmarks are useful because they show when something is obviously off. They do not replace a real cost model.</p>
             <p>The right package fits the product, the channel, the brand, and the margin. That takes more than a quote. It takes a system.</p>

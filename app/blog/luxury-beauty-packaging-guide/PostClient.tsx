@@ -4,9 +4,22 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'the-structural-foundation-why-weight-is-the-first', label: 'The Structural Foundation: Why Weight Is the Fi...' },
+    { id: 'closure-engineering-the-most-tactile-quality-signa', label: 'Closure Engineering: The Most Tactile Quality S...' },
+    { id: 'finish-layering-the-hierarchy-that-creates-depth', label: 'Finish Layering: The Hierarchy That Creates Depth' },
+    { id: 'sensory-sequencing-designing-the-unboxing-as-an-ex', label: 'Sensory Sequencing: Designing the Unboxing as a...' },
+    { id: 'insert-design-the-invisible-architecture-of-luxury', label: 'Insert Design: The Invisible Architecture of Lu...' },
+    { id: 'what-luxury-packaging-actually-costs-the-premium-m', label: 'What Luxury Packaging Actually Costs: The Premi...' },
+    { id: 'enterprise-grade-luxury-how-major-brands-approach', label: 'Enterprise-Grade Luxury: How Major Brands Appro...' },
+    { id: 'common-luxury-packaging-mistakes', label: 'Common Luxury Packaging Mistakes' },
+  ]
+
 
   return (
     <>
@@ -14,15 +27,12 @@ export default function PostClient() {
         <div className="ey inv">Design</div>
         <h1>Luxury Beauty Packaging: What Separates Premium From Mass Market</h1>
         <p>What works and what doesn&apos;t</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What separates luxury from mass market packaging?</h2>
             <p>Luxury beauty packaging is engineered from the structure outward &#8212; not decorated onto a standard box. Weight, closure resistance, insert precision, and finish hierarchy work together to create perceived value in the first half-second of handling. The structural premium accounts for most of the 3&#8211;5x cost increase over standard packaging. Invest in the bones first.</p>
@@ -45,7 +55,7 @@ export default function PostClient() {
 
             <Image src="/images/portfolio/futuremood-rigid-box.jpg" alt="Luxury rigid box packaging with foil stamping and custom interior insert" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
-            <h2>The Structural Foundation: Why Weight Is the First Luxury Signal</h2>
+            <h2 id="the-structural-foundation-why-weight-is-the-first">The Structural Foundation: Why Weight Is the First Luxury Signal</h2>
             <p>Pick up any mass-market beauty product. Then pick up a Chanel compact, a Tom Ford lipstick, or a La Mer jar. The difference registers in the first half-second &mdash; before you read the logo, before you see the finish. It is weight.</p>
             <p>Luxury beauty packaging uses heavier substrates, thicker walls, denser materials, and more rigid construction than standard packaging. This is not accidental. It is the most reliable subconscious quality signal in physical products.</p>
             <h3>How weight is engineered</h3>
@@ -59,7 +69,7 @@ export default function PostClient() {
             <p>The structural premium for luxury-grade substrates and wall thicknesses typically adds <strong>30-60%</strong> to the base packaging cost before any finish is applied. A folding carton that costs $1.20 at standard weight might cost $1.80-$2.00 at luxury weight. A rigid box that costs $4.00 at standard construction might cost $5.50-$7.00 at luxury spec.</p>
             <p>That premium is non-negotiable if the brand positioning is luxury. Consumers can feel the difference between 300gsm and 400gsm board stock without knowing the number. They register it as quality or the absence of quality.</p>
 
-            <h2>Closure Engineering: The Most Tactile Quality Signal</h2>
+            <h2 id="closure-engineering-the-most-tactile-quality-signa">Closure Engineering: The Most Tactile Quality Signal</h2>
             <p>The closure is the component the consumer interacts with most, and it is where luxury packaging diverges most sharply from mass market. A luxury closure does not just close. It closes with a specific resistance, a satisfying click, a controlled deceleration.</p>
             <h3>Types of luxury closures</h3>
             <ul>
@@ -73,7 +83,7 @@ export default function PostClient() {
             <p>Magnetic closures typically add <strong>$0.30-$1.50 per unit</strong> depending on magnet count, size, and housing. Soft-close hinge mechanisms add <strong>$0.50-$2.00 per unit</strong>. Weighted metal caps can add <strong>$0.80-$3.00 per unit</strong> over standard plastic alternatives.</p>
             <p>These are significant per-unit costs. They are also the components consumers describe when they tell a friend &ldquo;the packaging feels incredible.&rdquo; Closure quality converts to word-of-mouth and social content more directly than almost any other packaging decision.</p>
 
-            <h2>Finish Layering: The Hierarchy That Creates Depth</h2>
+            <h2 id="finish-layering-the-hierarchy-that-creates-depth">Finish Layering: The Hierarchy That Creates Depth</h2>
             <p>Luxury packaging uses finishes in layers, not in isolation. But the hierarchy matters. The most common mistake brands make when attempting luxury packaging is stacking too many effects &mdash; foil stamping plus embossing plus spot UV plus soft touch plus metallic ink &mdash; creating visual noise instead of visual depth.</p>
             <h3>The luxury finish hierarchy</h3>
             <p>1. <strong>Substrate first.</strong> The paper or material itself should feel premium before any effect is applied. Uncoated specialty papers with natural texture, cotton-fiber stocks, or tinted boards create a foundation that cheap substrates cannot replicate. This is the layer most brands skip.</p>
@@ -92,7 +102,7 @@ export default function PostClient() {
             <h3>What luxury finishes cost</h3>
             <p>A luxury finish stack typically adds <strong>$0.50-$3.00 per unit</strong> over a basic printed surface, depending on the effects chosen and the area coverage. The finish premium is often smaller than the structural premium &mdash; which is counterintuitive but important. Most brands overspend on finishes and underspend on structure. Luxury brands do the opposite.</p>
 
-            <h2>Sensory Sequencing: Designing the Unboxing as an Experience</h2>
+            <h2 id="sensory-sequencing-designing-the-unboxing-as-an-ex">Sensory Sequencing: Designing the Unboxing as an Experience</h2>
             <p>Luxury packaging does not just look premium in a photograph. It unfolds in a specific sensory sequence &mdash; a choreographed experience from the moment the consumer picks up the box to the moment they touch the product.</p>
             <h3>The unboxing sequence</h3>
             <p>1. <strong>First touch.</strong> The consumer picks up the box. They register weight and surface texture. This is where structural weight and substrate choice pay off. 2. <strong>Closure engagement.</strong> They open the box. The magnetic pull, the friction resistance, the lid lift. This is where closure engineering pays off. 3. <strong>First reveal.</strong> The lid opens and the interior is visible. The insert, the tissue, the product position, the color of the inner surface. This is where insert design and interior finishing pay off. 4. <strong>Product extraction.</strong> They lift the product from its housing. The fit is precise &mdash; not too tight, not loose. The product feels held, not packed. 5. <strong>Secondary discovery.</strong> A card, a message, a secondary compartment, a hidden detail. Something that rewards attention. Not required, but when done well, it drives social sharing.</p>
@@ -101,7 +111,7 @@ export default function PostClient() {
             <p>Each step needs to be prototyped and tested physically. Digital renders do not capture tactile experience. A prototype that opens beautifully but ships poorly is not luxury &mdash; it is fragile. A sequence that works on a sample table but frustrates a consumer opening their third product is overengineered.</p>
             <p>We prototype sensory sequencing during the sampling phase. If you are planning a project where the unboxing matters, start with our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_timeline">Concept to Shelf Timeline</Link> to understand how sampling and iteration fit into the production schedule.</p>
 
-            <h2>Insert Design: The Invisible Architecture of Luxury</h2>
+            <h2 id="insert-design-the-invisible-architecture-of-luxury">Insert Design: The Invisible Architecture of Luxury</h2>
             <p>The insert is the component most brands think about last and regret first. A luxury product sitting in a generic foam cavity, shifting during transit, or sitting below the box edge undermines every other investment in the packaging.</p>
             <h3>What luxury inserts do differently</h3>
             <ul>
@@ -114,14 +124,14 @@ export default function PostClient() {
             <p>Luxury inserts typically add <strong>$0.50-$4.00 per unit</strong> depending on material, complexity, and product count. A simple flocked single-product insert may be near the low end. A multi-product tiered insert with mixed materials can approach or exceed the outer box cost.</p>
             <p>The insert is also where first-time buyers get surprised by tooling. Thermoformed and molded fiber inserts require tooling ($500-$3,000), which adds front-loaded cost that improves per-unit economics only at volume.</p>
 
-            <h2>What Luxury Packaging Actually Costs: The Premium Math</h2>
+            <h2 id="what-luxury-packaging-actually-costs-the-premium-m">What Luxury Packaging Actually Costs: The Premium Math</h2>
             <p>Luxury beauty packaging typically costs <strong>3-5x more per unit</strong> than standard packaging for the equivalent product format. Here is how that premium stacks:</p>
             <p>| Component | Standard | Luxury | Premium | |&ndash;-|&ndash;-|&ndash;-|&ndash;-| | Rigid box structure | $3.00-$5.00 | $5.50-$9.00 | +40-80% | | Closure | $0.10-$0.30 | $0.50-$2.00 | +3-6x | | Finish stack | $0.20-$0.80 | $0.80-$3.00 | +2-4x | | Insert | $0.30-$1.00 | $1.00-$4.00 | +2-4x | | <strong>Total unit</strong> | <strong>$3.60-$7.10</strong> | <strong>$7.80-$18.00</strong> | <strong>~2-3x</strong> |</p>
             <p>These numbers are for rigid box formats. Folding carton luxury premiums are smaller in absolute terms but proportionally similar.</p>
             <p>The question is not &ldquo;can we afford luxury packaging?&rdquo; It is &ldquo;does the retail price and margin model support the packaging investment?&rdquo; A $150 skincare set can absorb $15 in packaging. A $35 lip product usually cannot.</p>
             <p>For detailed cost benchmarks across all formats, see the <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_cost_post">custom packaging cost breakdown</Link>.</p>
 
-            <h2>Enterprise-Grade Luxury: How Major Brands Approach Packaging</h2>
+            <h2 id="enterprise-grade-luxury-how-major-brands-approach">Enterprise-Grade Luxury: How Major Brands Approach Packaging</h2>
             <p>We have produced packaging for brands like Adidas, Disney, Vans, Puma, Spotify, and Target. While we do not share case study details without authorization, the patterns across enterprise luxury packaging projects are consistent and instructive.</p>
             <h3>What enterprise brands get right</h3>
             <ul>
@@ -133,7 +143,7 @@ export default function PostClient() {
             </ul>
             <p>These are discipline patterns, not budget patterns. A brand doing 3,000 units can apply the same thinking as one doing 300,000 units. The structure-first, prototype-heavy, restraint-driven approach scales in both directions.</p>
 
-            <h2>Common Luxury Packaging Mistakes</h2>
+            <h2 id="common-luxury-packaging-mistakes">Common Luxury Packaging Mistakes</h2>
             <h3>Stacking effects instead of building structure</h3>
             <p>Three premium finishes on a lightweight box still feels like a lightweight box. Weight and closure quality create more luxury perception than surface effects. Invest in the bones first.</p>
             <h3>Designing the box before the insert</h3>
@@ -146,6 +156,9 @@ export default function PostClient() {
 
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Luxury Beauty Packaging FAQs"
@@ -161,7 +174,7 @@ export default function PostClient() {
         ctaProjectType="Luxury Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>Luxury packaging development starts with a structure conversation, not a mood board. Before committing to finishes or materials, define the weight, the closure, and the insert architecture. Everything else follows. See how a prestige skincare brand built a coordinated luxury packaging system in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_consultation" target="_blank" rel="noopener noreferrer">Book a consultation</a> and we will help you define the structural foundation, finish hierarchy, and cost model for your luxury packaging project.</p>

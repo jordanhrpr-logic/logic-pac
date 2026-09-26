@@ -3,9 +3,21 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'why-most-influencer-kits-get-opened-once-and-forgo', label: 'Why Most Influencer Kits Get Opened Once and Fo...' },
+    { id: 'the-5-elements-of-a-kit-that-gets-filmed', label: 'The 5 Elements of a Kit That Gets Filmed' },
+    { id: 'what-influencer-kits-actually-cost-850-per-unit', label: 'What Influencer Kits Actually Cost ($8–$50+ Per...' },
+    { id: 'production-timelinefrom-concept-to-doorstep', label: 'Production Timeline—From Concept to Doorstep' },
+    { id: 'how-to-brief-your-packaging-partner-and-what-to-in', label: 'How to Brief Your Packaging Partner (and What t...' },
+    { id: 'measuring-roiwhat-8-of-better-packaging-actually-r', label: 'Measuring ROI—What $8 of Better Packaging Actua...' },
+    { id: 'start-with-the-moment-not-the-box', label: 'Start With the Moment, Not the Box' },
+  ]
+
 
   return (
     <>
@@ -13,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Influencer Kits</div>
         <h1>How to Design an Influencer Kit That Actually Gets Posted (Not Thrown Away)</h1>
         <p>Engineer the unboxing moment that makes creators reach for their phone</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>9 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>9 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How do you design a kit that gets posted?</h2>
             <p>Engineer one clear reveal moment in the first 3&#8211;5 seconds after the lid opens. Kits designed around a filming moment see higher post rates than decorated shipping boxes. Use texture contrast, stage products so filming requires zero rearrangement, and include one shareable detail worth showing the camera. Production runs 6&#8211;10 weeks standard, 10&#8211;12 for fully custom rigid builds.</p>
@@ -42,7 +51,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Why Most Influencer Kits Get Opened Once and Forgotten</h2>
+            <h2 id="why-most-influencer-kits-get-opened-once-and-forgo">Why Most Influencer Kits Get Opened Once and Forgotten</h2>
             <p>The average creator receives 15&ndash;30 PR packages per month. Most kits lose that competition before they&apos;re fully opened.</p>
             <p>The packaging looks like every other package: corrugated mailer with a logo, tissue paper on top, products underneath, and a card that reads like a press release. The creator opens it, confirms what&apos;s inside, and moves on. No moment. No reason to grab the phone.</p>
             <p>We&apos;ve seen $30 kits that don&apos;t get posted and $12 kits that generate multiple pieces of content. The problem isn&apos;t budget. It&apos;s design intent.</p>
@@ -51,7 +60,7 @@ export default function PostClient() {
             <p><strong>Generic materials.</strong> Standard corrugated with CMYK print looks like what it is&mdash;a box. It doesn&apos;t signal &ldquo;worth your audience&apos;s attention.&rdquo;</p>
             <p><strong>No reveal sequence.</strong> A kit that shows everything the moment the lid opens gives the creator nothing to discover on camera. The best unboxing content has beats: open, discover, react, explain. If the packaging doesn&apos;t create those beats, the creator has to manufacture them.</p>
 
-            <h2>The 5 Elements of a Kit That Gets Filmed</h2>
+            <h2 id="the-5-elements-of-a-kit-that-gets-filmed">The 5 Elements of a Kit That Gets Filmed</h2>
             <p>A kit doesn&apos;t need all five at maximum intensity. But it needs at least three working together.</p>
 
             <h3>The Reveal Moment&mdash;Engineering the Unboxing Sequence</h3>
@@ -83,7 +92,7 @@ export default function PostClient() {
             <p>The sweet spot: <strong>12&rdquo; x 10&rdquo; x 4&rdquo;</strong> for standard seeding, <strong>14&rdquo; x 12&rdquo; x 6&rdquo;</strong> for premium multi-product kits, <strong>2&ndash;5 lbs</strong> total weight. The weight should come from structural materials, not filler.</p>
             <p>The outer shipper matters too. If your premium kit arrives inside a beat-up brown box with crumpled paper, the reveal starts negative. We typically recommend a printed outer shipper or, for VIP runs, shipping in the presentation box itself with a protective sleeve.</p>
 
-            <h2>What Influencer Kits Actually Cost ($8&ndash;$50+ Per Unit)</h2>
+            <h2 id="what-influencer-kits-actually-cost-850-per-unit">What Influencer Kits Actually Cost ($8&ndash;$50+ Per Unit)</h2>
 
             <h3>Budget Tier ($8&ndash;$15)</h3>
             <p>Full-color printed mailer, die-cut paperboard insert, branded tissue, printed card, sticker closure. Best for high-quantity seeding (500&ndash;5,000+ units), durable products, campaigns prioritizing reach.</p>
@@ -98,7 +107,7 @@ export default function PostClient() {
             <p>At 100 units, a $45 kit with 80% post rate costs $56 per post. For creators with 500K+ followers, a single post can deliver $5,000&ndash;$50,000 in earned media value.</p>
             <p>The tier decision isn&apos;t about what you can afford per unit. It&apos;s about what post rate each tier generates and whether the return justifies the investment. A $10 kit that gets ignored costs infinitely more than a $40 kit that generates content&mdash;because the ignored kit returns zero. See examples across all three tiers on our <Link href="/influencer?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_capability">influencer kit production page</Link>.</p>
 
-            <h2>Production Timeline&mdash;From Concept to Doorstep</h2>
+            <h2 id="production-timelinefrom-concept-to-doorstep">Production Timeline&mdash;From Concept to Doorstep</h2>
             <p>Most projects run <strong>6&ndash;10 weeks</strong> from approved brief to delivery. Fully custom rigid builds need <strong>10&ndash;12 weeks</strong>.</p>
             <p><strong>Weeks 1&ndash;2:</strong> Brief and structural design. Define campaign goal, finalize recipient count, confirm product dimensions, select structural direction.</p>
             <p><strong>Weeks 2&ndash;3:</strong> Design development. Dieline creation, graphic design, insert engineering, material specification.</p>
@@ -107,7 +116,7 @@ export default function PostClient() {
             <p><strong>Weeks 8&ndash;10:</strong> Kitting and fulfillment. Assembly, QC, labeling, shipping.</p>
             <p>Accelerated timelines (4&ndash;5 weeks) are possible with simple structures and stock materials but eliminate sampling. Holiday campaigns need 12&ndash;16 weeks&mdash;factory capacity fills by August for Q4 delivery. See our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_timeline">Concept to Shelf Timeline</Link> for seasonal planning.</p>
 
-            <h2>How to Brief Your Packaging Partner (and What to Include)</h2>
+            <h2 id="how-to-brief-your-packaging-partner-and-what-to-in">How to Brief Your Packaging Partner (and What to Include)</h2>
             <p>A complete brief gets quoted in 48 hours. An incomplete one takes three weeks of back-and-forth.</p>
             <p><strong>Include:</strong></p>
             <ul>
@@ -129,17 +138,20 @@ export default function PostClient() {
             </ul>
             <p>When we know the budget upfront, we design around tradeoffs instead of presenting options that exceed the ceiling. A $12 mailer and a $40 rigid kit are both valid answers. They&apos;re not the same project.</p>
 
-            <h2>Measuring ROI&mdash;What $8 of Better Packaging Actually Returns</h2>
+            <h2 id="measuring-roiwhat-8-of-better-packaging-actually-r">Measuring ROI&mdash;What $8 of Better Packaging Actually Returns</h2>
             <p>The ROI comparison isn&apos;t &ldquo;kit cost vs. product cost.&rdquo; It&apos;s &ldquo;kit cost vs. alternative cost of generating the same content.&rdquo;</p>
             <p><strong>The math:</strong> A $8 mailer sent to 500 creators at 15% post rate generates 75 posts. Packaging cost per post: $53. The same product in a $16 engineered kit at 45% post rate generates 225 posts. Cost per post: $36. The $8 upgrade generated 150 additional posts at $27 each in incremental cost. At $500&ndash;$2,000 earned media value per post, that $4,000 incremental spend returned $75,000&ndash;$300,000.</p>
             <p><strong>Beyond post rate:</strong> better packaging drives higher content quality (more angles, longer videos), organic reposting (Stories + feed + dedicated video from one send), stronger creator relationships (better response rates on future campaigns), and reusable content assets for paid ads and retail pitches.</p>
             <p><strong>Track:</strong> post rate, cost per post, earned media value, content reuse rate, and creator response rate on the next campaign. Brands that measure consistently find packaging is their lowest-cost content channel&mdash;not because kits are cheap, but because content per dollar exceeds paid alternatives by 10&ndash;50x.</p>
 
-            <h2>Start With the Moment, Not the Box</h2>
+            <h2 id="start-with-the-moment-not-the-box">Start With the Moment, Not the Box</h2>
             <p>The kits that generate content were designed around a specific filming moment, not a product list. Decide your one reveal. Build the structure around it. Choose materials that support it on camera. Stage products so the creator doesn&apos;t rearrange anything. Include one detail worth showing. Ship it at a weight that says &ldquo;pay attention.&rdquo;</p>
             <p>Everything else is logistics. Important logistics&mdash;timeline, fulfillment, freight, storage&mdash;but logistics that follow from the design decision, not the other way around.</p>
             <p>For the full structural framework, production specs, and format comparisons, read the <Link href="/guides/influencer-kit-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_playbook">Influencer Kit Playbook</Link>. See how these principles came together in the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_kit_adidas_case_study">Adidas Nemeziz launch kit</Link>. Ready to move from concept to production? <Link href="/influencer?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=influencer_capability">See what we build for influencer campaigns</Link>.</p>
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Influencer Kit Packaging FAQs"

@@ -3,9 +3,20 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'why-holiday-gift-sets-are-the-highest-revenue-skus', label: 'Why Holiday Gift Sets Are the Highest-Revenue S...' },
+    { id: 'the-holiday-packaging-timeline-month-by-month', label: 'The Holiday Packaging Timeline (Month-by-Month)' },
+    { id: 'what-holiday-gift-set-packaging-actually-costs', label: 'What Holiday Gift Set Packaging Actually Costs' },
+    { id: 'retailer-compliance-what-ulta-sephora-and-target-r', label: 'Retailer Compliance: What Ulta, Sephora, and Ta...' },
+    { id: 'gift-set-structures-that-sell', label: 'Gift Set Structures That Sell' },
+    { id: 'kitting-assembly-and-fulfillment', label: 'Kitting, Assembly, and Fulfillment' },
+  ]
+
 
   return (
     <>
@@ -13,15 +24,12 @@ export default function PostClient() {
         <div className="ey inv">Holiday</div>
         <h1>Holiday Gift Set Packaging for Beauty Brands: Timeline, Costs, and Retailer Compliance</h1>
         <p>The month-by-month production calendar, real cost ranges, and retailer requirements for Q4 gift sets</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>11 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>11 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How far ahead do you plan holiday gift sets?</h2>
             <p>Start 5&#8211;7 months before your delivery date. For a November retail floor date, structural planning should begin in January and artwork locked by April. Rigid gift boxes cost $6&#8211;18+ per unit, folding carton kits $2&#8211;6, and advent calendars $8&#8211;30+. The most common failure is not bad design &#8212; it is starting in August.</p>
@@ -44,7 +52,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Why Holiday Gift Sets Are the Highest-Revenue SKUs for Most Beauty Brands</h2>
+            <h2 id="why-holiday-gift-sets-are-the-highest-revenue-skus">Why Holiday Gift Sets Are the Highest-Revenue SKUs for Most Beauty Brands</h2>
             <p>Holiday gift sets aren&apos;t a seasonal nice-to-have. For most beauty brands, they&apos;re the single highest-revenue SKU of the year.</p>
             <p>The economics are straightforward. A gift set bundles $60&ndash;$120 worth of product into a single purchase at a premium price point. The customer pays for convenience and presentation. The brand moves volume across multiple SKUs simultaneously. The retailer gets a high-ASP (average selling price) item that drives basket size during peak traffic.</p>
             <p>That&apos;s why Ulta and Sephora dedicate endcaps and fixture space to holiday kits starting in October. It&apos;s also why Target&apos;s beauty aisle reorganizes around gift-ready packaging for the last eight weeks of the year.</p>
@@ -52,7 +60,7 @@ export default function PostClient() {
             <p>Every one of those adds time.</p>
             <p>The brands that capture the full margin don&apos;t just design great boxes. They plan early enough to produce them without rushing freight, cutting corners on materials, or skipping sample rounds.</p>
 
-            <h2>The Holiday Packaging Timeline (Month-by-Month)</h2>
+            <h2 id="the-holiday-packaging-timeline-month-by-month">The Holiday Packaging Timeline (Month-by-Month)</h2>
             <p>The holiday packaging timeline works backward from the delivery date. For a November retail floor date, production milestones need to start in Q1. Here&apos;s what a clean seasonal packaging production schedule looks like.</p>
 
             <h3>January&ndash;February: Strategy, Format, and Brief</h3>
@@ -81,7 +89,7 @@ export default function PostClient() {
             <p>For our clients, kitting and assembly happen at our Salt Lake City warehouse. Products arrive separately, we assemble the final kits, run quality checks, and ship outbound to retailers or DTC fulfillment.</p>
             <p>For a detailed breakdown of each production phase, see our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_timeline">concept to shelf timeline</Link>.</p>
 
-            <h2>What Holiday Gift Set Packaging Actually Costs</h2>
+            <h2 id="what-holiday-gift-set-packaging-actually-costs">What Holiday Gift Set Packaging Actually Costs</h2>
             <p>Custom holiday gift set packaging costs vary widely depending on structure, materials, finishes, and volume. Here&apos;s what real ranges look like.</p>
 
             <h3>Structure Options: Rigid, Folding Carton, and Mixed</h3>
@@ -111,7 +119,7 @@ export default function PostClient() {
             </ul>
             <p>The MOQ (Minimum Order Quantity) for most custom rigid holiday boxes starts at <strong>500&ndash;1,000 units</strong>. Advent calendars typically start at <strong>500+</strong> due to tooling complexity.</p>
 
-            <h2>Retailer Compliance: What Ulta, Sephora, and Target Require</h2>
+            <h2 id="retailer-compliance-what-ulta-sephora-and-target-r">Retailer Compliance: What Ulta, Sephora, and Target Require</h2>
             <p>Retailer compliance is where holiday packaging programs stall if it isn&apos;t built in from day one. A gift set that looks beautiful but fails compliance is not retail-ready.</p>
             <p>We manage retailer compliance as a standard part of our process. Here&apos;s what each major retailer requires.</p>
 
@@ -144,7 +152,7 @@ export default function PostClient() {
             <p>For holiday gift sets specifically, the challenge is that premium finishes and sustainability can conflict. Foil lamination can make paperboard non-recyclable. Multi-material structures (rigid board + plastic tray + ribbon) complicate end-of-life processing.</p>
             <p>We design holiday packaging that balances shelf impact with recyclability. FSC-certified boards, soy-based inks, water-based coatings, and mono-material inserts are standard options. Our <Link href="/guides/sustainable-beauty-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_sustainability">sustainable beauty packaging guide</Link> covers material options and regulatory frameworks in detail.</p>
 
-            <h2>Gift Set Structures That Sell</h2>
+            <h2 id="gift-set-structures-that-sell">Gift Set Structures That Sell</h2>
             <p>Not every gift set structure works for every product mix. The format should match the product count, price point, and channel. Here are the three structures we produce most often for beauty holiday programs.</p>
 
             <h3>Lift-Lid Rigid Boxes</h3>
@@ -166,7 +174,7 @@ export default function PostClient() {
             <p><strong>Best for:</strong> Fragrance discovery (5&ndash;8 minis), skincare trial routines, shade sampling kits, and brands launching into new retail accounts where trial is the primary goal.</p>
             <p><strong>Design considerations:</strong> The structure needs to elevate the perceived value. Minis in a flimsy box feel like samples, not gifts. A rigid tray, sleeve, or hinged lid with a clean insert layout transforms the same products into a gift-worthy experience. Interior print and a single accent finish (foil logo or embossed lid) can carry the presentation without overbuilding.</p>
 
-            <h2>Kitting, Assembly, and Fulfillment</h2>
+            <h2 id="kitting-assembly-and-fulfillment">Kitting, Assembly, and Fulfillment</h2>
             <p>Holiday gift sets are assembly projects disguised as packaging projects. The box is one component. Getting the right products into the right box, in the right order, with the right inserts and collateral, at the right time&mdash;that&apos;s the operational challenge.</p>
             <p>Every added product increases touch time during kitting. Every insert cavity must be loaded correctly. Every sleeve, card, sticker, or tissue layer adds another step.</p>
             <p>Here&apos;s what a clean kitting operation requires:</p>
@@ -180,6 +188,9 @@ export default function PostClient() {
             <p>Our Salt Lake City warehouse handles kitting, assembly, and outbound fulfillment for holiday programs. Products and packaging arrive separately. We assemble, QC, and ship the finished kits. This keeps the brand&apos;s internal team focused on marketing and sales during the busiest quarter.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Holiday Gift Set Packaging FAQ"
@@ -194,7 +205,7 @@ export default function PostClient() {
         ctaProjectType="Holiday Gift Set Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Start Your Holiday Packaging Program Now</h2>
             <p>Holiday packaging is a calendar discipline. The brands that win Q4 don&apos;t wait for the marketing team to feel the urgency. They lock the format early, build the brief, approve samples on schedule, and leave room for freight.</p>
             <p>The package can feel seasonal. The process can&apos;t afford to be.</p>

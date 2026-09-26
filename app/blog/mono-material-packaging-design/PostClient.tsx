@@ -4,9 +4,20 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-mono-material-packaging-actually-means', label: 'What Mono-Material Packaging Actually Means' },
+    { id: 'why-multi-material-packaging-fails-recycling', label: 'Why Multi-Material Packaging Fails Recycling' },
+    { id: 'material-options-for-mono-material-beauty-packagin', label: 'Material Options for Mono-Material Beauty Packa...' },
+    { id: 'design-challenges-in-mono-material-beauty-packagin', label: 'Design Challenges in Mono-Material Beauty Packa...' },
+    { id: 'which-beauty-formats-work-well-in-mono-material', label: 'Which Beauty Formats Work Well in Mono-Material' },
+    { id: 'cost-implications-of-mono-material-design', label: 'Cost Implications of Mono-Material Design' },
+  ]
+
 
   return (
     <>
@@ -14,16 +25,13 @@ export default function PostClient() {
         <div className="ey inv">Sustainability</div>
         <h1>Mono-Material Packaging Design for Beauty: The Technical Guide</h1>
         <p>What actually works vs. marketing claims</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>13 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>13 min read</span></div>
         <VerifiedAsOf />
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How do you design mono-material packaging?</h2>
             <p>Mono-material packaging uses one recyclable material family across all components so the package enters a single recycling stream without manual separation. Mono-PP and mono-PE are the most commercially mature options for beauty primary packaging. The net cost impact is typically within 5&#8211;15% of existing packaging. Both SB 54 and EU PPWR financially penalize multi-material formats.</p>
@@ -44,14 +52,14 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Mono-Material Packaging Actually Means</h2>
+            <h2 id="what-mono-material-packaging-actually-means">What Mono-Material Packaging Actually Means</h2>
             <p>Mono-material packaging means every component of the package belongs to the same material family. The body, cap, label, liner, and any inserts are all made from a single resin or material type that can enter one recycling stream together.</p>
             <p>A mono-PP bottle has a PP body, PP cap, PP label (or a label with compatible adhesive that does not contaminate the PP stream), and no metal spring, silicone gasket, or mixed-material pump.</p>
             <p>A paper-based mono-material carton uses paperboard for the structure, paperboard for the insert, paper-based coatings or water-based finishes, and avoids plastic windows, foam, magnets, or laminated films.</p>
             <p>The &ldquo;mono&rdquo; designation is practical, not absolute. Most recycling systems tolerate minor contaminants below a weight threshold (typically 5% or less of total package weight). A small paper label on a PET bottle does not make it multi-material in practice. But a full-wrap shrink sleeve of a different polymer, a metallic pump mechanism, or a foam insert of a different material does.</p>
             <p>The test is simple: can this package enter one recycling stream and be processed without manual separation?</p>
 
-            <h2>Why Multi-Material Packaging Fails Recycling</h2>
+            <h2 id="why-multi-material-packaging-fails-recycling">Why Multi-Material Packaging Fails Recycling</h2>
             <p>Understanding why mono-material works requires understanding why the alternative does not.</p>
             <p>A typical premium beauty package might include:</p>
             <ul>
@@ -67,7 +75,7 @@ export default function PostClient() {
             <p>This is the core problem. &ldquo;Recyclable&rdquo; on the label does not mean &ldquo;recycled&rdquo; in practice. The gap between technical recyclability and real-world recycling is where mono-material design creates its value.</p>
             <p>For beauty brands navigating SB 54 and PPWR, this gap is increasingly a compliance risk. Both regulations are moving toward recyclability definitions that account for real-world infrastructure, not just theoretical material properties. The <Link href="/guides/sustainable-beauty-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design">Sustainable Beauty Packaging guide</Link> covers the regulatory context in detail.</p>
 
-            <h2>Material Options for Mono-Material Beauty Packaging</h2>
+            <h2 id="material-options-for-mono-material-beauty-packagin">Material Options for Mono-Material Beauty Packaging</h2>
             <p>Four material families dominate mono-material packaging design for beauty. Each has strengths and constraints.</p>
             <h3>Mono-PP (Polypropylene)</h3>
             <p>PP is the most versatile mono-material option for beauty primary packaging. It accepts a wide range of processes: injection molding, blow molding, thermoforming, and extrusion.</p>
@@ -91,7 +99,7 @@ export default function PostClient() {
             <p><strong>Challenges:</strong> Moisture and grease resistance require coatings. Water-based and barrier coatings that maintain recyclability exist but add cost. Paper cannot directly contain liquid or gel formulas without a liner, which breaks mono-material integrity. Structural rigidity is lower than plastic for primary packaging.</p>
             <p>For material-by-material selection guidance, use the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design">Material Decision Framework</Link>.</p>
 
-            <h2>Design Challenges in Mono-Material Beauty Packaging</h2>
+            <h2 id="design-challenges-in-mono-material-beauty-packagin">Design Challenges in Mono-Material Beauty Packaging</h2>
             <p>Mono-material is not harder. It is more disciplined. The constraints force better design decisions, but the constraints are real.</p>
             <h3>Barrier Properties</h3>
             <p>Multi-material packaging often uses layers specifically to create barriers against oxygen, moisture, UV light, and volatile compound migration. Removing those layers means the single material must provide adequate protection on its own.</p>
@@ -119,7 +127,7 @@ export default function PostClient() {
             <p>Mono-PP systems solve this naturally because both body and cap can be injection-molded PP. Mono-PET requires PET caps, which are less common but increasingly available.</p>
             <p>Pumps and dispensers are the hardest closure type for mono-material compliance. Traditional pumps combine plastic housing, metal springs, and silicone gaskets. Mono-material pump alternatives are emerging but remain limited in the market. For pump-dispensed products, designing for easy pump removal (so the consumer can separate the pump from the bottle before recycling) is a pragmatic interim solution.</p>
 
-            <h2>Which Beauty Formats Work Well in Mono-Material</h2>
+            <h2 id="which-beauty-formats-work-well-in-mono-material">Which Beauty Formats Work Well in Mono-Material</h2>
             <h3>Strong Mono-Material Candidates</h3>
             <ul>
               <li><strong>Jars (skincare, body):</strong> Mono-PP jar with mono-PP cap. Straightforward. Widely available.</li>
@@ -136,7 +144,7 @@ export default function PostClient() {
               <li><strong>Multi-component gift sets:</strong> Achieving mono-material across every element of a gift set (box, tray, insert, ribbon, product packaging) requires intentional design from the start.</li>
             </ul>
 
-            <h2>Cost Implications of Mono-Material Design</h2>
+            <h2 id="cost-implications-of-mono-material-design">Cost Implications of Mono-Material Design</h2>
             <p>Mono-material packaging does not automatically cost more or less than multi-material. The cost impact depends on what is being replaced and what the mono-material alternative requires.</p>
             <p><strong>Where mono-material saves cost:</strong></p>
             <ul>
@@ -156,6 +164,9 @@ export default function PostClient() {
             <p>Over time, mono-material packaging may become cheaper as recycling infrastructure penalizes multi-material formats through EPR fees and surcharges. Both SB 54 and <Link href="/blog/eu-ppwr-packaging-requirements-beauty?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design">EU PPWR</Link> frameworks create financial incentives for recyclable packaging. Brands that transition now avoid future cost increases.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Mono-Material Packaging FAQ"
@@ -171,7 +182,7 @@ export default function PostClient() {
         ctaProjectType="Sustainable Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Design for the Stream, Not the Label</h2>
             <p>The packaging industry spent years putting recyclable symbols on packages that recycling systems cannot actually process. Mono-material packaging design closes that gap. It does not require exotic materials or radical formats. It requires discipline: one material family, compatible components, and honest claims.</p>
             <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path. See how disciplined material simplification works in practice in the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono_material_artilect_case_study">Artilect packaging reduction case study</Link>.</p>

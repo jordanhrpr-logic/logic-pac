@@ -4,9 +4,29 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-are-packaging-finishes', label: 'What Are Packaging Finishes?' },
+    { id: 'why-finishes-matter-more-than-structure-for-percei', label: 'Why Finishes Matter More Than Structure for Per...' },
+    { id: 'soft-touch-lamination-008020-per-unit', label: 'Soft-Touch Lamination: $0.08–$0.20 Per Unit' },
+    { id: 'foil-stamping-015060-per-unit', label: 'Foil Stamping: $0.15–$0.60 Per Unit' },
+    { id: 'spot-uv-coating-010030-per-unit', label: 'Spot UV Coating: $0.10–$0.30 Per Unit' },
+    { id: 'embossing-vs-debossing-010040-per-unit-plus-die-co', label: 'Embossing vs. Debossing: $0.10–$0.40 Per Unit P...' },
+    { id: 'interior-printing-005015-per-unit', label: 'Interior Printing: $0.05–$0.15 Per Unit' },
+    { id: 'holographic-and-specialty-coatings', label: 'Holographic and Specialty Coatings' },
+    { id: 'how-to-combine-packaging-finishes-without-overbuil', label: 'How to Combine Packaging Finishes Without Overb...' },
+    { id: 'which-finish-should-beauty-brands-use-by-category', label: 'Which Finish Should Beauty Brands Use by Category?' },
+    { id: 'how-to-choose-one-signature-finish', label: 'How to Choose One Signature Finish' },
+    { id: 'finish-mistakes-that-make-packaging-look-cheaper', label: 'Finish Mistakes That Make Packaging Look Cheaper' },
+    { id: 'what-to-ask-before-approving-a-finish', label: 'What to Ask Before Approving a Finish' },
+    { id: 'how-to-brief-finishes-correctly', label: 'How to Brief Finishes Correctly' },
+    { id: 'how-finishes-change-packaging-cost', label: 'How Finishes Change Packaging Cost' },
+  ]
+
 
   return (
     <>
@@ -14,15 +34,12 @@ export default function PostClient() {
         <div className="ey inv">Finishes</div>
         <h1>Packaging Finishes Guide: Foil, Spot UV, Embossing, Soft Touch, and More</h1>
         <p>A practical packaging finishes guide for beauty brands</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>10 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>10 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">Which packaging finishes are worth the cost?</h2>
             <p>Common beauty packaging finishes add $0.05&#8211;0.60 per unit: soft-touch lamination ($0.08&#8211;0.20), foil stamping ($0.15&#8211;0.60 plus die), spot UV ($0.10&#8211;0.30), embossing/debossing ($0.10&#8211;0.40 plus die). The strongest premium packaging uses one signature finish as the hero, not every available effect.</p>
@@ -44,7 +61,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Are Packaging Finishes?</h2>
+            <h2 id="what-are-packaging-finishes">What Are Packaging Finishes?</h2>
             <p>Packaging finishes are the surface treatments and decorative effects applied after or during printing. They change how the package looks, feels, reflects light, and signals value.</p>
             <p>Common finishes include:</p>
             <ul>
@@ -63,7 +80,7 @@ export default function PostClient() {
             <p>But finishes don&apos;t fix weak structure. If the box shape, material, and layout are wrong, adding foil won&apos;t save it.</p>
             <p>Our <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_finishes_guide_finish_guide">Packaging Finish Guide</Link> covers the visual examples. This article explains the cost and decision framework behind each finish.</p>
 
-            <h2>Why Finishes Matter More Than Structure for Perceived Value</h2>
+            <h2 id="why-finishes-matter-more-than-structure-for-percei">Why Finishes Matter More Than Structure for Perceived Value</h2>
             <p>Structure sets the package&apos;s shape. Finish sets the customer&apos;s sensory expectation.</p>
             <p>A simple folding carton can feel premium with the right paper, foil, and soft-touch finish. A rigid box can feel cheap if the wrap scuffs, the foil is misregistered, or the coating feels plasticky.</p>
             <p>Perceived value comes from small signals:</p>
@@ -77,7 +94,7 @@ export default function PostClient() {
             <p>These details matter because beauty packaging is handled close-up. Customers pick it up. Creators film it. Retail buyers evaluate it under store lighting. The finish has to survive all of that.</p>
             <p>This is why finish selection should happen early. Not after the structure is already priced.</p>
 
-            <h2>Soft-Touch Lamination: $0.08&ndash;$0.20 Per Unit</h2>
+            <h2 id="soft-touch-lamination-008020-per-unit">Soft-Touch Lamination: $0.08&ndash;$0.20 Per Unit</h2>
             <p>Soft-touch lamination gives packaging a velvety, matte surface. It is common in skincare, fragrance, color cosmetics, and premium wellness packaging because it creates an immediate hand-feel upgrade.</p>
             <p>Typical cost adder: <strong>$0.08&ndash;$0.20 per unit</strong>.</p>
             <p>Use soft touch when:</p>
@@ -90,7 +107,7 @@ export default function PostClient() {
             <p>The tradeoff is durability. Soft-touch coatings can scuff, show fingerprints, or mark during shipping if the substrate and outer shipper are not planned correctly.</p>
             <p>Soft touch works best when paired with one controlled contrast: foil, spot UV, or embossing. Too much decoration on soft touch can lose the point.</p>
 
-            <h2>Foil Stamping: $0.15&ndash;$0.60 Per Unit</h2>
+            <h2 id="foil-stamping-015060-per-unit">Foil Stamping: $0.15&ndash;$0.60 Per Unit</h2>
             <p>Foil stamping applies metallic or pigmented foil to the surface using heat, pressure, and a die. It is one of the most recognizable premium packaging finishes because it catches light immediately.</p>
             <p>Typical cost adder: <strong>$0.15&ndash;$0.60 per unit</strong>, plus die cost.</p>
             <p>Use foil when:</p>
@@ -104,7 +121,7 @@ export default function PostClient() {
             <p>Large foil coverage can become expensive and create registration risk. Multiple foil colors add complexity. Fine lines can fill in if the artwork isn&apos;t set up correctly.</p>
             <p>The best foil decisions are restrained. One bright hit. Not a whole box fighting for attention.</p>
 
-            <h2>Spot UV Coating: $0.10&ndash;$0.30 Per Unit</h2>
+            <h2 id="spot-uv-coating-010030-per-unit">Spot UV Coating: $0.10&ndash;$0.30 Per Unit</h2>
             <p>Spot UV adds a glossy coating to selected areas of the package. It works by contrast: gloss against matte, shine against flat color, raised detail against a quiet surface.</p>
             <p>Typical cost adder: <strong>$0.10&ndash;$0.30 per unit</strong> depending on coverage and registration.</p>
             <p>Use spot UV when:</p>
@@ -125,7 +142,7 @@ export default function PostClient() {
             </ul>
             <p>Spot UV is not a replacement for strong design. It is a way to make the right detail visible.</p>
 
-            <h2>Embossing vs. Debossing: $0.10&ndash;$0.40 Per Unit Plus Die Cost</h2>
+            <h2 id="embossing-vs-debossing-010040-per-unit-plus-die-co">Embossing vs. Debossing: $0.10&ndash;$0.40 Per Unit Plus Die Cost</h2>
             <p>Embossing raises part of the surface. Debossing presses part of the surface down. Both use pressure and dies to create a tactile effect.</p>
             <p>Typical cost adder: <strong>$0.10&ndash;$0.40 per unit</strong>, plus die cost.</p>
             <p>Use embossing when:</p>
@@ -144,7 +161,7 @@ export default function PostClient() {
             <p>Embossing and debossing are strongest when the customer physically touches the package. They are less useful when the package is viewed mostly from a shelf at distance.</p>
             <p>The main risk is over-detailing. Tiny type, thin lines, and complex shapes don&apos;t always emboss cleanly. The artwork needs to be built for pressure, not just print.</p>
 
-            <h2>Interior Printing: $0.05&ndash;$0.15 Per Unit</h2>
+            <h2 id="interior-printing-005015-per-unit">Interior Printing: $0.05&ndash;$0.15 Per Unit</h2>
             <p>Interior printing is one of the most underrated packaging finishes. It changes the experience after the box opens.</p>
             <p>Typical cost adder: <strong>$0.05&ndash;$0.15 per unit</strong> for many carton applications, depending on coverage and print setup.</p>
             <p>Use interior print when:</p>
@@ -157,7 +174,7 @@ export default function PostClient() {
             <p>Interior printing works well for skincare, fragrance, supplements, PR kits, and gift sets. It can also carry instructions, ritual language, QR codes, or product education without cluttering the exterior.</p>
             <p>The best interior print doesn&apos;t feel like filler. It supports the reveal.</p>
 
-            <h2>Holographic and Specialty Coatings</h2>
+            <h2 id="holographic-and-specialty-coatings">Holographic and Specialty Coatings</h2>
             <p>Holographic film, pearlescent coatings, glitter effects, metallic inks, and specialty varnishes can create high-impact packaging. They also date quickly if they aren&apos;t tied to the brand.</p>
             <p>Cost varies widely because materials, application methods, coverage, and production requirements differ.</p>
             <p>Use specialty coatings when:</p>
@@ -172,7 +189,7 @@ export default function PostClient() {
 
             <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft touch coating and spot UV finish detail on custom packaging" width={760} height={570} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
-            <h2>How to Combine Packaging Finishes Without Overbuilding</h2>
+            <h2 id="how-to-combine-packaging-finishes-without-overbuil">How to Combine Packaging Finishes Without Overbuilding</h2>
             <p>Finish stacking is where budgets disappear.</p>
             <p>Soft touch plus foil plus embossing plus spot UV plus specialty paper can work. But only if each finish has a job. Otherwise, the package starts to feel like a sample book.</p>
             <p>Use the one-signature-moment rule:</p>
@@ -188,7 +205,7 @@ export default function PostClient() {
             </ul>
             <p>The restraint is the point. Premium packaging doesn&apos;t need to prove it used every process.</p>
 
-            <h2>Which Finish Should Beauty Brands Use by Category?</h2>
+            <h2 id="which-finish-should-beauty-brands-use-by-category">Which Finish Should Beauty Brands Use by Category?</h2>
             <p>Different beauty categories need different finish strategies.</p>
 
             <h3>Skincare</h3>
@@ -207,7 +224,7 @@ export default function PostClient() {
             <p>Haircare and personal care need durability first. Coatings need to resist scuffing, moisture, and handling. Finishes should be selected around shelf performance and shower/bathroom context.</p>
             <p>For material and format decisions by product type, see the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_finishes_material_framework">Material Decision Framework</Link>.</p>
 
-            <h2>How to Choose One Signature Finish</h2>
+            <h2 id="how-to-choose-one-signature-finish">How to Choose One Signature Finish</h2>
             <p>The easiest way to control finish cost is to decide which moment deserves the spend.</p>
             <p>A signature finish should do one of three jobs:</p>
             <ol>
@@ -227,7 +244,7 @@ export default function PostClient() {
             </ul>
             <p>The answer is rarely &ldquo;all of them.&rdquo;</p>
 
-            <h2>Finish Mistakes That Make Packaging Look Cheaper</h2>
+            <h2 id="finish-mistakes-that-make-packaging-look-cheaper">Finish Mistakes That Make Packaging Look Cheaper</h2>
             <p>Finishes can raise perceived value. They can also make packaging look less controlled.</p>
             <p>Common mistakes:</p>
             <ul>
@@ -243,7 +260,7 @@ export default function PostClient() {
             <p>Premium packaging has hierarchy. One lead element. Supporting details. White space. Restraint.</p>
             <p>That is why some of the most expensive-looking boxes are not the most expensive to produce.</p>
 
-            <h2>What to Ask Before Approving a Finish</h2>
+            <h2 id="what-to-ask-before-approving-a-finish">What to Ask Before Approving a Finish</h2>
             <p>Before approving a finish, ask the supplier for production-specific answers.</p>
             <ul>
               <li>What substrate is this finish being applied to?</li>
@@ -257,12 +274,12 @@ export default function PostClient() {
             <p>The last question matters. Digital mockups make every finish look perfect. Production samples show the truth: foil pressure, edge quality, coating feel, scuff resistance, and color behavior under real light.</p>
             <p>Approve from samples whenever possible.</p>
 
-            <h2>How to Brief Finishes Correctly</h2>
+            <h2 id="how-to-brief-finishes-correctly">How to Brief Finishes Correctly</h2>
             <p>Finish notes need to be specific enough for production.</p>
             <p>Do not write &ldquo;premium foil.&rdquo; Write the foil color, coverage area, artwork file, registration tolerance, and whether the foil appears on one panel or multiple panels. Do not write &ldquo;soft matte feel.&rdquo; Specify soft-touch lamination, matte aqueous coating, or uncoated paper if the hand feel matters.</p>
             <p>The more precise the finish brief, the cleaner the quote. The cleaner the quote, the fewer surprises after sampling.</p>
 
-            <h2>How Finishes Change Packaging Cost</h2>
+            <h2 id="how-finishes-change-packaging-cost">How Finishes Change Packaging Cost</h2>
             <p>Finishes change cost in four ways:</p>
             <ol>
               <li><strong>Unit cost:</strong> The per-piece application cost.</li>
@@ -278,6 +295,9 @@ export default function PostClient() {
 
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Packaging Finishes FAQs"
@@ -292,7 +312,7 @@ export default function PostClient() {
         ctaProjectType="Packaging Finishes"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Pick the Finish That Carries the Moment</h2>
             <p>Finishes are not decoration. They&apos;re signals.</p>
             <p>A foil stamp says precision. Soft touch says calm. Embossing says tactility. Spot UV says contrast. Interior print says there is more to discover.</p>

@@ -4,9 +4,19 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'structural-options-for-custom-advent-calendar-pack', label: 'Structural Options for Custom Advent Calendar P...' },
+    { id: 'advent-calendar-packaging-cost-what-drives-the-pri', label: 'Advent Calendar Packaging Cost: What Drives the...' },
+    { id: 'the-production-timeline-why-you-need-6-8-months', label: 'The Production Timeline: Why You Need 6-8 Months' },
+    { id: 'retailer-compliance-for-advent-calendar-sets', label: 'Retailer Compliance for Advent Calendar Sets' },
+    { id: 'common-production-failures-and-how-to-avoid-them', label: 'Common Production Failures (and How to Avoid Them)' },
+  ]
+
 
   return (
     <>
@@ -14,15 +24,12 @@ export default function PostClient() {
         <div className="ey inv">Holiday</div>
         <h1>Advent Calendar Packaging for Beauty Brands: What It Actually Takes to Produce</h1>
         <p>Timelines, costs, and compliance</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What does it take to produce a beauty advent calendar?</h2>
             <p>A custom beauty advent calendar requires 6&#8211;8 months of lead time and costs $8&#8211;25+ per unit at 1,000&#8211;5,000 units. Door-style calendars are cheapest ($8&#8211;14/unit); drawer systems run $16&#8211;25+ with $3,000&#8211;8,000 in tooling. Insert engineering for 12&#8211;25 differently sized products is the most underestimated technical challenge. Start in January for November delivery.</p>
@@ -44,7 +51,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Structural Options for Custom Advent Calendar Packaging</h2>
+            <h2 id="structural-options-for-custom-advent-calendar-pack">Structural Options for Custom Advent Calendar Packaging</h2>
             <p>The structural format is the first and most consequential decision. It determines tooling cost, assembly complexity, per-unit price, and how the calendar feels in the customer&apos;s hands. There are four primary structures we produce for beauty advent calendars.</p>
             <Image src="/images/portfolio/24-door-advent-calendar.jpeg" alt="Custom 24-door beauty advent calendar packaging" width={760} height={760} className="guide-img" style={{ width: '100%', height: 'auto' }} />
             <h3>Door-Style (Hinged Panel)</h3>
@@ -68,7 +75,7 @@ export default function PostClient() {
             <p><strong>Cons:</strong> Less dramatic reveal than doors or drawers. All products are technically visible once the lid is removed (just covered). Less &ldquo;advent calendar&rdquo; and more &ldquo;gift set with numbered covers.&rdquo;</p>
             <p><strong>Typical cost:</strong> $10-18 per unit at 2,000-5,000 units.</p>
 
-            <h2>Advent Calendar Packaging Cost: What Drives the Price</h2>
+            <h2 id="advent-calendar-packaging-cost-what-drives-the-pri">Advent Calendar Packaging Cost: What Drives the Price</h2>
             <p>Advent calendar packaging cost is a function of five variables. Understanding these before the brief stage prevents the sticker shock that derails projects in month three.</p>
             <h3>Component Count</h3>
             <p>A 24-door calendar has a minimum of 26 structural components: the outer shell, the inner tray or housing, and 24 individual doors, drawers, or covers. A drawer-style calendar can have 50+ components when you count drawer boxes, drawer sleeves, the housing frame, dividers, and the outer shell.</p>
@@ -105,7 +112,7 @@ export default function PostClient() {
               <li><strong>5,000-10,000 units:</strong> $7-15 per unit. National retail volumes. Significant per-unit savings on labor-intensive formats like drawers.</li>
             </ul>
 
-            <h2>The Production Timeline: Why You Need 6-8 Months</h2>
+            <h2 id="the-production-timeline-why-you-need-6-8-months">The Production Timeline: Why You Need 6-8 Months</h2>
             <p>Beauty advent calendar production cannot be compressed into a summer project. Here&apos;s why each phase takes the time it takes.</p>
             <h3>Months 1-2: Brief, Format Selection, and Product Finalization</h3>
             <p>The brief must include final product dimensions for every item in the calendar. Not &ldquo;approximately&rdquo; &mdash; final dimensions. The insert can&apos;t be engineered until the products are locked. This is the phase most brands underestimate.</p>
@@ -122,7 +129,7 @@ export default function PostClient() {
             <p>Ocean freight (4-6 weeks for international production), customs clearance, warehouse receiving, final kitting, and outbound shipping to retail or DTC fulfillment.</p>
             <p>For a complete production phase breakdown, see our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=advent-calendar-packaging-beauty">concept to shelf timeline</Link>.</p>
 
-            <h2>Retailer Compliance for Advent Calendar Sets</h2>
+            <h2 id="retailer-compliance-for-advent-calendar-sets">Retailer Compliance for Advent Calendar Sets</h2>
             <p>Advent calendars sold through retail channels face the same compliance requirements as standard holiday gift sets, plus additional considerations unique to the format.</p>
             <h3>Case Pack and Display Requirements</h3>
             <p>Advent calendars are large-format items. They don&apos;t fit standard shelf planograms. Most retailers merchandise them as endcap displays, promotional fixtures, or seasonal floor sets.</p>
@@ -133,7 +140,7 @@ export default function PostClient() {
             <p>Advent calendars are sustainability-complex. Multi-material structures (rigid board, paper, magnets, foam inserts, plastic trays, ribbon) create end-of-life recycling challenges. Target, Sephora, and Ulta are all increasing pressure on packaging recyclability.</p>
             <p>Design for mono-material construction where possible. FSC-certified board, paper-based inserts, and water-based coatings help. Molded pulp inserts replace thermoformed plastic trays at a similar cost point while improving recyclability.</p>
 
-            <h2>Common Production Failures (and How to Avoid Them)</h2>
+            <h2 id="common-production-failures-and-how-to-avoid-them">Common Production Failures (and How to Avoid Them)</h2>
             <p>Having built advent calendars across dozens of beauty brands, we see the same failures repeatedly. None of them are design problems. They&apos;re process problems.</p>
             <h3>Product Dimensions Change After Insert Tooling</h3>
             <p>The insert is engineered to specific product dimensions. If the serum bottle changes from 1.1&rdquo; diameter to 1.3&rdquo; diameter after tooling, that cavity needs to be re-cut. At $200-$500 per cavity modification, changes across multiple products add up fast.</p>
@@ -149,6 +156,9 @@ export default function PostClient() {
             <p><strong>Prevention:</strong> Ship test units through the actual distribution chain before committing to mass production. Test in the freight conditions the calendar will actually experience.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Advent Calendar Packaging FAQ"
@@ -164,7 +174,7 @@ export default function PostClient() {
         ctaProjectType="Advent Calendar Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>If you&apos;ve been asked to produce an advent calendar for this year&apos;s holiday season, the timeline starts now. The structural format, product lineup, and budget need to be defined before design can begin. We&apos;ll scope the project, confirm what&apos;s realistic for your timeline, and walk you through the format options that fit your product mix and price point.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=advent-calendar-packaging-beauty" target="_blank" rel="noopener noreferrer">Book a consultation</a> to start scoping your advent calendar project.</p>

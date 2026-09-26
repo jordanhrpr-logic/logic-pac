@@ -4,9 +4,23 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-is-sb-54-in-plain-english', label: 'What Is SB 54 in Plain English?' },
+    { id: 'does-sb-54-apply-to-beauty-brands', label: 'Does SB 54 Apply to Beauty Brands?' },
+    { id: 'the-2027-window-what-brands-should-prepare-for-now', label: 'The 2027 Window: What Brands Should Prepare For...' },
+    { id: 'the-primary-secondary-and-tertiary-packaging-audit', label: 'The Primary, Secondary, and Tertiary Packaging ...' },
+    { id: 'what-sb-54-means-for-packaging-design', label: 'What SB 54 Means for Packaging Design' },
+    { id: 'what-beauty-brands-should-do-now', label: 'What Beauty Brands Should Do Now' },
+    { id: 'what-does-sb-54-compliance-cost', label: 'What Does SB 54 Compliance Cost?' },
+    { id: 'common-sb-54-mistakes-beauty-brands-make', label: 'Common SB 54 Mistakes Beauty Brands Make' },
+    { id: 'a-simple-sb-54-audit-table-for-beauty-packaging', label: 'A Simple SB 54 Audit Table for Beauty Packaging' },
+  ]
+
 
   return (
     <>
@@ -14,16 +28,13 @@ export default function PostClient() {
         <div className="ey inv">Compliance</div>
         <h1>SB 54 Packaging Compliance for Beauty Brands</h1>
         <p>What to do before the 2027 window</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>11 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>11 min read</span></div>
         <VerifiedAsOf />
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What should beauty brands do for SB 54?</h2>
             <p>Start with a full packaging audit &#8212; primary containers, secondary cartons, inserts, labels, shippers, and every plastic component sold into California. SB 54 applies if your packaging enters the California market regardless of where your brand is based. The practical 2027 work is registration, data readiness, supplier documentation, and early material transition planning.</p>
@@ -45,14 +56,14 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Is SB 54 in Plain English?</h2>
+            <h2 id="what-is-sb-54-in-plain-english">What Is SB 54 in Plain English?</h2>
             <p>SB 54 is California&apos;s Plastic Pollution Prevention and Packaging Producer Responsibility Act. CalRecycle describes it as an extended producer responsibility program for packaging and single-use plastic food service ware across every sector of the economy.</p>
             <p>Extended producer responsibility means producers carry more responsibility for what happens to packaging after the product is sold. The burden shifts away from cities and consumers alone and toward the companies placing covered packaging into the market.</p>
             <p>For beauty brands, the takeaway is simple:</p>
             <p>You need to know what your packaging is made of, how much of it you sell into California, whether it is recyclable or compostable, and what proof supports those claims.</p>
             <p>This is not work a brand should do from memory. It requires supplier documentation.</p>
 
-            <h2>Does SB 54 Apply to Beauty Brands?</h2>
+            <h2 id="does-sb-54-apply-to-beauty-brands">Does SB 54 Apply to Beauty Brands?</h2>
             <p>SB 54 can apply to beauty brands that sell covered packaging into California, even if the brand is based somewhere else. If your products are sold through California retailers, shipped to California consumers, or distributed nationally through channels that include California, the packaging needs to be evaluated.</p>
             <p>The biggest misconception is location.</p>
             <p>&ldquo;We&apos;re not based in California&rdquo; is not the right test. The better question is: does our packaging enter the California market?</p>
@@ -66,7 +77,7 @@ export default function PostClient() {
             </ul>
             <p>That does not mean every brand has the same reporting burden or compliance path. It means the packaging should be audited early enough to understand risk.</p>
 
-            <h2>The 2027 Window: What Brands Should Prepare For Now</h2>
+            <h2 id="the-2027-window-what-brands-should-prepare-for-now">The 2027 Window: What Brands Should Prepare For Now</h2>
             <p>The phrase &ldquo;2027 deadline&rdquo; gets used loosely, so we should be precise.</p>
             <p>SB 54&apos;s long-range outcomes build toward 2032. But the practical work starts earlier. Producers, producer responsibility organization activity, reporting systems, covered material lists, and implementation planning all start before the 2032 endpoint.</p>
             <p>For beauty brands, 2027 should be treated as a readiness window.</p>
@@ -83,7 +94,7 @@ export default function PostClient() {
             <p>This is not the year to start guessing. It is the year to make the packaging data usable.</p>
             <p>CalRecycle&apos;s permanent SB 54 regulations were approved in 2026, and the producer responsibility structure is now moving from theory into execution. That means brand teams should stop treating this as distant policy and start treating it as operational planning.</p>
 
-            <h2>The Primary, Secondary, and Tertiary Packaging Audit</h2>
+            <h2 id="the-primary-secondary-and-tertiary-packaging-audit">The Primary, Secondary, and Tertiary Packaging Audit</h2>
             <p>Beauty brands need to audit packaging in three layers.</p>
 
             <h3>Primary Packaging: Bottles, Jars, Tubes, Pumps, Droppers</h3>
@@ -127,7 +138,7 @@ export default function PostClient() {
             <p>For DTC-heavy beauty brands, tertiary packaging can represent a meaningful share of packaging weight. A beautiful primary package does not offset an overbuilt shipper.</p>
             <p>For a broader material selection framework, use the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_material_decision_framework">Material Decision Framework</Link>.</p>
 
-            <h2>What SB 54 Means for Packaging Design</h2>
+            <h2 id="what-sb-54-means-for-packaging-design">What SB 54 Means for Packaging Design</h2>
             <p>SB 54 should change how beauty brands design packaging. Not by making everything plain. By making every component easier to document, recover, and justify.</p>
 
             <h3>Mono-Material Becomes the Default Starting Point</h3>
@@ -152,7 +163,7 @@ export default function PostClient() {
             <p>Sustainability copy should be specific enough to survive a legal review and simple enough for a customer to understand.</p>
             <p>For the broader sustainability playbook, see our <Link href="/blog/sustainable-beauty-packaging-sb54?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_sustainable_packaging_guide">Sustainable Beauty Packaging guide</Link>.</p>
 
-            <h2>What Beauty Brands Should Do Now</h2>
+            <h2 id="what-beauty-brands-should-do-now">What Beauty Brands Should Do Now</h2>
             <p>The right SB 54 plan starts with operational work, not a redesign mood board.</p>
 
             <h3>Step 1: Build a Packaging Bill of Materials</h3>
@@ -222,7 +233,7 @@ export default function PostClient() {
             <p>Packaging changes need sampling, testing, artwork updates, supplier coordination, and inventory planning. If a component needs to change, the brand needs runway.</p>
             <p>Start with the highest-volume SKU or highest-risk structure. One clean redesign can become the template for the rest of the line.</p>
 
-            <h2>What Does SB 54 Compliance Cost?</h2>
+            <h2 id="what-does-sb-54-compliance-cost">What Does SB 54 Compliance Cost?</h2>
             <p>There is no single SB 54 compliance cost because the cost depends on the existing packaging system.</p>
             <p>The first cost is usually not redesign. It is the audit. Someone has to identify every component, confirm the material, request supplier documentation, and map which claims are defensible. That work is much cheaper than changing tooling before you understand the exposure, especially for brands with multiple cartons, inserts, labels, and shipper formats.</p>
             <p>But the cost usually comes from five places:</p>
@@ -237,7 +248,7 @@ export default function PostClient() {
             <p>The most expensive brands to transition are the ones with fragmented packaging decisions across many SKUs, suppliers, materials, and claims.</p>
             <p>Complexity is the hidden cost.</p>
 
-            <h2>Common SB 54 Mistakes Beauty Brands Make</h2>
+            <h2 id="common-sb-54-mistakes-beauty-brands-make">Common SB 54 Mistakes Beauty Brands Make</h2>
 
             <h3>Mistake 1: Auditing Only the Primary Package</h3>
             <p>The bottle matters. So does the carton, insert, shipper, label, and retail display.</p>
@@ -259,7 +270,7 @@ export default function PostClient() {
             <p>Packaging changes create inventory issues. Old packaging, new packaging, artwork updates, regulatory copy, production timelines, and retail transition timing all need to be planned together.</p>
             <p>A compliance redesign that creates obsolete inventory is still a cost problem.</p>
 
-            <h2>A Simple SB 54 Audit Table for Beauty Packaging</h2>
+            <h2 id="a-simple-sb-54-audit-table-for-beauty-packaging">A Simple SB 54 Audit Table for Beauty Packaging</h2>
             <p>Use this as the first-pass audit structure. It is simple on purpose. The goal is to get every component out of someone&apos;s memory and into a format the team can actually use.</p>
             <div style={{ overflowX: 'auto' }}>
               <table>
@@ -304,6 +315,9 @@ export default function PostClient() {
             <p>Once the table is complete, the next step is prioritization. Start with high-volume SKUs, high-risk claims, and components that are expensive or slow to redesign. Those three filters tell you where to focus first.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="SB 54 Packaging Compliance FAQ"
@@ -318,7 +332,7 @@ export default function PostClient() {
         ctaProjectType="SB 54 Compliance"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>The Bottom Line</h2>
             <p>SB 54 is not a reason to panic. It is a reason to get precise.</p>
             <p>Start with the packaging you already have. Map every component. Gather the proof. Identify what needs to change. Then redesign in the right order.</p>

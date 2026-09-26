@@ -4,9 +4,22 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-soft-touch-lamination-actually-is', label: 'What Soft Touch Lamination Actually Is' },
+    { id: 'when-soft-touch-lamination-makes-sense', label: 'When Soft Touch Lamination Makes Sense' },
+    { id: 'when-soft-touch-lamination-does-not-make-sense', label: 'When Soft Touch Lamination Does Not Make Sense' },
+    { id: 'soft-touch-lamination-vs-soft-touch-varnish-not-th', label: 'Soft Touch Lamination vs. Soft Touch Varnish: N...' },
+    { id: 'cost-breakdown-what-soft-touch-lamination-adds-per', label: 'Cost Breakdown: What Soft Touch Lamination Adds...' },
+    { id: 'print-interaction-and-color-considerations', label: 'Print Interaction and Color Considerations' },
+    { id: 'scuff-resistance-and-durability-the-real-tradeoff', label: 'Scuff Resistance and Durability: The Real Tradeoff' },
+    { id: 'common-mistakes-with-soft-touch-lamination', label: 'Common Mistakes With Soft Touch Lamination' },
+  ]
+
 
   return (
     <>
@@ -14,15 +27,12 @@ export default function PostClient() {
         <div className="ey inv">Finishes</div>
         <h1>Soft Touch Lamination for Packaging: When It Works, When It Doesn&apos;t, and What It</h1>
         <p>When each one makes sense</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">When is soft-touch lamination worth the cost?</h2>
             <p>Soft-touch lamination adds $0.08&#8211;0.60 per unit and creates the strongest tactile luxury signal of any standard lamination. It works best on beauty packaging in the $25&#8211;150 retail range where consumers evaluate products in hand. The main tradeoff is scuff resistance &#8212; soft-touch surfaces mark more easily than gloss or standard matte, especially on dark colors.</p>
@@ -43,7 +53,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Soft Touch Lamination Actually Is</h2>
+            <h2 id="what-soft-touch-lamination-actually-is">What Soft Touch Lamination Actually Is</h2>
             <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft touch lamination finish on premium beauty packaging" width={760} height={570} className="guide-img" style={{ width: '100%', height: 'auto' }} />
             <p>Soft touch lamination is a thin film &mdash; typically 12-18 microns of treated polyester (PET) or polypropylene (BOPP) &mdash; that is thermally bonded or adhesive-bonded to a printed substrate. The film surface has a micro-textured coating that creates the characteristic velvet feel.</p>
             <p>The lamination process runs after printing, before any post-lamination finishing (foil stamping, embossing, die-cutting). The film is applied to the full printed sheet, then the sheet is cut and converted into cartons, boxes, sleeves, or wraps.</p>
@@ -54,7 +64,7 @@ export default function PostClient() {
             <p>The soft touch surface has a higher coefficient of friction than standard lamination, which means fingers slow down when they pass over it. That friction creates the &ldquo;velvet&rdquo; perception. The brain interprets the drag as texture even though the surface is visually smooth.</p>
             <p>This is not a minor detail. In categories where consumers pick up products before buying &mdash; beauty, skincare, fragrance, gift sets &mdash; the first physical contact with the packaging is a purchasing moment. Soft touch lamination turns that moment into a positive sensory signal.</p>
 
-            <h2>When Soft Touch Lamination Makes Sense</h2>
+            <h2 id="when-soft-touch-lamination-makes-sense">When Soft Touch Lamination Makes Sense</h2>
             <h3>Luxury and premium beauty packaging</h3>
             <p>Soft touch is one of the defining finishes of premium beauty packaging. Skincare cartons, fragrance boxes, makeup palettes, and gift set packaging in the $25-$150 retail range use soft touch extensively because the tactile signal matches the price expectation.</p>
             <p>For luxury packaging strategy, including how soft touch fits into the broader finish hierarchy, see our <Link href="/blog/luxury-beauty-packaging-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_luxury_guide">luxury beauty packaging guide</Link>.</p>
@@ -65,7 +75,7 @@ export default function PostClient() {
             <h3>Skincare and wellness brands</h3>
             <p>Skincare brands particularly benefit from soft touch because the tactile association maps to the product promise. A moisturizer that claims to make skin &ldquo;silky&rdquo; or &ldquo;velvety&rdquo; reinforces that claim through the packaging surface before the product is ever applied.</p>
 
-            <h2>When Soft Touch Lamination Does Not Make Sense</h2>
+            <h2 id="when-soft-touch-lamination-does-not-make-sense">When Soft Touch Lamination Does Not Make Sense</h2>
             <h3>High-friction retail environments</h3>
             <p>Products that are handled frequently on retail shelves &mdash; testers, high-traffic endcap positions, products in open trays &mdash; will show scuffing on soft touch surfaces faster than gloss or standard matte lamination. If the product sits in a Sephora drawer where 50 people touch it before one person buys it, the soft touch surface may look worn before it sells.</p>
             <h3>Products that get wet</h3>
@@ -76,7 +86,7 @@ export default function PostClient() {
             <h3>Very high-volume, low-cost products</h3>
             <p>At the drugstore price point ($5-$15), the soft touch cost premium may not be justified by the incremental perceived value. Consumers buying at that price point make faster purchasing decisions with less tactile evaluation. The ROI on soft touch lamination is highest when consumers are spending time evaluating the product in hand.</p>
 
-            <h2>Soft Touch Lamination vs. Soft Touch Varnish: Not the Same Thing</h2>
+            <h2 id="soft-touch-lamination-vs-soft-touch-varnish-not-th">Soft Touch Lamination vs. Soft Touch Varnish: Not the Same Thing</h2>
             <p>This is the most common source of confusion in packaging finishing. Soft touch lamination and soft touch varnish (also called soft touch coating) are different products with different properties.</p>
             <h3>Soft touch lamination</h3>
             <ul>
@@ -102,7 +112,7 @@ export default function PostClient() {
             <p>Choose lamination when tactile intensity, durability, and post-finishing (foil, emboss) compatibility are priorities. Choose varnish when budget is the primary constraint and the packaging will not be subject to heavy handling or post-lamination effects.</p>
             <p>For many beauty brands, lamination is the better investment because the tactile difference is noticeable and the durability supports retail shelf life. Varnish is a reasonable alternative for e-commerce-only brands where retail handling is not a concern.</p>
 
-            <h2>Cost Breakdown: What Soft Touch Lamination Adds Per Unit</h2>
+            <h2 id="cost-breakdown-what-soft-touch-lamination-adds-per">Cost Breakdown: What Soft Touch Lamination Adds Per Unit</h2>
             <p>Soft touch lamination cost depends on four variables: substrate area, production volume, lamination type, and post-lamination finishing.</p>
             <h3>Cost by format</h3>
             <p>| Packaging Format | Typical Soft Touch Adder | |&ndash;-|&ndash;-| | Folding carton (small/medium) | $0.08-$0.25 per unit | | Folding carton (large) | $0.15-$0.40 per unit | | Rigid box wrap paper | $0.20-$0.60 per unit | | Sleeve or band | $0.05-$0.15 per unit | | Palette or compact carton | $0.10-$0.30 per unit |</p>
@@ -115,7 +125,7 @@ export default function PostClient() {
             <p>3. <strong>Embossing through soft touch lamination</strong> works well when the emboss depth is controlled. The lamination film stretches slightly into embossed areas, maintaining the soft touch feel across the dimensional surface.</p>
             <p>For comprehensive finish combinations, costs, and tradeoffs, the <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_finish_guide">Packaging Finish Guide</Link> covers every major finish type and how they interact.</p>
 
-            <h2>Print Interaction and Color Considerations</h2>
+            <h2 id="print-interaction-and-color-considerations">Print Interaction and Color Considerations</h2>
             <p>Soft touch lamination changes how printed colors appear. The matte, light-absorbing surface shifts colors slightly warmer and reduces perceived contrast compared to gloss lamination. Bright, saturated colors may appear slightly muted under soft touch.</p>
             <h3>Color management</h3>
             <ul>
@@ -125,7 +135,7 @@ export default function PostClient() {
               <li><strong>Metallic inks</strong> under soft touch lamination lose most of their reflective quality. If metallic ink is part of the design, apply it as foil stamping on top of the lamination rather than printing it under the film.</li>
             </ul>
 
-            <h2>Scuff Resistance and Durability: The Real Tradeoff</h2>
+            <h2 id="scuff-resistance-and-durability-the-real-tradeoff">Scuff Resistance and Durability: The Real Tradeoff</h2>
             <p>Scuff resistance is the primary durability limitation of soft touch lamination. The micro-textured surface that creates the tactile appeal also creates more surface area for friction damage.</p>
             <h3>Scuff performance vs. alternatives</h3>
             <p>| Finish | Scuff Resistance | Tactile Quality | |&ndash;-|&ndash;-|&ndash;-| | Gloss lamination | High | Low (smooth, slippery) | | Matte lamination | Medium-High | Low-Medium (flat, neutral) | | Soft touch lamination | Medium | High (velvet, premium) | | Soft touch varnish | Low-Medium | Medium (soft, lighter feel) | | Uncoated | Low | Variable (depends on paper) |</p>
@@ -138,7 +148,7 @@ export default function PostClient() {
               <li><strong>Design around the limitation</strong> by using lighter colors and avoiding large solid-dark areas that show scuffs most visibly.</li>
             </ul>
 
-            <h2>Common Mistakes With Soft Touch Lamination</h2>
+            <h2 id="common-mistakes-with-soft-touch-lamination">Common Mistakes With Soft Touch Lamination</h2>
             <h3>Applying soft touch to the wrong substrate</h3>
             <p>Soft touch lamination performs best on rigid or semi-rigid substrates &mdash; folding cartons, rigid box wrap sheets, and firm paperboard. Applying it to very thin substrates, flexible films, or materials that flex repeatedly can cause delamination over time.</p>
             <h3>Not testing fingerprint visibility</h3>
@@ -150,6 +160,9 @@ export default function PostClient() {
             <p>For complete cost planning, see the <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_cost_post">custom packaging cost breakdown</Link>.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Soft Touch Lamination FAQ"
@@ -165,7 +178,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>Soft touch lamination is one of the most effective finishes for beauty packaging, but the execution details matter &mdash; substrate compatibility, color selection, post-lamination finishing, and scuff protection all affect whether the finish delivers on its promise.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_consultation" target="_blank" rel="noopener noreferrer">Book a finish consultation</a> and we will help you evaluate whether soft touch lamination fits your product, your retail environment, and your cost model &mdash; and specify it correctly if it does.</p>

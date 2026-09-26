@@ -4,9 +4,24 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-is-sustainable-beauty-packaging', label: 'What Is Sustainable Beauty Packaging?' },
+    { id: 'why-sustainable-beauty-packaging-is-getting-harder', label: 'Why Sustainable Beauty Packaging Is Getting Har...' },
+    { id: 'pcr-packaging-for-beauty-what-works-and-what-break', label: 'PCR Packaging for Beauty: What Works and What B...' },
+    { id: 'fsc-paper-and-certified-board-a-cleaner-secondary', label: 'FSC Paper and Certified Board: A Cleaner Second...' },
+    { id: 'mono-material-packaging-the-simplest-path-to-recyc', label: 'Mono-Material Packaging: The Simplest Path to R...' },
+    { id: 'refillable-beauty-packaging-when-it-works-financia', label: 'Refillable Beauty Packaging: When It Works Fina...' },
+    { id: 'what-counts-as-greenwashing-in-beauty-packaging', label: 'What Counts as Greenwashing in Beauty Packaging?' },
+    { id: 'how-sb-54-changes-the-packaging-conversation', label: 'How SB 54 Changes the Packaging Conversation' },
+    { id: 'how-eu-ppwr-affects-beauty-brands-selling-internat', label: 'How EU PPWR Affects Beauty Brands Selling Inter...' },
+    { id: 'a-practical-sustainable-packaging-roadmap', label: 'A Practical Sustainable Packaging Roadmap' },
+  ]
+
 
   return (
     <>
@@ -14,16 +29,13 @@ export default function PostClient() {
         <div className="ey inv">Sustainability</div>
         <h1>Sustainable Beauty Packaging: What Actually Works vs. What Gets Called Green</h1>
         <p>PCR, FSC paper, mono-material design, refillable systems, and what the regulations require</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>12 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>12 min read</span></div>
         <VerifiedAsOf />
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What actually works in sustainable beauty packaging?</h2>
             <p>Sustainable beauty packaging works when you treat it as a system, not a material swap. PCR, FSC paperboard, mono-material design, and refillable formats all perform &#8212; but only when the material is tested, the claim is documented, and the structure still protects the formula. SB 54, EU PPWR, and the FTC Green Guides are closing the window on vague claims.</p>
@@ -45,7 +57,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Is Sustainable Beauty Packaging?</h2>
+            <h2 id="what-is-sustainable-beauty-packaging">What Is Sustainable Beauty Packaging?</h2>
             <p>Sustainable beauty packaging is packaging designed to reduce material waste, improve recyclability or reuse, and support truthful environmental claims without compromising product safety. In practice, that usually means one or more of five choices: lighter structures, recycled content, certified paper, mono-material design, refillable systems, or lower-waste secondary packaging.</p>
             <p>It does not mean every component has to be compostable. It does not mean every brand should switch to glass. It does not mean the package needs to look earthy, beige, or unfinished.</p>
             <p>Beauty packaging still has to do real work:</p>
@@ -60,7 +72,7 @@ export default function PostClient() {
             <p>The goal is not to chase the greenest-sounding option. The goal is to build a packaging system that can be defended technically, financially, and legally.</p>
             <p>For a material-by-material starting point, use the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_material_framework">Material Decision Framework</Link>.</p>
 
-            <h2>Why Sustainable Beauty Packaging Is Getting Harder to Fake</h2>
+            <h2 id="why-sustainable-beauty-packaging-is-getting-harder">Why Sustainable Beauty Packaging Is Getting Harder to Fake</h2>
             <p>For years, beauty brands could get away with vague claims. &ldquo;Eco-friendly.&rdquo; &ldquo;Clean packaging.&rdquo; &ldquo;Better for the planet.&rdquo; Nice words. Thin proof.</p>
             <p>That window is closing.</p>
             <p>Three forces are changing the rules at the same time:</p>
@@ -74,7 +86,7 @@ export default function PostClient() {
             <p>The FTC&apos;s Green Guides are clear on the principle: environmental claims need to be truthful, specific, and supported. The guides also warn that unqualified recyclable claims can be deceptive when recycling facilities are not available to a substantial majority of consumers. That &ldquo;substantial majority&rdquo; benchmark is commonly understood as at least 60% availability.</p>
             <p>That means a sustainable packaging strategy needs more than good intentions. It needs a claim file.</p>
 
-            <h2>PCR Packaging for Beauty: What Works and What Breaks</h2>
+            <h2 id="pcr-packaging-for-beauty-what-works-and-what-break">PCR Packaging for Beauty: What Works and What Breaks</h2>
             <p>PCR stands for post-consumer recycled material. In beauty packaging, PCR is most common in PET, HDPE, PP, and some paper-based components.</p>
             <p>PCR can be a strong move when the brand wants to reduce virgin plastic use without changing the entire packaging format. It is not plug-and-play.</p>
 
@@ -104,7 +116,7 @@ export default function PostClient() {
             <p>This does not mean PCR is bad. It means PCR needs to be tested early.</p>
             <p>The mistake is announcing a PCR target before the supply chain can support it. Start with material samples, decoration tests, compatibility checks, and vendor documentation. Then build the claim.</p>
 
-            <h2>FSC Paper and Certified Board: A Cleaner Secondary Packaging Move</h2>
+            <h2 id="fsc-paper-and-certified-board-a-cleaner-secondary">FSC Paper and Certified Board: A Cleaner Secondary Packaging Move</h2>
             <p>For many beauty brands, the easiest sustainability improvement is not the bottle. It is the secondary carton.</p>
             <p>FSC-certified paperboard can support a stronger sourcing story without changing the product format. It is especially useful for skincare cartons, fragrance boxes, discovery kits, inserts, sleeves, and holiday sets.</p>
             <p>FSC certification does not mean &ldquo;zero impact.&rdquo; It means the paper-based material comes from forests managed under a recognized chain-of-custody system. That distinction matters.</p>
@@ -119,7 +131,7 @@ export default function PostClient() {
             <p>The bigger cost is not always the board. It is the discipline required to maintain chain-of-custody documentation across suppliers, printers, and converters.</p>
             <p>If the brand is not ready to manage that documentation, the claim gets weak.</p>
 
-            <h2>Mono-Material Packaging: The Simplest Path to Recyclability</h2>
+            <h2 id="mono-material-packaging-the-simplest-path-to-recyc">Mono-Material Packaging: The Simplest Path to Recyclability</h2>
             <p>Mono-material packaging means the package is made primarily from one material family. Mono-PE. Mono-PP. Mono-aluminum. Paperboard without plastic windows, magnets, foam, mixed films, or laminated layers that make recycling harder.</p>
             <p>This matters because recycling systems don&apos;t like mystery.</p>
             <p>The more materials you stack together, the harder the package becomes to sort, process, and recycle. A rigid box with magnets, foam, plastic windows, and foil-laminated paper may look premium. It also becomes a recycling problem.</p>
@@ -135,7 +147,7 @@ export default function PostClient() {
             <p>A paperboard carton with one strong structural decision, clean print, and one signature finish can feel more premium than a complicated box with five materials fighting each other.</p>
             <p>For brands under SB 54 or EU PPWR pressure, mono-material design is one of the cleanest operational moves. It makes documentation easier. It makes supplier conversations clearer. It makes the recycling story more defensible.</p>
 
-            <h2>Refillable Beauty Packaging: When It Works Financially</h2>
+            <h2 id="refillable-beauty-packaging-when-it-works-financia">Refillable Beauty Packaging: When It Works Financially</h2>
             <p>Refillable packaging works when the consumer actually refills, the refill is easy to use, and the margin supports the added system cost.</p>
             <p>It fails when the brand builds a beautiful outer vessel and consumers buy one refill once.</p>
             <p>The best refillable systems reduce friction:</p>
@@ -159,7 +171,7 @@ export default function PostClient() {
             <p>The difference is repeat behavior.</p>
             <p>For refill formats and decision criteria, see the <Link href="/guides/beauty-refillable-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_refillable_playbook">Beauty Refillable Playbook</Link>.</p>
 
-            <h2>What Counts as Greenwashing in Beauty Packaging?</h2>
+            <h2 id="what-counts-as-greenwashing-in-beauty-packaging">What Counts as Greenwashing in Beauty Packaging?</h2>
             <p>Greenwashing happens when the sustainability claim is broader than the proof.</p>
             <p>The most common packaging examples:</p>
             <ul>
@@ -174,7 +186,7 @@ export default function PostClient() {
             <p>Say &ldquo;FSC-certified paperboard.&rdquo; Say &ldquo;30% PCR PET.&rdquo; Say &ldquo;mono-PP pump and bottle.&rdquo; Say &ldquo;refill pouch reduces material weight compared with the original bottle.&rdquo; Say what is true and provable.</p>
             <p>Sustainability copy should be boring enough to survive a compliance review. The brand expression can be beautiful. The claim should be precise.</p>
 
-            <h2>How SB 54 Changes the Packaging Conversation</h2>
+            <h2 id="how-sb-54-changes-the-packaging-conversation">How SB 54 Changes the Packaging Conversation</h2>
             <p>SB 54 is California&apos;s extended producer responsibility law for packaging and single-use plastic food service ware. CalRecycle describes it as a program that shifts responsibility for end-of-life packaging management toward producers.</p>
             <p>The practical message for beauty brands is simple: packaging data now matters.</p>
             <p>You need to know:</p>
@@ -190,7 +202,7 @@ export default function PostClient() {
             <p>Use the 2027 window as a planning deadline. By then, brands selling into California should have a material inventory, supplier documentation, and a plan for components that are unlikely to survive future compliance review.</p>
             <p>For a deeper compliance walkthrough, see <Link href="/blog/sb54-packaging-compliance-beauty?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_sb54_compliance">SB 54 Packaging Compliance for Beauty Brands</Link>.</p>
 
-            <h2>How EU PPWR Affects Beauty Brands Selling Internationally</h2>
+            <h2 id="how-eu-ppwr-affects-beauty-brands-selling-internat">How EU PPWR Affects Beauty Brands Selling Internationally</h2>
             <p>The EU Packaging and Packaging Waste Regulation entered into force in 2025 and generally applies from August 2026. The European Commission states that the regulation covers all packaging and packaging waste regardless of material or origin, and aims to make all packaging on the EU market recyclable in an economically viable way by 2030.</p>
             <p>For beauty brands, that matters even if the business is based in the United States.</p>
             <p>If you sell into the EU, work with EU retailers, or plan international expansion, packaging should be designed with PPWR direction in mind:</p>
@@ -205,7 +217,7 @@ export default function PostClient() {
             <p>The practical move is not to memorize every clause. It is to stop designing packaging that will obviously be difficult to defend.</p>
             <p>If your packaging uses a plastic window, foam insert, foil-laminated wrap, magnet closure, and non-removable mixed materials, assume it will face more scrutiny over time.</p>
 
-            <h2>A Practical Sustainable Packaging Roadmap</h2>
+            <h2 id="a-practical-sustainable-packaging-roadmap">A Practical Sustainable Packaging Roadmap</h2>
             <p>Start with an audit. Not a mood board. Not a pledge. An audit.</p>
 
             <h3>Step 1: Map Every Packaging Component</h3>
@@ -254,6 +266,9 @@ export default function PostClient() {
             <p>Sustainability gets easier when it becomes a packaging operating system instead of a seasonal campaign.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Sustainable Beauty Packaging FAQ"
@@ -268,7 +283,7 @@ export default function PostClient() {
         ctaProjectType="Sustainable Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>The Bottom Line</h2>
             <p>The strongest sustainable beauty packaging starts with structure. Material first. Claim second.</p>
             <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board. The <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_artilect_case_study">Artilect packaging reduction case study</Link> shows what material-first sustainability looks like in a real program.</p>

@@ -3,9 +3,21 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'why-do-custom-packaging-moqs-exist', label: 'Why Do Custom Packaging MOQs Exist?' },
+    { id: 'moq-ranges-by-packaging-format', label: 'MOQ Ranges by Packaging Format' },
+    { id: 'how-can-brands-get-custom-packaging-at-lower-volum', label: 'How Can Brands Get Custom Packaging at Lower Vo...' },
+    { id: 'when-does-stock-packaging-make-more-sense', label: 'When Does Stock Packaging Make More Sense?' },
+    { id: 'how-do-moqs-affect-cash-flow-and-storage', label: 'How Do MOQs Affect Cash Flow and Storage?' },
+    { id: 'how-do-multi-sku-brands-manage-packaging-moqs', label: 'How Do Multi-SKU Brands Manage Packaging MOQs?' },
+    { id: 'how-do-you-scale-from-low-moq-to-production-volume', label: 'How Do You Scale From Low MOQ to Production Vol...' },
+  ]
+
 
   return (
     <>
@@ -13,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Planning</div>
         <h1>Custom Packaging MOQs: What Every Brand Needs to Know</h1>
         <p>The real timeline and process</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>11 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>11 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What are real MOQs for custom packaging?</h2>
             <p>Custom packaging MOQs start around 500&#8211;1,000 units for rigid boxes, 1,000&#8211;3,000 for folding cartons, 5,000&#8211;10,000 for flexible pouches, and 1,000&#8211;5,000 for labels. Under 500 units, stock packaging with custom labels or sleeves is usually smarter than full custom manufacturing. The right MOQ matches launch risk, cash flow, and reorder confidence.</p>
@@ -41,7 +50,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Why Do Custom Packaging MOQs Exist?</h2>
+            <h2 id="why-do-custom-packaging-moqs-exist">Why Do Custom Packaging MOQs Exist?</h2>
             <p>MOQs are not arbitrary. They are the point where a supplier can set up the job, buy materials, run production, and still make the economics work.</p>
             <p>Every packaging project has fixed costs before the first usable unit comes off the line:</p>
             <ul>
@@ -61,13 +70,13 @@ export default function PostClient() {
             <p>Good packaging strategy is not about chasing the lowest unit cost. It is about buying the right quantity for the stage of the brand.</p>
             <p>For a deeper look at cost drivers, see our article on <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=moq_custom_cost_article">custom packaging cost for beauty brands</Link>.</p>
 
-            <h2>MOQ Ranges by Packaging Format</h2>
+            <h2 id="moq-ranges-by-packaging-format">MOQ Ranges by Packaging Format</h2>
             <p>These are practical ranges for growing brands. Exact MOQs change by supplier, print method, material, and complexity.</p>
             <p>| Packaging Format | Typical MOQ Range | Notes | |&ndash;-|&ndash;-:|&ndash;-| | Rigid boxes | 500-1,000 units | Higher if complex inserts, specialty wraps, or multiple finishes are required | | Folding cartons | 1,000-3,000 units | Digital print can lower entry quantities, offset improves at higher volume | | Corrugated shippers | 500-1,000 units | Simple print and standard structures can start lower | | Labels | 1,000-5,000 units | Digital labels can work at lower volumes; specialty materials increase minimums | | Flexible pouches | 5,000-10,000 units | Film minimums and press setup drive higher MOQs | | Molded pulp or fiber | 1,000-5,000+ units | Tooling and drying process affect economics | | Gift sets or influencer kits | 50-500+ units | Lower when using stock components; higher for fully custom structure |</p>
             <p>A 500-unit rigid box and a 500-unit flexible pouch are not the same production problem. Rigid boxes involve labor, board, wrap, and assembly. Flexible pouches involve film, barriers, press setup, sealing, and roll stock. Different economics. Different minimums.</p>
             <p>Use the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=moq_material_framework">Material Decision Framework</Link> when you are comparing material choices by volume.</p>
 
-            <h2>How Can Brands Get Custom Packaging at Lower Volumes?</h2>
+            <h2 id="how-can-brands-get-custom-packaging-at-lower-volum">How Can Brands Get Custom Packaging at Lower Volumes?</h2>
             <p>Low-MOQ custom packaging is possible when the project is designed for low volume from the start. The mistake is asking for a fully custom luxury structure at 150 units and expecting production pricing.</p>
             <p>There are three practical ways to lower the effective MOQ.</p>
             <h3>1. Use a Standard Structure With Custom Decoration</h3>
@@ -91,7 +100,7 @@ export default function PostClient() {
             <p>This is not always the right answer. If the fit is wrong, the savings disappear in poor presentation or product movement. But for early runs, shared tooling can be the bridge between stock packaging and fully custom production.</p>
             <p>For project planning, pair MOQ decisions with the <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=moq_packaging_brief">Packaging Brief Template</Link>.</p>
 
-            <h2>When Does Stock Packaging Make More Sense?</h2>
+            <h2 id="when-does-stock-packaging-make-more-sense">When Does Stock Packaging Make More Sense?</h2>
             <p>Under 500 units, stock packaging often makes more sense than full custom manufacturing. That is not a failure. It is stage-appropriate.</p>
             <p>Stock packaging can be the right call when:</p>
             <ul>
@@ -105,7 +114,7 @@ export default function PostClient() {
             <p>The trick is to make stock packaging look intentional. Use a custom sleeve, branded insert, printed tissue, label system, or upgraded finish where it matters.</p>
             <p>Do not spend 12 weeks and thousands in tooling to validate a concept that needs 150 kits. Use the right tool for the stage.</p>
 
-            <h2>How Do MOQs Affect Cash Flow and Storage?</h2>
+            <h2 id="how-do-moqs-affect-cash-flow-and-storage">How Do MOQs Affect Cash Flow and Storage?</h2>
             <p>A low unit cost can still be a bad business decision if the order quantity is too high.</p>
             <p>Example:</p>
             <ul>
@@ -127,7 +136,7 @@ export default function PostClient() {
             </ul>
             <p>The right MOQ is not the lowest quote. It is the order size that protects margin without trapping cash.</p>
 
-            <h2>How Do Multi-SKU Brands Manage Packaging MOQs?</h2>
+            <h2 id="how-do-multi-sku-brands-manage-packaging-moqs">How Do Multi-SKU Brands Manage Packaging MOQs?</h2>
             <p>Multi-SKU brands need to avoid splitting volume into too many unique structures too early. Five products with five structures create five MOQs, five tooling paths, five artwork approval cycles, and five inventory risks.</p>
             <p>The smarter move is a system.</p>
             <p>A packaging system might use:</p>
@@ -141,7 +150,7 @@ export default function PostClient() {
             <p>This reduces complexity and makes future reorders cleaner. It also helps the brand look more cohesive.</p>
             <p>For brands building a scalable system, the Logic Agency guide on <a href="https://www.logicagencyinc.com/guides/packaging-system-that-scales?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=moq_packaging_system" target="_blank" rel="noopener noreferrer">building a packaging system that scales</a> explains how packaging complexity grows with SKU count.</p>
 
-            <h2>How Do You Scale From Low MOQ to Production Volume?</h2>
+            <h2 id="how-do-you-scale-from-low-moq-to-production-volume">How Do You Scale From Low MOQ to Production Volume?</h2>
             <p>Start with the structure you can afford now, but do not trap yourself in a design that cannot scale later.</p>
             <p>A practical path looks like this:</p>
             <p>1. <strong>Test run:</strong> stock structure, custom label, small run. 2. <strong>Early production:</strong> standard structure with custom print. 3. <strong>Scale run:</strong> custom structure, improved material, better finish. 4. <strong>Retail-ready run:</strong> optimized case pack, compliance, freight, and shelf presentation.</p>
@@ -179,6 +188,9 @@ export default function PostClient() {
             <p>Also ask whether the supplier can hold pricing for a reorder. Sometimes the first order is expensive because setup is included, but the reorder improves. Other times the first quote hides costs that show up later.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Custom Packaging MOQ FAQ"
@@ -193,7 +205,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Build the Right Quantity for the Stage You&apos;re In</h2>
             <p>MOQ strategy is not about forcing custom packaging too early or buying more inventory than you can use. It is about matching structure, volume, and cash to the stage of the brand.</p>
             <p>If you are trying to move from stock packaging into custom production, we can help you find the right bridge: standard structure, custom finish, low-risk test run, or full production order.</p>

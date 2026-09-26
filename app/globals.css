@@ -255,11 +255,29 @@ nav .nav-toggle span{background:var(--navy)}
 .blog-body h2:first-child{margin-top:0}
 .blog-body h3{font-family:'DM Serif Display',serif;font-size:clamp(18px,2vw,22px);font-weight:400;color:var(--navy);margin-top:32px;margin-bottom:12px}
 .blog-body p{font-size:15px;color:var(--slate);line-height:1.82;margin-bottom:16px}
-.blog-body ul,.blog-body ol{font-size:15px;color:var(--slate);line-height:1.82;margin:0 0 20px 20px}
-.blog-body li{margin-bottom:6px}
+.blog-body ol{font-size:15px;color:var(--slate);line-height:1.82;margin:0 0 20px 20px}
+.blog-body ol li{margin-bottom:6px}
+.blog-body>ul{list-style:none;font-size:15px;color:var(--slate);line-height:1.82;margin:0 0 24px;padding:0}
+.blog-body>ul>li{padding:9px 0 9px 22px;border-bottom:1px solid var(--ice);position:relative;margin:0}
+.blog-body>ul>li:first-child{border-top:1px solid var(--ice)}
+.blog-body>ul>li::before{content:'\2014';color:rgba(5,13,31,.25);position:absolute;left:0}
 .blog-body strong{color:var(--navy)}
 .blog-body a{color:var(--navy);text-decoration:underline;text-underline-offset:2px}
 .blog-body a:hover{color:var(--lime)}
+/* ── BLOG LAYOUT ── */
+.blog-wrap{display:grid;grid-template-columns:220px 1fr;gap:48px;max-width:1060px;margin:0 auto;padding:56px 48px 0}
+.blog-main{min-width:0;overflow:hidden}
+.blog-wrap .blog-body{max-width:none;padding:0 0 40px}
+.blog-wrap .blog-body h2{scroll-margin-top:80px}
+.blog-wrap .guide-answer{max-width:none;margin:0 0 24px}
+.phdr+.blog-wrap{margin-top:0}
+.blog-conclusion{max-width:760px;margin:0 auto;padding:32px 48px 40px}
+.blog-conclusion>h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,2.5vw,28px);font-weight:400;color:var(--navy);margin:0 0 16px;padding-bottom:16px;border-bottom:3px solid var(--lime)}
+.blog-conclusion p{font-size:15px;color:var(--slate);line-height:1.82;margin-bottom:16px}
+.blog-conclusion strong{color:var(--navy)}
+.blog-conclusion a{color:var(--navy);text-decoration:underline;text-underline-offset:2px}
+.blog-conclusion a:hover{color:var(--lime)}
+.blog-conclusion .sources-section h2{border-bottom:none;padding-bottom:0}
 .blog-faq{background:var(--navy);padding:80px 48px}
 .blog-faq-inner{max-width:760px;margin:0 auto}
 .blog-faq-inner h2{font-family:'DM Serif Display',serif;font-size:28px;font-weight:400;color:white;margin-bottom:24px}
@@ -488,7 +506,7 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-cta{background:var(--navy);border-radius:8px;padding:40px 36px;margin:40px 0;text-align:center}
 .guide-cta h3{font-family:'DM Serif Display',serif;font-size:24px;font-weight:400;color:var(--white);margin-bottom:10px;margin-top:0}
 .guide-cta p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px}
-.guide-answer{background:var(--navy);border-radius:8px;padding:32px 36px;margin:0 0 24px;color:var(--white)}
+.guide-answer{background:var(--navy);border-radius:8px;padding:32px 36px;margin:0 auto 24px;max-width:760px;color:var(--white)}
 .guide-answer h2{color:var(--lime);font-size:22px;margin:0 0 12px}
 .guide-answer p{color:rgba(255,255,255,.78);font-size:16px;line-height:1.75;margin:0}
 .guide-takeaways{margin-bottom:48px}
@@ -528,6 +546,8 @@ nav{padding:0 24px}
 .gidx{padding:64px 24px 80px}
 .guide-faq{padding:48px 24px}
 .blog-body{padding:0 24px 64px}
+.blog-wrap{display:block;padding:40px 24px 0}
+.blog-conclusion{padding:24px 24px 40px}
 .blog-faq{padding:48px 24px}
 .guide-faq-inner{display:block}
 .posr{padding-top:0}

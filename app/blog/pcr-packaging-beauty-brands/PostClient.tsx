@@ -4,9 +4,21 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-pcr-actually-is-and-how-it-gets-into-your-pac', label: 'What PCR Actually Is and How It Gets Into Your ...' },
+    { id: 'what-pcr-content-percentages-actually-mean', label: 'What PCR Content Percentages Actually Mean' },
+    { id: 'formula-compatibility-the-technical-reality', label: 'Formula Compatibility: The Technical Reality' },
+    { id: 'the-regulatory-landscape-sb-54-ppwr-and-what-is-co', label: 'The Regulatory Landscape: SB 54, PPWR, and What...' },
+    { id: 'how-to-verify-pcr-claims-from-suppliers', label: 'How to Verify PCR Claims From Suppliers' },
+    { id: 'pcr-vs-other-sustainability-approaches', label: 'PCR vs. Other Sustainability Approaches' },
+    { id: 'making-the-pcr-decision-a-practical-framework', label: 'Making the PCR Decision: A Practical Framework' },
+  ]
+
 
   return (
     <>
@@ -14,16 +26,13 @@ export default function PostClient() {
         <div className="ey inv">Sustainability</div>
         <h1>PCR Packaging for Beauty Brands: What Post-Consumer Recycled Content Actually</h1>
         <p>What actually works vs. marketing claims</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
         <VerifiedAsOf />
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What does PCR packaging cost and require?</h2>
             <p>PCR (post-consumer recycled) packaging adds a 10&#8211;30% cost premium over virgin resin, depending on percentage, resin type, and color requirements. At 30% PCR the material performs nearly identically to virgin. At 100% PCR, expect gray or amber tint and mandatory formula compatibility testing. Get third-party certified documentation before putting any percentage on your label.</p>
@@ -44,7 +53,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What PCR Actually Is and How It Gets Into Your Packaging</h2>
+            <h2 id="what-pcr-actually-is-and-how-it-gets-into-your-pac">What PCR Actually Is and How It Gets Into Your Packaging</h2>
             <p>PCR stands for post-consumer recycled content &mdash; plastic that was used by a consumer, discarded, collected through municipal or commercial recycling, sorted, cleaned, and reprocessed into pellets or flakes that can be used in new packaging production.</p>
             <p>This is different from PIR (post-industrial recycled content), which is manufacturing scrap that never reached a consumer. PIR is useful but does not carry the same environmental impact claim because the material was never waste in the consumer sense.</p>
             <h3>The PCR supply chain</h3>
@@ -53,7 +62,7 @@ export default function PostClient() {
             <p>PCR availability fluctuates because it depends on consumer recycling behavior, municipal infrastructure, and competing demand from other industries (food, beverage, household). When demand for PCR resin spikes &mdash; as it has since major beauty brands made recycled content commitments &mdash; supply tightens and prices increase.</p>
             <p>The highest-quality PCR (food-grade rPET, clear HDPE) commands premium pricing because the supply of clean, well-sorted feedstock is limited. Lower-quality PCR (mixed color, higher contamination) is more available but less suitable for beauty packaging where aesthetics matter.</p>
 
-            <h2>What PCR Content Percentages Actually Mean</h2>
+            <h2 id="what-pcr-content-percentages-actually-mean">What PCR Content Percentages Actually Mean</h2>
             <p>When a beauty brand claims &ldquo;50% PCR packaging,&rdquo; it means the plastic resin in that component is approximately 50% post-consumer recycled material by weight. The remaining 50% is virgin resin.</p>
             <h3>30% PCR: The entry point</h3>
             <p>30% PCR is the most common starting point for beauty brands adopting recycled content. At this level, the material performance is very close to virgin &mdash; minimal color impact, minimal clarity loss, and minimal formula compatibility concerns.</p>
@@ -69,7 +78,7 @@ export default function PostClient() {
             <p>Cost premium at 100% PCR: typically <strong>20-35%</strong> over virgin resin, with significant variability based on supply conditions.</p>
             <p>Some brands embrace the visual difference as part of the sustainability story &mdash; &ldquo;this bottle looks different because it is 100% recycled.&rdquo; Others find it incompatible with their brand aesthetic. Both positions are valid, but the decision needs to be made before tooling, not after.</p>
 
-            <h2>Formula Compatibility: The Technical Reality</h2>
+            <h2 id="formula-compatibility-the-technical-reality">Formula Compatibility: The Technical Reality</h2>
             <p>PCR resin is not identical to virgin resin at a molecular level. The recycling process introduces variability in chain length, crystallinity, and residual contamination that can affect how the plastic interacts with beauty formulas.</p>
             <h3>What to test</h3>
             <ul>
@@ -83,7 +92,7 @@ export default function PostClient() {
             <p>Test early. The worst outcome is committing to a PCR specification, ordering tooling, and discovering during fill testing that the formula is incompatible. Compatibility testing typically takes <strong>4-8 weeks</strong> and costs <strong>$500-$2,000</strong> depending on the test scope. Compared to a failed production run, this is not a cost &mdash; it is insurance.</p>
             <p>Our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pcr_material_decision">Material Decision Framework</Link> covers the broader material selection process, including how PCR fits into the full decision tree.</p>
 
-            <h2>The Regulatory Landscape: SB 54, PPWR, and What Is Coming</h2>
+            <h2 id="the-regulatory-landscape-sb-54-ppwr-and-what-is-co">The Regulatory Landscape: SB 54, PPWR, and What Is Coming</h2>
             <p>PCR adoption in beauty packaging is shifting from voluntary to mandatory. Two regulatory frameworks are driving this:</p>
             <h3>California SB 54 (Plastic Pollution Prevention and Packaging Producer Responsibility Act)</h3>
             <p>SB 54 establishes escalating recycled content requirements for plastic packaging sold in California:</p>
@@ -105,7 +114,7 @@ export default function PostClient() {
             <p>If your packaging is plastic and you sell in California or the EU, recycled content requirements are not optional. The question is not whether to adopt PCR, but how fast and at what percentage.</p>
             <p>Brands that start now have time to test, qualify suppliers, and negotiate pricing. Brands that wait until 2027 will compete for limited PCR supply alongside every other beauty, food, and consumer goods brand scrambling to comply.</p>
 
-            <h2>How to Verify PCR Claims From Suppliers</h2>
+            <h2 id="how-to-verify-pcr-claims-from-suppliers">How to Verify PCR Claims From Suppliers</h2>
             <p>This is where the sustainability conversation gets uncomfortable. PCR content claims are only as reliable as the documentation behind them. A supplier saying &ldquo;this is 50% PCR&rdquo; is not the same as a supplier proving it.</p>
             <h3>What to ask for</h3>
             <p>1. <strong>Chain-of-custody documentation.</strong> Where did the PCR feedstock come from? What recycling facility processed it? What resin supplier compounded it? If the supplier cannot trace the material back to a recycling source, the claim is unverifiable.</p>
@@ -120,7 +129,7 @@ export default function PostClient() {
               <li>Claims that cannot be broken down by component &mdash; &ldquo;our packaging is 50% recycled&rdquo; without specifying which component contains the recycled content.</li>
             </ul>
 
-            <h2>PCR vs. Other Sustainability Approaches</h2>
+            <h2 id="pcr-vs-other-sustainability-approaches">PCR vs. Other Sustainability Approaches</h2>
             <p>PCR is one sustainability strategy. It is not the only one, and it is not always the most impactful one.</p>
             <h3>PCR vs. mono-material design</h3>
             <p>Mono-material packaging (all components made from the same resin type) improves recyclability at end-of-life. A PET bottle with a PET cap is more recyclable than a PET bottle with a PP cap, regardless of PCR content. Designing for recyclability and incorporating PCR content are complementary strategies, but recyclability may have more long-term impact.</p>
@@ -131,7 +140,7 @@ export default function PostClient() {
             <p>Bio-based plastics (PLA, PHA, bio-PE) are made from renewable feedstocks rather than fossil fuels, but they are not necessarily recyclable in existing infrastructure. PCR works within the current recycling system. Bio-based plastics may require industrial composting facilities that most consumers do not have access to.</p>
             <p>For a comprehensive comparison of all material options, the <Link href="/guides/sustainable-beauty-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pcr_sustainable_guide">Sustainable Beauty Packaging guide</Link> maps the full landscape.</p>
 
-            <h2>Making the PCR Decision: A Practical Framework</h2>
+            <h2 id="making-the-pcr-decision-a-practical-framework">Making the PCR Decision: A Practical Framework</h2>
             <h3>Step 1: Define the claim you want to make</h3>
             <p>Are you targeting 30% (regulatory compliance), 50% (credible marketing claim), or 100% (maximum sustainability signal)? The answer drives material sourcing, cost, and aesthetic tradeoffs.</p>
             <h3>Step 2: Test formula compatibility</h3>
@@ -144,6 +153,9 @@ export default function PostClient() {
             <p>PCR supply fluctuates. Build relationships with multiple qualified suppliers and maintain the option to adjust PCR percentages within a range rather than committing to a single fixed number that may not be achievable every quarter.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="PCR Packaging FAQ"
@@ -159,7 +171,7 @@ export default function PostClient() {
         ctaProjectType="Sustainable Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>PCR adoption is a material science decision, a regulatory compliance decision, and a brand positioning decision all at once. Getting it right requires testing the formula against the material, verifying supplier claims, and building a sourcing plan that accounts for supply variability.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pcr_consultation" target="_blank" rel="noopener noreferrer">Book a sustainability packaging consultation</a> and we will help you define the right PCR specification for your products, identify qualified suppliers, and plan the testing and certification process.</p>

@@ -4,9 +4,20 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-custom-beauty-packaging-actually-costs-per-un', label: 'What Custom Beauty Packaging Actually Costs Per...' },
+    { id: 'what-drives-custom-packaging-cost-up', label: 'What Drives Custom Packaging Cost Up' },
+    { id: 'how-to-compare-quotes-from-packaging-suppliers', label: 'How to Compare Quotes From Packaging Suppliers' },
+    { id: 'custom-vs-stock-packaging-when-each-makes-sense', label: 'Custom vs. Stock Packaging: When Each Makes Sense' },
+    { id: 'how-to-reduce-packaging-costs-without-losing-brand', label: 'How to Reduce Packaging Costs Without Losing Br...' },
+    { id: 'what-beauty-brands-should-budget-before-starting', label: 'What Beauty Brands Should Budget Before Starting' },
+  ]
+
 
   return (
     <>
@@ -14,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Pricing</div>
         <h1>How Much Does Custom Packaging Cost?</h1>
         <p>A real pricing breakdown for beauty brands</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>12 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>12 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What does custom beauty packaging cost per unit?</h2>
             <p>Custom beauty packaging costs $0.30&#8211;15.00/unit depending on format. Folding cartons land at $0.50&#8211;3.00/unit. Rigid set-up boxes run $3.00&#8211;15.00/unit. Tubes, bottles, and jars range from $0.30&#8211;5.00/unit before decoration. Specialty finishes add $0.05&#8211;1.50/unit. The lowest quote is rarely the cheapest total cost once you factor tooling, freight, and defect rate.</p>
@@ -47,7 +55,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Custom Beauty Packaging Actually Costs Per Unit</h2>
+            <h2 id="what-custom-beauty-packaging-actually-costs-per-un">What Custom Beauty Packaging Actually Costs Per Unit</h2>
             <p>The fastest way to understand packaging cost is to separate the format from the finish. Format sets the base cost. Finish adds the brand effect. Volume decides whether the math works.</p>
 
             <h3>Folding Cartons: $0.50&ndash;$3.00 Per Unit</h3>
@@ -86,7 +94,7 @@ export default function PostClient() {
             <p>A small foil stamp on a clean carton may do more for perceived value than a fully coated box with three expensive effects fighting each other.</p>
             <p>For finish-by-finish tradeoffs, see the <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_finish_guide">Packaging Finish Guide</Link>.</p>
 
-            <h2>What Drives Custom Packaging Cost Up</h2>
+            <h2 id="what-drives-custom-packaging-cost-up">What Drives Custom Packaging Cost Up</h2>
             <p>Packaging cost moves for predictable reasons. If you understand the cost levers, you can decide where to spend and where to simplify.</p>
 
             <h3>Volume: The MOQ Cliff</h3>
@@ -128,7 +136,7 @@ export default function PostClient() {
             <p>Tooling is not always bad. If the structure will be reused over multiple runs, tooling can reduce unit cost and protect consistency. The problem is paying tooling for a structure you have not tested, or changing the design after tooling has already started.</p>
             <p>That is where cost gets wasted.</p>
 
-            <h2>How to Compare Quotes From Packaging Suppliers</h2>
+            <h2 id="how-to-compare-quotes-from-packaging-suppliers">How to Compare Quotes From Packaging Suppliers</h2>
             <p>Most packaging quotes look clean until you compare them line by line. Then you realize the suppliers are not quoting the same thing.</p>
             <p>One includes freight. One does not. One includes inserts. One assumes stock paper. One includes sample charges. One does not include the finish you asked for. One quote is lower because it quietly changed the board thickness.</p>
             <p>This is how brands choose the &ldquo;cheaper&rdquo; quote and end up paying more.</p>
@@ -163,7 +171,7 @@ export default function PostClient() {
             <p>If those details are missing, the quote is not finished. It is a placeholder.</p>
             <p>The best way to get a clean quote is to send a clean brief. We built a <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_packaging_brief">Packaging Brief Template</Link> for exactly that reason.</p>
 
-            <h2>Custom vs. Stock Packaging: When Each Makes Sense</h2>
+            <h2 id="custom-vs-stock-packaging-when-each-makes-sense">Custom vs. Stock Packaging: When Each Makes Sense</h2>
             <p>Stock packaging makes sense when speed matters more than differentiation. If you need 500 units for a quick launch, a small test, or a short-term promotion, stock may be the right answer.</p>
             <p>Custom packaging makes sense when the package is part of the product experience, shelf presence, or margin strategy.</p>
 
@@ -189,7 +197,7 @@ export default function PostClient() {
             <p>For many beauty brands, the problem is not that stock packaging is bad. The problem is staying in stock packaging too long.</p>
             <p>At a certain point, you are paying custom prices for catalog limitations.</p>
 
-            <h2>How to Reduce Packaging Costs Without Losing Brand Quality</h2>
+            <h2 id="how-to-reduce-packaging-costs-without-losing-brand">How to Reduce Packaging Costs Without Losing Brand Quality</h2>
             <p>The fastest way to reduce packaging cost is not to make everything cheaper. It is to stop paying for complexity that customers do not notice.</p>
             <p>Start with these moves:</p>
 
@@ -214,7 +222,7 @@ export default function PostClient() {
             <p>That might mean changing board thickness, consolidating suppliers, reducing unused air inside a kit, switching insert material, or moving from a fully wrapped rigid box to an engineered carton with the same shelf impact.</p>
             <p>Logic Agency covers the operational side of this in the <a href="https://www.logicagencyinc.com/guides/packaging-cost-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_reduction_guide" target="_blank" rel="noopener noreferrer">Packaging Cost Reduction guide</a>.</p>
 
-            <h2>What Beauty Brands Should Budget Before Starting</h2>
+            <h2 id="what-beauty-brands-should-budget-before-starting">What Beauty Brands Should Budget Before Starting</h2>
             <p>Before you request quotes, build a realistic budget range. Not a wish number. A working number.</p>
             <p>For a first custom packaging run, a beauty brand should usually budget for:</p>
             <ul>
@@ -229,6 +237,9 @@ export default function PostClient() {
             <p>The unit price matters. The landed cost matters more.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Custom Packaging Cost FAQs"
@@ -243,7 +254,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>The Bottom Line</h2>
             <p>Custom packaging cost is not mysterious. It is a stack of decisions: format, material, finish, tooling, volume, freight, and timeline.</p>
             <p>Beauty brands get into trouble when they treat packaging as a design expense only. It is also a margin decision. A launch decision. A retail decision. A customer-experience decision.</p>

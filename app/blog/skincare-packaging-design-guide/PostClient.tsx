@@ -4,9 +4,25 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-makes-skincare-packaging-different', label: 'What Makes Skincare Packaging Different?' },
+    { id: 'serum-packaging-droppers-airless-pumps-and-small-b', label: 'Serum Packaging: Droppers, Airless Pumps, and S...' },
+    { id: 'moisturizer-packaging-jars-tubes-and-airless-syste', label: 'Moisturizer Packaging: Jars, Tubes, and Airless...' },
+    { id: 'cleanser-packaging-pumps-bottles-and-squeeze-tubes', label: 'Cleanser Packaging: Pumps, Bottles, and Squeeze...' },
+    { id: 'spf-and-treatment-packaging-need-extra-discipline', label: 'SPF and Treatment Packaging Need Extra Discipline' },
+    { id: 'secondary-packaging-for-skincare-cartons-sleeves-a', label: 'Secondary Packaging for Skincare: Cartons, Slee...' },
+    { id: 'material-selection-for-skincare-packaging', label: 'Material Selection for Skincare Packaging' },
+    { id: 'retail-shelf-requirements-for-skincare', label: 'Retail Shelf Requirements for Skincare' },
+    { id: 'clean-beauty-packaging-claims-need-specifics', label: 'Clean Beauty Packaging Claims Need Specifics' },
+    { id: 'cost-planning-by-skincare-sku-type', label: 'Cost Planning by Skincare SKU Type' },
+    { id: 'samples-and-testing-where-skincare-packaging-gets', label: 'Samples and Testing: Where Skincare Packaging G...' },
+  ]
+
 
   return (
     <>
@@ -14,15 +30,12 @@ export default function PostClient() {
         <div className="ey inv">Design</div>
         <h1>Skincare Packaging Design</h1>
         <p>How to choose the right format, material, and finish</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>11 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>11 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How do you choose skincare packaging?</h2>
             <p>Start with the formula, not the mood board. Serums, moisturizers, cleansers, oils, and SPF products each need different barriers, dispensing systems, and materials. The package must protect the formula, support the brand positioning, and survive the sales channel. Glass feels premium but adds weight, breakage risk, and freight cost. Match the structure to the formula requirements first.</p>
@@ -47,7 +60,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Makes Skincare Packaging Different?</h2>
+            <h2 id="what-makes-skincare-packaging-different">What Makes Skincare Packaging Different?</h2>
             <p>Skincare packaging has to protect a formula that may be sensitive to oxygen, light, moisture, microbes, temperature, or consumer handling. That makes the packaging decision more technical than it looks.</p>
             <p>Color cosmetics can often prioritize form factor and application ritual. Fragrance can lean into glass, weight, and display value. Skincare has to start with compatibility.</p>
             <p>The first questions are operational:</p>
@@ -62,7 +75,7 @@ export default function PostClient() {
             </ul>
             <p>Those answers decide the format before the design team picks a finish.</p>
 
-            <h2>Serum Packaging: Droppers, Airless Pumps, and Small Bottles</h2>
+            <h2 id="serum-packaging-droppers-airless-pumps-and-small-b">Serum Packaging: Droppers, Airless Pumps, and Small Bottles</h2>
             <p>Serums usually need precision, barrier performance, and a premium feel. The most common formats are glass dropper bottles, airless pumps, and small PET or PP bottles with controlled dispensing.</p>
 
             <h3>When Glass Droppers Work</h3>
@@ -77,7 +90,7 @@ export default function PostClient() {
             <p>If the formula does not need airless performance, don&apos;t pay for airless theater.</p>
             <p>For a material-level comparison, see the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_material_decision_framework">Material Decision Framework</Link>.</p>
 
-            <h2>Moisturizer Packaging: Jars, Tubes, and Airless Systems</h2>
+            <h2 id="moisturizer-packaging-jars-tubes-and-airless-syste">Moisturizer Packaging: Jars, Tubes, and Airless Systems</h2>
             <p>Moisturizers usually fall into three formats: jars, tubes, and airless pumps.</p>
 
             <h3>Jars</h3>
@@ -93,7 +106,7 @@ export default function PostClient() {
             <p>Airless pumps work for moisturizers when the formula or brand position justifies the cost. They offer cleaner dispensing and less consumer contact with the product.</p>
             <p>The key is testing. Pump performance can vary with viscosity. A beautiful airless package that dispenses poorly will create more customer frustration than a simpler tube.</p>
 
-            <h2>Cleanser Packaging: Pumps, Bottles, and Squeeze Tubes</h2>
+            <h2 id="cleanser-packaging-pumps-bottles-and-squeeze-tubes">Cleanser Packaging: Pumps, Bottles, and Squeeze Tubes</h2>
             <p>Cleansers are often higher-volume products, so packaging cost and freight matter more.</p>
             <p>Common formats:</p>
             <ul>
@@ -107,7 +120,7 @@ export default function PostClient() {
             <p>For cleansers, the package has to work wet. Shower use, slippery hands, cap durability, label performance, and pump reliability all matter.</p>
             <p>That is why we test the use environment, not just the shelf photo.</p>
 
-            <h2>SPF and Treatment Packaging Need Extra Discipline</h2>
+            <h2 id="spf-and-treatment-packaging-need-extra-discipline">SPF and Treatment Packaging Need Extra Discipline</h2>
             <p>SPF, acne treatments, retinoids, vitamin C, and other active formulas usually need tighter packaging discipline.</p>
             <p>Watch for:</p>
             <ul>
@@ -123,7 +136,7 @@ export default function PostClient() {
             <p>Don&apos;t force a high-risk formula into a trendy package.</p>
             <p>Start with performance. Then make it beautiful.</p>
 
-            <h2>Secondary Packaging for Skincare: Cartons, Sleeves, and Sets</h2>
+            <h2 id="secondary-packaging-for-skincare-cartons-sleeves-a">Secondary Packaging for Skincare: Cartons, Sleeves, and Sets</h2>
             <p>Secondary packaging carries the shelf story. It also protects the primary package and gives the brand room for claims, directions, warnings, and retail requirements.</p>
             <p>For skincare, secondary packaging usually includes:</p>
             <ul>
@@ -155,7 +168,7 @@ export default function PostClient() {
             <p>The carton is not just a canvas. It is a communication tool.</p>
             <p>For kickoff structure, use the <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_packaging_brief_template">Packaging Brief Template</Link>.</p>
 
-            <h2>Material Selection for Skincare Packaging</h2>
+            <h2 id="material-selection-for-skincare-packaging">Material Selection for Skincare Packaging</h2>
             <p>Skincare brands usually choose between glass, PET, HDPE, PP, aluminum, and paperboard systems.</p>
 
             <h3>Glass</h3>
@@ -177,7 +190,7 @@ export default function PostClient() {
             <p>Paperboard drives most secondary packaging. FSC-certified board, clean structure, and controlled finishes can make skincare packaging feel premium without adding unnecessary plastic.</p>
             <p>For finish selection, see the <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_finish_guide">Packaging Finish Guide</Link>.</p>
 
-            <h2>Retail Shelf Requirements for Skincare</h2>
+            <h2 id="retail-shelf-requirements-for-skincare">Retail Shelf Requirements for Skincare</h2>
             <p>Skincare packaging that works online may fail on shelf.</p>
             <p>DTC packaging can be quiet. Retail packaging has to communicate faster.</p>
             <p>Retail asks for:</p>
@@ -195,7 +208,7 @@ export default function PostClient() {
             <p>Same brand. Different products. Clear hierarchy.</p>
             <p>That&apos;s the balance.</p>
 
-            <h2>Clean Beauty Packaging Claims Need Specifics</h2>
+            <h2 id="clean-beauty-packaging-claims-need-specifics">Clean Beauty Packaging Claims Need Specifics</h2>
             <p>&ldquo;Clean&rdquo; is already hard to define in formulas. It gets even harder in packaging.</p>
             <p>For packaging, clean beauty claims should be specific:</p>
             <ul>
@@ -210,7 +223,7 @@ export default function PostClient() {
             <p>Avoid broad claims unless you can back them up. &ldquo;Sustainable packaging&rdquo; is weaker than &ldquo;FSC-certified carton with no plastic window.&rdquo; &ldquo;Eco-friendly bottle&rdquo; is weaker than &ldquo;50% PCR PET bottle.&rdquo;</p>
             <p>Specificity builds trust. Vague claims create risk.</p>
 
-            <h2>Cost Planning by Skincare SKU Type</h2>
+            <h2 id="cost-planning-by-skincare-sku-type">Cost Planning by Skincare SKU Type</h2>
             <p>Skincare packaging cost depends on format, decoration, and volume. The easiest way to plan is to group SKUs by packaging complexity instead of treating every product the same.</p>
 
             <h3>Low-Complexity SKUs</h3>
@@ -228,7 +241,7 @@ export default function PostClient() {
             <p>These require more time, more sampling, and more supplier coordination. The unit cost is only one number. Tooling, compatibility testing, freight, kitting, and defect risk matter just as much.</p>
             <p>For high-complexity skincare, build the packaging budget before the design direction is locked. Otherwise the team falls in love with a structure the margin can&apos;t support.</p>
 
-            <h2>Samples and Testing: Where Skincare Packaging Gets Real</h2>
+            <h2 id="samples-and-testing-where-skincare-packaging-gets">Samples and Testing: Where Skincare Packaging Gets Real</h2>
             <p>Renderings are useful. Samples are where the truth shows up.</p>
             <p>Before production, skincare brands should test:</p>
             <ul>
@@ -247,6 +260,9 @@ export default function PostClient() {
 
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Skincare Packaging FAQs"
@@ -261,7 +277,7 @@ export default function PostClient() {
         ctaProjectType="Skincare Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>The Bottom Line</h2>
             <p>Good skincare packaging starts with the formula and ends with the customer experience.</p>
             <p>The right structure protects the product. The right material supports the claim. The right finish makes the brand feel intentional without overbuilding the cost.</p>

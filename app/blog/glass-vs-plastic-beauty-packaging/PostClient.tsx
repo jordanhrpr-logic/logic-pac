@@ -3,9 +3,21 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'glass-vs-plastic-the-quick-comparison', label: 'Glass vs. Plastic — The Quick Comparison' },
+    { id: 'when-glass-makes-sense-for-beauty-packaging', label: 'When Glass Makes Sense for Beauty Packaging' },
+    { id: 'when-plastic-makes-sense-for-beauty-packaging', label: 'When Plastic Makes Sense for Beauty Packaging' },
+    { id: 'the-real-cost-difference', label: 'The Real Cost Difference' },
+    { id: 'sustainability-claims-what-you-can-actually-say', label: 'Sustainability Claims — What You Can Actually Say' },
+    { id: 'material-selection-by-product-category', label: 'Material Selection by Product Category' },
+    { id: 'making-the-material-call', label: 'Making the Material Call' },
+  ]
+
 
   return (
     <>
@@ -13,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Materials</div>
         <h1>Glass vs. Plastic Beauty Packaging: Cost, Sustainability, Weight, and Perception Compared</h1>
         <p>Neither material is universally better &mdash; here&apos;s how to make the right call for your brand</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>9 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>9 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">Should beauty brands use glass or plastic?</h2>
             <p>Neither is universally better. Glass costs 3&#8211;5x more than PET, weighs 5&#8211;10x more, and breaks in transit at 1&#8211;3% rates. But it signals premium, recycles infinitely, and protects fragrance and active-rich formulas. Plastic is lighter, cheaper, and safer for e-commerce. Most brands use both: glass for hero SKUs and plastic for the rest.</p>
@@ -44,7 +53,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Glass vs. Plastic &mdash; The Quick Comparison</h2>
+            <h2 id="glass-vs-plastic-the-quick-comparison">Glass vs. Plastic &mdash; The Quick Comparison</h2>
             <p>Before diving into specifics, here&apos;s the high-level picture across the six dimensions that matter most for beauty packaging.</p>
 
             <p><strong>Cost.</strong> Glass containers typically cost 3&ndash;5x more than PET at equivalent volume. A 30ml glass dropper bottle might run $0.80&ndash;$1.50 per unit; the PET equivalent lands around $0.20&ndash;$0.40. That gap widens at lower MOQs and narrows slightly at very high volumes, but glass never reaches cost parity with plastic.</p>
@@ -59,7 +68,7 @@ export default function PostClient() {
 
             <p><strong>Recyclability.</strong> Glass is accepted in most US curbside programs (though color-sorted glass has higher actual recycling rates). PET (#1) is the most widely recycled plastic resin. HDPE (#2) is close behind. Other plastics (#3&ndash;#7) have significantly lower recycling infrastructure. Mono-material design matters more than the material itself for actual recyclability.</p>
 
-            <h2>When Glass Makes Sense for Beauty Packaging</h2>
+            <h2 id="when-glass-makes-sense-for-beauty-packaging">When Glass Makes Sense for Beauty Packaging</h2>
             <p>Glass isn&apos;t always the right call. But when it is, nothing else substitutes.</p>
 
             <h3>Premium Positioning and Shelf Weight</h3>
@@ -74,7 +83,7 @@ export default function PostClient() {
             <p>Refillable packaging systems almost always use glass or aluminum for the permanent outer vessel. The business logic: the outer container needs to feel worth keeping, and glass delivers that perceived permanence. A glass bottle with an aluminum pump and a PET refill pod is one of the most common refillable architectures in prestige beauty.</p>
             <p>If you&apos;re building a refill program, our <Link href="/guides/beauty-refillable-playbook?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_refillable">Beauty Refillable Playbook</Link> walks through the economics and material combinations that actually work at scale.</p>
 
-            <h2>When Plastic Makes Sense for Beauty Packaging</h2>
+            <h2 id="when-plastic-makes-sense-for-beauty-packaging">When Plastic Makes Sense for Beauty Packaging</h2>
             <p>Plastic doesn&apos;t need to be defended. It needs to be chosen deliberately and positioned accurately.</p>
 
             <h3>DTC and E-Commerce (Breakage and Weight)</h3>
@@ -97,7 +106,7 @@ export default function PostClient() {
             <p>PCR packaging is increasingly table stakes for beauty brands selling into retail. Sephora&apos;s Clean + Planet Positive program, Target&apos;s Target Zero initiative, and Ulta&apos;s sustainability requirements all reference recycled content as a qualifying criterion. A 50% PCR PET bottle with clean labeling gives brands a specific, verifiable claim: &ldquo;This bottle is made from 50% post-consumer recycled plastic.&rdquo;</p>
             <p>That&apos;s a stronger claim than &ldquo;recyclable&rdquo; (which most packaging technically is) and more commercially viable than switching the entire line to glass.</p>
 
-            <h2>The Real Cost Difference</h2>
+            <h2 id="the-real-cost-difference">The Real Cost Difference</h2>
             <p>Cost comparisons between glass and plastic only tell the full story when you include everything downstream of the container itself.</p>
 
             <p><strong>Container cost.</strong> At equivalent volumes (30ml, 50ml, 100ml), glass containers typically cost 3&ndash;5x more than PET. A 50ml PET jar: $0.20&ndash;$0.45. A 50ml glass jar: $0.80&ndash;$2.00. Custom shapes, specialty colors (amber, violet, opaque white), and premium closures push both ranges higher, but the ratio holds.</p>
@@ -112,7 +121,7 @@ export default function PostClient() {
 
             <p><strong>Total landed cost difference.</strong> When you stack container, freight, tooling amortization, secondary packaging, and breakage, glass typically costs <strong>4&ndash;7x more</strong> than PET on a total landed basis &mdash; wider than the 3&ndash;5x container-only gap. That math is why many brands use glass for hero SKUs and plastic for the rest of the line.</p>
 
-            <h2>Sustainability Claims &mdash; What You Can Actually Say</h2>
+            <h2 id="sustainability-claims-what-you-can-actually-say">Sustainability Claims &mdash; What You Can Actually Say</h2>
             <p>Sustainability in beauty packaging is regulated territory, and it&apos;s getting stricter. Here&apos;s what you can actually claim for each material without risking greenwashing exposure.</p>
 
             <h3>Glass Recyclability</h3>
@@ -138,7 +147,7 @@ export default function PostClient() {
             <p><strong>EU Packaging and Packaging Waste Regulation (PPWR)</strong> sets recycled content targets for plastic packaging: 10% by 2030, rising to 35% by 2040 for contact-sensitive packaging. It also introduces mandatory recyclability criteria and design-for-recycling standards that affect both glass and plastic component combinations.</p>
             <p>For beauty brands with national or international distribution, these regulations make PCR content a compliance requirement, not a marketing choice. Our <Link href="/guides/sustainable-beauty-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_sustainability">Sustainable Beauty Packaging Playbook</Link> covers compliance timelines and material strategies in detail.</p>
 
-            <h2>Material Selection by Product Category</h2>
+            <h2 id="material-selection-by-product-category">Material Selection by Product Category</h2>
             <p>The glass vs. plastic decision isn&apos;t made at the brand level &mdash; it&apos;s made at the product category level. Most beauty brands use both materials across their line. Here&apos;s how the decision typically falls by category.</p>
 
             <p><strong>Serums and treatment products.</strong> Glass is the default. Serums are high-value, low-volume (15&ndash;30ml), and often contain light-sensitive actives. Dropper bottles in amber or violet glass protect the formula and signal clinical efficacy. The per-unit cost premium of glass is easier to absorb at $40&ndash;$120 retail price points. Refillable glass dropper systems are emerging in this category.</p>
@@ -153,12 +162,15 @@ export default function PostClient() {
 
             <p>For a more detailed material decision framework covering all five core materials &mdash; glass, PET, HDPE, aluminum, and molded fiber &mdash; our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_material_guide">Material Decision Framework</Link> guide walks through the full evaluation.</p>
 
-            <h2>Making the Material Call</h2>
+            <h2 id="making-the-material-call">Making the Material Call</h2>
             <p>The glass vs. plastic decision is not about which material is &ldquo;better.&rdquo; It&apos;s about which material fits the product, the channel, the margin, and the brand position. Most beauty brands end up using both &mdash; glass where perception and formula protection justify the cost, plastic where weight, breakage, and economics demand it.</p>
             <p>The mistake is making this decision based on aesthetics alone, or defaulting to whatever the packaging supplier recommends. Material is the highest-leverage decision in packaging development because it determines everything downstream: cost, freight, compliance, recyclability, shelf signal, and customer experience.</p>
             <p>Start with the product formula and sales channel. Layer in the margin model. Factor in sustainability requirements &mdash; SB 54 and PPWR are not optional. Then choose the material.</p>
             <p>If you want to run this decision through a structured framework that includes all five core materials &mdash; glass, PET, HDPE, aluminum, and molded fiber &mdash; our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=glass_plastic_material_guide">Material Decision Framework</Link> guide gives you the full evaluation model. And if you&apos;d rather walk through it with someone who&apos;s sourced both materials at scale, <button type="button" className="inline-link-button" onClick={() => openModal('Custom Packaging')}>book a packaging consultation</button> and we&apos;ll help you make the call.</p>
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Glass vs. Plastic Beauty Packaging FAQs"

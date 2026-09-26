@@ -3,9 +3,21 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'why-fragrance-packaging-is-different', label: 'Why Fragrance Packaging Is Different' },
+    { id: 'what-materials-make-perfume-packaging-feel-premium', label: 'What Materials Make Perfume Packaging Feel Prem...' },
+    { id: 'what-finishes-work-best-for-fragrance-packaging', label: 'What Finishes Work Best for Fragrance Packaging?' },
+    { id: 'how-much-does-fragrance-packaging-cost', label: 'How Much Does Fragrance Packaging Cost?' },
+    { id: 'how-do-coffrets-and-gift-sets-change-the-packaging', label: 'How Do Coffrets and Gift Sets Change the Packag...' },
+    { id: 'what-mistakes-do-fragrance-brands-make-with-packag', label: 'What Mistakes Do Fragrance Brands Make With Pac...' },
+    { id: 'how-should-fragrance-brands-work-backward-from-lau', label: 'How Should Fragrance Brands Work Backward From ...' },
+  ]
+
 
   return (
     <>
@@ -13,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Design</div>
         <h1>Fragrance Packaging Design: What Makes Perfume Packaging Premium</h1>
         <p>What works and what doesn&apos;t</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>13 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>13 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What makes perfume packaging worth the cost?</h2>
             <p>Custom fragrance packaging runs $5&#8211;25+/unit for secondary packaging because the box is part of the product experience. Standard formats land at $5&#8211;8/unit, premium at $8&#8211;15, and luxury coffrets at $15&#8211;25+. The biggest mistakes are underbuilding the insert so the bottle rattles, overstacking finishes, and designing without retail shelf constraints.</p>
@@ -41,7 +50,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Why Fragrance Packaging Is Different</h2>
+            <h2 id="why-fragrance-packaging-is-different">Why Fragrance Packaging Is Different</h2>
             <p>Fragrance packaging has a different job than most beauty packaging. A moisturizer carton tells the customer what the formula does. A fragrance box has to create anticipation for something the customer cannot fully evaluate until they smell it.</p>
             <p>That makes the package emotional and technical at the same time.</p>
             <p>The customer expects weight. They expect precision. They expect the bottle to feel protected, not loose inside a generic carton. If the box feels thin, the product feels cheaper before the scent has a chance to speak.</p>
@@ -57,7 +66,7 @@ export default function PostClient() {
             <p>If you are planning a new fragrance line, start with structure before decoration. The foil, paper, and embossing matter. But the box has to hold the bottle correctly first.</p>
             <p>For broader material selection, use our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_material_framework">Material Decision Framework</Link> before finalizing structure.</p>
 
-            <h2>What Materials Make Perfume Packaging Feel Premium?</h2>
+            <h2 id="what-materials-make-perfume-packaging-feel-premium">What Materials Make Perfume Packaging Feel Premium?</h2>
             <p>Premium fragrance packaging usually starts with rigid board. Folding cartons can work for mass fragrance, discovery sets, samples, and lower price points, but rigid construction gives the weight and hand-feel most customers associate with premium perfume.</p>
             <p>Common material choices include:</p>
             <h3>Rigid Board</h3>
@@ -74,7 +83,7 @@ export default function PostClient() {
             <p>Other options include lift-off lids, book-style boxes, drawer boxes, ribbon pulls, rigid sleeves, and hinged coffrets. The closure should match the customer behavior. A discovery set needs easy access. A luxury bottle may need a slower reveal.</p>
             <p>If you need a deeper timeline for structure, sampling, and production, our <Link href="/blog/custom-packaging-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_timeline_context">custom packaging timeline</Link> breaks down the full concept-to-shelf process.</p>
 
-            <h2>What Finishes Work Best for Fragrance Packaging?</h2>
+            <h2 id="what-finishes-work-best-for-fragrance-packaging">What Finishes Work Best for Fragrance Packaging?</h2>
             <p>Fragrance is a finish-sensitive category. The right finish makes the box feel expensive. Too many finishes make it feel overbuilt.</p>
             <p>The best fragrance packaging usually has one signature moment.</p>
             <h3>Foil Stamping</h3>
@@ -93,7 +102,7 @@ export default function PostClient() {
             <p>Spot UV can highlight one pattern, logo, or ingredient motif. It works best when it creates contrast against a matte background. For fragrance, use it for detail, not full-panel shine.</p>
             <p>For a broader finish comparison, see our <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_finish_guide">Packaging Finish Guide</Link>.</p>
 
-            <h2>How Much Does Fragrance Packaging Cost?</h2>
+            <h2 id="how-much-does-fragrance-packaging-cost">How Much Does Fragrance Packaging Cost?</h2>
             <p>Custom fragrance packaging usually falls into three cost tiers.</p>
             <h3>Standard: $5-$8 Per Unit</h3>
             <p>This range usually includes a rigid or high-quality folding carton, standard wrapped paper, basic insert, and one simple finish. It works for clean fragrance brands, retail launches, discovery sets, and lower-complexity SKUs.</p>
@@ -106,7 +115,7 @@ export default function PostClient() {
             <p>The packaging may be worth it for holiday, gifting, limited editions, or high-AOV fragrance sets. It can be reckless for a low-margin launch SKU.</p>
             <p>For category-wide cost planning, our article on <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_cost_article">custom packaging cost for beauty brands</Link> gives the broader benchmark range.</p>
 
-            <h2>How Do Coffrets and Gift Sets Change the Packaging Brief?</h2>
+            <h2 id="how-do-coffrets-and-gift-sets-change-the-packaging">How Do Coffrets and Gift Sets Change the Packaging Brief?</h2>
             <p>A coffret is a fragrance gift set, usually built around one full-size bottle plus minis, travel sprays, lotions, candles, or discovery vials. The packaging challenge is balance. Every product has to feel intentional inside one structure.</p>
             <p>Coffrets are more complex because they add:</p>
             <ul>
@@ -121,7 +130,7 @@ export default function PostClient() {
             <p>For holiday launches, coffret planning should start 5-7 months before delivery. Structural samples, insert fit, production, freight, and retailer compliance all take time.</p>
             <p>If the project is tied to Q4, use the <Link href="/holiday?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_holiday_packaging">Holiday Packaging page</Link> as a planning reference.</p>
 
-            <h2>What Mistakes Do Fragrance Brands Make With Packaging?</h2>
+            <h2 id="what-mistakes-do-fragrance-brands-make-with-packag">What Mistakes Do Fragrance Brands Make With Packaging?</h2>
             <p>The most common mistake is treating fragrance packaging like a decorated carton. It is not. The structure has to carry weight, protect glass, and create the reveal.</p>
             <p>Other common mistakes:</p>
             <h3>Overengineering the Box</h3>
@@ -135,7 +144,7 @@ export default function PostClient() {
             <p>Retailers care about shelf footprint, scannability, case pack, barcode placement, and damage rates. The package has to look premium and move through the system cleanly.</p>
             <p>If the fragrance is headed into retail, cross-check against the Logic Agency <a href="https://www.logicagencyinc.com/guides/retail-readiness?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_retail_readiness" target="_blank" rel="noopener noreferrer">Retail Readiness Bible</a>.</p>
 
-            <h2>How Should Fragrance Brands Work Backward From Launch?</h2>
+            <h2 id="how-should-fragrance-brands-work-backward-from-lau">How Should Fragrance Brands Work Backward From Launch?</h2>
             <p>For fragrance packaging, the safest planning window is 4-6 months. Six months is better if the project includes custom tooling, multiple finishes, or international freight.</p>
             <p>A practical schedule looks like this:</p>
             <ul>
@@ -185,6 +194,9 @@ export default function PostClient() {
             <p>The mistake is building one beautiful box and assuming it works everywhere. Fragrance packaging should be designed around the channel where the customer actually meets the product.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Fragrance Packaging FAQ"
@@ -200,7 +212,7 @@ export default function PostClient() {
         ctaProjectType="Fragrance Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Build Fragrance Packaging That Supports the Price Point</h2>
             <p>Fragrance packaging has to do more than protect a bottle. It has to make the customer believe the scent is worth the price before they open it.</p>
             <p>If you are planning a fragrance launch, coffret, or retail-ready secondary box, we can help build the structure, source the materials, manage production, and keep the cost tied to the margin model.</p>

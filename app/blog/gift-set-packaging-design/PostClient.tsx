@@ -4,9 +4,19 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'structural-approaches-for-multi-product-gift-set-p', label: 'Structural Approaches for Multi-Product Gift Se...' },
+    { id: 'insert-types-what-holds-the-products-in-place', label: 'Insert Types: What Holds the Products in Place' },
+    { id: 'what-drives-gift-set-packaging-cost', label: 'What Drives Gift Set Packaging Cost' },
+    { id: 'managing-multiple-product-sizes-in-one-kit', label: 'Managing Multiple Product Sizes in One Kit' },
+    { id: 'retailer-display-requirements', label: 'Retailer Display Requirements' },
+  ]
+
 
   return (
     <>
@@ -14,15 +24,12 @@ export default function PostClient() {
         <div className="ey inv">Holiday</div>
         <h1>Gift Set Packaging Design: Structures, Inserts, and Cost Decisions for</h1>
         <p>Timelines, costs, and compliance</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How should you structure gift set packaging?</h2>
             <p>Gift set packaging has four primary structures: rigid box with insert ($6&#8211;18/unit), folding carton with tray ($2&#8211;6/unit), sleeve + tray ($4&#8211;12/unit), and window box ($3&#8211;8/unit). Component count is the number one cost driver &#8212; jumping from 3 to 5 products can increase cost 30&#8211;50% because the insert gets more complex, the box gets larger, and assembly time increases.</p>
@@ -43,7 +50,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Structural Approaches for Multi-Product Gift Set Packaging</h2>
+            <h2 id="structural-approaches-for-multi-product-gift-set-p">Structural Approaches for Multi-Product Gift Set Packaging</h2>
             <p>The structure is the first decision and the hardest to change later. Each approach carries a different cost profile, perceived value, production complexity, and suitability for different product counts and channels.</p>
 
             <Image src="/images/portfolio/holiday-epicutis-gift-sets.jpg" alt="Premium skincare gift set packaging with rigid boxes and custom inserts" width={760} height={570} className="guide-img" style={{ width: '100%', height: 'auto' }} />
@@ -76,7 +83,7 @@ export default function PostClient() {
             <p><strong>Pros:</strong> Product visibility without opening. Reduces return rates (customer sees exactly what&apos;s inside). Effective on retail shelves where browsing is quick. Can highlight hero products through strategic window placement.</p>
             <p><strong>Cons:</strong> Window placement constrains graphic design layout. PET film adds a non-paper material (sustainability consideration). Products must look attractive through the window. Dust and fingerprints on the film reduce shelf appeal over time.</p>
 
-            <h2>Insert Types: What Holds the Products in Place</h2>
+            <h2 id="insert-types-what-holds-the-products-in-place">Insert Types: What Holds the Products in Place</h2>
             <p>The insert is what transforms a box with products inside it into a gift set. It&apos;s also where budget decisions have the biggest impact on perceived quality. Here&apos;s what each insert type costs and where it works best.</p>
             <h3>Die-Cut Card</h3>
             <p>A flat piece of printed card stock with die-cut holes or slots that hold products upright. The simplest and cheapest insert option.</p>
@@ -96,7 +103,7 @@ export default function PostClient() {
             <p><strong>Limitations:</strong> Less precise fit than thermoformed plastic. Surface finish is rougher (though smooth-finish pulp is improving). Limited color options without secondary coating.</p>
             <p>For a deeper comparison of materials and their sustainability profiles, see our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=gift-set-packaging-design">material decision framework</Link>.</p>
 
-            <h2>What Drives Gift Set Packaging Cost</h2>
+            <h2 id="what-drives-gift-set-packaging-cost">What Drives Gift Set Packaging Cost</h2>
             <p>Gift set packaging cost is driven by five factors. Understanding these before the design phase prevents budget surprises at the quoting stage.</p>
             <h3>Component Count (The #1 Driver)</h3>
             <p>Every product in the set adds a cavity to the insert, which adds tooling complexity and assembly time. A 3-product set might have 5 components (box, lid, insert, tissue, belly band). A 7-product set with a rigid box, custom insert, printed tissue, info card, and sleeve might have 10+ components.</p>
@@ -112,7 +119,7 @@ export default function PostClient() {
             <h3>Assembly and Kitting</h3>
             <p>Gift sets are assembly projects. Products arrive from the manufacturer. Packaging components arrive from the packaging supplier. Someone has to put them together. Kitting labor runs $0.75-$3.00 per unit depending on component count and complexity. This cost is often underestimated or omitted from initial budgets.</p>
 
-            <h2>Managing Multiple Product Sizes in One Kit</h2>
+            <h2 id="managing-multiple-product-sizes-in-one-kit">Managing Multiple Product Sizes in One Kit</h2>
             <p>The engineering challenge of multi-product gift set packaging is that no two products are the same size. A skincare routine might include a 1 oz serum bottle (tall, narrow), a 2 oz moisturizer jar (short, wide), a 0.5 oz eye cream (tiny), and a 4 oz cleanser (large). All four need to sit in the same box, held securely, looking intentional.</p>
             <h3>The Dimension Lock Rule</h3>
             <p>Finalize all product dimensions before insert engineering begins. Not &ldquo;roughly this size.&rdquo; Final production dimensions with tolerances. The insert is CNC-cut or mold-formed to specific measurements. A 2mm change in bottle diameter after tooling means a cavity that&apos;s either too tight (product won&apos;t fit) or too loose (product rattles).</p>
@@ -121,7 +128,7 @@ export default function PostClient() {
             <h3>Weight Distribution</h3>
             <p>Heavy products (glass bottles, large jars) should sit near the center or back of the insert to prevent the box from tipping forward on shelf. Lightweight products (lip balms, sachets) can occupy edge positions. This sounds minor but affects retail shelf stability and shipping orientation.</p>
 
-            <h2>Retailer Display Requirements</h2>
+            <h2 id="retailer-display-requirements">Retailer Display Requirements</h2>
             <p>Gift sets sold through retail face display requirements that must be designed into the packaging from the start.</p>
             <h3>Shelf and Fixture Dimensions</h3>
             <p>Retailers assign gift sets to specific shelf positions or promotional fixtures. The box dimensions must fit the assigned space. A beautiful gift set that&apos;s 1&rdquo; too wide for the shelf slot doesn&apos;t get displayed.</p>
@@ -135,6 +142,9 @@ export default function PostClient() {
 
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Gift Set Packaging FAQs"
@@ -149,7 +159,7 @@ export default function PostClient() {
         ctaProjectType="Gift Set Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>Gift set packaging design is a series of decisions that compound. The structure determines cost. The insert determines product fit. The finish determines shelf presence. The timeline determines whether you have room to get it right.</p>
             <p>Start with the brief. Define the products, the target cost, the channel, and the quantity. That gives us enough to recommend a structure, quote realistic pricing, and map the production timeline. See how we developed gift set packaging for a growing skincare line in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=gift_set_epicutis_case_study">Epicutis case study</Link>.</p>

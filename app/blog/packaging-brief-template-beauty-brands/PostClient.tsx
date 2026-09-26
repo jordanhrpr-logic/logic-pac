@@ -3,9 +3,23 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-is-a-packaging-brief', label: 'What Is a Packaging Brief?' },
+    { id: 'why-the-brief-matters-more-than-the-mood-board', label: 'Why the Brief Matters More Than the Mood Board' },
+    { id: 'the-10-sections-every-packaging-brief-needs', label: 'The 10 Sections Every Packaging Brief Needs' },
+    { id: 'common-packaging-brief-omissions-that-delay-projec', label: 'Common Packaging Brief Omissions That Delay Pro...' },
+    { id: 'how-a-packaging-brief-becomes-a-quote', label: 'How a Packaging Brief Becomes a Quote' },
+    { id: 'how-to-evaluate-supplier-responses-to-your-brief', label: 'How to Evaluate Supplier Responses to Your Brief' },
+    { id: 'beauty-specific-attachments-to-include', label: 'Beauty-Specific Attachments to Include' },
+    { id: 'the-supplier-ready-brief-checklist', label: 'The Supplier-Ready Brief Checklist' },
+    { id: 'what-happens-after-you-send-the-brief', label: 'What Happens After You Send the Brief' },
+  ]
+
 
   return (
     <>
@@ -13,15 +27,12 @@ export default function PostClient() {
         <div className="ey inv">Planning</div>
         <h1>Packaging Brief Template for Beauty Brands</h1>
         <p>The 10 sections every project needs</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>9 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>9 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What should a packaging brief include?</h2>
             <p>A supplier-ready brief needs 10 sections: project context, brand overview, product specs, distribution channels, volume by SKU, target unit cost, material and sustainability requirements, finish direction, timeline with real dates, and a named stakeholder approval chain. The most expensive omissions are volume, target cost, launch date, and sustainability specs.</p>
@@ -43,7 +54,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Is a Packaging Brief?</h2>
+            <h2 id="what-is-a-packaging-brief">What Is a Packaging Brief?</h2>
             <p>A packaging brief is the source document that tells a packaging partner what needs to be designed, sourced, sampled, quoted, and produced.</p>
             <p>It is not just a creative brief. It is not just a supplier RFQ. It is not just a mood board.</p>
             <p>For beauty brands, the brief has to connect creative direction with production reality:</p>
@@ -60,7 +71,7 @@ export default function PostClient() {
             <p>When those answers are missing, suppliers guess. Guessing creates wrong quotes, wrong samples, slow approvals, and packaging that has to be reworked after the project is already late.</p>
             <p>For a working guide version, use the <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_brief_template_guide">Packaging Brief Template</Link>.</p>
 
-            <h2>Why the Brief Matters More Than the Mood Board</h2>
+            <h2 id="why-the-brief-matters-more-than-the-mood-board">Why the Brief Matters More Than the Mood Board</h2>
             <p>Mood boards show taste. Briefs show constraints.</p>
             <p>Beauty teams often start with references: a soft-touch box, a foil detail, a refillable compact, a rigid PR kit, a glass jar, a paper wrap. That&apos;s useful. But references don&apos;t answer the questions that drive production.</p>
             <p>A supplier still needs to know:</p>
@@ -77,7 +88,7 @@ export default function PostClient() {
             <p>Without that, the mood board becomes a cost trap. The team falls in love with a structure before anyone knows whether the timeline, MOQ, or unit economics work.</p>
             <p>A good brief puts the guardrails in place before design goes too far.</p>
 
-            <h2>The 10 Sections Every Packaging Brief Needs</h2>
+            <h2 id="the-10-sections-every-packaging-brief-needs">The 10 Sections Every Packaging Brief Needs</h2>
             <p>Use these sections as the base structure for any custom packaging project.</p>
 
             <h3>1. Project Context</h3>
@@ -238,7 +249,7 @@ export default function PostClient() {
             <p>This avoids the most common delay: the late stakeholder who sees the sample for the first time after everyone else already approved it.</p>
             <p>Approval chains should be clear before sampling starts.</p>
 
-            <h2>Common Packaging Brief Omissions That Delay Projects</h2>
+            <h2 id="common-packaging-brief-omissions-that-delay-projec">Common Packaging Brief Omissions That Delay Projects</h2>
 
             <h3>No Target Cost</h3>
             <p>Brands often hide the budget because they think it helps negotiation. It usually wastes time.</p>
@@ -256,7 +267,7 @@ export default function PostClient() {
             <h3>No Approval Owner</h3>
             <p>If nobody owns final approval, everyone owns delay.</p>
 
-            <h2>How a Packaging Brief Becomes a Quote</h2>
+            <h2 id="how-a-packaging-brief-becomes-a-quote">How a Packaging Brief Becomes a Quote</h2>
             <p>Once the brief is complete, the supplier can translate it into a quote structure.</p>
             <p>That quote usually includes:</p>
             <ul>
@@ -274,7 +285,7 @@ export default function PostClient() {
             <p>The brief determines whether that quote is useful.</p>
             <p>A vague brief produces a vague quote. A complete brief produces a quote you can compare, negotiate, and build from.</p>
 
-            <h2>How to Evaluate Supplier Responses to Your Brief</h2>
+            <h2 id="how-to-evaluate-supplier-responses-to-your-brief">How to Evaluate Supplier Responses to Your Brief</h2>
             <p>Look for specificity.</p>
             <p>A strong supplier response should tell you:</p>
             <ul>
@@ -297,7 +308,7 @@ export default function PostClient() {
             <p>Good suppliers ask better questions. That is a good sign, not a delay.</p>
             <p>If a packaging partner can quote a complex project without asking anything, they probably did not understand the project.</p>
 
-            <h2>Beauty-Specific Attachments to Include</h2>
+            <h2 id="beauty-specific-attachments-to-include">Beauty-Specific Attachments to Include</h2>
             <p>The brief is the written direction. The attachments are the proof.</p>
             <p>For beauty packaging, include these whenever possible:</p>
             <ul>
@@ -317,7 +328,7 @@ export default function PostClient() {
             <p>One reference might be useful for the hinge. Another might be useful for the paper texture. Another might be useful for the reveal moment. Say that.</p>
             <p>The more precise the attachment notes, the fewer wrong samples you pay for.</p>
 
-            <h2>The Supplier-Ready Brief Checklist</h2>
+            <h2 id="the-supplier-ready-brief-checklist">The Supplier-Ready Brief Checklist</h2>
             <p>Before sending the brief, run this checklist:</p>
             <ul>
               <li>Product dimensions are complete</li>
@@ -335,7 +346,7 @@ export default function PostClient() {
             <p>That last point matters. Suppliers need to know what is flexible and what is locked.</p>
             <p>If the brand color is locked, say it. If the insert material is flexible, say that too. Flexibility can save money and time, but only when the supplier knows where they have room to move.</p>
 
-            <h2>What Happens After You Send the Brief</h2>
+            <h2 id="what-happens-after-you-send-the-brief">What Happens After You Send the Brief</h2>
             <p>A good packaging partner should come back with more than a price.</p>
             <p>The first response should confirm the scope, identify missing inputs, and separate fixed requirements from open decisions. If the brief says &ldquo;rigid box preferred,&rdquo; the supplier should ask whether a premium carton could solve the same shelf problem at a lower landed cost. If the brief says &ldquo;sustainable,&rdquo; the supplier should ask what that means: FSC paper, PCR plastic, mono-material structure, refillable system, or retailer compliance.</p>
             <p>That response tells you how the project will run.</p>
@@ -352,6 +363,9 @@ export default function PostClient() {
             <p>The brief is not a formality. It is the handoff from brand intent to manufacturing reality. The cleaner that handoff, the fewer expensive corrections happen later.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Packaging Brief Template FAQ"
@@ -366,7 +380,7 @@ export default function PostClient() {
         ctaProjectType="Packaging Brief"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>The Bottom Line</h2>
             <p>Packaging projects don&apos;t usually fail because the supplier can&apos;t make a box.</p>
             <p>They fail because the team started without enough clarity.</p>

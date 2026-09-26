@@ -3,9 +3,21 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'how-is-food-and-beverage-packaging-different-from', label: 'How Is Food and Beverage Packaging Different Fr...' },
+    { id: 'what-packaging-formats-work-for-food-and-beverage', label: 'What Packaging Formats Work for Food and Bevera...' },
+    { id: 'what-materials-should-food-and-beverage-brands-con', label: 'What Materials Should Food and Beverage Brands ...' },
+    { id: 'what-compliance-requirements-affect-food-packaging', label: 'What Compliance Requirements Affect Food Packag...' },
+    { id: 'how-much-does-food-and-beverage-packaging-cost', label: 'How Much Does Food and Beverage Packaging Cost?' },
+    { id: 'what-retail-requirements-do-emerging-fb-brands-mis', label: 'What Retail Requirements Do Emerging F&B Brands...' },
+    { id: 'how-should-an-emerging-brand-plan-the-packaging-pr', label: 'How Should an Emerging Brand Plan the Packaging...' },
+  ]
+
 
   return (
     <>
@@ -13,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Design</div>
         <h1>Food and Beverage Packaging Design for Emerging Brands</h1>
         <p>What works and what doesn&apos;t</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How is F&amp;B packaging different from beauty?</h2>
             <p>Food and beverage packaging runs $0.30&#8211;3.00/unit and is more compliance-constrained and cost-sensitive than beauty packaging. The package must protect shelf life, carry mandatory labeling (nutrition facts, allergens, net weight), survive temperature changes, and fit retailer case-pack and pallet-pattern rules. Design matters, but the package must clear operational and regulatory hurdles first.</p>
@@ -41,7 +50,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>How Is Food and Beverage Packaging Different From Beauty Packaging?</h2>
+            <h2 id="how-is-food-and-beverage-packaging-different-from">How Is Food and Beverage Packaging Different From Beauty Packaging?</h2>
             <p>Beauty packaging often carries a heavy brand experience load. Food and beverage packaging carries a heavier compliance and cost load.</p>
             <p>A beauty brand may spend $2-$8 per unit on packaging because the package supports price perception. A food brand selling at $6.99 may not have that room. A beverage brand with high freight weight has even less margin to waste.</p>
             <p>F&amp;B packaging has to answer different questions:</p>
@@ -57,7 +66,7 @@ export default function PostClient() {
             <p>That is why the packaging brief needs to include formula, fill method, shelf life, channel, compliance requirements, and launch volume. If the brief only includes mood boards, the supplier is guessing.</p>
             <p>Use our <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_packaging_brief">Packaging Brief Template</Link> before asking for quotes.</p>
 
-            <h2>What Packaging Formats Work for Food and Beverage Products?</h2>
+            <h2 id="what-packaging-formats-work-for-food-and-beverage">What Packaging Formats Work for Food and Beverage Products?</h2>
             <p>The right format depends on product form, shelf life, temperature, retail channel, and margin.</p>
             <h3>Dry Goods</h3>
             <p>Dry goods include snacks, powders, cereals, granola, tea, coffee, baking mixes, supplements, and pantry products. Common structures include flexible pouches, folding cartons, rigid canisters, labels, sleeves, and corrugated shippers.</p>
@@ -75,7 +84,7 @@ export default function PostClient() {
             <p>The package has to preserve trust. If it fogs, warps, leaks, or looks handled, the product loses value fast.</p>
             <p>For material tradeoffs across formats, see our <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_material_framework">Material Decision Framework</Link>.</p>
 
-            <h2>What Materials Should Food and Beverage Brands Consider?</h2>
+            <h2 id="what-materials-should-food-and-beverage-brands-con">What Materials Should Food and Beverage Brands Consider?</h2>
             <p>Material choice in F&amp;B is driven by protection first, brand second, and cost always.</p>
             <h3>Flexible Film</h3>
             <p>Flexible film is common for snacks, powders, coffee, supplements, and pantry goods. It is lightweight, efficient, and often the best choice when freight and shelf life matter.</p>
@@ -91,7 +100,7 @@ export default function PostClient() {
             <p>PET and HDPE are practical for beverages, sauces, powders, and supplements. Aluminum has a strong recyclability story and works well in cans, bottles, tubes, and certain premium formats.</p>
             <p>The right material is rarely the one that looks best in a render. It is the one that protects the product, supports the margin, and fits the channel.</p>
 
-            <h2>What Compliance Requirements Affect Food Packaging?</h2>
+            <h2 id="what-compliance-requirements-affect-food-packaging">What Compliance Requirements Affect Food Packaging?</h2>
             <p>Food and beverage packaging has more compliance exposure than many beauty formats. We are not a law firm, and brands should confirm requirements with their regulatory team, but packaging decisions need to account for the basics early.</p>
             <p>Common requirements include:</p>
             <ul>
@@ -110,14 +119,14 @@ export default function PostClient() {
             <p>If the product is moving into retail, the operational requirements expand. Retailers may care about case pack, pallet pattern, inner packs, shelf-ready trays, label placement, and ASN accuracy.</p>
             <p>The Logic Agency <a href="https://www.logicagencyinc.com/guides/retail-readiness?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_retail_readiness" target="_blank" rel="noopener noreferrer">Retail Readiness Bible</a> covers the operational side of that transition.</p>
 
-            <h2>How Much Does Food and Beverage Packaging Cost?</h2>
+            <h2 id="how-much-does-food-and-beverage-packaging-cost">How Much Does Food and Beverage Packaging Cost?</h2>
             <p>Food and beverage packaging usually falls below beauty packaging on a per-unit basis, but the margin pressure is often higher.</p>
             <p>Typical ranges:</p>
             <p>| Format | Typical Cost Range | |&ndash;-|&ndash;-:| | Labels | $0.05-$0.35 | | Flexible pouches | $0.15-$0.80 | | Folding cartons | $0.30-$2.00 | | Bottles or jars | $0.30-$1.80 | | Corrugated shippers | $0.20-$1.50 | | Multipack carriers | $0.30-$2.50 | | Premium gift or variety packs | $2.00-$8.00+ |</p>
             <p>Cost moves with volume, material, print method, barrier performance, filling requirements, and freight. A pouch with high-barrier film and low volume may cost more than a simple carton at higher volume.</p>
             <p>For deeper category benchmarks, see our <Link href="/blog/packaging-cost-per-unit-benchmarks?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_cost_benchmarks">Packaging Cost Per Unit Benchmarks</Link>.</p>
 
-            <h2>What Retail Requirements Do Emerging F&amp;B Brands Miss?</h2>
+            <h2 id="what-retail-requirements-do-emerging-fb-brands-mis">What Retail Requirements Do Emerging F&amp;B Brands Miss?</h2>
             <p>Brands coming from farmers markets, DTC, or local wholesale often underestimate retail operations. A retailer does not just buy product. They buy a system that has to receive, stock, scan, and replenish cleanly.</p>
             <p>Common misses include:</p>
             <h3>Case Pack Configuration</h3>
@@ -132,7 +141,7 @@ export default function PostClient() {
             <p>Late shipments, bad labels, ASN errors, and routing guide misses can create deductions. Build compliance into the packaging and fulfillment plan early.</p>
             <p>If the product is entering retail, pair the packaging plan with the Logic Agency guide to <a href="https://www.logicagencyinc.com/guides/retail-ready-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_retail_ready_packaging" target="_blank" rel="noopener noreferrer">retail-ready packaging</a>.</p>
 
-            <h2>How Should an Emerging Brand Plan the Packaging Process?</h2>
+            <h2 id="how-should-an-emerging-brand-plan-the-packaging-pr">How Should an Emerging Brand Plan the Packaging Process?</h2>
             <p>Start with the channel. A DTC launch, specialty retail launch, mass retail launch, and club launch all need different packaging decisions.</p>
             <p>Then define:</p>
             <ul>
@@ -198,6 +207,9 @@ export default function PostClient() {
             <p>A package can evolve. The first retail-ready version does not have to be the final national-retail version.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Food and Beverage Packaging FAQ"
@@ -212,7 +224,7 @@ export default function PostClient() {
         ctaProjectType="Food & Beverage Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Build Packaging That Works Beyond the First Sale</h2>
             <p>Food and beverage packaging has to do more than look good on shelf. It has to protect product quality, carry required information, fit the retail system, and keep the margin intact.</p>
             <p>If you are moving from local sales, DTC, or early wholesale into a bigger retail channel, we can help build packaging that is designed for the next stage, not just the next photoshoot.</p>

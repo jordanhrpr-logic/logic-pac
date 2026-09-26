@@ -3,9 +3,19 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'the-5-phases-of-custom-packaging-production', label: 'The 5 Phases of Custom Packaging Production' },
+    { id: 'how-to-work-backward-from-your-launch-date', label: 'How to Work Backward from Your Launch Date' },
+    { id: 'the-holiday-packaging-timeline', label: 'The Holiday Packaging Timeline' },
+    { id: 'when-rush-production-makes-sense-and-what-it-costs', label: 'When Rush Production Makes Sense (and What It C...' },
+    { id: 'the-three-things-that-delay-packaging-most-often', label: 'The Three Things That Delay Packaging Most Often' },
+  ]
+
 
   return (
     <>
@@ -13,15 +23,12 @@ export default function PostClient() {
         <div className="ey inv">Planning</div>
         <h1>How Long Does Custom Packaging Take? The Real Timeline from Concept to Shelf</h1>
         <p>A phase-by-phase breakdown of custom packaging lead times</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>9 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>9 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How long does custom packaging take?</h2>
             <p>Custom packaging takes 12&#8211;20 weeks from approved brief to product in hand, across five phases: design (2&#8211;4 weeks), prototyping (2&#8211;4 weeks), tooling and production setup (4&#8211;6 weeks), mass production (4&#8211;8 weeks), and freight (4&#8211;8 weeks international). The single biggest delay is artwork approval loops.</p>
@@ -43,7 +50,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>The 5 Phases of Custom Packaging Production</h2>
+            <h2 id="the-5-phases-of-custom-packaging-production">The 5 Phases of Custom Packaging Production</h2>
             <p>Every custom packaging project moves through the same five phases. The duration of each depends on the format, materials, finishes, and how quickly decisions are made.</p>
 
             <h3>Phase 1: Design and Structural Engineering &mdash; 2&ndash;4 Weeks</h3>
@@ -125,7 +132,7 @@ export default function PostClient() {
               <li><strong>FCL shipping.</strong> A full container moves faster than shared LCL because it does not wait for consolidation.</li>
             </ul>
 
-            <h2>How to Work Backward from Your Launch Date</h2>
+            <h2 id="how-to-work-backward-from-your-launch-date">How to Work Backward from Your Launch Date</h2>
             <p>The most common packaging timing mistake is starting the conversation when you think you need to start production. By then, you are already 6&ndash;10 weeks behind.</p>
             <p>Here is the backward-planning formula:</p>
             <p><strong>Launch date</strong> &rarr; subtract freight (4&ndash;8 weeks) &rarr; subtract production (4&ndash;8 weeks) &rarr; subtract tooling (4&ndash;6 weeks) &rarr; subtract prototyping (2&ndash;4 weeks) &rarr; subtract design (2&ndash;4 weeks) = <strong>when you need an approved brief.</strong></p>
@@ -136,7 +143,7 @@ export default function PostClient() {
               <li><strong>Launch in 12 weeks?</strong> Only possible with proven formats, stock materials, domestic production, and a brief that is locked on day one.</li>
             </ul>
 
-            <h2>The Holiday Packaging Timeline</h2>
+            <h2 id="the-holiday-packaging-timeline">The Holiday Packaging Timeline</h2>
             <p>Holiday gift set packaging has the tightest timeline pressure because every beauty brand needs packaging for Q4, and factory capacity fills months in advance.</p>
             <p>The realistic holiday timeline:</p>
             <ul>
@@ -150,7 +157,7 @@ export default function PostClient() {
             <p>If you are reading this after March, you are likely looking at compressed options, rush production premiums (15&ndash;25%), or air freight &mdash; all of which increase cost significantly.</p>
             <p>Our <Link href="/holiday?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_holiday_page">Holiday Gift Set Packaging page</Link> covers the full seasonal timeline.</p>
 
-            <h2>When Rush Production Makes Sense (and What It Costs)</h2>
+            <h2 id="when-rush-production-makes-sense-and-what-it-costs">When Rush Production Makes Sense (and What It Costs)</h2>
             <p>Rush production is not free speed. It is paid speed.</p>
             <p>Typical rush premiums:</p>
             <ul>
@@ -172,13 +179,16 @@ export default function PostClient() {
               <li>The budget cannot absorb 20&ndash;40% cost increase</li>
             </ul>
 
-            <h2>The Three Things That Delay Packaging Most Often</h2>
+            <h2 id="the-three-things-that-delay-packaging-most-often">The Three Things That Delay Packaging Most Often</h2>
             <p>After managing hundreds of packaging projects, three delay patterns account for 80% of timeline extensions:</p>
             <p><strong>1. Artwork approval loops.</strong> The brand approves the structure, then spends 4&ndash;6 weeks iterating on graphic design &mdash; color tweaks, font changes, label copy revisions. Every round is 5&ndash;10 days of factory response time. Three revision cycles = 3&ndash;6 weeks added.</p>
             <p><strong>2. Material availability.</strong> The specified material (specialty paper, specific PCR content, custom color PU leather) is not in stock. Sourcing it takes 2&ndash;4 weeks &mdash; often discovered during sampling, not during design.</p>
             <p><strong>3. Factory calendar conflicts.</strong> Chinese New Year (January&ndash;February) shuts production for 2&ndash;4 weeks. Golden Week (October) pauses for 1 week. Ramadan affects some Southeast Asian suppliers. These are predictable but regularly missed in planning.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Custom Packaging Timeline FAQ"
@@ -193,7 +203,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Start With the Timeline, Not the Design</h2>
             <p>The brands that hit their launch dates consistently do one thing differently: they start with the calendar and work backward, instead of starting with the design and hoping the timeline works out.</p>
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>

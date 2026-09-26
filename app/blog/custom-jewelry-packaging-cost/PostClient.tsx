@@ -4,9 +4,24 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-drives-custom-jewelry-packaging-cost', label: 'What Drives Custom Jewelry Packaging Cost?' },
+    { id: 'what-each-jewelry-packaging-format-usually-costs', label: 'What Each Jewelry Packaging Format Usually Costs' },
+    { id: 'why-catalog-boxes-feel-expensive-but-still-look-ge', label: 'Why Catalog Boxes Feel Expensive but Still Look...' },
+    { id: 'how-to-lower-cost-without-making-the-box-look-chea', label: 'How to Lower Cost Without Making the Box Look C...' },
+    { id: 'how-to-compare-jewelry-packaging-quotes', label: 'How to Compare Jewelry Packaging Quotes' },
+    { id: 'the-cost-model-we-use-for-jewelry-packaging', label: 'The Cost Model We Use for Jewelry Packaging' },
+    { id: 'when-custom-jewelry-packaging-is-worth-it', label: 'When Custom Jewelry Packaging Is Worth It' },
+    { id: 'the-sample-approval-process', label: 'The Sample Approval Process' },
+    { id: 'how-reorders-change-the-cost-equation', label: 'How Reorders Change the Cost Equation' },
+    { id: 'when-to-use-stock-packaging-instead', label: 'When to Use Stock Packaging Instead' },
+  ]
+
 
   return (
     <>
@@ -14,15 +29,12 @@ export default function PostClient() {
         <div className="ey inv">Pricing</div>
         <h1>How Much Does Custom Jewelry Packaging Cost? A Real Pricing Guide for Jewelry Brands</h1>
         <p>Real pricing by format and volume</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What does custom jewelry packaging cost?</h2>
             <p>Custom jewelry packaging runs $3&#8211;15/unit for branded rigid boxes, $0.50&#8211;3.00 for paperboard cards and sleeves, and $8&#8211;25+ for gift sets. The real cost driver is building a matched system across ring, earring, necklace, and bracelet formats. MOQs start around 500&#8211;1,000 units per size.</p>
@@ -46,12 +58,12 @@ export default function PostClient() {
 
             <p><strong>Related reading:</strong> <Link href="/blog/packaging-cost-per-unit-benchmarks?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-jewelry-packaging-cost_related_packaging-cost-per-unit-benchmarks">packaging cost per unit benchmarks</Link>, <Link href="/blog/custom-packaging-moq-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-jewelry-packaging-cost_related_custom-packaging-moq-guide">custom packaging MOQ guide</Link>, <Link href="/blog/custom-packaging-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-jewelry-packaging-cost_related_custom-packaging-timeline">custom packaging timeline</Link>, <Link href="/blog/packaging-finishes-guide-foil-uv-emboss?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-jewelry-packaging-cost_related_packaging-finishes-guide-foil-uv-emboss">packaging finishes guide</Link>, <a href="https://www.logic-pac.com/jewelry?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-jewelry-packaging-cost_related_jewelry" target="_blank" rel="noopener noreferrer">jewelry packaging page</a></p>
 
-            <h2>What Drives Custom Jewelry Packaging Cost?</h2>
+            <h2 id="what-drives-custom-jewelry-packaging-cost">What Drives Custom Jewelry Packaging Cost?</h2>
             <p>Jewelry packaging cost is mostly a function of structure. A simple earring card is inexpensive because the material stack is thin, the production process is straightforward, and the insert does not need to hold weight. A hinged ring box with a metal clasp, velvet insert, and wrapped exterior is a different product. More components. More labor. More quality checkpoints.</p>
             <p>The other cost driver is consistency. Most jewelry brands do not need one box. They need four to six formats that feel like one collection: ring, earring, bracelet, necklace, pendant, and gift set. That means the PU leather, paper wrap, lining, foil, and logo placement all need to match across different structures.</p>
             <p>A supplier can make one box look good. The harder job is making five sizes feel like the same brand after they come off different tooling, use different inserts, and move through production at different speeds. That is where the quote has to be evaluated as a system, not a single line item.</p>
 
-            <h2>What Each Jewelry Packaging Format Usually Costs</h2>
+            <h2 id="what-each-jewelry-packaging-format-usually-costs">What Each Jewelry Packaging Format Usually Costs</h2>
 
             <h3>Rigid jewelry boxes: $3&ndash;$15+ per unit</h3>
             <p>Rigid boxes are the standard for premium jewelry because they create weight, protection, and ceremony. Basic rigid drawer or lift-off boxes can start near <strong>$3&ndash;$5</strong> at production volume. Hinged boxes with metal hardware, custom cushions, fabric lining, and specialty wraps often land around <strong>$6&ndash;$15+</strong>. Luxury formats with complex closures, molded interiors, and multiple materials can move higher.</p>
@@ -62,23 +74,23 @@ export default function PostClient() {
             <h3>Gift sets and limited runs: $8&ndash;$25+ per unit</h3>
             <p>Jewelry gift kits usually cost more than core SKU packaging because they combine multiple products, a tray or insert system, a larger box, and a stronger unboxing sequence. The upside: they are often the easiest first custom project. A holiday kit or collaboration box lets the brand test custom packaging without changing the core line.</p>
 
-            <h2>Why Catalog Boxes Feel Expensive but Still Look Generic</h2>
+            <h2 id="why-catalog-boxes-feel-expensive-but-still-look-ge">Why Catalog Boxes Feel Expensive but Still Look Generic</h2>
             <p>The frustration in jewelry is not that brands refuse to spend. Many are already trained to pay real money for packaging. The problem is that catalog systems make them pay premium prices for limited choice.</p>
             <p>A brand might choose one stock ring box, one stock necklace box, and one stock bracelet box from different available options. The texture is close. The color is close. The logo placement is close. But close does not build a system.</p>
             <p>That mismatch gets more visible as the product line grows. A customer who buys earrings in one box and a necklace in another should feel the same brand. A retail buyer looking at a tray of SKUs should see a collection, not a set of catalog compromises. Custom production solves the consistency problem by locking the material library before production starts.</p>
 
-            <h2>How to Lower Cost Without Making the Box Look Cheap</h2>
+            <h2 id="how-to-lower-cost-without-making-the-box-look-chea">How to Lower Cost Without Making the Box Look Cheap</h2>
             <p>The best cost reductions usually come from engineering, not downgrading. Keep the perceived-value cues that customers notice. Remove the complexity they do not.</p>
             <p>Right-size the box. Oversized jewelry packaging feels premium until it drives freight cost, shelf inefficiency, and storage problems. Reduce unused interior volume before cutting visible materials.</p>
             <p>Choose one signature finish. Foil plus emboss plus specialty paper plus metal plaque can look expensive because it is expensive. One controlled finish on a beautiful material often feels cleaner and more premium.</p>
             <p>Standardize across sizes. Use the same wrap, lining, logo position, and finish language across ring, bracelet, necklace, and gift boxes. Consistency creates value without adding more components.</p>
 
-            <h2>How to Compare Jewelry Packaging Quotes</h2>
+            <h2 id="how-to-compare-jewelry-packaging-quotes">How to Compare Jewelry Packaging Quotes</h2>
             <p>Do not compare only the final unit price. Compare the scope. A $7 box with no color proofing, vague insert specs, and undefined freight terms can cost more than an $8.25 box with clear materials, approved samples, and known landed cost.</p>
             <p>Ask every supplier for the same information: material specs, board thickness, lining material, hardware type, insert material, decoration method, MOQ by size, tooling fees, sample cost, production lead time, freight assumptions, and defect tolerance.</p>
             <p>The quote should also state what happens if the PU color does not match across sizes. Jewelry brands live or die by consistency. If the supplier treats every box as its own run with no cross-SKU color control, the collection can drift before it reaches the customer.</p>
 
-            <h2>The Cost Model We Use for Jewelry Packaging</h2>
+            <h2 id="the-cost-model-we-use-for-jewelry-packaging">The Cost Model We Use for Jewelry Packaging</h2>
             <p>A useful jewelry packaging budget starts with a landed-cost model, not a factory quote. Factory cost is only one line. The real cost includes samples, tooling, setup, production, inspection, freight, duties if applicable, warehousing, and the cost of holding inventory.</p>
             <p>For a simple rigid ring box, the factory unit price may be the largest line. For a multi-size collection, the hidden cost is usually coordination: approving every size, keeping color consistent, managing multiple inserts, and making sure every box arrives on the same production standard. That is where catalog buying looks easy but becomes expensive over time.</p>
             <p>A clean model has five columns: product format, unit cost, MOQ, one-time setup cost, and landed cost. Then add a sixth column for risk. Risk is where you capture the issues that do not show up on a quote: material color drift, insert fit, scuffed surfaces, delayed freight, or urgent air shipment.</p>
@@ -91,27 +103,30 @@ export default function PostClient() {
             <p>Jewelry brands usually overpay in three places. First, oversized structures. Empty space feels premium in a photoshoot, but it adds board, freight, and storage cost. Second, redundant finishes. Foil plus emboss plus specialty wrap plus plaque may look expensive because it is expensive, not because it is better. Third, disconnected sizes. Buying ring, necklace, and bracelet boxes as separate projects creates inconsistency and loses the scale benefits of one material program.</p>
             <p>The fix is not to make the box cheaper. The fix is to make the system smarter. One wrap library. One logo standard. One lining standard. One freight plan. Multiple formats, same brand language.</p>
 
-            <h2>When Custom Jewelry Packaging Is Worth It</h2>
+            <h2 id="when-custom-jewelry-packaging-is-worth-it">When Custom Jewelry Packaging Is Worth It</h2>
             <p>Custom packaging is worth it when the brand needs consistency, giftability, retail readiness, or a better customer experience than stock packaging can provide. It is not always worth it for a 100-unit test, a one-night event, or a product line that has not proven demand.</p>
             <p>If the brand is still testing the product, stock boxes with a custom sleeve or band can be the right bridge. If the brand is selling consistently, preparing for wholesale, or building a repeat gifting business, custom becomes much more logical.</p>
             <p>The decision point is usually not aesthetic. It is operational. Can you forecast volume? Can you approve a material standard? Can you hold inventory? Can you reorder before stock runs out? Can you use the same system for the next 12 months? If yes, custom packaging starts to become an asset instead of an expense.</p>
 
-            <h2>The Sample Approval Process</h2>
+            <h2 id="the-sample-approval-process">The Sample Approval Process</h2>
             <p>A jewelry packaging project should not move from render to production without a physical sample. The sample proves more than appearance. It proves opening feel, insert fit, hinge tension, logo scale, lining behavior, corner quality, and whether the product sits correctly.</p>
             <p>For multi-size collections, approve the whole family together. Do not approve the ring box in January and the necklace box in March with a different material lot unless the supplier has a clear color-control process. That is how brands end up with a close match instead of a match.</p>
             <p>The production sample should be reviewed under normal light, retail light if relevant, and photography conditions. Jewelry packaging often has to perform in all three: in hand, on shelf, and on camera.</p>
 
-            <h2>How Reorders Change the Cost Equation</h2>
+            <h2 id="how-reorders-change-the-cost-equation">How Reorders Change the Cost Equation</h2>
             <p>The first production run is the hardest to price because the brand is paying for decisions that will not repeat every time. Material approval, insert testing, finish approval, and production setup all take time. Once those decisions are locked, reorders can move faster and price more predictably.</p>
             <p>That is why the first quote should not be judged in isolation. Ask what the reorder price looks like at the same quantity, at a higher quantity, and at a lower quantity. Ask whether the factory will hold material standards. Ask whether tooling is owned by the brand, stored by the factory, or charged again later.</p>
             <p>For jewelry brands, reorder planning matters because stockouts are easy to create. A ring box can run out before the ring does. A necklace box can be delayed while the necklace inventory is ready. That kind of mismatch creates operational waste. The packaging plan should be tied to SKU velocity, not ordered only when the shelf is empty.</p>
             <p>A good reorder system defines reorder points, lead times, safety stock, and which formats are critical. Core boxes should have a different reorder strategy than a one-time holiday kit. If the brand treats both the same, cash gets trapped in slow-moving packaging or urgent freight becomes the default.</p>
 
-            <h2>When to Use Stock Packaging Instead</h2>
+            <h2 id="when-to-use-stock-packaging-instead">When to Use Stock Packaging Instead</h2>
             <p>Custom is not always the right answer. If the brand needs fewer than <strong>500 units</strong>, is still testing product-market fit, or does not know which jewelry formats will remain in the line, stock packaging with a custom sleeve, sticker, band, or insert card may be smarter.</p>
             <p>Stock packaging can also work for pop-ups, samples, influencer seeding, or early wholesale tests. The key is being honest about what stock can and cannot do. It can create speed. It can reduce commitment. It cannot create a fully matched collection across ring, necklace, bracelet, and gift formats.</p>
             <p>The switch to custom should happen when the brand knows it will repeat the format, when consistency matters, and when packaging becomes part of the customer experience rather than a temporary container.</p>
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Custom Jewelry Packaging Cost FAQ"
@@ -126,7 +141,7 @@ export default function PostClient() {
         ctaProjectType="Custom Packaging"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Build Jewelry Packaging That Matches the Product</h2>
             <p>Jewelry packaging carries more responsibility than most categories. It protects the piece, frames the value, and turns a small object into a complete brand experience. If you&rsquo;re planning a new jewelry box, retail-ready format, seasonal gift set, or full packaging refresh, start with the structure, material, volume, and channel requirements before chasing finishes.</p>
             <p>When you&rsquo;re ready to pressure-test the direction, <a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-jewelry-packaging-cost_consultation" target="_blank" rel="noopener noreferrer">book a jewelry packaging consultation</a>. We&rsquo;ll give you a straight read on format, cost, MOQ, timeline, and what should be solved before the first sample is made.</p>

@@ -3,9 +3,24 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-does-a-beauty-packaging-manufacturer-actually', label: 'What Does a Beauty Packaging Manufacturer Actua...' },
+    { id: 'the-four-packaging-partner-models', label: 'The Four Packaging Partner Models' },
+    { id: 'what-to-look-for-in-a-beauty-packaging-manufacture', label: 'What to Look for in a Beauty Packaging Manufact...' },
+    { id: '10-questions-to-ask-before-you-sign', label: '10 Questions to Ask Before You Sign' },
+    { id: 'red-flags-in-a-beauty-packaging-manufacturer', label: 'Red Flags in a Beauty Packaging Manufacturer' },
+    { id: 'how-to-evaluate-samples', label: 'How to Evaluate Samples' },
+    { id: 'what-certifications-and-documentation-should-they', label: 'What Certifications and Documentation Should Th...' },
+    { id: 'how-to-verify-their-qc-process', label: 'How to Verify Their QC Process' },
+    { id: 'domestic-vs-international-manufacturing', label: 'Domestic vs. International Manufacturing' },
+    { id: 'when-to-switch-packaging-manufacturers', label: 'When to Switch Packaging Manufacturers' },
+  ]
+
 
   return (
     <>
@@ -13,15 +28,12 @@ export default function PostClient() {
         <div className="ey inv">Strategy</div>
         <h1>How to Choose a Beauty Packaging Manufacturer</h1>
         <p>Questions, red flags, and what to verify</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>11 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>11 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What should you verify before signing?</h2>
             <p>Verify five things: category experience with samples you can hold, material sourcing depth, clear MOQs by format with reorder terms, a documented sample-to-production QC process, and a phase-by-phase timeline. The biggest risk is not price. It is a partner who says yes to everything and hides constraints until production is running.</p>
@@ -44,7 +56,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What Does a Beauty Packaging Manufacturer Actually Do?</h2>
+            <h2 id="what-does-a-beauty-packaging-manufacturer-actually">What Does a Beauty Packaging Manufacturer Actually Do?</h2>
             <p>A beauty packaging manufacturer produces packaging components for skincare, cosmetics, fragrance, wellness, and personal care brands. That may include primary packaging, secondary cartons, rigid boxes, inserts, influencer kits, holiday sets, refill systems, and e-commerce packaging.</p>
             <p>The phrase &ldquo;manufacturer&rdquo; gets used loosely. Some companies own factories. Some manage factory relationships. Some design packaging and outsource production. Some are brokers with a supplier network. Some are full-service partners who take the project from brief to production to freight.</p>
             <p>None of those models is automatically good or bad. The problem is when the model is unclear.</p>
@@ -61,7 +73,7 @@ export default function PostClient() {
             </ul>
             <p>The answer tells you what kind of partner you are hiring.</p>
 
-            <h2>The Four Packaging Partner Models</h2>
+            <h2 id="the-four-packaging-partner-models">The Four Packaging Partner Models</h2>
             <p>Most beauty packaging companies fall into one of four models.</p>
 
             <h3>1. Broker</h3>
@@ -85,7 +97,7 @@ export default function PostClient() {
             <p>That is the bar.</p>
             <p>For project scoping, start with the <Link href="/guides/packaging-brief-template?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_packaging_brief_template">Packaging Brief Template</Link>.</p>
 
-            <h2>What to Look for in a Beauty Packaging Manufacturer</h2>
+            <h2 id="what-to-look-for-in-a-beauty-packaging-manufacture">What to Look for in a Beauty Packaging Manufacturer</h2>
 
             <h3>Category Experience</h3>
             <p>Beauty packaging has category-specific requirements: formula compatibility, finish sensitivity, color matching, retail shelf presence, influencer kit presentation, and sustainability claims.</p>
@@ -153,7 +165,7 @@ export default function PostClient() {
             <p>Ask for the full timeline by phase. Then ask what can delay each phase.</p>
             <p>For planning, see our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_concept_to_shelf_timeline">Concept to Shelf Timeline</Link>.</p>
 
-            <h2>10 Questions to Ask Before You Sign</h2>
+            <h2 id="10-questions-to-ask-before-you-sign">10 Questions to Ask Before You Sign</h2>
             <p>Use these before committing to a packaging partner:</p>
             <ol>
               <li>What formats do you make most often for beauty brands?</li>
@@ -169,7 +181,7 @@ export default function PostClient() {
             </ol>
             <p>That last question matters. You want a partner who has seen problems before. Packaging always has constraints. The experienced partner can name them early.</p>
 
-            <h2>Red Flags in a Beauty Packaging Manufacturer</h2>
+            <h2 id="red-flags-in-a-beauty-packaging-manufacturer">Red Flags in a Beauty Packaging Manufacturer</h2>
 
             <h3>Red Flag 1: No Samples Before Production</h3>
             <p>Do not approve production without samples. Ever.</p>
@@ -190,7 +202,7 @@ export default function PostClient() {
             <p>Good partners push back. They tell you when the timeline is unrealistic, when the finish stack is overbuilt, when the MOQ doesn&apos;t fit, or when a material claim is weak.</p>
             <p>If every answer is &ldquo;yes,&rdquo; be careful.</p>
 
-            <h2>How to Evaluate Samples</h2>
+            <h2 id="how-to-evaluate-samples">How to Evaluate Samples</h2>
             <p>When samples arrive, review them like production, not like inspiration.</p>
             <p>Check:</p>
             <ul>
@@ -210,7 +222,7 @@ export default function PostClient() {
             <p>Then decide what changes before the next round.</p>
             <p>The goal is not a perfect sample on the first try. The goal is a sample process that exposes the right problems early.</p>
 
-            <h2>What Certifications and Documentation Should They Provide?</h2>
+            <h2 id="what-certifications-and-documentation-should-they">What Certifications and Documentation Should They Provide?</h2>
             <p>Beauty brands should ask for documentation before production, not after a retailer requests it.</p>
             <p>Depending on the project, a packaging manufacturer should be able to provide:</p>
             <ul>
@@ -229,7 +241,7 @@ export default function PostClient() {
             <p>But if a supplier cannot provide basic material specs, that is a warning sign.</p>
             <p>Documentation is not paperwork for paperwork&apos;s sake. It protects the brand when a retailer, compliance team, or internal stakeholder asks, &ldquo;What is this package made of?&rdquo;</p>
 
-            <h2>How to Verify Their QC Process</h2>
+            <h2 id="how-to-verify-their-qc-process">How to Verify Their QC Process</h2>
             <p>Do not accept &ldquo;we check everything&rdquo; as a QC process.</p>
             <p>Ask specific questions:</p>
             <ul>
@@ -246,14 +258,14 @@ export default function PostClient() {
             <p>Every packaging run has variation. Color moves. Paper behaves differently. Foil registration shifts. Inserts fit tighter than expected. Freight damages cartons. A real QC process does not pretend problems never happen. It defines how they are found and fixed.</p>
             <p>That matters more in beauty than most categories. Small defects show up fast. A scuffed soft-touch carton, crooked foil stamp, loose cap, or insert that lets the product rattle can make a premium SKU feel unfinished. QC is not a backend detail. It is part of the brand experience.</p>
 
-            <h2>Domestic vs. International Manufacturing</h2>
+            <h2 id="domestic-vs-international-manufacturing">Domestic vs. International Manufacturing</h2>
             <p>Domestic manufacturing can be faster, easier to communicate with, and useful for smaller runs or urgent timelines. It can also cost more and may offer fewer specialty material or finish options depending on the format.</p>
             <p>International manufacturing can unlock stronger cost structures, broader material sourcing, and more complex production capability. It also adds freight time, customs, communication complexity, and earlier planning requirements.</p>
             <p>The right answer depends on the project.</p>
             <p>Use domestic when speed, proximity, or smaller runs matter more than unit cost. Use international when complexity, volume, or material capability justify the longer timeline.</p>
             <p>For cost context, see the <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_custom_packaging_cost">custom packaging cost breakdown</Link>.</p>
 
-            <h2>When to Switch Packaging Manufacturers</h2>
+            <h2 id="when-to-switch-packaging-manufacturers">When to Switch Packaging Manufacturers</h2>
             <p>Switch when the current partner is blocking growth.</p>
             <p>Common signs:</p>
             <ul>
@@ -271,6 +283,9 @@ export default function PostClient() {
             <p>The best time to qualify a new partner is before the old one fails.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Choosing a Beauty Packaging Manufacturer FAQ"
@@ -285,7 +300,7 @@ export default function PostClient() {
         ctaProjectType="Packaging Manufacturer"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>The Bottom Line</h2>
             <p>A good beauty packaging manufacturer does more than make the thing you ask for.</p>
             <p>They protect the project from bad assumptions. Wrong material. Wrong MOQ. Wrong timeline. Wrong finish. Wrong supplier. Wrong cost target.</p>

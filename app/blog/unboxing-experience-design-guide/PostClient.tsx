@@ -4,9 +4,21 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'the-5-second-rule-first-impressions-before-the-ope', label: 'The 5-Second Rule: First Impressions Before the...' },
+    { id: 'reveal-sequencing-controlling-the-arc', label: 'Reveal Sequencing: Controlling the Arc' },
+    { id: 'tactile-hierarchy-the-sensory-arc', label: 'Tactile Hierarchy: The Sensory Arc' },
+    { id: 'sound-design-the-overlooked-dimension', label: 'Sound Design: The Overlooked Dimension' },
+    { id: 'camera-readiness-designing-for-content-creation', label: 'Camera-Readiness: Designing for Content Creation' },
+    { id: 'looking-expensive-vs-being-expensive', label: '“Looking Expensive” vs. Being Expensive' },
+    { id: 'designing-unboxing-for-different-channels', label: 'Designing Unboxing for Different Channels' },
+  ]
+
 
   return (
     <>
@@ -14,15 +26,12 @@ export default function PostClient() {
         <div className="ey inv">Design</div>
         <h1>Unboxing Experience Design: The Psychology of Packaging That Gets Filmed</h1>
         <p>What works and what doesn&apos;t</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>16 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>16 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">How do you design packaging that gets filmed?</h2>
             <p>Engineer the sequence, not just the surface. A three-layer reveal &#8212; outer shell, transition layer (tissue, card, ribbon), product reveal in a structured insert &#8212; creates the 10&#8211;15 second arc that maps to a Reel or TikTok. A $12 box that nails the sequence outperforms a $40 box that skips the transition layer. Camera-readiness is a design spec: brand visibility at filming angles, finishes that catch light, contrast against common unboxing surfaces.</p>
@@ -43,7 +52,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>The 5-Second Rule: First Impressions Before the Open</h2>
+            <h2 id="the-5-second-rule-first-impressions-before-the-ope">The 5-Second Rule: First Impressions Before the Open</h2>
             <p>The unboxing experience starts before the box opens. It starts when the recipient picks up the package. In the first 5 seconds, three things happen simultaneously, and they form an impression that colors everything that follows.</p>
             <h3>Weight in Hand</h3>
             <p>The recipient registers weight before they consciously evaluate design. A rigid box with substance feels like it contains something worth opening. A lightweight mailer feels like it contains a sample. Weight doesn&apos;t need to come from the product. Board weight, insert material, and box dimensions all contribute.</p>
@@ -56,7 +65,7 @@ export default function PostClient() {
             <p>Before opening, the recipient&apos;s fingers are already on the box. The outer surface texture is the first tactile data point. Soft-touch lamination creates an immediate quality signal. Uncoated kraft communicates sustainability and authenticity. High-gloss lamination reads as mass-market. Textured linen stock reads as luxury stationery.</p>
             <p>The outer texture sets the baseline. Everything inside should escalate from there. If the outside feels premium and the inside feels like cardboard, the unboxing deflates. If the outside is understated and the inside reveals something richer, the sequence builds.</p>
 
-            <h2>Reveal Sequencing: Controlling the Arc</h2>
+            <h2 id="reveal-sequencing-controlling-the-arc">Reveal Sequencing: Controlling the Arc</h2>
             <p>Reveal sequencing is the deliberate ordering of what the recipient sees at each stage of opening. It&apos;s the most controllable variable in unboxing experience design, and the one most often left to chance.</p>
             <h3>The Three-Layer Model</h3>
             <p>Premium unboxing experiences follow a three-layer reveal structure. Each layer adds information and builds anticipation.</p>
@@ -68,7 +77,7 @@ export default function PostClient() {
             <p>The best unboxing sequences take 8-15 seconds from first touch to full reveal. Under 5 seconds and there&apos;s no buildup. Over 20 seconds and the recipient loses patience. The transition layer adds 2-4 seconds. The insert reveal adds another 3-5 seconds. The outer opening takes 2-4 seconds.</p>
             <p>For unboxing video packaging, timing also matters for content creation. A sequence that takes 10-12 seconds translates cleanly to a 15-30 second Instagram Reel or TikTok. Too fast and there&apos;s nothing to film. Too slow and the creator has to edit, which reduces post likelihood.</p>
 
-            <h2>Tactile Hierarchy: The Sensory Arc</h2>
+            <h2 id="tactile-hierarchy-the-sensory-arc">Tactile Hierarchy: The Sensory Arc</h2>
             <p>Tactile hierarchy is the progression of textures the recipient feels as they move through the unboxing. It&apos;s the haptic equivalent of a musical crescendo. Each surface should feel different from the last, and the progression should move from restraint to richness.</p>
             <h3>Outer → Inner → Product Contact</h3>
             <p>The classic tactile hierarchy for a premium unboxing experience:</p>
@@ -81,7 +90,7 @@ export default function PostClient() {
             <p>| Position | Material | Tactile Signal | Cost Impact | |&ndash;-|&ndash;-|&ndash;-|&ndash;-| | Outer box | Soft-touch lamination | Premium, restrained | +$0.15-$0.35/unit | | Outer box | Uncoated linen stock | Artisanal, editorial | +$0.40-$1.00/unit | | Inner lid | Full-color print on coated stock | Visual richness | +$0.20-$0.60/unit | | Insert | Velvet flocking on card | Luxury, jewelry-grade | +$2.00-$5.00/unit | | Insert | EVA foam (matte black) | Technical precision | +$3.00-$7.00/unit | | Insert | Molded pulp | Sustainable, organic | +$1.00-$3.50/unit | | Transition | Tissue paper (printed) | Delicate reveal | +$0.30-$0.75/unit | | Transition | Cotton ribbon | Gift, occasion | +$0.50-$1.50/unit |</p>
             <p>For a complete breakdown of finish options, costs, and combinations, see our <Link href="/guides/packaging-finish-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing-experience-design-guide">packaging finish guide</Link>.</p>
 
-            <h2>Sound Design: The Overlooked Dimension</h2>
+            <h2 id="sound-design-the-overlooked-dimension">Sound Design: The Overlooked Dimension</h2>
             <p>Unboxing has a soundtrack. Most brands don&apos;t design it, but every recipient hears it. The sounds of opening a package create subconscious quality associations, and they&apos;re especially important for unboxing video packaging where ASMR-style content drives millions of views.</p>
             <h3>The Sounds That Signal Premium</h3>
             <p><strong>Magnetic closure snap.</strong> The clean &ldquo;click&rdquo; of a magnetic lid closing (or the satisfying resistance when opening) signals engineering. It says someone designed this, not just manufactured it. Magnetic closures add $0.50-$2.00 per unit but create an auditory moment that no other closure type matches.</p>
@@ -92,7 +101,7 @@ export default function PostClient() {
             <p>Corrugated cardboard tearing. Tape being ripped. Bubble wrap popping. Styrofoam squeaking. Crinkle fill rustling without resolution. These sounds are associated with shipping, not gifting. They signal logistics, not experience.</p>
             <p>Unboxing design packaging should eliminate logistics sounds from the experience. That means no tape (use magnetic closures, tuck-lock, or sticker seals), no bubble wrap (use structured inserts), and no loose fill (use fitted trays or foam).</p>
 
-            <h2>Camera-Readiness: Designing for Content Creation</h2>
+            <h2 id="camera-readiness-designing-for-content-creation">Camera-Readiness: Designing for Content Creation</h2>
             <p>A premium unboxing experience that isn&apos;t camera-ready is a design failure in the era of social media. Camera-readiness is a specification that should appear in the packaging brief, not something discovered after production.</p>
             <h3>Brand Visibility During Filming</h3>
             <p>During an unboxing video, the camera sees the box from specific angles. The brand logo and key visual identity should be visible from the angles that naturally appear during filming:</p>
@@ -111,7 +120,7 @@ export default function PostClient() {
             <p>The box color should contrast with the surfaces people typically unbox on: white desks, marble counters, neutral bed spreads, light wood tables. A white box on a white desk disappears. A dark box on a dark surface does the same.</p>
             <p>The safest approach: design the outer box with enough color or contrast to be visually distinct against the three most common unboxing surfaces (white, light wood, neutral fabric).</p>
 
-            <h2>&ldquo;Looking Expensive&rdquo; vs. Being Expensive</h2>
+            <h2 id="looking-expensive-vs-being-expensive">&ldquo;Looking Expensive&rdquo; vs. Being Expensive</h2>
             <p>This is the design question most brand managers don&apos;t know how to ask: can the packaging feel premium without costing premium? The answer is yes, but it requires understanding which elements create perceived value and which just add cost.</p>
             <h3>What Creates the Perception of Premium</h3>
             <p><strong>Weight.</strong> Heavier board stock is the highest-impact, lowest-cost upgrade. Moving from 1,000gsm to 1,200gsm board adds $0.10-$0.30 per unit and changes the in-hand feeling dramatically.</p>
@@ -124,7 +133,7 @@ export default function PostClient() {
             <p><strong>Complex closures that frustrate.</strong> A drawer mechanism that sticks, a ribbon that requires untying, a magnetic lid that&apos;s too strong to open easily. These add cost and subtract from the experience. The best closures feel effortless. Effortlessness requires engineering precision, but the mechanism itself can be simple.</p>
             <p>For examples of these principles applied to real projects, explore our <Link href="/work?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing-experience-design-guide">work portfolio</Link> &mdash; including the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing_adidas_case_study">Adidas Nemeziz launch kit</Link>, a multi-level rigid reveal engineered for the camera.</p>
 
-            <h2>Designing Unboxing for Different Channels</h2>
+            <h2 id="designing-unboxing-for-different-channels">Designing Unboxing for Different Channels</h2>
             <p>Unboxing design packaging shifts based on where the recipient encounters the box.</p>
             <h3>DTC E-Commerce</h3>
             <p>The unboxing IS the first physical brand touchpoint. The outer shipper box is the first thing the customer sees. The inner packaging creates the brand experience. Invest in the transition layer (tissue, reveal card) and the insert. The shipper doesn&apos;t need to be premium, but it should be clean and branded.</p>
@@ -137,6 +146,9 @@ export default function PostClient() {
             <p>Monthly unboxing means the novelty must be maintained. The structural format stays consistent, but seasonal variations (different tissue colors, rotating insert cards, seasonal sleeve wraps) keep the experience fresh. The danger of subscription unboxing is diminishing returns. Each month&apos;s box competes with the memory of last month&apos;s.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="Unboxing Experience Design FAQ"
@@ -151,7 +163,7 @@ export default function PostClient() {
         ctaProjectType="Unboxing Experience Design"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>Unboxing experience design starts in the brief, not in the graphic design phase. Define the channel (DTC, PR, retail), the reveal sequence you want to create, the tactile hierarchy, and the camera angles that matter. Those decisions shape the structure, materials, and finish selections that follow.</p>
             <p>We design unboxing experiences for beauty and wellness brands from initial concept through production. We&apos;ll walk you through the structural options, show you material samples, and prototype the sequence before committing to production.</p>

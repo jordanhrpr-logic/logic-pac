@@ -3,9 +3,21 @@
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'material-properties-what-each-plastic-actually-doe', label: 'Material Properties: What Each Plastic Actually...' },
+    { id: 'chemical-resistance-the-decision-most-brands-get-w', label: 'Chemical Resistance: The Decision Most Brands G...' },
+    { id: 'recyclability-and-pcr-availability-hdpe-vs-pet', label: 'Recyclability and PCR Availability: HDPE vs PET' },
+    { id: 'cost-per-unit-what-each-material-actually-costs', label: 'Cost Per Unit: What Each Material Actually Costs' },
+    { id: 'decoration-and-finishing-how-each-material-accepts', label: 'Decoration and Finishing: How Each Material Acc...' },
+    { id: 'the-decision-matrix-hdpe-vs-pet-for-beauty-packagi', label: 'The Decision Matrix: HDPE vs PET for Beauty Pac...' },
+    { id: 'shelf-life-impact-how-material-choice-affects-prod', label: 'Shelf Life Impact: How Material Choice Affects ...' },
+  ]
+
 
   return (
     <>
@@ -13,15 +25,12 @@ export default function PostClient() {
         <div className="ey inv">Materials</div>
         <h1>HDPE vs PET Packaging: Which Plastic Is Right for Your Beauty Brand?</h1>
         <p>The real comparison</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>14 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>14 min read</span></div>
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">Should you use HDPE or PET for beauty packaging?</h2>
             <p>The formula decides the material, not aesthetics. HDPE offers superior chemical resistance for products with essential oils, surfactants, and high-alcohol content. PET offers glass-like clarity for serums, toners, and products where visibility is part of the brand experience. The cost difference is $0.05&#8211;0.20 per unit &#8212; too small to drive the decision. Run compatibility testing first.</p>
@@ -42,7 +51,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>Material Properties: What Each Plastic Actually Does</h2>
+            <h2 id="material-properties-what-each-plastic-actually-doe">Material Properties: What Each Plastic Actually Does</h2>
             <h3>HDPE: The Workhorse</h3>
             <p>HDPE is a semi-crystalline thermoplastic with a milky, translucent-to-opaque appearance. It is the #2 recycling code plastic &mdash; the same material used in milk jugs, detergent bottles, and shampoo containers.</p>
             <p><strong>Key properties for beauty packaging:</strong></p>
@@ -64,7 +73,7 @@ export default function PostClient() {
               <li><strong>Rigidity:</strong> High. PET is more rigid than HDPE, which means it holds its shape well but does not flex. Squeeze dispensing is not practical with PET containers.</li>
             </ul>
 
-            <h2>Chemical Resistance: The Decision Most Brands Get Wrong</h2>
+            <h2 id="chemical-resistance-the-decision-most-brands-get-w">Chemical Resistance: The Decision Most Brands Get Wrong</h2>
             <p>Chemical resistance is where HDPE and PET diverge most consequentially for beauty brands. Choosing the wrong material for your formula can result in:</p>
             <ul>
               <li><strong>Environmental stress cracking (ESC).</strong> Hairline cracks that develop over weeks or months as the formula attacks the polymer matrix. This is the most common failure mode and it typically does not appear during short-term stability testing.</li>
@@ -96,7 +105,7 @@ export default function PostClient() {
             <p>This testing typically costs <strong>$800-$3,000</strong> and takes <strong>6-12 weeks</strong>. It is the most cost-efficient quality insurance in the packaging development process.</p>
             <p>For a complete material selection methodology that includes glass, aluminum, and alternative plastics, see the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_material_framework">Material Decision Framework</Link>.</p>
 
-            <h2>Recyclability and PCR Availability: HDPE vs PET</h2>
+            <h2 id="recyclability-and-pcr-availability-hdpe-vs-pet">Recyclability and PCR Availability: HDPE vs PET</h2>
             <p>Both HDPE and PET are among the most recyclable plastics in existence. They are accepted by virtually all municipal curbside programs in the US and Europe. But their recycling economics and PCR supply chains differ meaningfully.</p>
             <h3>PET recycling</h3>
             <p>PET has the highest recycling rate of any plastic resin in the US &mdash; roughly <strong>29-31%</strong> of PET containers are recycled. Recycled PET (rPET) has strong demand from the beverage, food, and textile industries. The supply chain is well-established and the material can be processed to near-virgin quality.</p>
@@ -110,7 +119,7 @@ export default function PostClient() {
             <p>For brands where sustainability claims are a priority, both materials have strong recycling stories. The choice should still be formula-driven, with the recycled content decision layered on top.</p>
             <p>For a comprehensive sustainability comparison, see the <Link href="/guides/sustainable-beauty-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_sustainable_guide">Sustainable Beauty Packaging guide</Link>.</p>
 
-            <h2>Cost Per Unit: What Each Material Actually Costs</h2>
+            <h2 id="cost-per-unit-what-each-material-actually-costs">Cost Per Unit: What Each Material Actually Costs</h2>
             <p>The cost difference between HDPE and PET containers for beauty packaging is modest enough that it should not be the primary decision driver. Both materials are commodity resins with well-established supply chains.</p>
             <h3>Typical cost ranges</h3>
             <p>| Container Type | HDPE | PET | |&ndash;-|&ndash;-|&ndash;-| | 100ml bottle | $0.25-$0.60 | $0.30-$0.70 | | 200ml bottle | $0.35-$0.80 | $0.40-$0.90 | | 500ml bottle | $0.50-$1.20 | $0.55-$1.40 | | Jar (50-100ml) | $0.40-$1.00 | $0.45-$1.20 |</p>
@@ -118,7 +127,7 @@ export default function PostClient() {
             <p>Closures, pumps, and decoration often cost as much as or more than the container body itself. A pump dispensing system can add <strong>$0.30-$1.50 per unit</strong>. A spray actuator adds <strong>$0.15-$0.60 per unit</strong>. These costs are the same regardless of whether the body is HDPE or PET.</p>
             <p>For full cost benchmarking across all packaging formats, see the <Link href="/blog/custom-packaging-cost-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_cost_post">custom packaging cost breakdown</Link>.</p>
 
-            <h2>Decoration and Finishing: How Each Material Accepts Print</h2>
+            <h2 id="decoration-and-finishing-how-each-material-accepts">Decoration and Finishing: How Each Material Accepts Print</h2>
             <p>Decoration compatibility is the one area where the HDPE vs PET decision has significant aesthetic implications beyond clarity.</p>
             <h3>HDPE decoration</h3>
             <p>HDPE has a low surface energy, which means inks and adhesives do not bond to it easily without surface treatment. Flame treatment or corona treatment is required before screen printing, pad printing, or labeling.</p>
@@ -139,7 +148,7 @@ export default function PostClient() {
             </ul>
             <p>If your brand requires direct printing with fine detail, gradient effects, or metallic coating on the container body, PET is the materially better choice. If the container will be wrapped in a label or shrink sleeve, the decoration difference between HDPE and PET is negligible.</p>
 
-            <h2>The Decision Matrix: HDPE vs PET for Beauty Packaging</h2>
+            <h2 id="the-decision-matrix-hdpe-vs-pet-for-beauty-packagi">The Decision Matrix: HDPE vs PET for Beauty Packaging</h2>
             <p>| Factor | HDPE | PET | Winner | |&ndash;-|&ndash;-|&ndash;-|&ndash;-| | Chemical resistance | Excellent | Moderate | HDPE | | Clarity / transparency | Low (opaque/translucent) | Excellent (glass-like) | PET | | Moisture barrier | Better | Good | HDPE | | Oxygen barrier | Lower | Better | PET | | Weight | Heavier per volume | Lighter | PET | | Squeeze dispensing | Yes | No (too rigid) | HDPE | | Recyclability | High (#2) | High (#1) | Tie | | PCR availability | Good (lower cost) | Good (higher demand) | HDPE on cost | | Decoration quality | Good with treatment | Excellent | PET | | Cost per unit | Slightly lower | Slightly higher | HDPE (marginal) | | Essential oil compat. | Excellent | Poor to moderate | HDPE | | Surfactant compat. | Excellent | Moderate | HDPE | | Glass-like aesthetics | Not achievable | Achievable | PET |</p>
             <h3>When HDPE is the clear choice</h3>
             <ul>
@@ -160,7 +169,7 @@ export default function PostClient() {
             <h3>When the choice is ambiguous</h3>
             <p>For formulas that could work in either material &mdash; light lotions, simple cream cleansers, some toners &mdash; the decision comes down to brand positioning and dispensing method. Run compatibility testing on both materials and let the test results and the brand&apos;s aesthetic requirements make the call.</p>
 
-            <h2>Shelf Life Impact: How Material Choice Affects Product Longevity</h2>
+            <h2 id="shelf-life-impact-how-material-choice-affects-prod">Shelf Life Impact: How Material Choice Affects Product Longevity</h2>
             <p>The material choice affects how long the formula remains stable, effective, and safe inside the container.</p>
             <p>HDPE&apos;s superior chemical resistance means fewer interaction risks over time, but its lower oxygen barrier means oxygen-sensitive ingredients (retinol, vitamin C, certain peptides) may degrade faster in HDPE than in PET.</p>
             <p>PET&apos;s better oxygen barrier protects against oxidation, but its lower chemical resistance means the formula itself may compromise the container over time if the wrong formulation is paired with PET.</p>
@@ -168,6 +177,9 @@ export default function PostClient() {
             <p>For brands with oxidation-sensitive formulas in products that also contain mild surfactants, an airless pump system may outperform both HDPE and PET open-mouth containers. The dispensing system matters as much as the material.</p>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="HDPE vs PET Packaging FAQ"
@@ -182,7 +194,7 @@ export default function PostClient() {
         ctaProjectType="Material Selection"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>What to Do Next</h2>
             <p>The HDPE vs PET decision is a formula-and-function question first, an aesthetics question second. Start with compatibility testing, confirm the dispensing method, then optimize for brand presentation within the material that works.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_consultation" target="_blank" rel="noopener noreferrer">Book a material consultation</a> and we will help you match the right material to your formula, volume plan, and brand requirements.</p>

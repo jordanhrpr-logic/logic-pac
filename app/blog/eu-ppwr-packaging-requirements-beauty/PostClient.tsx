@@ -4,9 +4,19 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
+import BlogTOC from '@/components/BlogTOC'
 
 export default function PostClient() {
   const { openModal } = useModal()
+
+  const tocSections = [
+    { id: 'what-ppwr-requires-the-core-obligations', label: 'What PPWR Requires: The Core Obligations' },
+    { id: 'ppwr-timeline-what-happens-when', label: 'PPWR Timeline: What Happens When' },
+    { id: 'how-ppwr-differs-from-sb-54', label: 'How PPWR Differs from SB 54' },
+    { id: 'what-beauty-brands-need-to-change-now-vs-later', label: 'What Beauty Brands Need to Change Now vs. Later' },
+    { id: 'common-material-and-design-changes-required', label: 'Common Material and Design Changes Required' },
+  ]
+
 
   return (
     <>
@@ -14,16 +24,13 @@ export default function PostClient() {
         <div className="ey inv">Compliance</div>
         <h1>EU PPWR Packaging Requirements for Beauty Brands: What to Change and When</h1>
         <p>Deadlines and requirements for beauty brands</p>
-        <div className="blog-meta">
-          <span>Jordan Harper</span>
-          <span>&middot;</span>
-          <span>May 21, 2026</span>
-          <span>&middot;</span>
-          <span>12 min read</span>
-        </div>
+        <div className="phdr-meta"><span>Jordan Harper</span><span>May 21, 2026</span><span>12 min read</span></div>
         <VerifiedAsOf />
       </div>
 
+      <div className="blog-wrap">
+        <BlogTOC sections={tocSections} />
+        <div className="blog-main">
       <div className="guide-answer" aria-labelledby="answer-title">
             <h2 id="answer-title">What does EU PPWR require for beauty brands?</h2>
             <p>The EU PPWR mandates recycled content targets, recyclability-by-design rules, reuse obligations, and harmonized labeling for all packaging sold in the EU. Contact-sensitive plastic packaging must contain 10% PCR by 2030 and 25% by 2040. All packaging must be designed for recycling by 2030 and recyclable at scale by 2035.</p>
@@ -44,7 +51,7 @@ export default function PostClient() {
               </ul>
             </div>
 
-            <h2>What PPWR Requires: The Core Obligations</h2>
+            <h2 id="what-ppwr-requires-the-core-obligations">What PPWR Requires: The Core Obligations</h2>
             <p>The EU PPWR packaging requirements cover five main areas. Each one changes how beauty packaging is designed, sourced, and labeled.</p>
             <h3>Recyclability by Design</h3>
             <p>All packaging placed on the EU market must be designed for recycling by 2030. By 2035, packaging must be recyclable at scale, meaning recycling infrastructure and collection systems must exist and operate at a level that makes recycling economically viable.</p>
@@ -85,7 +92,7 @@ export default function PostClient() {
             <p>For beauty, the most relevant restriction is the minimization principle. Packaging must be designed to minimize weight and volume while still protecting the product and meeting labeling requirements. Excessive secondary packaging, oversized cartons, and packaging-to-product ratios that cannot be justified may face scrutiny.</p>
             <p>This does not mean the end of premium packaging. It means the packaging needs to justify its size and material use.</p>
 
-            <h2>PPWR Timeline: What Happens When</h2>
+            <h2 id="ppwr-timeline-what-happens-when">PPWR Timeline: What Happens When</h2>
             <p>PPWR entered into force on August 12, 2025, and generally applies from August 12, 2026. The specific obligations phase in over the next decade.</p>
             <h3>2026: General Application</h3>
             <p>The regulation becomes enforceable. Packaging placed on the EU market from this date must comply with general requirements around substances of concern, minimization, and basic design principles.</p>
@@ -98,14 +105,14 @@ export default function PostClient() {
             <h3>Ongoing: Delegated Acts and Technical Standards</h3>
             <p>The European Commission will issue delegated acts that define specific recyclability criteria, testing methods, and grading thresholds. These will continue to evolve. Brands should monitor updates rather than assuming the current text is final.</p>
 
-            <h2>How PPWR Differs from SB 54</h2>
+            <h2 id="how-ppwr-differs-from-sb-54">How PPWR Differs from SB 54</h2>
             <p>Beauty brands already navigating California&apos;s SB 54 will find similarities, but the differences matter.</p>
             <p>| Area | SB 54 (California) | EU PPWR | |&ndash;-|&ndash;-|&ndash;-| | Scope | California market | All 27 EU member states | | Mechanism | Extended producer responsibility (EPR) with PRO system | Direct regulation with harmonized EU rules | | Recycled content | Set through EPR program requirements | Mandatory percentage targets by material and use | | Recyclability | Goal-based (65% recycling by 2032) | Design-for-recycling by 2030, recyclable at scale by 2035 | | Labeling | State-specific requirements | Harmonized EU-wide labeling system | | Reuse targets | Not a primary focus | Explicit reuse and refill targets for certain categories | | Enforcement | CalRecycle oversight | EU member state enforcement with EU-level coordination |</p>
             <p>The biggest structural difference: SB 54 works through a producer responsibility organization (PRO) that manages fees and compliance programs. PPWR sets direct design and content requirements that apply to the packaging itself.</p>
             <p>For brands selling into both California and the EU, the safest strategy is to design packaging that meets the stricter of the two requirements at each stage.</p>
             <p>For a deep look at SB 54 obligations, see the <Link href="/guides/sustainable-beauty-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty">SB 54 compliance guide</Link>.</p>
 
-            <h2>What Beauty Brands Need to Change Now vs. Later</h2>
+            <h2 id="what-beauty-brands-need-to-change-now-vs-later">What Beauty Brands Need to Change Now vs. Later</h2>
             <p>Not every PPWR obligation hits in 2026. But waiting until the deadline creates supply chain bottlenecks and cost spikes.</p>
             <h3>Change Now (2026-2027)</h3>
             <p><strong>Audit your packaging bill of materials.</strong> List every component across every SKU. Identify material composition, weight, and whether each component is mono-material or mixed.</p>
@@ -121,7 +128,7 @@ export default function PostClient() {
             <p><strong>Design for recyclable-at-scale.</strong> This means packaging that can actually be recycled through infrastructure that exists and operates. Design alone is not enough.</p>
             <p>Use the <Link href="/guides/material-decision-framework?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty">Material Decision Framework</Link> to evaluate material transitions across your portfolio.</p>
 
-            <h2>Common Material and Design Changes Required</h2>
+            <h2 id="common-material-and-design-changes-required">Common Material and Design Changes Required</h2>
             <p>PPWR will push beauty packaging toward simpler, more sortable, more recyclable structures. Here are the most common changes we expect across the category.</p>
             <h3>Bottles and Jars</h3>
             <ul>
@@ -156,6 +163,9 @@ export default function PostClient() {
             </ul>
 
       </div>
+        </div>
+      </div>
+
 
       <BlogFAQ
         title="EU PPWR Packaging Requirements FAQ"
@@ -171,7 +181,7 @@ export default function PostClient() {
         ctaProjectType="PPWR Compliance"
       />
 
-      <div className="blog-body">
+      <div className="blog-conclusion">
             <h2>Start Planning Before the Deadlines Arrive</h2>
             <p>PPWR compliance is not a single event. It is a phased transition that rewards brands who start early and penalizes brands who wait for enforcement.</p>
             <p>The brands that audit their packaging now, qualify PCR supply in 2026-2027, redesign multi-material formats before the 2030 deadline, and build labeling systems for harmonized EU requirements will have lower cost, less disruption, and more credible sustainability claims than brands that scramble at each phase gate.</p>
