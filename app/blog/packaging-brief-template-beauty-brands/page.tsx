@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
+    images: [{ url: '/images/portfolio/shelf-ready-display-unit.jpeg', width: 1200, height: 630 }],
   },
 }
 
