@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="ftrc">
           <h4>Company</h4>
           <a href="https://logicagencyinc.com" target="_blank" rel="noopener">Logic Agency Inc.</a>
-          <a onClick={() => openModal()} style={{ cursor: 'pointer' }}>Book a Call</a>
+          <button type="button" onClick={() => openModal()} className="ftr-cta-btn">Book a Call</button>
           <a href="mailto:sean@logicagencyinc.com">sean@logicagencyinc.com</a>
           <a href="tel:9492845134">(949) 284-5134</a>
         </div>

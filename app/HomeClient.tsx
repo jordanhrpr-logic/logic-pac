@@ -108,9 +108,9 @@ export default function HomeClient() {
           <button className="bo" onClick={() => openModal()}>Start a Project</button>
         </div>
         <div className="posr">
-          <div className="pospt"><h4>Judgment, not just execution</h4><p>We know which factory is right for which job. That accumulated judgment is what you&apos;re buying.</p></div>
-          <div className="pospt"><h4>Problems caught before they ship</h4><p>Pre-production, inline, and pre-shipment QC on every run. We&apos;ve already made the mistakes that teach you what to look for.</p></div>
-          <div className="pospt"><h4>One accountable team</h4><p>Design, sourcing, production, QC, freight, delivery. When something needs solving, there&apos;s one number to call.</p></div>
+          <div className="pospt"><h3>Judgment, not just execution</h3><p>We know which factory is right for which job. That accumulated judgment is what you&apos;re buying.</p></div>
+          <div className="pospt"><h3>Problems caught before they ship</h3><p>Pre-production, inline, and pre-shipment QC on every run. We&apos;ve already made the mistakes that teach you what to look for.</p></div>
+          <div className="pospt"><h3>One accountable team</h3><p>Design, sourcing, production, QC, freight, delivery. When something needs solving, there&apos;s one number to call.</p></div>
         </div>
       </ScrollReveal>
 
@@ -152,10 +152,10 @@ export default function HomeClient() {
           <p>Many of our best projects start with a brief from a PR firm or creative agency. Brief us directly &mdash; we coordinate production and delivery without pulling you into factory conversations.</p>
         </div>
         <div className="agr">
-          <div className="agpt hi"><h4>Take the brief directly</h4><p>Brief us like a production partner &mdash; we&apos;ll run with it.</p></div>
-          <div className="agpt"><h4>White-label production available</h4><p>We operate as your production arm without client-facing branding.</p></div>
-          <div className="agpt"><h4>Campaign windows understood</h4><p>Influencer send dates don&apos;t move. We build around your launch.</p></div>
-          <div className="agpt"><h4>Scale with your client roster</h4><p>Multiple concurrent programs without quality degradation.</p></div>
+          <div className="agpt hi"><h3>Take the brief directly</h3><p>Brief us like a production partner &mdash; we&apos;ll run with it.</p></div>
+          <div className="agpt"><h3>White-label production available</h3><p>We operate as your production arm without client-facing branding.</p></div>
+          <div className="agpt"><h3>Campaign windows understood</h3><p>Influencer send dates don&apos;t move. We build around your launch.</p></div>
+          <div className="agpt"><h3>Scale with your client roster</h3><p>Multiple concurrent programs without quality degradation.</p></div>
         </div>
       </ScrollReveal>
 
@@ -163,7 +163,7 @@ export default function HomeClient() {
       <div className="kits">
         <div className="kr">
           <div className="kv dk" style={{ background: 'linear-gradient(135deg,#0d1b2a,#1b2838,#2a1f3d)' }}>
-            <Image src="/images/kits/holiday-kits.jpg" alt="Custom holiday gift set packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src="/images/portfolio/holiday-kits.jpeg" alt="Custom holiday gift set packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             <div>
               <div className="kvl">Seasonal Production</div>
               <div className="kvt">Holiday Kits<br />that <em>Sell Through</em></div>
@@ -204,7 +204,7 @@ export default function HomeClient() {
             </div>
           </div>
           <div className="kv lt" style={{ background: 'linear-gradient(135deg,#e8e6e1,#d5d3ce,#c8c5be)' }}>
-            <Image src="/images/kits/influencer-kits.jpg" alt="Custom influencer and PR kit packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src="/images/portfolio/influencer-kits.jpg" alt="Custom influencer and PR kit packaging by Logic Pac" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             <div>
               <div className="kvl">Campaign Production</div>
               <div className="kvt">PR &amp; Influencer<br /><em>Kits</em></div>
@@ -221,7 +221,7 @@ export default function HomeClient() {
         <h2 style={{ fontSize: 'clamp(26px,3vw,40px)', marginBottom: 12 }}>Why Starting Early Is<br />the Right Move</h2>
         <Timeline />
         <div className="tlurg">
-          <div><h4>The best time to start is <em>right now.</em></h4><p>Brands that lock in early get the best factories, the best pricing, and a timeline that doesn&apos;t require air freight miracles.</p></div>
+          <div><h3>The best time to start is <em>right now.</em></h3><p>Brands that lock in early get the best factories, the best pricing, and a timeline that doesn&apos;t require air freight miracles.</p></div>
           <button className="bp" onClick={() => openModal()}>Lock In Your Timeline</button>
         </div>
       </ScrollReveal>

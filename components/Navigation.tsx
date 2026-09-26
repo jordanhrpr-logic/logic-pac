@@ -73,9 +73,9 @@ export default function Navigation() {
             onMouseEnter={handleDdEnter}
             onMouseLeave={handleDdLeave}
           >
-            <span className={`nav-dd-trigger${isCapActive ? ' act' : ''}`}>
+            <button type="button" className={`nav-dd-trigger${isCapActive ? ' act' : ''}`} onClick={() => setDdOpen(prev => !prev)} aria-expanded={ddOpen} aria-haspopup="true">
               Capabilities <span className="nav-dd-arrow">&#9662;</span>
-            </span>
+            </button>
             <div className={`nav-dd-menu${ddOpen ? ' open' : ''}`}>
               {capabilitiesLinks.map(l => (
                 <Link key={l.href} href={l.href} className={pathname === l.href ? 'act' : ''}>
@@ -84,7 +84,7 @@ export default function Navigation() {
               ))}
             </div>
           </li>
-          <li><a onClick={() => openModal()} className="ncta" style={{ cursor: 'pointer' }}>Book a Call</a></li>
+          <li><button type="button" onClick={() => openModal()} className="ncta">Book a Call</button></li>
         </ul>
         <button
           className={`nav-toggle${menuOpen ? ' open' : ''}`}

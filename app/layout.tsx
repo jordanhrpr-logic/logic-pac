@@ -1,4 +1,8 @@
 import type { Metadata } from 'next'
+import { DM_Serif_Display, Poppins } from 'next/font/google'
+
+const dmSerif = DM_Serif_Display({ subsets: ['latin'], weight: '400', style: ['normal', 'italic'], display: 'swap', variable: '--font-dm-serif' })
+const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], display: 'swap', variable: '--font-poppins' })
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -40,9 +44,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dmSerif.variable} ${poppins.variable}`}>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         {GA_ID && (
           <>

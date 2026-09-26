@@ -52,7 +52,7 @@ export default function HolidayClient() {
           {components.map(c => (
             <div key={c.num} className="ii">
               <div className="iin">{c.num}</div>
-              <h4>{c.title}</h4>
+              <h3>{c.title}</h3>
               <p>{c.desc}</p>
             </div>
           ))}
