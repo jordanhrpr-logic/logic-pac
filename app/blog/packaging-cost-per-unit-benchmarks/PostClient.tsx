@@ -47,7 +47,7 @@ export default function PostClient() {
             <Image src="/images/portfolio/foil-stamped-cylinder.jpeg" alt="Foil-stamped cylinder packaging example showing premium finish and structure" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Packaging cost should be evaluated as both per-unit spend and percentage of COGS.</li>
                 <li>Most CPG brands land between 10&ndash;25% of COGS for packaging, but the healthy range depends on category and price point.</li>

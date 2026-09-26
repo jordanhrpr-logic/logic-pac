@@ -4,11 +4,11 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Soft Touch Lamination: Pros, Cons & Costs',
-  description: 'Soft touch lamination adds a velvet tactile surface to packaging at $0.08-$0.60 per unit. Learn when it works, when it doesn&apos;t, and how it compares to alternatives.',
+  description: 'Soft touch lamination adds a velvet surface at $0.08-$0.60/unit. When it works, when it scuffs, and how it compares to alternatives.',
   alternates: { canonical: '/blog/soft-touch-lamination-packaging' },
   openGraph: {
-    title: 'Soft Touch Lamination for Packaging: When It Works, When It Doesn&apos;t, and What It Costs | Logic Pac',
-    description: 'Soft touch lamination adds a velvet tactile surface to packaging at $0.08-$0.60 per unit. Learn when it works, when it doesn&apos;t, and how it compar',
+    title: 'Soft Touch Lamination for Packaging: When It Works, When It Doesn\'t, and What It Costs | Logic Pac',
+    description: 'Soft touch lamination adds a velvet surface at $0.08-$0.60/unit. When it works, when it scuffs, and how it compares to alternatives.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

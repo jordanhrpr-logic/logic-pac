@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Holiday Gift Set Packaging for Beauty',
-  description: 'Custom holiday gift set packaging requires 5-7 months lead time. Structures, materials, retailer compliance (Ulta, Sephora, Target), and real cost ranges for beauty brands.',
+  description: 'Holiday gift set packaging needs 5-7 months lead time. Structures, costs, and retailer compliance for Ulta, Sephora, and Target.',
   alternates: { canonical: '/blog/holiday-gift-set-packaging-beauty-brands' },
   openGraph: {
     title: 'Holiday Gift Set Packaging for Beauty Brands | Logic Pac',

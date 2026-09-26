@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/blog/eu-ppwr-packaging-requirements-beauty' },
   openGraph: {
     title: 'EU PPWR Packaging Requirements for Beauty Brands: What to Change and When | Logic Pac',
-    description: 'EU PPWR packaging requirements affect any beauty brand selling into Europe. Learn recycled content targets, recyclability rules, and compliance timeli',
+    description: 'EU PPWR packaging requirements affect any beauty brand selling into Europe. Learn recycled content targets, recyclability rules, and compliance timelines.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

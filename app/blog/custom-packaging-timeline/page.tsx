@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Custom Packaging Timeline: How Long?',
-  description: 'Custom packaging takes 12-20 weeks from approved brief to delivery. Phase-by-phase breakdown: design, prototyping, tooling, production, and freight — with what delays projects and what speeds them up.',
+  description: 'Custom packaging takes 12-20 weeks from brief to delivery. Phase-by-phase breakdown of design, prototyping, tooling, production, and freight.',
   alternates: { canonical: '/blog/custom-packaging-timeline' },
   openGraph: {
     title: 'How Long Does Custom Packaging Take? | Logic Pac',

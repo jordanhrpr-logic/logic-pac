@@ -41,7 +41,7 @@ export default function PostClient() {
             <p>That is the short answer. The longer answer involves barrier properties, recyclability, PCR availability, weight, cost per unit, decoration compatibility, and shelf life impact. The wrong choice can cause stress cracking, formula degradation, or consumer complaints about leaking, discoloration, or off-odor &mdash; all problems that surface months after production, not during sampling.</p>
             <p>This guide is a material science comparison built for beauty brand decision-makers. We will cover the properties that actually matter for cosmetics and personal care, include a decision matrix, and explain when each material is the clear winner.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>HDPE is more chemically resistant than PET and is the safer choice for formulas containing essential oils, high-alcohol content, or strong surfactants.</li>
                 <li>PET is optically clear and lightweight, making it the better material for serums, toners, and products where the consumer wants to see the formula.</li>

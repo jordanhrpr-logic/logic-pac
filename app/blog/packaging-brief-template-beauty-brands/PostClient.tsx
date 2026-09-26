@@ -44,7 +44,7 @@ export default function PostClient() {
             <p>A good brief doesn&apos;t limit creativity. It gives the project enough structure to move.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>A packaging brief should define the product, channel, volume, budget, timeline, materials, finishes, and approval process before quoting starts.</li>
                 <li>The most expensive omissions are usually volume, target unit cost, launch date, and sustainability requirements.</li>

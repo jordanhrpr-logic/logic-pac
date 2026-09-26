@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/blog/mono-material-packaging-design' },
   openGraph: {
     title: 'Mono-Material Packaging Design for Beauty: The Technical Guide | Logic Pac',
-    description: 'Learn mono-material packaging design for beauty brands: recyclability, material choices, cost tradeoffs, compliance, and design limits. Use this guide',
+    description: 'Learn mono-material packaging design for beauty brands: recyclability, material choices, cost tradeoffs, compliance, and design limits. Use this guide.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

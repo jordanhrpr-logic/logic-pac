@@ -47,7 +47,7 @@ export default function PostClient() {
             <p>Luxury jewelry packaging is worth the investment when the box supports a higher price point, a stronger gift experience, or a more consistent brand collection. For most jewelry brands, premium packaging means rigid construction, controlled materials, a precise insert, and one memorable finish &mdash; not a box overloaded with every expensive detail.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Luxury jewelry packaging usually costs more because structure, lining, hardware, and finishing all matter at once.</li>
                 <li>Premium does not mean complicated. One strong material and one controlled finish often look better than five effects.</li>

@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 export const metadata: Metadata = {
   title: 'Custom Packaging Cost Breakdown',
-  description: 'Actual per-unit packaging costs by format — folding cartons, rigid boxes, tubes, and specialty finishes. What drives the price up, how to compare quotes, and where beauty brands overpay.',
+  description: 'Custom beauty packaging costs $0.30-$15.00/unit by format. Folding cartons, rigid boxes, tubes, finishes — real pricing and what drives cost up.',
   alternates: { canonical: '/blog/custom-packaging-cost-beauty-brands' },
   openGraph: {
     title: 'How Much Does Custom Packaging Cost? | Logic Pac',

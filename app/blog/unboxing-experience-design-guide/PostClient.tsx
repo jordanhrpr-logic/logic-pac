@@ -42,7 +42,7 @@ export default function PostClient() {
             <p>Every unboxing follows a predictable arc. The recipient sees the outer package. They assess it. They open it. They react to what&apos;s inside. That arc takes 5-15 seconds, and the design of each second determines whether the experience generates content, creates a brand memory, or gets forgotten before the box hits the trash.</p>
             <p>We design unboxing packaging for beauty and wellness brands across PR kits, DTC subscription boxes, gift sets, and retail-ready formats. This guide covers the design psychology behind unboxing: the 5-second first impression window, reveal sequencing, tactile hierarchy, sound design, camera-readiness, and why &ldquo;looking expensive&rdquo; and &ldquo;being expensive&rdquo; are two separate design problems with different solutions.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>The <strong>5-second rule</strong>: recipients form a quality judgment within 5 seconds of seeing the package. Outer finish, weight in hand, and brand clarity drive that judgment before the box is even opened.</li>
                 <li><strong>Reveal sequencing</strong> (what they see first, second, third) is the single most controllable variable in unboxing design. A layered reveal creates anticipation. A flat reveal creates nothing.</li>

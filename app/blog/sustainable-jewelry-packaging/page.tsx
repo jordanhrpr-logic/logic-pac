@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Sustainable Jewelry Packaging Guide',
-  description: 'Sustainable jewelry packaging needs specific materials, claims, and compliance planning. Learn FSC, recycled paper, molded fiber, mono-materials, and costs.',
+  description: 'Sustainable jewelry packaging: FSC paper, recycled board, molded fiber, mono-material design, SB 54 compliance, and real cost impact.',
   alternates: { canonical: '/blog/sustainable-jewelry-packaging' },
   openGraph: {
     title: 'Sustainable Jewelry Packaging Guide | Logic Pac',

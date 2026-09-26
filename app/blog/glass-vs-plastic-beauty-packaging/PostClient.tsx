@@ -43,7 +43,7 @@ export default function PostClient() {
             <p>This guide compares glass vs. plastic beauty packaging across every dimension that actually affects your landed cost, compliance position, and shelf performance &mdash; so you can make the call once and move forward.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Glass costs <strong>3&ndash;5x more</strong> than PET at equivalent volume and <strong>5&ndash;10x more</strong> in freight weight, but it delivers premium shelf presence and infinite recyclability.</li>
                 <li>PET and HDPE dominate DTC and e-commerce because of breakage risk, weight-based shipping costs, and lower per-unit pricing at scale.</li>

@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Glass vs. Plastic Beauty Packaging',
-  description: 'Glass costs 3-5x more than PET but communicates premium. Side-by-side comparison of cost, sustainability claims, weight, breakage risk, and consumer perception for beauty brands.',
+  description: 'Glass costs 3-5x more than PET but signals premium. Cost, sustainability, weight, breakage, and perception compared for beauty packaging.',
   alternates: { canonical: '/blog/glass-vs-plastic-beauty-packaging' },
   openGraph: {
     title: 'Glass vs. Plastic Beauty Packaging Compared | Logic Pac',

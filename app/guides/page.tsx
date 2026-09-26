@@ -4,7 +4,7 @@ import { guidesCollectionJsonLd } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Packaging Guides & Resources',
-  description: 'In-depth guides on custom packaging design, influencer kit production, and packaging finishes. Learn how to design PR mailers that get posted and choose the right finishes for your brand.',
+  description: 'In-depth guides on custom packaging design, materials, finishes, influencer kits, sustainability, and production planning.',
   alternates: { canonical: '/guides' },
 }
 

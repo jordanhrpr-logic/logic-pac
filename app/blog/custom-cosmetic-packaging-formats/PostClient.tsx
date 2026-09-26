@@ -44,7 +44,7 @@ export default function PostClient() {
             <p>If you are a brand manager or CMO ordering custom packaging for the first time, the format decision is the most consequential choice you will make. It sets the tooling investment, the production timeline, the unit economics, and the constraints for every finish and decoration decision that follows. Get the format right and the rest of the project gets simpler. Get it wrong and you are paying to start over.</p>
             <p>This guide breaks down every major cosmetic packaging format &mdash; what it is, what products it fits, what it typically costs, and what to watch for before you commit.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Custom cosmetic packaging includes 8+ distinct formats, each with different MOQs, tooling costs, and lead times.</li>
                 <li>Compacts and palettes require custom molds ($3,000-$15,000+) and typically start at 5,000-10,000 unit MOQs.</li>

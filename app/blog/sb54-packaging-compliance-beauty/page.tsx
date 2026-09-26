@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'SB 54 Packaging Compliance for Beauty',
-  description: 'California\'s SB 54 Packaging Reduction Act creates real compliance pressure for beauty brands by 2027. Primary, secondary, and tertiary packaging audit frameworks and compliance roadmap.',
+  description: 'SB 54 compliance for beauty brands: packaging audit framework, 2027 readiness checklist, and material transition planning for California EPR.',
   alternates: { canonical: '/blog/sb54-packaging-compliance-beauty' },
   openGraph: {
     title: 'SB 54 Packaging Compliance for Beauty Brands | Logic Pac',

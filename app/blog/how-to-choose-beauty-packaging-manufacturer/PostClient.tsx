@@ -46,7 +46,7 @@ export default function PostClient() {
             <p>The goal is not to find the cheapest vendor. The goal is to find the partner who can make the right packaging at the right quality, on the right timeline, with no surprises hiding in the last two weeks.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>A beauty packaging manufacturer should show category-specific samples, material fluency, clear MOQs, and a documented QC process.</li>
                 <li>The biggest red flags are vague timelines, no sample process, no material details, and quotes that hide tooling, freight, or finishing assumptions.</li>

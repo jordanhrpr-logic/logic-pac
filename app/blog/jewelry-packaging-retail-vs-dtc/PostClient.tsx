@@ -48,7 +48,7 @@ export default function PostClient() {
             <p>Jewelry packaging for retail and DTC has to solve different problems: retail packaging needs display consistency, barcode visibility, handling durability, and case-ready presentation; DTC packaging needs shipping protection, a controlled unboxing, and efficient fulfillment. The same brand system can serve both channels, but the structure and outer packaging usually need to change.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Retail jewelry packaging is judged fast: display consistency, barcode placement, case fit, and handling durability matter.</li>
                 <li>DTC jewelry packaging has to protect the piece through parcel shipping and create a complete unboxing sequence at home.</li>

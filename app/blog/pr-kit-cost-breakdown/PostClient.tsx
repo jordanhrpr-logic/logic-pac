@@ -41,7 +41,7 @@ export default function PostClient() {
             <p>Most beauty brands approaching their first PR kit have no frame of reference for what these things actually cost. They&apos;ve seen the unboxing videos. They know they want &ldquo;something like that.&rdquo; But the distance between a corrugated mailer with tissue paper and a rigid box with custom foam inserts and foil stamping is $20-60+ per unit, and the right answer isn&apos;t always the expensive one.</p>
             <p>We produce custom PR kits for beauty and wellness brands in runs of 50-5,000+ units from our Salt Lake City warehouse, handling design, sourcing, assembly, and fulfillment. This guide breaks down what each tier costs, what drives the price at each level, where brands overspend, where they underspend, and how to think about PR kit ROI.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>PR kit pricing falls into three tiers: basic mailer ($8-15/unit), branded kit ($15-30/unit), and premium experience ($30-75+/unit). Product cost is separate.</li>
                 <li>Quantity is the single largest cost lever. The jump from 50 units to 500 units can reduce per-unit packaging cost by <strong>40-60%</strong>.</li>

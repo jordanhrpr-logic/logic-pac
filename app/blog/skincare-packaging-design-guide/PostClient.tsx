@@ -50,7 +50,7 @@ export default function PostClient() {
             <Image src="/images/portfolio/epicutis-kits-group.jpg" alt="Skincare packaging collection showing rigid boxes, drawer boxes, and folding cartons" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Skincare packaging should be chosen by formula type first: serum, moisturizer, cleanser, oil, balm, SPF, or treatment.</li>
                 <li>Glass feels premium, but PET, HDPE, PP, aluminum, and airless systems often work better for weight, breakage, and cost.</li>

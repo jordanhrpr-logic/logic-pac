@@ -4,11 +4,11 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Custom Packaging Development Process',
-  description: 'The packaging development process takes 12-16 weeks from brief to shelf. Learn what happens at each stage, who is involved, and what decisions you need to make.',
+  description: 'Custom packaging development takes 12-16 weeks across six stages. What happens at each step, who is involved, and what decisions to make.',
   alternates: { canonical: '/blog/custom-packaging-development-process' },
   openGraph: {
     title: 'How Custom Packaging Development Works: From Brief to Shelf in 12-16 Weeks | Logic Pac',
-    description: 'The packaging development process takes 12-16 weeks from brief to shelf. Learn what happens at each stage, who is involved, and what decisions you nee',
+    description: 'Custom packaging development takes 12-16 weeks across six stages. What happens at each step, who is involved, and what decisions to make.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

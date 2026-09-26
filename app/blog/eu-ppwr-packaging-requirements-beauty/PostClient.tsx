@@ -41,7 +41,7 @@ export default function PostClient() {
             <p>This is the most significant packaging regulation since California&apos;s SB 54. The difference is scope. SB 54 targets one state&apos;s waste stream. PPWR targets 27 countries and roughly 450 million consumers. And unlike many earlier EU directives, PPWR is a regulation, meaning it applies directly across all member states without individual country transposition.</p>
             <p>For beauty brands, the practical impact is material-level. Packaging formats, resin choices, decoration methods, and labeling systems all need review.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>PPWR applies to any brand placing packaging on the EU market, regardless of where the company is headquartered.</li>
                 <li>Recycled content targets for plastic packaging start at 10% contact-sensitive plastic by 2030 and rise to 50% by 2040.</li>

@@ -3,12 +3,12 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Custom Packaging MOQs: What Every Brand Needs to Know',
+  title: 'Custom Packaging MOQs: A Brand Guide',
   description: 'Learn custom packaging MOQ ranges by format, why minimums exist, and how brands can lower order quantities without overbuying inventory or tying up cash.',
   alternates: { canonical: '/blog/custom-packaging-moq-guide' },
   openGraph: {
     title: 'Custom Packaging MOQs: What Every Brand Needs to Know | Logic Pac',
-    description: 'Learn custom packaging MOQ ranges by format, why minimums exist, and how brands can lower order quantities without overbuying inventory or tying up ca',
+    description: 'Learn custom packaging MOQ ranges by format, why minimums exist, and how brands can lower order quantities without overbuying inventory or tying up cash.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

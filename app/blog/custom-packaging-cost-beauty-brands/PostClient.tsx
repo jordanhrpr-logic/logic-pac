@@ -45,7 +45,7 @@ export default function PostClient() {
             <Image src="/images/portfolio/packaging-portfolio-overview.jpg" alt="Custom packaging formats including rigid boxes, folding cartons, and specialty finishes" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Custom packaging for beauty brands usually ranges from <strong>$0.30&ndash;$15.00 per unit</strong>, depending on format and complexity.</li>
                 <li>Folding cartons are the most cost-efficient custom format at <strong>$0.50&ndash;$3.00 per unit</strong>.</li>

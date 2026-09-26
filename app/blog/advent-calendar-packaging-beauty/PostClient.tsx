@@ -41,7 +41,7 @@ export default function PostClient() {
             <p>As an advent calendar packaging manufacturer working with beauty brands, we&apos;ve built calendars ranging from 12-compartment folding carton builds at $8 per unit to 25-drawer rigid structures with foil stamping and magnetic closures at $30+. The gap between those two price points is driven by decisions most brands don&apos;t know they need to make until they&apos;re already behind on timeline.</p>
             <p>This guide covers the structural options, realistic cost ranges, production timeline, retailer compliance requirements, insert engineering, and the production failures we see most often.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Custom advent calendar packaging for beauty brands costs <strong>$8-25+ per unit</strong> at 1,000-5,000 units, with structural complexity and finish quality as the primary cost drivers.</li>
                 <li>Beauty advent calendar production requires a <strong>6-8 month runway</strong> from brief to delivery. Start in January for a November retail date.</li>

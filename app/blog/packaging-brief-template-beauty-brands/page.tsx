@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Packaging Brief Template for Beauty',
-  description: 'The 10 sections every packaging brief should contain, the omissions that cost weeks, and an annotated sample you can adapt for your next custom packaging project.',
+  description: 'The 10 sections every packaging brief needs, the omissions that cost weeks, and a sample brief you can adapt for your next project.',
   alternates: { canonical: '/blog/packaging-brief-template-beauty-brands' },
   openGraph: {
     title: 'Packaging Brief Template for Beauty Brands | Logic Pac',

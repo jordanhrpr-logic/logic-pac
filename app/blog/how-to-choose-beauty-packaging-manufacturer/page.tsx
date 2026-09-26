@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'How to Choose a Packaging Manufacturer',
-  description: 'Evaluating packaging manufacturers for beauty brands: MOQ transparency, quality control processes, material sourcing, compliance capability, and the red flags that signal problems.',
+  description: 'How to evaluate beauty packaging manufacturers: MOQ transparency, QC processes, material sourcing, and the red flags that signal problems.',
   alternates: { canonical: '/blog/how-to-choose-beauty-packaging-manufacturer' },
   openGraph: {
     title: 'How to Choose a Beauty Packaging Manufacturer | Logic Pac',

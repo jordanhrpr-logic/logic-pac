@@ -40,7 +40,7 @@ export default function PostClient() {
             <p>The answer depends on three variables: how many products are in the set, how different their shapes and sizes are, and which channel the set ships through. A 3-product skincare routine in a rigid box with a custom insert is a different project than a 7-SKU discovery kit in a folding carton with a die-cut tray destined for Target&apos;s holiday endcap.</p>
             <p>We design and manufacture custom gift set boxes for beauty and wellness brands across DTC, retail, and PR channels. This guide covers the structural approaches, insert options, cost drivers, and retailer requirements that determine whether a gift set project lands on budget and on time.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>The four primary gift set structures are rigid box with insert, folding carton with tray, sleeve + tray, and window box. Each carries different cost, perceived value, and production timeline tradeoffs.</li>
                 <li>Component count is the <strong>#1 cost driver</strong> in gift set packaging. Every additional product, insert cavity, and structural element adds material, tooling, and assembly cost.</li>

@@ -4,11 +4,11 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Gift Set Packaging: Structure & Costs',
-  description: 'Gift set packaging design for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, cost drivers, and retailer display requirements.',
+  description: 'Gift set packaging for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, costs, and retailer requirements.',
   alternates: { canonical: '/blog/gift-set-packaging-design' },
   openGraph: {
     title: 'Gift Set Packaging Design: Structures, Inserts, and Cost Decisions for Multi-Product Kits | Logic Pac',
-    description: 'Gift set packaging design for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, cost drivers, and retailer display r',
+    description: 'Gift set packaging for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, costs, and retailer requirements.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

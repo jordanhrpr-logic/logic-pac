@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Skincare Packaging Design Guide',
-  description: 'Skincare packaging formats (tubes, bottles, jars, droppers, airless), material selection by formula type, retail shelf requirements, and the design decisions that drive sell-through.',
+  description: 'Skincare packaging formats, materials by formula type, retail shelf requirements, and design decisions that affect sell-through and margin.',
   alternates: { canonical: '/blog/skincare-packaging-design-guide' },
   openGraph: {
     title: 'Skincare Packaging Design Guide | Logic Pac',

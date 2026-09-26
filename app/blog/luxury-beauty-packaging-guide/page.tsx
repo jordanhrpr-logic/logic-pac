@@ -4,11 +4,11 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Luxury vs. Mass Market Beauty Packaging',
-  description: 'Luxury beauty packaging differs from mass market in structural weight, closure engineering, finish layering, and sensory sequencing. Here&apos;s the full breakdown.',
+  description: 'What separates luxury beauty packaging from mass market: structural weight, closure engineering, finish hierarchy, and sensory sequencing.',
   alternates: { canonical: '/blog/luxury-beauty-packaging-guide' },
   openGraph: {
     title: 'Luxury Beauty Packaging: What Separates Premium From Mass Market | Logic Pac',
-    description: 'Luxury beauty packaging differs from mass market in structural weight, closure engineering, finish layering, and sensory sequencing. Here&apos;s the f',
+    description: 'What separates luxury beauty packaging from mass market: structural weight, closure engineering, finish hierarchy, and sensory sequencing.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

@@ -41,7 +41,7 @@ export default function PostClient() {
             <p>We&apos;ve produced influencer kits ranging from 50-unit VIP drops to 5,000-unit creator programs. The pattern is consistent: brands that design around the filming moment get 3&ndash;5x the post rate of brands that design around the product list.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Kits engineered around a single reveal moment see <strong>3&ndash;5x higher post rates</strong> than decorated shipping boxes.</li>
                 <li>Budget tier kits ($8&ndash;$15/unit) work for high-quantity seeding; premium kits ($30&ndash;$50+) justify themselves when your list is under 200 high-value creators.</li>

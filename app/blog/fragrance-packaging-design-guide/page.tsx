@@ -4,11 +4,11 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Fragrance Packaging Design Guide',
-  description: 'Learn what makes fragrance packaging feel premium, including box structure, board weight, finishes, costs, timelines, and common perfume packaging mistakes.',
+  description: 'What makes perfume packaging feel premium: box structure, board weight, finishes, costs, timelines, and common fragrance packaging mistakes.',
   alternates: { canonical: '/blog/fragrance-packaging-design-guide' },
   openGraph: {
     title: 'Fragrance Packaging Design: What Makes Perfume Packaging Premium | Logic Pac',
-    description: 'Learn what makes fragrance packaging feel premium, including box structure, board weight, finishes, costs, timelines, and common perfume packaging mis',
+    description: 'What makes perfume packaging feel premium: box structure, board weight, finishes, costs, timelines, and common fragrance packaging mistakes.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

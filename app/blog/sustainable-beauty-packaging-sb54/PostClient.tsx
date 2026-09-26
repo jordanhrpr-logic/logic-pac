@@ -47,7 +47,7 @@ export default function PostClient() {
             <p>The right question is not, &ldquo;What is the most sustainable material?&rdquo; The better question is: what is the lowest-waste packaging system that still protects the formula, supports the brand, meets retail requirements, and survives the supply chain?</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Sustainable beauty packaging is a system decision, not a single material swap.</li>
                 <li>PCR can work, but color consistency, odor, supply reliability, and compliance documentation need to be checked early.</li>

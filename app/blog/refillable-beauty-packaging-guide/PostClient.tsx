@@ -41,7 +41,7 @@ export default function PostClient() {
             <p>Refillable beauty packaging reduces material waste when the consumer actually refills. The system works when the outer vessel is durable, the refill mechanism is intuitive, the cost structure rewards repeat purchase, and the product category supports it. It fails when the refill rate is low, the experience is messy, or the economics require four repurchases to break even on a vessel the customer only buys once.</p>
             <p>Refillable is the most discussed sustainability concept in beauty packaging right now. It is also the most misunderstood. The gap between consumer interest and consumer behavior is wide. Designing a refillable system that closes that gap requires structural engineering, honest cost modeling, and a willingness to accept that some product formats are not good refill candidates.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>There are five main refill system types: cartridge, pod, pour-in, return-and-refill, and in-store dispensing. Each has different structural, cost, and consumer experience tradeoffs.</li>
                 <li>Consumer interest in refillable packaging is high (surveys consistently show 60-80% stated willingness), but actual refill purchase rates are significantly lower &mdash; often under 20% for at-home refill systems.</li>

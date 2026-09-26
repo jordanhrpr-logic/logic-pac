@@ -46,7 +46,7 @@ export default function PostClient() {
             <p>The brands that wait for a final retailer request will be late. The brands that start now will already know what needs to change, what can stay, and what documentation they can defend.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>SB 54 is California&apos;s extended producer responsibility law for packaging and single-use plastic food service ware.</li>
                 <li>Beauty brands should audit primary, secondary, and tertiary packaging now, not when a retailer asks for documentation.</li>

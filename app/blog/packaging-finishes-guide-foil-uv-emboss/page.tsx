@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Packaging Finishes: Foil, UV, Emboss Guide',
-  description: 'What each packaging finish costs, when to use it, and how to combine them. Foil stamping ($0.05-$0.50/unit), spot UV ($0.05-$0.30), embossing ($0.05-$0.40), and soft-touch ($0.10-$0.60).',
+  description: 'What each packaging finish costs and when to use it. Foil ($0.05-$0.50/unit), spot UV ($0.05-$0.30), embossing, and soft-touch compared.',
   alternates: { canonical: '/blog/packaging-finishes-guide-foil-uv-emboss' },
   openGraph: {
     title: 'Packaging Finishes Guide: Foil, UV, Emboss, Soft-Touch | Logic Pac',

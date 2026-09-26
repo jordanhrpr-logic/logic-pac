@@ -4,11 +4,11 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Refillable Beauty Packaging Design Guide',
-  description: 'Refillable beauty packaging works when the system is designed for real consumer behavior. Learn refill types, engineering, cost modeling, and adoption data.',
+  description: 'Refillable beauty packaging works when designed for real consumer behavior. Refill types, engineering, cost modeling, and adoption data.',
   alternates: { canonical: '/blog/refillable-beauty-packaging-guide' },
   openGraph: {
     title: 'Refillable Beauty Packaging: A Design Guide That Includes the Hard Parts | Logic Pac',
-    description: 'Refillable beauty packaging works when the system is designed for real consumer behavior. Learn refill types, engineering, cost modeling, and adoption',
+    description: 'Refillable beauty packaging works when designed for real consumer behavior. Refill types, engineering, cost modeling, and adoption data.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

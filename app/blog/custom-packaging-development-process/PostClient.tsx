@@ -40,7 +40,7 @@ export default function PostClient() {
             <p>If you have never developed custom packaging before, the process can feel opaque. Timelines slip for reasons that seem unclear. Costs appear at stages you did not expect. Decisions you thought were final turn out to need revision.</p>
             <p>This guide walks through each stage of the custom packaging process so you know what happens, who is involved, what can go wrong, and what your role as the brand is at every step.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Custom packaging development follows six stages over 12-16 weeks: brief/discovery, concept development, material selection/sampling, production artwork, tooling/production, and QC/shipping.</li>
                 <li>The brief is the most important deliverable in the entire process. A vague brief adds 2-4 weeks and significant cost.</li>

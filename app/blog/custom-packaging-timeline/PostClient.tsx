@@ -40,7 +40,7 @@ export default function PostClient() {
             <p>This guide breaks down the real phase-by-phase timeline so you can work backward from your launch date and avoid the two most expensive mistakes in packaging development: starting too late and approving too fast.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Custom packaging takes <strong>12&ndash;20 weeks</strong> from approved brief to delivery &mdash; not from first conversation.</li>
                 <li>The five phases are: design (2&ndash;4 weeks), prototyping (2&ndash;4 weeks), tooling and production setup (4&ndash;6 weeks), mass production (4&ndash;8 weeks), and freight (4&ndash;8 weeks for international).</li>

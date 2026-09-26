@@ -44,7 +44,7 @@ export default function PostClient() {
             <p>Custom jewelry packaging typically costs <strong>$3&ndash;$15 per unit</strong> for branded rigid boxes, with simple paperboard cards or sleeves closer to <strong>$0.50&ndash;$3.00</strong> and premium hinged, fabric-lined, or hardware-based boxes moving above <strong>$10</strong>. The real number depends on the box format, material, insert, finish, hardware, order quantity, and how many sizes need to match across the collection.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Most jewelry brands already pay $6&ndash;$10 per catalog box; custom packaging can compete when the program is planned correctly.</li>
                 <li>Ring boxes, earring boxes, necklace cases, and bracelet boxes should be priced as one system, not one-off SKUs.</li>

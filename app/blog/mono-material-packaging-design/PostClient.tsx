@@ -42,7 +42,7 @@ export default function PostClient() {
             <p>Sorting and reprocessing systems have material-specific requirements. A package that combines incompatible plastics, metal, silicone, paper, labels, and adhesives may be harder to identify and process at scale. Mono-material design reduces that complexity, but it does not guarantee that every local program will accept or recycle the finished package.</p>
             <p>The practical goal is compatibility: simplify the package, remove components that disrupt the intended stream, and verify the finished specification against the markets where it will be sold.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Mono-material packaging uses one recyclable material family (mono-PP, mono-PE, mono-PET, or paper-based) across all components so the package can be sorted and recycled as a single unit.</li>
                 <li>Multi-material packaging is the primary reason beauty packages labeled &ldquo;recyclable&rdquo; end up in landfill &mdash; mixed materials contaminate recycling streams.</li>

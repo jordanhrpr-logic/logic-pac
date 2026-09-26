@@ -43,7 +43,7 @@ export default function PostClient() {
             <p>That distinction matters because most beauty brands that try to &ldquo;go luxury&rdquo; focus on surface effects &mdash; adding a foil stamp, upgrading to a heavier board, choosing a darker color palette. Those are finish decisions, not packaging decisions. Real luxury packaging is engineered from the structure outward. The weight is intentional. The closure has resistance. The insert holds the product like it belongs there. The finish serves the architecture, not the other way around.</p>
             <p>This guide breaks down what luxury beauty brands actually do differently at every stage of the packaging process, what the cost premiums look like, and where to invest if you want premium perception without premium waste.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Luxury packaging starts with structure and weight &mdash; not finish effects. The most common &ldquo;premium upgrade&rdquo; mistake is adding finishes to a weak structure.</li>
                 <li>Closure engineering (magnetic, friction-fit, soft-close) accounts for up to 20-30% of luxury packaging unit cost and is the single most tactile quality signal.</li>

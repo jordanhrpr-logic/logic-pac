@@ -12,7 +12,7 @@ export default function GuideAnswerSummary({ title, answer, takeaways }: Props) 
         <p>{answer}</p>
       </div>
       <div className="blog-takeaways guide-takeaways">
-        <h4>What to know</h4>
+        <h3>What to know</h3>
         <ul>{takeaways.map((item) => <li key={item}>{item}</li>)}</ul>
       </div>
     </>

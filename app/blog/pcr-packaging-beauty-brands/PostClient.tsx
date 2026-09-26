@@ -43,7 +43,7 @@ export default function PostClient() {
             <p>The sustainability story around PCR is compelling. The reality is more complicated. PCR supply is inconsistent, quality varies by source, color and clarity limitations affect brand aesthetics, formula compatibility must be tested, and most percentage claims in the beauty industry are difficult for consumers to verify. Some of what passes for &ldquo;sustainable packaging&rdquo; in beauty is greenwashing-lite &mdash; a 15% PCR claim on a non-recyclable multi-material component does not move the needle.</p>
             <p>This guide covers what PCR actually is, how it is sourced, what the content percentages mean, how it interacts with beauty formulas, what it costs relative to virgin material, where the regulatory landscape is heading, and how to verify supplier claims before you put a recycled content number on your label.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>PCR content in beauty packaging typically adds a <strong>10-30% cost premium</strong> over virgin resin, depending on resin type, color requirements, and order volume.</li>
                 <li>100% PCR is achievable in HDPE and PET but comes with color limitations (gray or amber tint) and potential clarity loss that affect brand presentation.</li>

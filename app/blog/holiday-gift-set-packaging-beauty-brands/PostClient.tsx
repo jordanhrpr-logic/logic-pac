@@ -42,7 +42,7 @@ export default function PostClient() {
             <p>This guide covers the month-by-month holiday packaging timeline, realistic cost ranges by structure type, retailer compliance requirements, and the gift set formats that actually drive revenue at the holiday price point.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Holiday gift set packaging for beauty brands needs a <strong>5&ndash;7 month runway</strong> from brief to delivery. For Q4 retail, planning should start in January or February.</li>
                 <li>Rigid gift box sets typically cost <strong>$6&ndash;$18+ per unit</strong>; folding carton kits run <strong>$2&ndash;$6 per unit</strong>; advent calendars range <strong>$8&ndash;$30+ per unit</strong> depending on complexity.</li>

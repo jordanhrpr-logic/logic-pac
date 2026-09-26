@@ -3,12 +3,12 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Food and Beverage Packaging Design for Emerging Brands',
+  title: 'Food & Beverage Packaging Design Guide',
   description: 'Learn how food and beverage packaging design works, including materials, compliance, shelf life, retail requirements, costs, and DTC-to-retail planning.',
   alternates: { canonical: '/blog/food-beverage-packaging-design-guide' },
   openGraph: {
     title: 'Food and Beverage Packaging Design for Emerging Brands | Logic Pac',
-    description: 'Learn how food and beverage packaging design works, including materials, compliance, shelf life, retail requirements, costs, and DTC-to-retail plannin',
+    description: 'Learn how food and beverage packaging design works, including materials, compliance, shelf life, retail requirements, costs, and DTC-to-retail planning.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],

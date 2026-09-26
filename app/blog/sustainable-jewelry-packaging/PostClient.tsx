@@ -50,7 +50,7 @@ export default function PostClient() {
             <Image src="/images/portfolio/jewelry/made-by-mary-collection.jpg" alt="Sustainable jewelry packaging collection showing premium paper-based box system" width={760} height={507} className="guide-img" style={{ width: '100%', height: 'auto' }} />
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Sustainable jewelry packaging works best when the claim is specific: FSC paper, recycled content, mono-material paperboard, or reusable format.</li>
                 <li>Rigid jewelry boxes can be made more sustainable, but multi-material construction can make recycling harder.</li>

@@ -1,5 +1,0 @@
-# Logic Pac — robots.txt
-User-agent: *
-Allow: /
-
-Sitemap: https://logic-pac.com/sitemap.xml

@@ -4,7 +4,7 @@ import { jewelryServiceJsonLd, jewelryFaqJsonLd } from '@/lib/metadata'
 
 export const metadata: Metadata = {
   title: 'Custom Jewelry Packaging for Brands & Designers',
-  description: 'Custom jewelry packaging manufacturer. Rigid jewelry boxes, branded inserts, holiday gift sets, and brand-consistent packaging across all box sizes. From 500 units.',
+  description: 'Custom jewelry packaging manufacturer. Rigid boxes, branded inserts, holiday gift sets, and brand-consistent packaging across all sizes.',
   alternates: { canonical: '/jewelry' },
 }
 

@@ -43,7 +43,7 @@ export default function PostClient() {
             <p>The finish is popular for good reason. A soft-touch carton or box feels materially different from a standard matte or gloss-laminated surface. It registers as premium within the first second of contact. Consumers describe it as &ldquo;velvety,&rdquo; &ldquo;luxurious,&rdquo; or &ldquo;expensive&rdquo; without being prompted. For beauty brands competing in the $15-$75 price range where perceived value determines conversion, that tactile signal can justify the cost.</p>
             <p>But soft touch lamination is not universally the right finish. It scuffs in high-friction retail environments, shows fingerprints on dark colors, does not perform well on substrates that flex or bend, and interacts differently with other finishing effects depending on application sequence. This guide covers the full picture &mdash; what soft touch lamination is, when it makes sense, when it does not, what it costs, and how it compares to alternatives.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Soft touch lamination adds <strong>$0.08-$0.60 per unit</strong> to packaging cost depending on substrate size, coverage, and production volume.</li>
                 <li>The finish creates the strongest tactile luxury signal of any standard lamination &mdash; outperforming matte, gloss, and standard coating in consumer perception tests.</li>

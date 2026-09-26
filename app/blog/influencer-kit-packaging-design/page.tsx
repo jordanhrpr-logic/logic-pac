@@ -4,7 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Influencer Kit Design That Gets Posted',
-  description: 'The 5 elements that separate kits that get filmed from kits that get recycled. Real cost ranges ($8-50+/unit), production timelines, and how to brief your packaging partner.',
+  description: 'The 5 elements that separate kits that get filmed from kits that get recycled. Cost ranges ($8-50+/unit), timelines, and briefing tips.',
   alternates: { canonical: '/blog/influencer-kit-packaging-design' },
   openGraph: {
     title: 'How to Design an Influencer Kit That Gets Posted | Logic Pac',

@@ -51,7 +51,7 @@ export default function PostClient() {
             <p>Use finishes deliberately. One signature moment usually beats five competing effects.</p>
 
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>Soft-touch lamination usually adds <strong>$0.08&ndash;$0.20 per unit</strong> depending on substrate, coverage, and volume.</li>
                 <li>Foil stamping usually adds <strong>$0.15&ndash;$0.60 per unit</strong>, with die cost and coverage driving the range.</li>

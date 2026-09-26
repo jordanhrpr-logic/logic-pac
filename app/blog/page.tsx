@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import BlogIndexClient from './BlogIndexClient'
 
 export const metadata: Metadata = {
-  title: 'Blog — Packaging Insights for Beauty & Consumer Brands',
-  description: 'Practical packaging advice for beauty, cosmetic, and consumer brands. Cost breakdowns, sustainability compliance, production timelines, and supplier management — from the team at Logic Pac.',
+  title: 'Blog — Packaging Insights for Brands',
+  description: 'Practical packaging advice for beauty and consumer brands. Cost breakdowns, sustainability compliance, timelines, and supplier guidance.',
   alternates: { canonical: '/blog' },
 }
 

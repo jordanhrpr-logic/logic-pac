@@ -40,7 +40,7 @@ export default function PostClient() {
             <p>Custom packaging MOQs usually start around 500-1,000 units for rigid boxes and corrugated, 1,000-3,000 units for folding cartons, 5,000-10,000 units for flexible pouches, and 1,000-5,000 units for labels. The right minimum depends on tooling, print method, material minimums, setup time, and how much customization the package requires.</p>
             <p>The question is not only &ldquo;what is the minimum order?&rdquo; The better question is whether that MOQ makes sense for your cash, storage, launch plan, and reorder forecast.</p>
             <div className="blog-takeaways">
-              <h4>Key Takeaways</h4>
+              <h3>Key Takeaways</h3>
               <ul>
                 <li>MOQs exist because factories have setup costs, material minimums, tooling costs, and production efficiency thresholds.</li>
                 <li>Rigid boxes can often start at 500-1,000 units, while flexible pouches often need 5,000-10,000 units to make production economics work.</li>
