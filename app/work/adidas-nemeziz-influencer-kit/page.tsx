@@ -5,7 +5,7 @@ const SITE_URL = 'https://logic-pac.com'
 const path = '/work/adidas-nemeziz-influencer-kit'
 const title = 'Adidas Nemeziz Influencer Kit Case Study'
 const description = 'How Logic developed a multi-level rigid presentation kit for the Adidas Nemeziz footwear launch with product-specific compartments and a staged reveal.'
-const image = '/images/portfolio/influencer-adidas-nemesis.jpg'
+const image = '/images/work/adidas-nemeziz/hero-flat-lay.jpg'
 
 export const metadata: Metadata = {
   title,

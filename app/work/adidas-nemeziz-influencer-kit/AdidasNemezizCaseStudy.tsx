@@ -24,7 +24,7 @@ export default function AdidasNemezizCaseStudy() {
           </div>
         </div>
         <div className="case-hero-image">
-          <Image src="/images/portfolio/influencer-adidas-nemesis.jpg" alt="Adidas Nemeziz rigid presentation kit opened to show footwear, soccer ball, and branded compartments" fill priority sizes="(max-width: 900px) 100vw, 52vw" />
+          <Image src="/images/work/adidas-nemeziz/hero-flat-lay.jpg" alt="Adidas Nemeziz rigid presentation kit opened to show footwear, soccer ball, and branded compartments" fill priority sizes="(max-width: 900px) 100vw, 52vw" />
         </div>
       </header>
 
@@ -62,6 +62,26 @@ export default function AdidasNemezizCaseStudy() {
               <article><span>Dedicated compartments</span><p>Custom-fit cavities organize the footwear and campaign components instead of relying on loose fill or a generic insert.</p></article>
               <article><span>Drawer architecture</span><p>The lower pull-out drawer adds a second interaction and expands usable presentation space without increasing the footprint in one direction.</p></article>
               <article><span>Campaign integration</span><p>Nemeziz graphics, the “Unlock Contest” message, and coordinated printed material turn the packaging into part of the launch communication.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section className="case-gallery">
+          <div className="case-gallery-grid">
+            <div className="case-gallery-item case-gallery-wide">
+              <Image src="/images/work/adidas-nemeziz/architecture-exploded.jpg" alt="Adidas Nemeziz kit exploded view showing multi-level structure with removable upper tray and pull-out drawer" width={2000} height={1301} sizes="(max-width: 768px) 100vw, 66vw" />
+            </div>
+            <div className="case-gallery-item">
+              <Image src="/images/work/adidas-nemeziz/front-closed.jpg" alt="Adidas Nemeziz box closed — matte black exterior with debossed Nemesis branding and soccer ball" width={1600} height={886} sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
+            <div className="case-gallery-item">
+              <Image src="/images/work/adidas-nemeziz/branding-detail.jpg" alt="Close-up of debossed spot UV Nemesis lettering on matte black rigid box exterior" width={1700} height={1009} sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
+            <div className="case-gallery-item">
+              <Image src="/images/work/adidas-nemeziz/three-quarter-open.jpg" alt="Three-quarter view of Nemeziz kit showing both presentation levels and pull-out drawer with campaign materials" width={1900} height={1134} sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
+            <div className="case-gallery-item">
+              <Image src="/images/work/adidas-nemeziz/campaign-insert.jpg" alt="Unlock the Contest campaign insert card with badge system, social video competition details, and Adidas branding" width={1800} height={1114} sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
           </div>
         </section>
