@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 
 const features = [
@@ -33,6 +34,21 @@ export default function CapabilitiesClient() {
           </div>
         ))}
       </div>
+
+      <div className="kcr" style={{ borderTop: '1px solid var(--ice)' }}>
+        <div className="seo">
+          <h2>Packaging Guides &amp; Frameworks</h2>
+          <p>We publish the same frameworks we use internally. Use them to plan your project, evaluate materials, and brief your team before we talk.</p>
+          <ul>
+            <li><Link href="/guides/concept-to-shelf-timeline?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_timeline_guide">Concept-to-Shelf Timeline</Link> &mdash; phase-by-phase breakdown of a 12-week packaging program</li>
+            <li><Link href="/guides/material-decision-framework?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_material_guide">Material Decision Framework</Link> &mdash; compare glass, PET, HDPE, aluminum, and fiber by product fit, cost, and compliance</li>
+            <li><Link href="/guides/packaging-finish-guide?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_finish_guide">Packaging Finish Guide</Link> &mdash; soft-touch, foil, spot UV, embossing, and when each earns its cost</li>
+            <li><Link href="/guides/packaging-brief-template?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_brief_guide">Packaging Brief Template</Link> &mdash; the 10 sections every brief should contain before development starts</li>
+          </ul>
+          <p>For sustainability-specific planning, start with the <Link href="/guides/sustainable-beauty-packaging?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_sustainable_guide">Sustainable Beauty Packaging Playbook</Link>.</p>
+        </div>
+      </div>
+
       <section className="ctas">
         <div className="ctai">
           <h2>Start with a 30-Minute<br /><em>Project Scoping Call</em></h2>

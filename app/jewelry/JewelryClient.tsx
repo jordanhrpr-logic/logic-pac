@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 
@@ -116,17 +117,17 @@ export default function JewelryClient() {
             <li>Custom color matching across every box size in your collection</li>
             <li>Brand-specific materials &mdash; PU leather, linen, velvet, specialty papers</li>
             <li>Metal hardware (hinges, magnetic closures, clasps) matched to your aesthetic</li>
-            <li>Foil stamping, embossing, and interior printing consistent across all SKUs</li>
+            <li>Foil stamping, embossing, and interior printing consistent across all SKUs (see our <Link href="/guides/packaging-finish-guide?utm_source=jewelry&utm_medium=organic&utm_campaign=seo_service_page&utm_content=jewelry_finish_guide">finish selection guide</Link>)</li>
           </ul>
 
           <h3>How Much Does Custom Jewelry Packaging Cost?</h3>
-          <p>Custom jewelry boxes typically range from $3&ndash;$12 per unit depending on materials, hardware, finishing, and quantity. Most jewelry brands are already paying $6&ndash;$10 per box for catalog options with no customization. Custom manufacturing at comparable or better pricing is possible through direct factory relationships &mdash; no distributor markup, no catalog middleman.</p>
+          <p>Custom jewelry boxes typically range from $3&ndash;$12 per unit depending on materials, hardware, finishing, and quantity. Most jewelry brands are already paying $6&ndash;$10 per box for catalog options with no customization. Custom manufacturing at comparable or better pricing is possible through direct factory relationships &mdash; no distributor markup, no catalog middleman. Use our <Link href="/guides/material-decision-framework?utm_source=jewelry&utm_medium=organic&utm_campaign=seo_service_page&utm_content=jewelry_material_guide">material decision framework</Link> to evaluate options by cost, perception, and supply chain fit.</p>
 
           <h3>Holiday Gift Sets: The Easiest Way to Start</h3>
           <p>Switching your core packaging line is a big decision when you&apos;re already at volume. Gift sets aren&apos;t. A holiday gift set or brand collaboration kit is a contained project &mdash; limited SKUs, clear timeline, defined quantity &mdash; that lets both sides test the working relationship before a full-collection commitment. It&apos;s the most common entry point for jewelry brands we work with.</p>
 
           <h3>Jewelry Packaging Production Timeline</h3>
-          <p>Structural tooling (4&ndash;6 wks) + sample approval (2&ndash;4 wks) + mass production (6&ndash;10 wks) + ocean freight and customs (6&ndash;8 wks) = 4&ndash;6 months total. For holiday retail, that means starting the conversation no later than April or May.</p>
+          <p>Structural tooling (4&ndash;6 wks) + sample approval (2&ndash;4 wks) + mass production (6&ndash;10 wks) + ocean freight and customs (6&ndash;8 wks) = 4&ndash;6 months total. For holiday retail, that means starting the conversation no later than April or May. Our <Link href="/guides/concept-to-shelf-timeline?utm_source=jewelry&utm_medium=organic&utm_campaign=seo_service_page&utm_content=jewelry_timeline_guide">concept-to-shelf timeline guide</Link> walks through each phase and what compresses or extends the schedule.</p>
         </div>
         <div>
           <FAQSidebar

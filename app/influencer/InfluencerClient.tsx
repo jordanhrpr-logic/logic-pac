@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import FAQSidebar from '@/components/FAQSidebar'
 
@@ -62,7 +63,7 @@ export default function InfluencerClient() {
       <div className="kcr">
         <div className="seo">
           <h2>Producing Kits Creators Can Understand and Film</h2>
-          <p>The package cannot guarantee a post. It can make the product easier to understand, the reveal easier to film, and the campaign more considered when it arrives.</p>
+          <p>The package cannot guarantee a post. It can make the product easier to understand, the reveal easier to film, and the campaign more considered when it arrives. Our <Link href="/guides/influencer-kit-playbook?utm_source=influencer&utm_medium=organic&utm_campaign=seo_service_page&utm_content=influencer_playbook_guide">Influencer Kit Playbook</Link> covers the full production planning framework.</p>
           <h3>What the Production Plan Needs to Solve</h3>
           <ul>
             <li>The outer pack survives parcel handling without arriving overbuilt.</li>
@@ -71,9 +72,9 @@ export default function InfluencerClient() {
             <li>Kitting, address data, and fulfillment are planned before production locks.</li>
           </ul>
           <h3>Working Directly with PR Agencies as a Packaging Vendor</h3>
-          <p>Most of our influencer kit projects start with a brief from a PR agency or creative studio. We coordinate production, specs, and delivery without pulling you into factory conversations&mdash;operating as a production partner aligned to the approved brand direction and delivery plan.</p>
+          <p>Most of our influencer kit projects start with a brief from a PR agency or creative studio. We coordinate production, specs, and delivery without pulling you into factory conversations&mdash;operating as a production partner aligned to the approved brand direction and delivery plan. Use our <Link href="/guides/packaging-brief-template?utm_source=influencer&utm_medium=organic&utm_campaign=seo_service_page&utm_content=influencer_brief_guide">packaging brief template</Link> to structure the handoff.</p>
           <h3>Lead Times for Custom PR Mailer Packaging</h3>
-          <p>For simpler configurations, 6 weeks can be achievable. Fully custom builds with rigid structures, specialty finishes, and custom inserts commonly require 10&ndash;12 weeks, depending on approvals, capacity, testing, and freight.</p>
+          <p>For simpler configurations, 6 weeks can be achievable. Fully custom builds with rigid structures, specialty finishes, and custom inserts commonly require 10&ndash;12 weeks, depending on approvals, capacity, testing, and freight. Our <Link href="/guides/packaging-finish-guide?utm_source=influencer&utm_medium=organic&utm_campaign=seo_service_page&utm_content=influencer_finish_guide">finish selection guide</Link> covers what each option adds to timeline and cost.</p>
         </div>
         <div>
           <FAQSidebar

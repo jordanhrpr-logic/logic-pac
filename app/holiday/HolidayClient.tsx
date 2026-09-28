@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import { HolidayWindowLabel } from '@/components/SeasonalBar'
 import FAQSidebar from '@/components/FAQSidebar'
@@ -70,12 +71,12 @@ export default function HolidayClient() {
             <li>Perceived value must exceed unit cost &mdash; luxury feel at realistic price points</li>
             <li>Component security &mdash; inserts must protect glass, tubes, and aerosols in transit</li>
             <li>Retail compliance &mdash; Ulta, Sephora, Target specs are non-negotiable</li>
-            <li>Sustainability expectations &mdash; FSC and recycled content increasingly required</li>
+            <li>Sustainability expectations &mdash; FSC and recycled content increasingly required (see our <Link href="/guides/sustainable-beauty-packaging?utm_source=holiday&utm_medium=organic&utm_campaign=seo_service_page&utm_content=holiday_sustainable_guide">sustainable packaging playbook</Link>)</li>
           </ul>
           <h3>Holiday Gift Set Production Lead Times</h3>
-          <p>Structural tooling (4&ndash;8 wks) + sample approval (3&ndash;6 wks) + mass production (6&ndash;12 wks) + ocean freight and customs (6&ndash;8 wks) = 5&ndash;7 months total. For November retail, that means a March or April start with your packaging vendor.</p>
+          <p>Structural tooling (4&ndash;8 wks) + sample approval (3&ndash;6 wks) + mass production (6&ndash;12 wks) + ocean freight and customs (6&ndash;8 wks) = 5&ndash;7 months total. For November retail, that means a March or April start with your packaging vendor. Our <Link href="/guides/concept-to-shelf-timeline?utm_source=holiday&utm_medium=organic&utm_campaign=seo_service_page&utm_content=holiday_timeline_guide">concept-to-shelf timeline guide</Link> breaks down each phase in detail.</p>
           <h3>Custom Holiday Packaging Costs</h3>
-          <p>Pricing depends on structure type, quantity, materials, and finishing. Rigid gift boxes with magnetic closure and custom inserts range widely based on complexity and volume. As a dedicated holiday gift set manufacturer, we provide realistic pricing within 48 hours of an initial scoping call.</p>
+          <p>Pricing depends on structure type, quantity, materials, and finishing. Rigid gift boxes with magnetic closure and custom inserts range widely based on complexity and volume. Our <Link href="/guides/packaging-finish-guide?utm_source=holiday&utm_medium=organic&utm_campaign=seo_service_page&utm_content=holiday_finish_guide">packaging finish guide</Link> covers what each finish adds to unit cost. As a dedicated holiday gift set manufacturer, we provide realistic pricing within 48 hours of an initial scoping call.</p>
           <h3>Retail Packaging Compliance for Ulta, Sephora, and Target</h3>
           <p>Retailer compliance is built into our process from the start. We manage barcoding, master carton labeling, FSC documentation, and retailer-specific requirements for Ulta, Sephora, Target, and specialty retail channels.</p>
         </div>
