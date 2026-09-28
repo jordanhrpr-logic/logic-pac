@@ -70,7 +70,7 @@ export default function PostClient() {
             <h2 id="what-dtc-jewelry-packaging-needs-to-do">What DTC Jewelry Packaging Needs to Do</h2>
             <p>DTC packaging has to survive parcel shipping. That means the jewelry box, pouch, insert, tissue, card, and outer mailer need to work together. A premium ring box inside a weak mailer is not protected. A beautiful unboxing that arrives crushed is not premium.</p>
             <p>DTC also has more room for storytelling. The package can include a note, care card, certificate, polishing cloth, return insert, or loyalty prompt. The customer is opening it in a private moment. That gives the brand a chance to slow down the experience.</p>
-            <p>But the system still needs discipline. Too many loose inserts feel messy. Oversized boxes drive freight cost. Fragile materials scuff in transit. The goal is a controlled reveal, not a pile of brand collateral.</p>
+            <p>But the system still needs discipline. Too many loose inserts feel messy. Oversized boxes drive freight cost. Fragile materials scuff in transit. The goal is a controlled reveal, not a pile of brand collateral. For the design principles behind that reveal, see our <Link href="/blog/unboxing-experience-design-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=jewelry_dtc_unboxing_design">unboxing experience design guide</Link>.</p>
 
             <h2 id="what-retail-jewelry-packaging-needs-to-do">What Retail Jewelry Packaging Needs to Do</h2>
             <p>Retail packaging needs consistency. A store team should be able to identify the brand across ring, necklace, earring, and bracelet formats without explaining it. The boxes should sit cleanly in trays, drawers, or displays. The materials should tolerate handling.</p>
@@ -80,7 +80,7 @@ export default function PostClient() {
             <h2 id="can-one-jewelry-packaging-system-serve-both-channe">Can One Jewelry Packaging System Serve Both Channels?</h2>
             <p>Yes, but it needs to be designed that way. The inner box can often stay consistent across DTC and retail. The outer system changes.</p>
             <p>For DTC, that may mean a protective shipper, branded tissue, and insert card. For retail, it may mean a sleeve, barcode label area, case pack, master carton, or display-ready tray. The brand language stays the same. The operational layer adapts.</p>
-            <p>This is the cleanest approach for growing brands: one core packaging system, channel-specific supporting components.</p>
+            <p>This is the cleanest approach for growing brands: one core packaging system, channel-specific supporting components. The <Link href="/blog/jewelry-packaging-design-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=jewelry_retail_dtc_design_system">jewelry packaging design guide</Link> covers how to build that system from the ground up.</p>
 
             <h2 id="what-retail-requirements-do-jewelry-brands-miss">What Retail Requirements Do Jewelry Brands Miss?</h2>
             <p>The most common misses are not glamorous. Barcode placement. Carton labeling. Case pack quantity. Master carton dimensions. Product ID consistency. Price label surface. Display tray fit. Material scuffing from handling.</p>
@@ -119,7 +119,7 @@ export default function PostClient() {
             <p>A strong packaging system anticipates this. It does not need to make every package return-proof. It does need to avoid formats that fail after one opening if the product has a meaningful return or exchange rate.</p>
 
             <h2 id="how-to-decide-which-channel-gets-priority">How to Decide Which Channel Gets Priority</h2>
-            <p>Most brands should prioritize the channel that drives the next 12 months of growth. If DTC is still the core business, protect the unboxing and fulfillment flow. If retail is the growth channel, build packaging around retail requirements before scaling the line.</p>
+            <p>Most brands should prioritize the channel that drives the next 12 months of growth. If cost is the deciding factor, our <Link href="/blog/custom-jewelry-packaging-cost?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=jewelry_retail_dtc_cost_guide">jewelry packaging cost guide</Link> breaks down pricing by format and volume. If DTC is still the core business, protect the unboxing and fulfillment flow. If retail is the growth channel, build packaging around retail requirements before scaling the line.</p>
             <p>Trying to make every package perfect for every channel can create cost and complexity. Start with one core box and the most important channel-specific layer. Add complexity only when volume proves it is needed.</p>
 
             <h2 id="the-channel-decision-matrix">The Channel Decision Matrix</h2>

@@ -74,7 +74,7 @@ export default function PostClient() {
             <h2 id="what-does-luxury-jewelry-packaging-cost">What Does Luxury Jewelry Packaging Cost?</h2>
             <p>Premium jewelry boxes typically land around <strong>$6&ndash;$15+ per unit</strong> at production volume, with luxury gift sets or complex rigid formats moving into the <strong>$15&ndash;$25+</strong> range. Simple premium paperboard or sleeve systems can be lower, but they need exceptional print and finish control to feel luxury.</p>
             <p>The cost is driven by board structure, wrap material, interior lining, cushion system, closure, hardware, and finish. Metal hinges, magnetic closures, plaques, velvet interiors, and specialty papers all add cost. So does quality control. Luxury packaging needs tighter tolerances because the product itself sets a high expectation.</p>
-            <p>The better question is not whether the box is expensive. It is whether the box is doing enough work to justify the cost.</p>
+            <p>The better question is not whether the box is expensive. It is whether the box is doing enough work to justify the cost. For a full pricing breakdown by format, see our <Link href="/blog/custom-jewelry-packaging-cost?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_jewelry_cost_breakdown">custom jewelry packaging cost guide</Link>.</p>
 
             <h2 id="which-structures-work-best-for-luxury-jewelry">Which Structures Work Best for Luxury Jewelry?</h2>
             <p>Hinged rigid boxes are the classic jewelry format because they create ceremony. Drawer boxes feel more modern and editorial. Book-style boxes work well for gift sets and storytelling. Lift-off boxes can feel clean and minimal when the material is strong enough.</p>
@@ -87,7 +87,7 @@ export default function PostClient() {
             <p>Luxury packaging is about control. Fewer decisions, executed better.</p>
 
             <h2 id="how-to-test-premium-packaging-without-changing-the">How to Test Premium Packaging Without Changing the Core Line</h2>
-            <p>Do not start by replacing every box if the brand is already selling at volume. Start with a holiday gift set, collaboration kit, bridal collection, or limited-edition launch. That gives the team a contained project with clear quantities and a defined timeline.</p>
+            <p>Do not start by replacing every box if the brand is already selling at volume. Start with a <Link href="/blog/gift-set-packaging-design?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_jewelry_gift_set">holiday gift set</Link>, collaboration kit, bridal collection, or limited-edition launch. That gives the team a contained project with clear quantities and a defined timeline.</p>
             <p>A limited program reveals how the factory communicates, how samples look, how colors match, how freight behaves, and how the customer responds. Then the brand can decide whether to roll the system into the core line. Lower risk. Better information.</p>
 
             <h2 id="the-roi-of-premium-jewelry-packaging">The ROI of Premium Jewelry Packaging</h2>
@@ -102,7 +102,7 @@ export default function PostClient() {
             <h2 id="retail-luxury-vs-dtc-luxury">Retail Luxury vs. DTC Luxury</h2>
             <p>DTC luxury can build slowly. The customer opens the shipper, sees tissue, reads a note, opens the box, and finally sees the piece. Retail luxury has less time. The box may be handled by a sales associate or seen inside a case. It needs immediate clarity.</p>
             <p>Retail also adds consistency pressure. Multiple box sizes in a retail environment need to look related at a glance. In DTC, a customer may only see one package. In retail, a buyer or store team sees the full line together. Inconsistency becomes obvious.</p>
-            <p>This is why premium jewelry packaging should be developed as a family. The ring box, necklace box, earring box, bracelet box, and gift set do not need identical structures. They need shared design logic.</p>
+            <p>This is why premium jewelry packaging should be developed as a family. The ring box, necklace box, earring box, bracelet box, and gift set do not need identical structures. They need shared design logic. Our <Link href="/blog/jewelry-packaging-retail-vs-dtc?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_jewelry_retail_dtc">jewelry retail vs. DTC guide</Link> covers the specific differences by channel.</p>
 
             <h2 id="what-not-to-spend-on">What Not to Spend On</h2>
             <p>Do not spend on materials customers cannot feel, see, or understand. Do not add hardware because it sounds premium if a magnetic closure would work better. Do not add a ribbon pull if the tray already lifts cleanly. Do not add a plaque if a foil stamp does the job.</p>
@@ -127,7 +127,7 @@ export default function PostClient() {
             <h2 id="how-to-scale-luxury-packaging-after-the-first-run">How to Scale Luxury Packaging After the First Run</h2>
             <p>The first luxury packaging run should create standards the brand can repeat. Approved wrap. Approved lining. Approved foil. Approved insert fit. Approved carton packing. Those standards become the production language for future SKUs.</p>
             <p>Without standards, every new piece becomes a new negotiation. The bracelet box comes out slightly warmer than the ring box. The necklace lining has a different nap. The gift set uses a different foil. None of those issues may look dramatic alone. Together, they make the brand feel less controlled.</p>
-            <p>The best luxury systems document the decisions once, then scale them across the collection. That is how premium packaging becomes operationally useful instead of just beautiful.</p>
+            <p>The best luxury systems document the decisions once, then scale them across the collection. Our <Link href="/blog/jewelry-packaging-design-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_jewelry_design_system">jewelry packaging design guide</Link> covers how to build that system from the ground up. That is how premium packaging becomes operationally useful instead of just beautiful.</p>
       </div>
         </div>
       </div>

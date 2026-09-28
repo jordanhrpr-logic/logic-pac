@@ -96,7 +96,7 @@ export default function TimelineClient() {
 
             <h2 id="why"><span className="num">01.</span>Most delays begin before the production order</h2>
             <p>Every packaging project has the same six phases. The brands that hit shelf on schedule don&rsquo;t move faster &mdash; they make decisions earlier and respect the dependencies between stages.</p>
-            <p>Here&rsquo;s the pattern we see across hundreds of projects: <strong>delays don&rsquo;t come from production. They come from indecision in the first four weeks.</strong> One material change in week 7 can push your launch by a month. One unclear brand brief in week 1 can compound into three rounds of redesign before sampling.</p>
+            <p>Here&rsquo;s the pattern we see across hundreds of projects: <strong>delays don&rsquo;t come from production. They come from indecision in the first four weeks.</strong> One material change in week 7 can push your launch by a month. One unclear brand brief in week 1 can compound into three rounds of redesign before sampling. Our <Link href="/blog/custom-packaging-timeline?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=timeline_guide_blog_article">custom packaging timeline article</Link> covers the phase-by-phase cost of delays.</p>
             <p>This guide breaks down what actually happens in each phase, what kills the timeline, and what you can do upstream to protect a 12-week launch window.</p>
 
             <div className="inside-card">
@@ -114,7 +114,7 @@ export default function TimelineClient() {
             <h2 id="discovery"><span className="num">02.</span>Weeks 1&ndash;2 &middot; Discovery &amp; Briefing</h2>
             <p>This is where everything gets defined. Materials, sustainability requirements, budget parameters, brand guidelines, distribution channels, performance specs, and the shelf context the package needs to compete in.</p>
             <p><strong>What it looks like:</strong> stakeholder meetings, brand questionnaires, technical spec documentation, target sample collection. Nothing physical happens. It&rsquo;s all alignment.</p>
-            <p><strong>What kills this phase:</strong> rushing it. Most brands try to compress weeks 1&ndash;2 because &ldquo;we already know what we want.&rdquo; Then they rebrief in week 5 when prototypes don&rsquo;t match the original vision, and the project loses 3 weeks.</p>
+            <p><strong>What kills this phase:</strong> rushing it. Most brands try to compress weeks 1&ndash;2 because &ldquo;we already know what we want.&rdquo; Then they rebrief in week 5 when prototypes don&rsquo;t match the original vision, and the project loses 3 weeks. Use our <Link href="/blog/packaging-brief-template-beauty-brands?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=timeline_guide_brief_article">packaging brief template</Link> to lock these decisions upfront.</p>
 
             <div className="callout">
               <p>The single highest-leverage decision in a 12-week timeline is how much rigor you bring to the first 10 days.</p>

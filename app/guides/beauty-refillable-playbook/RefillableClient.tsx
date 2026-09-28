@@ -97,7 +97,7 @@ export default function RefillableClient() {
             <h2 id="why"><span className="num">01.</span>The business case starts with reuse, not launch press</h2>
             <p>Three forces are converging in 2026 to make refillability a serious strategic question for beauty brands:</p>
             <ul>
-              <li><strong>Regulation.</strong> The EU PPWR (effective August 2026) introduces minimum reuse targets for certain packaging types and rewards systems that reduce single-use volume.</li>
+              <li><strong>Regulation.</strong> The <Link href="/blog/eu-ppwr-packaging-requirements-beauty?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=refillable_guide_eu_ppwr">EU PPWR</Link> (effective August 2026) introduces minimum reuse targets for certain packaging types and rewards systems that reduce single-use volume.</li>
               <li><strong>Retailer pressure.</strong> Major beauty retailers &mdash; Sephora, Ulta, John Lewis, Selfridges &mdash; have all published packaging sustainability scorecards that score refillable systems higher than single-use.</li>
               <li><strong>Category experimentation.</strong> Prestige brands have introduced refillable hero SKUs, creating useful operating examples without proving that every category or customer will adopt the model.</li>
             </ul>
@@ -145,7 +145,7 @@ export default function RefillableClient() {
             <Image src="/images/guides/refillable-system-diagram.png" alt="Three refillable packaging architectures — cartridge pod-swap, pump-swap, and pour-refill systems compared" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="works"><span className="num">03.</span>When refillables work</h2>
-            <p>Refillability earns its sustainability claim when the system delivers real reuse at meaningful scale. The conditions that have to be true:</p>
+            <p>Refillability earns its sustainability claim when the system delivers real reuse at meaningful scale. Our <Link href="/blog/refillable-beauty-packaging-guide?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=refillable_guide_blog_article">refillable packaging blog article</Link> covers the five architecture types and adoption rate data. The conditions that have to be true:</p>
             <ul>
               <li><strong>High repurchase frequency.</strong> If customers replace the product every 2&ndash;3 months, the refill economics work. If it&apos;s an annual purchase, the refill story is weak.</li>
               <li><strong>Hero SKU loyalty.</strong> Refillables succeed inside loyal customer relationships. Trial-stage products fail at refill &mdash; customers want flexibility.</li>

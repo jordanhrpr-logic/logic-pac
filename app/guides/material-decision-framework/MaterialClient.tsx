@@ -118,7 +118,7 @@ export default function MaterialClient() {
             <h3>Glass</h3>
             <p>Heavy, premium-positioned, recyclable where accepted, breakable, and freight-intensive. Glass is common for serums, fragrance, and some refillable systems, but the full package and local recovery infrastructure determine the real outcome.</p>
             <p><strong>Where it works:</strong> hero SKUs, fragrance, prestige skincare, refillable bases.<br />
-            <strong>Where it fails:</strong> high-volume DTC (breakage + freight emissions), travel formats, value tiers.</p>
+            <strong>Where it fails:</strong> high-volume DTC (breakage + freight emissions), travel formats, value tiers. For the full side-by-side comparison, see our <Link href="/blog/glass-vs-plastic-beauty-packaging?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=material_guide_glass_plastic">glass vs. plastic beauty packaging article</Link>.</p>
 
             <h3>PET (Polyethylene Terephthalate)</h3>
             <p>Clear, lightweight, durable, and available with PCR content. PET is a common material for clear bottles and jars, with recovery dependent on color, format, closures, labels, and local infrastructure.</p>
@@ -128,7 +128,7 @@ export default function MaterialClient() {
             <h3>HDPE (High-Density Polyethylene)</h3>
             <p>Opaque, chemically resistant, slightly less premium than PET. The go-to for haircare, body, opaque skincare, and any product where chemical compatibility matters more than visual product visibility.</p>
             <p><strong>Where it works:</strong> shampoo, conditioner, body wash, opaque cleansers.<br />
-            <strong>Where it fails:</strong> brand positioning that demands a more refined surface or feel.</p>
+            <strong>Where it fails:</strong> brand positioning that demands a more refined surface or feel. Our <Link href="/blog/hdpe-vs-pet-packaging-comparison?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=material_guide_hdpe_pet">HDPE vs. PET comparison</Link> covers the chemical resistance and clarity tradeoffs in detail.</p>
 
             <h3>Aluminum</h3>
             <p>Light, premium-positioned, and recyclable where accepted. Aluminum is used in deodorants, fragrance, and refillable formats, but coatings, pumps, closures, and local recycling systems still need to be evaluated.</p>

@@ -156,7 +156,7 @@ export default function SustainableClient() {
                 <li><strong>Perception:</strong> The most recognized &ldquo;second life&rdquo; claim in beauty</li>
                 <li><strong>Color performance:</strong> Variable; expect tighter QC tolerance and higher reject rates on opaque white or clear formats</li>
                 <li><strong>Where it works:</strong> Bottles, jars, tubes, caps at 30&ndash;100% PCR content</li>
-                <li><strong>Verification:</strong> Require the resin declaration, recycled-content percentage, chain-of-custody records, and finished-component specification before making an on-pack PCR claim.</li>
+                <li><strong>Verification:</strong> Require the resin declaration, recycled-content percentage, chain-of-custody records, and finished-component specification before making an on-pack PCR claim. Our <Link href="/blog/pcr-packaging-beauty-brands?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=sustainable_guide_pcr_article">PCR packaging guide</Link> covers what 30%, 50%, and 100% PCR actually costs and requires.</li>
               </ul>
 
               <h3>PIR (Post-Industrial Recycled) Plastic</h3>
@@ -174,7 +174,7 @@ export default function SustainableClient() {
                 <li><strong>Cost:</strong> Often quoted above a comparable conventional structure; the final difference depends on format, supplier, tooling, and volume</li>
                 <li><strong>Why it matters:</strong> EU PPWR (effective August 2026) penalizes hard-to-recycle multi-material formats</li>
                 <li><strong>Where it works:</strong> Tubes, bottles, secondary cartons</li>
-                <li><strong>Tradeoff:</strong> Limited barrier properties for oxygen-sensitive formulas</li>
+                <li><strong>Tradeoff:</strong> Limited barrier properties for oxygen-sensitive formulas. See our <Link href="/blog/mono-material-packaging-design?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=sustainable_guide_mono_article">mono-material packaging design guide</Link> for the full engineering breakdown</li>
               </ul>
 
               <h3>Glass</h3>

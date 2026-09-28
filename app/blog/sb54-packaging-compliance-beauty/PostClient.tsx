@@ -150,7 +150,7 @@ export default function PostClient() {
               <li>Aluminum components designed without incompatible mixed inserts</li>
               <li>Paperboard inserts instead of foam where performance allows</li>
             </ul>
-            <p>Mono-material design is not a style. It is a compliance advantage.</p>
+            <p>Mono-material design is not a style. It is a compliance advantage. For a deeper look at how to design single-stream packaging, see our <Link href="/blog/mono-material-packaging-design?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_mono_material_guide">mono-material packaging design guide</Link>.</p>
 
             <h3>Mixed Materials Need a Strong Reason</h3>
             <p>Some mixed-material structures are worth it. A formula may need a specific barrier. A premium kit may need protection. A component may require a liner.</p>
@@ -159,7 +159,7 @@ export default function PostClient() {
 
             <h3>Claims Need Documentation</h3>
             <p>SB 54 and the FTC Green Guides both push the same discipline: prove the claim.</p>
-            <p>If you claim PCR content, document the percentage. If you claim recyclable, understand collection and processing reality. If you claim compostable, know which composting environment the claim refers to and whether the whole package qualifies.</p>
+            <p>If you claim <Link href="/blog/pcr-packaging-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_pcr_claims">PCR content</Link>, document the percentage. If you claim recyclable, understand collection and processing reality. If you claim compostable, know which composting environment the claim refers to and whether the whole package qualifies.</p>
             <p>Sustainability copy should be specific enough to survive a legal review and simple enough for a customer to understand.</p>
             <p>For the broader sustainability playbook, see our <Link href="/blog/sustainable-beauty-packaging-sb54?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_sustainable_packaging_guide">Sustainable Beauty Packaging guide</Link>.</p>
 
@@ -231,7 +231,7 @@ export default function PostClient() {
             <h3>Step 5: Redesign Before It Becomes Urgent</h3>
             <p>The worst time to redesign packaging is after a retailer, regulator, or internal deadline forces the issue.</p>
             <p>Packaging changes need sampling, testing, artwork updates, supplier coordination, and inventory planning. If a component needs to change, the brand needs runway.</p>
-            <p>Start with the highest-volume SKU or highest-risk structure. One clean redesign can become the template for the rest of the line.</p>
+            <p>Start with the highest-volume SKU or highest-risk structure. One clean redesign can become the template for the rest of the line. If you also sell into the EU, the <Link href="/blog/eu-ppwr-packaging-requirements-beauty?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_eu_ppwr_crossref">EU PPWR packaging requirements</Link> overlap with SB 54 in some areas but diverge in others &mdash; design to the stricter standard at each phase.</p>
 
             <h2 id="what-does-sb-54-compliance-cost">What Does SB 54 Compliance Cost?</h2>
             <p>There is no single SB 54 compliance cost because the cost depends on the existing packaging system.</p>

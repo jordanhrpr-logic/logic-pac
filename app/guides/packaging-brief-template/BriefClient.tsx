@@ -93,7 +93,7 @@ export default function BriefClient() {
             <GuideAnswerSummary title="What belongs in a packaging brief?" answer="A useful packaging brief resolves the decisions suppliers, designers, engineers, and approvers need before development starts. It should define the product, objective, channel, sustainability requirements, target cost, quantity, timeline, performance needs, deliverables, and approval owners. The goal is not a long document. It is fewer expensive decisions arriving late." takeaways={['Name the business objective and distribution channel before discussing aesthetics.','Include target quantity and cost so proposed structures are commercially relevant.','Define performance, testing, and sustainability requirements in the first brief.','Assign final decision owners and response deadlines for every approval stage.']} />
 
             <h2 id="why"><span className="num">01.</span>A strong brief moves decisions upstream</h2>
-            <p>Every packaging project has a finite number of decisions that need to be made. The brief is where they get captured. The more decisions resolved on day one, the fewer resurface in week six &mdash; when fixing them costs real time and money.</p>
+            <p>Every packaging project has a finite number of decisions that need to be made. The brief is where they get captured. The more decisions resolved on day one, the fewer resurface in week six &mdash; when fixing them costs real time and money. Our <Link href="/blog/packaging-brief-template-beauty-brands?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=brief_guide_blog_article">packaging brief blog article</Link> covers the 10 most common omissions and what each one costs downstream.</p>
             <p>The length does not determine the quality of a brief. What matters is whether it answers the questions the design, engineering, sourcing, and approval teams need to resolve early.</p>
 
             <div className="callout">
@@ -129,7 +129,7 @@ export default function BriefClient() {
               <li>Recycled content thresholds (e.g., minimum 30% PCR)</li>
               <li>Required certifications (FSC, BPI, Cradle-to-Cradle)</li>
               <li>Mono-material requirements</li>
-              <li>Regulatory jurisdictions you&apos;re selling into (EU, California, UK)</li>
+              <li>Regulatory jurisdictions you&apos;re selling into (<Link href="/blog/eu-ppwr-packaging-requirements-beauty?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=brief_guide_eu_ppwr">EU</Link>, <Link href="/blog/sb54-packaging-compliance-beauty?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=brief_guide_sb54">California</Link>, UK)</li>
               <li>Public sustainability commitments the brand has already made</li>
             </ul>
 
