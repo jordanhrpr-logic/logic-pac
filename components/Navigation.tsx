@@ -32,6 +32,7 @@ export default function Navigation() {
   }, [])
 
   const isCapActive = capabilitiesLinks.some(l => pathname === l.href)
+  const isDarkNav = pathname.startsWith('/work/') && pathname !== '/work'
 
   const handleDdEnter = useCallback(() => {
     if (ddTimer.current) clearTimeout(ddTimer.current)
@@ -55,7 +56,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="scrolled">
+      <nav className={`scrolled${isDarkNav ? ' nav-dark' : ''}`}>
         <Link href="/" className="nav-logo">
           <div className="lm"><span></span><span></span></div>
           <div className="lt">Logic Pac <small>by Logic Agency Inc.</small></div>

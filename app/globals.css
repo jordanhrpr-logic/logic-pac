@@ -21,6 +21,15 @@ nav .lt small{color:var(--slate)}
 nav .nav-links a{color:var(--slate)}
 nav .nav-links a:hover,nav .nav-links a.act{color:var(--navy)}
 nav .nav-toggle span{background:var(--navy)}
+nav.nav-dark{background:rgba(5,13,31,0.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav.nav-dark .lm span{border-color:rgba(255,255,255,.5)}
+nav.nav-dark .lt{color:white}
+nav.nav-dark .lt small{color:rgba(255,255,255,.4)}
+nav.nav-dark .nav-links a{color:rgba(255,255,255,.6)}
+nav.nav-dark .nav-links a:hover,nav.nav-dark .nav-links a.act{color:white}
+nav.nav-dark .nav-dd-trigger{color:rgba(255,255,255,.6)}
+nav.nav-dark .nav-dd-trigger:hover,nav.nav-dark .nav-dd-trigger.act{color:white}
+nav.nav-dark .nav-toggle span{background:white}
 .nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;text-decoration:none}
 .lm{position:relative;width:30px;height:20px;flex-shrink:0}
 .lm span{position:absolute;width:18px;height:18px;border-radius:50%;border:2.5px solid rgba(255,255,255,.6);transition:border-color .35s}
@@ -331,8 +340,8 @@ nav .nav-toggle span{background:var(--navy)}
 .gcta-a{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
 /* Work case studies */
-.case-hero{min-height:680px;background:var(--navy);display:grid;grid-template-columns:48% 52%}
-.case-hero-copy{padding:92px 72px 72px 80px;display:flex;flex-direction:column;justify-content:center}
+.case-hero{min-height:680px;background:var(--navy);display:grid;grid-template-columns:48% 52%;margin-top:-64px}
+.case-hero-copy{padding:128px 72px 72px 80px;display:flex;flex-direction:column;justify-content:center}
 .case-breadcrumb{display:flex;align-items:center;gap:9px;margin-bottom:42px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.38)}
 .case-breadcrumb a{color:rgba(255,255,255,.58);transition:color .2s}
 .case-breadcrumb a:hover,.case-breadcrumb a:focus-visible{color:var(--lime)}
@@ -539,7 +548,7 @@ nav{padding:0 24px}
 }
 @media(max-width:960px){
 .case-hero{grid-template-columns:1fr;min-height:auto}
-.case-hero-copy{padding:72px 40px 56px}
+.case-hero-copy{padding:108px 40px 56px}
 .case-hero-image{min-height:500px}
 .case-meta{margin-top:38px}
 .case-intro{grid-template-columns:1fr;gap:32px;padding:76px 40px}
@@ -597,7 +606,7 @@ footer{padding:48px 24px 32px}
 .identity{padding:0 24px}
 }
 @media(max-width:600px){
-.case-hero-copy{padding:56px 24px 44px}
+.case-hero-copy{padding:88px 24px 44px}
 .case-breadcrumb{margin-bottom:30px}
 .case-hero-image{min-height:340px}
 .case-meta{grid-template-columns:1fr;gap:14px}
