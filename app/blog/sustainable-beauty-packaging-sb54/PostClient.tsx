@@ -284,12 +284,12 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>The Bottom Line</h2>
+            <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>The strongest sustainable beauty packaging starts with structure. Material first. Claim second.</p>
             <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board. The <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_artilect_case_study">Artilect packaging reduction case study</Link> shows what material-first sustainability looks like in a real program.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a sustainable packaging consultation</a> and we&apos;ll help you build the system before the claim.</p>
             <section className="sources-section">
-              <h2>Primary Sources</h2>
+              <h2 id="primary-sources">Primary Sources</h2>
               <VerifiedAsOf />
               <ul className="sources-list">
                 <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Environmental Claims and Green Guides</a></li>
@@ -302,7 +302,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need a Sustainability<br /><em>Packaging Plan?</em></h2>
+          <h2 id="need-a-sustainabilitypackaging-plan">Need a Sustainability<br /><em>Packaging Plan?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you map materials, claims, and compliance &mdash; not just aesthetics.</p>
           <button className="bi" onClick={() => openModal('Sustainable Packaging')}>Book a Consultation</button>
         </div>

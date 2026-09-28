@@ -160,7 +160,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>Gift set packaging design is a series of decisions that compound. The structure determines cost. The insert determines product fit. The finish determines shelf presence. The timeline determines whether you have room to get it right.</p>
             <p>Start with the brief. Define the products, the target cost, the channel, and the quantity. That gives us enough to recommend a structure, quote realistic pricing, and map the production timeline. See how we developed gift set packaging for a growing skincare line in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=gift_set_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=gift-set-packaging-design" target="_blank" rel="noopener noreferrer">Book a consultation</a> to scope your gift set packaging project.</p>
@@ -169,7 +169,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Planning Holiday<br /><em>Packaging?</em></h2>
+          <h2 id="planning-holidaypackaging">Planning Holiday<br /><em>Packaging?</em></h2>
           <p>Start now. We&apos;ll map the timeline backward from your retail ship date.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Holiday Planning</button>
         </div>

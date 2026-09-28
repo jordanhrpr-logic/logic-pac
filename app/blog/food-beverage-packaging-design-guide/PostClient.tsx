@@ -225,7 +225,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Build Packaging That Works Beyond the First Sale</h2>
+            <h2 id="build-packaging-that-works-beyond-the-first-sale">Build Packaging That Works Beyond the First Sale</h2>
             <p>Food and beverage packaging has to do more than look good on shelf. It has to protect product quality, carry required information, fit the retail system, and keep the margin intact.</p>
             <p>If you are moving from local sales, DTC, or early wholesale into a bigger retail channel, we can help build packaging that is designed for the next stage, not just the next photoshoot.</p>
             <p><a href="https://calendly.com/jordan-harper-logic/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a Food and Beverage Packaging Consultation</a></p>
@@ -234,7 +234,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Design Your<br /><em>Packaging?</em></h2>
+          <h2 id="ready-to-design-yourpackaging">Ready to Design Your<br /><em>Packaging?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; not a sales pitch.</p>
           <button className="bi" onClick={() => openModal()}>Book a Consultation</button>
         </div>

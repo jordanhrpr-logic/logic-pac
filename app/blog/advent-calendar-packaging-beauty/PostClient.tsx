@@ -175,7 +175,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>If you&apos;ve been asked to produce an advent calendar for this year&apos;s holiday season, the timeline starts now. The structural format, product lineup, and budget need to be defined before design can begin. We&apos;ll scope the project, confirm what&apos;s realistic for your timeline, and walk you through the format options that fit your product mix and price point.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=advent-calendar-packaging-beauty" target="_blank" rel="noopener noreferrer">Book a consultation</a> to start scoping your advent calendar project.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, helping beauty and wellness brands design, source, and manufacture packaging from concept to delivery.*</p>
@@ -183,7 +183,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Planning Holiday<br /><em>Packaging?</em></h2>
+          <h2 id="planning-holidaypackaging">Planning Holiday<br /><em>Packaging?</em></h2>
           <p>Start now. We&apos;ll map the timeline backward from your retail ship date.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Holiday Planning</button>
         </div>

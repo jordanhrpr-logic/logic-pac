@@ -234,7 +234,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Use Benchmarks as a Starting Point, Not a Rule</h2>
+            <h2 id="use-benchmarks-as-a-starting-point-not-a-rule">Use Benchmarks as a Starting Point, Not a Rule</h2>
             <p>Packaging benchmarks are useful because they show when something is obviously off. They do not replace a real cost model.</p>
             <p>The right package fits the product, the channel, the brand, and the margin. That takes more than a quote. It takes a system.</p>
             <p>If you want to pressure-test your packaging cost against your category and channel, we can help you separate smart spend from avoidable waste. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_epicutis_case_study">Epicutis program</Link> achieved 15% packaging cost savings across 21+ SKUs, and the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_artilect_case_study">Artilect packaging reduction</Link> cut cost by engineering out material the customer never valued.</p>
@@ -244,7 +244,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Start Your<br /><em>Project?</em></h2>
+          <h2 id="ready-to-start-yourproject">Ready to Start Your<br /><em>Project?</em></h2>
           <p>Tell us your launch date and we&rsquo;ll map the packaging timeline backward.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Project</button>
         </div>

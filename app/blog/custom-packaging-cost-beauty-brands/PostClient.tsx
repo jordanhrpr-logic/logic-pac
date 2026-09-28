@@ -255,7 +255,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>The Bottom Line</h2>
+            <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>Custom packaging cost is not mysterious. It is a stack of decisions: format, material, finish, tooling, volume, freight, and timeline.</p>
             <p>Beauty brands get into trouble when they treat packaging as a design expense only. It is also a margin decision. A launch decision. A retail decision. A customer-experience decision.</p>
             <p>The goal is not to spend the least. The goal is to spend where the customer notices, simplify where they do not, and build a packaging system the brand can reorder without starting over every time. See how that works in practice: the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_epicutis_case_study">Epicutis packaging program</Link> scaled to 21+ SKUs with verified cost savings, and the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_artilect_case_study">Artilect packaging reduction</Link> removed material without weakening the brand experience.</p>
@@ -264,7 +264,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Get a<br /><em>Real Quote?</em></h2>
+          <h2 id="ready-to-get-areal-quote">Ready to Get a<br /><em>Real Quote?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you realistic pricing for your specific product, volume, and finish requirements &mdash; not a range.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Book a Packaging Consultation</button>
         </div>

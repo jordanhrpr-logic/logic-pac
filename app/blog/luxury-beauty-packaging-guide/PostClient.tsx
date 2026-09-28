@@ -175,7 +175,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>Luxury packaging development starts with a structure conversation, not a mood board. Before committing to finishes or materials, define the weight, the closure, and the insert architecture. Everything else follows. See how a prestige skincare brand built a coordinated luxury packaging system in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=luxury_guide_consultation" target="_blank" rel="noopener noreferrer">Book a consultation</a> and we will help you define the structural foundation, finish hierarchy, and cost model for your luxury packaging project.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
@@ -183,7 +183,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Design Your<br /><em>Packaging?</em></h2>
+          <h2 id="ready-to-design-yourpackaging">Ready to Design Your<br /><em>Packaging?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; not a sales pitch.</p>
           <button className="bi" onClick={() => openModal()}>Book a Consultation</button>
         </div>

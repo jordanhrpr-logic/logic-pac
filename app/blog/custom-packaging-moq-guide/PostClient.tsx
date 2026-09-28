@@ -206,7 +206,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Build the Right Quantity for the Stage You&apos;re In</h2>
+            <h2 id="build-the-right-quantity-for-the-stage-youre-in">Build the Right Quantity for the Stage You&apos;re In</h2>
             <p>MOQ strategy is not about forcing custom packaging too early or buying more inventory than you can use. It is about matching structure, volume, and cash to the stage of the brand.</p>
             <p>If you are trying to move from stock packaging into custom production, we can help you find the right bridge: standard structure, custom finish, low-risk test run, or full production order.</p>
             <p><a href="https://calendly.com/jordan-harper-logic/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=moq_consultation" target="_blank" rel="noopener noreferrer">Book a Packaging MOQ Consultation</a></p>
@@ -215,7 +215,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Start Your<br /><em>Project?</em></h2>
+          <h2 id="ready-to-start-yourproject">Ready to Start Your<br /><em>Project?</em></h2>
           <p>Tell us your launch date and we&apos;ll map the packaging timeline backward.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Project</button>
         </div>

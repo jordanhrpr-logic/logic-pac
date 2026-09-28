@@ -206,7 +206,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Start Your Holiday Packaging Program Now</h2>
+            <h2 id="start-your-holiday-packaging-program-now">Start Your Holiday Packaging Program Now</h2>
             <p>Holiday packaging is a calendar discipline. The brands that win Q4 don&apos;t wait for the marketing team to feel the urgency. They lock the format early, build the brief, approve samples on schedule, and leave room for freight.</p>
             <p>The package can feel seasonal. The process can&apos;t afford to be.</p>
             <p>If you&apos;re planning holiday gift sets for this year&apos;s Q4, we should be talking now. We&apos;ll scope the project, confirm timelines, and tell you what we need to get started. See how we produced holiday gift set packaging for a premium skincare brand in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_epicutis_case_study">Epicutis case study</Link>.</p>
@@ -215,7 +215,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Plan Your<br /><em>Holiday Packaging?</em></h2>
+          <h2 id="ready-to-plan-yourholiday-packaging">Ready to Plan Your<br /><em>Holiday Packaging?</em></h2>
           <p>Book a 30-minute call. We&apos;ll scope your holiday gift set program, confirm timelines, and tell you exactly what we need to get started &mdash; before the calendar runs out.</p>
           <button className="bi" onClick={() => openModal('Holiday Gift Set / Seasonal Kit')}>Book a Holiday Kit Consultation</button>
         </div>

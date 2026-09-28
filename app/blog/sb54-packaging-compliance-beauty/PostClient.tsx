@@ -333,13 +333,13 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>The Bottom Line</h2>
+            <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>SB 54 is not a reason to panic. It is a reason to get precise.</p>
             <p>Start with the packaging you already have. Map every component. Gather the proof. Identify what needs to change. Then redesign in the right order.</p>
             <p>If your team needs help translating SB 54 into a packaging roadmap, we can help.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_packaging_consultation" target="_blank" rel="noopener noreferrer">Book an SB 54 packaging consultation</a> and we&apos;ll help you build the audit before the redesign.</p>
             <section className="sources-section">
-              <h2>Primary Sources</h2>
+              <h2 id="primary-sources">Primary Sources</h2>
               <VerifiedAsOf />
               <ul className="sources-list">
                 <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR program</a></li>
@@ -351,7 +351,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need an SB 54<br /><em>Packaging Audit?</em></h2>
+          <h2 id="need-an-sb-54packaging-audit">Need an SB 54<br /><em>Packaging Audit?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you map materials, claims, and compliance risk &mdash; component by component.</p>
           <button className="bi" onClick={() => openModal('SB 54 Compliance')}>Book a Consultation</button>
         </div>

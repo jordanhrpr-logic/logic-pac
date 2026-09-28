@@ -166,7 +166,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>Start with the send list. How many influencers, what tier of creator, and what&apos;s the occasion? The answers determine which packaging tier makes sense, what the per-unit budget should be, and whether the ROI math works.</p>
             <p>We&apos;ll quote the packaging, map the timeline, and show you where to allocate budget for maximum post rate.</p>
             <p>For a real example of the premium tier in production, see the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pr_kit_cost_adidas_case_study">Adidas Nemeziz launch kit case study</Link>.</p>
@@ -176,7 +176,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need a Packaging<br /><em>Quote?</em></h2>
+          <h2 id="need-a-packagingquote">Need a Packaging<br /><em>Quote?</em></h2>
           <p>Tell us what you need and we&apos;ll send real pricing &mdash; not a generic estimate.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Get a Custom Quote</button>
         </div>

@@ -204,7 +204,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Start With the Timeline, Not the Design</h2>
+            <h2 id="start-with-the-timeline-not-the-design">Start With the Timeline, Not the Design</h2>
             <p>The brands that hit their launch dates consistently do one thing differently: they start with the calendar and work backward, instead of starting with the design and hoping the timeline works out.</p>
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>
             <p>See the full phase-by-phase breakdown in our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_concept_shelf_guide">Concept to Shelf Timeline guide</Link>, or see how timeline discipline works across a growing portfolio in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_epicutis_case_study">Epicutis case study</Link>.</p>
@@ -212,7 +212,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Plan Your<br /><em>Timeline?</em></h2>
+          <h2 id="ready-to-plan-yourtimeline">Ready to Plan Your<br /><em>Timeline?</em></h2>
           <p>Tell us your launch date and we&apos;ll map the packaging timeline backward &mdash; so you know exactly when each phase needs to start.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Packaging Timeline</button>
         </div>

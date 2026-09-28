@@ -171,7 +171,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>Choosing the right cosmetic packaging format is easier when you can see the full picture &mdash; formula requirements, volume plan, channel constraints, and budget &mdash; in one conversation. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_epicutis_case_study">Epicutis case study</Link> shows how one brand managed 21+ SKUs across multiple formats as a coordinated system.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will walk through the format options that fit your product, your timeline, and your margin model.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
@@ -179,7 +179,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Not Sure Which Format<br /><em>Fits?</em></h2>
+          <h2 id="not-sure-which-formatfits">Not Sure Which Format<br /><em>Fits?</em></h2>
           <p>Tell us your product, volume, and budget &mdash; we&apos;ll recommend the right format.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Talk to a Packaging Expert</button>
         </div>

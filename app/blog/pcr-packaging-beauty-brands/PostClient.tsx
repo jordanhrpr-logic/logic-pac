@@ -172,12 +172,12 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>PCR adoption is a material science decision, a regulatory compliance decision, and a brand positioning decision all at once. Getting it right requires testing the formula against the material, verifying supplier claims, and building a sourcing plan that accounts for supply variability.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=pcr_consultation" target="_blank" rel="noopener noreferrer">Book a sustainability packaging consultation</a> and we will help you define the right PCR specification for your products, identify qualified suppliers, and plan the testing and certification process.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
             <section className="sources-section">
-              <h2>Primary Sources</h2>
+              <h2 id="primary-sources">Primary Sources</h2>
               <VerifiedAsOf />
               <ul className="sources-list">
                 <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR</a></li>
@@ -189,7 +189,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Go<br /><em>Sustainable?</em></h2>
+          <h2 id="ready-to-gosustainable">Ready to Go<br /><em>Sustainable?</em></h2>
           <p>We&apos;ll audit your current packaging and show you what&apos;s actually achievable.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Book a Sustainability Review</button>
         </div>

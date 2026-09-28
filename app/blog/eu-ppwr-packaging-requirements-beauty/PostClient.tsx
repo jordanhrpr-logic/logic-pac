@@ -182,14 +182,14 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Start Planning Before the Deadlines Arrive</h2>
+            <h2 id="start-planning-before-the-deadlines-arrive">Start Planning Before the Deadlines Arrive</h2>
             <p>PPWR compliance is not a single event. It is a phased transition that rewards brands who start early and penalizes brands who wait for enforcement.</p>
             <p>The brands that audit their packaging now, qualify PCR supply in 2026-2027, redesign multi-material formats before the 2030 deadline, and build labeling systems for harmonized EU requirements will have lower cost, less disruption, and more credible sustainability claims than brands that scramble at each phase gate.</p>
             <p>If your team needs to map EU PPWR packaging requirements against your current portfolio, we can walk through the audit, identify priority changes, and build a compliance timeline that fits your product roadmap.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
 
-            <h2>Sources Reviewed</h2>
+            <h2 id="sources-reviewed">Sources Reviewed</h2>
             <VerifiedAsOf />
             <ul>
               <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 on packaging and packaging waste</a></li>
@@ -200,7 +200,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need Compliance<br /><em>Help?</em></h2>
+          <h2 id="need-compliancehelp">Need Compliance<br /><em>Help?</em></h2>
           <p>We&apos;ll review your packaging against current and upcoming regulations.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Book a Compliance Review</button>
         </div>

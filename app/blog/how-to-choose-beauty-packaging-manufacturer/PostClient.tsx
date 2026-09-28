@@ -301,7 +301,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>The Bottom Line</h2>
+            <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>A good beauty packaging manufacturer does more than make the thing you ask for.</p>
             <p>They protect the project from bad assumptions. Wrong material. Wrong MOQ. Wrong timeline. Wrong finish. Wrong supplier. Wrong cost target.</p>
             <p>That is what you are really buying: production judgment.</p>
@@ -311,7 +311,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Choosing a Packaging<br /><em>Partner?</em></h2>
+          <h2 id="choosing-a-packagingpartner">Choosing a Packaging<br /><em>Partner?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you evaluate manufacturers, compare quotes, and avoid the red flags &mdash; before you commit.</p>
           <button className="bi" onClick={() => openModal('Packaging Manufacturer')}>Book a Consultation</button>
         </div>

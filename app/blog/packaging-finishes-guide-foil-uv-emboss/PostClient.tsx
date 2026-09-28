@@ -313,7 +313,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Pick the Finish That Carries the Moment</h2>
+            <h2 id="pick-the-finish-that-carries-the-moment">Pick the Finish That Carries the Moment</h2>
             <p>Finishes are not decoration. They&apos;re signals.</p>
             <p>A foil stamp says precision. Soft touch says calm. Embossing says tactility. Spot UV says contrast. Interior print says there is more to discover.</p>
             <p>The best finish is the one that makes the brand feel more true, not more expensive for no reason.</p>
@@ -321,7 +321,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need Help Choosing<br /><em>Finishes?</em></h2>
+          <h2 id="need-help-choosingfinishes">Need Help Choosing<br /><em>Finishes?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you choose the right finish for your product, brand, and budget &mdash; so you get premium impact without overbuilding.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Book a Finish Consultation</button>
         </div>

@@ -195,7 +195,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>The HDPE vs PET decision is a formula-and-function question first, an aesthetics question second. Start with compatibility testing, confirm the dispensing method, then optimize for brand presentation within the material that works.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_consultation" target="_blank" rel="noopener noreferrer">Book a material consultation</a> and we will help you match the right material to your formula, volume plan, and brand requirements.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
@@ -203,7 +203,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need Help Choosing<br /><em>Materials?</em></h2>
+          <h2 id="need-help-choosingmaterials">Need Help Choosing<br /><em>Materials?</em></h2>
           <p>We&apos;ll help you pick the right material for your formula, channel, and margin.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Talk Materials</button>
         </div>

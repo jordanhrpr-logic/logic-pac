@@ -150,18 +150,18 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Build Jewelry Packaging That Matches the Product</h2>
+            <h2 id="build-jewelry-packaging-that-matches-the-product">Build Jewelry Packaging That Matches the Product</h2>
             <p>Jewelry packaging carries more responsibility than most categories. It protects the piece, frames the value, and turns a small object into a complete brand experience. If you&rsquo;re planning a new jewelry box, retail-ready format, seasonal gift set, or full packaging refresh, start with the structure, material, volume, and channel requirements before chasing finishes.</p>
             <p>When you&rsquo;re ready to pressure-test the direction, <a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=jewelry-packaging-design-guide_consultation" target="_blank" rel="noopener noreferrer">book a jewelry packaging consultation</a>. We&rsquo;ll give you a straight read on format, cost, MOQ, timeline, and what should be solved before the first sample is made.</p>
 
             <p><em>Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, jewelry, and luxury goods brands design packaging that looks premium, protects the product, and works in production.</em></p>
 
-            <h2>Questions to Ask Before You Quote This Project</h2>
+            <h2 id="questions-to-ask-before-you-quote-this-project">Questions to Ask Before You Quote This Project</h2>
             <p>A jewelry packaging quote should answer more than unit price. Ask the supplier which material will be used, what the MOQ is by size, what tooling is required, how color will be matched across the full collection, how inserts will be approved, what freight method is assumed, and what happens if the production sample fails approval.</p>
             <p>Ask for the landed-cost view, not just the factory cost. A box that looks cheaper before freight can be more expensive after dimensional weight, storage, rework, and rush shipping. Jewelry packaging is small, but it is often component-heavy. The more components in the system, the more important the quote discipline becomes.</p>
             <p>Also ask who owns the final production checklist. The checklist should include material, color, lining, hardware, logo placement, insert fit, carton labeling, shipping carton specs, and acceptable defect tolerance. If those details are not defined before production, they become arguments after production.</p>
 
-            <h2>How to Use This as a Packaging Brief</h2>
+            <h2 id="how-to-use-this-as-a-packaging-brief">How to Use This as a Packaging Brief</h2>
             <p>Turn the article into a brief before you ask for pricing. List the product formats, dimensions, materials, inserts, finishes, order quantities, launch date, sales channel, shipping method, and target landed cost. Then separate what is required from what is optional. Required items protect the product and brand. Optional items are where cost can be adjusted without damaging the experience.</p>
             <p>For jewelry brands, the most important brief detail is the full collection map. A supplier needs to know whether this is one ring box or a system across rings, earrings, necklaces, bracelets, pendants, and seasonal kits. Without that map, the first sample can look good and still fail the collection.</p>
             <p>Also include approval owners. Jewelry packaging often gets reviewed by founders, brand, product, retail, and operations. If those people review samples one at a time, the project slows down. If they review against the same brief, decisions get cleaner.</p>
@@ -169,7 +169,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Start Your<br /><em>Project?</em></h2>
+          <h2 id="ready-to-start-yourproject">Ready to Start Your<br /><em>Project?</em></h2>
           <p>Tell us your launch date and we&rsquo;ll map the packaging timeline backward.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Project</button>
         </div>

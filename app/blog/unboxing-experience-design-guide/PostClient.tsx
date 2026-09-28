@@ -164,7 +164,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>Unboxing experience design starts in the brief, not in the graphic design phase. Define the channel (DTC, PR, retail), the reveal sequence you want to create, the tactile hierarchy, and the camera angles that matter. Those decisions shape the structure, materials, and finish selections that follow.</p>
             <p>We design unboxing experiences for beauty and wellness brands from initial concept through production. We&apos;ll walk you through the structural options, show you material samples, and prototype the sequence before committing to production.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=unboxing-experience-design-guide" target="_blank" rel="noopener noreferrer">Book a consultation</a> to start designing your unboxing experience.</p>
@@ -173,7 +173,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Design Your<br /><em>Packaging?</em></h2>
+          <h2 id="ready-to-design-yourpackaging">Ready to Design Your<br /><em>Packaging?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; not a sales pitch.</p>
           <button className="bi" onClick={() => openModal()}>Book a Consultation</button>
         </div>

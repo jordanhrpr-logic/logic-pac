@@ -176,7 +176,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Know the Process Before You Start the Process</h2>
+            <h2 id="know-the-process-before-you-start-the-process">Know the Process Before You Start the Process</h2>
             <p>Custom packaging development is not mysterious. It is a sequence of decisions, each building on the last, with clear inputs and outputs at every stage. The brands that move through it efficiently are the ones that understand the stages, make decisions promptly, and treat their packaging partner as a collaborator, not a vendor waiting for instructions.</p>
             <p>If you are developing custom packaging for a beauty, wellness, or consumer brand and want a partner who manages the process from brief through delivery, we can walk through your project scope and build a realistic timeline. See the process applied at scale in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=dev_process_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
@@ -185,7 +185,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Start Your<br /><em>Project?</em></h2>
+          <h2 id="ready-to-start-yourproject">Ready to Start Your<br /><em>Project?</em></h2>
           <p>Tell us your launch date and we&apos;ll map the packaging timeline backward.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Project</button>
         </div>

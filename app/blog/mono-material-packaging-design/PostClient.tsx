@@ -183,13 +183,13 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>Design for the Stream, Not the Label</h2>
+            <h2 id="design-for-the-stream-not-the-label">Design for the Stream, Not the Label</h2>
             <p>The packaging industry spent years putting recyclable symbols on packages that recycling systems cannot actually process. Mono-material packaging design closes that gap. It does not require exotic materials or radical formats. It requires discipline: one material family, compatible components, and honest claims.</p>
             <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path. See how disciplined material simplification works in practice in the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono_material_artilect_case_study">Artilect packaging reduction case study</Link>.</p>
             <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
             <section className="sources-section">
-              <h2>Primary Sources</h2>
+              <h2 id="primary-sources">Primary Sources</h2>
               <VerifiedAsOf />
               <ul className="sources-list">
                 <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: PPWR design-for-recycling requirements</a></li>
@@ -201,7 +201,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Ready to Go<br /><em>Sustainable?</em></h2>
+          <h2 id="ready-to-gosustainable">Ready to Go<br /><em>Sustainable?</em></h2>
           <p>We&apos;ll audit your current packaging and show you what&apos;s actually achievable.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Book a Sustainability Review</button>
         </div>

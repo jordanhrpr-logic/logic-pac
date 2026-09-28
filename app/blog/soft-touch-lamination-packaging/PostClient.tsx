@@ -179,7 +179,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>What to Do Next</h2>
+            <h2 id="what-to-do-next">What to Do Next</h2>
             <p>Soft touch lamination is one of the most effective finishes for beauty packaging, but the execution details matter &mdash; substrate compatibility, color selection, post-lamination finishing, and scuff protection all affect whether the finish delivers on its promise.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_consultation" target="_blank" rel="noopener noreferrer">Book a finish consultation</a> and we will help you evaluate whether soft touch lamination fits your product, your retail environment, and your cost model &mdash; and specify it correctly if it does.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
@@ -187,7 +187,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Want to See Finishes<br /><em>in Person?</em></h2>
+          <h2 id="want-to-see-finishesin-person">Want to See Finishes<br /><em>in Person?</em></h2>
           <p>We&apos;ll send you physical samples so you can feel the difference before committing.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Request Samples</button>
         </div>

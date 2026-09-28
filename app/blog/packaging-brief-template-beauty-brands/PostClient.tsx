@@ -381,7 +381,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>The Bottom Line</h2>
+            <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>Packaging projects don&apos;t usually fail because the supplier can&apos;t make a box.</p>
             <p>They fail because the team started without enough clarity.</p>
             <p>The brief is where that gets fixed. Product specs. Volume. Budget. Channel. Materials. Timeline. Approval chain. Put the real constraints on the page before the first sample.</p>
@@ -391,7 +391,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Need Help With<br /><em>Your Brief?</em></h2>
+          <h2 id="need-help-withyour-brief">Need Help With<br /><em>Your Brief?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you build a supplier-ready packaging brief &mdash; not just a mood board.</p>
           <button className="bi" onClick={() => openModal('Packaging Brief')}>Book a Consultation</button>
         </div>

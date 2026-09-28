@@ -278,7 +278,7 @@ export default function PostClient() {
       />
 
       <div className="blog-conclusion">
-            <h2>The Bottom Line</h2>
+            <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>Good skincare packaging starts with the formula and ends with the customer experience.</p>
             <p>The right structure protects the product. The right material supports the claim. The right finish makes the brand feel intentional without overbuilding the cost.</p>
             <p>If you&apos;re planning a skincare launch or redesign, we can help map the format, material, finish, and cost tradeoffs before production starts. See how we built a coordinated skincare packaging system supporting 21+ SKUs in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_epicutis_case_study">Epicutis case study</Link>.</p>
@@ -287,7 +287,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Planning a Skincare<br /><em>Launch?</em></h2>
+          <h2 id="planning-a-skincarelaunch">Planning a Skincare<br /><em>Launch?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you choose the right format, material, and finish for your formula &mdash; not just your mood board.</p>
           <button className="bi" onClick={() => openModal('Skincare Packaging')}>Book a Consultation</button>
         </div>

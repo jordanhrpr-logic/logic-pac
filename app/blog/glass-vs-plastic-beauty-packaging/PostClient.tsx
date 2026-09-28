@@ -188,7 +188,7 @@ export default function PostClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Not Sure Which Material<br /><em>Is Right?</em></h2>
+          <h2 id="not-sure-which-materialis-right">Not Sure Which Material<br /><em>Is Right?</em></h2>
           <p>Tell us about your product, channel, and volume &mdash; we&apos;ll recommend the right material and source it for you.</p>
           <button className="bi" onClick={() => openModal('Custom Packaging')}>Book a Packaging Consultation</button>
         </div>

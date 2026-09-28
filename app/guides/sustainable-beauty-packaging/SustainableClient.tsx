@@ -96,7 +96,7 @@ export default function SustainableClient() {
 
             {/* WHY */}
             <section id="why">
-              <h2>Sustainability Is Now a Packaging-System Decision</h2>
+              <h2 id="sustainability-system-decision">Sustainability Is Now a Packaging-System Decision</h2>
               <p className="lede">Material, product protection, sourcing, claims, and recovery have to work together.</p>
               <p>The EU, California, and the FTC each regulate environmental claims or packaging in different ways. Several rules enter new phases in 2026, but applicability and enforcement depend on the market, packaging category, and claim. Brands should review claims, certifications, and material records against the official requirements that apply to them.</p>
               <p>At the same time, generic &ldquo;eco-friendly&rdquo; language is harder to defend. A material choice and its marketing claim must be supported by documentation for the finished package, the markets where it will be sold, and the recovery infrastructure customers can actually access.</p>
@@ -120,7 +120,7 @@ export default function SustainableClient() {
 
             {/* 1. SPECTRUM */}
             <section id="spectrum">
-              <h2><span className="num">01.</span>Six Practical Paths&mdash;and What Each Asks of the Operation</h2>
+              <h2 id="six-practical-paths"><span className="num">01.</span>Six Practical Paths&mdash;and What Each Asks of the Operation</h2>
               <p>Most brands talk about &ldquo;sustainable packaging&rdquo; as a binary &mdash; you either are or you aren&apos;t.</p>
               <p>The reality is a spectrum. Six tiers, each with different cost, perception, and infrastructure tradeoffs.</p>
 
@@ -146,7 +146,7 @@ export default function SustainableClient() {
 
             {/* 2. MATERIALS */}
             <section id="materials">
-              <h2><span className="num">02.</span>Material Families</h2>
+              <h2 id="material-families"><span className="num">02.</span>Material Families</h2>
               <p>Every beauty packaging decision comes back to material choice. Here&apos;s what each option actually delivers.</p>
 
               <h3>PCR (Post-Consumer Recycled) Plastic</h3>
@@ -214,7 +214,7 @@ export default function SustainableClient() {
 
             {/* 3. CERTIFICATIONS */}
             <section id="certifications">
-              <h2><span className="num">03.</span>What to Verify Before You Repeat a Sustainability Claim</h2>
+              <h2 id="verify-sustainability-claims"><span className="num">03.</span>What to Verify Before You Repeat a Sustainability Claim</h2>
               <p>Certifications protect your brand from greenwashing exposure and signal credibility to buyers, retailers, and regulators. Not all of them carry equal weight. Here&apos;s what to specify, what to skip.</p>
 
               <h3>FSC (Forest Stewardship Council)</h3>
@@ -255,7 +255,7 @@ export default function SustainableClient() {
 
             {/* 4. REGULATORY */}
             <section id="regulatory">
-              <h2><span className="num">04.</span>Where Claims, Materials, and Market Access Intersect</h2>
+              <h2 id="claims-materials-market"><span className="num">04.</span>Where Claims, Materials, and Market Access Intersect</h2>
               <p>Several packaging and environmental-claims rules enter new implementation phases in 2026. The requirements differ by jurisdiction, product, packaging category, and claim, so brands should verify the applicable text rather than treat them as one deadline.</p>
 
               <h3>EU Packaging and Packaging Waste Regulation (PPWR)</h3>
@@ -300,7 +300,7 @@ export default function SustainableClient() {
 
             {/* 5. CLAIMS HYGIENE */}
             <section id="claims">
-              <h2><span className="num">05.</span>The Claims Hygiene Framework</h2>
+              <h2 id="claims-hygiene-framework"><span className="num">05.</span>The Claims Hygiene Framework</h2>
               <p>Before any sustainability claim goes on-pack &mdash; or in marketing copy &mdash; run it through this three-question test.</p>
 
               <h3>Question 1: Is it specific?</h3>
@@ -344,7 +344,7 @@ export default function SustainableClient() {
 
             {/* 6. MISTAKES */}
             <section id="mistakes">
-              <h2><span className="num">06.</span>The Mistakes Brands Make</h2>
+              <h2 id="mistakes-brands-make"><span className="num">06.</span>The Mistakes Brands Make</h2>
               <p>Patterns we see repeatedly. All of them avoidable.</p>
 
               <h3>Mistake 1: Switching plastic to paper without lifecycle math</h3>
@@ -374,7 +374,7 @@ export default function SustainableClient() {
 
             {/* 7. SWAPS */}
             <section id="swaps">
-              <h2><span className="num">07.</span>The Lowest-Drag Improvements to Assess First</h2>
+              <h2 id="lowest-drag-improvements"><span className="num">07.</span>The Lowest-Drag Improvements to Assess First</h2>
               <p>Seven changes that deliver immediate impact on most existing packaging systems &mdash; without a full redesign.</p>
 
               <div className="swap-card">
@@ -422,7 +422,7 @@ export default function SustainableClient() {
 
             {/* Sources */}
             <section className="sources-section">
-              <h2>Sources</h2>
+              <h2 id="sources">Sources</h2>
               <VerifiedAsOf />
               <p className="sources-lede">Primary regulatory and certification sources used for the claims in this guide. Cost and lead-time ranges are Logic Pac operating guidance and vary by specification, volume, and supplier.</p>
               <ul className="sources-list">
@@ -448,7 +448,7 @@ export default function SustainableClient() {
       <div className="guide-faq">
         <div className="guide-faq-inner">
           <div className="guide-faq-content">
-            <h2>Still Have Questions?</h2>
+            <h2 id="still-have-questions">Still Have Questions?</h2>
             <p>Here are the most common questions we get about sustainable beauty packaging. If you don&apos;t see your question, book a call and we&apos;ll give you a straight answer.</p>
           </div>
           <FAQSidebar
@@ -463,7 +463,7 @@ export default function SustainableClient() {
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Make Sustainability<br /><em>Defensible</em></h2>
+          <h2 id="make-sustainability-defensible">Make Sustainability<br /><em>Defensible</em></h2>
           <p>The right material, the right claim, the right certification &mdash; in every jurisdiction you ship into.</p>
           <button className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Book a Consultation</button>
         </div>
