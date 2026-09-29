@@ -62,7 +62,7 @@ export default function BlogFAQ({
             <div className="fqa" role="region">{faq.answer}</div>
           </div>
         ))}
-        <button
+        <button type="button"
           className="bi"
           onClick={() => openModal(ctaProjectType)}
           style={{ width: '100%', marginTop: 28, textAlign: 'center' }}

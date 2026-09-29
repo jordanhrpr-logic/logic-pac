@@ -3,7 +3,7 @@ import PackagingCaseStudy from '@/components/PackagingCaseStudy'
 import { buildCaseStudySchema } from '@/lib/case-study-schema'
 
 const title = 'Audio Enhancement Factory Transition Case Study'
-const description = 'How Logic ran a dual-track factory transition for Audio Enhancement — QC containment on existing inventory while qualifying a new manufacturer — without missing a shipment.'
+const description = 'How Logic contained quality issues and moved Audio Enhancement to a scalable factory without interrupting active shipments.'
 const image = '/images/work/audio-enhancement/teacher-box-blue-bg.jpg'
 export const metadata: Metadata = { title, description, alternates: { canonical: '/work/audio-enhancement-packaging-system' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', images: [image] } }
 export default function Page() {

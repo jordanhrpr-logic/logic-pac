@@ -42,7 +42,7 @@ export default function HolidayClient() {
         <div className="kphc">
           <h1>Q4&apos;s Biggest Revenue<br />Moment <em>Starts Now</em></h1>
           <p>Holiday kits are the highest-revenue SKUs for most beauty brands. The packaging that earns the gift table requires structural precision, premium materials, and a partner who has done it at scale.</p>
-          <button className="bp" onClick={() => openModal('Holiday Gift Set / Seasonal Kit')}>Request a Quote</button>
+          <button type="button" className="bp" onClick={() => openModal('Holiday Gift Set / Seasonal Kit')}>Request a Quote</button>
         </div>
       </div>
 
@@ -95,7 +95,7 @@ export default function HolidayClient() {
         <div className="ctai">
           <h2>Don&apos;t Let Your Q4<br />Launch <em>Start Late</em></h2>
           <p>Book a 30-minute call. We&apos;ll scope your holiday kit and tell you exactly what we need to get started.</p>
-          <button className="bi" onClick={() => openModal('Holiday Gift Set / Seasonal Kit')}>Book a Holiday Kit Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Holiday Gift Set / Seasonal Kit')}>Book a Holiday Kit Consultation</button>
         </div>
       </section>
     </>

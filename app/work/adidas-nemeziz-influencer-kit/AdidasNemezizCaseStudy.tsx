@@ -101,7 +101,7 @@ export default function AdidasNemezizCaseStudy() {
             <p>Start with the products, the audience, and the reveal you want to create. We’ll pressure-test the structure, production path, and fulfillment plan.</p>
           </div>
           <div className="case-related-actions">
-            <button className="bp" onClick={() => openModal('Influencer / PR Kit')}>Book a Consultation</button>
+            <button type="button" className="bp" onClick={() => openModal('Influencer / PR Kit')}>Book a Consultation</button>
             <Link href="/guides/influencer-kit-playbook" className="bo">Read the Influencer Kit Playbook</Link>
           </div>
         </section>

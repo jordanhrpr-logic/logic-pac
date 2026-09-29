@@ -171,7 +171,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="planning-holidaypackaging">Planning Holiday<br /><em>Packaging?</em></h2>
           <p>Start now. We&apos;ll map the timeline backward from your retail ship date.</p>
-          <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Holiday Planning</button>
+          <button type="button" className="bi" onClick={() => openModal('Custom Packaging')}>Start Holiday Planning</button>
         </div>
       </section>
     </>

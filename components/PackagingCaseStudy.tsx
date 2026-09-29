@@ -65,7 +65,7 @@ export default function PackagingCaseStudy({ study }: { study: Study }) {
 
       <section className="case-related">
         <div><div className="ey">Apply the Pattern</div><h2>Planning a packaging program with similar constraints?</h2><p>Bring us the product, channel, quantity, target cost, and launch date. We’ll help identify the structure and production path worth developing.</p></div>
-        <div className="case-related-actions"><button className="bp" onClick={() => openModal(study.projectType)}>Discuss the Packaging</button><Link href={study.relatedHref} className="bo">{study.relatedLabel}</Link></div>
+        <div className="case-related-actions"><button type="button" className="bp" onClick={() => openModal(study.projectType)}>Discuss the Packaging</button><Link href={study.relatedHref} className="bo">{study.relatedLabel}</Link></div>
       </section>
     </main>
   </>

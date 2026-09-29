@@ -4,7 +4,7 @@ import { homeFaqJsonLd, holidayServiceJsonLd, influencerServiceJsonLd, holidayFa
 
 export const metadata: Metadata = {
   title: { absolute: 'Logic Pac — Custom Packaging for Beauty & Consumer Brands' },
-  description: 'Logic Pac is a custom packaging company and development partner for beauty, cosmetic, and consumer brands. Structural design, global sourcing, holiday gift set manufacturing, influencer kit production, and fulfillment.',
+  description: 'Custom packaging development for beauty and consumer brands, from structural design and global sourcing to gift sets, PR kits, and fulfillment.',
 }
 
 export default function HomePage() {

@@ -205,7 +205,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="need-help-choosingmaterials">Need Help Choosing<br /><em>Materials?</em></h2>
           <p>We&apos;ll help you pick the right material for your formula, channel, and margin.</p>
-          <button className="bi" onClick={() => openModal('Custom Packaging')}>Talk Materials</button>
+          <button type="button" className="bi" onClick={() => openModal('Custom Packaging')}>Talk Materials</button>
         </div>
       </section>
     </>

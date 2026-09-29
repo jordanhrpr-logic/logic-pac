@@ -87,7 +87,7 @@ export default function Navigation() {
           </li>
           <li><button type="button" onClick={() => openModal()} className="ncta">Book a Call</button></li>
         </ul>
-        <button
+        <button type="button"
           className={`nav-toggle${menuOpen ? ' open' : ''}`}
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
@@ -105,7 +105,7 @@ export default function Navigation() {
             {l.label}
           </Link>
         ))}
-        <button className="ncta-m" onClick={() => { openModal(); closeMenu() }}>Book a Call</button>
+        <button type="button" className="ncta-m" onClick={() => { openModal(); closeMenu() }}>Book a Call</button>
       </div>
     </>
   )

@@ -64,7 +64,7 @@ export default function JewelryClient() {
         <div className="kphc">
           <h1>Your Jewelry Deserves<br />Better Than a<br /><em>Catalog Box</em></h1>
           <p>Most jewelry brands pick packaging from a catalog. Limited colors, stock textures, and no consistency between the ring box and the necklace case. You&apos;re paying $6&ndash;10 per box and getting zero customization. We manufacture custom jewelry boxes built to your brand &mdash; every size, every finish, one cohesive collection.</p>
-          <button className="bp" onClick={() => openModal('Jewelry Packaging')}>Request a Quote</button>
+          <button type="button" className="bp" onClick={() => openModal('Jewelry Packaging')}>Request a Quote</button>
         </div>
       </div>
 
@@ -86,7 +86,7 @@ export default function JewelryClient() {
         <div className="ey">Jewelry Packaging</div>
         <h2 style={{ fontSize: 'clamp(24px,3vw,36px)' }}>Jewelry Packaging We&apos;ve Produced</h2>
         <div className="jpcar">
-          <button className="jpcar-arrow jpcar-prev" onClick={prevSlide} aria-label="Previous project">&#8249;</button>
+          <button type="button" className="jpcar-arrow jpcar-prev" onClick={prevSlide} aria-label="Previous project">&#8249;</button>
           <div className="jpcar-viewport">
             <div className="jpcar-track" style={{ transform: `translateX(-${currentSlide * 25}%)` }}>
               {portfolioItems.map((item, i) => (
@@ -99,7 +99,7 @@ export default function JewelryClient() {
               ))}
             </div>
           </div>
-          <button className="jpcar-arrow jpcar-next" onClick={nextSlide} aria-label="Next project">&#8250;</button>
+          <button type="button" className="jpcar-arrow jpcar-next" onClick={nextSlide} aria-label="Next project">&#8250;</button>
         </div>
       </section>
 
@@ -144,7 +144,7 @@ export default function JewelryClient() {
         <div className="ctai">
           <h2>Stop Settling for<br /><em>Close Enough</em></h2>
           <p>Book a 30-minute call. Bring your current packaging &mdash; we&apos;ll show you what custom manufacturing looks like at your volume and price point.</p>
-          <button className="bi" onClick={() => openModal('Jewelry Packaging')}>Book a Jewelry Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Jewelry Packaging')}>Book a Jewelry Consultation</button>
         </div>
       </section>
     </>

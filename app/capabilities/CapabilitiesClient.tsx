@@ -23,9 +23,11 @@ export default function CapabilitiesClient() {
         <div className="ey inv">Full-service packaging</div>
         <h1>Everything Your<br />Packaging Needs,<br /><em>Under One Roof</em></h1>
         <p>Structural design, engineering, global sourcing, manufacturing, quality control, and fulfillment &mdash; managed by one accountable team.</p>
-        <button className="bi" onClick={() => openModal()}>Start a Project</button>
+        <button type="button" className="bi" onClick={() => openModal()}>Start a Project</button>
       </div>
-      <div className="fcg">
+      <section className="capabilities-list" aria-labelledby="capabilities-list-title">
+        <h2 id="capabilities-list-title">Packaging Development, Production &amp; Fulfillment Capabilities</h2>
+        <div className="fcg">
         {features.map(f => (
           <div key={f.num} className="fci">
             <div className="fcin">{f.num}</div>
@@ -33,7 +35,8 @@ export default function CapabilitiesClient() {
             <p>{f.desc}</p>
           </div>
         ))}
-      </div>
+        </div>
+      </section>
 
       <div className="kcr" style={{ borderTop: '1px solid var(--ice)' }}>
         <div className="seo">
@@ -53,7 +56,7 @@ export default function CapabilitiesClient() {
         <div className="ctai">
           <h2>Start with a 30-Minute<br /><em>Project Scoping Call</em></h2>
           <p>Tell us what you&apos;re building. We&apos;ll tell you what it takes to get there.</p>
-          <button className="bi" onClick={() => openModal()}>Book a Free Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal()}>Book a Free Consultation</button>
         </div>
       </section>
     </>

@@ -178,7 +178,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="need-a-packagingquote">Need a Packaging<br /><em>Quote?</em></h2>
           <p>Tell us what you need and we&apos;ll send real pricing &mdash; not a generic estimate.</p>
-          <button className="bi" onClick={() => openModal('Custom Packaging')}>Get a Custom Quote</button>
+          <button type="button" className="bi" onClick={() => openModal('Custom Packaging')}>Get a Custom Quote</button>
         </div>
       </section>
     </>

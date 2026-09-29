@@ -83,7 +83,7 @@ export default function TimelineClient() {
 
       <div className="guide-wrap">
         <aside className="gtoc">
-          <h4>Contents</h4>
+          <div className="gtoc-label">Contents</div>
           {tocSections.map(s => (
             <a key={s.id} href={`#${s.id}`} className={activeSection === s.id ? 'act' : ''}>{s.label}</a>
           ))}
@@ -239,7 +239,7 @@ export default function TimelineClient() {
         <div className="ctai">
           <h2>Hit the<br /><em>Timeline</em></h2>
           <p>Twelve weeks is realistic &mdash; if you start with the right brief. Let&apos;s build yours.</p>
-          <button className="bi" onClick={() => openModal('Guide - Timeline Consultation')}>Book a Timeline Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Timeline Consultation')}>Book a Timeline Consultation</button>
         </div>
       </section>
     </>

@@ -25,7 +25,7 @@ export default function BlogTOC({ sections }: { sections: Section[] }) {
 
   return (
     <aside className="gtoc">
-      <h4>Contents</h4>
+      <div className="gtoc-label">Contents</div>
       {sections.map(s => (
         <a key={s.id} href={`#${s.id}`} className={activeSection === s.id ? 'act' : ''}>{s.label}</a>
       ))}

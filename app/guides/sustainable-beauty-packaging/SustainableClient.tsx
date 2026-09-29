@@ -70,7 +70,7 @@ export default function SustainableClient() {
 
       <div className="guide-wrap">
         <aside className="gtoc">
-          <h4>Contents</h4>
+          <div className="gtoc-label">Contents</div>
           {tocSections.map(s => (
             <a key={s.id} href={`#${s.id}`} className={activeSection === s.id ? 'act' : ''}>{s.label}</a>
           ))}
@@ -85,7 +85,7 @@ export default function SustainableClient() {
             </div>
 
             <div className="blog-takeaways guide-takeaways">
-              <h4>What to know</h4>
+              <div className="takeaways-label">What to know</div>
               <ul>
                 <li>Start with reduction and product protection before changing materials.</li>
                 <li>Treat PCR, mono-material, refillable, glass, aluminum, and fiber as different systems&mdash;not interchangeable &ldquo;green&rdquo; options.</li>
@@ -439,7 +439,7 @@ export default function SustainableClient() {
             <div className="guide-cta">
               <h3>Pressure-Test the Packaging Decision Before You Brief Suppliers</h3>
               <p>If you are comparing materials, claims, or refill formats, we can help map the tradeoffs against your product, channel, quantities, and timeline. You will leave with a clearer direction&mdash;even if the right answer is to change less than expected.</p>
-              <button className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Review the Packaging Direction</button>
+              <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Review the Packaging Direction</button>
             </div>
           </div>
         </div>
@@ -465,7 +465,7 @@ export default function SustainableClient() {
         <div className="ctai">
           <h2 id="make-sustainability-defensible">Make Sustainability<br /><em>Defensible</em></h2>
           <p>The right material, the right claim, the right certification &mdash; in every jurisdiction you ship into.</p>
-          <button className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Book a Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Book a Consultation</button>
         </div>
       </section>
     </>

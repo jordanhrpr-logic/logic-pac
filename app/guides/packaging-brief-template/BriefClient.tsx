@@ -81,7 +81,7 @@ export default function BriefClient() {
 
       <div className="guide-wrap">
         <aside className="gtoc">
-          <h4>Contents</h4>
+          <div className="gtoc-label">Contents</div>
           {tocSections.map(s => (
             <a key={s.id} href={`#${s.id}`} className={activeSection === s.id ? 'act' : ''}>{s.label}</a>
           ))}
@@ -249,7 +249,7 @@ export default function BriefClient() {
         <div className="ctai">
           <h2>Lock the Brief<br /><em>Day One</em></h2>
           <p>The cost of a 30-minute conversation in week one is approximately zero. The cost of the same decision in week six is two weeks of redesign.</p>
-          <button className="bi" onClick={() => openModal('Guide - Brief Consultation')}>Book a Brief Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Brief Consultation')}>Book a Brief Consultation</button>
         </div>
       </section>
     </>

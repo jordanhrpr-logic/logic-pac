@@ -17,7 +17,7 @@ export default function SeasonalBar() {
   return (
     <div className="hrbar">
       <span className="hrbt">{seasonalText}</span>
-      <button className="hrbc" onClick={() => openModal()}>Secure Your Slot &rarr;</button>
+      <button type="button" className="hrbc" onClick={() => openModal()}>Secure Your Slot &rarr;</button>
     </div>
   )
 }

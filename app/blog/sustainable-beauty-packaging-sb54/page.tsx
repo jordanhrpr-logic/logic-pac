@@ -3,7 +3,7 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Sustainable Beauty Packaging: What Actually Works, What\'s Greenwashing, and What the Regulations Require',
+  title: 'Sustainable Beauty Packaging & SB 54',
   description: 'PCR reality, SB 54 deadlines, EU PPWR impact, FTC Green Guides compliance, and cost comparisons for sustainable beauty packaging.',
   alternates: { canonical: '/blog/sustainable-beauty-packaging-sb54' },
   openGraph: {

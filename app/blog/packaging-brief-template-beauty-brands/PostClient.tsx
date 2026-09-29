@@ -393,7 +393,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="need-help-withyour-brief">Need Help With<br /><em>Your Brief?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you build a supplier-ready packaging brief &mdash; not just a mood board.</p>
-          <button className="bi" onClick={() => openModal('Packaging Brief')}>Book a Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Packaging Brief')}>Book a Consultation</button>
         </div>
       </section>
     </>

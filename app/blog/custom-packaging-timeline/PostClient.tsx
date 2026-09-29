@@ -214,7 +214,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="ready-to-plan-yourtimeline">Ready to Plan Your<br /><em>Timeline?</em></h2>
           <p>Tell us your launch date and we&apos;ll map the packaging timeline backward &mdash; so you know exactly when each phase needs to start.</p>
-          <button className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Packaging Timeline</button>
+          <button type="button" className="bi" onClick={() => openModal('Custom Packaging')}>Start Your Packaging Timeline</button>
         </div>
       </section>
     </>

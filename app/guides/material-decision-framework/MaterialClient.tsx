@@ -84,7 +84,7 @@ export default function MaterialClient() {
 
       <div className="guide-wrap">
         <aside className="gtoc">
-          <h4>Contents</h4>
+          <div className="gtoc-label">Contents</div>
           {tocSections.map(s => (
             <a key={s.id} href={`#${s.id}`} className={activeSection === s.id ? 'act' : ''}>{s.label}</a>
           ))}
@@ -396,7 +396,7 @@ export default function MaterialClient() {
         <div className="ctai">
           <h2>Narrow the Material Set<br /><em>Before Sampling</em></h2>
           <p>Share the formula format, channel, target quantity, price position, and sustainability requirements. We can identify which paths deserve a sample and which may create avoidable cost or supply risk.</p>
-          <button className="bi" onClick={() => openModal('Guide - Material Consultation')}>Review My Material Options</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Material Consultation')}>Review My Material Options</button>
         </div>
       </section>
     </>

@@ -171,7 +171,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="ready-to-build-a-kitthat-gets-posted">Ready to Build a Kit<br /><em>That Gets Posted?</em></h2>
           <p>Tell us about your campaign, creator list, and timeline. We&apos;ll design a kit engineered for the filming moment&mdash;not just the product list.</p>
-          <button className="bi" onClick={() => openModal('Influencer / PR Kit')}>Start Your Influencer Kit Project</button>
+          <button type="button" className="bi" onClick={() => openModal('Influencer / PR Kit')}>Start Your Influencer Kit Project</button>
         </div>
       </section>
     </>

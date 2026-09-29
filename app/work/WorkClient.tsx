@@ -53,7 +53,7 @@ export default function WorkClient() {
       </div>
       <div className="fbar" role="tablist" aria-label="Filter projects">
         {categories.map(c => (
-          <button
+          <button type="button"
             key={c.key}
             className={`fbi${activeFilter === c.key ? ' act' : ''}`}
             role="tab"
@@ -96,7 +96,7 @@ export default function WorkClient() {
         <h2>Your Work Could Be Here Next</h2>
         <p>Every project started with a brief and a phone call. Bring us yours.</p>
         <div className="gcta-a">
-          <button className="bp" onClick={() => openModal()}>Book a Consultation</button>
+          <button type="button" className="bp" onClick={() => openModal()}>Book a Consultation</button>
           <Link href="/capabilities" className="bo">View Capabilities</Link>
         </div>
       </div>

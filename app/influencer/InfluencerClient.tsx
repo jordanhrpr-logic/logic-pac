@@ -40,7 +40,7 @@ export default function InfluencerClient() {
         <div className="kphc">
           <h1>Influencer Kits Built for<br />the Unboxing&mdash;and <em>the Trip There.</em></h1>
           <p>We design and produce PR kits that present the product clearly, carry the campaign story, survive transit, and arrive ready to film.</p>
-          <button className="bp" onClick={() => openModal('Influencer / PR Kit')}>Discuss the Kit</button>
+          <button type="button" className="bp" onClick={() => openModal('Influencer / PR Kit')}>Discuss the Kit</button>
         </div>
       </div>
 
@@ -91,7 +91,7 @@ export default function InfluencerClient() {
         <div className="ctai">
           <h2>Turn the Campaign Idea<br /><em>Into a Producible Kit</em></h2>
           <p>Share the product set, audience, quantity, delivery date, and creative direction. We can shape the structure, inserts, finish plan, kitting, and fulfillment around the moment you want creators to capture.</p>
-          <button className="bi" onClick={() => openModal('Influencer / PR Kit')}>Discuss the Kit</button>
+          <button type="button" className="bi" onClick={() => openModal('Influencer / PR Kit')}>Discuss the Kit</button>
         </div>
       </section>
     </>
