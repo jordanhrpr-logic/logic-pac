@@ -306,7 +306,7 @@ export default function PostClient() {
             <p>They protect the project from bad assumptions. Wrong material. Wrong MOQ. Wrong timeline. Wrong finish. Wrong supplier. Wrong cost target.</p>
             <p>That is what you are really buying: production judgment.</p>
             <p>If you are choosing a packaging partner for a launch, redesign, influencer kit, or retail program, we can help you evaluate the options before the project gets expensive. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_epicutis_case_study">Epicutis case study</Link> shows what a full design-to-production packaging partnership looks like across 21+ SKUs.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_consultation" target="_blank" rel="noopener noreferrer">Book a packaging manufacturer consultation</a> and we&apos;ll help you ask the right questions before you sign.</p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_consultation" target="_blank" rel="noopener noreferrer">Book a packaging manufacturer consultation</a> and we&apos;ll help you ask the right questions before you sign.</p>
       </div>
 
       <section className="ctas">

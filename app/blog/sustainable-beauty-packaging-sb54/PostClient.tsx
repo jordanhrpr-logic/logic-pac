@@ -287,7 +287,7 @@ export default function PostClient() {
             <h2 id="the-bottom-line">The Bottom Line</h2>
             <p>The strongest sustainable beauty packaging starts with structure. Material first. Claim second.</p>
             <p>If your team is evaluating PCR, FSC board, refillable systems, mono-material packaging, or SB 54 exposure, we can help map the options and build a packaging plan that works beyond the mood board. The <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_artilect_case_study">Artilect packaging reduction case study</Link> shows what material-first sustainability looks like in a real program.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a sustainable packaging consultation</a> and we&apos;ll help you build the system before the claim.</p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sustainable_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a sustainable packaging consultation</a> and we&apos;ll help you build the system before the claim.</p>
             <section className="sources-section">
               <h2 id="primary-sources">Primary Sources</h2>
               <VerifiedAsOf />

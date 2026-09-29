@@ -228,7 +228,7 @@ export default function PostClient() {
             <h2 id="build-packaging-that-works-beyond-the-first-sale">Build Packaging That Works Beyond the First Sale</h2>
             <p>Food and beverage packaging has to do more than look good on shelf. It has to protect product quality, carry required information, fit the retail system, and keep the margin intact.</p>
             <p>If you are moving from local sales, DTC, or early wholesale into a bigger retail channel, we can help build packaging that is designed for the next stage, not just the next photoshoot.</p>
-            <p><a href="https://calendly.com/jordan-harper-logic/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a Food and Beverage Packaging Consultation</a></p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a Food and Beverage Packaging Consultation</a></p>
             <p><strong>Author:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm that helps beauty, wellness, food and beverage, and consumer brands build packaging from concept to shelf.</p>
       </div>
 

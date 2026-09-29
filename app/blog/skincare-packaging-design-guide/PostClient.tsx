@@ -282,7 +282,7 @@ export default function PostClient() {
             <p>Good skincare packaging starts with the formula and ends with the customer experience.</p>
             <p>The right structure protects the product. The right material supports the claim. The right finish makes the brand feel intentional without overbuilding the cost.</p>
             <p>If you&apos;re planning a skincare launch or redesign, we can help map the format, material, finish, and cost tradeoffs before production starts. See how we built a coordinated skincare packaging system supporting 21+ SKUs in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_epicutis_case_study">Epicutis case study</Link>.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a skincare packaging consultation</a> and we&apos;ll help you build the package around the formula.</p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a skincare packaging consultation</a> and we&apos;ll help you build the package around the formula.</p>
       </div>
 
       <section className="ctas">

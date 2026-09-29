@@ -238,7 +238,7 @@ export default function PostClient() {
             <p>Packaging benchmarks are useful because they show when something is obviously off. They do not replace a real cost model.</p>
             <p>The right package fits the product, the channel, the brand, and the margin. That takes more than a quote. It takes a system.</p>
             <p>If you want to pressure-test your packaging cost against your category and channel, we can help you separate smart spend from avoidable waste. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_epicutis_case_study">Epicutis program</Link> achieved 15% packaging cost savings across 21+ SKUs, and the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_artilect_case_study">Artilect packaging reduction</Link> cut cost by engineering out material the customer never valued.</p>
-            <p><a href="https://calendly.com/jordan-harper-logic/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_consultation" target="_blank" rel="noopener noreferrer">Book a Packaging Cost Consultation</a></p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_consultation" target="_blank" rel="noopener noreferrer">Book a Packaging Cost Consultation</a></p>
             <p><strong>Author:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm that helps beauty, wellness, food and beverage, jewelry, and consumer brands build packaging from concept to shelf.</p>
       </div>
 

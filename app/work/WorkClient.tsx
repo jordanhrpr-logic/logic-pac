@@ -77,7 +77,7 @@ export default function WorkClient() {
           const className = `wgi${item.cls ? ' ' + item.cls : ''}`
           const style = { display: activeFilter === 'all' || item.cat === activeFilter ? '' : 'none' }
           return item.href ? (
-            <Link key={i} href={item.href} className={className} data-cat={item.cat} style={style} aria-label={`View case study: ${item.name}`}>
+            <Link key={i} href={item.href} className={className} data-cat={item.cat} style={style} >
               {content}
             </Link>
           ) : (

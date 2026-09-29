@@ -337,7 +337,7 @@ export default function PostClient() {
             <p>SB 54 is not a reason to panic. It is a reason to get precise.</p>
             <p>Start with the packaging you already have. Map every component. Gather the proof. Identify what needs to change. Then redesign in the right order.</p>
             <p>If your team needs help translating SB 54 into a packaging roadmap, we can help.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_packaging_consultation" target="_blank" rel="noopener noreferrer">Book an SB 54 packaging consultation</a> and we&apos;ll help you build the audit before the redesign.</p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_packaging_consultation" target="_blank" rel="noopener noreferrer">Book an SB 54 packaging consultation</a> and we&apos;ll help you build the audit before the redesign.</p>
             <section className="sources-section">
               <h2 id="primary-sources">Primary Sources</h2>
               <VerifiedAsOf />

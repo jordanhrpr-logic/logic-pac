@@ -220,7 +220,7 @@ export default function PostClient() {
             <h2 id="design-the-system-before-the-vessel">Design the System Before the Vessel</h2>
             <p>The most common mistake in refillable beauty packaging is designing a beautiful outer vessel first and figuring out the refill mechanics second. The system architecture, consumer experience, cost model, and retail strategy should drive the vessel design &mdash; not the other way around.</p>
             <p>If your team is evaluating refillable packaging for a beauty or skincare line, we can help map the system options, model the economics, and engineer a refill mechanism that consumers will actually use.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=refillable-beauty-packaging-guide" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=refillable-beauty-packaging-guide" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
       </div>
 

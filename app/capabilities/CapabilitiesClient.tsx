@@ -1,7 +1,9 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
+import { capabilityFaqs } from './capabilities-data'
 
 const features = [
   { num: '01', title: 'Structural Design & 3D Engineering', desc: 'Custom die-line development, 3D rendering, and physical prototypes. Rigid boxes, folding cartons, specialty forms, multi-component kits \u2014 built for the product, the unboxing, and the retailer.' },
@@ -14,8 +16,16 @@ const features = [
   { num: '08', title: 'Retail Readiness', desc: 'Retailer compliance documentation, scan-ready barcoding, floor-ready master carton specs for Ulta, Sephora, Target, and specialty retail. We know what buyers require before they ask.' },
 ]
 
+const resources = [
+  { num: '01', tag: 'Start here', title: 'Packaging Brief Template', desc: 'Define the product, channel, quantity, budget, timing, testing, and approval path before development begins.', href: '/guides/packaging-brief-template?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_brief_guide' },
+  { num: '02', tag: 'Plan the schedule', title: 'Concept-to-Shelf Timeline', desc: 'Map discovery, design, prototyping, testing, production, quality control, and freight against a realistic launch date.', href: '/guides/concept-to-shelf-timeline?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_timeline_guide' },
+  { num: '03', tag: 'Choose materials', title: 'Material Decision Framework', desc: 'Compare glass, PET, HDPE, aluminum, and molded fiber by product fit, cost, perception, and supply risk.', href: '/guides/material-decision-framework?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_material_guide' },
+  { num: '04', tag: 'Specify finishes', title: 'Packaging Finish Guide', desc: 'Understand when soft-touch, foil, spot UV, embossing, and other finishes earn their added cost and complexity.', href: '/guides/packaging-finish-guide?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_finish_guide' },
+]
+
 export default function CapabilitiesClient() {
   const { openModal } = useModal()
+  const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   return (
     <>
@@ -38,25 +48,77 @@ export default function CapabilitiesClient() {
         </div>
       </section>
 
-      <div className="kcr" style={{ borderTop: '1px solid var(--ice)' }}>
-        <div className="seo">
-          <h2>Packaging Guides &amp; Frameworks</h2>
-          <p>We publish the same frameworks we use internally. Use them to plan your project, evaluate materials, and brief your team before we talk.</p>
-          <ul>
-            <li><Link href="/guides/concept-to-shelf-timeline?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_timeline_guide">Concept-to-Shelf Timeline</Link> &mdash; phase-by-phase breakdown of a 12-week packaging program</li>
-            <li><Link href="/guides/material-decision-framework?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_material_guide">Material Decision Framework</Link> &mdash; compare glass, PET, HDPE, aluminum, and fiber by product fit, cost, and compliance</li>
-            <li><Link href="/guides/packaging-finish-guide?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_finish_guide">Packaging Finish Guide</Link> &mdash; soft-touch, foil, spot UV, embossing, and when each earns its cost</li>
-            <li><Link href="/guides/packaging-brief-template?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_brief_guide">Packaging Brief Template</Link> &mdash; the 10 sections every brief should contain before development starts</li>
-          </ul>
-          <p>For sustainability-specific planning, start with the <Link href="/guides/sustainable-beauty-packaging?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_sustainable_guide">Sustainable Beauty Packaging Playbook</Link>.</p>
+      <section className="cap-resources" aria-labelledby="cap-resources-title">
+        <div className="cap-section-head">
+          <div>
+            <div className="ey inv">Plan before production</div>
+            <h2 id="cap-resources-title">Packaging Guides &amp;<br /><em>Decision Frameworks</em></h2>
+          </div>
+          <p>These are the working tools behind a well-run packaging program. Use them to build the brief, pressure-test decisions, and identify risk before production starts.</p>
         </div>
-      </div>
+        <div className="cap-resource-grid">
+          {resources.map(resource => (
+            <Link key={resource.num} href={resource.href} className="cap-resource-card">
+              <div className="cap-resource-meta"><span>{resource.num}</span><span>{resource.tag}</span></div>
+              <h3>{resource.title}</h3>
+              <p>{resource.desc}</p>
+              <span className="cap-resource-link">Read the guide <span aria-hidden="true">&rarr;</span></span>
+            </Link>
+          ))}
+        </div>
+        <div className="cap-resource-featured">
+          <div>
+            <span className="cap-resource-kicker">Sustainability planning</span>
+            <h3>Make the material decision defensible.</h3>
+          </div>
+          <p>Compare reduction, recycled content, mono-material, glass, aluminum, fiber, and refill systems against cost, claims risk, and operational reality.</p>
+          <Link href="/guides/sustainable-beauty-packaging?utm_source=capabilities&utm_medium=organic&utm_campaign=seo_service_page&utm_content=capabilities_sustainable_guide">Open the sustainability playbook <span aria-hidden="true">&rarr;</span></Link>
+        </div>
+      </section>
+
+      <section className="cap-faq" aria-labelledby="cap-faq-title">
+        <div className="cap-faq-intro">
+          <div className="ey">Before you start</div>
+          <h2 id="cap-faq-title">Practical Answers for<br /><em>Packaging Teams</em></h2>
+          <p>Scope, quantities, timing, compliance, and execution. The questions that determine whether a packaging plan is ready to move.</p>
+        </div>
+        <div className="cap-faq-list">
+          {capabilityFaqs.map((faq, index) => {
+            const isOpen = openFaq === index
+            return (
+              <div key={faq.question} className={`cap-faq-item${isOpen ? ' open' : ''}`}>
+                <button
+                  id={`cap-faq-question-${index}`}
+                  type="button"
+                  className="cap-faq-button"
+                  aria-expanded={isOpen}
+                  aria-controls={`cap-faq-answer-${index}`}
+                  onClick={() => setOpenFaq(isOpen ? null : index)}
+                >
+                  <span>{faq.question}</span>
+                  <span className="cap-faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div
+                  id={`cap-faq-answer-${index}`}
+                  className="cap-faq-answer"
+                  role="region"
+                  aria-labelledby={`cap-faq-question-${index}`}
+                  aria-hidden={!isOpen}
+                >
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </section>
 
       <section className="ctas">
         <div className="ctai">
-          <h2>Start with a 30-Minute<br /><em>Project Scoping Call</em></h2>
-          <p>Tell us what you&apos;re building. We&apos;ll tell you what it takes to get there.</p>
-          <button type="button" className="bi" onClick={() => openModal()}>Book a Free Consultation</button>
+          <div className="ey inv">From brief to production</div>
+          <h2>Bring Us the Product.<br /><em>We&apos;ll Map the Packaging Path.</em></h2>
+          <p>Share the product, quantity, target cost, channel, and launch date. We&apos;ll identify the decisions, development steps, and production path the project requires.</p>
+          <button type="button" className="bi" onClick={() => openModal()}>Scope Your Packaging Project</button>
         </div>
       </section>
     </>

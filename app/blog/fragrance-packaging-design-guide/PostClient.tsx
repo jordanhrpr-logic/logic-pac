@@ -216,7 +216,7 @@ export default function PostClient() {
             <h2 id="build-fragrance-packaging-that-supports-the-price-">Build Fragrance Packaging That Supports the Price Point</h2>
             <p>Fragrance packaging has to do more than protect a bottle. It has to make the customer believe the scent is worth the price before they open it.</p>
             <p>If you are planning a fragrance launch, coffret, or retail-ready secondary box, we can help build the structure, source the materials, manage production, and keep the cost tied to the margin model.</p>
-            <p><a href="https://calendly.com/jordan-harper-logic/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_consultation" target="_blank" rel="noopener noreferrer">Book a Fragrance Packaging Consultation</a></p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_consultation" target="_blank" rel="noopener noreferrer">Book a Fragrance Packaging Consultation</a></p>
             <p><strong>Author:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm that helps beauty, wellness, fragrance, and consumer brands build packaging from concept to shelf.</p>
       </div>
 

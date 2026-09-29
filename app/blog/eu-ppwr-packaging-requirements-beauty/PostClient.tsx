@@ -186,7 +186,7 @@ export default function PostClient() {
             <p>PPWR compliance is not a single event. It is a phased transition that rewards brands who start early and penalizes brands who wait for enforcement.</p>
             <p>The brands that audit their packaging now, qualify PCR supply in 2026-2027, redesign multi-material formats before the 2030 deadline, and build labeling systems for harmonized EU requirements will have lower cost, less disruption, and more credible sustainability claims than brands that scramble at each phase gate.</p>
             <p>If your team needs to map EU PPWR packaging requirements against your current portfolio, we can walk through the audit, identify priority changes, and build a compliance timeline that fits your product roadmap.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=eu-ppwr-packaging-requirements-beauty" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
 
             <h2 id="sources-reviewed">Sources Reviewed</h2>

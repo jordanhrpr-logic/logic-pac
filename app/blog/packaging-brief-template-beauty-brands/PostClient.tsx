@@ -386,7 +386,7 @@ export default function PostClient() {
             <p>They fail because the team started without enough clarity.</p>
             <p>The brief is where that gets fixed. Product specs. Volume. Budget. Channel. Materials. Timeline. Approval chain. Put the real constraints on the page before the first sample.</p>
             <p>If you need help turning a rough packaging idea into a supplier-ready brief, we can help. See what a well-briefed packaging program produces at scale in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=brief_epicutis_case_study">Epicutis case study</Link>.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_brief_consultation" target="_blank" rel="noopener noreferrer">Book a packaging brief consultation</a> and we&apos;ll help you build the document that makes the rest of the project work.</p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=packaging_brief_consultation" target="_blank" rel="noopener noreferrer">Book a packaging brief consultation</a> and we&apos;ll help you build the document that makes the rest of the project work.</p>
       </div>
 
       <section className="ctas">

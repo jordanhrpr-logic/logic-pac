@@ -179,7 +179,7 @@ export default function PostClient() {
             <h2 id="know-the-process-before-you-start-the-process">Know the Process Before You Start the Process</h2>
             <p>Custom packaging development is not mysterious. It is a sequence of decisions, each building on the last, with clear inputs and outputs at every stage. The brands that move through it efficiently are the ones that understand the stages, make decisions promptly, and treat their packaging partner as a collaborator, not a vendor waiting for instructions.</p>
             <p>If you are developing custom packaging for a beauty, wellness, or consumer brand and want a partner who manages the process from brief through delivery, we can walk through your project scope and build a realistic timeline. See the process applied at scale in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=dev_process_epicutis_case_study">Epicutis case study</Link>.</p>
-            <p><a href="https://calendly.com/logicpac/packaging-consultation?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
+            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
       </div>
 
