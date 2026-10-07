@@ -13,6 +13,14 @@ const guides = [
     gradient: 'linear-gradient(135deg,#0d0f1a,#1a1a2e,#2d1b3f)',
   },
   {
+    slug: 'sustainable-packaging-decision-matrix',
+    tag: 'Decision Tool',
+    title: 'The Sustainable Packaging Decision Matrix',
+    description: 'Score PCR, mono-material, refill, molded fiber, aluminum, and reduction side by side for one SKU. The scoring tool Logic Pac uses with beauty brands to pick the right sustainability lever.',
+    image: '/images/guides/sustainable-decision-matrix/lever-molded-fiber.jpg',
+    gradient: 'linear-gradient(135deg,#0d2818,#1a4a2e,#2d6a4f)',
+  },
+  {
     slug: 'influencer-kit-playbook',
     tag: 'Playbook',
     title: 'The Influencer Kit Playbook: How to Design PR Mailers That Get Posted',
