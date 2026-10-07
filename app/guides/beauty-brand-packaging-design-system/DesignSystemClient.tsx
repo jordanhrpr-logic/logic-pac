@@ -501,7 +501,7 @@ export default function DesignSystemClient() {
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <h3 style={{ color: 'var(--white)' }}>Scale a beauty line without redesigning the brand every launch.</h3>
           <p>We develop packaging design systems that hold from hero SKU through line extensions, gift sets, and PR formats — and manage the suppliers, specifications, and QC that keep them honest.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Design System Audit')} style={{ background: 'var(--lime)', color: 'var(--navy)' }}>Request a Design System Audit</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Design System Audit', 'guide-bottom-cta')} style={{ background: 'var(--lime)', color: 'var(--navy)' }}>Request a Design System Audit</button>
         </div>
       </section>
     </>

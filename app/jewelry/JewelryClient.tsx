@@ -64,7 +64,7 @@ export default function JewelryClient() {
         <div className="kphc">
           <h1>Your Jewelry Deserves<br />Better Than a<br /><em>Catalog Box</em></h1>
           <p>Most jewelry brands pick packaging from a catalog. Limited colors, stock textures, and no consistency between the ring box and the necklace case. You&apos;re paying $6&ndash;10 per box and getting zero customization. We manufacture custom jewelry boxes built to your brand &mdash; every size, every finish, one cohesive collection.</p>
-          <button type="button" className="bp" onClick={() => openModal('Jewelry Packaging')}>Request a Quote</button>
+          <button type="button" className="bp" onClick={() => openModal('Jewelry Packaging', 'jewelry-hero')}>Request a Quote</button>
         </div>
       </div>
 
@@ -144,7 +144,7 @@ export default function JewelryClient() {
         <div className="ctai">
           <h2>Stop Settling for<br /><em>Close Enough</em></h2>
           <p>Book a 30-minute call. Bring your current packaging &mdash; we&apos;ll show you what custom manufacturing looks like at your volume and price point.</p>
-          <button type="button" className="bi" onClick={() => openModal('Jewelry Packaging')}>Book a Jewelry Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Jewelry Packaging', 'jewelry-bottom-cta')}>Book a Jewelry Consultation</button>
         </div>
       </section>
     </>

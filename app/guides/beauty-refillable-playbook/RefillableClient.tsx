@@ -285,7 +285,7 @@ export default function RefillableClient() {
         <div className="ctai">
           <h2>Test the Refill Model<br /><em>Before Engineering</em></h2>
           <p>We can compare refill formats against your SKU economics, customer behavior, channel, quantities, and manufacturing constraints.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Refillable Consultation')}>Review the Refill Model</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Refillable Consultation', 'guide-bottom-cta')}>Review the Refill Model</button>
         </div>
       </section>
     </>

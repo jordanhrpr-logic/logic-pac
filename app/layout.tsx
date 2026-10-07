@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 import { ModalProvider } from '@/components/ModalContext'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import AnalyticsClickTracker from '@/components/AnalyticsClickTracker'
+import AnalyticsListener from '@/components/AnalyticsListener'
 import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from '@/lib/metadata'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-66P9B5E4KR'
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {GA_ID && (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
-            <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}');` }} />
+            <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}',{linker:{domains:['logic-pac.com','www.logic-pac.com','logicagencyinc.com','www.logicagencyinc.com']}});` }} />
           </>
         )}
         <script
@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ModalProvider>
-          <AnalyticsClickTracker />
+          <AnalyticsListener />
           <a href="#main" className="skip-link">Skip to content</a>
           <Navigation />
           <main id="main" style={{ paddingTop: 64 }}>

@@ -386,7 +386,7 @@ export default function TestingClient() {
       <section className="guide-cta">
         <h3>Need help building the testing and QC chain for your next run?</h3>
         <p>We write the specification, qualify the factory, maintain the golden sample library, run DUPRO and pre-shipment inspection against the written spec, and handle corrective-action loops when something drifts. Request a packaging audit to review your current chain.</p>
-        <button type="button" className="bi" onClick={() => openModal('Guide - Testing & QC Audit')}>Request a Packaging Audit</button>
+        <button type="button" className="bi" onClick={() => openModal('Guide - Testing & QC Audit', 'guide-bottom-cta')}>Request a Packaging Audit</button>
       </section>
     </>
   )

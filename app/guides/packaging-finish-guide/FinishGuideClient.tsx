@@ -337,7 +337,7 @@ export default function FinishGuideClient() {
             <div className="guide-cta">
               <h3>Need Help Choosing Finishes?</h3>
               <p>Tell us about your project and we&apos;ll recommend the right finish combination for your brand, budget, and substrate.</p>
-              <button type="button" className="bi" onClick={() => openModal('Guide - Finish Consultation')}>Book a Consultation</button>
+              <button type="button" className="bi" onClick={() => openModal('Guide - Finish Consultation', 'guide-bottom-cta')}>Book a Consultation</button>
             </div>
             <p>See how finish decisions were managed across a 21+ SKU beauty packaging system in the <Link href="/work/epicutis?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=finish_epicutis_case_study">Epicutis case study</Link>.</p>
             <GuideBottomLine>Finish selection is an exercise in restraint. Pick one primary effect, confirm that it survives production and handling, and use any secondary finish to create hierarchy. When every surface competes for attention, the package usually feels more expensive to make—not more premium.</GuideBottomLine>
@@ -365,7 +365,7 @@ export default function FinishGuideClient() {
         <div className="ctai">
           <h2>Get the Finish<br /><em>Right</em></h2>
           <p>The right finish transforms packaging from good to unforgettable. Let&apos;s spec yours together.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Finish Consultation')}>Book a Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Finish Consultation', 'guide-bottom-cta')}>Book a Consultation</button>
         </div>
       </section>
     </>

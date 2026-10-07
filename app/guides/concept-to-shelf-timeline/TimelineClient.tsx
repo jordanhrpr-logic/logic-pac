@@ -239,7 +239,7 @@ export default function TimelineClient() {
         <div className="ctai">
           <h2>Hit the<br /><em>Timeline</em></h2>
           <p>Twelve weeks is realistic &mdash; if you start with the right brief. Let&apos;s build yours.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Timeline Consultation')}>Book a Timeline Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Timeline Consultation', 'guide-bottom-cta')}>Book a Timeline Consultation</button>
         </div>
       </section>
     </>

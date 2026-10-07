@@ -202,7 +202,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="need-compliancehelp">Need Compliance<br /><em>Help?</em></h2>
           <p>We&apos;ll review your packaging against current and upcoming regulations.</p>
-          <button type="button" className="bi" onClick={() => openModal('Custom Packaging')}>Book a Compliance Review</button>
+          <button type="button" className="bi" onClick={() => openModal('Custom Packaging', 'blog-bottom-cta')}>Book a Compliance Review</button>
         </div>
       </section>
     </>

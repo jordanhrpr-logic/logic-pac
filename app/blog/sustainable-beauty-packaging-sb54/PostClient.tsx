@@ -304,7 +304,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="need-a-sustainabilitypackaging-plan">Need a Sustainability<br /><em>Packaging Plan?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you map materials, claims, and compliance &mdash; not just aesthetics.</p>
-          <button type="button" className="bi" onClick={() => openModal('Sustainable Packaging')}>Book a Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Sustainable Packaging', 'blog-bottom-cta')}>Book a Consultation</button>
         </div>
       </section>
     </>

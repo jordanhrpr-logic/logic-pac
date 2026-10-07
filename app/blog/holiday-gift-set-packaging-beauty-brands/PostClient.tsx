@@ -217,7 +217,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="ready-to-plan-yourholiday-packaging">Ready to Plan Your<br /><em>Holiday Packaging?</em></h2>
           <p>Book a 30-minute call. We&apos;ll scope your holiday gift set program, confirm timelines, and tell you exactly what we need to get started &mdash; before the calendar runs out.</p>
-          <button type="button" className="bi" onClick={() => openModal('Holiday Gift Set / Seasonal Kit')}>Book a Holiday Kit Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Holiday Gift Set / Seasonal Kit', 'blog-bottom-cta')}>Book a Holiday Kit Consultation</button>
         </div>
       </section>
     </>

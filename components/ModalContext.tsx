@@ -1,13 +1,10 @@
 'use client'
 
 import { createContext, useCallback, useContext, ReactNode } from 'react'
+import { trackConsultationClick } from '@/lib/analytics'
 
 type ModalContextType = {
-  openModal: (projectType?: string) => void
-}
-
-type AnalyticsWindow = Window & {
-  gtag?: (...args: unknown[]) => void
+  openModal: (projectType?: string, ctaLocation?: string) => void
 }
 
 const ModalContext = createContext<ModalContextType>({ openModal: () => {} })
@@ -17,12 +14,8 @@ export function useModal() {
 }
 
 export function ModalProvider({ children }: { children: ReactNode }) {
-  const openModal = useCallback((projectType = 'General') => {
-    const analyticsWindow = window as AnalyticsWindow
-    analyticsWindow.gtag?.('event', 'consultation_click', {
-      project_type: projectType,
-      page_path: window.location.pathname,
-    })
+  const openModal = useCallback((projectType = 'General', ctaLocation = 'unknown') => {
+    trackConsultationClick({ projectType, ctaLocation })
     window.open('https://calendly.com/sean-logicagencyinc/30min', '_blank', 'noopener,noreferrer')
   }, [])
 

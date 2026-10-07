@@ -353,7 +353,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="need-an-sb-54packaging-audit">Need an SB 54<br /><em>Packaging Audit?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you map materials, claims, and compliance risk &mdash; component by component.</p>
-          <button type="button" className="bi" onClick={() => openModal('SB 54 Compliance')}>Book a Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('SB 54 Compliance', 'blog-bottom-cta')}>Book a Consultation</button>
         </div>
       </section>
     </>

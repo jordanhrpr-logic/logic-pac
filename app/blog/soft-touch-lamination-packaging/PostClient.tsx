@@ -189,7 +189,7 @@ export default function PostClient() {
         <div className="ctai">
           <h2 id="want-to-see-finishesin-person">Want to See Finishes<br /><em>in Person?</em></h2>
           <p>We&apos;ll send you physical samples so you can feel the difference before committing.</p>
-          <button type="button" className="bi" onClick={() => openModal('Custom Packaging')}>Request Samples</button>
+          <button type="button" className="bi" onClick={() => openModal('Custom Packaging', 'blog-bottom-cta')}>Request Samples</button>
         </div>
       </section>
     </>

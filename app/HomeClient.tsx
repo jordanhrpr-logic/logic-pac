@@ -29,7 +29,7 @@ export default function HomeClient() {
           <h1>The Packaging Partner<br />Serious Brands <em>Rely On</em></h1>
           <p className="hbody">We design, engineer, source, and deliver custom packaging for brands that compete at the highest level. From structural brief to final delivery &mdash; one team, full accountability.</p>
           <div className="hacts">
-            <button type="button" className="bp" onClick={() => openModal()}>Book a Consultation</button>
+            <button type="button" className="bp" onClick={() => openModal(undefined, 'home-hero')}>Book a Consultation</button>
             <Link href="/work" className="bg">See Our Work &rarr;</Link>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function HomeClient() {
           <div className="ey">Why Logic Pac</div>
           <h2>Not a Broker.<br />Not a Factory.<br /><em>Your Partner.</em></h2>
           <p className="posbody">Most brands have experienced the disconnect &mdash; a packaging vendor who disappears after placing the PO, a factory that doesn&apos;t understand brand standards, a 3PL that doesn&apos;t talk to the packaging team. We close all of that gap. One custom packaging company, one relationship, from concept to your warehouse door.</p>
-          <button type="button" className="bo" onClick={() => openModal()}>Start a Project</button>
+          <button type="button" className="bo" onClick={() => openModal(undefined, 'home-services')}>Start a Project</button>
         </div>
         <div className="posr">
           <div className="pospt"><h3>Judgment, not just execution</h3><p>We know which factory is right for which job. That accumulated judgment is what you&apos;re buying.</p></div>
@@ -183,7 +183,7 @@ export default function HomeClient() {
             </ul>
             <div className="kacts">
               <Link href="/holiday" className="bp">See Holiday Kit Services</Link>
-              <button type="button" className="bg" onClick={() => openModal()}>Book a Call &rarr;</button>
+              <button type="button" className="bg" onClick={() => openModal(undefined, 'home-cases')}>Book a Call &rarr;</button>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function HomeClient() {
             </ul>
             <div className="kacts">
               <Link href="/influencer" className="bp">See Influencer Kit Services</Link>
-              <button type="button" className="bg" onClick={() => openModal()}>Book a Call &rarr;</button>
+              <button type="button" className="bg" onClick={() => openModal(undefined, 'home-stats')}>Book a Call &rarr;</button>
             </div>
           </div>
           <div className="kv lt" style={{ background: 'linear-gradient(135deg,#e8e6e1,#d5d3ce,#c8c5be)' }}>
@@ -222,7 +222,7 @@ export default function HomeClient() {
         <Timeline />
         <div className="tlurg">
           <div><h3>The best time to start is <em>right now.</em></h3><p>Brands that lock in early get the best factories, the best pricing, and a timeline that doesn&apos;t require air freight miracles.</p></div>
-          <button type="button" className="bp" onClick={() => openModal()}>Lock In Your Timeline</button>
+          <button type="button" className="bp" onClick={() => openModal(undefined, 'home-timeline')}>Lock In Your Timeline</button>
         </div>
       </ScrollReveal>
 
@@ -263,7 +263,7 @@ export default function HomeClient() {
         <div className="ctai">
           <h2>Let&apos;s Build Something<br /><em>Worth the Shelf Space</em></h2>
           <p>Bring us your brief, your timeline, or just a product and a problem.</p>
-          <button type="button" className="bi" onClick={() => openModal()}>Book a Free Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal(undefined, 'home-footer-cta')}>Book a Free Consultation</button>
           <small>Powered by Logic Agency Inc. &mdash; Orange County, CA &amp; Salt Lake City, UT</small>
         </div>
       </section>

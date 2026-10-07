@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useModal } from './ModalContext'
+import { trackFaqExpand } from '@/lib/analytics'
 
 type FAQItem = {
   question: string
@@ -25,7 +26,9 @@ export default function BlogFAQ({
   const { openModal } = useModal()
 
   const toggle = (i: number) => {
-    setOpenIndex(openIndex === i ? null : i)
+    const nowOpen = openIndex !== i
+    setOpenIndex(nowOpen ? i : null)
+    if (nowOpen) trackFaqExpand({ question: faqs[i].question, ctaLocation: 'blog-faq' })
   }
 
   const faqJsonLd = {
@@ -64,7 +67,7 @@ export default function BlogFAQ({
         ))}
         <button type="button"
           className="bi"
-          onClick={() => openModal(ctaProjectType)}
+          onClick={() => openModal(ctaProjectType, 'blog-faq')}
           style={{ width: '100%', marginTop: 28, textAlign: 'center' }}
         >
           {ctaText}

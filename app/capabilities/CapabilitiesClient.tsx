@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import { capabilityFaqs } from './capabilities-data'
+import { trackFaqExpand } from '@/lib/analytics'
 
 const features = [
   { num: '01', title: 'Structural Design & 3D Engineering', desc: 'Custom die-line development, 3D rendering, and physical prototypes. Rigid boxes, folding cartons, specialty forms, multi-component kits \u2014 built for the product, the unboxing, and the retailer.' },
@@ -33,7 +34,7 @@ export default function CapabilitiesClient() {
         <div className="ey inv">Full-service packaging</div>
         <h1>Everything Your<br />Packaging Needs,<br /><em>Under One Roof</em></h1>
         <p>Structural design, engineering, global sourcing, manufacturing, quality control, and fulfillment &mdash; managed by one accountable team.</p>
-        <button type="button" className="bi" onClick={() => openModal()}>Start a Project</button>
+        <button type="button" className="bi" onClick={() => openModal('Capabilities - Start a Project', 'capabilities-hero')}>Start a Project</button>
       </div>
       <section className="capabilities-list" aria-labelledby="capabilities-list-title">
         <h2 id="capabilities-list-title">Packaging Development, Production &amp; Fulfillment Capabilities</h2>
@@ -93,7 +94,11 @@ export default function CapabilitiesClient() {
                   className="cap-faq-button"
                   aria-expanded={isOpen}
                   aria-controls={`cap-faq-answer-${index}`}
-                  onClick={() => setOpenFaq(isOpen ? null : index)}
+                  onClick={() => {
+                    const nowOpen = !isOpen
+                    setOpenFaq(nowOpen ? index : null)
+                    if (nowOpen) trackFaqExpand({ question: faq.question, ctaLocation: 'capabilities-faq' })
+                  }}
                 >
                   <span>{faq.question}</span>
                   <span className="cap-faq-toggle" aria-hidden="true">+</span>
@@ -118,7 +123,7 @@ export default function CapabilitiesClient() {
           <div className="ey inv">From brief to production</div>
           <h2>Bring Us the Product.<br /><em>We&apos;ll Map the Packaging Path.</em></h2>
           <p>Share the product, quantity, target cost, channel, and launch date. We&apos;ll identify the decisions, development steps, and production path the project requires.</p>
-          <button type="button" className="bi" onClick={() => openModal()}>Scope Your Packaging Project</button>
+          <button type="button" className="bi" onClick={() => openModal(undefined, 'capabilities-bottom-cta')}>Scope Your Packaging Project</button>
         </div>
       </section>
     </>

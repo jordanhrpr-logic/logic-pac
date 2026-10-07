@@ -77,7 +77,7 @@ export default function WorkClient() {
           const className = `wgi${item.cls ? ' ' + item.cls : ''}`
           const style = { display: activeFilter === 'all' || item.cat === activeFilter ? '' : 'none' }
           return item.href ? (
-            <Link key={i} href={item.href} className={className} data-cat={item.cat} style={style} >
+            <Link key={i} href={item.href} className={className} data-cat={item.cat} style={style}>
               {content}
             </Link>
           ) : (
@@ -96,7 +96,7 @@ export default function WorkClient() {
         <h2>Your Work Could Be Here Next</h2>
         <p>Every project started with a brief and a phone call. Bring us yours.</p>
         <div className="gcta-a">
-          <button type="button" className="bp" onClick={() => openModal()}>Book a Consultation</button>
+          <button type="button" className="bp" onClick={() => openModal('Work - Book a Consultation', 'work-cta')}>Book a Consultation</button>
           <Link href="/capabilities" className="bo">View Capabilities</Link>
         </div>
       </div>

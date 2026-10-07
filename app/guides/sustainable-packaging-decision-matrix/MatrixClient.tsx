@@ -382,7 +382,7 @@ export default function MatrixClient() {
         <div className="guide-cta">
           <h3>Not sure which lever wins for your next SKU?</h3>
           <p>Logic Pac runs the Decision Matrix on real programs every week. If you want a second read on the top two candidate paths for your product, your channel, and your claim, request a packaging audit.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Decision Matrix')}>Request a Packaging Audit</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Decision Matrix', 'guide-bottom-cta')}>Request a Packaging Audit</button>
         </div>
       </section>
     </>

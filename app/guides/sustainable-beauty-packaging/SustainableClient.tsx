@@ -439,7 +439,7 @@ export default function SustainableClient() {
             <div className="guide-cta">
               <h3>Pressure-Test the Packaging Decision Before You Brief Suppliers</h3>
               <p>If you are comparing materials, claims, or refill formats, we can help map the tradeoffs against your product, channel, quantities, and timeline. You will leave with a clearer direction&mdash;even if the right answer is to change less than expected.</p>
-              <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Review the Packaging Direction</button>
+              <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging', 'guide-bottom-cta')}>Review the Packaging Direction</button>
             </div>
           </div>
         </div>
@@ -465,7 +465,7 @@ export default function SustainableClient() {
         <div className="ctai">
           <h2 id="make-sustainability-defensible">Make Sustainability<br /><em>Defensible</em></h2>
           <p>The right material, the right claim, the right certification &mdash; in every jurisdiction you ship into.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging')}>Book a Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging', 'guide-bottom-cta')}>Book a Consultation</button>
         </div>
       </section>
     </>

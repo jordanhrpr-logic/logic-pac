@@ -249,7 +249,7 @@ export default function BriefClient() {
         <div className="ctai">
           <h2>Lock the Brief<br /><em>Day One</em></h2>
           <p>The cost of a 30-minute conversation in week one is approximately zero. The cost of the same decision in week six is two weeks of redesign.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Brief Consultation')}>Book a Brief Consultation</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Brief Consultation', 'guide-bottom-cta')}>Book a Brief Consultation</button>
         </div>
       </section>
     </>

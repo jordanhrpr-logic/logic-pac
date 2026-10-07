@@ -386,7 +386,7 @@ export default function LuxuryClient() {
         <div className="ctai">
           <h2>Pressure-Test Your Packaging System<br /><em>Before Tooling.</em></h2>
           <p>Share the formula, the price position, the channel mix, and the current pack direction. We will tell you where the system is likely to hold up, where it will not, and what to resolve before you commit to tooling or print.</p>
-          <button type="button" className="bi" onClick={() => openModal('Guide - Luxury Packaging Audit')}>Request a Packaging Audit</button>
+          <button type="button" className="bi" onClick={() => openModal('Guide - Luxury Packaging Audit', 'guide-bottom-cta')}>Request a Packaging Audit</button>
         </div>
       </section>
     </>

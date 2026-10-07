@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useModal } from './ModalContext'
+import { trackFaqExpand } from '@/lib/analytics'
 
 type FAQItem = {
   question: string
@@ -25,7 +26,9 @@ export default function FAQSidebar({
   const { openModal } = useModal()
 
   const toggle = (i: number) => {
-    setOpenIndex(openIndex === i ? null : i)
+    const nowOpen = openIndex !== i
+    setOpenIndex(nowOpen ? i : null)
+    if (nowOpen) trackFaqExpand({ question: faqs[i].question, ctaLocation: 'faq-sidebar' })
   }
 
   return (
@@ -48,7 +51,7 @@ export default function FAQSidebar({
       ))}
       <button type="button"
         className="bi"
-        onClick={() => openModal(ctaProjectType)}
+        onClick={() => openModal(ctaProjectType, 'faq-sidebar')}
         style={{ width: '100%', marginTop: 28, textAlign: 'center' }}
       >
         {ctaText}
