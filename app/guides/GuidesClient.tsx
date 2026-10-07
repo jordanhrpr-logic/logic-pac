@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'luxury-beauty-packaging-system',
+    tag: 'Playbook',
+    title: 'The Luxury Beauty Packaging System Guide',
+    description: 'How to develop luxury beauty, cosmetics, and fragrance packaging as a connected system — primary, secondary, trays, materials, finishes, compliance, and production readiness.',
+    image: '/images/guides/luxury-beauty-packaging/kiki-secondary-hero.jpg',
+    gradient: 'linear-gradient(135deg,#0d0f1a,#1a1a2e,#2d1b3f)',
+  },
+  {
     slug: 'influencer-kit-playbook',
     tag: 'Playbook',
     title: 'The Influencer Kit Playbook: How to Design PR Mailers That Get Posted',
