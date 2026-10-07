@@ -153,7 +153,7 @@ export default function PlaybookClient() {
             <p><strong>Drawer boxes</strong> offer a middle ground: a more dramatic reveal than a mailer, at a lower cost than full rigid. The slide-out mechanism creates a natural filming moment and works well for beauty and skincare brands.</p>
 
             <h2 id="finishes">Finishes That Pop on Camera</h2>
-            <p>The right finish elevates a kit from &ldquo;professional&rdquo; to &ldquo;stunning.&rdquo; These are the finishes that photograph and film best. For detailed cost ranges and tradeoffs, see our <Link href="/blog/packaging-finishes-guide-foil-uv-emboss?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=playbook_finishes_article">packaging finishes guide</Link>.</p>
+            <p>The right finish elevates a kit from &ldquo;professional&rdquo; to &ldquo;stunning.&rdquo; These are the finishes that photograph and film best. For detailed cost ranges and tradeoffs, see our <Link href="/guides/packaging-finish-guide?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=playbook_finish_guide">packaging finish guide</Link>.</p>
 
             <Image src="/images/portfolio/soft-touch-spot-uv.jpg" alt="Soft-touch lamination with spot UV finishing on custom packaging" width={800} height={500} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 

@@ -83,7 +83,7 @@ export default function FinishGuideClient() {
               <li><strong>Visual distinction:</strong> How the package stands out on shelf, in photos, and on video</li>
               <li><strong>Perceived value:</strong> Whether the package feels worth the price point of the product inside</li>
             </ul>
-            <p>The difference between a $20 product and a $60 product is often not the product itself &mdash; it&apos;s the packaging finish. Getting this right is one of the highest-leverage decisions in packaging development. Our <Link href="/blog/packaging-finishes-guide-foil-uv-emboss?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=finish_guide_blog_deep_dive">packaging finishes blog article</Link> covers per-unit cost ranges and when each finish earns its place.</p>
+            <p>The difference between a $20 product and a $60 product is often not the product itself &mdash; it&apos;s the packaging finish. Getting this right is one of the highest-leverage decisions in packaging development, and the sections below cover per-unit cost ranges and when each finish earns its place.</p>
 
             <h2 id="soft-touch">Soft-Touch Lamination</h2>
             <p>Soft-touch lamination (also called &ldquo;velvet lamination&rdquo; or &ldquo;peach skin&rdquo;) is a specialty film applied to printed surfaces that creates a velvety, matte texture. It&apos;s become the de facto standard for premium packaging across beauty, cosmetics, and luxury consumer brands. For a deeper look at when soft-touch is worth the cost, see our <Link href="/blog/soft-touch-lamination-packaging?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=finish_guide_soft_touch_article">soft-touch lamination article</Link>.</p>

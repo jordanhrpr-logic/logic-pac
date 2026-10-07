@@ -12,6 +12,21 @@ const nextConfig = {
         destination: 'https://logic-pac.com/:path*',
         permanent: true,
       },
+      {
+        source: '/blog/packaging-finishes-guide-foil-uv-emboss',
+        destination: '/guides/packaging-finish-guide',
+        permanent: true,
+      },
+      {
+        source: '/blog/packaging-brief-template-beauty-brands',
+        destination: '/guides/packaging-brief-template',
+        permanent: true,
+      },
+      {
+        source: '/blog/refillable-beauty-packaging-guide',
+        destination: '/guides/beauty-refillable-playbook',
+        permanent: true,
+      },
     ]
   },
 }

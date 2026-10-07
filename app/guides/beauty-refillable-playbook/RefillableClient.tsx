@@ -145,7 +145,7 @@ export default function RefillableClient() {
             <Image src="/images/guides/refillable-system-diagram.png" alt="Three refillable packaging architectures — cartridge pod-swap, pump-swap, and pour-refill systems compared" width={800} height={450} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="works"><span className="num">03.</span>When refillables work</h2>
-            <p>Refillability earns its sustainability claim when the system delivers real reuse at meaningful scale. Our <Link href="/blog/refillable-beauty-packaging-guide?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=refillable_guide_blog_article">refillable packaging blog article</Link> covers the five architecture types and adoption rate data. The conditions that have to be true:</p>
+            <p>Refillability earns its sustainability claim when the system delivers real reuse at meaningful scale. The conditions that have to be true:</p>
             <ul>
               <li><strong>High repurchase frequency.</strong> If customers replace the product every 2&ndash;3 months, the refill economics work. If it&apos;s an annual purchase, the refill story is weak.</li>
               <li><strong>Hero SKU loyalty.</strong> Refillables succeed inside loyal customer relationships. Trial-stage products fail at refill &mdash; customers want flexibility.</li>
