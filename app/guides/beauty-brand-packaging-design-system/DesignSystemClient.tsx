@@ -393,8 +393,19 @@ export default function DesignSystemClient() {
             <p>PR mailers and influencer kits are the system’s highest-leverage format and the easiest one to over-design. The question to answer is not &ldquo;how do we make this unforgettable&rdquo; &mdash; it is &ldquo;how do we make this unforgettable <em>as this brand</em>.&rdquo; A PR kit that is unforgettable in a way the rest of the line is not is not a brand moment. It is a one-off.</p>
             <p>The <Link href="/guides/influencer-kit-playbook">Influencer Kit Playbook</Link> covers the PR kit discipline in detail. For the design system, the only question that matters is: does the PR kit extend the system or exit it? If the PR kit’s silhouette, hierarchy, finish stack, and color palette all come from the system, it compounds the brand. If any of those are new on the PR kit, the kit is a separate asset and should be judged as one.</p>
 
-            <Image src="/images/guides/packaging-design-system/line-extension-lifestyle.jpg" alt="A beauty brand's design system carried through a lifestyle and gifting context" width={1200} height={900} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
-            <p className="guide-img-caption">A design system that holds across the SKU, the gift, and the lifestyle moment reads as one brand across every touchpoint.</p>
+            <figure className="guide-video">
+              <video
+                src="/videos/guides/luxury-beauty-packaging/kiki-primary-rotation.mp4"
+                poster="/videos/guides/luxury-beauty-packaging/kiki-primary-rotation-poster.jpg"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label="KIKI World Pretty Nail Graffiti primary pack rotating against a gradient background"
+              />
+              <figcaption>KIKI World&apos;s Pretty Nail Graffiti primary pack &mdash; a Pentawards 2024 shortlist entry whose silhouette, color, and finish stack read as the same brand from the shelf through PR to influencer content.</figcaption>
+            </figure>
 
             <h2 id="rules"><span className="num">07.</span>The rules that fix &mdash; and the rules that flex</h2>
 
