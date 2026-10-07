@@ -5,6 +5,15 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'unboxing-experience-design-guide',
+    href: '/blog/unboxing-experience-design-guide',
+    tag: 'Design Discipline',
+    title: 'The Unboxing Experience Design Guide',
+    description: 'Reveal sequencing, tactile hierarchy, sound design, camera-readiness, physics of a good reveal, and channel-specific unboxing design for DTC, PR/influencer, retail, and subscription — the design discipline behind packaging that gets filmed.',
+    image: '/images/guides/unboxing-experience/hero-reveal.jpg',
+    gradient: 'linear-gradient(135deg,#1a0d0f,#2a1a1f,#3f2a2c)',
+  },
+  {
     slug: 'beauty-packaging-claims-compliance',
     tag: 'Compliance Hub',
     title: 'Beauty Packaging Claims & Compliance Guide',
@@ -130,7 +139,7 @@ export default function GuidesClient() {
       <div className="gidx">
         <div className="gcards">
           {guides.map(g => (
-            <Link key={g.slug} href={`/guides/${g.slug}`} className="gcard">
+            <Link key={g.slug} href={(g as { href?: string }).href || `/guides/${g.slug}`} className="gcard">
               <div className="gcard-img">
                 <Image src={g.image} alt={g.title} width={600} height={338} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
