@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'beauty-brand-packaging-design-system',
+    tag: 'System Playbook',
+    title: 'The Beauty Brand Packaging Design System Guide',
+    description: 'How to build a packaging design system that scales a beauty brand from a hero SKU through line extensions, gift sets, and PR kits — without rebuilding the brand every launch.',
+    image: '/images/guides/packaging-design-system/scroll-07-shelf.jpg',
+    gradient: 'linear-gradient(135deg,#1a1a2e,#2d1f3f,#3f2a4a)',
+  },
+  {
     slug: 'packaging-testing-quality-control',
     tag: 'Reference Guide',
     title: 'Packaging Testing & Quality Control Guide',

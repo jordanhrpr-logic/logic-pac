@@ -578,8 +578,8 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-video{margin:28px 0 32px;padding:0}
 .guide-video video{display:block;width:100%;height:auto;max-height:640px;object-fit:cover;border-radius:8px;background:#050d1f;box-shadow:var(--shadow-md)}
 .guide-video figcaption{margin-top:12px;font-size:13px;color:var(--slate);line-height:1.6;font-style:italic}
-.luxury-guide .seo a,.sustainability-guide .seo a,.testing-guide .seo a{color:#5a6d00;font-weight:600;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px;transition:color .2s,text-decoration-color .2s}
-.luxury-guide .seo a:hover,.luxury-guide .seo a:focus-visible,.sustainability-guide .seo a:hover,.sustainability-guide .seo a:focus-visible,.testing-guide .seo a:hover,.testing-guide .seo a:focus-visible{color:var(--navy);text-decoration-color:var(--lime)}
+.luxury-guide .seo a,.sustainability-guide .seo a,.testing-guide .seo a,.design-system-guide .seo a{color:#5a6d00;font-weight:600;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px;transition:color .2s,text-decoration-color .2s}
+.luxury-guide .seo a:hover,.luxury-guide .seo a:focus-visible,.sustainability-guide .seo a:hover,.sustainability-guide .seo a:focus-visible,.testing-guide .seo a:hover,.testing-guide .seo a:focus-visible,.design-system-guide .seo a:hover,.design-system-guide .seo a:focus-visible{color:var(--navy);text-decoration-color:var(--lime)}
 .guide-images-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 10px}
 .guide-images-grid img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-md);display:block}
 .guide-img-caption{font-size:13px;color:var(--slate);line-height:1.65;margin:0 0 32px;font-style:italic}
@@ -595,6 +595,23 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-main .seo .callout p{margin:0}
 .guide-main .seo .callout strong:first-child{color:var(--navy);display:inline;margin-right:4px}
 .guide-main .seo .callout a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px}
+/* ── GUIDE: scroll-driven sticky visual (Design System guide) ── */
+.system-sticky{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:40px 0 56px;align-items:start}
+.system-sticky-visual{position:sticky;top:88px;height:calc(100vh - 112px);min-height:460px;max-height:720px;border-radius:12px;overflow:hidden;background:var(--navy);box-shadow:var(--shadow-md)}
+.system-sticky-visual-stack{position:absolute;inset:0}
+.system-sticky-visual-stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s ease;will-change:opacity}
+.system-sticky-visual-stack img.on{opacity:1}
+.system-sticky-visual-caption{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;background:linear-gradient(0deg,rgba(5,13,31,.88) 0%,rgba(5,13,31,.0) 100%);color:var(--white);font-size:12px;letter-spacing:.5px;line-height:1.5;z-index:2;pointer-events:none}
+.system-sticky-visual-caption .sticky-cap-label{display:block;font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--lime);margin-bottom:4px}
+.system-sticky-content{display:flex;flex-direction:column;gap:40px;padding-right:4px}
+.system-sticky-content .sysrow{scroll-margin-top:96px;min-height:50vh}
+.system-sticky-content .sysrow-eyebrow{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--lime-dk);margin-bottom:10px}
+.system-sticky-content .sysrow h3{font-family:var(--font-dm-serif),'DM Serif Display',serif;font-size:28px;font-weight:400;line-height:1.2;color:var(--navy);margin:0 0 14px}
+.system-sticky-content .sysrow p{font-size:15px;line-height:1.75;color:var(--slate);margin:0 0 12px}
+.system-sticky-content .sysrow ul{list-style:none;padding:0;margin:14px 0 0}
+.system-sticky-content .sysrow ul li{position:relative;padding:6px 0 6px 20px;font-size:14px;line-height:1.7;color:var(--slate)}
+.system-sticky-content .sysrow ul li::before{content:'';position:absolute;left:0;top:14px;width:8px;height:8px;border-radius:50%;background:var(--lime);opacity:.65}
+.system-sticky-content .sysrow-inline-img{display:none}
 .checklist-wrap{background:var(--bg);border:1px solid var(--ice);border-radius:10px;padding:28px 28px 24px;margin:24px 0 32px}
 .checklist-progress{display:flex;align-items:center;gap:14px;margin-bottom:20px;height:28px;position:relative;background:var(--white);border:1px solid var(--ice);border-radius:4px;padding:0 14px;overflow:hidden}
 .checklist-progress-bar{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--lime-muted),var(--lime));transition:width .3s ease;opacity:.55}
@@ -637,6 +654,11 @@ nav.scrolled{padding:0 24px}
 .gcards{grid-template-columns:1fr}
 .gidx{padding:64px 24px 80px}
 .guide-images-grid{grid-template-columns:1fr;gap:10px}
+.system-sticky{grid-template-columns:1fr;gap:0;margin:32px 0 40px}
+.system-sticky-visual{display:none}
+.system-sticky-content .sysrow{min-height:auto}
+.system-sticky-content .sysrow-inline-img{display:block;width:100%;height:auto;border-radius:8px;margin:0 0 20px;box-shadow:var(--shadow-md)}
+.system-sticky-content .sysrow h3{font-size:22px}
 .checklist li label{grid-template-columns:24px 36px 1fr;gap:12px;padding:14px 14px}
 .guide-faq{padding:48px 24px}
 .blog-body{padding:0 24px 64px}
