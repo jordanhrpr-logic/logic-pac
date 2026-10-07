@@ -98,7 +98,7 @@ export default function LuxuryClient() {
         </div>
       </div>
 
-      <div className="guide-wrap">
+      <div className="guide-wrap luxury-guide">
         <aside className="gtoc">
           <div className="gtoc-label">Contents</div>
           {tocSections.map(s => (
@@ -320,7 +320,7 @@ export default function LuxuryClient() {
             <h3>Fulfillment and replenishment</h3>
             <p>A luxury program does not end at the pallet. Logic Pac operates <strong>packaging fulfillment and managed-inventory programs out of Salt Lake City</strong>, holding stock, kitting components, and shipping to the brand&apos;s 3PL or packout partner on a cadence the brand sets. The result is a replenishment lead time measured in days rather than months, which matters when a hero SKU takes off faster than the next ocean container will land. The Epicutis skincare program is a representative example of this model at scale.</p>
 
-            <Image src="/images/guides/luxury-beauty-packaging/epicutis-system.jpg" alt="Epicutis skincare packaging system — multi-SKU family with coordinated primary and secondary architecture" width={1200} height={933} className="guide-img" sizes="(max-width: 960px) 100vw, 600px" />
+            <Image src="/images/guides/luxury-beauty-packaging/epicutis-system.jpg" alt="Epicutis skincare packaging system — multi-SKU family with coordinated black outer carton, drawer-pull inner boxes, and molded trays" width={1600} height={1200} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />
 
             <h2 id="checklist"><span className="num">09.</span>The 10-item luxury packaging readiness checklist</h2>
             <p>Run your current project through the ten checks below. If more than two or three come back with hesitation, the project is not ready to move to tooling or print.</p>
