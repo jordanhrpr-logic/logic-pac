@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'packaging-testing-quality-control',
+    tag: 'Reference Guide',
+    title: 'Packaging Testing & Quality Control Guide',
+    description: 'Specifications, golden samples, fit and transit testing, DUPRO and pre-shipment inspection, AQL thresholds, and the documentation trail that guarantees run-to-sample conformity.',
+    image: '/images/guides/packaging-testing-qc/sample-inspection.jpg',
+    gradient: 'linear-gradient(135deg,#0f1a2a,#1a2a3a,#2c3e5c)',
+  },
+  {
     slug: 'luxury-beauty-packaging-system',
     tag: 'Playbook',
     title: 'The Luxury Beauty Packaging System Guide',
