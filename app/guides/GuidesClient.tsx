@@ -26,7 +26,7 @@ const guides = [
     tag: 'Compliance Hub',
     title: 'Beauty Packaging Claims & Compliance Guide',
     description: 'The orientation layer for beauty packaging compliance. SB 54, SB 343, Prop 65, FTC Green Guides, FDA 21 CFR 701, MoCRA, EU PPWR, ECGT, UK regimes, UFLPA, and the certifications that substantiate specific claims — mapped by jurisdiction, claim, and pack component.',
-    image: '/images/guides/beauty-packaging-compliance/hero-clinical-skincare.jpg',
+    image: '/images/guides/beauty-packaging-compliance/fsc-paper-cartons.jpg',
     gradient: 'linear-gradient(135deg,#0d1a2e,#1a2a4a,#2d3f5c)',
   },
   {
@@ -42,7 +42,7 @@ const guides = [
     tag: 'Decision Tool',
     title: 'Packaging Cost, MOQ & Landed-Cost Planning Guide',
     description: 'The seven-component landed-cost stack, MOQ as a cash-flow decision, freight-mode selection, and an interactive worksheet to pressure-test a packaging program before the PO goes out.',
-    image: '/images/guides/packaging-testing-qc/fit-function.jpg',
+    image: '/images/guides/sustainable-decision-matrix/lever-reduction-artilect.jpg',
     gradient: 'linear-gradient(135deg,#0f1a2a,#1a2b4a,#2d3f5c)',
   },
   {
@@ -50,7 +50,7 @@ const guides = [
     tag: 'System Playbook',
     title: 'The Beauty Brand Packaging Design System Guide',
     description: 'How to build a packaging design system that scales a beauty brand from a hero SKU through line extensions, gift sets, and PR kits — without rebuilding the brand every launch.',
-    image: '/images/guides/packaging-design-system/scroll-07-shelf.jpg',
+    image: '/images/guides/packaging-design-system/aroma360-family.jpg',
     gradient: 'linear-gradient(135deg,#1a1a2e,#2d1f3f,#3f2a4a)',
   },
   {
@@ -58,7 +58,7 @@ const guides = [
     tag: 'Reference Guide',
     title: 'Packaging Testing & Quality Control Guide',
     description: 'Specifications, golden samples, fit and transit testing, DUPRO and pre-shipment inspection, AQL thresholds, and the documentation trail that guarantees run-to-sample conformity.',
-    image: '/images/guides/packaging-testing-qc/sample-inspection.jpg',
+    image: '/images/guides/packaging-testing-qc/cavity-verification.jpg',
     gradient: 'linear-gradient(135deg,#0f1a2a,#1a2a3a,#2c3e5c)',
   },
   {
@@ -74,7 +74,7 @@ const guides = [
     tag: 'Decision Tool',
     title: 'The Sustainable Packaging Decision Matrix',
     description: 'Score PCR, mono-material, refill, molded fiber, aluminum, and reduction side by side for one SKU. The scoring tool Logic Pac uses with beauty brands to pick the right sustainability lever.',
-    image: '/images/guides/sustainable-decision-matrix/lever-molded-fiber.jpg',
+    image: '/images/guides/sustainable-decision-matrix/lever-aluminum-refill.jpg',
     gradient: 'linear-gradient(135deg,#0d2818,#1a4a2e,#2d6a4f)',
   },
   {
@@ -130,7 +130,7 @@ const guides = [
     tag: 'Template',
     title: 'The Packaging Brief Template Every Brand Manager Needs',
     description: 'The ten sections every brief should contain, the omissions that cost weeks, and an annotated sample you can adapt.',
-    image: '/images/portfolio/premium-beauty-gift-set1.jpg',
+    image: '/images/guides/packaging-brief-checklist.png',
     gradient: 'linear-gradient(135deg,#2d1b0e,#4a2e1a,#6b3f2c)',
   },
 ]
