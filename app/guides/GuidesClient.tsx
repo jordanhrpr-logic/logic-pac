@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'retail-ready-beauty-packaging',
+    tag: 'Operations Playbook',
+    title: 'Retail-Ready Beauty Packaging Guide',
+    description: 'GS1 barcode readiness, master-carton configuration, Sephora/Ulta/Target vendor-manual specifics, planogram realities, chargeback prevention, and the launch-window math that keeps the first retail shipment clean.',
+    image: '/images/guides/retail-ready-beauty/shelf-ready-display.jpg',
+    gradient: 'linear-gradient(135deg,#0f1a2a,#1a2a3a,#2c3e5c)',
+  },
+  {
     slug: 'cost-moq-landed-cost-planning',
     tag: 'Decision Tool',
     title: 'Packaging Cost, MOQ & Landed-Cost Planning Guide',

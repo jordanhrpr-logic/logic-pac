@@ -35,6 +35,7 @@ const guideRoutes: Array<{ slug: string; lastmod: string }> = [
   { slug: 'packaging-testing-quality-control', lastmod: '2026-10-06' },
   { slug: 'beauty-brand-packaging-design-system', lastmod: '2026-10-06' },
   { slug: 'cost-moq-landed-cost-planning', lastmod: '2026-10-07' },
+  { slug: 'retail-ready-beauty-packaging', lastmod: '2026-10-07' },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
