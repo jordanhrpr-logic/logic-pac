@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'cost-moq-landed-cost-planning',
+    tag: 'Decision Tool',
+    title: 'Packaging Cost, MOQ & Landed-Cost Planning Guide',
+    description: 'The seven-component landed-cost stack, MOQ as a cash-flow decision, freight-mode selection, and an interactive worksheet to pressure-test a packaging program before the PO goes out.',
+    image: '/images/guides/packaging-testing-qc/fit-function.jpg',
+    gradient: 'linear-gradient(135deg,#0f1a2a,#1a2b4a,#2d3f5c)',
+  },
+  {
     slug: 'beauty-brand-packaging-design-system',
     tag: 'System Playbook',
     title: 'The Beauty Brand Packaging Design System Guide',

@@ -578,8 +578,8 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-video{margin:28px 0 32px;padding:0}
 .guide-video video{display:block;width:100%;height:auto;max-height:640px;object-fit:cover;border-radius:8px;background:#050d1f;box-shadow:var(--shadow-md)}
 .guide-video figcaption{margin-top:12px;font-size:13px;color:var(--slate);line-height:1.6;font-style:italic}
-.luxury-guide .seo a,.sustainability-guide .seo a,.testing-guide .seo a,.design-system-guide .seo a{color:#5a6d00;font-weight:600;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px;transition:color .2s,text-decoration-color .2s}
-.luxury-guide .seo a:hover,.luxury-guide .seo a:focus-visible,.sustainability-guide .seo a:hover,.sustainability-guide .seo a:focus-visible,.testing-guide .seo a:hover,.testing-guide .seo a:focus-visible,.design-system-guide .seo a:hover,.design-system-guide .seo a:focus-visible{color:var(--navy);text-decoration-color:var(--lime)}
+.luxury-guide .seo a,.sustainability-guide .seo a,.testing-guide .seo a,.design-system-guide .seo a,.cost-guide .seo a{color:#5a6d00;font-weight:600;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px;transition:color .2s,text-decoration-color .2s}
+.luxury-guide .seo a:hover,.luxury-guide .seo a:focus-visible,.sustainability-guide .seo a:hover,.sustainability-guide .seo a:focus-visible,.testing-guide .seo a:hover,.testing-guide .seo a:focus-visible,.design-system-guide .seo a:hover,.design-system-guide .seo a:focus-visible,.cost-guide .seo a:hover,.cost-guide .seo a:focus-visible{color:var(--navy);text-decoration-color:var(--lime)}
 .guide-images-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 10px}
 .guide-images-grid img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-md);display:block}
 .guide-img-caption{font-size:13px;color:var(--slate);line-height:1.65;margin:0 0 32px;font-style:italic}
@@ -627,6 +627,33 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .checklist-body{display:flex;flex-direction:column;gap:4px}
 .checklist-body strong{font-size:14.5px;color:var(--navy);line-height:1.4}
 .checklist-desc{font-size:13px;color:var(--slate);line-height:1.65}
+/* ── GUIDE: landed-cost worksheet (Cost guide) ── */
+.cost-worksheet{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;margin:28px 0 36px;background:var(--bg);border:1px solid var(--ice);border-radius:12px;padding:28px;align-items:start}
+.cost-worksheet-inputs{display:flex;flex-direction:column;gap:14px}
+.cost-worksheet-inputs .cw-section{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--navy);margin:4px 0 2px;padding-top:12px;border-top:1px solid var(--ice)}
+.cost-worksheet-inputs .cw-section:first-child{padding-top:0;border-top:none;margin-top:0}
+.cost-worksheet-inputs label{display:grid;grid-template-columns:1fr 118px;gap:12px;align-items:center;font-size:13.5px;color:var(--navy);line-height:1.35}
+.cost-worksheet-inputs label span{color:var(--navy)}
+.cost-worksheet-inputs label small{display:block;font-size:11px;color:var(--slate);margin-top:2px;font-weight:400}
+.cost-worksheet-inputs input[type="number"],.cost-worksheet-inputs select{width:100%;background:var(--white);border:1px solid var(--ice);border-radius:6px;padding:9px 11px;font-size:14px;font-family:inherit;color:var(--navy);transition:border-color .2s}
+.cost-worksheet-inputs input[type="number"]:focus,.cost-worksheet-inputs select:focus{outline:none;border-color:var(--lime)}
+.cost-worksheet-results{background:var(--navy);color:var(--white);border-radius:10px;padding:28px 26px;position:sticky;top:88px;box-shadow:var(--shadow-md)}
+.cost-worksheet-results .cwr-label{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lime);margin-bottom:14px}
+.cost-worksheet-results .cwr-primary{margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12)}
+.cost-worksheet-results .cwr-primary .cwr-k{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px}
+.cost-worksheet-results .cwr-primary .cwr-v{font-family:var(--font-dm-serif),'DM Serif Display',serif;font-size:38px;line-height:1;color:var(--lime)}
+.cost-worksheet-results .cwr-primary .cwr-sub{font-size:12px;color:rgba(255,255,255,.6);margin-top:6px;line-height:1.5}
+.cost-worksheet-results .cwr-row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
+.cost-worksheet-results .cwr-row:last-of-type{border-bottom:none}
+.cost-worksheet-results .cwr-row .cwr-k{color:rgba(255,255,255,.6)}
+.cost-worksheet-results .cwr-row .cwr-v{color:var(--white);font-weight:600}
+.cost-worksheet-results .cwr-timeline{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12)}
+.cost-worksheet-results .cwr-timeline .cwr-k{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lime);margin-bottom:12px}
+.cost-worksheet-results .cwr-timeline ol{list-style:none;counter-reset:cwt;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.cost-worksheet-results .cwr-timeline li{counter-increment:cwt;position:relative;padding-left:38px;font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.78)}
+.cost-worksheet-results .cwr-timeline li::before{content:counter(cwt,decimal-leading-zero);position:absolute;left:0;top:0;font-family:var(--font-dm-serif),'DM Serif Display',serif;font-size:13px;color:var(--lime);font-weight:400;letter-spacing:.5px}
+.cost-worksheet-results .cwr-timeline li strong{color:var(--white);display:block;font-size:12.5px;letter-spacing:.3px}
+.cost-worksheet-note{font-size:12px;color:var(--slate);line-height:1.6;margin:0 0 16px;font-style:italic}
 .guide-faq{padding:80px 48px;background:var(--bg)}
 .guide-faq-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:start}
 .guide-faq-content{padding-top:8px;margin-bottom:32px}
@@ -661,6 +688,10 @@ nav.scrolled{padding:0 24px}
 .system-sticky-content .sysrow-inline-img{display:block;width:100%;height:auto;border-radius:8px;margin:0 0 20px;box-shadow:var(--shadow-md)}
 .system-sticky-content .sysrow h3{font-size:22px}
 .checklist li label{grid-template-columns:24px 36px 1fr;gap:12px;padding:14px 14px}
+.cost-worksheet{grid-template-columns:1fr;gap:16px;padding:20px}
+.cost-worksheet-results{position:static;padding:22px 20px}
+.cost-worksheet-results .cwr-primary .cwr-v{font-size:32px}
+.cost-worksheet-inputs label{grid-template-columns:1fr 100px;gap:10px;font-size:13px}
 .guide-faq{padding:48px 24px}
 .blog-body{padding:0 24px 64px}
 .blog-wrap{display:block;padding:40px 24px 0}
