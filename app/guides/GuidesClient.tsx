@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'beauty-packaging-claims-compliance',
+    tag: 'Compliance Hub',
+    title: 'Beauty Packaging Claims & Compliance Guide',
+    description: 'The orientation layer for beauty packaging compliance. SB 54, SB 343, Prop 65, FTC Green Guides, FDA 21 CFR 701, MoCRA, EU PPWR, ECGT, UK regimes, UFLPA, and the certifications that substantiate specific claims — mapped by jurisdiction, claim, and pack component.',
+    image: '/images/guides/beauty-packaging-compliance/hero-clinical-skincare.jpg',
+    gradient: 'linear-gradient(135deg,#0d1a2e,#1a2a4a,#2d3f5c)',
+  },
+  {
     slug: 'retail-ready-beauty-packaging',
     tag: 'Operations Playbook',
     title: 'Retail-Ready Beauty Packaging Guide',
