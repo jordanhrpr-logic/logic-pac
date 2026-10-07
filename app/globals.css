@@ -583,6 +583,18 @@ footer{background:var(--navy);padding:80px 80px 48px}
 .guide-images-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 10px}
 .guide-images-grid img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow-md);display:block}
 .guide-img-caption{font-size:13px;color:var(--slate);line-height:1.65;margin:0 0 32px;font-style:italic}
+/* ── GUIDE: inside-card + callout + section numbering ── */
+.guide-main .seo h2 .num{display:inline-block;font-family:var(--font-dm-serif),'DM Serif Display',serif;font-weight:400;color:var(--lime-dk);margin-right:14px;letter-spacing:-.01em}
+.guide-main .seo .inside-card{background:var(--navy);color:var(--white);border-radius:10px;padding:32px 36px;margin:28px 0 36px;box-shadow:var(--shadow-md);position:relative;overflow:hidden}
+.guide-main .seo .inside-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--lime)}
+.guide-main .seo .inside-card .label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lime);margin-bottom:18px}
+.guide-main .seo .inside-card ol,.guide-main .seo .inside-card ul{list-style:none;counter-reset:ic;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.guide-main .seo .inside-card ol li,.guide-main .seo .inside-card ul li{counter-increment:ic;font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.82);padding-left:40px;position:relative}
+.guide-main .seo .inside-card ol li::before,.guide-main .seo .inside-card ul li::before{content:counter(ic,decimal-leading-zero);position:absolute;left:0;top:1px;font-family:var(--font-dm-serif),'DM Serif Display',serif;font-size:15px;color:var(--lime);font-weight:400;letter-spacing:.5px}
+.guide-main .seo .callout{background:#f9f6e8;border-left:4px solid var(--lime);border-radius:0 8px 8px 0;padding:22px 28px;margin:28px 0 36px;font-size:15px;line-height:1.75;color:var(--navy)}
+.guide-main .seo .callout p{margin:0}
+.guide-main .seo .callout strong:first-child{color:var(--navy);display:inline;margin-right:4px}
+.guide-main .seo .callout a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px}
 .checklist-wrap{background:var(--bg);border:1px solid var(--ice);border-radius:10px;padding:28px 28px 24px;margin:24px 0 32px}
 .checklist-progress{display:flex;align-items:center;gap:14px;margin-bottom:20px;height:28px;position:relative;background:var(--white);border:1px solid var(--ice);border-radius:4px;padding:0 14px;overflow:hidden}
 .checklist-progress-bar{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--lime-muted),var(--lime));transition:width .3s ease;opacity:.55}
@@ -711,6 +723,10 @@ footer{padding:48px 24px 32px}
 .guide-answer h2{font-size:20px}
 .guide-answer p{font-size:15px}
 .guide-bottom-line{padding:24px 22px;margin:36px 0}
+.guide-main .seo .inside-card{padding:24px 22px;margin:22px 0 28px}
+.guide-main .seo .inside-card ol li,.guide-main .seo .inside-card ul li{padding-left:34px;font-size:14px}
+.guide-main .seo .callout{padding:18px 20px;margin:22px 0 28px;font-size:14.5px}
+.guide-main .seo h2 .num{margin-right:10px}
 }
 @media(prefers-reduced-motion:reduce){
 *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}
