@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const guides = [
   {
+    slug: 'packaging-audit',
+    tag: 'Service & Methodology',
+    title: 'The Packaging Audit Guide',
+    description: 'What a packaging audit is, when to request one, the seven audit dimensions, methodology, deliverables, and the pattern of findings that recurs across beauty packaging programs. The entry point to the Logic Pac packaging audit service.',
+    image: '/images/guides/packaging-audit/hero-audit.jpg',
+    gradient: 'linear-gradient(135deg,#0d1a26,#1a2a3f,#2d3f5c)',
+  },
+  {
     slug: 'unboxing-experience-design-guide',
     href: '/blog/unboxing-experience-design-guide',
     tag: 'Design Discipline',
