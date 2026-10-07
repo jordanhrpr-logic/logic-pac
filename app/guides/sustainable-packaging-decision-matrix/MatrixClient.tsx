@@ -313,24 +313,29 @@ export default function MatrixClient() {
             <h2 id="scorecard"><span className="num">09.</span>The 10-question scorecard</h2>
             <p>Run this scorecard once per candidate lever for a given SKU. If a lever answers &ldquo;yes&rdquo; to fewer than 7 of the 10 questions, it is not a candidate for pilot &mdash; it is a candidate for the long-term roadmap.</p>
 
-            <div className="checklist">
+            <div className="checklist-wrap">
               <div className="checklist-progress">
-                <div className="checklist-progress-label">{Object.values(checked).filter(Boolean).length} of {scorecardItems.length} complete</div>
-                <div className="checklist-progress-bar"><div className="checklist-progress-fill" style={{ width: `${progress}%` }} /></div>
+                <div className="checklist-progress-bar" style={{ width: `${progress}%` }} aria-hidden="true" />
+                <span>{Object.values(checked).filter(Boolean).length} of {scorecardItems.length} ready &middot; {progress}%</span>
               </div>
-              {scorecardItems.map(item => (
-                <label key={item.id} className={`checklist-item${checked[item.id] ? ' is-checked' : ''}`}>
-                  <input
-                    type="checkbox"
-                    checked={!!checked[item.id]}
-                    onChange={() => setChecked(prev => ({ ...prev, [item.id]: !prev[item.id] }))}
-                  />
-                  <span className="checklist-item-copy">
-                    <span className="checklist-item-title">{item.title}</span>
-                    <span className="checklist-item-body">{item.body}</span>
-                  </span>
-                </label>
-              ))}
+              <ul className="checklist">
+                {scorecardItems.map((item, idx) => (
+                  <li key={item.id} className={checked[item.id] ? 'checked' : ''}>
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={!!checked[item.id]}
+                        onChange={() => setChecked(prev => ({ ...prev, [item.id]: !prev[item.id] }))}
+                      />
+                      <span className="checklist-num">{String(idx + 1).padStart(2, '0')}</span>
+                      <span className="checklist-body">
+                        <strong>{item.title}</strong>
+                        <span className="checklist-desc">{item.body}</span>
+                      </span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <GuideBottomLine>
