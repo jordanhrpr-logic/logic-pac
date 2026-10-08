@@ -9,12 +9,12 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'why-most-influencer-kits-get-opened-once-and-forgo', label: 'Why Most Influencer Kits Get Opened Once and Fo...' },
+    { id: 'why-most-influencer-kits-get-opened-once-and-forgo', label: 'Why Most Influencer Kits Get Opened Once and Forgotten' },
     { id: 'the-5-elements-of-a-kit-that-gets-filmed', label: 'The 5 Elements of a Kit That Gets Filmed' },
-    { id: 'what-influencer-kits-actually-cost-850-per-unit', label: 'What Influencer Kits Actually Cost ($8–$50+ Per...' },
+    { id: 'what-influencer-kits-actually-cost-850-per-unit', label: 'What Influencer Kits Actually Cost ($8–$50+ Per Unit)' },
     { id: 'production-timelinefrom-concept-to-doorstep', label: 'Production Timeline—From Concept to Doorstep' },
-    { id: 'how-to-brief-your-packaging-partner-and-what-to-in', label: 'How to Brief Your Packaging Partner (and What t...' },
-    { id: 'measuring-roiwhat-8-of-better-packaging-actually-r', label: 'Measuring ROI—What $8 of Better Packaging Actua...' },
+    { id: 'how-to-brief-your-packaging-partner-and-what-to-in', label: 'How to Brief Your Packaging Partner (and What to Include)' },
+    { id: 'measuring-roiwhat-8-of-better-packaging-actually-r', label: 'Measuring ROI—What $8 of Better Packaging Actually Returns' },
     { id: 'start-with-the-moment-not-the-box', label: 'Start With the Moment, Not the Box' },
   ]
 

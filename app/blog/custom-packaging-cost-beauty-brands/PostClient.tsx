@@ -10,11 +10,11 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'what-custom-beauty-packaging-actually-costs-per-un', label: 'What Custom Beauty Packaging Actually Costs Per...' },
+    { id: 'what-custom-beauty-packaging-actually-costs-per-un', label: 'What Custom Beauty Packaging Actually Costs Per Unit' },
     { id: 'what-drives-custom-packaging-cost-up', label: 'What Drives Custom Packaging Cost Up' },
     { id: 'how-to-compare-quotes-from-packaging-suppliers', label: 'How to Compare Quotes From Packaging Suppliers' },
     { id: 'custom-vs-stock-packaging-when-each-makes-sense', label: 'Custom vs. Stock Packaging: When Each Makes Sense' },
-    { id: 'how-to-reduce-packaging-costs-without-losing-brand', label: 'How to Reduce Packaging Costs Without Losing Br...' },
+    { id: 'how-to-reduce-packaging-costs-without-losing-brand', label: 'How to Reduce Packaging Costs Without Losing Brand Quality' },
     { id: 'what-beauty-brands-should-budget-before-starting', label: 'What Beauty Brands Should Budget Before Starting' },
   ]
 

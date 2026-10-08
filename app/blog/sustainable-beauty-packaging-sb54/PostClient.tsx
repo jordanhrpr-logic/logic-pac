@@ -11,14 +11,14 @@ export default function PostClient() {
 
   const tocSections = [
     { id: 'what-is-sustainable-beauty-packaging', label: 'What Is Sustainable Beauty Packaging?' },
-    { id: 'why-sustainable-beauty-packaging-is-getting-harder', label: 'Why Sustainable Beauty Packaging Is Getting Har...' },
-    { id: 'pcr-packaging-for-beauty-what-works-and-what-break', label: 'PCR Packaging for Beauty: What Works and What B...' },
-    { id: 'fsc-paper-and-certified-board-a-cleaner-secondary', label: 'FSC Paper and Certified Board: A Cleaner Second...' },
-    { id: 'mono-material-packaging-the-simplest-path-to-recyc', label: 'Mono-Material Packaging: The Simplest Path to R...' },
-    { id: 'refillable-beauty-packaging-when-it-works-financia', label: 'Refillable Beauty Packaging: When It Works Fina...' },
+    { id: 'why-sustainable-beauty-packaging-is-getting-harder', label: 'Why Sustainable Beauty Packaging Is Getting Harder to Fake' },
+    { id: 'pcr-packaging-for-beauty-what-works-and-what-break', label: 'PCR Packaging for Beauty: What Works and What Breaks' },
+    { id: 'fsc-paper-and-certified-board-a-cleaner-secondary', label: 'FSC Paper and Certified Board: A Cleaner Secondary Packaging Move' },
+    { id: 'mono-material-packaging-the-simplest-path-to-recyc', label: 'Mono-Material Packaging: The Simplest Path to Recyclability' },
+    { id: 'refillable-beauty-packaging-when-it-works-financia', label: 'Refillable Beauty Packaging: When It Works Financially' },
     { id: 'what-counts-as-greenwashing-in-beauty-packaging', label: 'What Counts as Greenwashing in Beauty Packaging?' },
     { id: 'how-sb-54-changes-the-packaging-conversation', label: 'How SB 54 Changes the Packaging Conversation' },
-    { id: 'how-eu-ppwr-affects-beauty-brands-selling-internat', label: 'How EU PPWR Affects Beauty Brands Selling Inter...' },
+    { id: 'how-eu-ppwr-affects-beauty-brands-selling-internat', label: 'How EU PPWR Affects Beauty Brands Selling Internationally' },
     { id: 'a-practical-sustainable-packaging-roadmap', label: 'A Practical Sustainable Packaging Roadmap' },
   ]
 

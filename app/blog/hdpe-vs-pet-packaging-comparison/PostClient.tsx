@@ -9,13 +9,13 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'material-properties-what-each-plastic-actually-doe', label: 'Material Properties: What Each Plastic Actually...' },
-    { id: 'chemical-resistance-the-decision-most-brands-get-w', label: 'Chemical Resistance: The Decision Most Brands G...' },
+    { id: 'material-properties-what-each-plastic-actually-doe', label: 'Material Properties: What Each Plastic Actually Does' },
+    { id: 'chemical-resistance-the-decision-most-brands-get-w', label: 'Chemical Resistance: The Decision Most Brands Get Wrong' },
     { id: 'recyclability-and-pcr-availability-hdpe-vs-pet', label: 'Recyclability and PCR Availability: HDPE vs PET' },
     { id: 'cost-per-unit-what-each-material-actually-costs', label: 'Cost Per Unit: What Each Material Actually Costs' },
-    { id: 'decoration-and-finishing-how-each-material-accepts', label: 'Decoration and Finishing: How Each Material Acc...' },
-    { id: 'the-decision-matrix-hdpe-vs-pet-for-beauty-packagi', label: 'The Decision Matrix: HDPE vs PET for Beauty Pac...' },
-    { id: 'shelf-life-impact-how-material-choice-affects-prod', label: 'Shelf Life Impact: How Material Choice Affects ...' },
+    { id: 'decoration-and-finishing-how-each-material-accepts', label: 'Decoration and Finishing: How Each Material Accepts Print' },
+    { id: 'the-decision-matrix-hdpe-vs-pet-for-beauty-packagi', label: 'The Decision Matrix: HDPE vs PET for Beauty Packaging' },
+    { id: 'shelf-life-impact-how-material-choice-affects-prod', label: 'Shelf Life Impact: How Material Choice Affects Product Longevity' },
   ]
 
 

@@ -11,11 +11,11 @@ export default function PostClient() {
   const tocSections = [
     { id: 'why-do-custom-packaging-moqs-exist', label: 'Why Do Custom Packaging MOQs Exist?' },
     { id: 'moq-ranges-by-packaging-format', label: 'MOQ Ranges by Packaging Format' },
-    { id: 'how-can-brands-get-custom-packaging-at-lower-volum', label: 'How Can Brands Get Custom Packaging at Lower Vo...' },
+    { id: 'how-can-brands-get-custom-packaging-at-lower-volum', label: 'How Can Brands Get Custom Packaging at Lower Volumes?' },
     { id: 'when-does-stock-packaging-make-more-sense', label: 'When Does Stock Packaging Make More Sense?' },
     { id: 'how-do-moqs-affect-cash-flow-and-storage', label: 'How Do MOQs Affect Cash Flow and Storage?' },
     { id: 'how-do-multi-sku-brands-manage-packaging-moqs', label: 'How Do Multi-SKU Brands Manage Packaging MOQs?' },
-    { id: 'how-do-you-scale-from-low-moq-to-production-volume', label: 'How Do You Scale From Low MOQ to Production Vol...' },
+    { id: 'how-do-you-scale-from-low-moq-to-production-volume', label: 'How Do You Scale From Low MOQ to Production Volume?' },
   ]
 
 

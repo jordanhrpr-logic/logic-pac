@@ -10,13 +10,13 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'the-structural-foundation-why-weight-is-the-first', label: 'The Structural Foundation: Why Weight Is the Fi...' },
-    { id: 'closure-engineering-the-most-tactile-quality-signa', label: 'Closure Engineering: The Most Tactile Quality S...' },
+    { id: 'the-structural-foundation-why-weight-is-the-first', label: 'The Structural Foundation: Why Weight Is the First Luxury Signal' },
+    { id: 'closure-engineering-the-most-tactile-quality-signa', label: 'Closure Engineering: The Most Tactile Quality Signal' },
     { id: 'finish-layering-the-hierarchy-that-creates-depth', label: 'Finish Layering: The Hierarchy That Creates Depth' },
-    { id: 'sensory-sequencing-designing-the-unboxing-as-an-ex', label: 'Sensory Sequencing: Designing the Unboxing as a...' },
-    { id: 'insert-design-the-invisible-architecture-of-luxury', label: 'Insert Design: The Invisible Architecture of Lu...' },
-    { id: 'what-luxury-packaging-actually-costs-the-premium-m', label: 'What Luxury Packaging Actually Costs: The Premi...' },
-    { id: 'enterprise-grade-luxury-how-major-brands-approach', label: 'Enterprise-Grade Luxury: How Major Brands Appro...' },
+    { id: 'sensory-sequencing-designing-the-unboxing-as-an-ex', label: 'Sensory Sequencing: Designing the Unboxing as an Experience' },
+    { id: 'insert-design-the-invisible-architecture-of-luxury', label: 'Insert Design: The Invisible Architecture of Luxury' },
+    { id: 'what-luxury-packaging-actually-costs-the-premium-m', label: 'What Luxury Packaging Actually Costs: The Premium Math' },
+    { id: 'enterprise-grade-luxury-how-major-brands-approach', label: 'Enterprise-Grade Luxury: How Major Brands Approach Packaging' },
     { id: 'common-luxury-packaging-mistakes', label: 'Common Luxury Packaging Mistakes' },
   ]
 

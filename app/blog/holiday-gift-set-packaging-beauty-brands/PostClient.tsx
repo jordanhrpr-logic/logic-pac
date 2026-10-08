@@ -9,10 +9,10 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'why-holiday-gift-sets-are-the-highest-revenue-skus', label: 'Why Holiday Gift Sets Are the Highest-Revenue S...' },
+    { id: 'why-holiday-gift-sets-are-the-highest-revenue-skus', label: 'Why Holiday Gift Sets Are the Highest-Revenue SKUs for Most Beauty Brands' },
     { id: 'the-holiday-packaging-timeline-month-by-month', label: 'The Holiday Packaging Timeline (Month-by-Month)' },
     { id: 'what-holiday-gift-set-packaging-actually-costs', label: 'What Holiday Gift Set Packaging Actually Costs' },
-    { id: 'retailer-compliance-what-ulta-sephora-and-target-r', label: 'Retailer Compliance: What Ulta, Sephora, and Ta...' },
+    { id: 'retailer-compliance-what-ulta-sephora-and-target-r', label: 'Retailer Compliance: What Ulta, Sephora, and Target Require' },
     { id: 'gift-set-structures-that-sell', label: 'Gift Set Structures That Sell' },
     { id: 'kitting-assembly-and-fulfillment', label: 'Kitting, Assembly, and Fulfillment' },
   ]

@@ -10,8 +10,8 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'structural-options-for-custom-advent-calendar-pack', label: 'Structural Options for Custom Advent Calendar P...' },
-    { id: 'advent-calendar-packaging-cost-what-drives-the-pri', label: 'Advent Calendar Packaging Cost: What Drives the...' },
+    { id: 'structural-options-for-custom-advent-calendar-pack', label: 'Structural Options for Custom Advent Calendar Packaging' },
+    { id: 'advent-calendar-packaging-cost-what-drives-the-pri', label: 'Advent Calendar Packaging Cost: What Drives the Price' },
     { id: 'the-production-timeline-why-you-need-6-8-months', label: 'The Production Timeline: Why You Need 6-8 Months' },
     { id: 'retailer-compliance-for-advent-calendar-sets', label: 'Retailer Compliance for Advent Calendar Sets' },
     { id: 'common-production-failures-and-how-to-avoid-them', label: 'Common Production Failures (and How to Avoid Them)' },

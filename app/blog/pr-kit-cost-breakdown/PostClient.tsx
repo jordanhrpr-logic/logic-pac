@@ -15,7 +15,7 @@ export default function PostClient() {
     { id: 'tier-3-premium-experience-30-75-per-unit', label: 'Tier 3: Premium Experience ($30-75+ per Unit)' },
     { id: 'the-costs-brands-forget-to-budget', label: 'The Costs Brands Forget to Budget' },
     { id: 'where-brands-overspend-and-where-they-underspend', label: 'Where Brands Overspend (and Where They Underspend)' },
-    { id: 'the-roi-framework-pr-kit-cost-vs-earned-media-valu', label: 'The ROI Framework: PR Kit Cost vs. Earned Media...' },
+    { id: 'the-roi-framework-pr-kit-cost-vs-earned-media-valu', label: 'The ROI Framework: PR Kit Cost vs. Earned Media Value' },
   ]
 
 

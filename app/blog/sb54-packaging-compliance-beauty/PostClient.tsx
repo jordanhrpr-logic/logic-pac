@@ -12,8 +12,8 @@ export default function PostClient() {
   const tocSections = [
     { id: 'what-is-sb-54-in-plain-english', label: 'What Is SB 54 in Plain English?' },
     { id: 'does-sb-54-apply-to-beauty-brands', label: 'Does SB 54 Apply to Beauty Brands?' },
-    { id: 'the-2027-window-what-brands-should-prepare-for-now', label: 'The 2027 Window: What Brands Should Prepare For...' },
-    { id: 'the-primary-secondary-and-tertiary-packaging-audit', label: 'The Primary, Secondary, and Tertiary Packaging ...' },
+    { id: 'the-2027-window-what-brands-should-prepare-for-now', label: 'The 2027 Window: What Brands Should Prepare For Now' },
+    { id: 'the-primary-secondary-and-tertiary-packaging-audit', label: 'The Primary, Secondary, and Tertiary Packaging Audit' },
     { id: 'what-sb-54-means-for-packaging-design', label: 'What SB 54 Means for Packaging Design' },
     { id: 'what-beauty-brands-should-do-now', label: 'What Beauty Brands Should Do Now' },
     { id: 'what-does-sb-54-compliance-cost', label: 'What Does SB 54 Compliance Cost?' },

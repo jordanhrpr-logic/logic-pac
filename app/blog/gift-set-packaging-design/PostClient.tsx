@@ -10,7 +10,7 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'structural-approaches-for-multi-product-gift-set-p', label: 'Structural Approaches for Multi-Product Gift Se...' },
+    { id: 'structural-approaches-for-multi-product-gift-set-p', label: 'Structural Approaches for Multi-Product Gift Set Packaging' },
     { id: 'insert-types-what-holds-the-products-in-place', label: 'Insert Types: What Holds the Products in Place' },
     { id: 'what-drives-gift-set-packaging-cost', label: 'What Drives Gift Set Packaging Cost' },
     { id: 'managing-multiple-product-sizes-in-one-kit', label: 'Managing Multiple Product Sizes in One Kit' },

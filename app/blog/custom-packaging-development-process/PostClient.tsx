@@ -10,11 +10,11 @@ export default function PostClient() {
 
   const tocSections = [
     { id: 'stage-1-brief-and-discovery-weeks-1-2', label: 'Stage 1: Brief and Discovery (Weeks 1-2)' },
-    { id: 'stage-2-concept-development-and-structural-design', label: 'Stage 2: Concept Development and Structural Des...' },
-    { id: 'stage-3-material-selection-and-sampling-weeks-4-6', label: 'Stage 3: Material Selection and Sampling (Weeks...' },
-    { id: 'stage-4-production-artwork-and-pre-press-weeks-6-8', label: 'Stage 4: Production Artwork and Pre-Press (Week...' },
+    { id: 'stage-2-concept-development-and-structural-design', label: 'Stage 2: Concept Development and Structural Design (Weeks 2-4)' },
+    { id: 'stage-3-material-selection-and-sampling-weeks-4-6', label: 'Stage 3: Material Selection and Sampling (Weeks 4-6)' },
+    { id: 'stage-4-production-artwork-and-pre-press-weeks-6-8', label: 'Stage 4: Production Artwork and Pre-Press (Weeks 6-8)' },
     { id: 'stage-5-tooling-and-production-weeks-8-14', label: 'Stage 5: Tooling and Production (Weeks 8-14)' },
-    { id: 'stage-6-quality-inspection-and-shipping-weeks-14-1', label: 'Stage 6: Quality Inspection and Shipping (Weeks...' },
+    { id: 'stage-6-quality-inspection-and-shipping-weeks-14-1', label: 'Stage 6: Quality Inspection and Shipping (Weeks 14-16+)' },
   ]
 
 

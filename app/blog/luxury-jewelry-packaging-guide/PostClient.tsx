@@ -11,16 +11,16 @@ export default function PostClient() {
 
   const tocSections = [
     { id: 'what-makes-jewelry-packaging-feel-luxury', label: 'What Makes Jewelry Packaging Feel Luxury?' },
-    { id: 'when-should-a-jewelry-brand-invest-in-premium-pack', label: 'When Should a Jewelry Brand Invest in Premium P...' },
+    { id: 'when-should-a-jewelry-brand-invest-in-premium-pack', label: 'When Should a Jewelry Brand Invest in Premium Packaging?' },
     { id: 'what-does-luxury-jewelry-packaging-cost', label: 'What Does Luxury Jewelry Packaging Cost?' },
     { id: 'which-structures-work-best-for-luxury-jewelry', label: 'Which Structures Work Best for Luxury Jewelry?' },
     { id: 'what-finishes-should-luxury-jewelry-brands-use', label: 'What Finishes Should Luxury Jewelry Brands Use?' },
-    { id: 'how-to-test-premium-packaging-without-changing-the', label: 'How to Test Premium Packaging Without Changing ...' },
+    { id: 'how-to-test-premium-packaging-without-changing-the', label: 'How to Test Premium Packaging Without Changing the Core Line' },
     { id: 'the-roi-of-premium-jewelry-packaging', label: 'The ROI of Premium Jewelry Packaging' },
     { id: 'retail-luxury-vs-dtc-luxury', label: 'Retail Luxury vs. DTC Luxury' },
     { id: 'what-not-to-spend-on', label: 'What Not to Spend On' },
     { id: 'how-to-brief-a-luxury-jewelry-packaging-project', label: 'How to Brief a Luxury Jewelry Packaging Project' },
-    { id: 'how-luxury-packaging-changes-the-customers-percept', label: 'How Luxury Packaging Changes the Customer’s Per...' },
+    { id: 'how-luxury-packaging-changes-the-customers-percept', label: 'How Luxury Packaging Changes the Customer’s Perception of Value' },
     { id: 'the-risk-of-overbuilding-luxury-packaging', label: 'The Risk of Overbuilding Luxury Packaging' },
     { id: 'how-to-scale-luxury-packaging-after-the-first-run', label: 'How to Scale Luxury Packaging After the First Run' },
   ]

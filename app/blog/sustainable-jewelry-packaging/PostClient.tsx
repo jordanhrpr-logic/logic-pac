@@ -12,17 +12,17 @@ export default function PostClient() {
 
   const tocSections = [
     { id: 'what-makes-jewelry-packaging-sustainable', label: 'What Makes Jewelry Packaging Sustainable?' },
-    { id: 'which-materials-work-best-for-sustainable-jewelry', label: 'Which Materials Work Best for Sustainable Jewel...' },
-    { id: 'how-do-sb-54-and-epr-rules-affect-jewelry-packagin', label: 'How Do SB 54 and EPR Rules Affect Jewelry Packa...' },
+    { id: 'which-materials-work-best-for-sustainable-jewelry', label: 'Which Materials Work Best for Sustainable Jewelry Packaging?' },
+    { id: 'how-do-sb-54-and-epr-rules-affect-jewelry-packagin', label: 'How Do SB 54 and EPR Rules Affect Jewelry Packaging?' },
     { id: 'can-luxury-jewelry-packaging-be-sustainable', label: 'Can Luxury Jewelry Packaging Be Sustainable?' },
     { id: 'what-does-sustainable-jewelry-packaging-cost', label: 'What Does Sustainable Jewelry Packaging Cost?' },
     { id: 'how-to-avoid-greenwashing-in-jewelry-packaging', label: 'How to Avoid Greenwashing in Jewelry Packaging' },
-    { id: 'the-sustainability-tradeoffs-jewelry-brands-need-t', label: 'The Sustainability Tradeoffs Jewelry Brands Nee...' },
+    { id: 'the-sustainability-tradeoffs-jewelry-brands-need-t', label: 'The Sustainability Tradeoffs Jewelry Brands Need to Understand' },
     { id: 'sustainable-claims-that-need-documentation', label: 'Sustainable Claims That Need Documentation' },
     { id: 'how-to-reduce-waste-without-losing-premium-feel', label: 'How to Reduce Waste Without Losing Premium Feel' },
-    { id: 'how-to-make-sustainable-packaging-still-feel-premi', label: 'How to Make Sustainable Packaging Still Feel Pr...' },
+    { id: 'how-to-make-sustainable-packaging-still-feel-premi', label: 'How to Make Sustainable Packaging Still Feel Premium' },
     { id: 'the-documentation-jewelry-brands-should-keep', label: 'The Documentation Jewelry Brands Should Keep' },
-    { id: 'how-to-phase-in-sustainable-packaging-without-disr', label: 'How to Phase in Sustainable Packaging Without D...' },
+    { id: 'how-to-phase-in-sustainable-packaging-without-disr', label: 'How to Phase in Sustainable Packaging Without Disrupting the Line' },
   ]
 
 

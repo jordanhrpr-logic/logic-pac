@@ -11,16 +11,16 @@ export default function PostClient() {
 
   const tocSections = [
     { id: 'what-makes-skincare-packaging-different', label: 'What Makes Skincare Packaging Different?' },
-    { id: 'serum-packaging-droppers-airless-pumps-and-small-b', label: 'Serum Packaging: Droppers, Airless Pumps, and S...' },
-    { id: 'moisturizer-packaging-jars-tubes-and-airless-syste', label: 'Moisturizer Packaging: Jars, Tubes, and Airless...' },
-    { id: 'cleanser-packaging-pumps-bottles-and-squeeze-tubes', label: 'Cleanser Packaging: Pumps, Bottles, and Squeeze...' },
+    { id: 'serum-packaging-droppers-airless-pumps-and-small-b', label: 'Serum Packaging: Droppers, Airless Pumps, and Small Bottles' },
+    { id: 'moisturizer-packaging-jars-tubes-and-airless-syste', label: 'Moisturizer Packaging: Jars, Tubes, and Airless Systems' },
+    { id: 'cleanser-packaging-pumps-bottles-and-squeeze-tubes', label: 'Cleanser Packaging: Pumps, Bottles, and Squeeze Tubes' },
     { id: 'spf-and-treatment-packaging-need-extra-discipline', label: 'SPF and Treatment Packaging Need Extra Discipline' },
-    { id: 'secondary-packaging-for-skincare-cartons-sleeves-a', label: 'Secondary Packaging for Skincare: Cartons, Slee...' },
+    { id: 'secondary-packaging-for-skincare-cartons-sleeves-a', label: 'Secondary Packaging for Skincare: Cartons, Sleeves, and Sets' },
     { id: 'material-selection-for-skincare-packaging', label: 'Material Selection for Skincare Packaging' },
     { id: 'retail-shelf-requirements-for-skincare', label: 'Retail Shelf Requirements for Skincare' },
     { id: 'clean-beauty-packaging-claims-need-specifics', label: 'Clean Beauty Packaging Claims Need Specifics' },
     { id: 'cost-planning-by-skincare-sku-type', label: 'Cost Planning by Skincare SKU Type' },
-    { id: 'samples-and-testing-where-skincare-packaging-gets', label: 'Samples and Testing: Where Skincare Packaging G...' },
+    { id: 'samples-and-testing-where-skincare-packaging-gets', label: 'Samples and Testing: Where Skincare Packaging Gets Real' },
   ]
 
 

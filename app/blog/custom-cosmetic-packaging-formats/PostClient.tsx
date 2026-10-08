@@ -12,12 +12,12 @@ export default function PostClient() {
   const tocSections = [
     { id: 'compacts-the-format-that-defines-color-cosmetics', label: 'Compacts: The Format That Defines Color Cosmetics' },
     { id: 'palettes-multi-pan-formats-for-color-collections', label: 'Palettes: Multi-Pan Formats for Color Collections' },
-    { id: 'lip-gloss-tubes-high-volume-high-decoration-potent', label: 'Lip Gloss Tubes: High Volume, High Decoration P...' },
+    { id: 'lip-gloss-tubes-high-volume-high-decoration-potent', label: 'Lip Gloss Tubes: High Volume, High Decoration Potential' },
     { id: 'mascara-tubes-engineering-meets-aesthetics', label: 'Mascara Tubes: Engineering Meets Aesthetics' },
-    { id: 'foundation-bottles-where-material-choice-drives-ev', label: 'Foundation Bottles: Where Material Choice Drive...' },
+    { id: 'foundation-bottles-where-material-choice-drives-ev', label: 'Foundation Bottles: Where Material Choice Drives Everything' },
     { id: 'powder-jars-simple-format-nuanced-execution', label: 'Powder Jars: Simple Format, Nuanced Execution' },
-    { id: 'pencils-and-crayons-mechanical-precision-in-a-simp', label: 'Pencils and Crayons: Mechanical Precision in a ...' },
-    { id: 'sets-and-kits-the-highest-impact-highest-cost-form', label: 'Sets and Kits: The Highest-Impact, Highest-Cost...' },
+    { id: 'pencils-and-crayons-mechanical-precision-in-a-simp', label: 'Pencils and Crayons: Mechanical Precision in a Simple Form' },
+    { id: 'sets-and-kits-the-highest-impact-highest-cost-form', label: 'Sets and Kits: The Highest-Impact, Highest-Cost Format' },
     { id: 'how-to-choose-the-right-cosmetic-packaging-format', label: 'How to Choose the Right Cosmetic Packaging Format' },
   ]
 

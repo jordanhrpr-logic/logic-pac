@@ -12,7 +12,7 @@ export default function PostClient() {
     { id: 'the-5-phases-of-custom-packaging-production', label: 'The 5 Phases of Custom Packaging Production' },
     { id: 'how-to-work-backward-from-your-launch-date', label: 'How to Work Backward from Your Launch Date' },
     { id: 'the-holiday-packaging-timeline', label: 'The Holiday Packaging Timeline' },
-    { id: 'when-rush-production-makes-sense-and-what-it-costs', label: 'When Rush Production Makes Sense (and What It C...' },
+    { id: 'when-rush-production-makes-sense-and-what-it-costs', label: 'When Rush Production Makes Sense (and What It Costs)' },
     { id: 'the-three-things-that-delay-packaging-most-often', label: 'The Three Things That Delay Packaging Most Often' },
   ]
 

@@ -10,12 +10,12 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'what-changes-when-jewelry-moves-from-dtc-to-retail', label: 'What Changes When Jewelry Moves from DTC to Ret...' },
+    { id: 'what-changes-when-jewelry-moves-from-dtc-to-retail', label: 'What Changes When Jewelry Moves from DTC to Retail?' },
     { id: 'what-dtc-jewelry-packaging-needs-to-do', label: 'What DTC Jewelry Packaging Needs to Do' },
     { id: 'what-retail-jewelry-packaging-needs-to-do', label: 'What Retail Jewelry Packaging Needs to Do' },
-    { id: 'can-one-jewelry-packaging-system-serve-both-channe', label: 'Can One Jewelry Packaging System Serve Both Cha...' },
+    { id: 'can-one-jewelry-packaging-system-serve-both-channe', label: 'Can One Jewelry Packaging System Serve Both Channels?' },
     { id: 'what-retail-requirements-do-jewelry-brands-miss', label: 'What Retail Requirements Do Jewelry Brands Miss?' },
-    { id: 'how-to-prepare-jewelry-packaging-for-a-retail-buye', label: 'How to Prepare Jewelry Packaging for a Retail B...' },
+    { id: 'how-to-prepare-jewelry-packaging-for-a-retail-buye', label: 'How to Prepare Jewelry Packaging for a Retail Buyer' },
     { id: 'the-retail-packaging-checklist-for-jewelry-brands', label: 'The Retail Packaging Checklist for Jewelry Brands' },
     { id: 'the-dtc-packaging-checklist-for-jewelry-brands', label: 'The DTC Packaging Checklist for Jewelry Brands' },
     { id: 'how-to-build-one-system-for-both-channels', label: 'How to Build One System for Both Channels' },

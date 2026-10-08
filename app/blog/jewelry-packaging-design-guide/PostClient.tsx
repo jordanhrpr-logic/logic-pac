@@ -10,9 +10,9 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'what-should-jewelry-packaging-design-actually-solv', label: 'What Should Jewelry Packaging Design Actually S...' },
+    { id: 'what-should-jewelry-packaging-design-actually-solv', label: 'What Should Jewelry Packaging Design Actually Solve?' },
     { id: 'which-jewelry-packaging-formats-do-brands-need', label: 'Which Jewelry Packaging Formats Do Brands Need?' },
-    { id: 'how-do-materials-shape-the-jewelry-packaging-exper', label: 'How Do Materials Shape the Jewelry Packaging Ex...' },
+    { id: 'how-do-materials-shape-the-jewelry-packaging-exper', label: 'How Do Materials Shape the Jewelry Packaging Experience?' },
     { id: 'what-finishes-work-best-for-jewelry-boxes', label: 'What Finishes Work Best for Jewelry Boxes?' },
     { id: 'how-should-jewelry-brands-design-the-unboxing', label: 'How Should Jewelry Brands Design the Unboxing?' },
     { id: 'what-mistakes-make-jewelry-packaging-feel-generic', label: 'What Mistakes Make Jewelry Packaging Feel Generic?' },

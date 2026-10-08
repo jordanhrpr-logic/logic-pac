@@ -12,8 +12,8 @@ export default function PostClient() {
   const tocSections = [
     { id: 'what-drives-custom-jewelry-packaging-cost', label: 'What Drives Custom Jewelry Packaging Cost?' },
     { id: 'what-each-jewelry-packaging-format-usually-costs', label: 'What Each Jewelry Packaging Format Usually Costs' },
-    { id: 'why-catalog-boxes-feel-expensive-but-still-look-ge', label: 'Why Catalog Boxes Feel Expensive but Still Look...' },
-    { id: 'how-to-lower-cost-without-making-the-box-look-chea', label: 'How to Lower Cost Without Making the Box Look C...' },
+    { id: 'why-catalog-boxes-feel-expensive-but-still-look-ge', label: 'Why Catalog Boxes Feel Expensive but Still Look Generic' },
+    { id: 'how-to-lower-cost-without-making-the-box-look-chea', label: 'How to Lower Cost Without Making the Box Look Cheap' },
     { id: 'how-to-compare-jewelry-packaging-quotes', label: 'How to Compare Jewelry Packaging Quotes' },
     { id: 'the-cost-model-we-use-for-jewelry-packaging', label: 'The Cost Model We Use for Jewelry Packaging' },
     { id: 'when-custom-jewelry-packaging-is-worth-it', label: 'When Custom Jewelry Packaging Is Worth It' },

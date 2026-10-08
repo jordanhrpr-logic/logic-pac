@@ -9,13 +9,13 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'how-is-food-and-beverage-packaging-different-from', label: 'How Is Food and Beverage Packaging Different Fr...' },
-    { id: 'what-packaging-formats-work-for-food-and-beverage', label: 'What Packaging Formats Work for Food and Bevera...' },
-    { id: 'what-materials-should-food-and-beverage-brands-con', label: 'What Materials Should Food and Beverage Brands ...' },
-    { id: 'what-compliance-requirements-affect-food-packaging', label: 'What Compliance Requirements Affect Food Packag...' },
+    { id: 'how-is-food-and-beverage-packaging-different-from', label: 'How Is Food and Beverage Packaging Different From Beauty Packaging?' },
+    { id: 'what-packaging-formats-work-for-food-and-beverage', label: 'What Packaging Formats Work for Food and Beverage Products?' },
+    { id: 'what-materials-should-food-and-beverage-brands-con', label: 'What Materials Should Food and Beverage Brands Consider?' },
+    { id: 'what-compliance-requirements-affect-food-packaging', label: 'What Compliance Requirements Affect Food Packaging?' },
     { id: 'how-much-does-food-and-beverage-packaging-cost', label: 'How Much Does Food and Beverage Packaging Cost?' },
-    { id: 'what-retail-requirements-do-emerging-fb-brands-mis', label: 'What Retail Requirements Do Emerging F&B Brands...' },
-    { id: 'how-should-an-emerging-brand-plan-the-packaging-pr', label: 'How Should an Emerging Brand Plan the Packaging...' },
+    { id: 'what-retail-requirements-do-emerging-fb-brands-mis', label: 'What Retail Requirements Do Emerging F&B Brands Miss?' },
+    { id: 'how-should-an-emerging-brand-plan-the-packaging-pr', label: 'How Should an Emerging Brand Plan the Packaging Process?' },
   ]
 
 

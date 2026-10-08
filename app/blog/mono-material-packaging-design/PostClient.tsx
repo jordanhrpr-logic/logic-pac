@@ -12,8 +12,8 @@ export default function PostClient() {
   const tocSections = [
     { id: 'what-mono-material-packaging-actually-means', label: 'What Mono-Material Packaging Actually Means' },
     { id: 'why-multi-material-packaging-fails-recycling', label: 'Why Multi-Material Packaging Fails Recycling' },
-    { id: 'material-options-for-mono-material-beauty-packagin', label: 'Material Options for Mono-Material Beauty Packa...' },
-    { id: 'design-challenges-in-mono-material-beauty-packagin', label: 'Design Challenges in Mono-Material Beauty Packa...' },
+    { id: 'material-options-for-mono-material-beauty-packagin', label: 'Material Options for Mono-Material Beauty Packaging' },
+    { id: 'design-challenges-in-mono-material-beauty-packagin', label: 'Design Challenges in Mono-Material Beauty Packaging' },
     { id: 'which-beauty-formats-work-well-in-mono-material', label: 'Which Beauty Formats Work Well in Mono-Material' },
     { id: 'cost-implications-of-mono-material-design', label: 'Cost Implications of Mono-Material Design' },
   ]

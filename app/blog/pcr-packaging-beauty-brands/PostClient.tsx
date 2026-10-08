@@ -10,10 +10,10 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'what-pcr-actually-is-and-how-it-gets-into-your-pac', label: 'What PCR Actually Is and How It Gets Into Your ...' },
+    { id: 'what-pcr-actually-is-and-how-it-gets-into-your-pac', label: 'What PCR Actually Is and How It Gets Into Your Packaging' },
     { id: 'what-pcr-content-percentages-actually-mean', label: 'What PCR Content Percentages Actually Mean' },
     { id: 'formula-compatibility-the-technical-reality', label: 'Formula Compatibility: The Technical Reality' },
-    { id: 'the-regulatory-landscape-sb-54-ppwr-and-what-is-co', label: 'The Regulatory Landscape: SB 54, PPWR, and What...' },
+    { id: 'the-regulatory-landscape-sb-54-ppwr-and-what-is-co', label: 'The Regulatory Landscape: SB 54, PPWR, and What Is Coming' },
     { id: 'how-to-verify-pcr-claims-from-suppliers', label: 'How to Verify PCR Claims From Suppliers' },
     { id: 'pcr-vs-other-sustainability-approaches', label: 'PCR vs. Other Sustainability Approaches' },
     { id: 'making-the-pcr-decision-a-practical-framework', label: 'Making the PCR Decision: A Practical Framework' },

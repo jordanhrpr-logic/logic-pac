@@ -9,13 +9,13 @@ export default function PostClient() {
   const { openModal } = useModal()
 
   const tocSections = [
-    { id: 'what-does-a-beauty-packaging-manufacturer-actually', label: 'What Does a Beauty Packaging Manufacturer Actua...' },
+    { id: 'what-does-a-beauty-packaging-manufacturer-actually', label: 'What Does a Beauty Packaging Manufacturer Actually Do?' },
     { id: 'the-four-packaging-partner-models', label: 'The Four Packaging Partner Models' },
-    { id: 'what-to-look-for-in-a-beauty-packaging-manufacture', label: 'What to Look for in a Beauty Packaging Manufact...' },
+    { id: 'what-to-look-for-in-a-beauty-packaging-manufacture', label: 'What to Look for in a Beauty Packaging Manufacturer' },
     { id: '10-questions-to-ask-before-you-sign', label: '10 Questions to Ask Before You Sign' },
     { id: 'red-flags-in-a-beauty-packaging-manufacturer', label: 'Red Flags in a Beauty Packaging Manufacturer' },
     { id: 'how-to-evaluate-samples', label: 'How to Evaluate Samples' },
-    { id: 'what-certifications-and-documentation-should-they', label: 'What Certifications and Documentation Should Th...' },
+    { id: 'what-certifications-and-documentation-should-they', label: 'What Certifications and Documentation Should They Provide?' },
     { id: 'how-to-verify-their-qc-process', label: 'How to Verify Their QC Process' },
     { id: 'domestic-vs-international-manufacturing', label: 'Domestic vs. International Manufacturing' },
     { id: 'when-to-switch-packaging-manufacturers', label: 'When to Switch Packaging Manufacturers' },

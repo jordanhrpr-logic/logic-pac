@@ -10,12 +10,12 @@ export default function PostClient() {
 
   const tocSections = [
     { id: 'why-fragrance-packaging-is-different', label: 'Why Fragrance Packaging Is Different' },
-    { id: 'what-materials-make-perfume-packaging-feel-premium', label: 'What Materials Make Perfume Packaging Feel Prem...' },
+    { id: 'what-materials-make-perfume-packaging-feel-premium', label: 'What Materials Make Perfume Packaging Feel Premium?' },
     { id: 'what-finishes-work-best-for-fragrance-packaging', label: 'What Finishes Work Best for Fragrance Packaging?' },
     { id: 'how-much-does-fragrance-packaging-cost', label: 'How Much Does Fragrance Packaging Cost?' },
-    { id: 'how-do-coffrets-and-gift-sets-change-the-packaging', label: 'How Do Coffrets and Gift Sets Change the Packag...' },
-    { id: 'what-mistakes-do-fragrance-brands-make-with-packag', label: 'What Mistakes Do Fragrance Brands Make With Pac...' },
-    { id: 'how-should-fragrance-brands-work-backward-from-lau', label: 'How Should Fragrance Brands Work Backward From ...' },
+    { id: 'how-do-coffrets-and-gift-sets-change-the-packaging', label: 'How Do Coffrets and Gift Sets Change the Packaging Brief?' },
+    { id: 'what-mistakes-do-fragrance-brands-make-with-packag', label: 'What Mistakes Do Fragrance Brands Make With Packaging?' },
+    { id: 'how-should-fragrance-brands-work-backward-from-lau', label: 'How Should Fragrance Brands Work Backward From Launch?' },
   ]
 
 
