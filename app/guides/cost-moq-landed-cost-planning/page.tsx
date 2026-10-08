@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'cost-moq-landed-cost-planning'
 const title = 'Packaging Cost, MOQ & Landed-Cost Planning Guide'
-const description = 'The seven-component landed-cost stack, MOQ as a cash-flow decision, freight-mode selection, inventory carrying cost, and an interactive worksheet to pressure-test a packaging program before the PO goes out.'
-
+const description = 'The landed-cost stack, MOQ as a cash-flow decision, freight-mode selection, and an interactive worksheet to pressure-test a packaging program before the PO.'
 export const metadata: Metadata = {
   title,
   description,

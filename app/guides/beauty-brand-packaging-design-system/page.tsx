@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'beauty-brand-packaging-design-system'
 const title = 'The Beauty Brand Packaging Design System Guide'
-const description = 'How to build a packaging design system that scales from a hero beauty SKU through line extensions, gift sets, and PR kits — silhouette, hierarchy, finish stack, color, secondary architecture, and the supplier roster that holds it.'
-
+const description = 'A packaging design system that scales a beauty brand from a hero SKU through line extensions, gift sets, and PR kits without rebuilding the brand each launch.'
 export const metadata: Metadata = {
   title,
   description,

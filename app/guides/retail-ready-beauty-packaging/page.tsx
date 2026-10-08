@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'retail-ready-beauty-packaging'
 const title = 'Retail-Ready Beauty Packaging Guide'
-const description = 'GS1 barcode readiness, master-carton configuration, Sephora/Ulta/Target vendor-manual specifics, planogram realities, chargeback prevention, and the launch-window math that keeps the first retail shipment clean.'
-
+const description = 'GS1 barcode readiness, master-carton configuration, Sephora/Ulta/Target vendor-manual specifics, planogram realities, and chargeback prevention for beauty brands.'
 export const metadata: Metadata = {
   title,
   description,

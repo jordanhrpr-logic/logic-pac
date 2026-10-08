@@ -4,8 +4,7 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 const slug = 'unboxing-experience-design-guide'
 const title = 'Unboxing Experience Design Guide'
-const description = 'The design discipline behind packaging that gets filmed. Reveal sequencing, tactile hierarchy, sound design, camera-readiness, physics of a good reveal, and channel-specific unboxing design for DTC, PR/influencer, retail, and subscription.'
-
+const description = 'Design packaging that gets filmed: reveal sequencing, tactile hierarchy, sound design, and channel-specific unboxing for DTC, PR, retail, and subscription.'
 export const metadata: Metadata = {
   title,
   description,

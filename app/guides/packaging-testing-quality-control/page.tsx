@@ -4,12 +4,17 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'packaging-testing-quality-control'
 const title = 'Packaging Testing & Quality Control Guide'
-const description = 'The operator-level reference for closing the gap between an approved pre-production sample and a cased pallet — specifications, golden samples, fit and transit testing, DUPRO and pre-shipment inspection, AQL thresholds, and the documentation trail that guarantees run-to-sample conformity.'
-
+const description = 'Close the gap between the approved sample and the cased pallet: specifications, golden samples, fit and transit testing, DUPRO and pre-shipment inspection.'
 export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/packaging-testing-quality-control' },
+  openGraph: {
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/guides/packaging-testing-qc/sample-inspection.jpg', width: 1600, height: 900 }],
+  },
 }
 
 const faqSchema = {

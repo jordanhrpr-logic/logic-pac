@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'sustainable-packaging-decision-matrix'
 const title = 'The Sustainable Packaging Decision Matrix'
-const description = 'Score PCR, mono-material, refill, molded fiber, aluminum, and reduction side by side for one SKU. The scoring tool Logic Pac uses with beauty brands to pick the right sustainability lever.'
-
+const description = 'Score PCR, mono-material, refill, molded fiber, aluminum, and reduction side by side for one SKU — the scoring tool Logic Pac uses to pick the right lever.'
 export const metadata: Metadata = {
   title,
   description,

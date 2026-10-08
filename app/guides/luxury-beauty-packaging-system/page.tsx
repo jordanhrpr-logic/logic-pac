@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'luxury-beauty-packaging-system'
 const title = 'The Luxury Beauty Packaging System Guide'
-const description = 'How to develop luxury beauty, cosmetics, and fragrance packaging as a connected system — primary, secondary, trays, materials, finishes, compliance, and production readiness.'
-
+const description = 'How to develop luxury beauty, cosmetics, and fragrance packaging as a connected system: primary, secondary, trays, materials, finishes, and compliance.'
 export const metadata: Metadata = {
   title,
   description,

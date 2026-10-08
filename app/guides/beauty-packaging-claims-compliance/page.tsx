@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'beauty-packaging-claims-compliance'
 const title = 'Beauty Packaging Claims & Compliance Guide'
-const description = 'The orientation layer for beauty packaging compliance. SB 54, SB 343, Prop 65, CARB, FTC Green Guides, FDA 21 CFR 701, MoCRA, EU PPWR, ECGT, UK regimes, UFLPA, and the certifications that substantiate specific claims — mapped by jurisdiction, claim type, and pack component.'
-
+const description = 'Beauty packaging compliance: SB 54, Prop 65, FTC Green Guides, EU PPWR, and MoCRA mapped by where you sell, what you claim, and which pack component is at risk.'
 export const metadata: Metadata = {
   title,
   description,

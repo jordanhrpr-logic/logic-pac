@@ -4,8 +4,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'packaging-audit'
 const title = 'The Packaging Audit Guide'
-const description = 'What a packaging audit is, when to request one, the seven audit dimensions, methodology, deliverables, and the pattern of findings that recurs across beauty packaging programs.'
-
+const description = 'What a packaging audit is, when to request one, the seven audit dimensions, methodology, and the findings that recur across beauty packaging programs.'
 export const metadata: Metadata = {
   title,
   description,
