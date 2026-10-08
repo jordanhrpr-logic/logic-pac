@@ -5,7 +5,7 @@ import { buildCaseStudySchema } from '@/lib/case-study-schema'
 const title = 'Audio Enhancement Factory Transition Case Study'
 const description = 'How Logic contained quality issues and moved Audio Enhancement to a scalable factory without interrupting active shipments.'
 const image = '/images/work/audio-enhancement/teacher-box-blue-bg.jpg'
-export const metadata: Metadata = { title, description, alternates: { canonical: '/work/audio-enhancement-packaging-system' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', images: [image] } }
+export const metadata: Metadata = { title, description, alternates: { canonical: '/work/audio-enhancement-packaging-system' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', url: 'https://logic-pac.com/work/audio-enhancement-packaging-system', images: [image] }, twitter: { card: 'summary_large_image', title: `${title} | Logic Pac`, description, images: [image] } }
 export default function Page() {
   const schema = buildCaseStudySchema({ slug: 'audio-enhancement-packaging-system', headline: title, description, image, client: 'Audio Enhancement' })
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema.article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema.breadcrumb) }} /><PackagingCaseStudy study={{

@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'HDPE and PET are the two most common plastics in beauty packaging. Compare chemical resistance, clarity, weight, recyclability, PCR availability, and cost.',
   alternates: { canonical: '/blog/hdpe-vs-pet-packaging-comparison' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/hdpe-vs-pet-packaging-comparison',
     title: 'HDPE vs PET Packaging: Which Plastic Is Right for Your Beauty Brand? | Logic Pac',
     description: 'HDPE and PET are the two most common plastics in beauty packaging. Compare chemical resistance, clarity, weight, recyclability, PCR availability, and cost.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/holiday-kits.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'HDPE vs PET Packaging: Which Plastic Is Right for Your Beauty Brand? | Logic Pac',
+    description: 'HDPE and PET are the two most common plastics in beauty packaging. Compare chemical resistance, clarity, weight, recyclability, PCR availability, and cost.',
+    images: ['/images/portfolio/holiday-kits.jpeg'],
   },
 }
 

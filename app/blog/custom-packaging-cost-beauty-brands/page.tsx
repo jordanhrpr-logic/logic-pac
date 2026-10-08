@@ -6,12 +6,19 @@ export const metadata: Metadata = {
   description: 'Custom beauty packaging costs $0.30-$15.00/unit by format. Folding cartons, rigid boxes, tubes, finishes — real pricing and what drives cost up.',
   alternates: { canonical: '/blog/custom-packaging-cost-beauty-brands' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/custom-packaging-cost-beauty-brands',
     title: 'How Much Does Custom Packaging Cost? | Logic Pac',
     description: 'Actual per-unit packaging costs by format — folding cartons, rigid boxes, tubes, and specialty finishes.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/foil-stamped-cylinder.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Much Does Custom Packaging Cost? | Logic Pac',
+    description: 'Actual per-unit packaging costs by format — folding cartons, rigid boxes, tubes, and specialty finishes.',
+    images: ['/images/portfolio/foil-stamped-cylinder.jpeg'],
   },
 }
 

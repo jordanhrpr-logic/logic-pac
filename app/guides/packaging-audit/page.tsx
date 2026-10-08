@@ -10,10 +10,17 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: `/guides/${slug}` },
   openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
     title: `${title} | Logic Pac`,
     description,
     type: 'article',
     images: [{ url: '/images/guides/packaging-audit/hero-audit.jpg', width: 1276, height: 1276 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/guides/packaging-audit/hero-audit.jpg'],
   },
 }
 

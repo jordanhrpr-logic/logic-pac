@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Soft touch lamination adds a velvet surface at $0.08-$0.60/unit. When it works, when it scuffs, and how it compares to alternatives.',
   alternates: { canonical: '/blog/soft-touch-lamination-packaging' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/soft-touch-lamination-packaging',
     title: 'Soft Touch Lamination for Packaging: When It Works, When It Doesn\'t, and What It Costs | Logic Pac',
     description: 'Soft touch lamination adds a velvet surface at $0.08-$0.60/unit. When it works, when it scuffs, and how it compares to alternatives.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/cosmetics-folding-carton.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Soft Touch Lamination for Packaging: When It Works, When It Doesn\'t, and What It Costs | Logic Pac',
+    description: 'Soft touch lamination adds a velvet surface at $0.08-$0.60/unit. When it works, when it scuffs, and how it compares to alternatives.',
+    images: ['/images/portfolio/cosmetics-folding-carton.jpeg'],
   },
 }
 

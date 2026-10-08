@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'How to evaluate beauty packaging manufacturers: MOQ transparency, QC processes, material sourcing, and the red flags that signal problems.',
   alternates: { canonical: '/blog/how-to-choose-beauty-packaging-manufacturer' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/how-to-choose-beauty-packaging-manufacturer',
     title: 'How to Choose a Beauty Packaging Manufacturer | Logic Pac',
     description: 'What to ask, what to verify, and red flags when choosing a packaging manufacturer for beauty brands.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/influencer-adidas-nemesis.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Choose a Beauty Packaging Manufacturer | Logic Pac',
+    description: 'What to ask, what to verify, and red flags when choosing a packaging manufacturer for beauty brands.',
+    images: ['/images/portfolio/influencer-adidas-nemesis.jpg'],
   },
 }
 

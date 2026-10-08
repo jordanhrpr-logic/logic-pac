@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Skincare packaging formats, materials by formula type, retail shelf requirements, and design decisions that affect sell-through and margin.',
   alternates: { canonical: '/blog/skincare-packaging-design-guide' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/skincare-packaging-design-guide',
     title: 'Skincare Packaging Design Guide | Logic Pac',
     description: 'Skincare packaging formats, materials by formula type, and what sells on shelf.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/holiday-epicutis-gift-sets.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Skincare Packaging Design Guide | Logic Pac',
+    description: 'Skincare packaging formats, materials by formula type, and what sells on shelf.',
+    images: ['/images/portfolio/holiday-epicutis-gift-sets.jpg'],
   },
 }
 

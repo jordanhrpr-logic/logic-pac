@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Custom packaging takes 12-20 weeks from brief to delivery. Phase-by-phase breakdown of design, prototyping, tooling, production, and freight.',
   alternates: { canonical: '/blog/custom-packaging-timeline' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/custom-packaging-timeline',
     title: 'How Long Does Custom Packaging Take? | Logic Pac',
     description: 'The real production timeline: design, prototyping, tooling, manufacturing, and freight. What delays projects and what speeds them up.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/holiday-kits.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Long Does Custom Packaging Take? | Logic Pac',
+    description: 'The real production timeline: design, prototyping, tooling, manufacturing, and freight. What delays projects and what speeds them up.',
+    images: ['/images/portfolio/holiday-kits.jpeg'],
   },
 }
 

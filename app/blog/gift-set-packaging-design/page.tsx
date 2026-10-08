@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Gift set packaging for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, costs, and retailer requirements.',
   alternates: { canonical: '/blog/gift-set-packaging-design' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/gift-set-packaging-design',
     title: 'Gift Set Packaging Design: Structures, Inserts, and Cost Decisions for Multi-Product Kits | Logic Pac',
     description: 'Gift set packaging for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, costs, and retailer requirements.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/premium-beauty-gift-set1.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gift Set Packaging Design: Structures, Inserts, and Cost Decisions for Multi-Product Kits | Logic Pac',
+    description: 'Gift set packaging for beauty brands: rigid box, folding carton, and sleeve+tray structures. Insert types, costs, and retailer requirements.',
+    images: ['/images/portfolio/premium-beauty-gift-set1.jpg'],
   },
 }
 

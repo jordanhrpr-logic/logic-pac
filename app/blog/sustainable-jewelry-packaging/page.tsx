@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Sustainable jewelry packaging: FSC paper, recycled board, molded fiber, mono-material design, SB 54 compliance, and real cost impact.',
   alternates: { canonical: '/blog/sustainable-jewelry-packaging' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/sustainable-jewelry-packaging',
     title: 'Sustainable Jewelry Packaging Guide | Logic Pac',
     description: 'Sustainable jewelry packaging needs specific materials, claims, and compliance planning. Learn FSC, recycled paper, molded fiber, and costs.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/jewelry/made-by-mary-collection.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sustainable Jewelry Packaging Guide | Logic Pac',
+    description: 'Sustainable jewelry packaging needs specific materials, claims, and compliance planning. Learn FSC, recycled paper, molded fiber, and costs.',
+    images: ['/images/portfolio/jewelry/made-by-mary-collection.jpg'],
   },
 }
 

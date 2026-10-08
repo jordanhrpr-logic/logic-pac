@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Custom PR kit costs $8-75+ per unit by tier. Basic mailers, branded kits, and premium builds with ROI framework and cost breakdown.',
   alternates: { canonical: '/blog/pr-kit-cost-breakdown' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/pr-kit-cost-breakdown',
     title: 'How Much Do Custom PR Kits Cost? A Tier-by-Tier Breakdown for Beauty Brands | Logic Pac',
     description: 'Custom PR kit costs $8-75+ per unit by tier. Basic mailers, branded kits, and premium builds with ROI framework and cost breakdown.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/soft-touch-spot-uv.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Much Do Custom PR Kits Cost? A Tier-by-Tier Breakdown for Beauty Brands | Logic Pac',
+    description: 'Custom PR kit costs $8-75+ per unit by tier. Basic mailers, branded kits, and premium builds with ROI framework and cost breakdown.',
+    images: ['/images/portfolio/soft-touch-spot-uv.jpg'],
   },
 }
 

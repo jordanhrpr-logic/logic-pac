@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/material-decision-framework' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/portfolio/cosmetics-folding-carton.jpeg', width: 2496, height: 1726 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/portfolio/cosmetics-folding-carton.jpeg'],
+  },
 }
 
 const material_decision_framework_faq = {

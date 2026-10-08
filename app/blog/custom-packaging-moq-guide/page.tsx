@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Learn custom packaging MOQ ranges by format, why minimums exist, and how brands can lower order quantities without overbuying inventory or tying up cash.',
   alternates: { canonical: '/blog/custom-packaging-moq-guide' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/custom-packaging-moq-guide',
     title: 'Custom Packaging MOQs: What Every Brand Needs to Know | Logic Pac',
     description: 'Learn custom packaging MOQ ranges by format, why minimums exist, and how brands can lower order quantities without overbuying inventory or tying up cash.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/cosmetics-folding-carton.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Packaging MOQs: What Every Brand Needs to Know | Logic Pac',
+    description: 'Learn custom packaging MOQ ranges by format, why minimums exist, and how brands can lower order quantities without overbuying inventory or tying up cash.',
+    images: ['/images/portfolio/cosmetics-folding-carton.jpeg'],
   },
 }
 

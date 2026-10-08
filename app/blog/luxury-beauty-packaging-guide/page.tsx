@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'What separates luxury beauty packaging from mass market: structural weight, closure engineering, finish hierarchy, and sensory sequencing.',
   alternates: { canonical: '/blog/luxury-beauty-packaging-guide' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/luxury-beauty-packaging-guide',
     title: 'Luxury Beauty Packaging: What Separates Premium From Mass Market | Logic Pac',
     description: 'What separates luxury beauty packaging from mass market: structural weight, closure engineering, finish hierarchy, and sensory sequencing.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/velvet-interior-unboxing-kit.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Luxury Beauty Packaging: What Separates Premium From Mass Market | Logic Pac',
+    description: 'What separates luxury beauty packaging from mass market: structural weight, closure engineering, finish hierarchy, and sensory sequencing.',
+    images: ['/images/portfolio/velvet-interior-unboxing-kit.jpeg'],
   },
 }
 

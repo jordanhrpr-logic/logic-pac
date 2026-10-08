@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Custom jewelry packaging costs $3-$15 per unit for most branded boxes. Learn cost drivers, MOQs, timelines, quote comparisons, and pricing strategy today.',
   alternates: { canonical: '/blog/custom-jewelry-packaging-cost' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/custom-jewelry-packaging-cost',
     title: 'Custom Jewelry Packaging Cost: Real Pricing | Logic Pac',
     description: 'Custom jewelry packaging costs $3-$15 per unit for most branded boxes. Learn cost drivers, MOQs, timelines, and pricing strategy.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/jewelry/olive-ave-ring-boxes.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Jewelry Packaging Cost: Real Pricing | Logic Pac',
+    description: 'Custom jewelry packaging costs $3-$15 per unit for most branded boxes. Learn cost drivers, MOQs, timelines, and pricing strategy.',
+    images: ['/images/portfolio/jewelry/olive-ave-ring-boxes.jpg'],
   },
 }
 

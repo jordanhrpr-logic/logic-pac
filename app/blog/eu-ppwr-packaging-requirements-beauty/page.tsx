@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'EU PPWR packaging requirements affect any beauty brand selling into Europe. Learn recycled content targets, recyclability rules, and compliance timelines.',
   alternates: { canonical: '/blog/eu-ppwr-packaging-requirements-beauty' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/eu-ppwr-packaging-requirements-beauty',
     title: 'EU PPWR Packaging Requirements for Beauty Brands: What to Change and When | Logic Pac',
     description: 'EU PPWR packaging requirements affect any beauty brand selling into Europe. Learn recycled content targets, recyclability rules, and compliance timelines.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/shelf-ready-display-unit.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'EU PPWR Packaging Requirements for Beauty Brands: What to Change and When | Logic Pac',
+    description: 'EU PPWR packaging requirements affect any beauty brand selling into Europe. Learn recycled content targets, recyclability rules, and compliance timelines.',
+    images: ['/images/portfolio/shelf-ready-display-unit.jpeg'],
   },
 }
 

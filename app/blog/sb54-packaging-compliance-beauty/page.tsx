@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'SB 54 compliance for beauty brands: packaging audit framework, 2027 readiness checklist, and material transition planning for California EPR.',
   alternates: { canonical: '/blog/sb54-packaging-compliance-beauty' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/sb54-packaging-compliance-beauty',
     title: 'SB 54 Packaging Compliance for Beauty Brands | Logic Pac',
     description: 'SB 54 deadlines, requirements, and compliance roadmap for beauty brand packaging.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/cosmetics-folding-carton.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SB 54 Packaging Compliance for Beauty Brands | Logic Pac',
+    description: 'SB 54 deadlines, requirements, and compliance roadmap for beauty brand packaging.',
+    images: ['/images/portfolio/cosmetics-folding-carton.jpeg'],
   },
 }
 

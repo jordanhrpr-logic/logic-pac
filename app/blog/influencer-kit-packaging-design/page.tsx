@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'The 5 elements that separate kits that get filmed from kits that get recycled. Cost ranges ($8-50+/unit), timelines, and briefing tips.',
   alternates: { canonical: '/blog/influencer-kit-packaging-design' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/influencer-kit-packaging-design',
     title: 'How to Design an Influencer Kit That Gets Posted | Logic Pac',
     description: 'The 5 elements that separate influencer kits that get filmed from kits that get recycled.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/skincare-launch-pr-mailer.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Design an Influencer Kit That Gets Posted | Logic Pac',
+    description: 'The 5 elements that separate influencer kits that get filmed from kits that get recycled.',
+    images: ['/images/portfolio/skincare-launch-pr-mailer.jpg'],
   },
 }
 

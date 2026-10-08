@@ -11,6 +11,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/influencer-kit-playbook' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/portfolio/influencer-kits.jpg', width: 1400, height: 1400 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/portfolio/influencer-kits.jpg'],
+  },
 }
 
 export default function PlaybookPage() {

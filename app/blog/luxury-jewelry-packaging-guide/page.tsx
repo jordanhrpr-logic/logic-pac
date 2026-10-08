@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Luxury jewelry packaging is worth it when presentation supports price, retail placement, gifting, and retention. Learn formats, costs, and tradeoffs today.',
   alternates: { canonical: '/blog/luxury-jewelry-packaging-guide' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/luxury-jewelry-packaging-guide',
     title: 'Luxury Jewelry Packaging Guide | Logic Pac',
     description: 'Luxury jewelry packaging is worth it when presentation supports price, retail placement, gifting, and retention. Learn formats, costs, and tradeoffs.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/jewelry/maor-collection.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Luxury Jewelry Packaging Guide | Logic Pac',
+    description: 'Luxury jewelry packaging is worth it when presentation supports price, retail placement, gifting, and retention. Learn formats, costs, and tradeoffs.',
+    images: ['/images/portfolio/jewelry/maor-collection.jpg'],
   },
 }
 

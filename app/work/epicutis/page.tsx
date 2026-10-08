@@ -5,7 +5,7 @@ import { buildCaseStudySchema } from '@/lib/case-study-schema'
 const title = 'Epicutis Packaging System Case Study'
 const description = 'How a premium skincare packaging program expanded from a focused box brief into a coordinated system supporting 21+ SKUs and verified cost savings.'
 const image = '/images/work/epicutis/epicutis-kits-group-grey.jpg'
-export const metadata: Metadata = { title, description, alternates: { canonical: '/work/epicutis' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', images: [image] } }
+export const metadata: Metadata = { title, description, alternates: { canonical: '/work/epicutis' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', url: 'https://logic-pac.com/work/epicutis', images: [image] }, twitter: { card: 'summary_large_image', title: `${title} | Logic Pac`, description, images: [image] } }
 
 export default function Page() {
   const schema = buildCaseStudySchema({ slug: 'epicutis', headline: title, description, image, client: 'Epicutis' })

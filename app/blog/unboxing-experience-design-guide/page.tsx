@@ -10,12 +10,19 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: `/blog/${slug}` },
   openGraph: {
+    url: `https://logic-pac.com/blog/${slug}`,
     title: `${title} | Logic Pac`,
     description,
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/guides/unboxing-experience/hero-reveal.jpg', width: 1600, height: 1200 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/guides/unboxing-experience/hero-reveal.jpg'],
   },
 }
 

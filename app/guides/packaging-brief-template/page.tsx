@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/packaging-brief-template' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/guides/packaging-brief-checklist.png', width: 1600, height: 900 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/guides/packaging-brief-checklist.png'],
+  },
 }
 
 const packaging_brief_template_faq = {

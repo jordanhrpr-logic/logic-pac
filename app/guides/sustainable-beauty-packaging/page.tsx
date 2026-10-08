@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/sustainable-beauty-packaging' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/portfolio/velvet-interior-unboxing-kit.jpeg', width: 2578, height: 1632 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/portfolio/velvet-interior-unboxing-kit.jpeg'],
+  },
 }
 
 const sustainable_beauty_packaging_faq = {

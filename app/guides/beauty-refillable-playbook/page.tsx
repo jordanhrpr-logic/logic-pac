@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/beauty-refillable-playbook' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/portfolio/skincare-launch-pr-mailer.jpg', width: 1684, height: 2528 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/portfolio/skincare-launch-pr-mailer.jpg'],
+  },
 }
 
 const beauty_refillable_playbook_faq = {

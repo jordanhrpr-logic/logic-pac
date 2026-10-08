@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'What makes perfume packaging feel premium: box structure, board weight, finishes, costs, timelines, and common fragrance packaging mistakes.',
   alternates: { canonical: '/blog/fragrance-packaging-design-guide' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/fragrance-packaging-design-guide',
     title: 'Fragrance Packaging Design: What Makes Perfume Packaging Premium | Logic Pac',
     description: 'What makes perfume packaging feel premium: box structure, board weight, finishes, costs, timelines, and common fragrance packaging mistakes.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/skincare-launch-pr-mailer.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fragrance Packaging Design: What Makes Perfume Packaging Premium | Logic Pac',
+    description: 'What makes perfume packaging feel premium: box structure, board weight, finishes, costs, timelines, and common fragrance packaging mistakes.',
+    images: ['/images/portfolio/skincare-launch-pr-mailer.jpg'],
   },
 }
 

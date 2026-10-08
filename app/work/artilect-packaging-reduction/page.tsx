@@ -5,7 +5,7 @@ import { buildCaseStudySchema } from '@/lib/case-study-schema'
 const title = 'Artilect Packaging Reduction Case Study'
 const description = 'How Artilect cut packaging cost 20% and material 95% by transitioning from a premium rigid box to an engineered carton — without making the brand feel cheaper.'
 const image = '/images/work/artilect/custom-packaging.jpg'
-export const metadata: Metadata = { title, description, alternates: { canonical: '/work/artilect-packaging-reduction' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', images: [image] } }
+export const metadata: Metadata = { title, description, alternates: { canonical: '/work/artilect-packaging-reduction' }, openGraph: { title: `${title} | Logic Pac`, description, type: 'article', url: 'https://logic-pac.com/work/artilect-packaging-reduction', images: [image] }, twitter: { card: 'summary_large_image', title: `${title} | Logic Pac`, description, images: [image] } }
 export default function Page() {
   const schema = buildCaseStudySchema({ slug: 'artilect-packaging-reduction', headline: title, description, image, client: 'Artilect' })
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema.article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema.breadcrumb) }} /><PackagingCaseStudy study={{

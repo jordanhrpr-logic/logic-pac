@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Packaging Cost Per Unit Benchmarks by Product Category: a practical guide to packaging cost per unit benchmark with real cost ranges, material choices.',
   alternates: { canonical: '/blog/packaging-cost-per-unit-benchmarks' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/packaging-cost-per-unit-benchmarks',
     title: 'Packaging Cost Per Unit Benchmarks | Logic Pac',
     description: 'Packaging Cost Per Unit Benchmarks by Product Category: a practical guide with real cost ranges, material choices, and margin planning.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/foil-stamped-cylinder.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Packaging Cost Per Unit Benchmarks | Logic Pac',
+    description: 'Packaging Cost Per Unit Benchmarks by Product Category: a practical guide with real cost ranges, material choices, and margin planning.',
+    images: ['/images/portfolio/foil-stamped-cylinder.jpeg'],
   },
 }
 

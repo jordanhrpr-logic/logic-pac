@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Learn how food and beverage packaging design works, including materials, compliance, shelf life, retail requirements, costs, and DTC-to-retail planning.',
   alternates: { canonical: '/blog/food-beverage-packaging-design-guide' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/food-beverage-packaging-design-guide',
     title: 'Food and Beverage Packaging Design for Emerging Brands | Logic Pac',
     description: 'Learn how food and beverage packaging design works, including materials, compliance, shelf life, retail requirements, costs, and DTC-to-retail planning.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/holiday-kits.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Food and Beverage Packaging Design for Emerging Brands | Logic Pac',
+    description: 'Learn how food and beverage packaging design works, including materials, compliance, shelf life, retail requirements, costs, and DTC-to-retail planning.',
+    images: ['/images/portfolio/holiday-kits.jpeg'],
   },
 }
 

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     url: `${SITE_URL}${path}`,
     images: [{ url: image, width: 1200, height: 797, alt: 'Open Adidas Nemeziz presentation kit with footwear and soccer components' }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: [image],
+  },
 }
 
 export default function AdidasNemezizCaseStudyPage() {

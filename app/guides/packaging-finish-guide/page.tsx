@@ -11,6 +11,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/packaging-finish-guide' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/portfolio/soft-touch-spot-uv.jpg', width: 2000, height: 1500 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/portfolio/soft-touch-spot-uv.jpg'],
+  },
 }
 
 export default function FinishGuidePage() {

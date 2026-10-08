@@ -9,7 +9,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/cost-moq-landed-cost-planning' },
-  openGraph: { title: `${title} | Logic Pac`, description, type: 'article' },
+  openGraph: {
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    url: `https://logic-pac.com/guides/${slug}`,
+    images: [{ url: '/images/guides/packaging-testing-qc/fit-function.jpg', width: 1600, height: 900 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/guides/packaging-testing-qc/fit-function.jpg'],
+  },
 }
 
 const cost_faq = {

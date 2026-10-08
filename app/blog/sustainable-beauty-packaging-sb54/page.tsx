@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'PCR reality, SB 54 deadlines, EU PPWR impact, FTC Green Guides compliance, and cost comparisons for sustainable beauty packaging.',
   alternates: { canonical: '/blog/sustainable-beauty-packaging-sb54' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/sustainable-beauty-packaging-sb54',
     title: 'Sustainable Beauty Packaging: What Works vs. Greenwashing | Logic Pac',
     description: 'PCR reality, SB 54 compliance, EU PPWR, and honest cost comparisons for sustainable beauty packaging.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/velvet-interior-unboxing-kit.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sustainable Beauty Packaging: What Works vs. Greenwashing | Logic Pac',
+    description: 'PCR reality, SB 54 compliance, EU PPWR, and honest cost comparisons for sustainable beauty packaging.',
+    images: ['/images/portfolio/velvet-interior-unboxing-kit.jpeg'],
   },
 }
 

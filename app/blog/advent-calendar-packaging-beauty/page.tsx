@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Beauty advent calendar packaging costs $8-25+ per unit. 6-8 month lead time. Door, drawer, magnetic, and tray structures compared with real costs.',
   alternates: { canonical: '/blog/advent-calendar-packaging-beauty' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/advent-calendar-packaging-beauty',
     title: 'Advent Calendar Packaging for Beauty Brands: What It Actually Takes to Produce One | Logic Pac',
     description: 'Beauty advent calendar packaging costs $8-25+ per unit. 6-8 month lead time. Door, drawer, magnetic, and tray structures compared with real costs.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/24-door-advent-calendar.jpeg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Advent Calendar Packaging for Beauty Brands: What It Actually Takes to Produce One | Logic Pac',
+    description: 'Beauty advent calendar packaging costs $8-25+ per unit. 6-8 month lead time. Door, drawer, magnetic, and tray structures compared with real costs.',
+    images: ['/images/portfolio/24-door-advent-calendar.jpeg'],
   },
 }
 

@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: '/guides/concept-to-shelf-timeline' },
+  openGraph: {
+    url: `https://logic-pac.com/guides/${slug}`,
+    title: `${title} | Logic Pac`,
+    description,
+    type: 'article',
+    images: [{ url: '/images/portfolio/holiday-kits.jpeg', width: 990, height: 990 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/portfolio/holiday-kits.jpeg'],
+  },
 }
 
 const concept_to_shelf_timeline_faq = {

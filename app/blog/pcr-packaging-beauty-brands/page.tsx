@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'PCR packaging uses post-consumer recycled plastic. What 30%, 50%, and 100% content means, what it costs, and how to verify supplier claims.',
   alternates: { canonical: '/blog/pcr-packaging-beauty-brands' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/pcr-packaging-beauty-brands',
     title: 'PCR Packaging for Beauty Brands: What Post-Consumer Recycled Content Actually Means | Logic Pac',
     description: 'PCR packaging uses post-consumer recycled plastic. What 30%, 50%, and 100% content means, what it costs, and how to verify supplier claims.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/skincare-launch-pr-mailer.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PCR Packaging for Beauty Brands: What Post-Consumer Recycled Content Actually Means | Logic Pac',
+    description: 'PCR packaging uses post-consumer recycled plastic. What 30%, 50%, and 100% content means, what it costs, and how to verify supplier claims.',
+    images: ['/images/portfolio/skincare-launch-pr-mailer.jpg'],
   },
 }
 

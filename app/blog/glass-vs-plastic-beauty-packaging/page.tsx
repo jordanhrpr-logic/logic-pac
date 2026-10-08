@@ -7,12 +7,19 @@ export const metadata: Metadata = {
   description: 'Glass costs 3-5x more than PET but signals premium. Cost, sustainability, weight, breakage, and perception compared for beauty packaging.',
   alternates: { canonical: '/blog/glass-vs-plastic-beauty-packaging' },
   openGraph: {
+    url: 'https://logic-pac.com/blog/glass-vs-plastic-beauty-packaging',
     title: 'Glass vs. Plastic Beauty Packaging Compared | Logic Pac',
     description: 'Glass vs. plastic for beauty packaging: cost, sustainability, weight, breakage, and perception.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
     images: [{ url: '/images/portfolio/premium-beauty-gift-set1.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Glass vs. Plastic Beauty Packaging Compared | Logic Pac',
+    description: 'Glass vs. plastic for beauty packaging: cost, sustainability, weight, breakage, and perception.',
+    images: ['/images/portfolio/premium-beauty-gift-set1.jpg'],
   },
 }
 

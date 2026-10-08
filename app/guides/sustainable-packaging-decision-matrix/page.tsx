@@ -10,10 +10,17 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: '/guides/sustainable-packaging-decision-matrix' },
   openGraph: {
+    url: 'https://logic-pac.com/guides/sustainable-packaging-decision-matrix',
     title: `${title} | Logic Pac`,
     description,
     type: 'article',
     images: [{ url: '/images/guides/sustainable-decision-matrix/lever-molded-fiber.jpg', width: 1600, height: 1200 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/guides/sustainable-decision-matrix/lever-molded-fiber.jpg'],
   },
 }
 

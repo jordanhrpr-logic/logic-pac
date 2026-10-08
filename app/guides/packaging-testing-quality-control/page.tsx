@@ -10,10 +10,17 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: '/guides/packaging-testing-quality-control' },
   openGraph: {
+    url: 'https://logic-pac.com/guides/packaging-testing-quality-control',
     title: `${title} | Logic Pac`,
     description,
     type: 'article',
     images: [{ url: '/images/guides/packaging-testing-qc/sample-inspection.jpg', width: 1600, height: 900 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title} | Logic Pac`,
+    description,
+    images: ['/images/guides/packaging-testing-qc/sample-inspection.jpg'],
   },
 }
 
