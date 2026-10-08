@@ -377,7 +377,7 @@ export default function TestingClient() {
           </div>
           <FAQSidebar
             eyebrow="FAQ"
-            title="Running the Testing &amp; QC Chain"
+            title="Running the Testing & QC Chain"
             faqs={faqs}
             ctaText="Request a Packaging Audit"
             ctaProjectType="Guide - Testing & QC Audit"

@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: 'How do we communicate the system without overclaiming?',
-    answer: 'Show the math. "Each refill saves 65% of the packaging weight of a new bottle." Avoid the word "sustainable" unqualified -- the EU ECGT directive (effective September 2026) restricts unsupported claims.',
+    answer: 'Show the math. "Each refill saves 65% of the packaging weight of a new bottle." Avoid the word "sustainable" unqualified — the EU ECGT directive (effective September 2026) restricts unsupported claims.',
   },
   {
     question: 'Is refillability worth pursuing for a mass-tier brand?',

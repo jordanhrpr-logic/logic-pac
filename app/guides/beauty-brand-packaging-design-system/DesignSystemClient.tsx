@@ -326,7 +326,7 @@ export default function DesignSystemClient() {
                   },
                   {
                     id: 'pr',
-                    eyebrow: '06 — Set &amp; gift extensions',
+                    eyebrow: '06 — Set & gift extensions',
                     title: 'A gift set is the system in a new container, not a new brand.',
                     body: 'Seasonal, gift, and limited-edition formats are the sharpest test of a system. The temptation is to treat them as design permission slips. The right move is to stack the same silhouette, hierarchy, and finish stack inside a modular secondary architecture that was designed for exactly this moment.',
                     bullets: [
@@ -337,7 +337,7 @@ export default function DesignSystemClient() {
                   },
                   {
                     id: 'rules',
-                    eyebrow: '07 — Shelf &amp; photography',
+                    eyebrow: '07 — Shelf & photography',
                     title: 'When the rules hold, the line photographs as one object.',
                     body: 'The real test is not the hero shot. It is the family shot — three SKUs, a gift set, and a PR unit arranged on one surface. If that composition reads as one brand without a logo, the system is working. If the eye has to search for the connective tissue, the system is drifting.',
                     bullets: [
