@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   title: 'Blog — Packaging Insights for Brands',
   description: 'Practical packaging advice for beauty and consumer brands. Cost breakdowns, sustainability compliance, timelines, and supplier guidance.',
   alternates: { canonical: '/blog' },
+  openGraph: {
+    url: 'https://logic-pac.com/blog',
+    title: 'Blog — Packaging Insights for Brands | Logic Pac',
+    description: 'Practical packaging advice for beauty and consumer brands. Cost breakdowns, sustainability compliance, timelines, and supplier guidance.',
+    type: 'website',
+    siteName: 'Logic Pac',
+    images: [{ url: '/images/portfolio/packaging-portfolio-overview.jpg', width: 2500, height: 1875 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog — Packaging Insights for Brands | Logic Pac',
+    description: 'Practical packaging advice for beauty and consumer brands. Cost breakdowns, sustainability compliance, timelines, and supplier guidance.',
+    images: ['/images/portfolio/packaging-portfolio-overview.jpg'],
+  },
 }
 
 const breadcrumbJsonLd = {

@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: 'Holiday Gift Set Packaging for Beauty Brands',
   description: 'Holiday gift set manufacturer for beauty and cosmetic brands. Custom rigid boxes, advent calendars, premium finishes, kitting, and retail compliance.',
   alternates: { canonical: '/holiday' },
+  openGraph: {
+    url: 'https://logic-pac.com/holiday',
+    title: 'Holiday Gift Set Packaging for Beauty Brands | Logic Pac',
+    description: 'Holiday gift set manufacturer for beauty and cosmetic brands. Custom rigid boxes, advent calendars, premium finishes, kitting, and retail compliance.',
+    type: 'website',
+    siteName: 'Logic Pac',
+    images: [{ url: '/images/portfolio/holiday-epicutis-gift-sets.jpg', width: 2500, height: 1875 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Holiday Gift Set Packaging for Beauty Brands | Logic Pac',
+    description: 'Holiday gift set manufacturer for beauty and cosmetic brands. Custom rigid boxes, advent calendars, premium finishes, kitting, and retail compliance.',
+    images: ['/images/portfolio/holiday-epicutis-gift-sets.jpg'],
+  },
 }
 
 export default function HolidayPage() {
