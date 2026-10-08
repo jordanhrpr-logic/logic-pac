@@ -26,7 +26,7 @@ const concept_to_shelf_timeline_faq = {
 }
 
 export default function TimelinePage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/concept-to-shelf-timeline.png', datePublished: '2026-05-06', dateModified: '2026-09-25' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/concept-to-shelf-timeline.png', datePublished: '2026-05-06', dateModified: '2026-09-25', type: 'TechArticle', proficiencyLevel: 'Beginner', dependencies: 'launch date, product dimensions, retailer requirements'})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(concept_to_shelf_timeline_faq) }} /><TimelineClient /></>
 }

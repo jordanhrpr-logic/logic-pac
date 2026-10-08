@@ -26,7 +26,7 @@ const material_decision_framework_faq = {
 }
 
 export default function MaterialPage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/material-comparison-grid.png', datePublished: '2026-05-06', dateModified: '2026-09-25' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/material-comparison-grid.png', datePublished: '2026-05-06', dateModified: '2026-09-25', type: 'TechArticle', proficiencyLevel: 'Beginner', dependencies: 'formula compatibility data, retail channel requirements, cost targets'})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(material_decision_framework_faq) }} /><MaterialClient /></>
 }

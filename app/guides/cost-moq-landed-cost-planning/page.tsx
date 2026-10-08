@@ -33,8 +33,7 @@ export default function CostPage() {
     description,
     image: '/images/guides/packaging-design-system/scroll-01-family-overview.jpg',
     datePublished: '2026-10-07',
-    dateModified: '2026-10-07',
-  })
+    dateModified: '2026-10-07', type: 'TechArticle', proficiencyLevel: 'Intermediate', dependencies: 'factory quote, launch volume estimate, freight mode decision',})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>

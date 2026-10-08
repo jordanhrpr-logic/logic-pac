@@ -32,7 +32,7 @@ const complianceFaq = {
 }
 
 export default function CompliancePage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/beauty-packaging-compliance/hero-clinical-skincare.jpg', datePublished: '2026-10-07', dateModified: '2026-10-07' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/beauty-packaging-compliance/hero-clinical-skincare.jpg', datePublished: '2026-10-07', dateModified: '2026-10-07', type: 'TechArticle', proficiencyLevel: 'Intermediate', dependencies: 'SKU jurisdiction map, claim inventory, pack component bill of materials'})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>

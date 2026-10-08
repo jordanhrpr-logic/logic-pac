@@ -32,7 +32,7 @@ const retailFaq = {
 }
 
 export default function RetailPage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/retail-ready-beauty/shelf-ready-display.jpg', datePublished: '2026-10-07', dateModified: '2026-10-07' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/retail-ready-beauty/shelf-ready-display.jpg', datePublished: '2026-10-07', dateModified: '2026-10-07', type: 'TechArticle', proficiencyLevel: 'Intermediate', dependencies: 'GS1 Company Prefix, retailer vendor manual, master-carton dimensions'})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>

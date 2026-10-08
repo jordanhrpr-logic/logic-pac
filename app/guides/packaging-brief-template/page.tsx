@@ -26,7 +26,7 @@ const packaging_brief_template_faq = {
 }
 
 export default function BriefPage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/packaging-brief-checklist.png', datePublished: '2026-05-06', dateModified: '2026-09-25' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/guides/packaging-brief-checklist.png', datePublished: '2026-05-06', dateModified: '2026-09-25', type: 'TechArticle', proficiencyLevel: 'Beginner', dependencies: 'product specs, target cost, launch date, retail channel'})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(packaging_brief_template_faq) }} /><BriefClient /></>
 }

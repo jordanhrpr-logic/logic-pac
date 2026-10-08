@@ -38,8 +38,7 @@ export default function PackagingTestingQCPage() {
     description,
     image: '/images/guides/packaging-testing-qc/sample-inspection.jpg',
     datePublished: '2026-10-06',
-    dateModified: '2026-10-06',
-  })
+    dateModified: '2026-10-06', type: 'TechArticle', proficiencyLevel: 'Intermediate', dependencies: 'written specification, signed golden sample, factory QC capability',})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>

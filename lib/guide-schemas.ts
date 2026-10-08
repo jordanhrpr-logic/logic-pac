@@ -7,6 +7,9 @@ type GuideSchemaInput = {
   image: string
   datePublished: string
   dateModified?: string
+  type?: 'Article' | 'TechArticle'
+  proficiencyLevel?: 'Beginner' | 'Intermediate' | 'Expert'
+  dependencies?: string
 }
 
 function absoluteUrl(path: string) {
@@ -20,12 +23,17 @@ export function buildGuideArticleSchema({
   image,
   datePublished,
   dateModified = datePublished,
+  type = 'Article',
+  proficiencyLevel,
+  dependencies,
 }: GuideSchemaInput) {
   const url = `${SITE_URL}/guides/${slug}`
 
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': type,
+    ...(type === 'TechArticle' && proficiencyLevel ? { proficiencyLevel } : {}),
+    ...(type === 'TechArticle' && dependencies ? { dependencies } : {}),
     headline: title,
     description,
     author: {

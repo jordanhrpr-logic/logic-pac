@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function FinishGuidePage() {
-  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/portfolio/soft-touch-spot-uv.jpg', datePublished: '2026-03-14', dateModified: '2026-09-25' })
+  const article = buildGuideArticleSchema({ slug, title, description, image: '/images/portfolio/soft-touch-spot-uv.jpg', datePublished: '2026-03-14', dateModified: '2026-09-25', type: 'TechArticle', proficiencyLevel: 'Beginner', dependencies: 'substrate selection, print file preparation, finish-cost budget'})
   const breadcrumb = buildGuideBreadcrumbSchema(slug, title)
   return (
     <>
