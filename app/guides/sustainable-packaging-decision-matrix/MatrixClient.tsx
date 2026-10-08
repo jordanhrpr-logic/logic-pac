@@ -308,6 +308,7 @@ export default function MatrixClient() {
 
             <div className="callout">
               <strong>What the Matrix buys at Logic Pac scale.</strong> Programs run through this scoring and pre-production QC cycle see a <strong>~21% reduction in defect rate</strong> at pilot vs. unmanaged runs, luxury carton reprint rates in the <strong>&lt; 0.75&ndash;1.25%</strong> range, and <strong>75&ndash;80%</strong> program extension into a second SKU family within 12 months. The matrix is designed to protect those outcomes, not to generate a scorecard.
+              <em className="methodology-note">Methodology: the 21% defect-rate figure is measured by a factory- and client-selected third-party inspection firm over a 12-month period on comparable luxury programs; the reprint-rate figure is Logic Pac internal measurement reconciled against factory partner QC reports; the 75&ndash;80% program-extension figure is a Logic Pac &amp; Logic Agency internal benchmark across luxury beauty programs run 2020&ndash;2026.</em>
             </div>
 
             <h2 id="scorecard"><span className="num">09.</span>The 10-question scorecard</h2>

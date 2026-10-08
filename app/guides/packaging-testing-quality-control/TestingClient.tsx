@@ -261,6 +261,7 @@ export default function TestingClient() {
 
             <div className="callout">
               <strong>Cost framing.</strong> On luxury beauty programs where Logic Pac manages the full pre-production proofing and QC cycle, we typically see a <strong>~21% reduction in defect rate</strong> at pilot versus unmanaged runs on comparable formats, and a luxury carton reprint rate that lands in the <strong>&lt; 0.75&ndash;1.25%</strong> range. The economics of reprint avoidance pay for the proofing cycle several times over &mdash; which is why the 16- to 24-week luxury timeline is built around protecting the proofing window, not compressing it.
+              <em className="methodology-note">Methodology: the 21% defect-rate figure is measured by a factory- and client-selected third-party inspection firm over a 12-month period on comparable luxury programs. The reprint-rate figure is Logic Pac internal measurement reconciled against factory partner QC reports.</em>
             </div>
 
             <h2 id="inline"><span className="num">08.</span>In-line (DUPRO) and pre-shipment inspection</h2>
@@ -317,6 +318,7 @@ export default function TestingClient() {
 
             <GuideBottomLine>
               Run-to-sample conformity is not a check at the end. It is a chain &mdash; written specification, signed golden sample, pre-production sample inspection, fit and function testing, dimensional and transit testing on substrate, color and finish verification, DUPRO and pre-shipment inspection against written AQL thresholds, and a documentation trail that reconciles every pallet to the sample you signed. The brands that run this chain cleanly see <strong>~21% defect reduction at pilot</strong>, <strong>&lt; 0.75&ndash;1.25% luxury carton reprint rates</strong>, and <strong>75&ndash;80% program extension</strong> into a second SKU family within 12 months of launch. The chain is not optional. It is the discipline the sampled unit is designed to anchor.
+              <em className="methodology-note">Methodology: the 21% defect-rate figure is measured by a factory- and client-selected third-party inspection firm over a 12-month period on comparable luxury programs; the reprint-rate figure is Logic Pac internal measurement reconciled against factory partner QC reports; the 75&ndash;80% program-extension figure is a Logic Pac &amp; Logic Agency internal benchmark across luxury beauty programs run 2020&ndash;2026.</em>
             </GuideBottomLine>
 
             <h2 id="scorecard"><span className="num">10.</span>The 10-item run-to-sample conformity scorecard</h2>

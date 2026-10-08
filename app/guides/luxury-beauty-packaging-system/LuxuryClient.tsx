@@ -315,6 +315,7 @@ export default function LuxuryClient() {
 
             <div className="callout">
               <strong>What the proofing and QC program buys.</strong> On luxury beauty programs where Logic Pac manages the full pre-production cycle, we typically see a <strong>~21% reduction in defect rate</strong> at pilot vs. unmanaged runs on comparable formats, and a luxury carton reprint rate that lands in the <strong>&lt; 0.75&ndash;1.25%</strong> range. Those are the numbers the 16- to 24-week timeline is designed to protect.
+              <em className="methodology-note">Methodology: the 21% defect-rate figure is measured by a factory- and client-selected third-party inspection firm over a 12-month period on comparable luxury programs. The reprint-rate figure is Logic Pac internal measurement reconciled against factory partner QC reports.</em>
             </div>
 
             <h3>Fulfillment and replenishment</h3>
@@ -360,7 +361,7 @@ export default function LuxuryClient() {
               </ul>
             </section>
 
-            <GuideBottomLine>Luxury beauty packaging is a system decision. If primary, secondary, tray, material, and finish are developed as one program &mdash; with the brand moments explicitly in scope &mdash; the pack will carry the position it is supposed to carry. If any of those layers is sourced in isolation, the system falls apart in the places customers notice most. The programs that treat the pack as a system also hold up on the next release: <strong>roughly 75&ndash;80% of our luxury beauty clients extend into a second SKU family within 12 months of launch</strong>, which is the clearest proof we have that the system did what it was supposed to do.</GuideBottomLine>
+            <GuideBottomLine>Luxury beauty packaging is a system decision. If primary, secondary, tray, material, and finish are developed as one program &mdash; with the brand moments explicitly in scope &mdash; the pack will carry the position it is supposed to carry. If any of those layers is sourced in isolation, the system falls apart in the places customers notice most. The programs that treat the pack as a system also hold up on the next release: <strong>roughly 75&ndash;80% of our luxury beauty clients extend into a second SKU family within 12 months of launch</strong>, which is the clearest proof we have that the system did what it was supposed to do.<em className="methodology-note">Methodology: the 75&ndash;80% program-extension figure is a Logic Pac &amp; Logic Agency internal benchmark across luxury beauty programs run 2020&ndash;2026.</em></GuideBottomLine>
 
           </div>
         </div>

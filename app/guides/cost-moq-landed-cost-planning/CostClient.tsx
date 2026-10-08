@@ -365,6 +365,7 @@ export default function CostClient() {
 
             <GuideBottomLine>
               Factory unit cost is the smallest number in the program. Landed cost is the number that decides whether the launch has the margin it needs &mdash; and MOQ, freight mode, defect allowance, and carrying cost are the four levers that move it. Run the worksheet before the PO goes out, not after. On the programs Logic Pac manages end to end, this discipline is why we see <strong>~21% defect-rate reduction</strong> at pilot, <strong>&lt; 0.75&ndash;1.25%</strong> luxury carton reprint rates, and <strong>75&ndash;80%</strong> program-extension rates within 12 months. The commercial model is the launch plan; the launch plan is the brand plan.
+              <em className="methodology-note">Methodology: the 21% defect-rate figure is measured by a factory- and client-selected third-party inspection firm over a 12-month period on comparable luxury programs; the reprint-rate figure is Logic Pac internal measurement reconciled against factory partner QC reports; the 75&ndash;80% program-extension figure is a Logic Pac &amp; Logic Agency internal benchmark across luxury beauty programs run 2020&ndash;2026.</em>
             </GuideBottomLine>
 
             <h2 id="scorecard"><span className="num">09.</span>The 10-item commercial-readiness scorecard</h2>
