@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import { capabilityFaqs } from './capabilities-data'
@@ -34,7 +35,18 @@ export default function CapabilitiesClient() {
         <div className="ey inv">Full-service packaging</div>
         <h1>Everything Your<br />Packaging Needs,<br /><em>Under One Roof</em></h1>
         <p>Structural design, engineering, global sourcing, manufacturing, quality control, and fulfillment &mdash; managed by one accountable team.</p>
-        <button type="button" className="bi" onClick={() => openModal('Capabilities - Start a Project', 'capabilities-hero')}>Start a Project</button>
+        <button type="button" className="bi" onClick={() => openModal('Capabilities - Packaging Audit', 'capabilities-hero')}>Request a Packaging Audit</button>
+      </div>
+      <div className="bbar">
+        <span className="bbl">Trusted by global brands since 2004</span>
+        <div className="bbn">
+          <span className="bn"><Image src="/images/logos/adidas.svg" alt="Adidas" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/vans.svg" alt="Vans" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/target.svg" alt="Target" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/disney.svg" alt="Disney" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/puma.svg" alt="Puma" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/paramount-plus.svg" alt="Paramount+" width={100} height={40} /></span>
+        </div>
       </div>
       <section className="capabilities-list" aria-labelledby="capabilities-list-title">
         <h2 id="capabilities-list-title">Packaging Development, Production &amp; Fulfillment Capabilities</h2>
@@ -123,7 +135,7 @@ export default function CapabilitiesClient() {
           <div className="ey inv">From brief to production</div>
           <h2>Bring Us the Product.<br /><em>We&apos;ll Map the Packaging Path.</em></h2>
           <p>Share the product, quantity, target cost, channel, and launch date. We&apos;ll identify the decisions, development steps, and production path the project requires.</p>
-          <button type="button" className="bi" onClick={() => openModal(undefined, 'capabilities-bottom-cta')}>Scope Your Packaging Project</button>
+          <button type="button" className="bi" onClick={() => openModal('Capabilities - Packaging Audit', 'capabilities-bottom-cta')}>Request a Packaging Audit</button>
         </div>
       </section>
     </>
