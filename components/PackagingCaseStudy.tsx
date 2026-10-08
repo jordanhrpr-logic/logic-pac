@@ -60,7 +60,7 @@ export default function PackagingCaseStudy({ study }: { study: Study }) {
         <div className="ey">The Outcome</div><h2>{study.outcomeTitle}</h2>{study.outcomes.map((p) => <p key={p}>{p}</p>)}
         {study.proof && <div className="case-proof-grid">{study.proof.map(([metric, label]) => <div key={metric}><strong>{metric}</strong><span>{label}</span></div>)}</div>}
         <div className="case-inline-image"><Image src={study.secondaryImage} alt={study.secondaryAlt} width={1600} height={1000} sizes="(max-width: 900px) 100vw, 900px" /></div>
-        <p className="case-proof-note"><strong>Evidence note:</strong> {study.evidence}</p>
+        <p className="case-proof-note"><strong>Program measurement.</strong> {study.evidence}</p>
       </section>
 
       <section className="case-related">
