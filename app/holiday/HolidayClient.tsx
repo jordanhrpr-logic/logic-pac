@@ -78,7 +78,7 @@ export default function HolidayClient() {
           <h3>Custom Holiday Packaging Costs</h3>
           <p>Pricing depends on structure type, quantity, materials, and finishing. Rigid gift boxes with magnetic closure and custom inserts range widely based on complexity and volume. Our <Link href="/guides/packaging-finish-guide?utm_source=holiday&utm_medium=organic&utm_campaign=seo_service_page&utm_content=holiday_finish_guide">packaging finish guide</Link> covers what each finish adds to unit cost. As a dedicated holiday gift set manufacturer, we provide realistic pricing within 48 hours of an initial scoping call.</p>
           <h3>Retail Packaging Compliance for Ulta, Sephora, and Target</h3>
-          <p>Retailer compliance is built into our process from the start. We manage barcoding, master carton labeling, FSC documentation, and retailer-specific requirements for Ulta, Sephora, Target, and specialty retail channels.</p>
+          <p>Retailer compliance is built into our process from the start. We manage barcoding, master carton labeling, FSC documentation, and retailer-specific requirements for Ulta, Sephora, Target, and specialty retail channels. For the GS1 barcode readiness, master-carton configuration specs, and chargeback-prevention playbook that sits behind every holiday program, see our <Link href="/guides/retail-ready-beauty-packaging">retail-ready beauty packaging guide</Link>. For examples of completed holiday programs across Logic Pac clients, browse <Link href="/work">our portfolio</Link>.</p>
         </div>
         <div>
           <FAQSidebar

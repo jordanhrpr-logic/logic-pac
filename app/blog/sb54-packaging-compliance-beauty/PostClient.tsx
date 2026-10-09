@@ -161,7 +161,7 @@ export default function PostClient() {
             <p>SB 54 and the FTC Green Guides both push the same discipline: prove the claim.</p>
             <p>If you claim <Link href="/blog/pcr-packaging-beauty-brands?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_pcr_claims">PCR content</Link>, document the percentage. If you claim recyclable, understand collection and processing reality. If you claim compostable, know which composting environment the claim refers to and whether the whole package qualifies.</p>
             <p>Sustainability copy should be specific enough to survive a legal review and simple enough for a customer to understand.</p>
-            <p>For the broader sustainability playbook, see our <Link href="/blog/sustainable-beauty-packaging-sb54?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_sustainable_packaging_guide">Sustainable Beauty Packaging guide</Link>.</p>
+            <p>For the broader sustainability playbook, see our <Link href="/blog/sustainable-beauty-packaging-sb54?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=sb54_sustainable_packaging_guide">Sustainable Beauty Packaging guide</Link>. For how SB 54 sits alongside Prop 65, FTC Green Guides, MoCRA, and EU PPWR, see our <Link href="/guides/beauty-packaging-claims-compliance">beauty packaging claims &amp; compliance guide</Link>.</p>
 
             <h2 id="what-beauty-brands-should-do-now">What Beauty Brands Should Do Now</h2>
             <p>The right SB 54 plan starts with operational work, not a redesign mood board.</p>

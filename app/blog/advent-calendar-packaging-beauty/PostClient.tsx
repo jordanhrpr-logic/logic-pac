@@ -130,7 +130,7 @@ export default function PostClient() {
             <p>For a complete production phase breakdown, see our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=advent-calendar-packaging-beauty">concept to shelf timeline</Link>.</p>
 
             <h2 id="retailer-compliance-for-advent-calendar-sets">Retailer Compliance for Advent Calendar Sets</h2>
-            <p>Advent calendars sold through retail channels face the same compliance requirements as standard holiday gift sets, plus additional considerations unique to the format.</p>
+            <p>Advent calendars sold through retail channels face the same compliance requirements as standard holiday gift sets, plus additional considerations unique to the format. For GS1 barcode readiness, master-carton configuration specifics per retailer, and chargeback prevention, see our <Link href="/guides/retail-ready-beauty-packaging">retail-ready beauty packaging guide</Link>.</p>
             <h3>Case Pack and Display Requirements</h3>
             <p>Advent calendars are large-format items. They don&apos;t fit standard shelf planograms. Most retailers merchandise them as endcap displays, promotional fixtures, or seasonal floor sets.</p>
             <p>Case pack configurations must account for the calendar&apos;s dimensions and weight. A 24-drawer rigid calendar can weigh 2-4 lbs empty. Packed with products, it can exceed 5 lbs. Case packs of 4-6 units are common, and the master carton must protect the structure during distribution center handling.</p>

@@ -67,7 +67,7 @@ export default function PostClient() {
             <h2 id="when-soft-touch-lamination-makes-sense">When Soft Touch Lamination Makes Sense</h2>
             <h3>Luxury and premium beauty packaging</h3>
             <p>Soft touch is one of the defining finishes of premium beauty packaging. Skincare cartons, fragrance boxes, makeup palettes, and gift set packaging in the $25-$150 retail range use soft touch extensively because the tactile signal matches the price expectation.</p>
-            <p>For luxury packaging strategy, including how soft touch fits into the broader finish hierarchy, see our <Link href="/blog/luxury-beauty-packaging-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_luxury_guide">luxury beauty packaging guide</Link>.</p>
+            <p>For luxury packaging strategy, including how soft touch fits into the broader finish hierarchy, see our <Link href="/blog/luxury-beauty-packaging-guide?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_luxury_guide">luxury beauty packaging guide</Link>. For how a single finish like soft touch anchors a hero-SKU-to-line-extension packaging system, see our <Link href="/guides/beauty-brand-packaging-design-system">beauty brand packaging design system guide</Link>.</p>
             <h3>Gift sets and holiday packaging</h3>
             <p>Gift packaging is purchased based on presentation, and presentation is experienced through touch. A soft-touch gift box with foil stamping and a magnetic closure creates a sensory sequence &mdash; weight, texture, pull, reveal &mdash; that justifies premium pricing and drives social sharing during unboxing.</p>
             <h3>Influencer kits and PR mailers</h3>
