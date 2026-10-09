@@ -95,7 +95,7 @@ export default function PostClient() {
             <p><strong>Limitations:</strong> Plastic material (PET or PVC) creates sustainability concerns. Not recyclable in most curbside programs unless made from RPET. Mold tooling means longer lead time than die-cut card.</p>
             <h3>EVA Foam</h3>
             <p>Closed-cell foam cut or routed to custom cavities. The premium insert option.</p>
-            <p><strong>Cost:</strong> $3.00-$7.00 per unit. <strong>Best for:</strong> Fragile products (glass perfume bottles, ceramic), luxury price points, PR kits where the unboxing experience justifies the cost.</p>
+            <p><strong>Cost:</strong> $3.00-$7.00 per unit. <strong>Best for:</strong> Fragile products (glass perfume bottles, ceramic), luxury price points, <Link href="/influencer">PR kits</Link> where the unboxing experience justifies the cost.</p>
             <p><strong>Limitations:</strong> Highest insert cost. Not recyclable. Heavier than other options. Best reserved for sets priced above $75 where the insert cost is proportional to the retail price.</p>
             <h3>Molded Pulp</h3>
             <p>Fiber-based trays molded from recycled paper pulp. The sustainable alternative to thermoformed plastic.</p>

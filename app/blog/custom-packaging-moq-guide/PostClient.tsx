@@ -148,7 +148,7 @@ export default function PostClient() {
               <li>Shared finishes with variable graphics</li>
             </ul>
             <p>This reduces complexity and makes future reorders cleaner. It also helps the brand look more cohesive.</p>
-            <p>For brands building a scalable system, the Logic Agency guide on <a href="https://www.logicagencyinc.com/guides/packaging-system-that-scales?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=moq_packaging_system" target="_blank" rel="noopener noreferrer">building a packaging system that scales</a> explains how packaging complexity grows with SKU count.</p>
+            <p>For brands building a scalable system, our <Link href="/guides/beauty-brand-packaging-design-system">packaging design system guide</Link> explains how packaging complexity grows with SKU count and how to build the architecture that holds up at scale.</p>
 
             <h2 id="how-do-you-scale-from-low-moq-to-production-volume">How Do You Scale From Low MOQ to Production Volume?</h2>
             <p>Start with the structure you can afford now, but do not trap yourself in a design that cannot scale later.</p>
@@ -184,7 +184,7 @@ export default function PostClient() {
             <p>These questions turn MOQ from a fixed number into a planning conversation. Sometimes the answer really is no. Sometimes the supplier can lower the risk by changing structure, print method, or order configuration.</p>
             <h3>How Should Brands Compare MOQ Quotes?</h3>
             <p>Compare MOQ quotes on total exposure, not just unit price. A supplier quoting 500 units at $4.20 may be better for a launch than a supplier quoting 5,000 units at $1.35 if the product, formula, or artwork may change in three months.</p>
-            <p>Look at four numbers together: unit cost, total cash outlay, storage requirement, and reorder lead time. A quote that wins on one number can lose on the other three.</p>
+            <p>Look at four numbers together: unit cost, total cash outlay, storage requirement, and reorder lead time. A quote that wins on one number can lose on the other three. Our <Link href="/guides/cost-moq-landed-cost-planning">landed-cost planning guide</Link> walks through the full cost stack.</p>
             <p>Also ask whether the supplier can hold pricing for a reorder. Sometimes the first order is expensive because setup is included, but the reorder improves. Other times the first quote hides costs that show up later.</p>
 
       </div>

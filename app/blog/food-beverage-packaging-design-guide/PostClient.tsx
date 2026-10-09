@@ -117,7 +117,7 @@ export default function PostClient() {
             </ul>
             <p>The biggest mistake is treating label compliance as an artwork task at the end. It needs to be part of the packaging brief from day one.</p>
             <p>If the product is moving into retail, the operational requirements expand. Retailers may care about case pack, pallet pattern, inner packs, shelf-ready trays, label placement, and ASN accuracy.</p>
-            <p>The Logic Agency <a href="https://www.logicagencyinc.com/guides/retail-readiness?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_retail_readiness" target="_blank" rel="noopener noreferrer">Retail Readiness Bible</a> covers the operational side of that transition.</p>
+            <p>Our <Link href="/guides/retail-ready-beauty-packaging">retail-ready packaging guide</Link> covers case-pack specs, barcode requirements, and retailer-specific compliance for Sephora, Ulta, and Target.</p>
 
             <h2 id="how-much-does-food-and-beverage-packaging-cost">How Much Does Food and Beverage Packaging Cost?</h2>
             <p>Food and beverage packaging usually falls below beauty packaging on a per-unit basis, but the margin pressure is often higher.</p>
@@ -139,7 +139,7 @@ export default function PostClient() {
             <p>Some retailers require shelf-ready trays, tear-away cases, display-ready formats, or club configurations. These are not artwork changes. They are structural decisions.</p>
             <h3>Chargeback Exposure</h3>
             <p>Late shipments, bad labels, ASN errors, and routing guide misses can create deductions. Build compliance into the packaging and fulfillment plan early.</p>
-            <p>If the product is entering retail, pair the packaging plan with the Logic Agency guide to <a href="https://www.logicagencyinc.com/guides/retail-ready-packaging?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_retail_ready_packaging" target="_blank" rel="noopener noreferrer">retail-ready packaging</a>.</p>
+            <p>If the product is entering retail, pair the packaging plan with our <Link href="/guides/retail-ready-beauty-packaging">retail-ready packaging guide</Link> for case-pack and compliance specs.</p>
 
             <h2 id="how-should-an-emerging-brand-plan-the-packaging-pr">How Should an Emerging Brand Plan the Packaging Process?</h2>
             <p>Start with the channel. A DTC launch, specialty retail launch, mass retail launch, and club launch all need different packaging decisions.</p>

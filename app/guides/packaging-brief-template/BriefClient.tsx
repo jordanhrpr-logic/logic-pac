@@ -121,7 +121,7 @@ export default function BriefClient() {
             <p>Brand positioning in one paragraph. Product name, formula format, fill volume, in-use application. Link to brand guidelines if available.</p>
 
             <h3>3. Distribution channels</h3>
-            <p>DTC only? Retail launch? Wholesale? Multi-channel? Specify retailers if known &mdash; Sephora, Target, Whole Foods all have different compliance requirements that need to be designed in from concept.</p>
+            <p>DTC only? Retail launch? Wholesale? Multi-channel? Specify retailers if known &mdash; Sephora, Target, Whole Foods all have different <Link href="/guides/retail-ready-beauty-packaging">compliance requirements</Link> that need to be designed in from concept.</p>
 
             <h3>4. Sustainability requirements</h3>
             <p>This is now non-negotiable. Specify:</p>
