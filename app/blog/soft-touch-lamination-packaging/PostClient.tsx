@@ -71,7 +71,7 @@ export default function PostClient() {
             <h3>Gift sets and holiday packaging</h3>
             <p>Gift packaging is purchased based on presentation, and presentation is experienced through touch. A soft-touch gift box with foil stamping and a magnetic closure creates a sensory sequence &mdash; weight, texture, pull, reveal &mdash; that justifies premium pricing and drives social sharing during unboxing.</p>
             <h3>Influencer kits and PR mailers</h3>
-            <p>PR packaging exists to be opened on camera. Soft touch surfaces photograph and film well (minimal glare, rich visual depth) and the unboxing audio &mdash; the quiet whisper of fingers against the velvet surface &mdash; creates ASMR-adjacent content that performs on social platforms.</p>
+            <p>PR packaging exists to be opened on camera. Soft touch surfaces photograph and film well (minimal glare, rich visual depth) and the unboxing audio &mdash; the quiet whisper of fingers against the velvet surface &mdash; creates ASMR-adjacent content that performs on social platforms. See our <Link href="/influencer">influencer kit production page</Link> for the full service.</p>
             <h3>Skincare and wellness brands</h3>
             <p>Skincare brands particularly benefit from soft touch because the tactile association maps to the product promise. A moisturizer that claims to make skin &ldquo;silky&rdquo; or &ldquo;velvety&rdquo; reinforces that claim through the packaging surface before the product is ever applied.</p>
 

@@ -142,7 +142,7 @@ export default function PostClient() {
             <p>Fragrance boxes can get large fast. A beautiful rigid box that doubles dimensional weight can damage margin before the product hits the shelf.</p>
             <h3>Designing Without Retail Context</h3>
             <p>Retailers care about shelf footprint, scannability, case pack, barcode placement, and damage rates. The package has to look premium and move through the system cleanly.</p>
-            <p>If the fragrance is headed into retail, cross-check against the Logic Agency <a href="https://www.logicagencyinc.com/guides/retail-readiness?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_retail_readiness" target="_blank" rel="noopener noreferrer">Retail Readiness Bible</a>.</p>
+            <p>If the fragrance is headed into retail, cross-check against our <Link href="/guides/retail-ready-beauty-packaging">retail-ready packaging guide</Link> for case-pack specs, barcode placement, and retailer compliance.</p>
 
             <h2 id="how-should-fragrance-brands-work-backward-from-lau">How Should Fragrance Brands Work Backward From Launch?</h2>
             <p>For fragrance packaging, the safest planning window is 4-6 months. Six months is better if the project includes custom tooling, multiple finishes, or international freight.</p>

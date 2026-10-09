@@ -62,7 +62,7 @@ export default function PostClient() {
             <h2 id="how-should-brands-think-about-packaging-cost">How Should Brands Think About Packaging Cost?</h2>
             <p>Packaging cost has three layers.</p>
             <p>The first is direct unit cost. That is the number most brands ask for first: what does each box, carton, pouch, label, insert, or shipper cost?</p>
-            <p>The second is landed cost. That includes freight, duties, storage, waste, and handling. A package that looks cheap at the factory can become expensive after ocean freight, dimensional weight, and warehouse space are added.</p>
+            <p>The second is <Link href="/guides/cost-moq-landed-cost-planning">landed cost</Link>. That includes freight, duties, storage, waste, and handling. A package that looks cheap at the factory can become expensive after ocean freight, dimensional weight, and warehouse space are added.</p>
             <p>The third is business impact. Packaging affects damage rates, retail acceptance, unboxing, shelf presence, perceived value, and repeat purchase. A lower unit cost can be a higher total cost if it causes returns or makes the product feel cheap.</p>
             <p>The benchmark only matters when you know what job the package is doing.</p>
             <p>A $10 box can be smart for a $150 fragrance. It can be reckless for a $19 supplement. A $0.60 carton can be efficient for a food product and underbuilt for a premium skincare retail launch.</p>
@@ -173,7 +173,7 @@ export default function PostClient() {
               <li>The package looks premium but fails retail compliance or damage testing.</li>
             </ul>
             <p>A high packaging cost can be correct. A low packaging cost can be wrong. The question is whether the package supports the margin model.</p>
-            <p>If you are trying to reduce packaging cost without weakening brand quality, the Logic Agency guide on <a href="https://www.logicagencyinc.com/guides/packaging-cost-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=benchmarks_agency_cost_reduction" target="_blank" rel="noopener noreferrer">packaging cost reduction</a> covers the operational levers.</p>
+            <p>If you are trying to reduce packaging cost without weakening brand quality, our <Link href="/guides/cost-moq-landed-cost-planning">landed-cost planning guide</Link> covers the full cost stack and optimization levers.</p>
 
             <h2 id="when-does-cheap-packaging-cost-more">When Does Cheap Packaging Cost More?</h2>
             <p>Cheap packaging gets expensive when it creates downstream costs.</p>

@@ -202,7 +202,7 @@ export default function PostClient() {
             <p>Start with these moves:</p>
 
             <h3>Standardize Structure Across SKUs</h3>
-            <p>If every SKU uses a different carton size, insert style, finish, and material, you are paying for fragmentation. Standardizing the structure across multiple SKUs can reduce setup cost, improve reorder economics, and make quality control easier.</p>
+            <p>If every SKU uses a different carton size, insert style, finish, and material, you are paying for fragmentation. Standardizing the structure across multiple SKUs can reduce setup cost, improve reorder economics, and make <Link href="/guides/packaging-testing-quality-control">quality control</Link> easier.</p>
             <p>This does not mean every product looks identical. It means the system underneath the packaging is consistent.</p>
 
             <h3>Spend on One Signature Moment</h3>
@@ -220,7 +220,7 @@ export default function PostClient() {
             <h3>Protect the Brand, Cut the Waste</h3>
             <p>The best cost reductions do not remove the part customers value. They remove the part nobody notices.</p>
             <p>That might mean changing board thickness, consolidating suppliers, reducing unused air inside a kit, switching insert material, or moving from a fully wrapped rigid box to an engineered carton with the same shelf impact.</p>
-            <p>Logic Agency covers the operational side of this in the <a href="https://www.logicagencyinc.com/guides/packaging-cost-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_reduction_guide" target="_blank" rel="noopener noreferrer">Packaging Cost Reduction guide</a>.</p>
+            <p>Our <Link href="/guides/cost-moq-landed-cost-planning">landed-cost planning guide</Link> walks through the full cost stack, from factory gate to warehouse shelf.</p>
 
             <h2 id="what-beauty-brands-should-budget-before-starting">What Beauty Brands Should Budget Before Starting</h2>
             <p>Before you request quotes, build a realistic budget range. Not a wish number. A working number.</p>

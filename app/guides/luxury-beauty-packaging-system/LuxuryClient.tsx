@@ -314,7 +314,7 @@ export default function LuxuryClient() {
             </ul>
 
             <div className="callout">
-              <strong>What the proofing and QC program buys.</strong> On luxury beauty programs where Logic Pac manages the full pre-production cycle, we typically see a <strong>~21% reduction in defect rate</strong> at pilot vs. unmanaged runs on comparable formats, and a luxury carton reprint rate that lands in the <strong>&lt; 0.75&ndash;1.25%</strong> range. Those are the numbers the 16- to 24-week timeline is designed to protect.
+              <strong>What the proofing and QC program buys.</strong> On luxury beauty programs where Logic Pac manages the full <Link href="/guides/packaging-testing-quality-control">pre-production QC cycle</Link>, we typically see a <strong>~21% reduction in defect rate</strong> at pilot vs. unmanaged runs on comparable formats, and a luxury carton reprint rate that lands in the <strong>&lt; 0.75&ndash;1.25%</strong> range. Those are the numbers the 16- to 24-week timeline is designed to protect.
               <em className="methodology-note">Methodology: the 21% defect-rate figure is measured by a factory- and client-selected third-party inspection firm over a 12-month period on comparable luxury programs. The reprint-rate figure is Logic Pac internal measurement reconciled against factory partner QC reports.</em>
             </div>
 
@@ -371,7 +371,7 @@ export default function LuxuryClient() {
         <div className="guide-faq-inner">
           <div className="guide-faq-content">
             <h2>Still Have Questions?</h2>
-            <p>The questions beauty, cosmetics, and fragrance brands ask us most often about luxury packaging development. If you do not see yours, book a packaging audit and we will give you a straight read.</p>
+            <p>The questions beauty, cosmetics, and fragrance brands ask us most often about luxury packaging development. If you do not see yours, book a <Link href="/guides/packaging-audit">packaging audit</Link> and we will give you a straight read.</p>
           </div>
           <FAQSidebar
             eyebrow="Quick Answers"
