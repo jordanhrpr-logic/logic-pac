@@ -120,7 +120,7 @@ export default function PostClient() {
             <p>The MOQ (Minimum Order Quantity) for most custom rigid holiday boxes starts at <strong>500&ndash;1,000 units</strong>. Advent calendars typically start at <strong>500+</strong> due to tooling complexity.</p>
 
             <h2 id="retailer-compliance-what-ulta-sephora-and-target-r">Retailer Compliance: What Ulta, Sephora, and Target Require</h2>
-            <p>Retailer compliance is where holiday packaging programs stall if it isn&apos;t built in from day one. A gift set that looks beautiful but fails compliance is not retail-ready.</p>
+            <p>Retailer compliance is where holiday packaging programs stall if it isn&apos;t built in from day one. A gift set that looks beautiful but fails compliance is not retail-ready. For GS1 barcode readiness, master-carton configuration specifics by retailer, and chargeback prevention, see our <Link href="/guides/retail-ready-beauty-packaging">retail-ready beauty packaging guide</Link>.</p>
             <p>We manage retailer compliance as a standard part of our process. Here&apos;s what each major retailer requires.</p>
 
             <h3>Case Pack Configurations</h3>

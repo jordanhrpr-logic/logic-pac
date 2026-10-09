@@ -113,6 +113,7 @@ export default function PostClient() {
             <h3>What this means for beauty brands</h3>
             <p>If your packaging is plastic and you sell in California or the EU, recycled content requirements are not optional. The question is not whether to adopt PCR, but how fast and at what percentage.</p>
             <p>Brands that start now have time to test, qualify suppliers, and negotiate pricing. Brands that wait until 2027 will compete for limited PCR supply alongside every other beauty, food, and consumer goods brand scrambling to comply.</p>
+            <p>For how SB 54 and PPWR sit alongside Prop 65, FTC Green Guides, MoCRA, and the other frameworks beauty brands have to answer to, see our <Link href="/guides/beauty-packaging-claims-compliance">beauty packaging claims &amp; compliance guide</Link>.</p>
 
             <h2 id="how-to-verify-pcr-claims-from-suppliers">How to Verify PCR Claims From Suppliers</h2>
             <p>This is where the sustainability conversation gets uncomfortable. PCR content claims are only as reliable as the documentation behind them. A supplier saying &ldquo;this is 50% PCR&rdquo; is not the same as a supplier proving it.</p>

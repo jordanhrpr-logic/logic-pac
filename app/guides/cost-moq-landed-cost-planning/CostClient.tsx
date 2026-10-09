@@ -409,6 +409,7 @@ export default function CostClient() {
                 <li><Link href="/guides/luxury-beauty-packaging-system">Luxury Beauty Packaging System</Link> &mdash; the 15% premium framing referenced for luxury rigid programs.</li>
                 <li><Link href="/work/epicutis">Epicutis case study</Link> &mdash; managed inventory, extended packaging credit, and 15% verified cost savings referenced in the carrying-cost section.</li>
                 <li><Link href="/work/artilect-packaging-reduction">Artilect packaging reduction</Link> &mdash; 20% cost and 95% material reduction via spec re-engineering.</li>
+                <li><Link href="/work">Logic Pac portfolio</Link> &mdash; full set of beauty, cosmetics, and consumer-brand programs where this landed-cost discipline has been applied.</li>
               </ul>
             </section>
 

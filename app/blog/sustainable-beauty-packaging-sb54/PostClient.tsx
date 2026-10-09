@@ -53,7 +53,7 @@ export default function PostClient() {
                 <li>PCR can work, but color consistency, odor, supply reliability, and compliance documentation need to be checked early.</li>
                 <li>Mono-material packaging is often the simplest path to better recyclability because it removes mixed-material confusion.</li>
                 <li>Refillable packaging only works when the refill behavior is realistic and the economics survive repeat purchase.</li>
-                <li>SB 54, EU PPWR, and the FTC Green Guides make vague sustainability claims more risky. Claims need proof.</li>
+                <li>SB 54, EU PPWR, and the FTC Green Guides make vague sustainability claims more risky. Claims need proof. For the full regulatory map across these and other frameworks (Prop 65, SB 343, MoCRA), see our <Link href="/guides/beauty-packaging-claims-compliance">beauty packaging claims &amp; compliance guide</Link>.</li>
               </ul>
             </div>
 

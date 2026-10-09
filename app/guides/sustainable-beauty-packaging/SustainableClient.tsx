@@ -256,7 +256,7 @@ export default function SustainableClient() {
             {/* 4. REGULATORY */}
             <section id="regulatory">
               <h2 id="claims-materials-market"><span className="num">04.</span>Where Claims, Materials, and Market Access Intersect</h2>
-              <p>Several packaging and environmental-claims rules enter new implementation phases in 2026. The requirements differ by jurisdiction, product, packaging category, and claim, so brands should verify the applicable text rather than treat them as one deadline.</p>
+              <p>Several packaging and environmental-claims rules enter new implementation phases in 2026. The requirements differ by jurisdiction, product, packaging category, and claim, so brands should verify the applicable text rather than treat them as one deadline. For a side-by-side orientation across SB 54, SB 343, Prop 65, FTC Green Guides, MoCRA, EU PPWR, and more, see our <Link href="/guides/beauty-packaging-claims-compliance">beauty packaging claims &amp; compliance guide</Link>.</p>
 
               <h3>EU Packaging and Packaging Waste Regulation (PPWR)</h3>
               <p><strong>Effective:</strong> August 12, 2026</p>
