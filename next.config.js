@@ -40,6 +40,18 @@ const nextConfig = {
         destination: '/guides/beauty-refillable-playbook',
         permanent: true,
       },
+      // Legacy guide slug (renamed)
+      {
+        source: '/guides/sustainable-packaging-playbook',
+        destination: '/guides/sustainable-beauty-packaging',
+        permanent: true,
+      },
+      // Common legacy page patterns (no matching route on Pac)
+      { source: '/about-us', destination: '/', permanent: true },
+      { source: '/contact-us', destination: '/', permanent: true },
+      { source: '/solutions', destination: '/capabilities', permanent: true },
+      // French-language bot traffic
+      { source: '/qualite', destination: '/', permanent: true },
     ]
   },
 }
