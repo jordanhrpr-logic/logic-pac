@@ -10,6 +10,7 @@ const capabilitiesLinks = [
   { href: '/holiday', label: 'Holiday Gift Sets' },
   { href: '/influencer', label: 'Influencer Kits' },
   { href: '/jewelry', label: 'Jewelry Packaging' },
+  { href: '/packaging-audit', label: 'Packaging Audit' },
 ]
 
 export default function Navigation() {
