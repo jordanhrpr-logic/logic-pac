@@ -17,7 +17,7 @@ const dimensions = [
 
 const auditFaqs = [
   { question: 'How is a packaging audit different from a QC inspection?', answer: 'A QC inspection confirms a specific production run matches a written spec. A packaging audit asks whether the spec itself is the right one, and whether the surrounding system holds up. QC is run-level. Audit is program-level.' },
-  { question: 'How long does a packaging audit take?', answer: 'A single-SKU audit on one or two dimensions runs 2–4 weeks. A full seven-dimension audit on a multi-SKU program runs 4–6 weeks. Brand-side effort is lighter than most teams expect.' },
+  { question: 'How long does a packaging audit take?', answer: 'Less than fourteen days. A focused single-dimension review can be faster. A full seven-dimension audit on a multi-SKU program completes within two weeks. Brand-side effort is lighter than most teams expect.' },
   { question: 'What do you deliver?', answer: 'A written report structured by the seven audit dimensions, each with findings, severity rating, prioritized action register, and our recommendation. We include supporting evidence and name the specific next step for each finding.' },
   { question: 'Is the audit a sales pitch?', answer: 'No. The audit is a defined deliverable with its own scope. We deliver the report whether or not you decide to work with us on execution. Most audits do surface work we can execute — we quote that separately.' },
   { question: 'Can we run the audit ourselves?', answer: 'For some dimensions, yes. Retail readiness and sustainability have self-audit scorecards in our guides. Compliance, cost, and system coherence are harder to self-audit without a current reference.' },
@@ -31,7 +31,7 @@ export default function PackagingAuditClient() {
     <>
       <div className="kph">
         <div className="kphv" style={{ background: 'linear-gradient(135deg,#0d1b2a,#1a2a4a,#1f2a3d)' }}>
-          <Image src="/images/guides/packaging-audit/hero-audit.jpg" alt="Packaging audit in progress — structural review of beauty packaging components" fill style={{ objectFit: 'cover' }} priority />
+          <Image src="/images/portfolio/cosmetics-folding-carton.jpeg" alt="Custom beauty packaging — folding carton with premium finishes" fill style={{ objectFit: 'cover' }} priority />
           <div>
             <div className="kvl">Packaging Audit Service</div>
             <div className="kvt" style={{ fontSize: 'clamp(26px,3.2vw,40px)' }}>Seven Dimensions.<br />One Report.<br /><em>Zero Guesswork.</em></div>
@@ -70,27 +70,27 @@ export default function PackagingAuditClient() {
 
       <div className="incs" style={{ background: 'var(--navy)', color: 'white' }}>
         <div className="ey" style={{ color: 'var(--lime)' }}>How it works</div>
-        <h2 style={{ fontSize: 'clamp(24px,3vw,36px)', color: 'white' }}>Four Phases. Four to Six Weeks.</h2>
+        <h2 style={{ fontSize: 'clamp(24px,3vw,36px)', color: 'white' }}>Four Phases. Less Than Fourteen Days.</h2>
         <div className="incg" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))' }}>
           <div className="ii" style={{ background: 'var(--navy-md)', border: '1px solid rgba(255,255,255,.08)' }}>
             <div className="iin" style={{ color: 'var(--lime)', opacity: 1 }}>01</div>
             <h4 style={{ color: 'white', fontSize: 14, fontWeight: 700, marginBottom: 9 }}>Scope &amp; Intake</h4>
-            <p style={{ color: 'rgba(255,255,255,.7)' }}>We define which SKUs, dimensions, and markets are in scope. You provide samples, supplier contacts, and the launch calendar. Week 1.</p>
+            <p style={{ color: 'rgba(255,255,255,.7)' }}>We define which SKUs, dimensions, and markets are in scope. You provide samples, supplier contacts, and the launch calendar. Days 1&ndash;2.</p>
           </div>
           <div className="ii" style={{ background: 'var(--navy-md)', border: '1px solid rgba(255,255,255,.08)' }}>
             <div className="iin" style={{ color: 'var(--lime)', opacity: 1 }}>02</div>
             <h4 style={{ color: 'white', fontSize: 14, fontWeight: 700, marginBottom: 9 }}>Evidence Gathering</h4>
-            <p style={{ color: 'rgba(255,255,255,.7)' }}>Physical measurement, supplier documentation review, compliance mapping, cost modeling, and retail-spec cross-check. Weeks 1&ndash;3.</p>
+            <p style={{ color: 'rgba(255,255,255,.7)' }}>Physical measurement, supplier documentation review, compliance mapping, cost modeling, and retail-spec cross-check. Days 3&ndash;8.</p>
           </div>
           <div className="ii" style={{ background: 'var(--navy-md)', border: '1px solid rgba(255,255,255,.08)' }}>
             <div className="iin" style={{ color: 'var(--lime)', opacity: 1 }}>03</div>
             <h4 style={{ color: 'white', fontSize: 14, fontWeight: 700, marginBottom: 9 }}>Findings Synthesis</h4>
-            <p style={{ color: 'rgba(255,255,255,.7)' }}>Each finding classified by severity (critical, high, advisory). The action register is prioritized by risk and timeline. Weeks 3&ndash;4.</p>
+            <p style={{ color: 'rgba(255,255,255,.7)' }}>Each finding classified by severity (critical, high, advisory). The action register is prioritized by risk and timeline. Days 9&ndash;11.</p>
           </div>
           <div className="ii" style={{ background: 'var(--navy-md)', border: '1px solid rgba(255,255,255,.08)' }}>
             <div className="iin" style={{ color: 'var(--lime)', opacity: 1 }}>04</div>
             <h4 style={{ color: 'white', fontSize: 14, fontWeight: 700, marginBottom: 9 }}>Report &amp; Walkthrough</h4>
-            <p style={{ color: 'rgba(255,255,255,.7)' }}>Written report delivered. Live walkthrough of findings, severity rationale, and recommended next steps. You decide what to act on. Week 4+.</p>
+            <p style={{ color: 'rgba(255,255,255,.7)' }}>Written report delivered. Live walkthrough of findings, severity rationale, and recommended next steps. You decide what to act on. Days 12&ndash;14.</p>
           </div>
         </div>
       </div>

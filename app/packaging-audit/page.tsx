@@ -3,7 +3,7 @@ import PackagingAuditClient from './PackagingAuditClient'
 
 const title = 'Packaging Audit for Beauty & CPG Brands'
 const description = 'A structured packaging audit across seven dimensions — compliance, cost, retail readiness, sustainability, quality, structure, and design system coherence — delivered as a written report with a prioritized action register.'
-const image = '/images/guides/packaging-audit/hero-audit.jpg'
+const image = '/images/portfolio/cosmetics-folding-carton.jpeg'
 
 export const metadata: Metadata = {
   title,
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description,
     type: 'website',
     siteName: 'Logic Pac',
-    images: [{ url: image, width: 1276, height: 1276 }],
+    images: [{ url: image, width: 2496, height: 1726 }],
   },
   twitter: {
     card: 'summary_large_image',
