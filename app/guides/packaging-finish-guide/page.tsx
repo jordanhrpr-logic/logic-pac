@@ -5,7 +5,7 @@ import { buildGuideArticleSchema, buildGuideBreadcrumbSchema } from '@/lib/guide
 
 const slug = 'packaging-finish-guide'
 const title = 'Packaging Finish Selection Guide'
-const description = 'Compare soft-touch lamination, foil stamping, spot UV, embossing, and debossing by appearance, feel, durability, file setup, and cost.'
+const description = 'When soft-touch, foil stamping, spot UV, embossing, and debossing earn their cost — and when they don’t. Appearance, feel, durability, and per-unit pricing.'
 
 export const metadata: Metadata = {
   title,
