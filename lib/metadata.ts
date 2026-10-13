@@ -76,10 +76,10 @@ export const holidayServiceJsonLd = {
     "@type": "OfferCatalog",
     "name": "Holiday Packaging Formats",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Rigid Gift Box with Magnetic Closure" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Advent Calendar Structure" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Multi-Component Gift Set Kit" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Lift-Lid Two-Piece Box" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rigid Gift Box with Magnetic Closure" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Advent Calendar Structure" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Multi-Component Gift Set Kit" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lift-Lid Two-Piece Box" } }
     ]
   }
 }
@@ -200,11 +200,11 @@ export const jewelryServiceJsonLd = {
     "@type": "OfferCatalog",
     "name": "Jewelry Packaging Formats",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom Rigid Jewelry Box with Magnetic Closure" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Hinged Jewelry Box with Metal Hardware" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Velvet-Lined Ring Box" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Holiday Jewelry Gift Set Packaging" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom Inserts and Cushions for Jewelry" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Rigid Jewelry Box with Magnetic Closure" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hinged Jewelry Box with Metal Hardware" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Velvet-Lined Ring Box" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Holiday Jewelry Gift Set Packaging" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Inserts and Cushions for Jewelry" } }
     ]
   }
 }
