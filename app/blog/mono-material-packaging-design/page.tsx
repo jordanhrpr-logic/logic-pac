@@ -4,12 +4,12 @@ import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-sc
 
 export const metadata: Metadata = {
   title: 'Mono-Material Packaging Design Guide',
-  description: 'Learn mono-material packaging design for beauty brands: recyclability, material choices, cost tradeoffs, compliance, and design limits. Use this guide.',
+  description: 'Mono-material packaging for beauty brands: mono-PP, mono-PE, and mono-PET compared by recyclability, SB 54 compliance, formula compatibility, and cost.',
   alternates: { canonical: '/blog/mono-material-packaging-design' },
   openGraph: {
     url: 'https://logic-pac.com/blog/mono-material-packaging-design',
     title: 'Mono-Material Packaging Design for Beauty: The Technical Guide | Logic Pac',
-    description: 'Learn mono-material packaging design for beauty brands: recyclability, material choices, cost tradeoffs, compliance, and design limits. Use this guide.',
+    description: 'Mono-material packaging for beauty brands: mono-PP, mono-PE, and mono-PET compared by recyclability, SB 54 compliance, formula compatibility, and cost.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mono-Material Packaging Design for Beauty: The Technical Guide | Logic Pac',
-    description: 'Learn mono-material packaging design for beauty brands: recyclability, material choices, cost tradeoffs, compliance, and design limits. Use this guide.',
+    description: 'Mono-material packaging for beauty brands: mono-PP, mono-PE, and mono-PET compared by recyclability, SB 54 compliance, formula compatibility, and cost.',
     images: ['/images/portfolio/foil-stamped-cylinder.jpeg'],
   },
 }
