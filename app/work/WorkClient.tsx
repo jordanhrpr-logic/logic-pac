@@ -51,6 +51,17 @@ export default function WorkClient() {
         <h1>Work That Lives on Shelves,<br />Feeds, &amp; <em>Gift Tables</em></h1>
         <p>Holiday gift sets, influencer kits, retail programs, specialty finishes &mdash; every project built from brief to delivery.</p>
       </div>
+      <div className="bbar">
+        <span className="bbl">Trusted by global brands since 2004</span>
+        <div className="bbn">
+          <span className="bn"><Image src="/images/logos/adidas.svg" alt="Adidas" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/vans.svg" alt="Vans" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/target.svg" alt="Target" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/disney.svg" alt="Disney" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/puma.svg" alt="Puma" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/paramount-plus.svg" alt="Paramount+" width={100} height={40} /></span>
+        </div>
+      </div>
       <div className="fbar" role="tablist" aria-label="Filter projects">
         {categories.map(c => (
           <button type="button"

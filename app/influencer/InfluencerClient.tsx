@@ -44,6 +44,18 @@ export default function InfluencerClient() {
         </div>
       </div>
 
+      <div className="bbar">
+        <span className="bbl">Trusted by global brands since 2004</span>
+        <div className="bbn">
+          <span className="bn"><Image src="/images/logos/adidas.svg" alt="Adidas" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/vans.svg" alt="Vans" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/target.svg" alt="Target" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/disney.svg" alt="Disney" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/puma.svg" alt="Puma" width={100} height={40} /></span>
+          <span className="bn"><Image src="/images/logos/paramount-plus.svg" alt="Paramount+" width={100} height={40} /></span>
+        </div>
+      </div>
+
       <div className="incs">
         <div className="ey">What we build</div>
         <h2 style={{ fontSize: 'clamp(24px,3vw,36px)' }}>Custom Influencer Kits for Brands &amp; Agencies</h2>

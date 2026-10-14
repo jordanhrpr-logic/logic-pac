@@ -103,6 +103,7 @@ export default function AdidasNemezizCaseStudy() {
           <div className="case-related-actions">
             <button type="button" className="bp" onClick={() => openModal('Influencer / PR Kit')}>Book a Consultation</button>
             <Link href="/guides/influencer-kit-playbook" className="bo">Read the Influencer Kit Playbook</Link>
+            <Link href="/capabilities" className="bg">See All Capabilities &rarr;</Link>
           </div>
         </section>
       </main>
