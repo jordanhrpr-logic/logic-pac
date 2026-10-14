@@ -333,6 +333,12 @@ export default function RetailClient() {
                 <li><Link href="/blog/jewelry-packaging-retail-vs-dtc">Jewelry packaging: retail vs DTC</Link> — the sibling article for the jewelry category, same discipline, category-specific details.</li>
                 <li><Link href="/capabilities">Logic Pac capabilities</Link> — the full-service retail-ready program including GS1, master-carton engineering, vendor-manual review, QC, and fulfillment.</li>
               </ul>
+              <h3>Primary industry and standards references</h3>
+              <ul className="sources-list">
+                <li><a href="https://www.gs1.org/standards/barcodes" target="_blank" rel="noopener noreferrer">GS1: Barcode Standards</a> &mdash; UPC/EAN assignment, quiet-zone specifications, and verification grade requirements.</li>
+                <li><a href="https://www.gs1us.org/industries/retail" target="_blank" rel="noopener noreferrer">GS1 US: Retail Industry Standards</a> &mdash; case-level identification, pallet labeling, and EDI/ASN requirements.</li>
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Green Guides</a> &mdash; environmental claims that may apply to retail packaging labeling.</li>
+              </ul>
             </section>
 
           </div>

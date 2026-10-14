@@ -222,6 +222,7 @@ export default function LuxuryClient() {
 
             <div className="callout">
               <strong>Cost framing.</strong> As a working directional range, a luxury rigid or paper-over-board carton system typically lands around a 15% premium over the standard custom-packaging range for the equivalent format and volume. The premium goes to tighter tolerances, better substrates, specified finishes, pre-production proofing, and QC &mdash; not to decoration. For per-unit ranges across formats, see the <Link href="/blog/packaging-cost-per-unit-benchmarks">packaging cost per unit benchmarks</Link>.
+              <em className="methodology-note">Methodology: the 15% premium figure compares Logic Pac luxury rigid-box programs against Logic Pac standard folding-carton programs at equivalent unit volumes.</em>
             </div>
 
             <Image src="/images/guides/luxury-beauty-packaging/kiki-material-texture.jpg" alt="Material and texture reference set — paper, finish, and color decisions documented as a system" width={1600} height={1131} className="guide-img" sizes="(max-width: 960px) 100vw, 750px" />

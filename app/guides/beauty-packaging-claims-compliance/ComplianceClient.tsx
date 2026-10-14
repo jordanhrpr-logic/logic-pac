@@ -367,6 +367,13 @@ export default function ComplianceClient() {
                 <li><Link href="/guides/luxury-beauty-packaging-system">Luxury Beauty Packaging System</Link> — the pre-print SB 54, FTC Green Guides, and Prop 65 screening workflow Logic Pac runs on luxury programs.</li>
                 <li><Link href="/guides/retail-ready-beauty-packaging">Retail-Ready Beauty Packaging</Link> — how compliance obligations intersect with Sephora, Ulta, and Target vendor-manual requirements.</li>
               </ul>
+              <h3>Primary regulatory and certification sources</h3>
+              <ul className="sources-list">
+                <li><a href="https://calrecycle.ca.gov/packaging/packaging-epr/" target="_blank" rel="noopener noreferrer">CalRecycle: SB 54 Packaging EPR</a> &mdash; covered materials, producer obligations, and implementation timeline.</li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 (PPWR)</a> &mdash; recyclability, recycled-content, labeling, and minimization requirements.</li>
+                <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Environmental Claims and Green Guides</a> &mdash; recyclable, compostable, degradable, and general environmental-benefit claims.</li>
+                <li><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra" target="_blank" rel="noopener noreferrer">FDA: MoCRA (Modernization of Cosmetics Regulation Act)</a> &mdash; facility registration, adverse event reporting, and labeling requirements.</li>
+              </ul>
             </section>
 
           </div>
