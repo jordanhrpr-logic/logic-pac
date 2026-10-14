@@ -33,8 +33,8 @@ export default function CapabilitiesClient() {
     <>
       <div className="phdr">
         <div className="ey inv">Full-service packaging</div>
-        <h1>Everything Your<br />Packaging Needs,<br /><em>Under One Roof</em></h1>
-        <p>Structural design, engineering, global sourcing, manufacturing, quality control, and fulfillment &mdash; managed by one accountable team.</p>
+        <h1>Packaging Design and<br />Manufacturing.<br /><em>One Relationship.</em></h1>
+        <p>Structural engineering, global production, quality control, and fulfillment for brands producing 500 to 500,000+ units.</p>
         <button type="button" className="bi" onClick={() => openModal('Capabilities - Packaging Audit', 'capabilities-hero')}>Request a Packaging Audit</button>
       </div>
       <div className="bbar">
