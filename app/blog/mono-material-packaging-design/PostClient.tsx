@@ -185,8 +185,21 @@ export default function PostClient() {
       <div className="blog-conclusion">
             <h2 id="design-for-the-stream-not-the-label">Design for the Stream, Not the Label</h2>
             <p>The packaging industry spent years putting recyclable symbols on packages that recycling systems cannot actually process. Mono-material packaging design closes that gap. It does not require exotic materials or radical formats. It requires discipline: one material family, compatible components, and honest claims.</p>
-            <p>If your team is evaluating mono-material transitions &mdash; whether for regulatory compliance, sustainability positioning, or cost optimization &mdash; we can map the options against your current portfolio and engineer the transition path. See how disciplined material simplification works in practice in the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono_material_artilect_case_study">Artilect packaging reduction case study</Link>.</p>
-            <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=mono-material-packaging-design" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
+            <div className="aip">
+              <div className="aip-label">Applied in practice</div>
+              <h3>From rigid box to engineered carton &mdash; material simplification at production scale.</h3>
+              <p>Artilect launched with a premium rigid box. When the brand matured, Logic engineered a transition to a mono-format folding carton &mdash; preserving the brand signal while removing the material and cost the customer never valued.</p>
+              <div className="aip-proof">
+                <span><strong>20%</strong><small>Cost reduction</small></span>
+                <span><strong>95%</strong><small>Material reduction</small></span>
+                <span><strong>3-phase</strong><small>Planned transition</small></span>
+              </div>
+              <div className="aip-links">
+                <Link href="/work/artilect-packaging-reduction">View the Artilect case study &rarr;</Link>
+                <span>&middot;</span>
+                <Link href="/packaging-audit">Request a packaging audit</Link>
+              </div>
+            </div>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
             <section className="sources-section">
               <h2 id="primary-sources">Primary Sources</h2>
