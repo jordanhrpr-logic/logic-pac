@@ -7,6 +7,8 @@ import { useModal } from './ModalContext'
 
 const capabilitiesLinks = [
   { href: '/capabilities', label: 'Overview' },
+  { href: '/beauty', label: 'Beauty & Skincare' },
+  { href: '/production', label: 'Production Packaging' },
   { href: '/holiday', label: 'Holiday Gift Sets' },
   { href: '/influencer', label: 'Influencer Kits' },
   { href: '/jewelry', label: 'Jewelry Packaging' },

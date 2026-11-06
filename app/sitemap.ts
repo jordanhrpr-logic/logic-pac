@@ -16,6 +16,8 @@ const staticRoutes: Array<{ path: string; lastmod: string; changefreq: 'monthly'
   { path: '/holiday', lastmod: '2026-09-28', changefreq: 'monthly', priority: 0.9 },
   { path: '/influencer', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
   { path: '/jewelry', lastmod: '2026-09-28', changefreq: 'monthly', priority: 0.9 },
+  { path: '/beauty', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
+  { path: '/production', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
   { path: '/packaging-audit', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
   { path: '/guides', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.8 },
   { path: '/blog', lastmod: '2026-11-05', changefreq: 'weekly', priority: 0.8 },
