@@ -304,6 +304,8 @@ export default function PlaybookClient() {
             </div>
             <p>See these principles in a real project: the <Link href="/work/adidas-nemeziz-influencer-kit?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=influencer_playbook_adidas_case_study">Adidas Nemeziz launch kit</Link> used rigid construction, a multi-level reveal, and product-specific compartments to drive the filming moment.</p>
             <GuideBottomLine>A PR kit cannot guarantee a post. It can remove reasons not to engage: unclear presentation, damaged product, generic execution, and a reveal that gives the creator nothing to work with. Build the kit around the product story, then make every production decision support that story.</GuideBottomLine>
+
+            <p>If you already have a kit program and want to evaluate what is working and what is not, a <Link href="/packaging-audit">packaging audit</Link> can review your current formats, suppliers, and costs before the next production run.</p>
           </div>
         </div>
       </div>

@@ -441,6 +441,8 @@ export default function SustainableClient() {
               <p>If you are comparing materials, claims, or refill formats, we can help map the tradeoffs against your product, channel, quantities, and timeline. You will leave with a clearer direction&mdash;even if the right answer is to change less than expected.</p>
               <button type="button" className="bi" onClick={() => openModal('Guide - Sustainable Packaging', 'guide-bottom-cta')}>Review the Packaging Direction</button>
             </div>
+
+            <p>If you want a structured review of your current packaging program before making sustainability changes, start with a <Link href="/packaging-audit">packaging audit</Link>.</p>
           </div>
         </div>
       </div>

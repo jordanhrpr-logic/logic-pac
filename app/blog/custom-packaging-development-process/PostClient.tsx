@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -161,6 +162,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>If you want a structured assessment before starting development, a <Link href="/packaging-audit">packaging audit</Link> identifies what to fix, what to keep, and what to prioritize.</p>
+
       <BlogFAQ
         title="Custom Packaging Development FAQ"
         faqs={[
@@ -182,6 +186,8 @@ export default function PostClient() {
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom-packaging-development-process" target="_blank" rel="noopener noreferrer">Book a Consultation</a></p>
             <p><strong>Author Bio:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, and consumer brands design packaging systems that balance shelf presence, material performance, sustainability, and cost.</p>
       </div>
+
+      <RelatedContent currentSlug="custom-packaging-development-process" currentTag="Planning" />
 
       <section className="ctas">
         <div className="ctai">

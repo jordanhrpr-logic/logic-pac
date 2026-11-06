@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -241,6 +242,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Not sure where your cost is going? A <Link href="/packaging-audit">packaging audit</Link> breaks down your per-unit economics across all seven packaging dimensions.</p>
+
       <BlogFAQ
         title="Custom Packaging Cost FAQs"
         faqs={[
@@ -261,6 +265,8 @@ export default function PostClient() {
             <p>The goal is not to spend the least. The goal is to spend where the customer notices, simplify where they do not, and build a packaging system the brand can reorder without starting over every time. See how that works in practice: the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_epicutis_case_study">Epicutis packaging program</Link> scaled to 21+ SKUs with verified cost savings, and the <Link href="/work/artilect-packaging-reduction?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_artilect_case_study">Artilect packaging reduction</Link> removed material without weakening the brand experience.</p>
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=custom_cost_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will help you pressure-test the format, materials, finishes, and quantity before you commit to production.</p>
       </div>
+
+      <RelatedContent currentSlug="custom-packaging-cost-beauty-brands" currentTag="Pricing" />
 
       <section className="ctas">
         <div className="ctai">

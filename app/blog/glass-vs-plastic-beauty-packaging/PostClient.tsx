@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -172,6 +173,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>If you are weighing glass against plastic across your full product line, a <Link href="/packaging-audit">packaging audit</Link> can identify where each material earns its cost and where it does not.</p>
+
       <BlogFAQ
         title="Glass vs. Plastic Beauty Packaging FAQs"
         faqs={[
@@ -185,6 +189,8 @@ export default function PostClient() {
         ctaText="Book a Packaging Consultation"
         ctaProjectType="Custom Packaging"
       />
+
+      <RelatedContent currentSlug="glass-vs-plastic-beauty-packaging" currentTag="Materials" />
 
       <section className="ctas">
         <div className="ctai">

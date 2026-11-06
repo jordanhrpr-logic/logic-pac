@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -198,6 +199,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>If you are developing fragrance packaging for the first time, a <Link href="/packaging-audit">packaging audit</Link> can scope the structural, finish, and compliance requirements before production begins.</p>
+
       <BlogFAQ
         title="Fragrance Packaging FAQ"
         faqs={[
@@ -219,6 +223,8 @@ export default function PostClient() {
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fragrance_consultation" target="_blank" rel="noopener noreferrer">Book a Fragrance Packaging Consultation</a></p>
             <p><strong>Author:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm that helps beauty, wellness, fragrance, and consumer brands build packaging from concept to shelf.</p>
       </div>
+
+      <RelatedContent currentSlug="fragrance-packaging-design-guide" currentTag="Design" />
 
       <section className="ctas">
         <div className="ctai">

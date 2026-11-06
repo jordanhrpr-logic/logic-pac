@@ -3,13 +3,13 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'HDPE vs PET: Which Plastic for Beauty?',
-  description: 'HDPE and PET are the two most common plastics in beauty packaging. Compare chemical resistance, clarity, weight, recyclability, PCR availability, and cost.',
+  title: 'HDPE vs PET for Beauty Packaging: Resistance, Cost, and Recyclability Compared',
+  description: 'Which plastic is right for your formula? HDPE vs PET compared on chemical resistance, clarity, weight, decoration, PCR availability, recyclability, and per-unit cost for beauty brands.',
   alternates: { canonical: '/blog/hdpe-vs-pet-packaging-comparison' },
   openGraph: {
     url: 'https://logic-pac.com/blog/hdpe-vs-pet-packaging-comparison',
-    title: 'HDPE vs PET Packaging: Which Plastic Is Right for Your Beauty Brand? | Logic Pac',
-    description: 'HDPE and PET are the two most common plastics in beauty packaging. Compare chemical resistance, clarity, weight, recyclability, PCR availability, and cost.',
+    title: 'HDPE vs PET for Beauty Packaging: Resistance, Cost, and Recyclability Compared | Logic Pac',
+    description: 'Which plastic is right for your formula? HDPE vs PET compared on chemical resistance, clarity, weight, decoration, PCR availability, recyclability, and per-unit cost for beauty brands.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HDPE vs PET Packaging: Which Plastic Is Right for Your Beauty Brand? | Logic Pac',
-    description: 'HDPE and PET are the two most common plastics in beauty packaging. Compare chemical resistance, clarity, weight, recyclability, PCR availability, and cost.',
+    title: 'HDPE vs PET for Beauty Packaging: Resistance, Cost, and Recyclability Compared | Logic Pac',
+    description: 'Which plastic is right for your formula? HDPE vs PET compared on chemical resistance, clarity, weight, decoration, PCR availability, recyclability, and per-unit cost for beauty brands.',
     images: ['/images/portfolio/holiday-kits.jpeg'],
   },
 }

@@ -474,6 +474,7 @@ export default function DesignSystemClient() {
                 <li><Link href="/guides/sustainable-packaging-decision-matrix">Sustainable Packaging Decision Matrix</Link> &mdash; when sustainability is a layer in the system vs. an addition to it.</li>
                 <li><Link href="/work/epicutis">Epicutis case study</Link> &mdash; a design system scaled from three SKUs to 21+ with one supplier roster and one spec.</li>
                 <li><Link href="/work/artilect-packaging-reduction">Artilect packaging reduction</Link> &mdash; a design system engineered to shed weight without losing the brand.</li>
+                <li><Link href="/packaging-audit">Packaging audit</Link> &mdash; a structured review of your current packaging program across seven dimensions before building or extending a design system.</li>
               </ul>
             </section>
 

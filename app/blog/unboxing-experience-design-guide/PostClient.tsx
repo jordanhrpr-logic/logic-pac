@@ -8,6 +8,7 @@ import FAQSidebar from '@/components/FAQSidebar'
 import GuideAnswerSummary from '@/components/GuideAnswerSummary'
 import GuideBottomLine from '@/components/GuideBottomLine'
 import GuideByline from '@/components/GuideByline'
+import RelatedContent from '@/components/RelatedContent'
 
 const tocSections = [
   { id: 'five-second', label: 'The 5-second rule' },
@@ -352,6 +353,11 @@ export default function PostClient() {
           </div>
         </div>
       </div>
+
+
+            <p>Before scoping your next unboxing project, a <Link href="/packaging-audit">packaging audit</Link> can identify where your current design is working and where it can improve.</p>
+
+      <RelatedContent currentSlug="unboxing-experience-design-guide" currentTag="Design" />
 
       <section className="guide-faq" id="faq">
         <div className="guide-faq-inner">

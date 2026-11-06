@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -264,6 +265,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before selecting your final format, a <Link href="/packaging-audit">packaging audit</Link> can evaluate your current packaging system against formula compatibility, cost, and retail requirements.</p>
+
       <BlogFAQ
         title="Skincare Packaging FAQs"
         faqs={[
@@ -284,6 +288,8 @@ export default function PostClient() {
             <p>If you&apos;re planning a skincare launch or redesign, we can help map the format, material, finish, and cost tradeoffs before production starts. See how we built a coordinated skincare packaging system supporting 21+ SKUs in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=skincare_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a skincare packaging consultation</a> and we&apos;ll help you build the package around the formula.</p>
       </div>
+
+      <RelatedContent currentSlug="skincare-packaging-design-guide" currentTag="Design" />
 
       <section className="ctas">
         <div className="ctai">

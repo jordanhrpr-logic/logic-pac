@@ -5,21 +5,21 @@ import { capabilityFaqs } from './capabilities-data'
 const SITE_URL = 'https://logic-pac.com'
 
 export const metadata: Metadata = {
-  title: 'Capabilities — Full-Service Custom Packaging',
-  description: 'Full-service packaging: structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, and fulfillment.',
+  title: 'Custom Packaging Capabilities: Design, Manufacturing, QC, and Fulfillment',
+  description: 'One partner from concept to delivery. Structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, kitting, and fulfillment for beauty and consumer brands.',
   alternates: { canonical: '/capabilities' },
   openGraph: {
     url: 'https://logic-pac.com/capabilities',
-    title: 'Capabilities — Full-Service Custom Packaging | Logic Pac',
-    description: 'Full-service packaging: structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, and fulfillment.',
+    title: 'Custom Packaging Capabilities: Design, Manufacturing, QC, and Fulfillment | Logic Pac',
+    description: 'One partner from concept to delivery. Structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, kitting, and fulfillment for beauty and consumer brands.',
     type: 'website',
     siteName: 'Logic Pac',
     images: [{ url: '/images/portfolio/shelf-ready-display-unit.jpeg', width: 2730, height: 1536 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Capabilities — Full-Service Custom Packaging | Logic Pac',
-    description: 'Full-service packaging: structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, and fulfillment.',
+    title: 'Custom Packaging Capabilities: Design, Manufacturing, QC, and Fulfillment | Logic Pac',
+    description: 'One partner from concept to delivery. Structural design, 3D engineering, global manufacturing, quality control, compliance, logistics, kitting, and fulfillment for beauty and consumer brands.',
     images: ['/images/portfolio/shelf-ready-display-unit.jpeg'],
   },
 }

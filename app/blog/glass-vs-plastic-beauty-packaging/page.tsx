@@ -3,13 +3,13 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Glass vs. Plastic Beauty Packaging',
-  description: 'Glass costs 3-5x more than PET but signals premium. Cost, sustainability, weight, breakage, and perception compared for beauty packaging.',
+  title: 'Glass vs Plastic for Beauty Packaging: Cost, Weight, and Sustainability Compared',
+  description: 'Glass costs 3-5x more than PET but signals premium positioning. Cost per unit, sustainability, weight, breakage rates, and consumer perception compared for beauty packaging.',
   alternates: { canonical: '/blog/glass-vs-plastic-beauty-packaging' },
   openGraph: {
     url: 'https://logic-pac.com/blog/glass-vs-plastic-beauty-packaging',
-    title: 'Glass vs. Plastic Beauty Packaging Compared | Logic Pac',
-    description: 'Glass vs. plastic for beauty packaging: cost, sustainability, weight, breakage, and perception.',
+    title: 'Glass vs Plastic for Beauty Packaging: Cost, Weight, and Sustainability Compared | Logic Pac',
+    description: 'Glass costs 3-5x more than PET but signals premium positioning. Cost per unit, sustainability, weight, breakage rates, and consumer perception compared for beauty packaging.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Glass vs. Plastic Beauty Packaging Compared | Logic Pac',
-    description: 'Glass vs. plastic for beauty packaging: cost, sustainability, weight, breakage, and perception.',
+    title: 'Glass vs Plastic for Beauty Packaging: Cost, Weight, and Sustainability Compared | Logic Pac',
+    description: 'Glass costs 3-5x more than PET but signals premium positioning. Cost per unit, sustainability, weight, breakage rates, and consumer perception compared for beauty packaging.',
     images: ['/images/portfolio/premium-beauty-gift-set1.jpg'],
   },
 }

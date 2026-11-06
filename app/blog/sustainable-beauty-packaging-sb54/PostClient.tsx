@@ -5,6 +5,7 @@ import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -270,6 +271,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Unsure where your packaging stands on sustainability? A <Link href="/packaging-audit">packaging audit</Link> evaluates your materials, claims, and compliance position across every component.</p>
+
       <BlogFAQ
         title="Sustainable Beauty Packaging FAQ"
         faqs={[
@@ -299,6 +303,8 @@ export default function PostClient() {
               </ul>
             </section>
       </div>
+
+      <RelatedContent currentSlug="sustainable-beauty-packaging-sb54" currentTag="Sustainability" />
 
       <section className="ctas">
         <div className="ctai">

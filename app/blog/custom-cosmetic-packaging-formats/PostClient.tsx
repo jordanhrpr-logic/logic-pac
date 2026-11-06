@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -156,6 +157,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>If you are choosing between formats, a <Link href="/packaging-audit">packaging audit</Link> can match each option to your formula, cost model, and retail channel requirements.</p>
+
       <BlogFAQ
         title="Custom Cosmetic Packaging Formats FAQ"
         faqs={[
@@ -176,6 +180,8 @@ export default function PostClient() {
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=cosmetic_formats_consultation" target="_blank" rel="noopener noreferrer">Book a packaging consultation</a> and we will walk through the format options that fit your product, your timeline, and your margin model.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
       </div>
+
+      <RelatedContent currentSlug="custom-cosmetic-packaging-formats" currentTag="Formats" />
 
       <section className="ctas">
         <div className="ctai">
