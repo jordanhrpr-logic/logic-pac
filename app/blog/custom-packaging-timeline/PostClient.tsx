@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -190,6 +191,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before you lock your launch date, a <Link href="/packaging-audit">packaging audit</Link> can identify which timeline decisions are already fixed and where you still have room to compress.</p>
+
       <BlogFAQ
         title="Custom Packaging Timeline FAQ"
         faqs={[
@@ -209,6 +213,8 @@ export default function PostClient() {
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>
             <p>See the full phase-by-phase breakdown in our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_concept_shelf_guide">Concept to Shelf Timeline guide</Link>, or see how timeline discipline works across a growing portfolio in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_epicutis_case_study">Epicutis case study</Link>.</p>
       </div>
+
+      <RelatedContent currentSlug="custom-packaging-timeline" currentTag="Planning" />
 
       <section className="ctas">
         <div className="ctai">

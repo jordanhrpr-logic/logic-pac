@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -192,6 +193,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Starting your holiday packaging planning? A <Link href="/packaging-audit">packaging audit</Link> identifies what needs to change from last year and what can carry forward.</p>
+
       <BlogFAQ
         title="Holiday Gift Set Packaging FAQ"
         faqs={[
@@ -212,6 +216,8 @@ export default function PostClient() {
             <p>If you&apos;re planning holiday gift sets for this year&apos;s Q4, we should be talking now. We&apos;ll scope the project, confirm timelines, and tell you what we need to get started. See how we produced holiday gift set packaging for a premium skincare brand in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_epicutis_case_study">Epicutis case study</Link>.</p>
             <p><Link href="/holiday?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_capability">Explore our holiday packaging capabilities</Link> or <a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=holiday_gift_set_packaging_consultation" target="_blank" rel="noopener noreferrer">book a holiday kit consultation</a>.</p>
       </div>
+
+      <RelatedContent currentSlug="holiday-gift-set-packaging-beauty-brands" currentTag="Holiday" />
 
       <section className="ctas">
         <div className="ctai">

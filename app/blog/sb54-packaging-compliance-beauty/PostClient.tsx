@@ -5,6 +5,7 @@ import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -348,6 +349,8 @@ export default function PostClient() {
               </ul>
             </section>
       </div>
+
+      <RelatedContent currentSlug="sb54-packaging-compliance-beauty" currentTag="Compliance" />
 
       <section className="ctas">
         <div className="ctai">

@@ -373,6 +373,7 @@ export default function ComplianceClient() {
                 <li><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Regulation (EU) 2025/40 (PPWR)</a> &mdash; recyclability, recycled-content, labeling, and minimization requirements.</li>
                 <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Environmental Claims and Green Guides</a> &mdash; recyclable, compostable, degradable, and general environmental-benefit claims.</li>
                 <li><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra" target="_blank" rel="noopener noreferrer">FDA: MoCRA (Modernization of Cosmetics Regulation Act)</a> &mdash; facility registration, adverse event reporting, and labeling requirements.</li>
+                <li><Link href="/packaging-audit">Packaging audit</Link> &mdash; a seven-dimension review that includes compliance as one of its core evaluation layers.</li>
               </ul>
             </section>
 

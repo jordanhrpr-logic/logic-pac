@@ -5,6 +5,7 @@ import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import VerifiedAsOf from '@/components/VerifiedAsOf'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -167,6 +168,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Not sure how your current packaging measures up? A <Link href="/packaging-audit">packaging audit</Link> evaluates compliance, recyclability, and material classification across your full product line.</p>
+
       <BlogFAQ
         title="EU PPWR Packaging Requirements FAQ"
         faqs={[
@@ -197,6 +201,8 @@ export default function PostClient() {
               <li><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en" target="_blank" rel="noopener noreferrer">European Commission: Packaging waste policy overview</a></li>
             </ul>
       </div>
+
+      <RelatedContent currentSlug="eu-ppwr-packaging-requirements-beauty" currentTag="Compliance" />
 
       <section className="ctas">
         <div className="ctai">

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -153,6 +154,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before briefing your next influencer kit, a <Link href="/packaging-audit">packaging audit</Link> can identify where your current approach is costing more than it needs to.</p>
+
       <BlogFAQ
         title="Influencer Kit Packaging FAQs"
         faqs={[
@@ -166,6 +170,8 @@ export default function PostClient() {
         ctaText="Start Your Influencer Kit Project"
         ctaProjectType="Influencer / PR Kit"
       />
+
+      <RelatedContent currentSlug="influencer-kit-packaging-design" currentTag="Influencer Kits" />
 
       <section className="ctas">
         <div className="ctai">

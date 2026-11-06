@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import PackagingAuditClient from './PackagingAuditClient'
 
-const title = 'Packaging Audit for Beauty & CPG Brands'
-const description = 'A seven-dimension packaging audit covering compliance, cost, retail readiness, sustainability, quality, and design-system coherence for beauty and CPG brands.'
+const title = 'Packaging Audit: 7 Dimensions Every Beauty Brand Should Review'
+const description = 'Compliance, cost, retail readiness, sustainability, quality, structural integrity, and design-system coherence. A packaging audit that identifies what is working, what is not, and what to fix first.'
 const image = '/images/portfolio/cosmetics-folding-carton.jpeg'
 
 export const metadata: Metadata = {

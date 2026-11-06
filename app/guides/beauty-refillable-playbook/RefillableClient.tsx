@@ -261,6 +261,8 @@ export default function RefillableClient() {
 
             <GuideBottomLine>Do not start with the most beautiful refill mechanism. Start with the product customers already replenish, the adoption needed to support the model, and the channel that can explain and stock the system. If those pieces do not hold, solve the repeat-purchase problem before adding packaging complexity.</GuideBottomLine>
 
+            <p>Before designing a refillable system, a <Link href="/packaging-audit">packaging audit</Link> can identify which SKUs and formats are realistic candidates for refill conversion.</p>
+
           </div>
         </div>
       </div>

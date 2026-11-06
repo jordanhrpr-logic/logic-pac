@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -164,6 +165,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Not sure which finish belongs on which component? A <Link href="/packaging-audit">packaging audit</Link> evaluates your full finish hierarchy against cost, durability, and brand positioning.</p>
+
       <BlogFAQ
         title="Soft Touch Lamination FAQ"
         faqs={[
@@ -184,6 +188,8 @@ export default function PostClient() {
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=soft_touch_consultation" target="_blank" rel="noopener noreferrer">Book a finish consultation</a> and we will help you evaluate whether soft touch lamination fits your product, your retail environment, and your cost model &mdash; and specify it correctly if it does.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
       </div>
+
+      <RelatedContent currentSlug="soft-touch-lamination-packaging" currentTag="Finishes" />
 
       <section className="ctas">
         <div className="ctai">
