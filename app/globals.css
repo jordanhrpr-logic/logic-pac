@@ -837,6 +837,15 @@ footer{padding:48px 24px 32px}
 .related-audit-link a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:2px}
 .related-audit-link a:hover{color:var(--lime-dk)}
 
+/* ── BLOG INDEX FILTERS ── */
+.blog-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding:0 4px}
+.blog-filter-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border:1px solid var(--bg2);border-radius:20px;background:var(--white);color:var(--slate);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;white-space:nowrap}
+.blog-filter-btn:hover{border-color:var(--navy);color:var(--navy)}
+.blog-filter-btn.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.blog-filter-count{font-size:11px;opacity:.6}
+.blog-count{font-size:13px;color:var(--slate);margin-bottom:16px;padding:0 4px}
+@media(max-width:640px){.blog-filters{gap:6px}.blog-filter-btn{padding:6px 12px;font-size:12px}}
+
 /* ── MID-ARTICLE AUDIT CALLOUT ── */
 .audit-callout{background:linear-gradient(135deg,var(--navy),var(--navy-md));border-radius:10px;padding:28px 32px;margin:36px 0;color:var(--white)}
 .audit-callout-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lime);margin-bottom:10px}

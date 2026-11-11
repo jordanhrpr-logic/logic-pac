@@ -420,6 +420,30 @@ export const blogPosts: BlogPost[] = [
     gradient: 'linear-gradient(135deg,#1a0a2e,#2e1a4a,#4a2c6a)',
     published: true,
   },
+  {
+    slug: 'limited-edition-packaging-design',
+    title: 'Limited Edition Packaging: Design, Production & Strategy',
+    description: 'Limited edition packaging runs 500-5,000 units with premium formats, higher per-unit costs, and tighter timelines. What works, what it costs, and how to plan.',
+    date: '2026-11-11',
+    author: 'Jordan Harper',
+    tag: 'Strategy',
+    readTime: '9 min read',
+    image: '/images/portfolio/holiday-epicutis-gift-sets.jpg',
+    gradient: 'linear-gradient(135deg,#2e1a0a,#4a2c1a,#6a3c2a)',
+    published: true,
+  },
+  {
+    slug: 'packaging-qualification-testing',
+    title: 'Packaging Qualification Testing: When and Why You Need It',
+    description: 'Qualification testing validates a new packaging format, supplier, or material before mass production. The 5 test categories, timeline, and cost.',
+    date: '2026-11-11',
+    author: 'Jordan Harper',
+    tag: 'Planning',
+    readTime: '8 min read',
+    image: '/images/portfolio/cosmetics-folding-carton.jpeg',
+    gradient: 'linear-gradient(135deg,#0f2027,#203a43,#2c5364)',
+    published: true,
+  },
 ]
 
 export function getPublishedPosts(): BlogPost[] {
