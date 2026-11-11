@@ -372,6 +372,8 @@ export default function MaterialClient() {
 
             <GuideBottomLine>There is no universally best packaging material. There is a best-fit material for a specific formula, price point, channel, volume, and brand position. Eliminate options that fail product protection or operating economics first. Then make the design decision inside the viable set.</GuideBottomLine>
 
+            <p>If your current material choices were inherited rather than selected, a <Link href="/packaging-audit">packaging audit</Link> can identify mismatches between your formula, volume, and material spec before your next production run.</p>
+
           </div>
         </div>
       </div>

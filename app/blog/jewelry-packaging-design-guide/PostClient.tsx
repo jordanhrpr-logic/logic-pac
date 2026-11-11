@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -136,6 +137,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before selecting your jewelry packaging format, a <Link href="/packaging-audit">packaging audit</Link> can evaluate your current system against retail requirements, cost, and brand positioning.</p>
+
       <BlogFAQ
         title="Jewelry Packaging Design Guide FAQ"
         faqs={[
@@ -166,6 +170,8 @@ export default function PostClient() {
             <p>For jewelry brands, the most important brief detail is the full collection map. A supplier needs to know whether this is one ring box or a system across rings, earrings, necklaces, bracelets, pendants, and seasonal kits. Without that map, the first sample can look good and still fail the collection.</p>
             <p>Also include approval owners. Jewelry packaging often gets reviewed by founders, brand, product, retail, and operations. If those people review samples one at a time, the project slows down. If they review against the same brief, decisions get cleaner.</p>
       </div>
+
+      <RelatedContent currentSlug="jewelry-packaging-design-guide" currentTag="Design" />
 
       <section className="ctas">
         <div className="ctai">

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -287,6 +288,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before you start vetting manufacturers, a <Link href="/packaging-audit">packaging audit</Link> ensures your spec, cost model, and quality requirements are clear enough to evaluate bids properly.</p>
+
       <BlogFAQ
         title="Choosing a Beauty Packaging Manufacturer FAQ"
         faqs={[
@@ -308,6 +312,8 @@ export default function PostClient() {
             <p>If you are choosing a packaging partner for a launch, redesign, influencer kit, or retail program, we can help you evaluate the options before the project gets expensive. The <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_epicutis_case_study">Epicutis case study</Link> shows what a full design-to-production packaging partnership looks like across 21+ SKUs.</p>
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=manufacturer_consultation" target="_blank" rel="noopener noreferrer">Book a packaging manufacturer consultation</a> and we&apos;ll help you ask the right questions before you sign.</p>
       </div>
+
+      <RelatedContent currentSlug="how-to-choose-beauty-packaging-manufacturer" currentTag="Strategy" />
 
       <section className="ctas">
         <div className="ctai">

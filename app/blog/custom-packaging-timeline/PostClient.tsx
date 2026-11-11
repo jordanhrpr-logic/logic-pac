@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -143,6 +144,13 @@ export default function PostClient() {
               <li><strong>Launch in 12 weeks?</strong> Only possible with proven formats, stock materials, domestic production, and a brief that is locked on day one.</li>
             </ul>
 
+            <div className="audit-callout">
+              <div className="audit-callout-label">Before you start</div>
+              <h3>Not sure where your timeline risk actually sits?</h3>
+              <p>A packaging audit identifies which phases of your program are on track, which carry timeline risk, and where the brief needs tightening before production begins.</p>
+              <Link href="/packaging-audit">Learn about the packaging audit &rarr;</Link>
+            </div>
+
             <h2 id="the-holiday-packaging-timeline">The Holiday Packaging Timeline</h2>
             <p>Holiday gift set packaging has the tightest timeline pressure because every beauty brand needs packaging for Q4, and factory capacity fills months in advance.</p>
             <p>The realistic holiday timeline:</p>
@@ -190,6 +198,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before you lock your launch date, a <Link href="/packaging-audit">packaging audit</Link> can identify which timeline decisions are already fixed and where you still have room to compress.</p>
+
       <BlogFAQ
         title="Custom Packaging Timeline FAQ"
         faqs={[
@@ -209,6 +220,8 @@ export default function PostClient() {
             <p>If your launch is in 20 weeks, today is not early. It is on time.</p>
             <p>See the full phase-by-phase breakdown in our <Link href="/guides/concept-to-shelf-timeline?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_concept_shelf_guide">Concept to Shelf Timeline guide</Link>, or see how timeline discipline works across a growing portfolio in the <Link href="/work/epicutis?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=timeline_epicutis_case_study">Epicutis case study</Link>.</p>
       </div>
+
+      <RelatedContent currentSlug="custom-packaging-timeline" currentTag="Planning" />
 
       <section className="ctas">
         <div className="ctai">

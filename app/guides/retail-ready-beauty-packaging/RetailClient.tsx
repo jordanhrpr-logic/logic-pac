@@ -338,6 +338,7 @@ export default function RetailClient() {
                 <li><a href="https://www.gs1.org/standards/barcodes" target="_blank" rel="noopener noreferrer">GS1: Barcode Standards</a> &mdash; UPC/EAN assignment, quiet-zone specifications, and verification grade requirements.</li>
                 <li><a href="https://www.gs1us.org/industries/retail" target="_blank" rel="noopener noreferrer">GS1 US: Retail Industry Standards</a> &mdash; case-level identification, pallet labeling, and EDI/ASN requirements.</li>
                 <li><a href="https://www.ftc.gov/business-guidance/resources/environmental-claims-summary-green-guides" target="_blank" rel="noopener noreferrer">FTC: Green Guides</a> &mdash; environmental claims that may apply to retail packaging labeling.</li>
+                <li><Link href="/packaging-audit">Packaging audit</Link> &mdash; a seven-dimension review that includes retail readiness as one of its core evaluation layers.</li>
               </ul>
             </section>
 

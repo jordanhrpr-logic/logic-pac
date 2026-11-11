@@ -225,6 +225,8 @@ export default function BriefClient() {
 
             <p>See how a structured brief led to a coordinated 21+ SKU packaging program in the <Link href="/work/epicutis?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=brief_epicutis_case_study">Epicutis case study</Link>.</p>
             <GuideBottomLine>The best brief is not the longest. It is the one that lets the team develop, quote, test, and approve the right package without guessing. If a decision is known, document it. If it is not known, name the owner and deadline for resolving it.</GuideBottomLine>
+
+            <p>If you are writing a brief for an existing product line, a <Link href="/packaging-audit">packaging audit</Link> on your current packaging can surface the constraints and specifications your brief needs to address.</p>
           </div>
         </div>
       </div>

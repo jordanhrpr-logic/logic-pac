@@ -1,13 +1,20 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
-import { getAllPosts } from '@/lib/blog-data'
+import { getPublishedPosts } from '@/lib/blog-data'
+
+const ALL_TAG = 'All'
 
 export default function BlogIndexClient() {
   const { openModal } = useModal()
-  const posts = getAllPosts()
+  const posts = getPublishedPosts()
+  const [activeTag, setActiveTag] = useState(ALL_TAG)
+
+  const tags = [ALL_TAG, ...Array.from(new Set(posts.map(p => p.tag))).sort()]
+  const filtered = activeTag === ALL_TAG ? posts : posts.filter(p => p.tag === activeTag)
 
   return (
     <>
@@ -18,8 +25,26 @@ export default function BlogIndexClient() {
       </div>
 
       <div className="gidx">
+        <div className="blog-filters" role="tablist" aria-label="Filter posts by topic">
+          {tags.map(tag => (
+            <button
+              key={tag}
+              type="button"
+              role="tab"
+              aria-selected={activeTag === tag}
+              className={`blog-filter-btn${activeTag === tag ? ' active' : ''}`}
+              onClick={() => setActiveTag(tag)}
+            >
+              {tag}
+              {tag !== ALL_TAG && <span className="blog-filter-count">{posts.filter(p => p.tag === tag).length}</span>}
+            </button>
+          ))}
+        </div>
+
+        <div className="blog-count">{filtered.length} article{filtered.length !== 1 ? 's' : ''}</div>
+
         <div className="gcards">
-          {posts.map(post => (
+          {filtered.map(post => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="gcard">
               <div className="gcard-img">
                 <Image src={post.image} alt={post.title} width={600} height={338} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />

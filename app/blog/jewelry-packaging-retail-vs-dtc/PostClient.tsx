@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -133,6 +134,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Selling through both channels? A <Link href="/packaging-audit">packaging audit</Link> can evaluate whether your current packaging works for both or whether you need separate formats.</p>
+
       <BlogFAQ
         title="Jewelry Packaging for Retail vs. DTC FAQ"
         faqs={[
@@ -163,6 +167,8 @@ export default function PostClient() {
 
             <p><em>About the author: Jordan Harper is the founder of Logic Pac, a custom packaging development firm helping beauty, wellness, jewelry, and luxury goods brands design packaging that looks premium, protects the product, and works in production.</em></p>
       </div>
+
+      <RelatedContent currentSlug="jewelry-packaging-retail-vs-dtc" currentTag="Strategy" />
 
       <section className="ctas">
         <div className="ctai">

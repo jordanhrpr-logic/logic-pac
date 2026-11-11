@@ -3,13 +3,13 @@ import PostClient from './PostClient'
 import { buildBlogArticleSchema, buildBlogBreadcrumbSchema } from '@/lib/blog-schemas'
 
 export const metadata: Metadata = {
-  title: 'Mono-Material Packaging Design Guide',
-  description: 'Mono-material packaging for beauty brands: mono-PP, mono-PE, and mono-PET compared by recyclability, SB 54 compliance, formula compatibility, and cost.',
+  title: 'Mono-Material Packaging: PP vs PE vs PET for Beauty Brands',
+  description: 'How to design mono-material packaging that actually gets recycled. Mono-PP, mono-PE, and mono-PET compared on recyclability, formula compatibility, SB 54 compliance, cost, and decoration limits.',
   alternates: { canonical: '/blog/mono-material-packaging-design' },
   openGraph: {
     url: 'https://logic-pac.com/blog/mono-material-packaging-design',
-    title: 'Mono-Material Packaging Design for Beauty: The Technical Guide | Logic Pac',
-    description: 'Mono-material packaging for beauty brands: mono-PP, mono-PE, and mono-PET compared by recyclability, SB 54 compliance, formula compatibility, and cost.',
+    title: 'Mono-Material Packaging: PP vs PE vs PET for Beauty Brands | Logic Pac',
+    description: 'How to design mono-material packaging that actually gets recycled. Mono-PP, mono-PE, and mono-PET compared on recyclability, formula compatibility, SB 54 compliance, cost, and decoration limits.',
     type: 'article',
     publishedTime: '2026-05-21',
     authors: ['Jordan Harper'],
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mono-Material Packaging Design for Beauty: The Technical Guide | Logic Pac',
-    description: 'Mono-material packaging for beauty brands: mono-PP, mono-PE, and mono-PET compared by recyclability, SB 54 compliance, formula compatibility, and cost.',
+    title: 'Mono-Material Packaging: PP vs PE vs PET for Beauty Brands | Logic Pac',
+    description: 'How to design mono-material packaging that actually gets recycled. Mono-PP, mono-PE, and mono-PET compared on recyclability, formula compatibility, SB 54 compliance, cost, and decoration limits.',
     images: ['/images/portfolio/foil-stamped-cylinder.jpeg'],
   },
 }

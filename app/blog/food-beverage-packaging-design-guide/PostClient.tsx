@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -211,6 +212,9 @@ export default function PostClient() {
       </div>
 
 
+
+            <p>Before finalizing a food or beverage packaging spec, a <Link href="/packaging-audit">packaging audit</Link> can evaluate your format, material, and compliance requirements together.</p>
+
       <BlogFAQ
         title="Food and Beverage Packaging FAQ"
         faqs={[
@@ -231,6 +235,8 @@ export default function PostClient() {
             <p><a href="https://calendly.com/sean-logicagencyinc/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fb_packaging_consultation" target="_blank" rel="noopener noreferrer">Book a Food and Beverage Packaging Consultation</a></p>
             <p><strong>Author:</strong> Jordan Harper is the founder of Logic Pac, a custom packaging development firm that helps beauty, wellness, food and beverage, and consumer brands build packaging from concept to shelf.</p>
       </div>
+
+      <RelatedContent currentSlug="food-beverage-packaging-design-guide" currentTag="Design" />
 
       <section className="ctas">
         <div className="ctai">

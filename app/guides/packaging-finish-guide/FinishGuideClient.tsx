@@ -191,6 +191,13 @@ export default function FinishGuideClient() {
               <li><strong>Quantity:</strong> Per-unit foil cost drops significantly at 1,000+ units</li>
             </ul>
 
+            <div className="audit-callout">
+              <div className="audit-callout-label">Finish decision support</div>
+              <h3>Not sure which finishes are worth the cost for your line?</h3>
+              <p>A packaging audit evaluates your current finish stack against the product category, retail channel, and price point &mdash; then identifies where finishes earn their cost and where they do not.</p>
+              <Link href="/packaging-audit">Learn about the packaging audit &rarr;</Link>
+            </div>
+
             <h2 id="spot-uv">Spot UV Coating</h2>
             <p>Spot UV (ultraviolet) coating is a glossy, clear varnish applied to specific areas of a printed piece, then cured with UV light. It creates a raised, shiny effect that contrasts with the surrounding matte or soft-touch surface.</p>
 
@@ -339,7 +346,21 @@ export default function FinishGuideClient() {
               <p>Tell us about your project and we&apos;ll recommend the right finish combination for your brand, budget, and substrate.</p>
               <button type="button" className="bi" onClick={() => openModal('Guide - Finish Consultation', 'guide-bottom-cta')}>Book a Consultation</button>
             </div>
-            <p>See how finish decisions were managed across a 21+ SKU beauty packaging system in the <Link href="/work/epicutis?utm_source=guide&utm_medium=organic&utm_campaign=seo_guide&utm_content=finish_epicutis_case_study">Epicutis case study</Link>.</p>
+            <div className="aip">
+              <div className="aip-label">Applied in practice</div>
+              <h3>Finish consistency across a 21+ SKU luxury skincare system.</h3>
+              <p>Epicutis scaled from 3 SKUs to 21+ without rebuilding the finish stack each launch. Logic managed soft-touch lamination, foil stamping, and substrate selection as a coordinated system &mdash; keeping the brand signal consistent while reducing per-unit packaging cost by 15%.</p>
+              <div className="aip-proof">
+                <span><strong>3 &rarr; 21+</strong><small>SKUs supported</small></span>
+                <span><strong>15%</strong><small>Verified cost savings</small></span>
+                <span><strong>7-day</strong><small>Replenishment cycle</small></span>
+              </div>
+              <div className="aip-links">
+                <Link href="/work/epicutis">View the Epicutis case study &rarr;</Link>
+                <span>&middot;</span>
+                <Link href="/packaging-audit">Request a packaging audit</Link>
+              </div>
+            </div>
             <GuideBottomLine>Finish selection is an exercise in restraint. Pick one primary effect, confirm that it survives production and handling, and use any secondary finish to create hierarchy. When every surface competes for attention, the package usually feels more expensive to make—not more premium.</GuideBottomLine>
           </div>
         </div>

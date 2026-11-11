@@ -26,14 +26,17 @@ export default function Footer() {
         </nav>
         <nav className="ftrc" aria-label="Programs">
           <div className="ftrc-label" aria-hidden="true">Programs</div>
+          <Link href="/beauty">Beauty &amp; Skincare</Link>
+          <Link href="/wellness">Health &amp; Wellness</Link>
+          <Link href="/production">Production Packaging</Link>
           <Link href="/holiday">Holiday Gift Sets</Link>
           <Link href="/influencer">Influencer Kits</Link>
           <Link href="/jewelry">Jewelry Packaging</Link>
-          <Link href="/influencer">PR Mailers</Link>
           <Link href="/work">Our Work</Link>
         </nav>
         <nav className="ftrc" aria-label="Resources">
           <div className="ftrc-label" aria-hidden="true">Resources</div>
+          <Link href="/packaging-audit">Packaging Audit</Link>
           <Link href="/guides">Packaging Guides</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/guides/influencer-kit-playbook">Influencer Kit Playbook</Link>

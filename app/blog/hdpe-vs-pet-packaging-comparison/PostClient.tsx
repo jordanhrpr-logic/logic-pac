@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
+import RelatedContent from '@/components/RelatedContent'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -176,6 +177,22 @@ export default function PostClient() {
             <p>The solution is not picking the &ldquo;better&rdquo; material in the abstract. It is testing the specific formula in the specific container over the planned shelf life period. A 24-month shelf life claim needs 24-month stability data &mdash; or at minimum, accelerated aging data that extrapolates reliably.</p>
             <p>For brands with oxidation-sensitive formulas in products that also contain mild surfactants, an airless pump system may outperform both HDPE and PET open-mouth containers. The dispensing system matters as much as the material.</p>
 
+            <div className="aip">
+              <div className="aip-label">Applied in practice</div>
+              <h3>Material decisions change when production reaches commercial scale.</h3>
+              <p>A one-off material choice is a specification. At 5,000+ units across multiple SKUs, material selection becomes a system decision &mdash; interacting with closure compatibility, decoration method, supplier qualification, landed cost, and recyclability claims. Logic Pac manages that system so each material choice holds up at production volume.</p>
+              <div className="aip-proof">
+                <span><strong>15+</strong><small>Countries sourced</small></span>
+                <span><strong>500&ndash;500K+</strong><small>Unit range</small></span>
+                <span><strong>21+</strong><small>SKUs managed (Epicutis)</small></span>
+              </div>
+              <div className="aip-links">
+                <Link href="/guides/material-decision-framework">Use the Material Decision Framework &rarr;</Link>
+                <span>&middot;</span>
+                <Link href="/packaging-audit">Request a packaging audit</Link>
+              </div>
+            </div>
+
       </div>
         </div>
       </div>
@@ -200,6 +217,8 @@ export default function PostClient() {
             <p><a href="https://calendly.com/jordan-harper-packaging/30min?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=hdpe_pet_consultation" target="_blank" rel="noopener noreferrer">Book a material consultation</a> and we will help you match the right material to your formula, volume plan, and brand requirements. Or start with a <Link href="/packaging-audit">packaging audit</Link> to review your current material choices, cost structure, and compliance position before making changes.</p>
             <p>*About the author: Jordan Harper is the founder of Logic Pac and Logic Agency, with 20+ years of experience in packaging development and supply chain operations for beauty, wellness, and consumer product brands.*</p>
       </div>
+
+      <RelatedContent currentSlug="hdpe-vs-pet-packaging-comparison" currentTag="Materials" />
 
       <section className="ctas">
         <div className="ctai">
