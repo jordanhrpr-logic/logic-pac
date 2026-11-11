@@ -107,6 +107,13 @@ export default function PostClient() {
             <p>PCR packaging is increasingly table stakes for beauty brands selling into retail. Sephora&apos;s Clean + Planet Positive program, Target&apos;s Target Zero initiative, and Ulta&apos;s sustainability requirements all reference recycled content as a qualifying criterion. A 50% PCR PET bottle with clean labeling gives brands a specific, verifiable claim: &ldquo;This bottle is made from 50% post-consumer recycled plastic.&rdquo;</p>
             <p>That&apos;s a stronger claim than &ldquo;recyclable&rdquo; (which most packaging technically is) and more commercially viable than switching the entire line to glass.</p>
 
+            <div className="audit-callout">
+              <div className="audit-callout-label">Before you decide</div>
+              <h3>Glass, plastic, or both? A packaging audit answers this for your specific program.</h3>
+              <p>We evaluate each SKU against its formula, channel, margin model, and sustainability requirements &mdash; then recommend the material that fits, not the one that looks best on paper.</p>
+              <Link href="/packaging-audit">Learn about the packaging audit &rarr;</Link>
+            </div>
+
             <h2 id="the-real-cost-difference">The Real Cost Difference</h2>
             <p>Cost comparisons between glass and plastic only tell the full story when you include everything downstream of the container itself.</p>
 

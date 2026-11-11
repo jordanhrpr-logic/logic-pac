@@ -144,6 +144,13 @@ export default function PostClient() {
               <li><strong>Launch in 12 weeks?</strong> Only possible with proven formats, stock materials, domestic production, and a brief that is locked on day one.</li>
             </ul>
 
+            <div className="audit-callout">
+              <div className="audit-callout-label">Before you start</div>
+              <h3>Not sure where your timeline risk actually sits?</h3>
+              <p>A packaging audit identifies which phases of your program are on track, which carry timeline risk, and where the brief needs tightening before production begins.</p>
+              <Link href="/packaging-audit">Learn about the packaging audit &rarr;</Link>
+            </div>
+
             <h2 id="the-holiday-packaging-timeline">The Holiday Packaging Timeline</h2>
             <p>Holiday gift set packaging has the tightest timeline pressure because every beauty brand needs packaging for Q4, and factory capacity fills months in advance.</p>
             <p>The realistic holiday timeline:</p>

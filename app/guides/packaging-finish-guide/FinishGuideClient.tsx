@@ -191,6 +191,13 @@ export default function FinishGuideClient() {
               <li><strong>Quantity:</strong> Per-unit foil cost drops significantly at 1,000+ units</li>
             </ul>
 
+            <div className="audit-callout">
+              <div className="audit-callout-label">Finish decision support</div>
+              <h3>Not sure which finishes are worth the cost for your line?</h3>
+              <p>A packaging audit evaluates your current finish stack against the product category, retail channel, and price point &mdash; then identifies where finishes earn their cost and where they do not.</p>
+              <Link href="/packaging-audit">Learn about the packaging audit &rarr;</Link>
+            </div>
+
             <h2 id="spot-uv">Spot UV Coating</h2>
             <p>Spot UV (ultraviolet) coating is a glossy, clear varnish applied to specific areas of a printed piece, then cured with UV light. It creates a raised, shiny effect that contrasts with the surrounding matte or soft-touch surface.</p>
 

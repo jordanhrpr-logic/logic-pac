@@ -17,6 +17,7 @@ const staticRoutes: Array<{ path: string; lastmod: string; changefreq: 'monthly'
   { path: '/influencer', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
   { path: '/jewelry', lastmod: '2026-09-28', changefreq: 'monthly', priority: 0.9 },
   { path: '/beauty', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
+  { path: '/wellness', lastmod: '2026-11-10', changefreq: 'monthly', priority: 0.9 },
   { path: '/production', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
   { path: '/packaging-audit', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.9 },
   { path: '/guides', lastmod: '2026-11-05', changefreq: 'monthly', priority: 0.8 },
@@ -41,6 +42,9 @@ const guideRoutes: Array<{ slug: string; lastmod: string }> = [
   { slug: 'retail-ready-beauty-packaging', lastmod: '2026-11-05' },
   { slug: 'beauty-packaging-claims-compliance', lastmod: '2026-11-05' },
   { slug: 'packaging-audit', lastmod: '2026-11-05' },
+  { slug: 'packaging-at-scale', lastmod: '2026-11-10' },
+  { slug: 'mono-material-packaging', lastmod: '2026-11-10' },
+  { slug: 'contract-packaging-partner-evaluation', lastmod: '2026-11-10' },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -68,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (!post.published) continue
     entries.push({
       url: `${BASE_URL}/blog/${post.slug}`,
-      lastModified: new Date('2026-11-05'),
+      lastModified: new Date('2026-11-10'),
       changeFrequency: 'monthly',
       priority: 0.8,
     })

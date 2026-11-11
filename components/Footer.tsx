@@ -27,6 +27,7 @@ export default function Footer() {
         <nav className="ftrc" aria-label="Programs">
           <div className="ftrc-label" aria-hidden="true">Programs</div>
           <Link href="/beauty">Beauty &amp; Skincare</Link>
+          <Link href="/wellness">Health &amp; Wellness</Link>
           <Link href="/production">Production Packaging</Link>
           <Link href="/holiday">Holiday Gift Sets</Link>
           <Link href="/influencer">Influencer Kits</Link>

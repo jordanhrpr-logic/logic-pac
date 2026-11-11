@@ -137,6 +137,13 @@ export default function PostClient() {
             <p>Tooling is not always bad. If the structure will be reused over multiple runs, tooling can reduce unit cost and protect consistency. The problem is paying tooling for a structure you have not tested, or changing the design after tooling has already started.</p>
             <p>That is where cost gets wasted.</p>
 
+            <div className="audit-callout">
+              <div className="audit-callout-label">Worth checking</div>
+              <h3>Not sure if you are overpaying for packaging?</h3>
+              <p>A packaging audit compares your current per-unit costs, material specs, and supplier terms against what the market actually charges for equivalent formats and volumes.</p>
+              <Link href="/packaging-audit">Learn about the packaging audit &rarr;</Link>
+            </div>
+
             <h2 id="how-to-compare-quotes-from-packaging-suppliers">How to Compare Quotes From Packaging Suppliers</h2>
             <p>Most packaging quotes look clean until you compare them line by line. Then you realize the suppliers are not quoting the same thing.</p>
             <p>One includes freight. One does not. One includes inserts. One assumes stock paper. One includes sample charges. One does not include the finish you asked for. One quote is lower because it quietly changed the board thickness.</p>

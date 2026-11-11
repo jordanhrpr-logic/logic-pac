@@ -133,6 +133,30 @@ const guides = [
     image: '/images/guides/packaging-brief-checklist.png',
     gradient: 'linear-gradient(135deg,#2d1b0e,#4a2e1a,#6b3f2c)',
   },
+  {
+    slug: 'packaging-at-scale',
+    tag: 'Production',
+    title: 'Packaging at Scale: What Changes at 10K, 50K, and 100K+ Units',
+    description: 'What breaks when production volume grows and how to build a packaging program that handles 10K, 50K, and 100K+ units.',
+    image: '/images/portfolio/cosmetics-folding-carton.jpeg',
+    gradient: 'linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)',
+  },
+  {
+    slug: 'mono-material-packaging',
+    tag: 'Sustainability',
+    title: 'Mono-Material Packaging Guide: PP, PE, PET & Paper',
+    description: 'Mono-PP, mono-PE, mono-PET, and paper compared on recyclability, formula compatibility, decoration, SB 54 and PPWR compliance, and cost.',
+    image: '/images/portfolio/foil-stamped-cylinder.jpeg',
+    gradient: 'linear-gradient(135deg,#0a2e1a,#1a4a3c,#2c6a5a)',
+  },
+  {
+    slug: 'contract-packaging-partner-evaluation',
+    tag: 'Operations',
+    title: 'How to Evaluate a Contract Packaging Partner',
+    description: 'Evaluation framework for brands at volume who need to change or add a packaging supplier. Capacity, quality, cost, and transition planning.',
+    image: '/images/portfolio/shelf-ready-display-unit.jpeg',
+    gradient: 'linear-gradient(135deg,#0f2027,#203a43,#2c5364)',
+  },
 ]
 
 export default function GuidesClient() {
