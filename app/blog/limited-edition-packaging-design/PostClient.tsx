@@ -5,6 +5,7 @@ import { useModal } from '@/components/ModalContext'
 import BlogFAQ from '@/components/BlogFAQ'
 import BlogTOC from '@/components/BlogTOC'
 import RelatedContent from '@/components/RelatedContent'
+import CalendlyBadge from './CalendlyBadge'
 
 export default function PostClient() {
   const { openModal } = useModal()
@@ -21,6 +22,7 @@ export default function PostClient() {
 
   return (
     <>
+      <CalendlyBadge />
       <div className="phdr">
         <div className="ey inv">Strategy</div>
         <h1>Limited Edition Packaging: Design, Production &amp; Strategy</h1>
