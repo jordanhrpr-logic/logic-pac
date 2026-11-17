@@ -6,6 +6,7 @@ import { trackCalendlyOutbound } from '@/lib/analytics'
 
 const CALENDLY_URL = 'https://calendly.com/sean-logicagencyinc/30min'
 const CALENDLY_DESTINATION = 'calendly.com/sean-logicagencyinc/30min'
+const BADGE_SELECTOR = '.calendly-badge-widget'
 
 type CalendlyApi = {
   initBadgeWidget: (options: {
@@ -26,7 +27,7 @@ declare global {
 export default function CalendlyBadge() {
   const initializeBadge = useCallback(() => {
     if (typeof window === 'undefined' || !window.Calendly) return
-    if (document.querySelector('.calendly-badge-widget')) return
+    if (document.querySelector(BADGE_SELECTOR)) return
 
     window.Calendly.initBadgeWidget({
       url: CALENDLY_URL,
@@ -38,15 +39,13 @@ export default function CalendlyBadge() {
   }, [])
 
   useEffect(() => {
-    // The generated Calendly button is not a normal site anchor, so the
-    // global anchor listener cannot attribute its click reliably.
     const handleBadgeClick = (event: MouseEvent) => {
       const target = event.target as Element | null
-      if (!target?.closest('.calendly-badge-widget')) return
+      if (!target?.closest(BADGE_SELECTOR)) return
 
       trackCalendlyOutbound({
         destination: CALENDLY_DESTINATION,
-        ctaLocation: 'calendly-badge-limited-edition',
+        ctaLocation: 'calendly-badge',
       })
     }
 
@@ -55,7 +54,7 @@ export default function CalendlyBadge() {
 
     return () => {
       document.removeEventListener('click', handleBadgeClick, true)
-      document.querySelectorAll('.calendly-badge-widget').forEach((widget) => widget.remove())
+      document.querySelectorAll(BADGE_SELECTOR).forEach((widget) => widget.remove())
     }
   }, [initializeBadge])
 
