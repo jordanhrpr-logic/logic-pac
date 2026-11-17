@@ -7,6 +7,7 @@ import { trackCalendlyOutbound } from '@/lib/analytics'
 const CALENDLY_URL = 'https://calendly.com/sean-logicagencyinc/30min'
 const CALENDLY_DESTINATION = 'calendly.com/sean-logicagencyinc/30min'
 const BADGE_SELECTOR = '.calendly-badge-widget'
+const CSS_ID = 'calendly-badge-css'
 
 type CalendlyApi = {
   initBadgeWidget: (options: {
@@ -39,6 +40,14 @@ export default function CalendlyBadge() {
   }, [])
 
   useEffect(() => {
+    if (!document.getElementById(CSS_ID)) {
+      const link = document.createElement('link')
+      link.id = CSS_ID
+      link.rel = 'stylesheet'
+      link.href = 'https://assets.calendly.com/assets/external/widget.css'
+      document.head.appendChild(link)
+    }
+
     const handleBadgeClick = (event: MouseEvent) => {
       const target = event.target as Element | null
       if (!target?.closest(BADGE_SELECTOR)) return
@@ -59,13 +68,10 @@ export default function CalendlyBadge() {
   }, [initializeBadge])
 
   return (
-    <>
-      <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
-      <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="afterInteractive"
-        onLoad={initializeBadge}
-      />
-    </>
+    <Script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      strategy="afterInteractive"
+      onLoad={initializeBadge}
+    />
   )
 }
